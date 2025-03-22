@@ -2,10 +2,15 @@
 
 ## Install
 
-- nvm use 22
-- npm i
-- npm run storybook
+- `nvm use 22`
+- `npm i`
+- `npm run storybook`
 
 ## Create components
 
-- npm run build
+- `npm run build`
+
+## Create storybook build
+
+- `npm run build-storybook -- -o ./docs`
+- `http-server ./docs`
