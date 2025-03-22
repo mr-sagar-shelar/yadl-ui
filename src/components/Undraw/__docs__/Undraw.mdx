@@ -1,0 +1,32 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Undraw from "./Undraw.stories.tsx";
+
+<Meta of={Undraw} title="Undraw" />
+
+# Undraw
+
+Undraw component with different props.
+
+#### Example
+
+<Canvas of={Undraw.Primary} />
+
+## Usage
+
+```ts
+import {Undraw} from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Undraw
+        size={"small"}
+        text={"Undraw"}
+        onClick={()=> console.log("Clicked")}
+        primary
+      />
+  );
+};
+
+export default Example;
+```
