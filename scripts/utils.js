@@ -50,11 +50,12 @@ export const writeComponentSkeleton = (componentName, dir) => {
     import Example from "./Example.tsx";
     import * as ${componentName} from "./${componentName}.stories.tsx";
     
-    <Meta of={${componentName}} title="${componentName}" />
+    <Meta of={${componentName}} title="unDraw/${componentName}" />
     
     # ${componentName}
     
     ${componentName} component with different props.
+    Credit: [unDraw](https://undraw.co/illustrations)
     
     #### Example
     
@@ -63,21 +64,19 @@ export const writeComponentSkeleton = (componentName, dir) => {
     ## Usage
     
     \`\`\`ts
-    import {${componentName}} from "yadl-ui";
+    import { ${componentName} } from "yadl-ui";
     
     const Example = () => {
       return (
-          <${componentName}
-            size={"small"}
-            text={"${componentName}"}
-            onClick={()=> console.log("Clicked")}
-            primary
-          />
+          <${componentName} />
       );
     };
     
     export default Example;
     \`\`\`
+
+    #### Credits
+    [unDraw](https://undraw.co/illustrations)
     `;
     fs.writeFile(`${dir}/__docs__/${componentName}.mdx`, mdxContent, (err) => {
       if (err) {
@@ -111,7 +110,7 @@ export const writeComponentSkeleton = (componentName, dir) => {
     const testFileContents = `
     import React from "react";
     import { describe, expect, it } from "vitest";
-    import { render, screen } from "@testing-library/react";
+    import { render } from "@testing-library/react";
     import ${componentName} from "../${componentName}";
     
     describe("${componentName} component", () => {
@@ -146,6 +145,7 @@ export const writeComponentSkeleton = (componentName, dir) => {
     const ${componentName} = (props: any) => {
       return (
         <>
+          <h3>${componentName}</h3>
         </>
       );
     };
@@ -159,4 +159,14 @@ export const writeComponentSkeleton = (componentName, dir) => {
       }
     });
   }
+};
+
+export const writeIndexFile = (contents, filePath) => {
+  fs.writeFile(filePath, contents, (err) => {
+    if (err) {
+      console.error(err);
+    } else {
+      // file written successfully
+    }
+  });
 };
