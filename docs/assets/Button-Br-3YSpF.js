@@ -1,10 +1,10 @@
-import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as i}from"./index-CePRvBtH.js";import{M as s,C as r}from"./index-B7VimmUr.js";import{B as l,P as a}from"./Button.stories-Dn_zpA4M.js";import"./index-DmM0KDA7.js";import"./iframe-BdZI2c5v.js";import"./index-nLeaPAJ8.js";import"./index-CXQShRbs.js";import"./index-DrFu-skq.js";function o(t){const e={code:"code",em:"em",h1:"h1",h2:"h2",h4:"h4",li:"li",p:"p",pre:"pre",strong:"strong",ul:"ul",...i(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(s,{of:l,title:"Button"}),`
+import{j as n}from"./jsx-runtime-D_zvdyIk.js";import{useMDXComponents as i}from"./index-CePRvBtH.js";import{M as s,C as r}from"./index-D1LJyYB8.js";import{B as l,P as a}from"./Button.stories-BHxpCBbR.js";import"./index-DmM0KDA7.js";import"./iframe-DygS06DV.js";import"./index-nLeaPAJ8.js";import"./index-CXQShRbs.js";import"./index-DrFu-skq.js";function o(t){const e={code:"code",em:"em",h1:"h1",h2:"h2",h4:"h4",li:"li",p:"p",pre:"pre",strong:"strong",ul:"ul",...i(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(s,{of:l,title:"Button"}),`
 `,n.jsx(e.h1,{id:"button",children:"Button"}),`
 `,n.jsx(e.p,{children:"Button component with different props."}),`
 `,n.jsx(e.h4,{id:"example",children:"Example"}),`
 `,n.jsx(r,{of:a}),`
 `,n.jsx(e.h2,{id:"usage",children:"Usage"}),`
-`,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`import {Button} from "sld-ui";
+`,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`import {Button} from "yadl-ui";
 
 const Example = () => {
   return (
