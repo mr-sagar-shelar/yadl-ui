@@ -4,6 +4,8 @@ import {
   writeIndexFile,
   toPascalCase,
 } from "./utils.js";
+import { transform } from "@svgr/core";
+
 (async () => {
   const browser = await chromium.launch({
     headless: false,
@@ -31,7 +33,7 @@ import {
       iconName = toPascalCase(iconName[0]);
       console.log(`${iconName}`);
 
-      let svgData = await currentIcon
+      let svgCode = await currentIcon
         .getByRole("img")
         .first()
         .evaluate((evaluate) =>
@@ -40,13 +42,34 @@ import {
             "var(--color-primary)",
           ),
         );
-      console.log(`${svgData}`);
+      // console.log(`${svgCode}`);
 
-      // writeComponentSkeleton(iconName, `./src/components/Undraw/${iconName}`);
-      // indexFileContents = `${indexFileContents}\nexport * from "./${iconName}";`;
+      const componentCode = await transform(
+        svgCode,
+        {
+          plugins: [
+            "@svgr/plugin-svgo",
+            "@svgr/plugin-jsx",
+            "@svgr/plugin-prettier",
+          ],
+          icon: true,
+          jsxRuntime: "automatic",
+          typescript: true,
+        },
+        { componentName: iconName },
+      );
+
+      // console.log(`${componentCode}`);
+
+      writeComponentSkeleton(
+        iconName,
+        `./src/components/Undraw/${iconName}`,
+        componentCode,
+      );
+      indexFileContents = `${indexFileContents}\nexport * from "./${iconName}";`;
     }
 
-    // writeIndexFile(indexFileContents, `./src/components/Undraw/index.ts`);
+    writeIndexFile(indexFileContents, `./src/components/Undraw/index.ts`);
 
     await page.waitForTimeout(1000);
     // await page.getByText("Next ").click();
