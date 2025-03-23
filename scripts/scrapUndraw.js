@@ -23,17 +23,14 @@ import {
     const illustrationCount = await allIllustrations.count();
     console.log(`********* illustrations = ${illustrationCount}`);
 
-    for (let i = 0; i < illustrationCount; i++) {
+    // for (let i = 0; i < illustrationCount; i++) {
+    for (let i = 0; i < 1; i++) {
       const currentIcon = await allIllustrations.nth(i);
       let iconName = await currentIcon.allTextContents();
       iconName = toPascalCase(iconName[0]);
       console.log(`${iconName}`);
-      // console.log(`${iconName}`);
 
-      // const temp = await allIllustrations.nth(i).locator(".injected-svg").count();
-      // console.log(`${temp}`);
-      // const svgContent = await currentIcon.querySelector(".injected-svg");
-      // console.log(`${svgContent}`);
+      writeComponentSkeleton(iconName, `./src/components/Undraw/${iconName}`);
       indexFileContents = `${indexFileContents}\nexport * from "./${iconName}";`;
     }
 

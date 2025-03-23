@@ -14,7 +14,6 @@ export const writeComponentSkeleton = (componentName, dir) => {
     fs.mkdirSync(dir, { recursive: true });
     fs.mkdirSync(`${dir}/__docs__`, { recursive: true });
     fs.mkdirSync(`${dir}/__test__`, { recursive: true });
-    const content = "Some content!";
 
     const exampleContents = `
     import React, { FC } from "react";
@@ -22,14 +21,7 @@ export const writeComponentSkeleton = (componentName, dir) => {
     
     const Example = () => {
       return (
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            height: "100%",
-          }}
-        >
+        <div>
           <${componentName} />
         </div>
       );
@@ -89,7 +81,7 @@ export const writeComponentSkeleton = (componentName, dir) => {
     import type { Meta, StoryObj } from "@storybook/react";
     import Example from "./Example";
     
-    const meta: Meta<typeof Example> = { title: "${componentName}", component: Example };
+    const meta: Meta<typeof Example> = { title: "unDraw/${componentName}", component: Example };
     
     export default meta;
     type Story = StoryObj<typeof Example>;
