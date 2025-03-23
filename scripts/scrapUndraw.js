@@ -1,6 +1,6 @@
 import { chromium } from "playwright";
 import {
-  writeComponentSkeleton,
+  writeUndrawComponentSkeleton,
   writeIndexFile,
   toPascalCase,
 } from "./utils.js";
@@ -63,7 +63,7 @@ import { transform } from "@svgr/core";
 
         // console.log(`${componentCode}`);
 
-        writeComponentSkeleton(
+        writeUndrawComponentSkeleton(
           iconName,
           `./src/components/Undraw/${iconName}`,
           componentCode,
@@ -90,7 +90,7 @@ import { transform } from "@svgr/core";
   // let currentIcon = await allIllustrations.nth(2).allTextContents();
   // currentIcon = toPascalCase(currentIcon[0]);
   // console.log(`${currentIcon}`);
-  // writeComponentSkeleton(currentIcon, `./src/components/Undraw/${currentIcon}`);
+  // writeUndrawComponentSkeleton(currentIcon, `./src/components/Undraw/${currentIcon}`);
 
   // await page.waitForTimeout(1000);
   // await page.getByText("Next").click();
