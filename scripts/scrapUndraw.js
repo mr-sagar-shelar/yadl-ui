@@ -4,6 +4,7 @@ import {
   writeIndexFile,
   toPascalCase,
 } from "./utils.js";
+import fs from "fs";
 import { transform } from "@svgr/core";
 
 (async () => {
@@ -27,7 +28,7 @@ import { transform } from "@svgr/core";
     console.log(`********* illustrations = ${illustrationCount}`);
 
     // for (let i = 0; i < illustrationCount; i++) {
-    for (let i = 0; i < 1; i++) {
+    for (let i = 0; i < illustrationCount; i++) {
       const currentIcon = await allIllustrations.nth(i);
       let iconName = await currentIcon.allTextContents();
       iconName = toPascalCase(iconName[0]);
@@ -44,28 +45,40 @@ import { transform } from "@svgr/core";
         );
       // console.log(`${svgCode}`);
 
-      const componentCode = await transform(
-        svgCode,
-        {
-          plugins: [
-            "@svgr/plugin-svgo",
-            "@svgr/plugin-jsx",
-            "@svgr/plugin-prettier",
-          ],
-          icon: true,
-          jsxRuntime: "automatic",
-          typescript: true,
-        },
-        { componentName: iconName },
-      );
+      try {
+        const componentCode = await transform(
+          svgCode,
+          {
+            plugins: [
+              "@svgr/plugin-svgo",
+              "@svgr/plugin-jsx",
+              "@svgr/plugin-prettier",
+            ],
+            icon: true,
+            jsxRuntime: "automatic",
+            typescript: true,
+          },
+          { componentName: iconName },
+        );
 
-      // console.log(`${componentCode}`);
+        // console.log(`${componentCode}`);
 
-      writeComponentSkeleton(
-        iconName,
-        `./src/components/Undraw/${iconName}`,
-        componentCode,
-      );
+        writeComponentSkeleton(
+          iconName,
+          `./src/components/Undraw/${iconName}`,
+          componentCode,
+        );
+      } catch (error) {
+        // console.error(`${iconName}\n`);
+        fs.appendFile(
+          "./Errors.txt",
+          `Error: ${iconNameNew}\n`,
+          function (err) {
+            if (err) throw err;
+            // console.log("Saved!");
+          },
+        );
+      }
       indexFileContents = `${indexFileContents}\nexport * from "./${iconName}";`;
     }
 
