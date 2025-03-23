@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as BentoGrid from "./BentoGrid.stories.tsx";
+
+<Meta of={BentoGrid} title="unDraw/BentoGrid" />
+
+# BentoGrid
+
+BentoGrid component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={BentoGrid.Primary} />
+
+## Usage
+
+```ts
+import { BentoGrid } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <BentoGrid />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

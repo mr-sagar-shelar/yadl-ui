@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Confirmed from "./Confirmed.stories.tsx";
+
+<Meta of={Confirmed} title="unDraw/Confirmed" />
+
+# Confirmed
+
+Confirmed component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Confirmed.Primary} />
+
+## Usage
+
+```ts
+import { Confirmed } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Confirmed />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Avatars from "./Avatars.stories.tsx";
+
+<Meta of={Avatars} title="unDraw/Avatars" />
+
+# Avatars
+
+Avatars component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Avatars.Primary} />
+
+## Usage
+
+```ts
+import { Avatars } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Avatars />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -20,7 +20,14 @@ import ${componentName} from "../${componentName}";
 
 const Example = () => {
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100%",
+      }}
+    >
       <${componentName} />
     </div>
   );
