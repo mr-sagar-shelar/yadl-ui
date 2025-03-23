@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as OuterSpace from "./OuterSpace.stories.tsx";
+
+<Meta of={OuterSpace} title="unDraw/OuterSpace" />
+
+# OuterSpace
+
+OuterSpace component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={OuterSpace.Primary} />
+
+## Usage
+
+```ts
+import { OuterSpace } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <OuterSpace />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

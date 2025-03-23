@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as OnlineGallery from "./OnlineGallery.stories.tsx";
+
+<Meta of={OnlineGallery} title="unDraw/OnlineGallery" />
+
+# OnlineGallery
+
+OnlineGallery component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={OnlineGallery.Primary} />
+
+## Usage
+
+```ts
+import { OnlineGallery } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <OnlineGallery />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

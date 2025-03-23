@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Done from "./Done.stories.tsx";
+
+<Meta of={Done} title="unDraw/Done" />
+
+# Done
+
+Done component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Done.Primary} />
+
+## Usage
+
+```ts
+import { Done } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Done />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

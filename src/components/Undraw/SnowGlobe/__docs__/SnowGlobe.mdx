@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SnowGlobe from "./SnowGlobe.stories.tsx";
+
+<Meta of={SnowGlobe} title="unDraw/SnowGlobe" />
+
+# SnowGlobe
+
+SnowGlobe component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SnowGlobe.Primary} />
+
+## Usage
+
+```ts
+import { SnowGlobe } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SnowGlobe />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

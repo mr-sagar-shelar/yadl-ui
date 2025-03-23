@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Taken from "./Taken.stories.tsx";
+
+<Meta of={Taken} title="unDraw/Taken" />
+
+# Taken
+
+Taken component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Taken.Primary} />
+
+## Usage
+
+```ts
+import { Taken } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Taken />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

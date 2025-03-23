@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AddInformation from "./AddInformation.stories.tsx";
+
+<Meta of={AddInformation} title="unDraw/AddInformation" />
+
+# AddInformation
+
+AddInformation component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={AddInformation.Primary} />
+
+## Usage
+
+```ts
+import { AddInformation } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AddInformation />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

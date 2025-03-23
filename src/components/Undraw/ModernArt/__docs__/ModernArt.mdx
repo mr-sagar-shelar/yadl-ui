@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ModernArt from "./ModernArt.stories.tsx";
+
+<Meta of={ModernArt} title="unDraw/ModernArt" />
+
+# ModernArt
+
+ModernArt component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ModernArt.Primary} />
+
+## Usage
+
+```ts
+import { ModernArt } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ModernArt />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

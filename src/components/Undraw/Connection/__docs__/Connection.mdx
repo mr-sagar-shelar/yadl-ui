@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Connection from "./Connection.stories.tsx";
+
+<Meta of={Connection} title="unDraw/Connection" />
+
+# Connection
+
+Connection component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Connection.Primary} />
+
+## Usage
+
+```ts
+import { Connection } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Connection />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

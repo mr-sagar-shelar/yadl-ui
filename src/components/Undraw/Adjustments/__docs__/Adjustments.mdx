@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Adjustments from "./Adjustments.stories.tsx";
+
+<Meta of={Adjustments} title="unDraw/Adjustments" />
+
+# Adjustments
+
+Adjustments component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Adjustments.Primary} />
+
+## Usage
+
+```ts
+import { Adjustments } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Adjustments />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

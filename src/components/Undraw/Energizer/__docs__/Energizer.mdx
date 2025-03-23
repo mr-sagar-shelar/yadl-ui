@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Energizer from "./Energizer.stories.tsx";
+
+<Meta of={Energizer} title="unDraw/Energizer" />
+
+# Energizer
+
+Energizer component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Energizer.Primary} />
+
+## Usage
+
+```ts
+import { Energizer } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Energizer />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

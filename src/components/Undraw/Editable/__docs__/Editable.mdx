@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Editable from "./Editable.stories.tsx";
+
+<Meta of={Editable} title="unDraw/Editable" />
+
+# Editable
+
+Editable component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Editable.Primary} />
+
+## Usage
+
+```ts
+import { Editable } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Editable />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

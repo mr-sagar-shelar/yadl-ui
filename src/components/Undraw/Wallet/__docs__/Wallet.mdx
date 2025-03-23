@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Wallet from "./Wallet.stories.tsx";
+
+<Meta of={Wallet} title="unDraw/Wallet" />
+
+# Wallet
+
+Wallet component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Wallet.Primary} />
+
+## Usage
+
+```ts
+import { Wallet } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Wallet />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

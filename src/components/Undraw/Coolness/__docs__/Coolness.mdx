@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Coolness from "./Coolness.stories.tsx";
+
+<Meta of={Coolness} title="unDraw/Coolness" />
+
+# Coolness
+
+Coolness component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Coolness.Primary} />
+
+## Usage
+
+```ts
+import { Coolness } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Coolness />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

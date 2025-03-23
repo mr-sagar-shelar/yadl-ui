@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Lost from "./Lost.stories.tsx";
+
+<Meta of={Lost} title="unDraw/Lost" />
+
+# Lost
+
+Lost component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Lost.Primary} />
+
+## Usage
+
+```ts
+import { Lost } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Lost />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

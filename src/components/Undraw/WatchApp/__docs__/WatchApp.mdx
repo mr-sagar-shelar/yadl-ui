@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as WatchApp from "./WatchApp.stories.tsx";
+
+<Meta of={WatchApp} title="unDraw/WatchApp" />
+
+# WatchApp
+
+WatchApp component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={WatchApp.Primary} />
+
+## Usage
+
+```ts
+import { WatchApp } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <WatchApp />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

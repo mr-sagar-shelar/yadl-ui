@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as PerformanceOverview from "./PerformanceOverview.stories.tsx";
+
+<Meta of={PerformanceOverview} title="unDraw/PerformanceOverview" />
+
+# PerformanceOverview
+
+PerformanceOverview component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={PerformanceOverview.Primary} />
+
+## Usage
+
+```ts
+import { PerformanceOverview } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <PerformanceOverview />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Filter from "./Filter.stories.tsx";
+
+<Meta of={Filter} title="unDraw/Filter" />
+
+# Filter
+
+Filter component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Filter.Primary} />
+
+## Usage
+
+```ts
+import { Filter } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Filter />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

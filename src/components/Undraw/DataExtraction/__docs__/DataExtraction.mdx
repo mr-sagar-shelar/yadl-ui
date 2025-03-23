@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DataExtraction from "./DataExtraction.stories.tsx";
+
+<Meta of={DataExtraction} title="unDraw/DataExtraction" />
+
+# DataExtraction
+
+DataExtraction component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={DataExtraction.Primary} />
+
+## Usage
+
+```ts
+import { DataExtraction } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DataExtraction />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

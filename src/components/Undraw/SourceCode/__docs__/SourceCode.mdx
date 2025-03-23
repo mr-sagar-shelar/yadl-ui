@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SourceCode from "./SourceCode.stories.tsx";
+
+<Meta of={SourceCode} title="unDraw/SourceCode" />
+
+# SourceCode
+
+SourceCode component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SourceCode.Primary} />
+
+## Usage
+
+```ts
+import { SourceCode } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SourceCode />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

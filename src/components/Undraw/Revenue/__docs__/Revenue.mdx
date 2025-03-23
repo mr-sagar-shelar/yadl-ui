@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Revenue from "./Revenue.stories.tsx";
+
+<Meta of={Revenue} title="unDraw/Revenue" />
+
+# Revenue
+
+Revenue component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Revenue.Primary} />
+
+## Usage
+
+```ts
+import { Revenue } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Revenue />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

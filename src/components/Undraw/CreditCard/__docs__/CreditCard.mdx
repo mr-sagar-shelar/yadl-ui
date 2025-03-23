@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CreditCard from "./CreditCard.stories.tsx";
+
+<Meta of={CreditCard} title="unDraw/CreditCard" />
+
+# CreditCard
+
+CreditCard component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CreditCard.Primary} />
+
+## Usage
+
+```ts
+import { CreditCard } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CreditCard />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

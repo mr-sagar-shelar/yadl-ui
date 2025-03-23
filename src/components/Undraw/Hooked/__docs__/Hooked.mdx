@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Hooked from "./Hooked.stories.tsx";
+
+<Meta of={Hooked} title="unDraw/Hooked" />
+
+# Hooked
+
+Hooked component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Hooked.Primary} />
+
+## Usage
+
+```ts
+import { Hooked } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Hooked />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

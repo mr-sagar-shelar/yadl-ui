@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Notes from "./Notes.stories.tsx";
+
+<Meta of={Notes} title="unDraw/Notes" />
+
+# Notes
+
+Notes component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Notes.Primary} />
+
+## Usage
+
+```ts
+import { Notes } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Notes />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CloseTab from "./CloseTab.stories.tsx";
+
+<Meta of={CloseTab} title="unDraw/CloseTab" />
+
+# CloseTab
+
+CloseTab component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CloseTab.Primary} />
+
+## Usage
+
+```ts
+import { CloseTab } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CloseTab />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

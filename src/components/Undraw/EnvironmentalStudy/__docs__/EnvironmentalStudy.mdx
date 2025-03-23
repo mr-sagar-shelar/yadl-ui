@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as EnvironmentalStudy from "./EnvironmentalStudy.stories.tsx";
+
+<Meta of={EnvironmentalStudy} title="unDraw/EnvironmentalStudy" />
+
+# EnvironmentalStudy
+
+EnvironmentalStudy component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={EnvironmentalStudy.Primary} />
+
+## Usage
+
+```ts
+import { EnvironmentalStudy } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <EnvironmentalStudy />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

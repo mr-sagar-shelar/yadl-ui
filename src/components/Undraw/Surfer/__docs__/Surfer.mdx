@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Surfer from "./Surfer.stories.tsx";
+
+<Meta of={Surfer} title="unDraw/Surfer" />
+
+# Surfer
+
+Surfer component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Surfer.Primary} />
+
+## Usage
+
+```ts
+import { Surfer } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Surfer />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as NatureFun from "./NatureFun.stories.tsx";
+
+<Meta of={NatureFun} title="unDraw/NatureFun" />
+
+# NatureFun
+
+NatureFun component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={NatureFun.Primary} />
+
+## Usage
+
+```ts
+import { NatureFun } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <NatureFun />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

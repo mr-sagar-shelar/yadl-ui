@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as OnlineWorld from "./OnlineWorld.stories.tsx";
+
+<Meta of={OnlineWorld} title="unDraw/OnlineWorld" />
+
+# OnlineWorld
+
+OnlineWorld component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={OnlineWorld.Primary} />
+
+## Usage
+
+```ts
+import { OnlineWorld } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <OnlineWorld />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

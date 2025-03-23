@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Map from "./Map.stories.tsx";
+
+<Meta of={Map} title="unDraw/Map" />
+
+# Map
+
+Map component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Map.Primary} />
+
+## Usage
+
+```ts
+import { Map } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Map />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Astronaut from "./Astronaut.stories.tsx";
+
+<Meta of={Astronaut} title="unDraw/Astronaut" />
+
+# Astronaut
+
+Astronaut component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Astronaut.Primary} />
+
+## Usage
+
+```ts
+import { Astronaut } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Astronaut />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

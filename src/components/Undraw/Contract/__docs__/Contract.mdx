@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Contract from "./Contract.stories.tsx";
+
+<Meta of={Contract} title="unDraw/Contract" />
+
+# Contract
+
+Contract component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Contract.Primary} />
+
+## Usage
+
+```ts
+import { Contract } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Contract />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

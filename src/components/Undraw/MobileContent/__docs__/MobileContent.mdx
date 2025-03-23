@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MobileContent from "./MobileContent.stories.tsx";
+
+<Meta of={MobileContent} title="unDraw/MobileContent" />
+
+# MobileContent
+
+MobileContent component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={MobileContent.Primary} />
+
+## Usage
+
+```ts
+import { MobileContent } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MobileContent />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

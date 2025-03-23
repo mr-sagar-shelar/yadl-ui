@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Feedback from "./Feedback.stories.tsx";
+
+<Meta of={Feedback} title="unDraw/Feedback" />
+
+# Feedback
+
+Feedback component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Feedback.Primary} />
+
+## Usage
+
+```ts
+import { Feedback } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Feedback />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

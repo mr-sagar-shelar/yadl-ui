@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ShoppingApp from "./ShoppingApp.stories.tsx";
+
+<Meta of={ShoppingApp} title="unDraw/ShoppingApp" />
+
+# ShoppingApp
+
+ShoppingApp component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ShoppingApp.Primary} />
+
+## Usage
+
+```ts
+import { ShoppingApp } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ShoppingApp />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

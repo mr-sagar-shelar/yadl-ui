@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SnapTheMoment from "./SnapTheMoment.stories.tsx";
+
+<Meta of={SnapTheMoment} title="unDraw/SnapTheMoment" />
+
+# SnapTheMoment
+
+SnapTheMoment component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SnapTheMoment.Primary} />
+
+## Usage
+
+```ts
+import { SnapTheMoment } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SnapTheMoment />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

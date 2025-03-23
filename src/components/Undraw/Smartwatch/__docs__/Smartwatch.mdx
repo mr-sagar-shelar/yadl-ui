@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Smartwatch from "./Smartwatch.stories.tsx";
+
+<Meta of={Smartwatch} title="unDraw/Smartwatch" />
+
+# Smartwatch
+
+Smartwatch component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Smartwatch.Primary} />
+
+## Usage
+
+```ts
+import { Smartwatch } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Smartwatch />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

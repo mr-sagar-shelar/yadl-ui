@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as BullMarket from "./BullMarket.stories.tsx";
+
+<Meta of={BullMarket} title="unDraw/BullMarket" />
+
+# BullMarket
+
+BullMarket component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={BullMarket.Primary} />
+
+## Usage
+
+```ts
+import { BullMarket } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <BullMarket />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

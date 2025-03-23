@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ExperienceDesign from "./ExperienceDesign.stories.tsx";
+
+<Meta of={ExperienceDesign} title="unDraw/ExperienceDesign" />
+
+# ExperienceDesign
+
+ExperienceDesign component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ExperienceDesign.Primary} />
+
+## Usage
+
+```ts
+import { ExperienceDesign } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ExperienceDesign />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

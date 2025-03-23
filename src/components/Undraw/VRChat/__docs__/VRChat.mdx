@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as VRChat from "./VRChat.stories.tsx";
+
+<Meta of={VRChat} title="unDraw/VRChat" />
+
+# VRChat
+
+VRChat component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={VRChat.Primary} />
+
+## Usage
+
+```ts
+import { VRChat } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <VRChat />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

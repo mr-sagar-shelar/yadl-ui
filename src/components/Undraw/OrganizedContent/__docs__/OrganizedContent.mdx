@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as OrganizedContent from "./OrganizedContent.stories.tsx";
+
+<Meta of={OrganizedContent} title="unDraw/OrganizedContent" />
+
+# OrganizedContent
+
+OrganizedContent component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={OrganizedContent.Primary} />
+
+## Usage
+
+```ts
+import { OrganizedContent } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <OrganizedContent />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

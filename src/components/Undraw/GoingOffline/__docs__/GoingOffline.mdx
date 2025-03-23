@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as GoingOffline from "./GoingOffline.stories.tsx";
+
+<Meta of={GoingOffline} title="unDraw/GoingOffline" />
+
+# GoingOffline
+
+GoingOffline component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={GoingOffline.Primary} />
+
+## Usage
+
+```ts
+import { GoingOffline } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <GoingOffline />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

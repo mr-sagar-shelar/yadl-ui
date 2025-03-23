@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MobileEncryption from "./MobileEncryption.stories.tsx";
+
+<Meta of={MobileEncryption} title="unDraw/MobileEncryption" />
+
+# MobileEncryption
+
+MobileEncryption component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={MobileEncryption.Primary} />
+
+## Usage
+
+```ts
+import { MobileEncryption } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MobileEncryption />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Maintenance from "./Maintenance.stories.tsx";
+
+<Meta of={Maintenance} title="unDraw/Maintenance" />
+
+# Maintenance
+
+Maintenance component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Maintenance.Primary} />
+
+## Usage
+
+```ts
+import { Maintenance } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Maintenance />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

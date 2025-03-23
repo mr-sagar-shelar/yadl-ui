@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Community from "./Community.stories.tsx";
+
+<Meta of={Community} title="unDraw/Community" />
+
+# Community
+
+Community component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Community.Primary} />
+
+## Usage
+
+```ts
+import { Community } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Community />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

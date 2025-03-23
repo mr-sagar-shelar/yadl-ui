@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as PersonalGoals from "./PersonalGoals.stories.tsx";
+
+<Meta of={PersonalGoals} title="unDraw/PersonalGoals" />
+
+# PersonalGoals
+
+PersonalGoals component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={PersonalGoals.Primary} />
+
+## Usage
+
+```ts
+import { PersonalGoals } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <PersonalGoals />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

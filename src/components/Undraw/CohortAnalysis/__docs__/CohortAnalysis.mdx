@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CohortAnalysis from "./CohortAnalysis.stories.tsx";
+
+<Meta of={CohortAnalysis} title="unDraw/CohortAnalysis" />
+
+# CohortAnalysis
+
+CohortAnalysis component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CohortAnalysis.Primary} />
+
+## Usage
+
+```ts
+import { CohortAnalysis } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CohortAnalysis />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

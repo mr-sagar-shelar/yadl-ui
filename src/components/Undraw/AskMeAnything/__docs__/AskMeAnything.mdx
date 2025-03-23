@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AskMeAnything from "./AskMeAnything.stories.tsx";
+
+<Meta of={AskMeAnything} title="unDraw/AskMeAnything" />
+
+# AskMeAnything
+
+AskMeAnything component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={AskMeAnything.Primary} />
+
+## Usage
+
+```ts
+import { AskMeAnything } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AskMeAnything />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

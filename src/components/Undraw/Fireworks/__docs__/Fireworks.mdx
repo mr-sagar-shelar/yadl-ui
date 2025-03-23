@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Fireworks from "./Fireworks.stories.tsx";
+
+<Meta of={Fireworks} title="unDraw/Fireworks" />
+
+# Fireworks
+
+Fireworks component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Fireworks.Primary} />
+
+## Usage
+
+```ts
+import { Fireworks } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Fireworks />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

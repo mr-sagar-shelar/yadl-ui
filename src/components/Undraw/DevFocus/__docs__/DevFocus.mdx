@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DevFocus from "./DevFocus.stories.tsx";
+
+<Meta of={DevFocus} title="unDraw/DevFocus" />
+
+# DevFocus
+
+DevFocus component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={DevFocus.Primary} />
+
+## Usage
+
+```ts
+import { DevFocus } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DevFocus />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

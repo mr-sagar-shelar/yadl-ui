@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CurrentLocation from "./CurrentLocation.stories.tsx";
+
+<Meta of={CurrentLocation} title="unDraw/CurrentLocation" />
+
+# CurrentLocation
+
+CurrentLocation component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CurrentLocation.Primary} />
+
+## Usage
+
+```ts
+import { CurrentLocation } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CurrentLocation />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

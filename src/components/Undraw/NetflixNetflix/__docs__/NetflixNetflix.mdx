@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as NetflixNetflix from "./NetflixNetflix.stories.tsx";
+
+<Meta of={NetflixNetflix} title="unDraw/NetflixNetflix" />
+
+# NetflixNetflix
+
+NetflixNetflix component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={NetflixNetflix.Primary} />
+
+## Usage
+
+```ts
+import { NetflixNetflix } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <NetflixNetflix />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

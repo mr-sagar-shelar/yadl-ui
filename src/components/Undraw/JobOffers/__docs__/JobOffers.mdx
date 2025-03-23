@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as JobOffers from "./JobOffers.stories.tsx";
+
+<Meta of={JobOffers} title="unDraw/JobOffers" />
+
+# JobOffers
+
+JobOffers component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={JobOffers.Primary} />
+
+## Usage
+
+```ts
+import { JobOffers } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <JobOffers />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

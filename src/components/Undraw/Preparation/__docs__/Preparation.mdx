@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Preparation from "./Preparation.stories.tsx";
+
+<Meta of={Preparation} title="unDraw/Preparation" />
+
+# Preparation
+
+Preparation component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Preparation.Primary} />
+
+## Usage
+
+```ts
+import { Preparation } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Preparation />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

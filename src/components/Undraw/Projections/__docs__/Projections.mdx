@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Projections from "./Projections.stories.tsx";
+
+<Meta of={Projections} title="unDraw/Projections" />
+
+# Projections
+
+Projections component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Projections.Primary} />
+
+## Usage
+
+```ts
+import { Projections } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Projections />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Farming from "./Farming.stories.tsx";
+
+<Meta of={Farming} title="unDraw/Farming" />
+
+# Farming
+
+Farming component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Farming.Primary} />
+
+## Usage
+
+```ts
+import { Farming } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Farming />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

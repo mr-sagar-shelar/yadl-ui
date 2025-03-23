@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Newspaper from "./Newspaper.stories.tsx";
+
+<Meta of={Newspaper} title="unDraw/Newspaper" />
+
+# Newspaper
+
+Newspaper component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Newspaper.Primary} />
+
+## Usage
+
+```ts
+import { Newspaper } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Newspaper />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

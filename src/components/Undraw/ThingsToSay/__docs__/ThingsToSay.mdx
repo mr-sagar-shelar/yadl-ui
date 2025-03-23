@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ThingsToSay from "./ThingsToSay.stories.tsx";
+
+<Meta of={ThingsToSay} title="unDraw/ThingsToSay" />
+
+# ThingsToSay
+
+ThingsToSay component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ThingsToSay.Primary} />
+
+## Usage
+
+```ts
+import { ThingsToSay } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ThingsToSay />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

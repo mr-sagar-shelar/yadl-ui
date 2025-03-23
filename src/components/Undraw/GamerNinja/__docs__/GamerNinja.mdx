@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as GamerNinja from "./GamerNinja.stories.tsx";
+
+<Meta of={GamerNinja} title="unDraw/GamerNinja" />
+
+# GamerNinja
+
+GamerNinja component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={GamerNinja.Primary} />
+
+## Usage
+
+```ts
+import { GamerNinja } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <GamerNinja />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

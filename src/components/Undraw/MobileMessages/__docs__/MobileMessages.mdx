@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MobileMessages from "./MobileMessages.stories.tsx";
+
+<Meta of={MobileMessages} title="unDraw/MobileMessages" />
+
+# MobileMessages
+
+MobileMessages component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={MobileMessages.Primary} />
+
+## Usage
+
+```ts
+import { MobileMessages } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MobileMessages />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

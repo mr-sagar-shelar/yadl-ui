@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MomentToRemember from "./MomentToRemember.stories.tsx";
+
+<Meta of={MomentToRemember} title="unDraw/MomentToRemember" />
+
+# MomentToRemember
+
+MomentToRemember component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={MomentToRemember.Primary} />
+
+## Usage
+
+```ts
+import { MomentToRemember } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MomentToRemember />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

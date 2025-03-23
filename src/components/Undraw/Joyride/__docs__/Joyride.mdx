@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Joyride from "./Joyride.stories.tsx";
+
+<Meta of={Joyride} title="unDraw/Joyride" />
+
+# Joyride
+
+Joyride component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Joyride.Primary} />
+
+## Usage
+
+```ts
+import { Joyride } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Joyride />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

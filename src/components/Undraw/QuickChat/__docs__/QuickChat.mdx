@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as QuickChat from "./QuickChat.stories.tsx";
+
+<Meta of={QuickChat} title="unDraw/QuickChat" />
+
+# QuickChat
+
+QuickChat component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={QuickChat.Primary} />
+
+## Usage
+
+```ts
+import { QuickChat } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <QuickChat />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Messages from "./Messages.stories.tsx";
+
+<Meta of={Messages} title="unDraw/Messages" />
+
+# Messages
+
+Messages component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Messages.Primary} />
+
+## Usage
+
+```ts
+import { Messages } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Messages />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

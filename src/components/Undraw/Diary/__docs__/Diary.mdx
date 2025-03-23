@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Diary from "./Diary.stories.tsx";
+
+<Meta of={Diary} title="unDraw/Diary" />
+
+# Diary
+
+Diary component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Diary.Primary} />
+
+## Usage
+
+```ts
+import { Diary } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Diary />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

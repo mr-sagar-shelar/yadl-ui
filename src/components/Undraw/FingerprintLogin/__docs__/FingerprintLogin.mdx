@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as FingerprintLogin from "./FingerprintLogin.stories.tsx";
+
+<Meta of={FingerprintLogin} title="unDraw/FingerprintLogin" />
+
+# FingerprintLogin
+
+FingerprintLogin component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={FingerprintLogin.Primary} />
+
+## Usage
+
+```ts
+import { FingerprintLogin } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <FingerprintLogin />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as BirthdayGirl from "./BirthdayGirl.stories.tsx";
+
+<Meta of={BirthdayGirl} title="unDraw/BirthdayGirl" />
+
+# BirthdayGirl
+
+BirthdayGirl component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={BirthdayGirl.Primary} />
+
+## Usage
+
+```ts
+import { BirthdayGirl } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <BirthdayGirl />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

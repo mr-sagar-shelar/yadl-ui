@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ChatBot from "./ChatBot.stories.tsx";
+
+<Meta of={ChatBot} title="unDraw/ChatBot" />
+
+# ChatBot
+
+ChatBot component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ChatBot.Primary} />
+
+## Usage
+
+```ts
+import { ChatBot } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ChatBot />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

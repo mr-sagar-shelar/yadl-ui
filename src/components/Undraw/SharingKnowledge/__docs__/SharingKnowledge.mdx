@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SharingKnowledge from "./SharingKnowledge.stories.tsx";
+
+<Meta of={SharingKnowledge} title="unDraw/SharingKnowledge" />
+
+# SharingKnowledge
+
+SharingKnowledge component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SharingKnowledge.Primary} />
+
+## Usage
+
+```ts
+import { SharingKnowledge } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SharingKnowledge />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

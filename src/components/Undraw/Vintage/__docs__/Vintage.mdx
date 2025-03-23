@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Vintage from "./Vintage.stories.tsx";
+
+<Meta of={Vintage} title="unDraw/Vintage" />
+
+# Vintage
+
+Vintage component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Vintage.Primary} />
+
+## Usage
+
+```ts
+import { Vintage } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Vintage />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

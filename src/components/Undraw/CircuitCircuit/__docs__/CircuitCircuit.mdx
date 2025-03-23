@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CircuitCircuit from "./CircuitCircuit.stories.tsx";
+
+<Meta of={CircuitCircuit} title="unDraw/CircuitCircuit" />
+
+# CircuitCircuit
+
+CircuitCircuit component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CircuitCircuit.Primary} />
+
+## Usage
+
+```ts
+import { CircuitCircuit } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CircuitCircuit />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

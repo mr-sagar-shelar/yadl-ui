@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SmartResize from "./SmartResize.stories.tsx";
+
+<Meta of={SmartResize} title="unDraw/SmartResize" />
+
+# SmartResize
+
+SmartResize component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SmartResize.Primary} />
+
+## Usage
+
+```ts
+import { SmartResize } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SmartResize />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

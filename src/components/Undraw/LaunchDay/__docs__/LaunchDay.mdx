@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as LaunchDay from "./LaunchDay.stories.tsx";
+
+<Meta of={LaunchDay} title="unDraw/LaunchDay" />
+
+# LaunchDay
+
+LaunchDay component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={LaunchDay.Primary} />
+
+## Usage
+
+```ts
+import { LaunchDay } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <LaunchDay />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

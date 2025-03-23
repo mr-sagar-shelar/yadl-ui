@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as WorkTime from "./WorkTime.stories.tsx";
+
+<Meta of={WorkTime} title="unDraw/WorkTime" />
+
+# WorkTime
+
+WorkTime component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={WorkTime.Primary} />
+
+## Usage
+
+```ts
+import { WorkTime } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <WorkTime />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

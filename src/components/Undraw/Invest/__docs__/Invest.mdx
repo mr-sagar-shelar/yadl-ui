@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Invest from "./Invest.stories.tsx";
+
+<Meta of={Invest} title="unDraw/Invest" />
+
+# Invest
+
+Invest component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Invest.Primary} />
+
+## Usage
+
+```ts
+import { Invest } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Invest />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

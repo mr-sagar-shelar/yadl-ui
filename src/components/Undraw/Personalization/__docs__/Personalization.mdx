@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Personalization from "./Personalization.stories.tsx";
+
+<Meta of={Personalization} title="unDraw/Personalization" />
+
+# Personalization
+
+Personalization component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Personalization.Primary} />
+
+## Usage
+
+```ts
+import { Personalization } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Personalization />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

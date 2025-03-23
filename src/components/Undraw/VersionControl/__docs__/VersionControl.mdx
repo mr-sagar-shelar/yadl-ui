@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as VersionControl from "./VersionControl.stories.tsx";
+
+<Meta of={VersionControl} title="unDraw/VersionControl" />
+
+# VersionControl
+
+VersionControl component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={VersionControl.Primary} />
+
+## Usage
+
+```ts
+import { VersionControl } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <VersionControl />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

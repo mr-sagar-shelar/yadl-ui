@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Account from "./Account.stories.tsx";
+
+<Meta of={Account} title="unDraw/Account" />
+
+# Account
+
+Account component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Account.Primary} />
+
+## Usage
+
+```ts
+import { Account } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Account />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

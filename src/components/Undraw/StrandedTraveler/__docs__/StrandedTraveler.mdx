@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as StrandedTraveler from "./StrandedTraveler.stories.tsx";
+
+<Meta of={StrandedTraveler} title="unDraw/StrandedTraveler" />
+
+# StrandedTraveler
+
+StrandedTraveler component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={StrandedTraveler.Primary} />
+
+## Usage
+
+```ts
+import { StrandedTraveler } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <StrandedTraveler />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

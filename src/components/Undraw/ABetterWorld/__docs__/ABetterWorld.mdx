@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ABetterWorld from "./ABetterWorld.stories.tsx";
+
+<Meta of={ABetterWorld} title="unDraw/ABetterWorld" />
+
+# ABetterWorld
+
+ABetterWorld component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ABetterWorld.Primary} />
+
+## Usage
+
+```ts
+import { ABetterWorld } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ABetterWorld />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

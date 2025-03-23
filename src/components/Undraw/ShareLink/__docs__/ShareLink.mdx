@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ShareLink from "./ShareLink.stories.tsx";
+
+<Meta of={ShareLink} title="unDraw/ShareLink" />
+
+# ShareLink
+
+ShareLink component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ShareLink.Primary} />
+
+## Usage
+
+```ts
+import { ShareLink } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ShareLink />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

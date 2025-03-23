@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Followers from "./Followers.stories.tsx";
+
+<Meta of={Followers} title="unDraw/Followers" />
+
+# Followers
+
+Followers component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Followers.Primary} />
+
+## Usage
+
+```ts
+import { Followers } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Followers />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

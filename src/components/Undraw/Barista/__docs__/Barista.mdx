@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Barista from "./Barista.stories.tsx";
+
+<Meta of={Barista} title="unDraw/Barista" />
+
+# Barista
+
+Barista component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Barista.Primary} />
+
+## Usage
+
+```ts
+import { Barista } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Barista />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

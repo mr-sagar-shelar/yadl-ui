@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MovieNight from "./MovieNight.stories.tsx";
+
+<Meta of={MovieNight} title="unDraw/MovieNight" />
+
+# MovieNight
+
+MovieNight component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={MovieNight.Primary} />
+
+## Usage
+
+```ts
+import { MovieNight } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MovieNight />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

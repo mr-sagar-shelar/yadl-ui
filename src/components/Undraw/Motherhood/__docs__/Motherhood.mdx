@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Motherhood from "./Motherhood.stories.tsx";
+
+<Meta of={Motherhood} title="unDraw/Motherhood" />
+
+# Motherhood
+
+Motherhood component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Motherhood.Primary} />
+
+## Usage
+
+```ts
+import { Motherhood } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Motherhood />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as NuxtJs from "./NuxtJs.stories.tsx";
+
+<Meta of={NuxtJs} title="unDraw/NuxtJs" />
+
+# NuxtJs
+
+NuxtJs component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={NuxtJs.Primary} />
+
+## Usage
+
+```ts
+import { NuxtJs } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <NuxtJs />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Animating from "./Animating.stories.tsx";
+
+<Meta of={Animating} title="unDraw/Animating" />
+
+# Animating
+
+Animating component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Animating.Primary} />
+
+## Usage
+
+```ts
+import { Animating } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Animating />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as InteriorDesign from "./InteriorDesign.stories.tsx";
+
+<Meta of={InteriorDesign} title="unDraw/InteriorDesign" />
+
+# InteriorDesign
+
+InteriorDesign component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={InteriorDesign.Primary} />
+
+## Usage
+
+```ts
+import { InteriorDesign } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <InteriorDesign />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

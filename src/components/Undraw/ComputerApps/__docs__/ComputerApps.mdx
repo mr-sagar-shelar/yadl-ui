@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ComputerApps from "./ComputerApps.stories.tsx";
+
+<Meta of={ComputerApps} title="unDraw/ComputerApps" />
+
+# ComputerApps
+
+ComputerApps component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ComputerApps.Primary} />
+
+## Usage
+
+```ts
+import { ComputerApps } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ComputerApps />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

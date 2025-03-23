@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AssetSelection from "./AssetSelection.stories.tsx";
+
+<Meta of={AssetSelection} title="unDraw/AssetSelection" />
+
+# AssetSelection
+
+AssetSelection component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={AssetSelection.Primary} />
+
+## Usage
+
+```ts
+import { AssetSelection } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AssetSelection />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

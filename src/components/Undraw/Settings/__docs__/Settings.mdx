@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Settings from "./Settings.stories.tsx";
+
+<Meta of={Settings} title="unDraw/Settings" />
+
+# Settings
+
+Settings component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Settings.Primary} />
+
+## Usage
+
+```ts
+import { Settings } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Settings />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

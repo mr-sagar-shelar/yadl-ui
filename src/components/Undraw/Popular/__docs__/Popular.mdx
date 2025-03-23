@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Popular from "./Popular.stories.tsx";
+
+<Meta of={Popular} title="unDraw/Popular" />
+
+# Popular
+
+Popular component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Popular.Primary} />
+
+## Usage
+
+```ts
+import { Popular } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Popular />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

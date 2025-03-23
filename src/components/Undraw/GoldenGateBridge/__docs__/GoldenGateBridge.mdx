@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as GoldenGateBridge from "./GoldenGateBridge.stories.tsx";
+
+<Meta of={GoldenGateBridge} title="unDraw/GoldenGateBridge" />
+
+# GoldenGateBridge
+
+GoldenGateBridge component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={GoldenGateBridge.Primary} />
+
+## Usage
+
+```ts
+import { GoldenGateBridge } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <GoldenGateBridge />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

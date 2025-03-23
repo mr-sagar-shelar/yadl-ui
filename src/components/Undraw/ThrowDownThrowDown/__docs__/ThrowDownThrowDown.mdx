@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ThrowDownThrowDown from "./ThrowDownThrowDown.stories.tsx";
+
+<Meta of={ThrowDownThrowDown} title="unDraw/ThrowDownThrowDown" />
+
+# ThrowDownThrowDown
+
+ThrowDownThrowDown component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ThrowDownThrowDown.Primary} />
+
+## Usage
+
+```ts
+import { ThrowDownThrowDown } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ThrowDownThrowDown />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

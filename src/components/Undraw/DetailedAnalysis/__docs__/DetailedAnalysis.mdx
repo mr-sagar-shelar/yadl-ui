@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DetailedAnalysis from "./DetailedAnalysis.stories.tsx";
+
+<Meta of={DetailedAnalysis} title="unDraw/DetailedAnalysis" />
+
+# DetailedAnalysis
+
+DetailedAnalysis component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={DetailedAnalysis.Primary} />
+
+## Usage
+
+```ts
+import { DetailedAnalysis } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DetailedAnalysis />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

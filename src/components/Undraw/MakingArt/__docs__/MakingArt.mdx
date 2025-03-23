@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MakingArt from "./MakingArt.stories.tsx";
+
+<Meta of={MakingArt} title="unDraw/MakingArt" />
+
+# MakingArt
+
+MakingArt component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={MakingArt.Primary} />
+
+## Usage
+
+```ts
+import { MakingArt } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MakingArt />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

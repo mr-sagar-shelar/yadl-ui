@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SegmentAnalysis from "./SegmentAnalysis.stories.tsx";
+
+<Meta of={SegmentAnalysis} title="unDraw/SegmentAnalysis" />
+
+# SegmentAnalysis
+
+SegmentAnalysis component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SegmentAnalysis.Primary} />
+
+## Usage
+
+```ts
+import { SegmentAnalysis } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SegmentAnalysis />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

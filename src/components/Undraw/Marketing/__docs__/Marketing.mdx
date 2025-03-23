@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Marketing from "./Marketing.stories.tsx";
+
+<Meta of={Marketing} title="unDraw/Marketing" />
+
+# Marketing
+
+Marketing component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Marketing.Primary} />
+
+## Usage
+
+```ts
+import { Marketing } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Marketing />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

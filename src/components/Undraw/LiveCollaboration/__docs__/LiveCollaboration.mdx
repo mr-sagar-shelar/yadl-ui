@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as LiveCollaboration from "./LiveCollaboration.stories.tsx";
+
+<Meta of={LiveCollaboration} title="unDraw/LiveCollaboration" />
+
+# LiveCollaboration
+
+LiveCollaboration component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={LiveCollaboration.Primary} />
+
+## Usage
+
+```ts
+import { LiveCollaboration } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <LiveCollaboration />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

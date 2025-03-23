@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Switches from "./Switches.stories.tsx";
+
+<Meta of={Switches} title="unDraw/Switches" />
+
+# Switches
+
+Switches component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Switches.Primary} />
+
+## Usage
+
+```ts
+import { Switches } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Switches />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

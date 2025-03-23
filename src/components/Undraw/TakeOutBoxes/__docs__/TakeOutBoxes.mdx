@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as TakeOutBoxes from "./TakeOutBoxes.stories.tsx";
+
+<Meta of={TakeOutBoxes} title="unDraw/TakeOutBoxes" />
+
+# TakeOutBoxes
+
+TakeOutBoxes component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={TakeOutBoxes.Primary} />
+
+## Usage
+
+```ts
+import { TakeOutBoxes } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <TakeOutBoxes />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

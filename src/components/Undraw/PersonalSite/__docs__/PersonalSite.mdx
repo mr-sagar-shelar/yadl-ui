@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as PersonalSite from "./PersonalSite.stories.tsx";
+
+<Meta of={PersonalSite} title="unDraw/PersonalSite" />
+
+# PersonalSite
+
+PersonalSite component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={PersonalSite.Primary} />
+
+## Usage
+
+```ts
+import { PersonalSite } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <PersonalSite />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

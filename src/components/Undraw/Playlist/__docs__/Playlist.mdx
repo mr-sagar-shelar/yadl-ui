@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Playlist from "./Playlist.stories.tsx";
+
+<Meta of={Playlist} title="unDraw/Playlist" />
+
+# Playlist
+
+Playlist component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Playlist.Primary} />
+
+## Usage
+
+```ts
+import { Playlist } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Playlist />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

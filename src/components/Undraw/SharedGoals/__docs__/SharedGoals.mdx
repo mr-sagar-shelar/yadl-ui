@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SharedGoals from "./SharedGoals.stories.tsx";
+
+<Meta of={SharedGoals} title="unDraw/SharedGoals" />
+
+# SharedGoals
+
+SharedGoals component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SharedGoals.Primary} />
+
+## Usage
+
+```ts
+import { SharedGoals } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SharedGoals />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

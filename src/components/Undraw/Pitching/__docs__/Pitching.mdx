@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Pitching from "./Pitching.stories.tsx";
+
+<Meta of={Pitching} title="unDraw/Pitching" />
+
+# Pitching
+
+Pitching component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Pitching.Primary} />
+
+## Usage
+
+```ts
+import { Pitching } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Pitching />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AirSupport from "./AirSupport.stories.tsx";
+
+<Meta of={AirSupport} title="unDraw/AirSupport" />
+
+# AirSupport
+
+AirSupport component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={AirSupport.Primary} />
+
+## Usage
+
+```ts
+import { AirSupport } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AirSupport />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

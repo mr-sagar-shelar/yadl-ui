@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Searching from "./Searching.stories.tsx";
+
+<Meta of={Searching} title="unDraw/Searching" />
+
+# Searching
+
+Searching component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Searching.Primary} />
+
+## Usage
+
+```ts
+import { Searching } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Searching />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

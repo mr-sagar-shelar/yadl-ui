@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Drag from "./Drag.stories.tsx";
+
+<Meta of={Drag} title="unDraw/Drag" />
+
+# Drag
+
+Drag component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Drag.Primary} />
+
+## Usage
+
+```ts
+import { Drag } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Drag />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

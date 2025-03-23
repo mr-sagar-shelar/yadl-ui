@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Data from "./Data.stories.tsx";
+
+<Meta of={Data} title="unDraw/Data" />
+
+# Data
+
+Data component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Data.Primary} />
+
+## Usage
+
+```ts
+import { Data } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Data />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

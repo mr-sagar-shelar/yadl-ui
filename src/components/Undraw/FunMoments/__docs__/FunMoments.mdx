@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as FunMoments from "./FunMoments.stories.tsx";
+
+<Meta of={FunMoments} title="unDraw/FunMoments" />
+
+# FunMoments
+
+FunMoments component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={FunMoments.Primary} />
+
+## Usage
+
+```ts
+import { FunMoments } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <FunMoments />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as PhotoSharing from "./PhotoSharing.stories.tsx";
+
+<Meta of={PhotoSharing} title="unDraw/PhotoSharing" />
+
+# PhotoSharing
+
+PhotoSharing component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={PhotoSharing.Primary} />
+
+## Usage
+
+```ts
+import { PhotoSharing } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <PhotoSharing />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

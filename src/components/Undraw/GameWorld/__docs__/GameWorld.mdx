@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as GameWorld from "./GameWorld.stories.tsx";
+
+<Meta of={GameWorld} title="unDraw/GameWorld" />
+
+# GameWorld
+
+GameWorld component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={GameWorld.Primary} />
+
+## Usage
+
+```ts
+import { GameWorld } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <GameWorld />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

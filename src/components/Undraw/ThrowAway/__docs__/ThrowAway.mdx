@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ThrowAway from "./ThrowAway.stories.tsx";
+
+<Meta of={ThrowAway} title="unDraw/ThrowAway" />
+
+# ThrowAway
+
+ThrowAway component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ThrowAway.Primary} />
+
+## Usage
+
+```ts
+import { ThrowAway } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ThrowAway />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

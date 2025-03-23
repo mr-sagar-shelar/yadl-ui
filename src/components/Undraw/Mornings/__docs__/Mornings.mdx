@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Mornings from "./Mornings.stories.tsx";
+
+<Meta of={Mornings} title="unDraw/Mornings" />
+
+# Mornings
+
+Mornings component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Mornings.Primary} />
+
+## Usage
+
+```ts
+import { Mornings } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Mornings />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

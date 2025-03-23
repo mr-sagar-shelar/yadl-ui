@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DeveloperActivity from "./DeveloperActivity.stories.tsx";
+
+<Meta of={DeveloperActivity} title="unDraw/DeveloperActivity" />
+
+# DeveloperActivity
+
+DeveloperActivity component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={DeveloperActivity.Primary} />
+
+## Usage
+
+```ts
+import { DeveloperActivity } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DeveloperActivity />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

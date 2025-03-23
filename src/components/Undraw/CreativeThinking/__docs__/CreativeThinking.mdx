@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CreativeThinking from "./CreativeThinking.stories.tsx";
+
+<Meta of={CreativeThinking} title="unDraw/CreativeThinking" />
+
+# CreativeThinking
+
+CreativeThinking component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CreativeThinking.Primary} />
+
+## Usage
+
+```ts
+import { CreativeThinking } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CreativeThinking />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

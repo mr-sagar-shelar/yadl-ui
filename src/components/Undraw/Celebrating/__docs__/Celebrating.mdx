@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Celebrating from "./Celebrating.stories.tsx";
+
+<Meta of={Celebrating} title="unDraw/Celebrating" />
+
+# Celebrating
+
+Celebrating component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Celebrating.Primary} />
+
+## Usage
+
+```ts
+import { Celebrating } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Celebrating />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

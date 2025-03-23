@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ComingHome from "./ComingHome.stories.tsx";
+
+<Meta of={ComingHome} title="unDraw/ComingHome" />
+
+# ComingHome
+
+ComingHome component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ComingHome.Primary} />
+
+## Usage
+
+```ts
+import { ComingHome } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ComingHome />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

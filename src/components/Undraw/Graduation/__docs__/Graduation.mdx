@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Graduation from "./Graduation.stories.tsx";
+
+<Meta of={Graduation} title="unDraw/Graduation" />
+
+# Graduation
+
+Graduation component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Graduation.Primary} />
+
+## Usage
+
+```ts
+import { Graduation } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Graduation />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

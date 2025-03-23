@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Share from "./Share.stories.tsx";
+
+<Meta of={Share} title="unDraw/Share" />
+
+# Share
+
+Share component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Share.Primary} />
+
+## Usage
+
+```ts
+import { Share } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Share />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

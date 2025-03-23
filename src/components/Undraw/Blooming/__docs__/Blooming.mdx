@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Blooming from "./Blooming.stories.tsx";
+
+<Meta of={Blooming} title="unDraw/Blooming" />
+
+# Blooming
+
+Blooming component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Blooming.Primary} />
+
+## Usage
+
+```ts
+import { Blooming } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Blooming />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

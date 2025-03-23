@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ProfessionalCard from "./ProfessionalCard.stories.tsx";
+
+<Meta of={ProfessionalCard} title="unDraw/ProfessionalCard" />
+
+# ProfessionalCard
+
+ProfessionalCard component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ProfessionalCard.Primary} />
+
+## Usage
+
+```ts
+import { ProfessionalCard } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ProfessionalCard />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

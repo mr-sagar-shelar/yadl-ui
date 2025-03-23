@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ShowingSupport from "./ShowingSupport.stories.tsx";
+
+<Meta of={ShowingSupport} title="unDraw/ShowingSupport" />
+
+# ShowingSupport
+
+ShowingSupport component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ShowingSupport.Primary} />
+
+## Usage
+
+```ts
+import { ShowingSupport } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ShowingSupport />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

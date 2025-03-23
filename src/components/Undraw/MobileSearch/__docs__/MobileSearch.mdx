@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MobileSearch from "./MobileSearch.stories.tsx";
+
+<Meta of={MobileSearch} title="unDraw/MobileSearch" />
+
+# MobileSearch
+
+MobileSearch component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={MobileSearch.Primary} />
+
+## Usage
+
+```ts
+import { MobileSearch } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MobileSearch />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

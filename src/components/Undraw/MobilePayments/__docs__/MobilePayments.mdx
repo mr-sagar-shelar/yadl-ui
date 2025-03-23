@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MobilePayments from "./MobilePayments.stories.tsx";
+
+<Meta of={MobilePayments} title="unDraw/MobilePayments" />
+
+# MobilePayments
+
+MobilePayments component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={MobilePayments.Primary} />
+
+## Usage
+
+```ts
+import { MobilePayments } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MobilePayments />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

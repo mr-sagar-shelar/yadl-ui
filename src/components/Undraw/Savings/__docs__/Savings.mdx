@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Savings from "./Savings.stories.tsx";
+
+<Meta of={Savings} title="unDraw/Savings" />
+
+# Savings
+
+Savings component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Savings.Primary} />
+
+## Usage
+
+```ts
+import { Savings } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Savings />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

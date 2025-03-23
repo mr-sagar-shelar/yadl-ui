@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Growing from "./Growing.stories.tsx";
+
+<Meta of={Growing} title="unDraw/Growing" />
+
+# Growing
+
+Growing component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Growing.Primary} />
+
+## Usage
+
+```ts
+import { Growing } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Growing />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

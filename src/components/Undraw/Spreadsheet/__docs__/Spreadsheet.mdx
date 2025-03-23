@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Spreadsheet from "./Spreadsheet.stories.tsx";
+
+<Meta of={Spreadsheet} title="unDraw/Spreadsheet" />
+
+# Spreadsheet
+
+Spreadsheet component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Spreadsheet.Primary} />
+
+## Usage
+
+```ts
+import { Spreadsheet } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Spreadsheet />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

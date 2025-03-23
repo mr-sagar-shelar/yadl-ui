@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as VideoInfluencer from "./VideoInfluencer.stories.tsx";
+
+<Meta of={VideoInfluencer} title="unDraw/VideoInfluencer" />
+
+# VideoInfluencer
+
+VideoInfluencer component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={VideoInfluencer.Primary} />
+
+## Usage
+
+```ts
+import { VideoInfluencer } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <VideoInfluencer />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

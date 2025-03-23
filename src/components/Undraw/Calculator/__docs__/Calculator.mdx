@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Calculator from "./Calculator.stories.tsx";
+
+<Meta of={Calculator} title="unDraw/Calculator" />
+
+# Calculator
+
+Calculator component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Calculator.Primary} />
+
+## Usage
+
+```ts
+import { Calculator } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Calculator />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

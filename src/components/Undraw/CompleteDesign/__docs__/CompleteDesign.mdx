@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CompleteDesign from "./CompleteDesign.stories.tsx";
+
+<Meta of={CompleteDesign} title="unDraw/CompleteDesign" />
+
+# CompleteDesign
+
+CompleteDesign component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CompleteDesign.Primary} />
+
+## Usage
+
+```ts
+import { CompleteDesign } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CompleteDesign />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

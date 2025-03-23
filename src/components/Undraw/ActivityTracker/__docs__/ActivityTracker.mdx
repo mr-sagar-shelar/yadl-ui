@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ActivityTracker from "./ActivityTracker.stories.tsx";
+
+<Meta of={ActivityTracker} title="unDraw/ActivityTracker" />
+
+# ActivityTracker
+
+ActivityTracker component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ActivityTracker.Primary} />
+
+## Usage
+
+```ts
+import { ActivityTracker } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ActivityTracker />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as FormingIdeas from "./FormingIdeas.stories.tsx";
+
+<Meta of={FormingIdeas} title="unDraw/FormingIdeas" />
+
+# FormingIdeas
+
+FormingIdeas component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={FormingIdeas.Primary} />
+
+## Usage
+
+```ts
+import { FormingIdeas } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <FormingIdeas />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

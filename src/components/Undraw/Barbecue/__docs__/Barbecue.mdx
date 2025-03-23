@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Barbecue from "./Barbecue.stories.tsx";
+
+<Meta of={Barbecue} title="unDraw/Barbecue" />
+
+# Barbecue
+
+Barbecue component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Barbecue.Primary} />
+
+## Usage
+
+```ts
+import { Barbecue } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Barbecue />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

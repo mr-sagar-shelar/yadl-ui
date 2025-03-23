@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Swipe from "./Swipe.stories.tsx";
+
+<Meta of={Swipe} title="unDraw/Swipe" />
+
+# Swipe
+
+Swipe component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Swipe.Primary} />
+
+## Usage
+
+```ts
+import { Swipe } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Swipe />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Wilderness from "./Wilderness.stories.tsx";
+
+<Meta of={Wilderness} title="unDraw/Wilderness" />
+
+# Wilderness
+
+Wilderness component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Wilderness.Primary} />
+
+## Usage
+
+```ts
+import { Wilderness } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Wilderness />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

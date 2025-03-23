@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as FilingSystem from "./FilingSystem.stories.tsx";
+
+<Meta of={FilingSystem} title="unDraw/FilingSystem" />
+
+# FilingSystem
+
+FilingSystem component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={FilingSystem.Primary} />
+
+## Usage
+
+```ts
+import { FilingSystem } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <FilingSystem />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

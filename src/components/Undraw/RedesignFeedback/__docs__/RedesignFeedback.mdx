@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as RedesignFeedback from "./RedesignFeedback.stories.tsx";
+
+<Meta of={RedesignFeedback} title="unDraw/RedesignFeedback" />
+
+# RedesignFeedback
+
+RedesignFeedback component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={RedesignFeedback.Primary} />
+
+## Usage
+
+```ts
+import { RedesignFeedback } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <RedesignFeedback />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

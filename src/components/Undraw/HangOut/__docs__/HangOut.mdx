@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as HangOut from "./HangOut.stories.tsx";
+
+<Meta of={HangOut} title="unDraw/HangOut" />
+
+# HangOut
+
+HangOut component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={HangOut.Primary} />
+
+## Usage
+
+```ts
+import { HangOut } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <HangOut />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

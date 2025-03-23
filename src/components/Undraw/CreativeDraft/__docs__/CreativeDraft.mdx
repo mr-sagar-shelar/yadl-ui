@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CreativeDraft from "./CreativeDraft.stories.tsx";
+
+<Meta of={CreativeDraft} title="unDraw/CreativeDraft" />
+
+# CreativeDraft
+
+CreativeDraft component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CreativeDraft.Primary} />
+
+## Usage
+
+```ts
+import { CreativeDraft } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CreativeDraft />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

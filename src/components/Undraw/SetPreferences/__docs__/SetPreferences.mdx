@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SetPreferences from "./SetPreferences.stories.tsx";
+
+<Meta of={SetPreferences} title="unDraw/SetPreferences" />
+
+# SetPreferences
+
+SetPreferences component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SetPreferences.Primary} />
+
+## Usage
+
+```ts
+import { SetPreferences } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SetPreferences />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

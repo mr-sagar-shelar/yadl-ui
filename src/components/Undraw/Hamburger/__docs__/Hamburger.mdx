@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Hamburger from "./Hamburger.stories.tsx";
+
+<Meta of={Hamburger} title="unDraw/Hamburger" />
+
+# Hamburger
+
+Hamburger component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Hamburger.Primary} />
+
+## Usage
+
+```ts
+import { Hamburger } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Hamburger />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

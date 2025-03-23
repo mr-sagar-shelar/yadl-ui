@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as PullRequest from "./PullRequest.stories.tsx";
+
+<Meta of={PullRequest} title="unDraw/PullRequest" />
+
+# PullRequest
+
+PullRequest component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={PullRequest.Primary} />
+
+## Usage
+
+```ts
+import { PullRequest } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <PullRequest />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

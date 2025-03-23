@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Typing from "./Typing.stories.tsx";
+
+<Meta of={Typing} title="unDraw/Typing" />
+
+# Typing
+
+Typing component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Typing.Primary} />
+
+## Usage
+
+```ts
+import { Typing } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Typing />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

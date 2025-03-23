@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DeliveryAddress from "./DeliveryAddress.stories.tsx";
+
+<Meta of={DeliveryAddress} title="unDraw/DeliveryAddress" />
+
+# DeliveryAddress
+
+DeliveryAddress component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={DeliveryAddress.Primary} />
+
+## Usage
+
+```ts
+import { DeliveryAddress } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DeliveryAddress />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

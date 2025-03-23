@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as RunningWild from "./RunningWild.stories.tsx";
+
+<Meta of={RunningWild} title="unDraw/RunningWild" />
+
+# RunningWild
+
+RunningWild component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={RunningWild.Primary} />
+
+## Usage
+
+```ts
+import { RunningWild } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <RunningWild />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

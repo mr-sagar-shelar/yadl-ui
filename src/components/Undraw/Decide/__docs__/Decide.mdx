@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Decide from "./Decide.stories.tsx";
+
+<Meta of={Decide} title="unDraw/Decide" />
+
+# Decide
+
+Decide component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Decide.Primary} />
+
+## Usage
+
+```ts
+import { Decide } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Decide />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

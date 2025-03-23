@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CoffeeTime from "./CoffeeTime.stories.tsx";
+
+<Meta of={CoffeeTime} title="unDraw/CoffeeTime" />
+
+# CoffeeTime
+
+CoffeeTime component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CoffeeTime.Primary} />
+
+## Usage
+
+```ts
+import { CoffeeTime } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CoffeeTime />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

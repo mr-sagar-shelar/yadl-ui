@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as RandomThoughts from "./RandomThoughts.stories.tsx";
+
+<Meta of={RandomThoughts} title="unDraw/RandomThoughts" />
+
+# RandomThoughts
+
+RandomThoughts component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={RandomThoughts.Primary} />
+
+## Usage
+
+```ts
+import { RandomThoughts } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <RandomThoughts />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

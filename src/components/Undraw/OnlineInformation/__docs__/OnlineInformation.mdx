@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as OnlineInformation from "./OnlineInformation.stories.tsx";
+
+<Meta of={OnlineInformation} title="unDraw/OnlineInformation" />
+
+# OnlineInformation
+
+OnlineInformation component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={OnlineInformation.Primary} />
+
+## Usage
+
+```ts
+import { OnlineInformation } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <OnlineInformation />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

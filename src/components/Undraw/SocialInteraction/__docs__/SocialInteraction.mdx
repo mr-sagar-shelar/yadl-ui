@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SocialInteraction from "./SocialInteraction.stories.tsx";
+
+<Meta of={SocialInteraction} title="unDraw/SocialInteraction" />
+
+# SocialInteraction
+
+SocialInteraction component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SocialInteraction.Primary} />
+
+## Usage
+
+```ts
+import { SocialInteraction } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SocialInteraction />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

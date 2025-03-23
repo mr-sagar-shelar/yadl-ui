@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Charts from "./Charts.stories.tsx";
+
+<Meta of={Charts} title="unDraw/Charts" />
+
+# Charts
+
+Charts component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Charts.Primary} />
+
+## Usage
+
+```ts
+import { Charts } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Charts />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

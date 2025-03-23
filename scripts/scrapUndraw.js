@@ -19,7 +19,7 @@ import { transform } from "@svgr/core";
   await page.waitForLoadState("domcontentloaded");
   let indexFileContents = "";
 
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < 36; i++) {
     const allIllustrations = await page
       .locator(".appcontainer")
       .nth(2)
@@ -70,14 +70,10 @@ import { transform } from "@svgr/core";
         );
       } catch (error) {
         // console.error(`${iconName}\n`);
-        fs.appendFile(
-          "./Errors.txt",
-          `Error: ${iconNameNew}\n`,
-          function (err) {
-            if (err) throw err;
-            // console.log("Saved!");
-          },
-        );
+        fs.appendFile("./Errors.txt", `Error: ${iconName}\n`, function (err) {
+          if (err) throw err;
+          // console.log("Saved!");
+        });
       }
       indexFileContents = `${indexFileContents}\nexport * from "./${iconName}";`;
     }
@@ -87,7 +83,8 @@ import { transform } from "@svgr/core";
     await page.waitForTimeout(1000);
     // await page.getByText("Next ").click();
     await page.getByRole("link", { name: "Next" }).click();
-    await page.waitForTimeout(1000);
+    await page.waitForLoadState("domcontentloaded");
+    await page.waitForTimeout(3000);
   }
 
   // let currentIcon = await allIllustrations.nth(2).allTextContents();

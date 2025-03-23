@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as BusinessChat from "./BusinessChat.stories.tsx";
+
+<Meta of={BusinessChat} title="unDraw/BusinessChat" />
+
+# BusinessChat
+
+BusinessChat component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={BusinessChat.Primary} />
+
+## Usage
+
+```ts
+import { BusinessChat } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <BusinessChat />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

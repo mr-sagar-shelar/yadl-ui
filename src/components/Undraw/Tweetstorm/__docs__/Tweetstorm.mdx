@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Tweetstorm from "./Tweetstorm.stories.tsx";
+
+<Meta of={Tweetstorm} title="unDraw/Tweetstorm" />
+
+# Tweetstorm
+
+Tweetstorm component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Tweetstorm.Primary} />
+
+## Usage
+
+```ts
+import { Tweetstorm } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Tweetstorm />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

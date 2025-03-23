@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as TouristMap from "./TouristMap.stories.tsx";
+
+<Meta of={TouristMap} title="unDraw/TouristMap" />
+
+# TouristMap
+
+TouristMap component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={TouristMap.Primary} />
+
+## Usage
+
+```ts
+import { TouristMap } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <TouristMap />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

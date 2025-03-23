@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as NewYear2022 from "./NewYear2022.stories.tsx";
+
+<Meta of={NewYear2022} title="unDraw/NewYear2022" />
+
+# NewYear2022
+
+NewYear2022 component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={NewYear2022.Primary} />
+
+## Usage
+
+```ts
+import { NewYear2022 } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <NewYear2022 />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

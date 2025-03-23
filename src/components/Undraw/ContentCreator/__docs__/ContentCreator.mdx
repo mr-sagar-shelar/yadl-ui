@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ContentCreator from "./ContentCreator.stories.tsx";
+
+<Meta of={ContentCreator} title="unDraw/ContentCreator" />
+
+# ContentCreator
+
+ContentCreator component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ContentCreator.Primary} />
+
+## Usage
+
+```ts
+import { ContentCreator } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ContentCreator />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

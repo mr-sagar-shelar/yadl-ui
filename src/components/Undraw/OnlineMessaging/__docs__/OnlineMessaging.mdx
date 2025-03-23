@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as OnlineMessaging from "./OnlineMessaging.stories.tsx";
+
+<Meta of={OnlineMessaging} title="unDraw/OnlineMessaging" />
+
+# OnlineMessaging
+
+OnlineMessaging component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={OnlineMessaging.Primary} />
+
+## Usage
+
+```ts
+import { OnlineMessaging } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <OnlineMessaging />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

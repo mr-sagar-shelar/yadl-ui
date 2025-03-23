@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as EverywhereTogether from "./EverywhereTogether.stories.tsx";
+
+<Meta of={EverywhereTogether} title="unDraw/EverywhereTogether" />
+
+# EverywhereTogether
+
+EverywhereTogether component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={EverywhereTogether.Primary} />
+
+## Usage
+
+```ts
+import { EverywhereTogether } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <EverywhereTogether />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

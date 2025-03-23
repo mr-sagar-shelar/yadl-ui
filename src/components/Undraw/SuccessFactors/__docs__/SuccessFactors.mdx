@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SuccessFactors from "./SuccessFactors.stories.tsx";
+
+<Meta of={SuccessFactors} title="unDraw/SuccessFactors" />
+
+# SuccessFactors
+
+SuccessFactors component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SuccessFactors.Primary} />
+
+## Usage
+
+```ts
+import { SuccessFactors } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SuccessFactors />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

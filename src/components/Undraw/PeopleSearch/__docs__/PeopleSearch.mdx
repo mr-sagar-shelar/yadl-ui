@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as PeopleSearch from "./PeopleSearch.stories.tsx";
+
+<Meta of={PeopleSearch} title="unDraw/PeopleSearch" />
+
+# PeopleSearch
+
+PeopleSearch component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={PeopleSearch.Primary} />
+
+## Usage
+
+```ts
+import { PeopleSearch } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <PeopleSearch />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

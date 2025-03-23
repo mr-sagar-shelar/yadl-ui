@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Finance from "./Finance.stories.tsx";
+
+<Meta of={Finance} title="unDraw/Finance" />
+
+# Finance
+
+Finance component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Finance.Primary} />
+
+## Usage
+
+```ts
+import { Finance } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Finance />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

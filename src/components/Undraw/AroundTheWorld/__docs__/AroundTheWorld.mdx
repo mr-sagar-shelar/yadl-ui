@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AroundTheWorld from "./AroundTheWorld.stories.tsx";
+
+<Meta of={AroundTheWorld} title="unDraw/AroundTheWorld" />
+
+# AroundTheWorld
+
+AroundTheWorld component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={AroundTheWorld.Primary} />
+
+## Usage
+
+```ts
+import { AroundTheWorld } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AroundTheWorld />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as PhoneCall from "./PhoneCall.stories.tsx";
+
+<Meta of={PhoneCall} title="unDraw/PhoneCall" />
+
+# PhoneCall
+
+PhoneCall component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={PhoneCall.Primary} />
+
+## Usage
+
+```ts
+import { PhoneCall } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <PhoneCall />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

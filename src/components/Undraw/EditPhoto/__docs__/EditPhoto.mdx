@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as EditPhoto from "./EditPhoto.stories.tsx";
+
+<Meta of={EditPhoto} title="unDraw/EditPhoto" />
+
+# EditPhoto
+
+EditPhoto component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={EditPhoto.Primary} />
+
+## Usage
+
+```ts
+import { EditPhoto } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <EditPhoto />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

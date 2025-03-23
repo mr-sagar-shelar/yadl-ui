@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Visualization from "./Visualization.stories.tsx";
+
+<Meta of={Visualization} title="unDraw/Visualization" />
+
+# Visualization
+
+Visualization component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Visualization.Primary} />
+
+## Usage
+
+```ts
+import { Visualization } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Visualization />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

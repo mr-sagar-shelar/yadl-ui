@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AtHome from "./AtHome.stories.tsx";
+
+<Meta of={AtHome} title="unDraw/AtHome" />
+
+# AtHome
+
+AtHome component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={AtHome.Primary} />
+
+## Usage
+
+```ts
+import { AtHome } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AtHome />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

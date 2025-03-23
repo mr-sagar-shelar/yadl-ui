@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AICodeGeneration from "./AICodeGeneration.stories.tsx";
+
+<Meta of={AICodeGeneration} title="unDraw/AICodeGeneration" />
+
+# AICodeGeneration
+
+AICodeGeneration component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={AICodeGeneration.Primary} />
+
+## Usage
+
+```ts
+import { AICodeGeneration } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AICodeGeneration />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

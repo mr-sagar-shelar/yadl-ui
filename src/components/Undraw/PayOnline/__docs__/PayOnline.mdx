@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as PayOnline from "./PayOnline.stories.tsx";
+
+<Meta of={PayOnline} title="unDraw/PayOnline" />
+
+# PayOnline
+
+PayOnline component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={PayOnline.Primary} />
+
+## Usage
+
+```ts
+import { PayOnline } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <PayOnline />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

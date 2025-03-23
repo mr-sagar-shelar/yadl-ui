@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as BookLover from "./BookLover.stories.tsx";
+
+<Meta of={BookLover} title="unDraw/BookLover" />
+
+# BookLover
+
+BookLover component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={BookLover.Primary} />
+
+## Usage
+
+```ts
+import { BookLover } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <BookLover />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as PrivateData from "./PrivateData.stories.tsx";
+
+<Meta of={PrivateData} title="unDraw/PrivateData" />
+
+# PrivateData
+
+PrivateData component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={PrivateData.Primary} />
+
+## Usage
+
+```ts
+import { PrivateData } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <PrivateData />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as NotFound from "./NotFound.stories.tsx";
+
+<Meta of={NotFound} title="unDraw/NotFound" />
+
+# NotFound
+
+NotFound component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={NotFound.Primary} />
+
+## Usage
+
+```ts
+import { NotFound } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <NotFound />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

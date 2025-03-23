@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Explore from "./Explore.stories.tsx";
+
+<Meta of={Explore} title="unDraw/Explore" />
+
+# Explore
+
+Explore component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Explore.Primary} />
+
+## Usage
+
+```ts
+import { Explore } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Explore />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SocialDashboard from "./SocialDashboard.stories.tsx";
+
+<Meta of={SocialDashboard} title="unDraw/SocialDashboard" />
+
+# SocialDashboard
+
+SocialDashboard component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SocialDashboard.Primary} />
+
+## Usage
+
+```ts
+import { SocialDashboard } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SocialDashboard />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

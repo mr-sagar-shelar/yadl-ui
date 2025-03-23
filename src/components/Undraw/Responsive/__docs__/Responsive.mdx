@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Responsive from "./Responsive.stories.tsx";
+
+<Meta of={Responsive} title="unDraw/Responsive" />
+
+# Responsive
+
+Responsive component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Responsive.Primary} />
+
+## Usage
+
+```ts
+import { Responsive } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Responsive />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as StaticWebsite from "./StaticWebsite.stories.tsx";
+
+<Meta of={StaticWebsite} title="unDraw/StaticWebsite" />
+
+# StaticWebsite
+
+StaticWebsite component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={StaticWebsite.Primary} />
+
+## Usage
+
+```ts
+import { StaticWebsite } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <StaticWebsite />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

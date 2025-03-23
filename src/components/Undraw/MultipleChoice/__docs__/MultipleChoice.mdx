@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MultipleChoice from "./MultipleChoice.stories.tsx";
+
+<Meta of={MultipleChoice} title="unDraw/MultipleChoice" />
+
+# MultipleChoice
+
+MultipleChoice component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={MultipleChoice.Primary} />
+
+## Usage
+
+```ts
+import { MultipleChoice } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MultipleChoice />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

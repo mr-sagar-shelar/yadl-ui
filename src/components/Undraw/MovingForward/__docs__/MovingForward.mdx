@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MovingForward from "./MovingForward.stories.tsx";
+
+<Meta of={MovingForward} title="unDraw/MovingForward" />
+
+# MovingForward
+
+MovingForward component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={MovingForward.Primary} />
+
+## Usage
+
+```ts
+import { MovingForward } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MovingForward />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

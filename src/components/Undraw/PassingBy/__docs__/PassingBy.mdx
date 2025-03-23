@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as PassingBy from "./PassingBy.stories.tsx";
+
+<Meta of={PassingBy} title="unDraw/PassingBy" />
+
+# PassingBy
+
+PassingBy component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={PassingBy.Primary} />
+
+## Usage
+
+```ts
+import { PassingBy } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <PassingBy />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

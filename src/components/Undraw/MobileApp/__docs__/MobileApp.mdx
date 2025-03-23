@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MobileApp from "./MobileApp.stories.tsx";
+
+<Meta of={MobileApp} title="unDraw/MobileApp" />
+
+# MobileApp
+
+MobileApp component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={MobileApp.Primary} />
+
+## Usage
+
+```ts
+import { MobileApp } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MobileApp />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

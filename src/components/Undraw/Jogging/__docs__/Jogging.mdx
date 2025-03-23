@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Jogging from "./Jogging.stories.tsx";
+
+<Meta of={Jogging} title="unDraw/Jogging" />
+
+# Jogging
+
+Jogging component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Jogging.Primary} />
+
+## Usage
+
+```ts
+import { Jogging } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Jogging />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

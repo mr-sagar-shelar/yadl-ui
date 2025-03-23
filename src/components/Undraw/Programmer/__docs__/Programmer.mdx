@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Programmer from "./Programmer.stories.tsx";
+
+<Meta of={Programmer} title="unDraw/Programmer" />
+
+# Programmer
+
+Programmer component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Programmer.Primary} />
+
+## Usage
+
+```ts
+import { Programmer } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Programmer />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

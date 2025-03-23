@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Reminder from "./Reminder.stories.tsx";
+
+<Meta of={Reminder} title="unDraw/Reminder" />
+
+# Reminder
+
+Reminder component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Reminder.Primary} />
+
+## Usage
+
+```ts
+import { Reminder } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Reminder />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

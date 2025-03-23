@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Forms from "./Forms.stories.tsx";
+
+<Meta of={Forms} title="unDraw/Forms" />
+
+# Forms
+
+Forms component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Forms.Primary} />
+
+## Usage
+
+```ts
+import { Forms } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Forms />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

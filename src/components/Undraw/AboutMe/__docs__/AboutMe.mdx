@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AboutMe from "./AboutMe.stories.tsx";
+
+<Meta of={AboutMe} title="unDraw/AboutMe" />
+
+# AboutMe
+
+AboutMe component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={AboutMe.Primary} />
+
+## Usage
+
+```ts
+import { AboutMe } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AboutMe />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

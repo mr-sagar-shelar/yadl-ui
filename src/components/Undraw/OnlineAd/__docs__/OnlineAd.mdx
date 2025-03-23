@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as OnlineAd from "./OnlineAd.stories.tsx";
+
+<Meta of={OnlineAd} title="unDraw/OnlineAd" />
+
+# OnlineAd
+
+OnlineAd component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={OnlineAd.Primary} />
+
+## Usage
+
+```ts
+import { OnlineAd } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <OnlineAd />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

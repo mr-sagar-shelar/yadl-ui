@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DoneChecking from "./DoneChecking.stories.tsx";
+
+<Meta of={DoneChecking} title="unDraw/DoneChecking" />
+
+# DoneChecking
+
+DoneChecking component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={DoneChecking.Primary} />
+
+## Usage
+
+```ts
+import { DoneChecking } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DoneChecking />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

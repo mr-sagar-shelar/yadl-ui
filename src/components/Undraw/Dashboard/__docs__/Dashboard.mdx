@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Dashboard from "./Dashboard.stories.tsx";
+
+<Meta of={Dashboard} title="unDraw/Dashboard" />
+
+# Dashboard
+
+Dashboard component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Dashboard.Primary} />
+
+## Usage
+
+```ts
+import { Dashboard } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Dashboard />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

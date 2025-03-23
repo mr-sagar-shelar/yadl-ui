@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SocialIdeas from "./SocialIdeas.stories.tsx";
+
+<Meta of={SocialIdeas} title="unDraw/SocialIdeas" />
+
+# SocialIdeas
+
+SocialIdeas component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SocialIdeas.Primary} />
+
+## Usage
+
+```ts
+import { SocialIdeas } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SocialIdeas />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

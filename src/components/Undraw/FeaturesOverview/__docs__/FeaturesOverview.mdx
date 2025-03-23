@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as FeaturesOverview from "./FeaturesOverview.stories.tsx";
+
+<Meta of={FeaturesOverview} title="unDraw/FeaturesOverview" />
+
+# FeaturesOverview
+
+FeaturesOverview component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={FeaturesOverview.Primary} />
+
+## Usage
+
+```ts
+import { FeaturesOverview } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <FeaturesOverview />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DatePicker from "./DatePicker.stories.tsx";
+
+<Meta of={DatePicker} title="unDraw/DatePicker" />
+
+# DatePicker
+
+DatePicker component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={DatePicker.Primary} />
+
+## Usage
+
+```ts
+import { DatePicker } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DatePicker />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

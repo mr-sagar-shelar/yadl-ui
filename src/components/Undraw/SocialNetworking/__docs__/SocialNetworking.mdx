@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SocialNetworking from "./SocialNetworking.stories.tsx";
+
+<Meta of={SocialNetworking} title="unDraw/SocialNetworking" />
+
+# SocialNetworking
+
+SocialNetworking component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SocialNetworking.Primary} />
+
+## Usage
+
+```ts
+import { SocialNetworking } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SocialNetworking />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

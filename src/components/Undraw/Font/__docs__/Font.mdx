@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Font from "./Font.stories.tsx";
+
+<Meta of={Font} title="unDraw/Font" />
+
+# Font
+
+Font component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Font.Primary} />
+
+## Usage
+
+```ts
+import { Font } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Font />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

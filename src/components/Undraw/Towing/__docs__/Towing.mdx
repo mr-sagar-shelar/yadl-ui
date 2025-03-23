@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Towing from "./Towing.stories.tsx";
+
+<Meta of={Towing} title="unDraw/Towing" />
+
+# Towing
+
+Towing component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Towing.Primary} />
+
+## Usage
+
+```ts
+import { Towing } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Towing />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

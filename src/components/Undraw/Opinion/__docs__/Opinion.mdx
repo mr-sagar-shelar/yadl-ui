@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Opinion from "./Opinion.stories.tsx";
+
+<Meta of={Opinion} title="unDraw/Opinion" />
+
+# Opinion
+
+Opinion component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Opinion.Primary} />
+
+## Usage
+
+```ts
+import { Opinion } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Opinion />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

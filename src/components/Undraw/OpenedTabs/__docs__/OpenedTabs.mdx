@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as OpenedTabs from "./OpenedTabs.stories.tsx";
+
+<Meta of={OpenedTabs} title="unDraw/OpenedTabs" />
+
+# OpenedTabs
+
+OpenedTabs component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={OpenedTabs.Primary} />
+
+## Usage
+
+```ts
+import { OpenedTabs } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <OpenedTabs />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

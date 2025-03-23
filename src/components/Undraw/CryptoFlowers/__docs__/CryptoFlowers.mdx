@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CryptoFlowers from "./CryptoFlowers.stories.tsx";
+
+<Meta of={CryptoFlowers} title="unDraw/CryptoFlowers" />
+
+# CryptoFlowers
+
+CryptoFlowers component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CryptoFlowers.Primary} />
+
+## Usage
+
+```ts
+import { CryptoFlowers } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CryptoFlowers />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

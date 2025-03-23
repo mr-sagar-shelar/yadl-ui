@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MonthlyUsers from "./MonthlyUsers.stories.tsx";
+
+<Meta of={MonthlyUsers} title="unDraw/MonthlyUsers" />
+
+# MonthlyUsers
+
+MonthlyUsers component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={MonthlyUsers.Primary} />
+
+## Usage
+
+```ts
+import { MonthlyUsers } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MonthlyUsers />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

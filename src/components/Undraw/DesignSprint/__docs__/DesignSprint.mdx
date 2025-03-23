@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DesignSprint from "./DesignSprint.stories.tsx";
+
+<Meta of={DesignSprint} title="unDraw/DesignSprint" />
+
+# DesignSprint
+
+DesignSprint component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={DesignSprint.Primary} />
+
+## Usage
+
+```ts
+import { DesignSprint } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DesignSprint />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

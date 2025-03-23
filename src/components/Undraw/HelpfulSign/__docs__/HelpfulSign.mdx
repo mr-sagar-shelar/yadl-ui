@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as HelpfulSign from "./HelpfulSign.stories.tsx";
+
+<Meta of={HelpfulSign} title="unDraw/HelpfulSign" />
+
+# HelpfulSign
+
+HelpfulSign component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={HelpfulSign.Primary} />
+
+## Usage
+
+```ts
+import { HelpfulSign } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <HelpfulSign />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as FilesSent from "./FilesSent.stories.tsx";
+
+<Meta of={FilesSent} title="unDraw/FilesSent" />
+
+# FilesSent
+
+FilesSent component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={FilesSent.Primary} />
+
+## Usage
+
+```ts
+import { FilesSent } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <FilesSent />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

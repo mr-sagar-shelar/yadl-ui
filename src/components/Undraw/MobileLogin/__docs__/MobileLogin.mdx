@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MobileLogin from "./MobileLogin.stories.tsx";
+
+<Meta of={MobileLogin} title="unDraw/MobileLogin" />
+
+# MobileLogin
+
+MobileLogin component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={MobileLogin.Primary} />
+
+## Usage
+
+```ts
+import { MobileLogin } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MobileLogin />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

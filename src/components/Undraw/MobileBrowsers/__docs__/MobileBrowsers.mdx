@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MobileBrowsers from "./MobileBrowsers.stories.tsx";
+
+<Meta of={MobileBrowsers} title="unDraw/MobileBrowsers" />
+
+# MobileBrowsers
+
+MobileBrowsers component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={MobileBrowsers.Primary} />
+
+## Usage
+
+```ts
+import { MobileBrowsers } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MobileBrowsers />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

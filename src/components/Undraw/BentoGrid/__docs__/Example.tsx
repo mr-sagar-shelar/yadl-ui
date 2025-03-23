@@ -11,7 +11,7 @@ const Example = () => {
         height: "100%",
       }}
     >
-      <BentoGrid />
+      <BentoGrid width="500px" height="500px" />
     </div>
   );
 };

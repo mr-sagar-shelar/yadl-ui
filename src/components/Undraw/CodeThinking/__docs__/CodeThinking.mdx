@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CodeThinking from "./CodeThinking.stories.tsx";
+
+<Meta of={CodeThinking} title="unDraw/CodeThinking" />
+
+# CodeThinking
+
+CodeThinking component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CodeThinking.Primary} />
+
+## Usage
+
+```ts
+import { CodeThinking } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CodeThinking />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

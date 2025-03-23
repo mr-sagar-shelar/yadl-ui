@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as RemotelyRemotely from "./RemotelyRemotely.stories.tsx";
+
+<Meta of={RemotelyRemotely} title="unDraw/RemotelyRemotely" />
+
+# RemotelyRemotely
+
+RemotelyRemotely component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={RemotelyRemotely.Primary} />
+
+## Usage
+
+```ts
+import { RemotelyRemotely } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <RemotelyRemotely />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

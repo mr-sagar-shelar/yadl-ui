@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ADayOff from "./ADayOff.stories.tsx";
+
+<Meta of={ADayOff} title="unDraw/ADayOff" />
+
+# ADayOff
+
+ADayOff component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ADayOff.Primary} />
+
+## Usage
+
+```ts
+import { ADayOff } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ADayOff />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as GroupSelfie from "./GroupSelfie.stories.tsx";
+
+<Meta of={GroupSelfie} title="unDraw/GroupSelfie" />
+
+# GroupSelfie
+
+GroupSelfie component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={GroupSelfie.Primary} />
+
+## Usage
+
+```ts
+import { GroupSelfie } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <GroupSelfie />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

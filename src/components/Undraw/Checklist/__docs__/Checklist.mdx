@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Checklist from "./Checklist.stories.tsx";
+
+<Meta of={Checklist} title="unDraw/Checklist" />
+
+# Checklist
+
+Checklist component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Checklist.Primary} />
+
+## Usage
+
+```ts
+import { Checklist } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Checklist />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

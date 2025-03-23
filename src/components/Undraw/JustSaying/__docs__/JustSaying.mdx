@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as JustSaying from "./JustSaying.stories.tsx";
+
+<Meta of={JustSaying} title="unDraw/JustSaying" />
+
+# JustSaying
+
+JustSaying component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={JustSaying.Primary} />
+
+## Usage
+
+```ts
+import { JustSaying } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <JustSaying />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

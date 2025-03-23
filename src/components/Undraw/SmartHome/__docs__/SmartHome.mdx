@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SmartHome from "./SmartHome.stories.tsx";
+
+<Meta of={SmartHome} title="unDraw/SmartHome" />
+
+# SmartHome
+
+SmartHome component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SmartHome.Primary} />
+
+## Usage
+
+```ts
+import { SmartHome } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SmartHome />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

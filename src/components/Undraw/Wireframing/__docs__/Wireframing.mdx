@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Wireframing from "./Wireframing.stories.tsx";
+
+<Meta of={Wireframing} title="unDraw/Wireframing" />
+
+# Wireframing
+
+Wireframing component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Wireframing.Primary} />
+
+## Usage
+
+```ts
+import { Wireframing } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Wireframing />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

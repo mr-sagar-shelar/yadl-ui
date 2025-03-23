@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SuccessfulPurchase from "./SuccessfulPurchase.stories.tsx";
+
+<Meta of={SuccessfulPurchase} title="unDraw/SuccessfulPurchase" />
+
+# SuccessfulPurchase
+
+SuccessfulPurchase component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SuccessfulPurchase.Primary} />
+
+## Usage
+
+```ts
+import { SuccessfulPurchase } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SuccessfulPurchase />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

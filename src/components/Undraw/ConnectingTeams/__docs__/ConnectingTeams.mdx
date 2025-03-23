@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ConnectingTeams from "./ConnectingTeams.stories.tsx";
+
+<Meta of={ConnectingTeams} title="unDraw/ConnectingTeams" />
+
+# ConnectingTeams
+
+ConnectingTeams component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ConnectingTeams.Primary} />
+
+## Usage
+
+```ts
+import { ConnectingTeams } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ConnectingTeams />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

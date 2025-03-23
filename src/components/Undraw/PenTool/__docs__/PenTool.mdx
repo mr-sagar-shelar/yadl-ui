@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as PenTool from "./PenTool.stories.tsx";
+
+<Meta of={PenTool} title="unDraw/PenTool" />
+
+# PenTool
+
+PenTool component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={PenTool.Primary} />
+
+## Usage
+
+```ts
+import { PenTool } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <PenTool />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

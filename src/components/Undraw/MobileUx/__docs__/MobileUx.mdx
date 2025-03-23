@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MobileUx from "./MobileUx.stories.tsx";
+
+<Meta of={MobileUx} title="unDraw/MobileUx" />
+
+# MobileUx
+
+MobileUx component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={MobileUx.Primary} />
+
+## Usage
+
+```ts
+import { MobileUx } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MobileUx />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

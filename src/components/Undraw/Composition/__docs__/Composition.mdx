@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Composition from "./Composition.stories.tsx";
+
+<Meta of={Composition} title="unDraw/Composition" />
+
+# Composition
+
+Composition component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Composition.Primary} />
+
+## Usage
+
+```ts
+import { Composition } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Composition />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

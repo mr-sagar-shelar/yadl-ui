@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Delivery from "./Delivery.stories.tsx";
+
+<Meta of={Delivery} title="unDraw/Delivery" />
+
+# Delivery
+
+Delivery component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Delivery.Primary} />
+
+## Usage
+
+```ts
+import { Delivery } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Delivery />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

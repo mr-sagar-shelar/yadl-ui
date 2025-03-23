@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ResumeFolder from "./ResumeFolder.stories.tsx";
+
+<Meta of={ResumeFolder} title="unDraw/ResumeFolder" />
+
+# ResumeFolder
+
+ResumeFolder component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ResumeFolder.Primary} />
+
+## Usage
+
+```ts
+import { ResumeFolder } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ResumeFolder />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

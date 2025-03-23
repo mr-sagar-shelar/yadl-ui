@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MakerLaunch from "./MakerLaunch.stories.tsx";
+
+<Meta of={MakerLaunch} title="unDraw/MakerLaunch" />
+
+# MakerLaunch
+
+MakerLaunch component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={MakerLaunch.Primary} />
+
+## Usage
+
+```ts
+import { MakerLaunch } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MakerLaunch />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

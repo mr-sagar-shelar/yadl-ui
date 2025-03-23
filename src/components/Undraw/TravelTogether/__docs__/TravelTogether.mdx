@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as TravelTogether from "./TravelTogether.stories.tsx";
+
+<Meta of={TravelTogether} title="unDraw/TravelTogether" />
+
+# TravelTogether
+
+TravelTogether component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={TravelTogether.Primary} />
+
+## Usage
+
+```ts
+import { TravelTogether } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <TravelTogether />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

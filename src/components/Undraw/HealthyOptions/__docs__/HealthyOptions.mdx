@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as HealthyOptions from "./HealthyOptions.stories.tsx";
+
+<Meta of={HealthyOptions} title="unDraw/HealthyOptions" />
+
+# HealthyOptions
+
+HealthyOptions component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={HealthyOptions.Primary} />
+
+## Usage
+
+```ts
+import { HealthyOptions } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <HealthyOptions />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

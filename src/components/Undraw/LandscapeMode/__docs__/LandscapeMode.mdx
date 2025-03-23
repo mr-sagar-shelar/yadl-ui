@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as LandscapeMode from "./LandscapeMode.stories.tsx";
+
+<Meta of={LandscapeMode} title="unDraw/LandscapeMode" />
+
+# LandscapeMode
+
+LandscapeMode component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={LandscapeMode.Primary} />
+
+## Usage
+
+```ts
+import { LandscapeMode } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <LandscapeMode />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

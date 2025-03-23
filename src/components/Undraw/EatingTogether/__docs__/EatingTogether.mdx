@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as EatingTogether from "./EatingTogether.stories.tsx";
+
+<Meta of={EatingTogether} title="unDraw/EatingTogether" />
+
+# EatingTogether
+
+EatingTogether component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={EatingTogether.Primary} />
+
+## Usage
+
+```ts
+import { EatingTogether } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <EatingTogether />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

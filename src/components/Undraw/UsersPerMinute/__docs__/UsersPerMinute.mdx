@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as UsersPerMinute from "./UsersPerMinute.stories.tsx";
+
+<Meta of={UsersPerMinute} title="unDraw/UsersPerMinute" />
+
+# UsersPerMinute
+
+UsersPerMinute component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={UsersPerMinute.Primary} />
+
+## Usage
+
+```ts
+import { UsersPerMinute } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <UsersPerMinute />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ChooseColor from "./ChooseColor.stories.tsx";
+
+<Meta of={ChooseColor} title="unDraw/ChooseColor" />
+
+# ChooseColor
+
+ChooseColor component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ChooseColor.Primary} />
+
+## Usage
+
+```ts
+import { ChooseColor } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ChooseColor />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

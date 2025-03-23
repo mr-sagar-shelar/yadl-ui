@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CodeInspection from "./CodeInspection.stories.tsx";
+
+<Meta of={CodeInspection} title="unDraw/CodeInspection" />
+
+# CodeInspection
+
+CodeInspection component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CodeInspection.Primary} />
+
+## Usage
+
+```ts
+import { CodeInspection } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CodeInspection />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Segmentation from "./Segmentation.stories.tsx";
+
+<Meta of={Segmentation} title="unDraw/Segmentation" />
+
+# Segmentation
+
+Segmentation component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Segmentation.Primary} />
+
+## Usage
+
+```ts
+import { Segmentation } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Segmentation />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

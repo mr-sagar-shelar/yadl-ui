@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Insert from "./Insert.stories.tsx";
+
+<Meta of={Insert} title="unDraw/Insert" />
+
+# Insert
+
+Insert component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Insert.Primary} />
+
+## Usage
+
+```ts
+import { Insert } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Insert />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

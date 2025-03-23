@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CollabCollab from "./CollabCollab.stories.tsx";
+
+<Meta of={CollabCollab} title="unDraw/CollabCollab" />
+
+# CollabCollab
+
+CollabCollab component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CollabCollab.Primary} />
+
+## Usage
+
+```ts
+import { CollabCollab } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CollabCollab />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

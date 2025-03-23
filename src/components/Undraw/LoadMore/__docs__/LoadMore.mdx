@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as LoadMore from "./LoadMore.stories.tsx";
+
+<Meta of={LoadMore} title="unDraw/LoadMore" />
+
+# LoadMore
+
+LoadMore component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={LoadMore.Primary} />
+
+## Usage
+
+```ts
+import { LoadMore } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <LoadMore />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

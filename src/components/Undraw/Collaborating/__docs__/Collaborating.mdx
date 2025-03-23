@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Collaborating from "./Collaborating.stories.tsx";
+
+<Meta of={Collaborating} title="unDraw/Collaborating" />
+
+# Collaborating
+
+Collaborating component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Collaborating.Primary} />
+
+## Usage
+
+```ts
+import { Collaborating } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Collaborating />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

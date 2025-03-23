@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as TeamSpirit from "./TeamSpirit.stories.tsx";
+
+<Meta of={TeamSpirit} title="unDraw/TeamSpirit" />
+
+# TeamSpirit
+
+TeamSpirit component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={TeamSpirit.Primary} />
+
+## Usage
+
+```ts
+import { TeamSpirit } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <TeamSpirit />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

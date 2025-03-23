@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as IconDesign from "./IconDesign.stories.tsx";
+
+<Meta of={IconDesign} title="unDraw/IconDesign" />
+
+# IconDesign
+
+IconDesign component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={IconDesign.Primary} />
+
+## Usage
+
+```ts
+import { IconDesign } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <IconDesign />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

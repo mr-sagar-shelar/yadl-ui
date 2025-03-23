@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as InTheZone from "./InTheZone.stories.tsx";
+
+<Meta of={InTheZone} title="unDraw/InTheZone" />
+
+# InTheZone
+
+InTheZone component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={InTheZone.Primary} />
+
+## Usage
+
+```ts
+import { InTheZone } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <InTheZone />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

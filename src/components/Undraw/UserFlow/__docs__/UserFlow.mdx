@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as UserFlow from "./UserFlow.stories.tsx";
+
+<Meta of={UserFlow} title="unDraw/UserFlow" />
+
+# UserFlow
+
+UserFlow component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={UserFlow.Primary} />
+
+## Usage
+
+```ts
+import { UserFlow } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <UserFlow />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

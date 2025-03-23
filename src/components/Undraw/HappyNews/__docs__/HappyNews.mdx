@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as HappyNews from "./HappyNews.stories.tsx";
+
+<Meta of={HappyNews} title="unDraw/HappyNews" />
+
+# HappyNews
+
+HappyNews component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={HappyNews.Primary} />
+
+## Usage
+
+```ts
+import { HappyNews } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <HappyNews />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

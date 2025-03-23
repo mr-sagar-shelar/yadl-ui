@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AugmentedReality from "./AugmentedReality.stories.tsx";
+
+<Meta of={AugmentedReality} title="unDraw/AugmentedReality" />
+
+# AugmentedReality
+
+AugmentedReality component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={AugmentedReality.Primary} />
+
+## Usage
+
+```ts
+import { AugmentedReality } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AugmentedReality />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

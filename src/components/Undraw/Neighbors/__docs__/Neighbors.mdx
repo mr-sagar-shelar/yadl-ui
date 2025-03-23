@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Neighbors from "./Neighbors.stories.tsx";
+
+<Meta of={Neighbors} title="unDraw/Neighbors" />
+
+# Neighbors
+
+Neighbors component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Neighbors.Primary} />
+
+## Usage
+
+```ts
+import { Neighbors } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Neighbors />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

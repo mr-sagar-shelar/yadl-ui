@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as BodyText from "./BodyText.stories.tsx";
+
+<Meta of={BodyText} title="unDraw/BodyText" />
+
+# BodyText
+
+BodyText component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={BodyText.Primary} />
+
+## Usage
+
+```ts
+import { BodyText } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <BodyText />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as TeamUp from "./TeamUp.stories.tsx";
+
+<Meta of={TeamUp} title="unDraw/TeamUp" />
+
+# TeamUp
+
+TeamUp component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={TeamUp.Primary} />
+
+## Usage
+
+```ts
+import { TeamUp } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <TeamUp />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

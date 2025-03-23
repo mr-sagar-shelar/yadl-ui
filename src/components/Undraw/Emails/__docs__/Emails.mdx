@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Emails from "./Emails.stories.tsx";
+
+<Meta of={Emails} title="unDraw/Emails" />
+
+# Emails
+
+Emails component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Emails.Primary} />
+
+## Usage
+
+```ts
+import { Emails } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Emails />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

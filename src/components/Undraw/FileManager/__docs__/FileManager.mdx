@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as FileManager from "./FileManager.stories.tsx";
+
+<Meta of={FileManager} title="unDraw/FileManager" />
+
+# FileManager
+
+FileManager component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={FileManager.Primary} />
+
+## Usage
+
+```ts
+import { FileManager } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <FileManager />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

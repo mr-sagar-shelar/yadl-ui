@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ActiveOptions from "./ActiveOptions.stories.tsx";
+
+<Meta of={ActiveOptions} title="unDraw/ActiveOptions" />
+
+# ActiveOptions
+
+ActiveOptions component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ActiveOptions.Primary} />
+
+## Usage
+
+```ts
+import { ActiveOptions } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ActiveOptions />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

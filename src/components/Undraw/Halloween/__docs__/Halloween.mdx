@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Halloween from "./Halloween.stories.tsx";
+
+<Meta of={Halloween} title="unDraw/Halloween" />
+
+# Halloween
+
+Halloween component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Halloween.Primary} />
+
+## Usage
+
+```ts
+import { Halloween } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Halloween />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DetailedExamination from "./DetailedExamination.stories.tsx";
+
+<Meta of={DetailedExamination} title="unDraw/DetailedExamination" />
+
+# DetailedExamination
+
+DetailedExamination component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={DetailedExamination.Primary} />
+
+## Usage
+
+```ts
+import { DetailedExamination } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DetailedExamination />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as LateAtNight from "./LateAtNight.stories.tsx";
+
+<Meta of={LateAtNight} title="unDraw/LateAtNight" />
+
+# LateAtNight
+
+LateAtNight component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={LateAtNight.Primary} />
+
+## Usage
+
+```ts
+import { LateAtNight } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <LateAtNight />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

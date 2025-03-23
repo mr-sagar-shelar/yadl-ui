@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as BusStop from "./BusStop.stories.tsx";
+
+<Meta of={BusStop} title="unDraw/BusStop" />
+
+# BusStop
+
+BusStop component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={BusStop.Primary} />
+
+## Usage
+
+```ts
+import { BusStop } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <BusStop />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

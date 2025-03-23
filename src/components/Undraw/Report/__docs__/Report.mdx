@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Report from "./Report.stories.tsx";
+
+<Meta of={Report} title="unDraw/Report" />
+
+# Report
+
+Report component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Report.Primary} />
+
+## Usage
+
+```ts
+import { Report } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Report />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

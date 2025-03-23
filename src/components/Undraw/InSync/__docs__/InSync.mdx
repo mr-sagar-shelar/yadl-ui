@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as InSync from "./InSync.stories.tsx";
+
+<Meta of={InSync} title="unDraw/InSync" />
+
+# InSync
+
+InSync component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={InSync.Primary} />
+
+## Usage
+
+```ts
+import { InSync } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <InSync />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

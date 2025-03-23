@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as FactoryFactory from "./FactoryFactory.stories.tsx";
+
+<Meta of={FactoryFactory} title="unDraw/FactoryFactory" />
+
+# FactoryFactory
+
+FactoryFactory component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={FactoryFactory.Primary} />
+
+## Usage
+
+```ts
+import { FactoryFactory } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <FactoryFactory />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

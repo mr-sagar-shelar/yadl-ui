@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SmallTown from "./SmallTown.stories.tsx";
+
+<Meta of={SmallTown} title="unDraw/SmallTown" />
+
+# SmallTown
+
+SmallTown component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SmallTown.Primary} />
+
+## Usage
+
+```ts
+import { SmallTown } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SmallTown />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CompletionProgress from "./CompletionProgress.stories.tsx";
+
+<Meta of={CompletionProgress} title="unDraw/CompletionProgress" />
+
+# CompletionProgress
+
+CompletionProgress component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CompletionProgress.Primary} />
+
+## Usage
+
+```ts
+import { CompletionProgress } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CompletionProgress />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

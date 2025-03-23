@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Envelope from "./Envelope.stories.tsx";
+
+<Meta of={Envelope} title="unDraw/Envelope" />
+
+# Envelope
+
+Envelope component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Envelope.Primary} />
+
+## Usage
+
+```ts
+import { Envelope } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Envelope />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

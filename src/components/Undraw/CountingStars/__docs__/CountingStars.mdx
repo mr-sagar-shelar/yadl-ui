@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CountingStars from "./CountingStars.stories.tsx";
+
+<Meta of={CountingStars} title="unDraw/CountingStars" />
+
+# CountingStars
+
+CountingStars component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CountingStars.Primary} />
+
+## Usage
+
+```ts
+import { CountingStars } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CountingStars />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

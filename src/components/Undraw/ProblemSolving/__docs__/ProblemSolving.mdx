@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ProblemSolving from "./ProblemSolving.stories.tsx";
+
+<Meta of={ProblemSolving} title="unDraw/ProblemSolving" />
+
+# ProblemSolving
+
+ProblemSolving component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ProblemSolving.Primary} />
+
+## Usage
+
+```ts
+import { ProblemSolving } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ProblemSolving />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

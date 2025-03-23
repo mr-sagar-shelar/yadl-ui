@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as RelaxingAtHome from "./RelaxingAtHome.stories.tsx";
+
+<Meta of={RelaxingAtHome} title="unDraw/RelaxingAtHome" />
+
+# RelaxingAtHome
+
+RelaxingAtHome component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={RelaxingAtHome.Primary} />
+
+## Usage
+
+```ts
+import { RelaxingAtHome } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <RelaxingAtHome />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

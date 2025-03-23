@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AddPost from "./AddPost.stories.tsx";
+
+<Meta of={AddPost} title="unDraw/AddPost" />
+
+# AddPost
+
+AddPost component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={AddPost.Primary} />
+
+## Usage
+
+```ts
+import { AddPost } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AddPost />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

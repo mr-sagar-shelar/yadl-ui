@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CloudDocs from "./CloudDocs.stories.tsx";
+
+<Meta of={CloudDocs} title="unDraw/CloudDocs" />
+
+# CloudDocs
+
+CloudDocs component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CloudDocs.Primary} />
+
+## Usage
+
+```ts
+import { CloudDocs } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CloudDocs />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

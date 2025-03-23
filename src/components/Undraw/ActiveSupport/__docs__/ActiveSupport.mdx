@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ActiveSupport from "./ActiveSupport.stories.tsx";
+
+<Meta of={ActiveSupport} title="unDraw/ActiveSupport" />
+
+# ActiveSupport
+
+ActiveSupport component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ActiveSupport.Primary} />
+
+## Usage
+
+```ts
+import { ActiveSupport } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ActiveSupport />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

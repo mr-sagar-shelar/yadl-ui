@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Campfire from "./Campfire.stories.tsx";
+
+<Meta of={Campfire} title="unDraw/Campfire" />
+
+# Campfire
+
+Campfire component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Campfire.Primary} />
+
+## Usage
+
+```ts
+import { Campfire } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Campfire />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

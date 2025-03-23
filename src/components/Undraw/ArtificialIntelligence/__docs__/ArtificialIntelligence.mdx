@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ArtificialIntelligence from "./ArtificialIntelligence.stories.tsx";
+
+<Meta of={ArtificialIntelligence} title="unDraw/ArtificialIntelligence" />
+
+# ArtificialIntelligence
+
+ArtificialIntelligence component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ArtificialIntelligence.Primary} />
+
+## Usage
+
+```ts
+import { ArtificialIntelligence } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ArtificialIntelligence />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

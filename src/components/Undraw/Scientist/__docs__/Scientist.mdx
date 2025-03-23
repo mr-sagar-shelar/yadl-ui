@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Scientist from "./Scientist.stories.tsx";
+
+<Meta of={Scientist} title="unDraw/Scientist" />
+
+# Scientist
+
+Scientist component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Scientist.Primary} />
+
+## Usage
+
+```ts
+import { Scientist } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Scientist />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

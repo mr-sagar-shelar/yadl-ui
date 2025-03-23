@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Collecting from "./Collecting.stories.tsx";
+
+<Meta of={Collecting} title="unDraw/Collecting" />
+
+# Collecting
+
+Collecting component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Collecting.Primary} />
+
+## Usage
+
+```ts
+import { Collecting } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Collecting />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as YoutubeTutorial from "./YoutubeTutorial.stories.tsx";
+
+<Meta of={YoutubeTutorial} title="unDraw/YoutubeTutorial" />
+
+# YoutubeTutorial
+
+YoutubeTutorial component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={YoutubeTutorial.Primary} />
+
+## Usage
+
+```ts
+import { YoutubeTutorial } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <YoutubeTutorial />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

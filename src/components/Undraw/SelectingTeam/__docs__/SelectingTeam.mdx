@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SelectingTeam from "./SelectingTeam.stories.tsx";
+
+<Meta of={SelectingTeam} title="unDraw/SelectingTeam" />
+
+# SelectingTeam
+
+SelectingTeam component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SelectingTeam.Primary} />
+
+## Usage
+
+```ts
+import { SelectingTeam } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SelectingTeam />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

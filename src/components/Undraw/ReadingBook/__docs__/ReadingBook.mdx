@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ReadingBook from "./ReadingBook.stories.tsx";
+
+<Meta of={ReadingBook} title="unDraw/ReadingBook" />
+
+# ReadingBook
+
+ReadingBook component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ReadingBook.Primary} />
+
+## Usage
+
+```ts
+import { ReadingBook } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ReadingBook />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

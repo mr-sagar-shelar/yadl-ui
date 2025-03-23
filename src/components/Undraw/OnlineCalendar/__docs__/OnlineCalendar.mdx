@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as OnlineCalendar from "./OnlineCalendar.stories.tsx";
+
+<Meta of={OnlineCalendar} title="unDraw/OnlineCalendar" />
+
+# OnlineCalendar
+
+OnlineCalendar component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={OnlineCalendar.Primary} />
+
+## Usage
+
+```ts
+import { OnlineCalendar } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <OnlineCalendar />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

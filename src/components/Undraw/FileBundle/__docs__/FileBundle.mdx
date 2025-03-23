@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as FileBundle from "./FileBundle.stories.tsx";
+
+<Meta of={FileBundle} title="unDraw/FileBundle" />
+
+# FileBundle
+
+FileBundle component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={FileBundle.Primary} />
+
+## Usage
+
+```ts
+import { FileBundle } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <FileBundle />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

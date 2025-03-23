@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Cooking from "./Cooking.stories.tsx";
+
+<Meta of={Cooking} title="unDraw/Cooking" />
+
+# Cooking
+
+Cooking component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Cooking.Primary} />
+
+## Usage
+
+```ts
+import { Cooking } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Cooking />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

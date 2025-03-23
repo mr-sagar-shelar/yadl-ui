@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Ethereum from "./Ethereum.stories.tsx";
+
+<Meta of={Ethereum} title="unDraw/Ethereum" />
+
+# Ethereum
+
+Ethereum component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Ethereum.Primary} />
+
+## Usage
+
+```ts
+import { Ethereum } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Ethereum />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

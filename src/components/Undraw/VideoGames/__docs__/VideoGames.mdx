@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as VideoGames from "./VideoGames.stories.tsx";
+
+<Meta of={VideoGames} title="unDraw/VideoGames" />
+
+# VideoGames
+
+VideoGames component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={VideoGames.Primary} />
+
+## Usage
+
+```ts
+import { VideoGames } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <VideoGames />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

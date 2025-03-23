@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Meeting from "./Meeting.stories.tsx";
+
+<Meta of={Meeting} title="unDraw/Meeting" />
+
+# Meeting
+
+Meeting component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Meeting.Primary} />
+
+## Usage
+
+```ts
+import { Meeting } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Meeting />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

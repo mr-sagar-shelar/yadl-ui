@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Reading from "./Reading.stories.tsx";
+
+<Meta of={Reading} title="unDraw/Reading" />
+
+# Reading
+
+Reading component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Reading.Primary} />
+
+## Usage
+
+```ts
+import { Reading } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Reading />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

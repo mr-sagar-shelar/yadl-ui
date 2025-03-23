@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SocialStrategy from "./SocialStrategy.stories.tsx";
+
+<Meta of={SocialStrategy} title="unDraw/SocialStrategy" />
+
+# SocialStrategy
+
+SocialStrategy component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SocialStrategy.Primary} />
+
+## Usage
+
+```ts
+import { SocialStrategy } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SocialStrategy />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

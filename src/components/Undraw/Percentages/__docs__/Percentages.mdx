@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Percentages from "./Percentages.stories.tsx";
+
+<Meta of={Percentages} title="unDraw/Percentages" />
+
+# Percentages
+
+Percentages component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Percentages.Primary} />
+
+## Usage
+
+```ts
+import { Percentages } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Percentages />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

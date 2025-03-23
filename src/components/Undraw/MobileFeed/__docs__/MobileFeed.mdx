@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MobileFeed from "./MobileFeed.stories.tsx";
+
+<Meta of={MobileFeed} title="unDraw/MobileFeed" />
+
+# MobileFeed
+
+MobileFeed component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={MobileFeed.Primary} />
+
+## Usage
+
+```ts
+import { MobileFeed } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MobileFeed />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

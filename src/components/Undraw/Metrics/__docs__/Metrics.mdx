@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Metrics from "./Metrics.stories.tsx";
+
+<Meta of={Metrics} title="unDraw/Metrics" />
+
+# Metrics
+
+Metrics component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Metrics.Primary} />
+
+## Usage
+
+```ts
+import { Metrics } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Metrics />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

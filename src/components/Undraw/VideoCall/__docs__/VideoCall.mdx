@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as VideoCall from "./VideoCall.stories.tsx";
+
+<Meta of={VideoCall} title="unDraw/VideoCall" />
+
+# VideoCall
+
+VideoCall component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={VideoCall.Primary} />
+
+## Usage
+
+```ts
+import { VideoCall } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <VideoCall />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SpeechToText from "./SpeechToText.stories.tsx";
+
+<Meta of={SpeechToText} title="unDraw/SpeechToText" />
+
+# SpeechToText
+
+SpeechToText component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SpeechToText.Primary} />
+
+## Usage
+
+```ts
+import { SpeechToText } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SpeechToText />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AppData from "./AppData.stories.tsx";
+
+<Meta of={AppData} title="unDraw/AppData" />
+
+# AppData
+
+AppData component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={AppData.Primary} />
+
+## Usage
+
+```ts
+import { AppData } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AppData />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

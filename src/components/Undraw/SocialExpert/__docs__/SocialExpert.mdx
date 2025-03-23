@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SocialExpert from "./SocialExpert.stories.tsx";
+
+<Meta of={SocialExpert} title="unDraw/SocialExpert" />
+
+# SocialExpert
+
+SocialExpert component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SocialExpert.Primary} />
+
+## Usage
+
+```ts
+import { SocialExpert } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SocialExpert />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

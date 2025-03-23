@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as OnlinePopularity from "./OnlinePopularity.stories.tsx";
+
+<Meta of={OnlinePopularity} title="unDraw/OnlinePopularity" />
+
+# OnlinePopularity
+
+OnlinePopularity component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={OnlinePopularity.Primary} />
+
+## Usage
+
+```ts
+import { OnlinePopularity } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <OnlinePopularity />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Preferences from "./Preferences.stories.tsx";
+
+<Meta of={Preferences} title="unDraw/Preferences" />
+
+# Preferences
+
+Preferences component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Preferences.Primary} />
+
+## Usage
+
+```ts
+import { Preferences } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Preferences />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

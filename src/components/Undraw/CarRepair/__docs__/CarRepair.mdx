@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CarRepair from "./CarRepair.stories.tsx";
+
+<Meta of={CarRepair} title="unDraw/CarRepair" />
+
+# CarRepair
+
+CarRepair component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CarRepair.Primary} />
+
+## Usage
+
+```ts
+import { CarRepair } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CarRepair />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

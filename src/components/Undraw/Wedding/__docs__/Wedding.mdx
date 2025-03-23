@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Wedding from "./Wedding.stories.tsx";
+
+<Meta of={Wedding} title="unDraw/Wedding" />
+
+# Wedding
+
+Wedding component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Wedding.Primary} />
+
+## Usage
+
+```ts
+import { Wedding } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Wedding />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

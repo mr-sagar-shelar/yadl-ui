@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Functions from "./Functions.stories.tsx";
+
+<Meta of={Functions} title="unDraw/Functions" />
+
+# Functions
+
+Functions component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Functions.Primary} />
+
+## Usage
+
+```ts
+import { Functions } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Functions />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SecureServer from "./SecureServer.stories.tsx";
+
+<Meta of={SecureServer} title="unDraw/SecureServer" />
+
+# SecureServer
+
+SecureServer component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SecureServer.Primary} />
+
+## Usage
+
+```ts
+import { SecureServer } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SecureServer />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as InThePool from "./InThePool.stories.tsx";
+
+<Meta of={InThePool} title="unDraw/InThePool" />
+
+# InThePool
+
+InThePool component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={InThePool.Primary} />
+
+## Usage
+
+```ts
+import { InThePool } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <InThePool />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

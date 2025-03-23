@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MessagingFun from "./MessagingFun.stories.tsx";
+
+<Meta of={MessagingFun} title="unDraw/MessagingFun" />
+
+# MessagingFun
+
+MessagingFun component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={MessagingFun.Primary} />
+
+## Usage
+
+```ts
+import { MessagingFun } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MessagingFun />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

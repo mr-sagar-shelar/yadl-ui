@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as YoungManAvatar from "./YoungManAvatar.stories.tsx";
+
+<Meta of={YoungManAvatar} title="unDraw/YoungManAvatar" />
+
+# YoungManAvatar
+
+YoungManAvatar component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={YoungManAvatar.Primary} />
+
+## Usage
+
+```ts
+import { YoungManAvatar } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <YoungManAvatar />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

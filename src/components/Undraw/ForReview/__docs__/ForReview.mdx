@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ForReview from "./ForReview.stories.tsx";
+
+<Meta of={ForReview} title="unDraw/ForReview" />
+
+# ForReview
+
+ForReview component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ForReview.Primary} />
+
+## Usage
+
+```ts
+import { ForReview } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ForReview />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

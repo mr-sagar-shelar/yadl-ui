@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as OnlineResume from "./OnlineResume.stories.tsx";
+
+<Meta of={OnlineResume} title="unDraw/OnlineResume" />
+
+# OnlineResume
+
+OnlineResume component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={OnlineResume.Primary} />
+
+## Usage
+
+```ts
+import { OnlineResume } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <OnlineResume />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

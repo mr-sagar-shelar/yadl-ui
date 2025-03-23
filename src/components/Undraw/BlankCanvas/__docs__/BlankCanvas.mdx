@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as BlankCanvas from "./BlankCanvas.stories.tsx";
+
+<Meta of={BlankCanvas} title="unDraw/BlankCanvas" />
+
+# BlankCanvas
+
+BlankCanvas component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={BlankCanvas.Primary} />
+
+## Usage
+
+```ts
+import { BlankCanvas } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <BlankCanvas />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SpookySelf from "./SpookySelf.stories.tsx";
+
+<Meta of={SpookySelf} title="unDraw/SpookySelf" />
+
+# SpookySelf
+
+SpookySelf component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SpookySelf.Primary} />
+
+## Usage
+
+```ts
+import { SpookySelf } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SpookySelf />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

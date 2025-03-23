@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as WaitInLine from "./WaitInLine.stories.tsx";
+
+<Meta of={WaitInLine} title="unDraw/WaitInLine" />
+
+# WaitInLine
+
+WaitInLine component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={WaitInLine.Primary} />
+
+## Usage
+
+```ts
+import { WaitInLine } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <WaitInLine />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

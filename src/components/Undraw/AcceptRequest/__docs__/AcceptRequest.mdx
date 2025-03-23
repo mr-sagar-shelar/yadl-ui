@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AcceptRequest from "./AcceptRequest.stories.tsx";
+
+<Meta of={AcceptRequest} title="unDraw/AcceptRequest" />
+
+# AcceptRequest
+
+AcceptRequest component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={AcceptRequest.Primary} />
+
+## Usage
+
+```ts
+import { AcceptRequest } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AcceptRequest />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

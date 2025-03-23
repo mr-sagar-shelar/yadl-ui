@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CirclesCircles from "./CirclesCircles.stories.tsx";
+
+<Meta of={CirclesCircles} title="unDraw/CirclesCircles" />
+
+# CirclesCircles
+
+CirclesCircles component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CirclesCircles.Primary} />
+
+## Usage
+
+```ts
+import { CirclesCircles } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CirclesCircles />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

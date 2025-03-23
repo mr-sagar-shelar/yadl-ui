@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as WritingDownIdeas from "./WritingDownIdeas.stories.tsx";
+
+<Meta of={WritingDownIdeas} title="unDraw/WritingDownIdeas" />
+
+# WritingDownIdeas
+
+WritingDownIdeas component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={WritingDownIdeas.Primary} />
+
+## Usage
+
+```ts
+import { WritingDownIdeas } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <WritingDownIdeas />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

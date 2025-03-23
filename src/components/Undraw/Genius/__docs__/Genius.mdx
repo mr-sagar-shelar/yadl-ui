@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Genius from "./Genius.stories.tsx";
+
+<Meta of={Genius} title="unDraw/Genius" />
+
+# Genius
+
+Genius component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Genius.Primary} />
+
+## Usage
+
+```ts
+import { Genius } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Genius />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

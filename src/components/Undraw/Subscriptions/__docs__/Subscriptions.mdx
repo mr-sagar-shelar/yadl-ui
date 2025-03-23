@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Subscriptions from "./Subscriptions.stories.tsx";
+
+<Meta of={Subscriptions} title="unDraw/Subscriptions" />
+
+# Subscriptions
+
+Subscriptions component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Subscriptions.Primary} />
+
+## Usage
+
+```ts
+import { Subscriptions } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Subscriptions />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as FuturisticInterface from "./FuturisticInterface.stories.tsx";
+
+<Meta of={FuturisticInterface} title="unDraw/FuturisticInterface" />
+
+# FuturisticInterface
+
+FuturisticInterface component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={FuturisticInterface.Primary} />
+
+## Usage
+
+```ts
+import { FuturisticInterface } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <FuturisticInterface />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

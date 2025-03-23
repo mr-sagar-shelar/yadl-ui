@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Windows from "./Windows.stories.tsx";
+
+<Meta of={Windows} title="unDraw/Windows" />
+
+# Windows
+
+Windows component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Windows.Primary} />
+
+## Usage
+
+```ts
+import { Windows } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Windows />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

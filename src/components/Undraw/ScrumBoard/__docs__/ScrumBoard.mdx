@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ScrumBoard from "./ScrumBoard.stories.tsx";
+
+<Meta of={ScrumBoard} title="unDraw/ScrumBoard" />
+
+# ScrumBoard
+
+ScrumBoard component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ScrumBoard.Primary} />
+
+## Usage
+
+```ts
+import { ScrumBoard } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ScrumBoard />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

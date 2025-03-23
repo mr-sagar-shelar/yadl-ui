@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ConferenceSpeaker from "./ConferenceSpeaker.stories.tsx";
+
+<Meta of={ConferenceSpeaker} title="unDraw/ConferenceSpeaker" />
+
+# ConferenceSpeaker
+
+ConferenceSpeaker component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ConferenceSpeaker.Primary} />
+
+## Usage
+
+```ts
+import { ConferenceSpeaker } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ConferenceSpeaker />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

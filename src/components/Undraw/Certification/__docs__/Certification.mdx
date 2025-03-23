@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Certification from "./Certification.stories.tsx";
+
+<Meta of={Certification} title="unDraw/Certification" />
+
+# Certification
+
+Certification component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Certification.Primary} />
+
+## Usage
+
+```ts
+import { Certification } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Certification />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

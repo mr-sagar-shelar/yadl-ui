@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MelloMello from "./MelloMello.stories.tsx";
+
+<Meta of={MelloMello} title="unDraw/MelloMello" />
+
+# MelloMello
+
+MelloMello component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={MelloMello.Primary} />
+
+## Usage
+
+```ts
+import { MelloMello } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MelloMello />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as TeamChat from "./TeamChat.stories.tsx";
+
+<Meta of={TeamChat} title="unDraw/TeamChat" />
+
+# TeamChat
+
+TeamChat component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={TeamChat.Primary} />
+
+## Usage
+
+```ts
+import { TeamChat } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <TeamChat />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

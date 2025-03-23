@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as OnlinePayments from "./OnlinePayments.stories.tsx";
+
+<Meta of={OnlinePayments} title="unDraw/OnlinePayments" />
+
+# OnlinePayments
+
+OnlinePayments component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={OnlinePayments.Primary} />
+
+## Usage
+
+```ts
+import { OnlinePayments } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <OnlinePayments />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

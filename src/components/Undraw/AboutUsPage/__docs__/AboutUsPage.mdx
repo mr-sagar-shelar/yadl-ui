@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AboutUsPage from "./AboutUsPage.stories.tsx";
+
+<Meta of={AboutUsPage} title="unDraw/AboutUsPage" />
+
+# AboutUsPage
+
+AboutUsPage component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={AboutUsPage.Primary} />
+
+## Usage
+
+```ts
+import { AboutUsPage } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AboutUsPage />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

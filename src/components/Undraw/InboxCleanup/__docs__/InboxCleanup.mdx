@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as InboxCleanup from "./InboxCleanup.stories.tsx";
+
+<Meta of={InboxCleanup} title="unDraw/InboxCleanup" />
+
+# InboxCleanup
+
+InboxCleanup component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={InboxCleanup.Primary} />
+
+## Usage
+
+```ts
+import { InboxCleanup } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <InboxCleanup />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

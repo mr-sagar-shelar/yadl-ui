@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as BeforeDawn from "./BeforeDawn.stories.tsx";
+
+<Meta of={BeforeDawn} title="unDraw/BeforeDawn" />
+
+# BeforeDawn
+
+BeforeDawn component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={BeforeDawn.Primary} />
+
+## Usage
+
+```ts
+import { BeforeDawn } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <BeforeDawn />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

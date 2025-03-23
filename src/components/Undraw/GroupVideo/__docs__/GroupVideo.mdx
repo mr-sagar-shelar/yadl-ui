@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as GroupVideo from "./GroupVideo.stories.tsx";
+
+<Meta of={GroupVideo} title="unDraw/GroupVideo" />
+
+# GroupVideo
+
+GroupVideo component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={GroupVideo.Primary} />
+
+## Usage
+
+```ts
+import { GroupVideo } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <GroupVideo />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

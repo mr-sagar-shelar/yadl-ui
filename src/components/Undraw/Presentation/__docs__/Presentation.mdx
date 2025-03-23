@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Presentation from "./Presentation.stories.tsx";
+
+<Meta of={Presentation} title="unDraw/Presentation" />
+
+# Presentation
+
+Presentation component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Presentation.Primary} />
+
+## Usage
+
+```ts
+import { Presentation } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Presentation />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

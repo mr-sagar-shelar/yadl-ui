@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as OnlineChat from "./OnlineChat.stories.tsx";
+
+<Meta of={OnlineChat} title="unDraw/OnlineChat" />
+
+# OnlineChat
+
+OnlineChat component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={OnlineChat.Primary} />
+
+## Usage
+
+```ts
+import { OnlineChat } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <OnlineChat />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

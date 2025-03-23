@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CleanUp from "./CleanUp.stories.tsx";
+
+<Meta of={CleanUp} title="unDraw/CleanUp" />
+
+# CleanUp
+
+CleanUp component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CleanUp.Primary} />
+
+## Usage
+
+```ts
+import { CleanUp } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CleanUp />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

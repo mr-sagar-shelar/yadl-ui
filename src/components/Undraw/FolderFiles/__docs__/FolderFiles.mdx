@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as FolderFiles from "./FolderFiles.stories.tsx";
+
+<Meta of={FolderFiles} title="unDraw/FolderFiles" />
+
+# FolderFiles
+
+FolderFiles component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={FolderFiles.Primary} />
+
+## Usage
+
+```ts
+import { FolderFiles } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <FolderFiles />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

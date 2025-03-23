@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Freelancer from "./Freelancer.stories.tsx";
+
+<Meta of={Freelancer} title="unDraw/Freelancer" />
+
+# Freelancer
+
+Freelancer component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Freelancer.Primary} />
+
+## Usage
+
+```ts
+import { Freelancer } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Freelancer />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

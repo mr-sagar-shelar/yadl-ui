@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ConferenceCall from "./ConferenceCall.stories.tsx";
+
+<Meta of={ConferenceCall} title="unDraw/ConferenceCall" />
+
+# ConferenceCall
+
+ConferenceCall component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ConferenceCall.Primary} />
+
+## Usage
+
+```ts
+import { ConferenceCall } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ConferenceCall />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

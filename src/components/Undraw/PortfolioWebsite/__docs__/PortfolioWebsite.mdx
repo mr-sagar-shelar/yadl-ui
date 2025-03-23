@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as PortfolioWebsite from "./PortfolioWebsite.stories.tsx";
+
+<Meta of={PortfolioWebsite} title="unDraw/PortfolioWebsite" />
+
+# PortfolioWebsite
+
+PortfolioWebsite component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={PortfolioWebsite.Primary} />
+
+## Usage
+
+```ts
+import { PortfolioWebsite } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <PortfolioWebsite />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

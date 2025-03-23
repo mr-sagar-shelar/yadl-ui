@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DesignObjectives from "./DesignObjectives.stories.tsx";
+
+<Meta of={DesignObjectives} title="unDraw/DesignObjectives" />
+
+# DesignObjectives
+
+DesignObjectives component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={DesignObjectives.Primary} />
+
+## Usage
+
+```ts
+import { DesignObjectives } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DesignObjectives />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

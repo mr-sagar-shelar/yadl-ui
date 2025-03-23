@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as PieGraph from "./PieGraph.stories.tsx";
+
+<Meta of={PieGraph} title="unDraw/PieGraph" />
+
+# PieGraph
+
+PieGraph component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={PieGraph.Primary} />
+
+## Usage
+
+```ts
+import { PieGraph } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <PieGraph />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

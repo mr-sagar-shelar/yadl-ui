@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Analyze from "./Analyze.stories.tsx";
+
+<Meta of={Analyze} title="unDraw/Analyze" />
+
+# Analyze
+
+Analyze component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Analyze.Primary} />
+
+## Usage
+
+```ts
+import { Analyze } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Analyze />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

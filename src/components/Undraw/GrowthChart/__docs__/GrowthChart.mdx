@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as GrowthChart from "./GrowthChart.stories.tsx";
+
+<Meta of={GrowthChart} title="unDraw/GrowthChart" />
+
+# GrowthChart
+
+GrowthChart component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={GrowthChart.Primary} />
+
+## Usage
+
+```ts
+import { GrowthChart } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <GrowthChart />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

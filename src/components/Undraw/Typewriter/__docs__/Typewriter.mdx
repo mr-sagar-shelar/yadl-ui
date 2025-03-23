@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Typewriter from "./Typewriter.stories.tsx";
+
+<Meta of={Typewriter} title="unDraw/Typewriter" />
+
+# Typewriter
+
+Typewriter component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Typewriter.Primary} />
+
+## Usage
+
+```ts
+import { Typewriter } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Typewriter />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

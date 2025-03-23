@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CodeReview from "./CodeReview.stories.tsx";
+
+<Meta of={CodeReview} title="unDraw/CodeReview" />
+
+# CodeReview
+
+CodeReview component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CodeReview.Primary} />
+
+## Usage
+
+```ts
+import { CodeReview } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CodeReview />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

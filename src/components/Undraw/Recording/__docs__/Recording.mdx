@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Recording from "./Recording.stories.tsx";
+
+<Meta of={Recording} title="unDraw/Recording" />
+
+# Recording
+
+Recording component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Recording.Primary} />
+
+## Usage
+
+```ts
+import { Recording } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Recording />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

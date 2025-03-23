@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as RomanticGetaway from "./RomanticGetaway.stories.tsx";
+
+<Meta of={RomanticGetaway} title="unDraw/RomanticGetaway" />
+
+# RomanticGetaway
+
+RomanticGetaway component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={RomanticGetaway.Primary} />
+
+## Usage
+
+```ts
+import { RomanticGetaway } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <RomanticGetaway />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

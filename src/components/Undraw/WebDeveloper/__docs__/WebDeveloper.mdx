@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as WebDeveloper from "./WebDeveloper.stories.tsx";
+
+<Meta of={WebDeveloper} title="unDraw/WebDeveloper" />
+
+# WebDeveloper
+
+WebDeveloper component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={WebDeveloper.Primary} />
+
+## Usage
+
+```ts
+import { WebDeveloper } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <WebDeveloper />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

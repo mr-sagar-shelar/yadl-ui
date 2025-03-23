@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AppsNotifications from "./AppsNotifications.stories.tsx";
+
+<Meta of={AppsNotifications} title="unDraw/AppsNotifications" />
+
+# AppsNotifications
+
+AppsNotifications component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={AppsNotifications.Primary} />
+
+## Usage
+
+```ts
+import { AppsNotifications } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AppsNotifications />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

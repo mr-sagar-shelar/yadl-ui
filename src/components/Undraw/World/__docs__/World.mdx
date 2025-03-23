@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as World from "./World.stories.tsx";
+
+<Meta of={World} title="unDraw/World" />
+
+# World
+
+World component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={World.Primary} />
+
+## Usage
+
+```ts
+import { World } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <World />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

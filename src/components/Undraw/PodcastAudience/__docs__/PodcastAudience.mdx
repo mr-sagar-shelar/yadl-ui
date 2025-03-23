@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as PodcastAudience from "./PodcastAudience.stories.tsx";
+
+<Meta of={PodcastAudience} title="unDraw/PodcastAudience" />
+
+# PodcastAudience
+
+PodcastAudience component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={PodcastAudience.Primary} />
+
+## Usage
+
+```ts
+import { PodcastAudience } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <PodcastAudience />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

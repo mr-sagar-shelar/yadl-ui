@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Meditating from "./Meditating.stories.tsx";
+
+<Meta of={Meditating} title="unDraw/Meditating" />
+
+# Meditating
+
+Meditating component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Meditating.Primary} />
+
+## Usage
+
+```ts
+import { Meditating } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Meditating />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

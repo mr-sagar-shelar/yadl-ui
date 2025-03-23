@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Slider from "./Slider.stories.tsx";
+
+<Meta of={Slider} title="unDraw/Slider" />
+
+# Slider
+
+Slider component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Slider.Primary} />
+
+## Usage
+
+```ts
+import { Slider } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Slider />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

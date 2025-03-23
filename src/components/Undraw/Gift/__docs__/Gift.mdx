@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Gift from "./Gift.stories.tsx";
+
+<Meta of={Gift} title="unDraw/Gift" />
+
+# Gift
+
+Gift component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Gift.Primary} />
+
+## Usage
+
+```ts
+import { Gift } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Gift />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as FinanceGuyAvatar from "./FinanceGuyAvatar.stories.tsx";
+
+<Meta of={FinanceGuyAvatar} title="unDraw/FinanceGuyAvatar" />
+
+# FinanceGuyAvatar
+
+FinanceGuyAvatar component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={FinanceGuyAvatar.Primary} />
+
+## Usage
+
+```ts
+import { FinanceGuyAvatar } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <FinanceGuyAvatar />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

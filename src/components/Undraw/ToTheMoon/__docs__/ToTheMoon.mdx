@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ToTheMoon from "./ToTheMoon.stories.tsx";
+
+<Meta of={ToTheMoon} title="unDraw/ToTheMoon" />
+
+# ToTheMoon
+
+ToTheMoon component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ToTheMoon.Primary} />
+
+## Usage
+
+```ts
+import { ToTheMoon } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ToTheMoon />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

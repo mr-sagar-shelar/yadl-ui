@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Pumpkin from "./Pumpkin.stories.tsx";
+
+<Meta of={Pumpkin} title="unDraw/Pumpkin" />
+
+# Pumpkin
+
+Pumpkin component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Pumpkin.Primary} />
+
+## Usage
+
+```ts
+import { Pumpkin } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Pumpkin />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

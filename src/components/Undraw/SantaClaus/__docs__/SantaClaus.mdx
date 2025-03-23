@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SantaClaus from "./SantaClaus.stories.tsx";
+
+<Meta of={SantaClaus} title="unDraw/SantaClaus" />
+
+# SantaClaus
+
+SantaClaus component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SantaClaus.Primary} />
+
+## Usage
+
+```ts
+import { SantaClaus } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SantaClaus />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

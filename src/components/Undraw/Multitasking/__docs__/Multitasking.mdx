@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Multitasking from "./Multitasking.stories.tsx";
+
+<Meta of={Multitasking} title="unDraw/Multitasking" />
+
+# Multitasking
+
+Multitasking component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Multitasking.Primary} />
+
+## Usage
+
+```ts
+import { Multitasking } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Multitasking />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

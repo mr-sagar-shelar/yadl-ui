@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Chat from "./Chat.stories.tsx";
+
+<Meta of={Chat} title="unDraw/Chat" />
+
+# Chat
+
+Chat component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Chat.Primary} />
+
+## Usage
+
+```ts
+import { Chat } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Chat />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

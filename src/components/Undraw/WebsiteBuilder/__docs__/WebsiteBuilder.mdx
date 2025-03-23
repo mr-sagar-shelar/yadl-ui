@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as WebsiteBuilder from "./WebsiteBuilder.stories.tsx";
+
+<Meta of={WebsiteBuilder} title="unDraw/WebsiteBuilder" />
+
+# WebsiteBuilder
+
+WebsiteBuilder component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={WebsiteBuilder.Primary} />
+
+## Usage
+
+```ts
+import { WebsiteBuilder } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <WebsiteBuilder />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

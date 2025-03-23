@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ContentTeam from "./ContentTeam.stories.tsx";
+
+<Meta of={ContentTeam} title="unDraw/ContentTeam" />
+
+# ContentTeam
+
+ContentTeam component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ContentTeam.Primary} />
+
+## Usage
+
+```ts
+import { ContentTeam } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ContentTeam />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

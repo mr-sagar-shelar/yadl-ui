@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Starlink from "./Starlink.stories.tsx";
+
+<Meta of={Starlink} title="unDraw/Starlink" />
+
+# Starlink
+
+Starlink component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Starlink.Primary} />
+
+## Usage
+
+```ts
+import { Starlink } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Starlink />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

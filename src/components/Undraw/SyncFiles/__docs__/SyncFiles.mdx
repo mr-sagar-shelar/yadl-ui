@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SyncFiles from "./SyncFiles.stories.tsx";
+
+<Meta of={SyncFiles} title="unDraw/SyncFiles" />
+
+# SyncFiles
+
+SyncFiles component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SyncFiles.Primary} />
+
+## Usage
+
+```ts
+import { SyncFiles } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SyncFiles />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

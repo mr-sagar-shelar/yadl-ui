@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as NoData from "./NoData.stories.tsx";
+
+<Meta of={NoData} title="unDraw/NoData" />
+
+# NoData
+
+NoData component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={NoData.Primary} />
+
+## Usage
+
+```ts
+import { NoData } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <NoData />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

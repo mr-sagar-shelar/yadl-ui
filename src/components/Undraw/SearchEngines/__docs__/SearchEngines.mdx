@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SearchEngines from "./SearchEngines.stories.tsx";
+
+<Meta of={SearchEngines} title="unDraw/SearchEngines" />
+
+# SearchEngines
+
+SearchEngines component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SearchEngines.Primary} />
+
+## Usage
+
+```ts
+import { SearchEngines } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SearchEngines />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

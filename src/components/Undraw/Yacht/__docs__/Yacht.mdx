@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Yacht from "./Yacht.stories.tsx";
+
+<Meta of={Yacht} title="unDraw/Yacht" />
+
+# Yacht
+
+Yacht component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Yacht.Primary} />
+
+## Usage
+
+```ts
+import { Yacht } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Yacht />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

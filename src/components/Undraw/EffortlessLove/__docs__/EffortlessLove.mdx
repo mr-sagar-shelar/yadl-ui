@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as EffortlessLove from "./EffortlessLove.stories.tsx";
+
+<Meta of={EffortlessLove} title="unDraw/EffortlessLove" />
+
+# EffortlessLove
+
+EffortlessLove component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={EffortlessLove.Primary} />
+
+## Usage
+
+```ts
+import { EffortlessLove } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <EffortlessLove />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

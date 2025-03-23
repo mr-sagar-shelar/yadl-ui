@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Resume from "./Resume.stories.tsx";
+
+<Meta of={Resume} title="unDraw/Resume" />
+
+# Resume
+
+Resume component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Resume.Primary} />
+
+## Usage
+
+```ts
+import { Resume } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Resume />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

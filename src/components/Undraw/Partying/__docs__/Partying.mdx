@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Partying from "./Partying.stories.tsx";
+
+<Meta of={Partying} title="unDraw/Partying" />
+
+# Partying
+
+Partying component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Partying.Primary} />
+
+## Usage
+
+```ts
+import { Partying } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Partying />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

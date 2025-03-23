@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SocialInfluencer from "./SocialInfluencer.stories.tsx";
+
+<Meta of={SocialInfluencer} title="unDraw/SocialInfluencer" />
+
+# SocialInfluencer
+
+SocialInfluencer component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SocialInfluencer.Primary} />
+
+## Usage
+
+```ts
+import { SocialInfluencer } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SocialInfluencer />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ShortBio from "./ShortBio.stories.tsx";
+
+<Meta of={ShortBio} title="unDraw/ShortBio" />
+
+# ShortBio
+
+ShortBio component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ShortBio.Primary} />
+
+## Usage
+
+```ts
+import { ShortBio } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ShortBio />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

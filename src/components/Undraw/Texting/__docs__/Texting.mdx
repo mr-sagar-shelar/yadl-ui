@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Texting from "./Texting.stories.tsx";
+
+<Meta of={Texting} title="unDraw/Texting" />
+
+# Texting
+
+Texting component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Texting.Primary} />
+
+## Usage
+
+```ts
+import { Texting } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Texting />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

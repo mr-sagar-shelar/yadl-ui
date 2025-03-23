@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as RemoteMeeting from "./RemoteMeeting.stories.tsx";
+
+<Meta of={RemoteMeeting} title="unDraw/RemoteMeeting" />
+
+# RemoteMeeting
+
+RemoteMeeting component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={RemoteMeeting.Primary} />
+
+## Usage
+
+```ts
+import { RemoteMeeting } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <RemoteMeeting />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

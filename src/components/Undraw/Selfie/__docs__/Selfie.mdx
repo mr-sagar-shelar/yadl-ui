@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Selfie from "./Selfie.stories.tsx";
+
+<Meta of={Selfie} title="unDraw/Selfie" />
+
+# Selfie
+
+Selfie component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Selfie.Primary} />
+
+## Usage
+
+```ts
+import { Selfie } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Selfie />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as OnlinePage from "./OnlinePage.stories.tsx";
+
+<Meta of={OnlinePage} title="unDraw/OnlinePage" />
+
+# OnlinePage
+
+OnlinePage component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={OnlinePage.Primary} />
+
+## Usage
+
+```ts
+import { OnlinePage } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <OnlinePage />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

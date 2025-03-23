@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Welcome from "./Welcome.stories.tsx";
+
+<Meta of={Welcome} title="unDraw/Welcome" />
+
+# Welcome
+
+Welcome component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Welcome.Primary} />
+
+## Usage
+
+```ts
+import { Welcome } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Welcome />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

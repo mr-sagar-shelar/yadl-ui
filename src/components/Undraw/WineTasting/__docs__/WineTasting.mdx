@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as WineTasting from "./WineTasting.stories.tsx";
+
+<Meta of={WineTasting} title="unDraw/WineTasting" />
+
+# WineTasting
+
+WineTasting component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={WineTasting.Primary} />
+
+## Usage
+
+```ts
+import { WineTasting } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <WineTasting />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SocialMedia from "./SocialMedia.stories.tsx";
+
+<Meta of={SocialMedia} title="unDraw/SocialMedia" />
+
+# SocialMedia
+
+SocialMedia component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SocialMedia.Primary} />
+
+## Usage
+
+```ts
+import { SocialMedia } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SocialMedia />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

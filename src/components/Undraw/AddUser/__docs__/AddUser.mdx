@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AddUser from "./AddUser.stories.tsx";
+
+<Meta of={AddUser} title="unDraw/AddUser" />
+
+# AddUser
+
+AddUser component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={AddUser.Primary} />
+
+## Usage
+
+```ts
+import { AddUser } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AddUser />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

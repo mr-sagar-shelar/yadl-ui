@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Uploading from "./Uploading.stories.tsx";
+
+<Meta of={Uploading} title="unDraw/Uploading" />
+
+# Uploading
+
+Uploading component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Uploading.Primary} />
+
+## Usage
+
+```ts
+import { Uploading } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Uploading />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

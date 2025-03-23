@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ServerPush from "./ServerPush.stories.tsx";
+
+<Meta of={ServerPush} title="unDraw/ServerPush" />
+
+# ServerPush
+
+ServerPush component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ServerPush.Primary} />
+
+## Usage
+
+```ts
+import { ServerPush } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ServerPush />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

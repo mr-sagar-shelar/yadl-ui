@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as JapanJapan from "./JapanJapan.stories.tsx";
+
+<Meta of={JapanJapan} title="unDraw/JapanJapan" />
+
+# JapanJapan
+
+JapanJapan component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={JapanJapan.Primary} />
+
+## Usage
+
+```ts
+import { JapanJapan } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <JapanJapan />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

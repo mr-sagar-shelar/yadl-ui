@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SpreadLove from "./SpreadLove.stories.tsx";
+
+<Meta of={SpreadLove} title="unDraw/SpreadLove" />
+
+# SpreadLove
+
+SpreadLove component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SpreadLove.Primary} />
+
+## Usage
+
+```ts
+import { SpreadLove } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SpreadLove />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

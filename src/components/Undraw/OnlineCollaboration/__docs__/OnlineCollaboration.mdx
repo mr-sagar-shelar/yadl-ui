@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as OnlineCollaboration from "./OnlineCollaboration.stories.tsx";
+
+<Meta of={OnlineCollaboration} title="unDraw/OnlineCollaboration" />
+
+# OnlineCollaboration
+
+OnlineCollaboration component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={OnlineCollaboration.Primary} />
+
+## Usage
+
+```ts
+import { OnlineCollaboration } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <OnlineCollaboration />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

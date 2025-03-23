@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MyFeed from "./MyFeed.stories.tsx";
+
+<Meta of={MyFeed} title="unDraw/MyFeed" />
+
+# MyFeed
+
+MyFeed component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={MyFeed.Primary} />
+
+## Usage
+
+```ts
+import { MyFeed } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MyFeed />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

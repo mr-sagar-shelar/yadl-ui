@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as TheWorldIsMine from "./TheWorldIsMine.stories.tsx";
+
+<Meta of={TheWorldIsMine} title="unDraw/TheWorldIsMine" />
+
+# TheWorldIsMine
+
+TheWorldIsMine component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={TheWorldIsMine.Primary} />
+
+## Usage
+
+```ts
+import { TheWorldIsMine } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <TheWorldIsMine />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

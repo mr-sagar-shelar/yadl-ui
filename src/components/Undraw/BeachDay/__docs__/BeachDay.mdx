@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as BeachDay from "./BeachDay.stories.tsx";
+
+<Meta of={BeachDay} title="unDraw/BeachDay" />
+
+# BeachDay
+
+BeachDay component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={BeachDay.Primary} />
+
+## Usage
+
+```ts
+import { BeachDay } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <BeachDay />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as PrototypingProcess from "./PrototypingProcess.stories.tsx";
+
+<Meta of={PrototypingProcess} title="unDraw/PrototypingProcess" />
+
+# PrototypingProcess
+
+PrototypingProcess component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={PrototypingProcess.Primary} />
+
+## Usage
+
+```ts
+import { PrototypingProcess } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <PrototypingProcess />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

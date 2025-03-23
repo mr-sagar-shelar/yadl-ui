@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AlienScience from "./AlienScience.stories.tsx";
+
+<Meta of={AlienScience} title="unDraw/AlienScience" />
+
+# AlienScience
+
+AlienScience component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={AlienScience.Primary} />
+
+## Usage
+
+```ts
+import { AlienScience } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AlienScience />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

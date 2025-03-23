@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Approve from "./Approve.stories.tsx";
+
+<Meta of={Approve} title="unDraw/Approve" />
+
+# Approve
+
+Approve component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Approve.Primary} />
+
+## Usage
+
+```ts
+import { Approve } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Approve />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ImageViewer from "./ImageViewer.stories.tsx";
+
+<Meta of={ImageViewer} title="unDraw/ImageViewer" />
+
+# ImageViewer
+
+ImageViewer component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ImageViewer.Primary} />
+
+## Usage
+
+```ts
+import { ImageViewer } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ImageViewer />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

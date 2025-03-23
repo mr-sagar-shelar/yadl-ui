@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as LivePhoto from "./LivePhoto.stories.tsx";
+
+<Meta of={LivePhoto} title="unDraw/LivePhoto" />
+
+# LivePhoto
+
+LivePhoto component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={LivePhoto.Primary} />
+
+## Usage
+
+```ts
+import { LivePhoto } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <LivePhoto />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Verified from "./Verified.stories.tsx";
+
+<Meta of={Verified} title="unDraw/Verified" />
+
+# Verified
+
+Verified component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Verified.Primary} />
+
+## Usage
+
+```ts
+import { Verified } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Verified />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

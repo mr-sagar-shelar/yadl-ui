@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ComposeMusic from "./ComposeMusic.stories.tsx";
+
+<Meta of={ComposeMusic} title="unDraw/ComposeMusic" />
+
+# ComposeMusic
+
+ComposeMusic component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ComposeMusic.Primary} />
+
+## Usage
+
+```ts
+import { ComposeMusic } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ComposeMusic />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

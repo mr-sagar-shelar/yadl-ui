@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Relaxation from "./Relaxation.stories.tsx";
+
+<Meta of={Relaxation} title="unDraw/Relaxation" />
+
+# Relaxation
+
+Relaxation component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Relaxation.Primary} />
+
+## Usage
+
+```ts
+import { Relaxation } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Relaxation />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

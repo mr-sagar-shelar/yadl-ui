@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DataTrends from "./DataTrends.stories.tsx";
+
+<Meta of={DataTrends} title="unDraw/DataTrends" />
+
+# DataTrends
+
+DataTrends component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={DataTrends.Primary} />
+
+## Usage
+
+```ts
+import { DataTrends } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DataTrends />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

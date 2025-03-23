@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ContactUs from "./ContactUs.stories.tsx";
+
+<Meta of={ContactUs} title="unDraw/ContactUs" />
+
+# ContactUs
+
+ContactUs component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ContactUs.Primary} />
+
+## Usage
+
+```ts
+import { ContactUs } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ContactUs />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

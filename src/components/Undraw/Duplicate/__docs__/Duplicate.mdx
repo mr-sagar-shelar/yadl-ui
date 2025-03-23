@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Duplicate from "./Duplicate.stories.tsx";
+
+<Meta of={Duplicate} title="unDraw/Duplicate" />
+
+# Duplicate
+
+Duplicate component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Duplicate.Primary} />
+
+## Usage
+
+```ts
+import { Duplicate } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Duplicate />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

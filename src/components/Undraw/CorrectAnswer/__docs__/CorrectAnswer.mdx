@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CorrectAnswer from "./CorrectAnswer.stories.tsx";
+
+<Meta of={CorrectAnswer} title="unDraw/CorrectAnswer" />
+
+# CorrectAnswer
+
+CorrectAnswer component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CorrectAnswer.Primary} />
+
+## Usage
+
+```ts
+import { CorrectAnswer } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CorrectAnswer />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

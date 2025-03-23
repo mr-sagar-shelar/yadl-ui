@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as OnlineDiscussion from "./OnlineDiscussion.stories.tsx";
+
+<Meta of={OnlineDiscussion} title="unDraw/OnlineDiscussion" />
+
+# OnlineDiscussion
+
+OnlineDiscussion component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={OnlineDiscussion.Primary} />
+
+## Usage
+
+```ts
+import { OnlineDiscussion } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <OnlineDiscussion />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

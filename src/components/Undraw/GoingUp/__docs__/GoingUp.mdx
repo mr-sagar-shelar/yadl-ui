@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as GoingUp from "./GoingUp.stories.tsx";
+
+<Meta of={GoingUp} title="unDraw/GoingUp" />
+
+# GoingUp
+
+GoingUp component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={GoingUp.Primary} />
+
+## Usage
+
+```ts
+import { GoingUp } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <GoingUp />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

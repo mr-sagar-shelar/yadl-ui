@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Launching from "./Launching.stories.tsx";
+
+<Meta of={Launching} title="unDraw/Launching" />
+
+# Launching
+
+Launching component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Launching.Primary} />
+
+## Usage
+
+```ts
+import { Launching } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Launching />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

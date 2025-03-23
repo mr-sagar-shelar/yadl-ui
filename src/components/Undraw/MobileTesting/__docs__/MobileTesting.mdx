@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MobileTesting from "./MobileTesting.stories.tsx";
+
+<Meta of={MobileTesting} title="unDraw/MobileTesting" />
+
+# MobileTesting
+
+MobileTesting component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={MobileTesting.Primary} />
+
+## Usage
+
+```ts
+import { MobileTesting } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MobileTesting />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

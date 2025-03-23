@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Inbox from "./Inbox.stories.tsx";
+
+<Meta of={Inbox} title="unDraw/Inbox" />
+
+# Inbox
+
+Inbox component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Inbox.Primary} />
+
+## Usage
+
+```ts
+import { Inbox } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Inbox />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

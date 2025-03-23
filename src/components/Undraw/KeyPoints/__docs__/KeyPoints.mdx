@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as KeyPoints from "./KeyPoints.stories.tsx";
+
+<Meta of={KeyPoints} title="unDraw/KeyPoints" />
+
+# KeyPoints
+
+KeyPoints component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={KeyPoints.Primary} />
+
+## Usage
+
+```ts
+import { KeyPoints } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <KeyPoints />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

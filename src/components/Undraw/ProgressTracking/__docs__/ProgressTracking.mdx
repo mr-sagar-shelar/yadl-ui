@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ProgressTracking from "./ProgressTracking.stories.tsx";
+
+<Meta of={ProgressTracking} title="unDraw/ProgressTracking" />
+
+# ProgressTracking
+
+ProgressTracking component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ProgressTracking.Primary} />
+
+## Usage
+
+```ts
+import { ProgressTracking } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ProgressTracking />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

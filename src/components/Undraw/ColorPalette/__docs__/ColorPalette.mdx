@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ColorPalette from "./ColorPalette.stories.tsx";
+
+<Meta of={ColorPalette} title="unDraw/ColorPalette" />
+
+# ColorPalette
+
+ColorPalette component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ColorPalette.Primary} />
+
+## Usage
+
+```ts
+import { ColorPalette } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ColorPalette />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as FallFall from "./FallFall.stories.tsx";
+
+<Meta of={FallFall} title="unDraw/FallFall" />
+
+# FallFall
+
+FallFall component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={FallFall.Primary} />
+
+## Usage
+
+```ts
+import { FallFall } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <FallFall />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

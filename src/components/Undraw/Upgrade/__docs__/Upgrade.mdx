@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Upgrade from "./Upgrade.stories.tsx";
+
+<Meta of={Upgrade} title="unDraw/Upgrade" />
+
+# Upgrade
+
+Upgrade component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Upgrade.Primary} />
+
+## Usage
+
+```ts
+import { Upgrade } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Upgrade />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as GoodDoggy from "./GoodDoggy.stories.tsx";
+
+<Meta of={GoodDoggy} title="unDraw/GoodDoggy" />
+
+# GoodDoggy
+
+GoodDoggy component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={GoodDoggy.Primary} />
+
+## Usage
+
+```ts
+import { GoodDoggy } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <GoodDoggy />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

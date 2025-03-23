@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Navigation from "./Navigation.stories.tsx";
+
+<Meta of={Navigation} title="unDraw/Navigation" />
+
+# Navigation
+
+Navigation component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Navigation.Primary} />
+
+## Usage
+
+```ts
+import { Navigation } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Navigation />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as EmptyStreet from "./EmptyStreet.stories.tsx";
+
+<Meta of={EmptyStreet} title="unDraw/EmptyStreet" />
+
+# EmptyStreet
+
+EmptyStreet component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={EmptyStreet.Primary} />
+
+## Usage
+
+```ts
+import { EmptyStreet } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <EmptyStreet />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

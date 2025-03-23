@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Videographer from "./Videographer.stories.tsx";
+
+<Meta of={Videographer} title="unDraw/Videographer" />
+
+# Videographer
+
+Videographer component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Videographer.Primary} />
+
+## Usage
+
+```ts
+import { Videographer } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Videographer />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

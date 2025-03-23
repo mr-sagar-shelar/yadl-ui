@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as WordOfMouth from "./WordOfMouth.stories.tsx";
+
+<Meta of={WordOfMouth} title="unDraw/WordOfMouth" />
+
+# WordOfMouth
+
+WordOfMouth component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={WordOfMouth.Primary} />
+
+## Usage
+
+```ts
+import { WordOfMouth } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <WordOfMouth />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

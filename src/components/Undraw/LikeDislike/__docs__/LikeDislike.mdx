@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as LikeDislike from "./LikeDislike.stories.tsx";
+
+<Meta of={LikeDislike} title="unDraw/LikeDislike" />
+
+# LikeDislike
+
+LikeDislike component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={LikeDislike.Primary} />
+
+## Usage
+
+```ts
+import { LikeDislike } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <LikeDislike />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

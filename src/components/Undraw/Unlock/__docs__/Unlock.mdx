@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Unlock from "./Unlock.stories.tsx";
+
+<Meta of={Unlock} title="unDraw/Unlock" />
+
+# Unlock
+
+Unlock component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Unlock.Primary} />
+
+## Usage
+
+```ts
+import { Unlock } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Unlock />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

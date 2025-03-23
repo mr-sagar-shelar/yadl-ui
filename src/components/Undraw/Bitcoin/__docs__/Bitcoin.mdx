@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Bitcoin from "./Bitcoin.stories.tsx";
+
+<Meta of={Bitcoin} title="unDraw/Bitcoin" />
+
+# Bitcoin
+
+Bitcoin component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Bitcoin.Primary} />
+
+## Usage
+
+```ts
+import { Bitcoin } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Bitcoin />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as IdeasFlow from "./IdeasFlow.stories.tsx";
+
+<Meta of={IdeasFlow} title="unDraw/IdeasFlow" />
+
+# IdeasFlow
+
+IdeasFlow component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={IdeasFlow.Primary} />
+
+## Usage
+
+```ts
+import { IdeasFlow } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <IdeasFlow />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as FreshNotification from "./FreshNotification.stories.tsx";
+
+<Meta of={FreshNotification} title="unDraw/FreshNotification" />
+
+# FreshNotification
+
+FreshNotification component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={FreshNotification.Primary} />
+
+## Usage
+
+```ts
+import { FreshNotification } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <FreshNotification />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

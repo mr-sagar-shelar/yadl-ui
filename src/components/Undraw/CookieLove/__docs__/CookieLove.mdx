@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CookieLove from "./CookieLove.stories.tsx";
+
+<Meta of={CookieLove} title="unDraw/CookieLove" />
+
+# CookieLove
+
+CookieLove component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={CookieLove.Primary} />
+
+## Usage
+
+```ts
+import { CookieLove } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CookieLove />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as StockPrices from "./StockPrices.stories.tsx";
+
+<Meta of={StockPrices} title="unDraw/StockPrices" />
+
+# StockPrices
+
+StockPrices component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={StockPrices.Primary} />
+
+## Usage
+
+```ts
+import { StockPrices } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <StockPrices />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

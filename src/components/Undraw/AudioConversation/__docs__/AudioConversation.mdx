@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AudioConversation from "./AudioConversation.stories.tsx";
+
+<Meta of={AudioConversation} title="unDraw/AudioConversation" />
+
+# AudioConversation
+
+AudioConversation component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={AudioConversation.Primary} />
+
+## Usage
+
+```ts
+import { AudioConversation } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AudioConversation />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

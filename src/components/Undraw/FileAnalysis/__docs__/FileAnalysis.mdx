@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as FileAnalysis from "./FileAnalysis.stories.tsx";
+
+<Meta of={FileAnalysis} title="unDraw/FileAnalysis" />
+
+# FileAnalysis
+
+FileAnalysis component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={FileAnalysis.Primary} />
+
+## Usage
+
+```ts
+import { FileAnalysis } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <FileAnalysis />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

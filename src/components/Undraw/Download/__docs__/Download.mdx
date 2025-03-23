@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Download from "./Download.stories.tsx";
+
+<Meta of={Download} title="unDraw/Download" />
+
+# Download
+
+Download component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Download.Primary} />
+
+## Usage
+
+```ts
+import { Download } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Download />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

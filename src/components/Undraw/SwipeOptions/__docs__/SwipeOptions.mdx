@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SwipeOptions from "./SwipeOptions.stories.tsx";
+
+<Meta of={SwipeOptions} title="unDraw/SwipeOptions" />
+
+# SwipeOptions
+
+SwipeOptions component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SwipeOptions.Primary} />
+
+## Usage
+
+```ts
+import { SwipeOptions } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SwipeOptions />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

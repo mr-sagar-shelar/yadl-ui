@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ProgressIndicator from "./ProgressIndicator.stories.tsx";
+
+<Meta of={ProgressIndicator} title="unDraw/ProgressIndicator" />
+
+# ProgressIndicator
+
+ProgressIndicator component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ProgressIndicator.Primary} />
+
+## Usage
+
+```ts
+import { ProgressIndicator } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ProgressIndicator />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

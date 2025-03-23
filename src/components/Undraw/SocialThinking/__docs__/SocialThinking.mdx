@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SocialThinking from "./SocialThinking.stories.tsx";
+
+<Meta of={SocialThinking} title="unDraw/SocialThinking" />
+
+# SocialThinking
+
+SocialThinking component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SocialThinking.Primary} />
+
+## Usage
+
+```ts
+import { SocialThinking } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SocialThinking />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

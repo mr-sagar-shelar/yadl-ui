@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as EmailCapture from "./EmailCapture.stories.tsx";
+
+<Meta of={EmailCapture} title="unDraw/EmailCapture" />
+
+# EmailCapture
+
+EmailCapture component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={EmailCapture.Primary} />
+
+## Usage
+
+```ts
+import { EmailCapture } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <EmailCapture />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

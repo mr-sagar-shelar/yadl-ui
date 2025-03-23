@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Blogging from "./Blogging.stories.tsx";
+
+<Meta of={Blogging} title="unDraw/Blogging" />
+
+# Blogging
+
+Blogging component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Blogging.Primary} />
+
+## Usage
+
+```ts
+import { Blogging } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Blogging />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

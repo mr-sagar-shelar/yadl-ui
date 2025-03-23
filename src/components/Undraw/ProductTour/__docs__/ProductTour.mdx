@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ProductTour from "./ProductTour.stories.tsx";
+
+<Meta of={ProductTour} title="unDraw/ProductTour" />
+
+# ProductTour
+
+ProductTour component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={ProductTour.Primary} />
+
+## Usage
+
+```ts
+import { ProductTour } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ProductTour />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

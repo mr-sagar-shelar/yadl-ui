@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Tutor from "./Tutor.stories.tsx";
+
+<Meta of={Tutor} title="unDraw/Tutor" />
+
+# Tutor
+
+Tutor component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Tutor.Primary} />
+
+## Usage
+
+```ts
+import { Tutor } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Tutor />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

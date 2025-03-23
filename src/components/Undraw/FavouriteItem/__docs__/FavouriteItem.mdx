@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as FavouriteItem from "./FavouriteItem.stories.tsx";
+
+<Meta of={FavouriteItem} title="unDraw/FavouriteItem" />
+
+# FavouriteItem
+
+FavouriteItem component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={FavouriteItem.Primary} />
+
+## Usage
+
+```ts
+import { FavouriteItem } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <FavouriteItem />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

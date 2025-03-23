@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as OnlineTest from "./OnlineTest.stories.tsx";
+
+<Meta of={OnlineTest} title="unDraw/OnlineTest" />
+
+# OnlineTest
+
+OnlineTest component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={OnlineTest.Primary} />
+
+## Usage
+
+```ts
+import { OnlineTest } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <OnlineTest />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AccessDenied from "./AccessDenied.stories.tsx";
+
+<Meta of={AccessDenied} title="unDraw/AccessDenied" />
+
+# AccessDenied
+
+AccessDenied component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={AccessDenied.Primary} />
+
+## Usage
+
+```ts
+import { AccessDenied } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AccessDenied />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

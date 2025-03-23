@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AddToCart from "./AddToCart.stories.tsx";
+
+<Meta of={AddToCart} title="unDraw/AddToCart" />
+
+# AddToCart
+
+AddToCart component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={AddToCart.Primary} />
+
+## Usage
+
+```ts
+import { AddToCart } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AddToCart />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

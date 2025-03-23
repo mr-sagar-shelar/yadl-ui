@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as InNoTimeInNoTime from "./InNoTimeInNoTime.stories.tsx";
+
+<Meta of={InNoTimeInNoTime} title="unDraw/InNoTimeInNoTime" />
+
+# InNoTimeInNoTime
+
+InNoTimeInNoTime component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={InNoTimeInNoTime.Primary} />
+
+## Usage
+
+```ts
+import { InNoTimeInNoTime } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <InNoTimeInNoTime />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

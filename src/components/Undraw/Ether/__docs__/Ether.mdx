@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Ether from "./Ether.stories.tsx";
+
+<Meta of={Ether} title="unDraw/Ether" />
+
+# Ether
+
+Ether component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={Ether.Primary} />
+
+## Usage
+
+```ts
+import { Ether } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Ether />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

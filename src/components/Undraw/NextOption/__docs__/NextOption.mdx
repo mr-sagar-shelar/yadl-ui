@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as NextOption from "./NextOption.stories.tsx";
+
+<Meta of={NextOption} title="unDraw/NextOption" />
+
+# NextOption
+
+NextOption component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={NextOption.Primary} />
+
+## Usage
+
+```ts
+import { NextOption } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <NextOption />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

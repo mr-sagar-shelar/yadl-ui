@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as GamingController from "./GamingController.stories.tsx";
+
+<Meta of={GamingController} title="unDraw/GamingController" />
+
+# GamingController
+
+GamingController component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={GamingController.Primary} />
+
+## Usage
+
+```ts
+import { GamingController } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <GamingController />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)

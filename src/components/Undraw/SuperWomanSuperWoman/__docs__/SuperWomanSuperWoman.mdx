@@ -1,0 +1,31 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SuperWomanSuperWoman from "./SuperWomanSuperWoman.stories.tsx";
+
+<Meta of={SuperWomanSuperWoman} title="unDraw/SuperWomanSuperWoman" />
+
+# SuperWomanSuperWoman
+
+SuperWomanSuperWoman component with different props.
+Credit: [unDraw](https://undraw.co/illustrations)
+
+#### Example
+
+<Canvas of={SuperWomanSuperWoman.Primary} />
+
+## Usage
+
+```ts
+import { SuperWomanSuperWoman } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SuperWomanSuperWoman />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)
