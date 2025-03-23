@@ -13,6 +13,7 @@ import {
   const context = await browser.newContext();
   const page = await context.newPage();
   await page.goto("https://undraw.co/illustrations");
+  await page.waitForLoadState("domcontentloaded");
   let indexFileContents = "";
 
   for (let i = 0; i < 1; i++) {
@@ -24,17 +25,28 @@ import {
     console.log(`********* illustrations = ${illustrationCount}`);
 
     // for (let i = 0; i < illustrationCount; i++) {
-    for (let i = 0; i < illustrationCount; i++) {
+    for (let i = 0; i < 1; i++) {
       const currentIcon = await allIllustrations.nth(i);
       let iconName = await currentIcon.allTextContents();
       iconName = toPascalCase(iconName[0]);
       console.log(`${iconName}`);
 
-      writeComponentSkeleton(iconName, `./src/components/Undraw/${iconName}`);
+      let svgData = await currentIcon
+        .getByRole("img")
+        .first()
+        .evaluate((evaluate) =>
+          evaluate.parentElement.innerHTML.replaceAll(
+            "currentColor",
+            "var(--color-primary)",
+          ),
+        );
+      console.log(`${svgData}`);
+
+      // writeComponentSkeleton(iconName, `./src/components/Undraw/${iconName}`);
       // indexFileContents = `${indexFileContents}\nexport * from "./${iconName}";`;
     }
 
-    writeIndexFile(indexFileContents, `./src/components/Undraw/index.ts`);
+    // writeIndexFile(indexFileContents, `./src/components/Undraw/index.ts`);
 
     await page.waitForTimeout(1000);
     // await page.getByText("Next ").click();
