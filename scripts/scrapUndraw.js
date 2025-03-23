@@ -24,14 +24,14 @@ import {
     console.log(`********* illustrations = ${illustrationCount}`);
 
     // for (let i = 0; i < illustrationCount; i++) {
-    for (let i = 0; i < 1; i++) {
+    for (let i = 0; i < illustrationCount; i++) {
       const currentIcon = await allIllustrations.nth(i);
       let iconName = await currentIcon.allTextContents();
       iconName = toPascalCase(iconName[0]);
       console.log(`${iconName}`);
 
       writeComponentSkeleton(iconName, `./src/components/Undraw/${iconName}`);
-      indexFileContents = `${indexFileContents}\nexport * from "./${iconName}";`;
+      // indexFileContents = `${indexFileContents}\nexport * from "./${iconName}";`;
     }
 
     writeIndexFile(indexFileContents, `./src/components/Undraw/index.ts`);
