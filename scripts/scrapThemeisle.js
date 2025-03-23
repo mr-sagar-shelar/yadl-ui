@@ -59,7 +59,7 @@ import { transform } from "@svgr/core";
         { componentName: iconName },
       );
 
-      console.log(`${componentCode}`);
+      // console.log(`${componentCode}`);
 
       writeThemeisleComponentSkeleton(
         iconName,
