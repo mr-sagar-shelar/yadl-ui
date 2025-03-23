@@ -53,7 +53,6 @@ import * as ${componentName} from "./${componentName}.stories.tsx";
 # ${componentName}
 
 ${componentName} component with different props.
-Credit: [unDraw](https://undraw.co/illustrations)
 
 #### Example
 
@@ -200,7 +199,6 @@ import * as ${componentName} from "./${componentName}.stories.tsx";
 # ${componentName}
 
 ${componentName} component with different props.
-Credit: [Themeisle](https://themeisle.com/illustrations/)
 
 #### Example
 

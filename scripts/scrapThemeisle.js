@@ -13,20 +13,12 @@ import { transform } from "@svgr/core";
   const page = await context.newPage();
   await page.goto("https://themeisle.com/illustrations/");
   await page.waitForLoadState("domcontentloaded");
-  let indexFileContents = "";
-
-  await page.waitForTimeout(5000);
   let currentCount = 0;
 
   let allIllustrations = await page.locator(".illustrations").first();
-  // const illustrationCount = await allIllustrations.count();
-  // console.log(`********* illustrations = ${illustrationCount}`);
-  currentCount = await allIllustrations.getByRole("img").count();
-  // currentCount = await images.count();
-  console.log(`********* currentCount = ${currentCount}`);
 
-  while (currentCount < 20) {
-    const allIllustrations = await page.locator(".illustrations").first();
+  while (currentCount < 500) {
+    allIllustrations = await page.locator(".illustrations").first();
     currentCount = await allIllustrations.getByRole("img").count();
     console.log(`********* currentCount = ${currentCount}`);
 
@@ -38,17 +30,17 @@ import { transform } from "@svgr/core";
   const allImages = await allIllustrations.getByRole("img");
 
   // for (let i = 0; i < illustrationCount; i++) {
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < currentCount; i++) {
     console.log(`Starting ${i}`);
-    const iconName = `Themeisle${i}`;
-    let svgCode = await allImages
-      .nth(i)
-      .evaluate((evaluate) =>
-        evaluate.parentElement.innerHTML.replaceAll(
-          "#666AF6",
-          "var(--color-primary)",
-        ),
+    const iconName = `Themeisle${i + 1}`;
+    let svgCode = await allImages.nth(i).evaluate((evaluate) => {
+      let content = evaluate.parentElement.innerHTML.replaceAll(
+        "#666AF6",
+        "var(--color-primary)",
       );
+      content = content.replaceAll("#fff", "transparent");
+      return content;
+    });
     // console.log(`${svgCode}`);
 
     try {
@@ -76,10 +68,10 @@ import { transform } from "@svgr/core";
       );
     } catch (error) {
       // console.error(`${iconName}\n`);
-      // fs.appendFile("./Errors.txt", `Error: ${iconName}\n`, function (err) {
-      //   if (err) throw err;
-      //   // console.log("Saved!");
-      // });
+      fs.appendFile("./Errors.txt", `Error: ${iconName}\n`, function (err) {
+        if (err) throw err;
+        // console.log("Saved!");
+      });
     }
     // indexFileContents = `${indexFileContents}\nexport * from "./${iconName}";`;
   }
