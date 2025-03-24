@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DiscordJS from "./DiscordJS.stories.tsx";
+
+<Meta of={DiscordJS} title="SkillSet/DiscordJS" />
+
+# DiscordJS
+
+DiscordJS component with different props.
+
+#### Example
+
+<Canvas of={DiscordJS.Primary} />
+
+## Usage
+
+```ts
+import { DiscordJS } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DiscordJS />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

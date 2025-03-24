@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as OpenStack from "./OpenStack.stories.tsx";
+
+<Meta of={OpenStack} title="SkillSet/OpenStack" />
+
+# OpenStack
+
+OpenStack component with different props.
+
+#### Example
+
+<Canvas of={OpenStack.Primary} />
+
+## Usage
+
+```ts
+import { OpenStack } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <OpenStack />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

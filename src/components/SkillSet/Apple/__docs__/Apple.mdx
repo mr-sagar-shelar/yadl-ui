@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Apple from "./Apple.stories.tsx";
+
+<Meta of={Apple} title="SkillSet/Apple" />
+
+# Apple
+
+Apple component with different props.
+
+#### Example
+
+<Canvas of={Apple.Primary} />
+
+## Usage
+
+```ts
+import { Apple } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Apple />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

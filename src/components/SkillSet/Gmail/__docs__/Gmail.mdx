@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Gmail from "./Gmail.stories.tsx";
+
+<Meta of={Gmail} title="SkillSet/Gmail" />
+
+# Gmail
+
+Gmail component with different props.
+
+#### Example
+
+<Canvas of={Gmail.Primary} />
+
+## Usage
+
+```ts
+import { Gmail } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Gmail />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

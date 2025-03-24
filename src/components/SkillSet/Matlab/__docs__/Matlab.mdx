@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Matlab from "./Matlab.stories.tsx";
+
+<Meta of={Matlab} title="SkillSet/Matlab" />
+
+# Matlab
+
+Matlab component with different props.
+
+#### Example
+
+<Canvas of={Matlab.Primary} />
+
+## Usage
+
+```ts
+import { Matlab } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Matlab />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

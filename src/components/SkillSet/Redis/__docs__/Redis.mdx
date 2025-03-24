@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Redis from "./Redis.stories.tsx";
+
+<Meta of={Redis} title="SkillSet/Redis" />
+
+# Redis
+
+Redis component with different props.
+
+#### Example
+
+<Canvas of={Redis.Primary} />
+
+## Usage
+
+```ts
+import { Redis } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Redis />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

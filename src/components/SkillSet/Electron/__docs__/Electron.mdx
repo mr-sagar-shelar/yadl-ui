@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Electron from "./Electron.stories.tsx";
+
+<Meta of={Electron} title="SkillSet/Electron" />
+
+# Electron
+
+Electron component with different props.
+
+#### Example
+
+<Canvas of={Electron.Primary} />
+
+## Usage
+
+```ts
+import { Electron } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Electron />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

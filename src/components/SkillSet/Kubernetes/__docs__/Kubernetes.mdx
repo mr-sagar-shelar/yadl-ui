@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Kubernetes from "./Kubernetes.stories.tsx";
+
+<Meta of={Kubernetes} title="SkillSet/Kubernetes" />
+
+# Kubernetes
+
+Kubernetes component with different props.
+
+#### Example
+
+<Canvas of={Kubernetes.Primary} />
+
+## Usage
+
+```ts
+import { Kubernetes } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Kubernetes />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as LaTeX from "./LaTeX.stories.tsx";
+
+<Meta of={LaTeX} title="SkillSet/LaTeX" />
+
+# LaTeX
+
+LaTeX component with different props.
+
+#### Example
+
+<Canvas of={LaTeX.Primary} />
+
+## Usage
+
+```ts
+import { LaTeX } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <LaTeX />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

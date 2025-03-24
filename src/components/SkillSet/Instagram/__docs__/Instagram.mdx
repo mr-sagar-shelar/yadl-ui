@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Instagram from "./Instagram.stories.tsx";
+
+<Meta of={Instagram} title="SkillSet/Instagram" />
+
+# Instagram
+
+Instagram component with different props.
+
+#### Example
+
+<Canvas of={Instagram.Primary} />
+
+## Usage
+
+```ts
+import { Instagram } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Instagram />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

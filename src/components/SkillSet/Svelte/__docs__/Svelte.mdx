@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Svelte from "./Svelte.stories.tsx";
+
+<Meta of={Svelte} title="SkillSet/Svelte" />
+
+# Svelte
+
+Svelte component with different props.
+
+#### Example
+
+<Canvas of={Svelte.Primary} />
+
+## Usage
+
+```ts
+import { Svelte } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Svelte />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

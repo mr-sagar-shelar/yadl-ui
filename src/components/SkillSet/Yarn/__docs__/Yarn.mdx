@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Yarn from "./Yarn.stories.tsx";
+
+<Meta of={Yarn} title="SkillSet/Yarn" />
+
+# Yarn
+
+Yarn component with different props.
+
+#### Example
+
+<Canvas of={Yarn.Primary} />
+
+## Usage
+
+```ts
+import { Yarn } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Yarn />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

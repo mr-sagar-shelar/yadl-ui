@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Fortran from "./Fortran.stories.tsx";
+
+<Meta of={Fortran} title="SkillSet/Fortran" />
+
+# Fortran
+
+Fortran component with different props.
+
+#### Example
+
+<Canvas of={Fortran.Primary} />
+
+## Usage
+
+```ts
+import { Fortran } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Fortran />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

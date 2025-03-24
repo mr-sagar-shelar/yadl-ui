@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Plan9 from "./Plan9.stories.tsx";
+
+<Meta of={Plan9} title="SkillSet/Plan9" />
+
+# Plan9
+
+Plan9 component with different props.
+
+#### Example
+
+<Canvas of={Plan9.Primary} />
+
+## Usage
+
+```ts
+import { Plan9 } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Plan9 />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

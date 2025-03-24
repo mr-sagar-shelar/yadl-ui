@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Prisma from "./Prisma.stories.tsx";
+
+<Meta of={Prisma} title="SkillSet/Prisma" />
+
+# Prisma
+
+Prisma component with different props.
+
+#### Example
+
+<Canvas of={Prisma.Primary} />
+
+## Usage
+
+```ts
+import { Prisma } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Prisma />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CS from "./CS.stories.tsx";
+
+<Meta of={CS} title="SkillSet/CS" />
+
+# CS
+
+CS component with different props.
+
+#### Example
+
+<Canvas of={CS.Primary} />
+
+## Usage
+
+```ts
+import { CS } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CS />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

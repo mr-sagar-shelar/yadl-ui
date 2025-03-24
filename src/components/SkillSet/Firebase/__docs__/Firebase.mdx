@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Firebase from "./Firebase.stories.tsx";
+
+<Meta of={Firebase} title="SkillSet/Firebase" />
+
+# Firebase
+
+Firebase component with different props.
+
+#### Example
+
+<Canvas of={Firebase.Primary} />
+
+## Usage
+
+```ts
+import { Firebase } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Firebase />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

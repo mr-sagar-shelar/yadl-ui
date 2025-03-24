@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Illustrator from "./Illustrator.stories.tsx";
+
+<Meta of={Illustrator} title="SkillSet/Illustrator" />
+
+# Illustrator
+
+Illustrator component with different props.
+
+#### Example
+
+<Canvas of={Illustrator.Primary} />
+
+## Usage
+
+```ts
+import { Illustrator } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Illustrator />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

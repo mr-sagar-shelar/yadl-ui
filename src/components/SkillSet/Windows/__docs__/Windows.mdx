@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Windows from "./Windows.stories.tsx";
+
+<Meta of={Windows} title="SkillSet/Windows" />
+
+# Windows
+
+Windows component with different props.
+
+#### Example
+
+<Canvas of={Windows.Primary} />
+
+## Usage
+
+```ts
+import { Windows } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Windows />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

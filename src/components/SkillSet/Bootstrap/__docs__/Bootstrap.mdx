@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Bootstrap from "./Bootstrap.stories.tsx";
+
+<Meta of={Bootstrap} title="SkillSet/Bootstrap" />
+
+# Bootstrap
+
+Bootstrap component with different props.
+
+#### Example
+
+<Canvas of={Bootstrap.Primary} />
+
+## Usage
+
+```ts
+import { Bootstrap } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Bootstrap />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

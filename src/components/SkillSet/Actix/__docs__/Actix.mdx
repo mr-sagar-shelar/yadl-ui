@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Actix from "./Actix.stories.tsx";
+
+<Meta of={Actix} title="SkillSet/Actix" />
+
+# Actix
+
+Actix component with different props.
+
+#### Example
+
+<Canvas of={Actix.Primary} />
+
+## Usage
+
+```ts
+import { Actix } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Actix />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

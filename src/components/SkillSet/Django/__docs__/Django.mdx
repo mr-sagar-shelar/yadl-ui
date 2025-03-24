@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Django from "./Django.stories.tsx";
+
+<Meta of={Django} title="SkillSet/Django" />
+
+# Django
+
+Django component with different props.
+
+#### Example
+
+<Canvas of={Django.Primary} />
+
+## Usage
+
+```ts
+import { Django } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Django />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

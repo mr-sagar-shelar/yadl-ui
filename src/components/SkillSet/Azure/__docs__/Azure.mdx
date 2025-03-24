@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Azure from "./Azure.stories.tsx";
+
+<Meta of={Azure} title="SkillSet/Azure" />
+
+# Azure
+
+Azure component with different props.
+
+#### Example
+
+<Canvas of={Azure.Primary} />
+
+## Usage
+
+```ts
+import { Azure } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Azure />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

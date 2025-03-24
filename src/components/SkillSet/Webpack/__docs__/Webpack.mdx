@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Webpack from "./Webpack.stories.tsx";
+
+<Meta of={Webpack} title="SkillSet/Webpack" />
+
+# Webpack
+
+Webpack component with different props.
+
+#### Example
+
+<Canvas of={Webpack.Primary} />
+
+## Usage
+
+```ts
+import { Webpack } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Webpack />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as StyledComponents from "./StyledComponents.stories.tsx";
+
+<Meta of={StyledComponents} title="SkillSet/StyledComponents" />
+
+# StyledComponents
+
+StyledComponents component with different props.
+
+#### Example
+
+<Canvas of={StyledComponents.Primary} />
+
+## Usage
+
+```ts
+import { StyledComponents } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <StyledComponents />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

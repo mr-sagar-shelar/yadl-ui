@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Atom from "./Atom.stories.tsx";
+
+<Meta of={Atom} title="SkillSet/Atom" />
+
+# Atom
+
+Atom component with different props.
+
+#### Example
+
+<Canvas of={Atom.Primary} />
+
+## Usage
+
+```ts
+import { Atom } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Atom />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

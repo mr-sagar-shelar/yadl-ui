@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as JavaScript from "./JavaScript.stories.tsx";
+
+<Meta of={JavaScript} title="SkillSet/JavaScript" />
+
+# JavaScript
+
+JavaScript component with different props.
+
+#### Example
+
+<Canvas of={JavaScript.Primary} />
+
+## Usage
+
+```ts
+import { JavaScript } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <JavaScript />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

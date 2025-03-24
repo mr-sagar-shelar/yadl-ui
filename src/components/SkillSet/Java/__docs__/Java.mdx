@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Java from "./Java.stories.tsx";
+
+<Meta of={Java} title="SkillSet/Java" />
+
+# Java
+
+Java component with different props.
+
+#### Example
+
+<Canvas of={Java.Primary} />
+
+## Usage
+
+```ts
+import { Java } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Java />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

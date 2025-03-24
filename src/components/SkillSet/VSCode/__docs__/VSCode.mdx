@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as VSCode from "./VSCode.stories.tsx";
+
+<Meta of={VSCode} title="SkillSet/VSCode" />
+
+# VSCode
+
+VSCode component with different props.
+
+#### Example
+
+<Canvas of={VSCode.Primary} />
+
+## Usage
+
+```ts
+import { VSCode } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <VSCode />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

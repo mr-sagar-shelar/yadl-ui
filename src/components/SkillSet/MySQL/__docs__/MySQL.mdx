@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MySQL from "./MySQL.stories.tsx";
+
+<Meta of={MySQL} title="SkillSet/MySQL" />
+
+# MySQL
+
+MySQL component with different props.
+
+#### Example
+
+<Canvas of={MySQL.Primary} />
+
+## Usage
+
+```ts
+import { MySQL } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MySQL />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

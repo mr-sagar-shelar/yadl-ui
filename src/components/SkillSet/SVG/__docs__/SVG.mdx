@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SVG from "./SVG.stories.tsx";
+
+<Meta of={SVG} title="SkillSet/SVG" />
+
+# SVG
+
+SVG component with different props.
+
+#### Example
+
+<Canvas of={SVG.Primary} />
+
+## Usage
+
+```ts
+import { SVG } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SVG />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

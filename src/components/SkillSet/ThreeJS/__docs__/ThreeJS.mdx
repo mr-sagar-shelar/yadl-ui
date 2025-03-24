@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ThreeJS from "./ThreeJS.stories.tsx";
+
+<Meta of={ThreeJS} title="SkillSet/ThreeJS" />
+
+# ThreeJS
+
+ThreeJS component with different props.
+
+#### Example
+
+<Canvas of={ThreeJS.Primary} />
+
+## Usage
+
+```ts
+import { ThreeJS } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ThreeJS />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Perl from "./Perl.stories.tsx";
+
+<Meta of={Perl} title="SkillSet/Perl" />
+
+# Perl
+
+Perl component with different props.
+
+#### Example
+
+<Canvas of={Perl.Primary} />
+
+## Usage
+
+```ts
+import { Perl } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Perl />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

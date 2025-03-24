@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Bash from "./Bash.stories.tsx";
+
+<Meta of={Bash} title="SkillSet/Bash" />
+
+# Bash
+
+Bash component with different props.
+
+#### Example
+
+<Canvas of={Bash.Primary} />
+
+## Usage
+
+```ts
+import { Bash } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Bash />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

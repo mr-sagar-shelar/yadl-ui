@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Kafka from "./Kafka.stories.tsx";
+
+<Meta of={Kafka} title="SkillSet/Kafka" />
+
+# Kafka
+
+Kafka component with different props.
+
+#### Example
+
+<Canvas of={Kafka.Primary} />
+
+## Usage
+
+```ts
+import { Kafka } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Kafka />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

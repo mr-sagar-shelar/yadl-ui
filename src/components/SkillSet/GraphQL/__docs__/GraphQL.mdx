@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as GraphQL from "./GraphQL.stories.tsx";
+
+<Meta of={GraphQL} title="SkillSet/GraphQL" />
+
+# GraphQL
+
+GraphQL component with different props.
+
+#### Example
+
+<Canvas of={GraphQL.Primary} />
+
+## Usage
+
+```ts
+import { GraphQL } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <GraphQL />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as RaspberryPi from "./RaspberryPi.stories.tsx";
+
+<Meta of={RaspberryPi} title="SkillSet/RaspberryPi" />
+
+# RaspberryPi
+
+RaspberryPi component with different props.
+
+#### Example
+
+<Canvas of={RaspberryPi.Primary} />
+
+## Usage
+
+```ts
+import { RaspberryPi } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <RaspberryPi />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

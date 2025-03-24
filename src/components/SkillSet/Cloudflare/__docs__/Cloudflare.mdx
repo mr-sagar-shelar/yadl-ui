@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Cloudflare from "./Cloudflare.stories.tsx";
+
+<Meta of={Cloudflare} title="SkillSet/Cloudflare" />
+
+# Cloudflare
+
+Cloudflare component with different props.
+
+#### Example
+
+<Canvas of={Cloudflare.Primary} />
+
+## Usage
+
+```ts
+import { Cloudflare } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Cloudflare />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

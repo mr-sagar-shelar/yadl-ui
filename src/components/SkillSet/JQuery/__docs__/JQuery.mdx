@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as JQuery from "./JQuery.stories.tsx";
+
+<Meta of={JQuery} title="SkillSet/JQuery" />
+
+# JQuery
+
+JQuery component with different props.
+
+#### Example
+
+<Canvas of={JQuery.Primary} />
+
+## Usage
+
+```ts
+import { JQuery } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <JQuery />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Github from "./Github.stories.tsx";
+
+<Meta of={Github} title="SkillSet/Github" />
+
+# Github
+
+Github component with different props.
+
+#### Example
+
+<Canvas of={Github.Primary} />
+
+## Usage
+
+```ts
+import { Github } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Github />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

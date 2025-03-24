@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Yew from "./Yew.stories.tsx";
+
+<Meta of={Yew} title="SkillSet/Yew" />
+
+# Yew
+
+Yew component with different props.
+
+#### Example
+
+<Canvas of={Yew.Primary} />
+
+## Usage
+
+```ts
+import { Yew } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Yew />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

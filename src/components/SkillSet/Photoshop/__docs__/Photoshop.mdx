@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Photoshop from "./Photoshop.stories.tsx";
+
+<Meta of={Photoshop} title="SkillSet/Photoshop" />
+
+# Photoshop
+
+Photoshop component with different props.
+
+#### Example
+
+<Canvas of={Photoshop.Primary} />
+
+## Usage
+
+```ts
+import { Photoshop } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Photoshop />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

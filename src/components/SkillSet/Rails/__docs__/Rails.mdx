@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Rails from "./Rails.stories.tsx";
+
+<Meta of={Rails} title="SkillSet/Rails" />
+
+# Rails
+
+Rails component with different props.
+
+#### Example
+
+<Canvas of={Rails.Primary} />
+
+## Usage
+
+```ts
+import { Rails } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Rails />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

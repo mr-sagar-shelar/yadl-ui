@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Debian from "./Debian.stories.tsx";
+
+<Meta of={Debian} title="SkillSet/Debian" />
+
+# Debian
+
+Debian component with different props.
+
+#### Example
+
+<Canvas of={Debian.Primary} />
+
+## Usage
+
+```ts
+import { Debian } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Debian />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

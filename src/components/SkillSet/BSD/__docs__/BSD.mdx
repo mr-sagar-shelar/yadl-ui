@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as BSD from "./BSD.stories.tsx";
+
+<Meta of={BSD} title="SkillSet/BSD" />
+
+# BSD
+
+BSD component with different props.
+
+#### Example
+
+<Canvas of={BSD.Primary} />
+
+## Usage
+
+```ts
+import { BSD } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <BSD />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

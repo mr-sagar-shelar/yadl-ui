@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DiscordBots from "./DiscordBots.stories.tsx";
+
+<Meta of={DiscordBots} title="SkillSet/DiscordBots" />
+
+# DiscordBots
+
+DiscordBots component with different props.
+
+#### Example
+
+<Canvas of={DiscordBots.Primary} />
+
+## Usage
+
+```ts
+import { DiscordBots } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DiscordBots />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

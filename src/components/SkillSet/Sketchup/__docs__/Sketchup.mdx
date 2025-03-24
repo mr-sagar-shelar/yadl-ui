@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Sketchup from "./Sketchup.stories.tsx";
+
+<Meta of={Sketchup} title="SkillSet/Sketchup" />
+
+# Sketchup
+
+Sketchup component with different props.
+
+#### Example
+
+<Canvas of={Sketchup.Primary} />
+
+## Usage
+
+```ts
+import { Sketchup } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Sketchup />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

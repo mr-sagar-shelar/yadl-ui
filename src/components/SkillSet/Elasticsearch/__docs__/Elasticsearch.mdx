@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Elasticsearch from "./Elasticsearch.stories.tsx";
+
+<Meta of={Elasticsearch} title="SkillSet/Elasticsearch" />
+
+# Elasticsearch
+
+Elasticsearch component with different props.
+
+#### Example
+
+<Canvas of={Elasticsearch.Primary} />
+
+## Usage
+
+```ts
+import { Elasticsearch } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Elasticsearch />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)

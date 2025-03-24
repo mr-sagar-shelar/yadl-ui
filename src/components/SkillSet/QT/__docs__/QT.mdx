@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as QT from "./QT.stories.tsx";
+
+<Meta of={QT} title="SkillSet/QT" />
+
+# QT
+
+QT component with different props.
+
+#### Example
+
+<Canvas of={QT.Primary} />
+
+## Usage
+
+```ts
+import { QT } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <QT />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[SkillSet](https://skillicons.dev)
