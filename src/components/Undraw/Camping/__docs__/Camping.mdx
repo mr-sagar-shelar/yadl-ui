@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Camping from "./Camping.stories.tsx";
+
+<Meta of={Camping} title="unDraw/Camping" />
+
+# Camping
+
+Camping component with different props.
+
+#### Example
+
+<Canvas of={Camping.Primary} />
+
+## Usage
+
+```ts
+import { Camping } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Camping />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[unDraw](https://undraw.co/illustrations)
