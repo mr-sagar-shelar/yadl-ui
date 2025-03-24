@@ -110,29 +110,29 @@ export const writeUndrawComponentSkeleton = (
   fs.mkdirSync(dir, { recursive: true });
   fs.mkdirSync(`${dir}/__docs__`, { recursive: true });
   fs.mkdirSync(`${dir}/__test__`, { recursive: true });
-  fs.writeFile(
-    `${dir}/__docs__/Example.tsx`,
-    getExampleContents(componentName),
-    (err) => {
-      if (err) {
-        console.error(err);
-      } else {
-        // file written successfully
-      }
-    },
-  );
+  // fs.writeFile(
+  //   `${dir}/__docs__/Example.tsx`,
+  //   getExampleContents(componentName),
+  //   (err) => {
+  //     if (err) {
+  //       console.error(err);
+  //     } else {
+  //       // file written successfully
+  //     }
+  //   },
+  // );
 
-  fs.writeFile(
-    `${dir}/__docs__/${componentName}.mdx`,
-    getMDXContent(componentName, "unDraw", "https://undraw.co/illustrations"),
-    (err) => {
-      if (err) {
-        console.error(err);
-      } else {
-        // file written successfully
-      }
-    },
-  );
+  // fs.writeFile(
+  //   `${dir}/__docs__/${componentName}.mdx`,
+  //   getMDXContent(componentName, "unDraw", "https://undraw.co/illustrations"),
+  //   (err) => {
+  //     if (err) {
+  //       console.error(err);
+  //     } else {
+  //       // file written successfully
+  //     }
+  //   },
+  // );
 
   fs.writeFile(
     `${dir}/__docs__/${componentName}.stories.tsx`,
@@ -146,32 +146,32 @@ export const writeUndrawComponentSkeleton = (
     },
   );
 
-  fs.writeFile(
-    `${dir}/__test__/${componentName}.test.tsx`,
-    getTestFileContents(componentName),
-    (err) => {
-      if (err) {
-        console.error(err);
-      } else {
-        // file written successfully
-      }
-    },
-  );
-  fs.writeFile(`${dir}/index.ts`, getIndexContents(componentName), (err) => {
-    if (err) {
-      console.error(err);
-    } else {
-      // file written successfully
-    }
-  });
+  // fs.writeFile(
+  //   `${dir}/__test__/${componentName}.test.tsx`,
+  //   getTestFileContents(componentName),
+  //   (err) => {
+  //     if (err) {
+  //       console.error(err);
+  //     } else {
+  //       // file written successfully
+  //     }
+  //   },
+  // );
+  // fs.writeFile(`${dir}/index.ts`, getIndexContents(componentName), (err) => {
+  //   if (err) {
+  //     console.error(err);
+  //   } else {
+  //     // file written successfully
+  //   }
+  // });
 
-  fs.writeFile(`${dir}/${componentName}.tsx`, componentCode, (err) => {
-    if (err) {
-      console.error(err);
-    } else {
-      // file written successfully
-    }
-  });
+  // fs.writeFile(`${dir}/${componentName}.tsx`, componentCode, (err) => {
+  //   if (err) {
+  //     console.error(err);
+  //   } else {
+  //     // file written successfully
+  //   }
+  // });
 };
 
 export const writeIndexFile = (contents, filePath) => {
