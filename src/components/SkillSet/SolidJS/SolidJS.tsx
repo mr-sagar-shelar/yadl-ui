@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const SolidJS = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -87,4 +88,5 @@ const SolidJS = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default SolidJS;
+const Memo = memo(SolidJS);
+export default Memo;

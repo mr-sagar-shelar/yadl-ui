@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Selenium = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -24,4 +25,5 @@ const Selenium = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default Selenium;
+const Memo = memo(Selenium);
+export default Memo;

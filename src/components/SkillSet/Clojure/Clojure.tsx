@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Clojure = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -38,4 +39,5 @@ const Clojure = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default Clojure;
+const Memo = memo(Clojure);
+export default Memo;

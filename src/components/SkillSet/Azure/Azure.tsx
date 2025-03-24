@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Azure = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -65,4 +66,5 @@ const Azure = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default Azure;
+const Memo = memo(Azure);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Discord = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -22,4 +23,5 @@ const Discord = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default Discord;
+const Memo = memo(Discord);
+export default Memo;

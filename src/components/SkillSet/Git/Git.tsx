@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Git = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -22,4 +23,5 @@ const Git = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default Git;
+const Memo = memo(Git);
+export default Memo;

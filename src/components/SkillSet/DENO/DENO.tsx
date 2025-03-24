@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const DENO = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -19,4 +20,5 @@ const DENO = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default DENO;
+const Memo = memo(DENO);
+export default Memo;

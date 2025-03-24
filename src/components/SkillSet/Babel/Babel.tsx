@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Babel = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -19,4 +20,5 @@ const Babel = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Babel;
+const Memo = memo(Babel);
+export default Memo;

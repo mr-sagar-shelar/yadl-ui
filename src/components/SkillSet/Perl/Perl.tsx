@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Perl = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -15,4 +16,5 @@ const Perl = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Perl;
+const Memo = memo(Perl);
+export default Memo;

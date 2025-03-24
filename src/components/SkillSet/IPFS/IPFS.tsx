@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const IPFS = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -37,4 +38,5 @@ const IPFS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default IPFS;
+const Memo = memo(IPFS);
+export default Memo;

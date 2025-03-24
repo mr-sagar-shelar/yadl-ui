@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Nix = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -139,4 +140,5 @@ const Nix = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default Nix;
+const Memo = memo(Nix);
+export default Memo;

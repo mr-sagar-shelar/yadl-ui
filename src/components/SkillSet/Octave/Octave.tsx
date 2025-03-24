@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Octave = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -34,4 +35,5 @@ const Octave = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default Octave;
+const Memo = memo(Octave);
+export default Memo;

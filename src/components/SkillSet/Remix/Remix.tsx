@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Remix = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -34,4 +35,5 @@ const Remix = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Remix;
+const Memo = memo(Remix);
+export default Memo;

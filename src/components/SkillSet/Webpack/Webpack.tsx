@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Webpack = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -19,4 +20,5 @@ const Webpack = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Webpack;
+const Memo = memo(Webpack);
+export default Memo;

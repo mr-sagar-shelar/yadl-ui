@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Supabase = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -53,4 +54,5 @@ const Supabase = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default Supabase;
+const Memo = memo(Supabase);
+export default Memo;

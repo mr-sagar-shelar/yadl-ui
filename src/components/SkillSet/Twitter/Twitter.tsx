@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Twitter = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -16,4 +17,5 @@ const Twitter = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Twitter;
+const Memo = memo(Twitter);
+export default Memo;

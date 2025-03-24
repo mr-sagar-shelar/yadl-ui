@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const RedHat = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -34,4 +35,5 @@ const RedHat = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default RedHat;
+const Memo = memo(RedHat);
+export default Memo;

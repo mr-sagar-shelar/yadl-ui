@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Lit = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -21,4 +22,5 @@ const Lit = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#0FF" d="M88 228v-80l40 40" />
   </svg>
 );
-export default Lit;
+const Memo = memo(Lit);
+export default Memo;

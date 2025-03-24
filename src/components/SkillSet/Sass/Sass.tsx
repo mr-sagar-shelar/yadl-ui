@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Sass = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -22,4 +23,5 @@ const Sass = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default Sass;
+const Memo = memo(Sass);
+export default Memo;

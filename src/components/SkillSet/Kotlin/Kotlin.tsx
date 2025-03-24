@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Kotlin = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -26,4 +27,5 @@ const Kotlin = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default Kotlin;
+const Memo = memo(Kotlin);
+export default Memo;

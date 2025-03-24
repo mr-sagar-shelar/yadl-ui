@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Matlab = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -58,4 +59,5 @@ const Matlab = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default Matlab;
+const Memo = memo(Matlab);
+export default Memo;

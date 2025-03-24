@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const p5js = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -15,4 +16,5 @@ const p5js = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default p5js;
+const Memo = memo(p5js);
+export default Memo;

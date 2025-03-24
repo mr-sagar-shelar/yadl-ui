@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const WebAssembly = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -25,4 +26,5 @@ const WebAssembly = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default WebAssembly;
+const Memo = memo(WebAssembly);
+export default Memo;

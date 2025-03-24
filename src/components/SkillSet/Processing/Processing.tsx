@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Processing = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -18,4 +19,5 @@ const Processing = (props: SVGProps<SVGSVGElement>) => (
     <path stroke="#85AEFF" strokeWidth={42.286} d="m54 114.381 28.19 56.381" />
   </svg>
 );
-export default Processing;
+const Memo = memo(Processing);
+export default Memo;

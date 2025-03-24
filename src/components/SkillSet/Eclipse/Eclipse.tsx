@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Eclipse = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -70,4 +71,5 @@ const Eclipse = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default Eclipse;
+const Memo = memo(Eclipse);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Gherkin = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -27,4 +28,5 @@ const Gherkin = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Gherkin;
+const Memo = memo(Gherkin);
+export default Memo;

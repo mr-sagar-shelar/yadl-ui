@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const ReactiveX = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -82,4 +83,5 @@ const ReactiveX = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default ReactiveX;
+const Memo = memo(ReactiveX);
+export default Memo;

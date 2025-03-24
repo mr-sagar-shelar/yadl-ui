@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Vercel = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -12,4 +13,5 @@ const Vercel = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#000" d="m128 34 95 164.853H33z" />
   </svg>
 );
-export default Vercel;
+const Memo = memo(Vercel);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const OpenCV = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -23,4 +24,5 @@ const OpenCV = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default OpenCV;
+const Memo = memo(OpenCV);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Ruby = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -300,4 +301,5 @@ const Ruby = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default Ruby;
+const Memo = memo(Ruby);
+export default Memo;

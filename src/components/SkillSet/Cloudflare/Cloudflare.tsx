@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Cloudflare = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -30,4 +31,5 @@ const Cloudflare = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default Cloudflare;
+const Memo = memo(Cloudflare);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const OCaml = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -33,4 +34,5 @@ const OCaml = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default OCaml;
+const Memo = memo(OCaml);
+export default Memo;

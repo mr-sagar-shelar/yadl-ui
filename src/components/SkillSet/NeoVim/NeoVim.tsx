@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const NeoVim = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -71,4 +72,5 @@ const NeoVim = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default NeoVim;
+const Memo = memo(NeoVim);
+export default Memo;

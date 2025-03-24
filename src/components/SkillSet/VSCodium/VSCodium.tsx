@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const VSCodium = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -41,4 +42,5 @@ const VSCodium = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default VSCodium;
+const Memo = memo(VSCodium);
+export default Memo;

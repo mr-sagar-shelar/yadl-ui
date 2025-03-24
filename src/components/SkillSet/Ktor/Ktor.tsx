@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Ktor = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -17,4 +18,5 @@ const Ktor = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#27282C" d="M159.78 96.444H95.39v62.444h64.39z" />
   </svg>
 );
-export default Ktor;
+const Memo = memo(Ktor);
+export default Memo;

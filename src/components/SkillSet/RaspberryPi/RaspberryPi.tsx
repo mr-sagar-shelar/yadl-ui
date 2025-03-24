@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const RaspberryPi = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -23,4 +24,5 @@ const RaspberryPi = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default RaspberryPi;
+const Memo = memo(RaspberryPi);
+export default Memo;

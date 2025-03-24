@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const ActivityPub = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -29,4 +30,5 @@ const ActivityPub = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default ActivityPub;
+const Memo = memo(ActivityPub);
+export default Memo;

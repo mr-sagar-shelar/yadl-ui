@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Grafana = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -28,4 +29,5 @@ const Grafana = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default Grafana;
+const Memo = memo(Grafana);
+export default Memo;

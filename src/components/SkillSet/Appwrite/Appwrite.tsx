@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Appwrite = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -21,4 +22,5 @@ const Appwrite = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Appwrite;
+const Memo = memo(Appwrite);
+export default Memo;

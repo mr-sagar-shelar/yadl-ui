@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Hibernate = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -21,4 +22,5 @@ const Hibernate = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#BCAE79" d="M110.221 217.995h69.244l-34.594-59.962H75.58z" />
   </svg>
 );
-export default Hibernate;
+const Memo = memo(Hibernate);
+export default Memo;

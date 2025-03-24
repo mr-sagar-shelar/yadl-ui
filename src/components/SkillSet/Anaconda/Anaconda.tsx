@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Anaconda = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -17,4 +18,5 @@ const Anaconda = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Anaconda;
+const Memo = memo(Anaconda);
+export default Memo;

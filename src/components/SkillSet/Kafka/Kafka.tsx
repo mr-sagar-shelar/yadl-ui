@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Kafka = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -22,4 +23,5 @@ const Kafka = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default Kafka;
+const Memo = memo(Kafka);
+export default Memo;

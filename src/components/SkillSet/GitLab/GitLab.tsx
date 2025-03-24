@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const GitLab = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -36,4 +37,5 @@ const GitLab = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default GitLab;
+const Memo = memo(GitLab);
+export default Memo;

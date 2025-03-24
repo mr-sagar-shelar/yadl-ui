@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Zig = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -37,4 +38,5 @@ const Zig = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#F7A41D" d="m185.059 157.765 5.882 17.647-28.235 8.235z" />
   </svg>
 );
-export default Zig;
+const Memo = memo(Zig);
+export default Memo;

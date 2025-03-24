@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Apollo = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -32,4 +33,5 @@ const Apollo = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default Apollo;
+const Memo = memo(Apollo);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Actix = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -17,4 +18,5 @@ const Actix = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Actix;
+const Memo = memo(Actix);
+export default Memo;

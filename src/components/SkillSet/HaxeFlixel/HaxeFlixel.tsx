@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const HaxeFlixel = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -25,4 +26,5 @@ const HaxeFlixel = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default HaxeFlixel;
+const Memo = memo(HaxeFlixel);
+export default Memo;

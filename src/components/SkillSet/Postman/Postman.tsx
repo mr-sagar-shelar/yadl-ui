@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Postman = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -83,4 +84,5 @@ const Postman = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Postman;
+const Memo = memo(Postman);
+export default Memo;

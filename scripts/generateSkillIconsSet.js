@@ -37,6 +37,8 @@ import { transform } from "@svgr/core";
                   icon: true,
                   jsxRuntime: "automatic",
                   typescript: true,
+                  memo: true,
+                  svgo: true,
                 },
                 { componentName: fileName },
               );

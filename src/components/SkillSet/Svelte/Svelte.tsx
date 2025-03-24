@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Svelte = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -26,4 +27,5 @@ const Svelte = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 );
-export default Svelte;
+const Memo = memo(Svelte);
+export default Memo;
