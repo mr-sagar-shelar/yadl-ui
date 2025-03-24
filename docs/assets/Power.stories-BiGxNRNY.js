@@ -1,0 +1,6 @@
+import{j as r}from"./jsx-runtime-D_zvdyIk.js";import{a as o}from"./index-C4mD4Gko.js";const t=e=>r.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 18 18",...e,children:[r.jsx("defs",{children:r.jsxs("radialGradient",{id:"prefix__a",cx:3.117,cy:-116.12,r:9.022,gradientTransform:"matrix(1.013 0 0 .789 5.844 100.656)",gradientUnits:"userSpaceOnUse",children:[r.jsx("stop",{offset:.196,stopColor:"#ffd70f"}),r.jsx("stop",{offset:.438,stopColor:"#ffcb12"}),r.jsx("stop",{offset:.873,stopColor:"#feac19"}),r.jsx("stop",{offset:1,stopColor:"#fea11b"})]})}),r.jsx("path",{fill:"url(#prefix__a)",d:"M8.09 10.01H3.464a.24.24 0 0 1-.262-.2.2.2 0 0 1 .023-.085L8.775.12A.27.27 0 0 1 9.014 0h5.47a.24.24 0 0 1 .262.2.18.18 0 0 1-.046.119L8.186 7.834h6.35a.24.24 0 0 1 .262.2.19.19 0 0 1-.067.137L4.175 17.788c-.1.051-.8.562-.458-.214Z"})]}),a=o.memo(t),n={title:"Azure/General/Power",component:a},s={args:{width:"500px",height:"500px"}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+  args: {
+    width: "500px",
+    height: "500px"
+  }
+}`,...s.parameters?.docs?.source}}};const f=["Primary"];export{s as Primary,f as __namedExportsOrder,n as default};

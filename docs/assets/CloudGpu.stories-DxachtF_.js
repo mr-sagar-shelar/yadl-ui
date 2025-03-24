@@ -1,0 +1,6 @@
+import{j as s}from"./jsx-runtime-D_zvdyIk.js";import{a as r}from"./index-C4mD4Gko.js";const t=a=>s.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 24 24",...a,children:[s.jsx("defs",{children:s.jsx("style",{children:".prefix__cls-1{fill:#4285f4}"})}),s.jsxs("g",{"data-name":"Product Icons",children:[s.jsx("path",{d:"M15.33 2v2.38h-2.16V2h-2.34v2.38H8.67V2H6.29v2.38a2 2 0 0 0-1.91 1.91H2v2.38h2.38v2.14H2v2.38h2.38v2.14H2v2.38h2.38a2 2 0 0 0 1.91 1.91V22h2.38v-2.38h2.16V22h2.34v-2.38h2.16V22h2.38v-2.38a2 2 0 0 0 1.91-1.91H22v-2.38h-2.38v-2.14H22v-2.38h-2.38V8.67H22V6.29h-2.38a2 2 0 0 0-1.91-1.91V2Zm1.53 15.24H7.14a.38.38 0 0 1-.38-.38V7.14a.38.38 0 0 1 .38-.38h9.72a.38.38 0 0 1 .38.38v9.72a.38.38 0 0 1-.38.38",className:"prefix__cls-1"}),s.jsx("path",{d:"M12.83 7.54v3.58h1.96l-3.5 4.86v-3.63H9.22z",className:"prefix__cls-1"})]})]}),h=r.memo(t),m={title:"GCP/CloudGpu",component:h},e={args:{width:"500px",height:"500px"}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+  args: {
+    width: "500px",
+    height: "500px"
+  }
+}`,...e.parameters?.docs?.source}}};const i=["Primary"];export{e as Primary,i as __namedExportsOrder,m as default};

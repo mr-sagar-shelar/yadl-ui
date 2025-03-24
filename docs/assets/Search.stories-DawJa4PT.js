@@ -1,0 +1,6 @@
+import{j as r}from"./jsx-runtime-D_zvdyIk.js";import{a as t}from"./index-C4mD4Gko.js";const o=e=>r.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 18 18",...e,children:[r.jsx("defs",{children:r.jsxs("radialGradient",{id:"prefix__a",cx:10.629,cy:7.175,r:6.675,gradientUnits:"userSpaceOnUse",children:[r.jsx("stop",{offset:.225,stopColor:"#32d4f5"}),r.jsx("stop",{offset:.59,stopColor:"#32d2f2"}),r.jsx("stop",{offset:.825,stopColor:"#32caea"}),r.jsx("stop",{offset:1,stopColor:"#32bedd"})]})}),r.jsx("rect",{width:9.73,height:2.216,x:-.375,y:12.598,fill:"#198ab3",rx:1.036,transform:"rotate(-45 4.491 13.706)"}),r.jsx("circle",{cx:10.629,cy:7.175,r:6.675,fill:"url(#prefix__a)"}),r.jsx("circle",{cx:10.615,cy:7.056,r:5.243,fill:"#fff"}),r.jsx("path",{fill:"#c3f1ff",d:"M5.535 8.353S6.97 1.171 13.676 2.8a5.14 5.14 0 0 0-6.186.047 5.12 5.12 0 0 0-1.955 5.506"})]}),a=t.memo(o),x={title:"Azure/General/Search",component:a},s={args:{width:"500px",height:"500px"}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+  args: {
+    width: "500px",
+    height: "500px"
+  }
+}`,...s.parameters?.docs?.source}}};const p=["Primary"];export{s as Primary,p as __namedExportsOrder,x as default};

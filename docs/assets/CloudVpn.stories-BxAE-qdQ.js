@@ -1,0 +1,6 @@
+import{j as s}from"./jsx-runtime-D_zvdyIk.js";import{a as t}from"./index-C4mD4Gko.js";const a=r=>s.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 24 24",...r,children:[s.jsx("defs",{children:s.jsx("style",{children:".prefix__cls-1{fill:#669df6}.prefix__cls-2{fill:#4285f4}"})}),s.jsxs("g",{"data-name":"Product Icons",children:[s.jsx("path",{d:"M14.73 11.28h4.18v1.38h-4.18z",className:"prefix__cls-1"}),s.jsx("path",{d:"M17.95 6.12h1.38v11.71h-1.38z",className:"prefix__cls-1"}),s.jsx("rect",{width:4.68,height:4.68,x:16.3,y:17.32,className:"prefix__cls-2",rx:.28}),s.jsx("rect",{width:4.68,height:4.68,x:16.3,y:2,className:"prefix__cls-2",rx:.28}),s.jsx("path",{d:"M6.98 11.28h4.28v1.38H6.98z",className:"prefix__cls-1"}),s.jsx("rect",{width:4.68,height:4.68,x:3.03,y:9.63,className:"prefix__cls-2",rx:.28}),s.jsx("path",{d:"M13 14.17a2.2 2.2 0 1 1 2.2-2.2 2.19 2.19 0 0 1-2.2 2.2m0-3.57a1.38 1.38 0 1 0 1.33 1.4A1.37 1.37 0 0 0 13 10.6",className:"prefix__cls-2"})]})]}),c=t.memo(a),h={title:"GCP/CloudVpn",component:c},e={args:{width:"500px",height:"500px"}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+  args: {
+    width: "500px",
+    height: "500px"
+  }
+}`,...e.parameters?.docs?.source}}};const l=["Primary"];export{e as Primary,l as __namedExportsOrder,h as default};

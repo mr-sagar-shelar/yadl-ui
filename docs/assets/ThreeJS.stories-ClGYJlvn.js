@@ -1,0 +1,6 @@
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{a as o}from"./index-C4mD4Gko.js";const s=r=>e.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",fill:"none",viewBox:"0 0 256 256",...r,children:[e.jsx("rect",{width:256,height:256,fill:"#fff",rx:60}),e.jsx("path",{stroke:"#000",strokeLinejoin:"round",strokeMiterlimit:10,strokeWidth:4,d:"M93.213 222.94 50 48l173.23 49.874z",clipRule:"evenodd"}),e.jsx("path",{stroke:"#000",strokeLinejoin:"round",strokeMiterlimit:10,strokeWidth:4,d:"m136.583 72.942 21.591 87.496-86.567-24.945z",clipRule:"evenodd"}),e.jsx("path",{stroke:"#000",strokeLinejoin:"round",strokeMiterlimit:10,strokeWidth:4,d:"m115.103 147.36-10.724-43.465 43.008 12.346zM93.65 60.483l10.725 43.465-43.008-12.346zM179.663 85.26l10.724 43.465-43.008-12.346zM115.108 147.39l10.724 43.465-43.008-12.346z",clipRule:"evenodd"})]}),i=o.memo(s),m={title:"SkillSet/ThreeJS",component:i},t={args:{width:"500px",height:"500px"}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
+  args: {
+    width: "500px",
+    height: "500px"
+  }
+}`,...t.parameters?.docs?.source}}};const a=["Primary"];export{t as Primary,a as __namedExportsOrder,m as default};

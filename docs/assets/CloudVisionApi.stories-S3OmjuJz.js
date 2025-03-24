@@ -1,0 +1,6 @@
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{a as r}from"./index-C4mD4Gko.js";const i=a=>e.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 24 24",...a,children:[e.jsx("defs",{children:e.jsx("style",{children:".prefix__cls-2{fill:#669df6}.prefix__cls-3{fill:#aecbfa}"})}),e.jsx("g",{"data-name":"Product Icons",children:e.jsxs("g",{"data-name":"colored-32/vision",children:[e.jsx("path",{d:"M0 0h24v24H0z",style:{fill:"none"}}),e.jsx("path",{d:"m6 12 6 4.99V20L2 12z",className:"prefix__cls-2"}),e.jsx("path",{id:"prefix__Shape-2",d:"M12 16.99 18 12h4l-10 8z",className:"prefix__cls-2","data-name":"Shape"}),e.jsx("path",{id:"prefix__Shape-3",d:"m2 12 10-8v3.01L6 12z",className:"prefix__cls-3","data-name":"Shape"}),e.jsx("path",{id:"prefix__Shape-4",d:"M12 7.01 18 12h4L12 4z",className:"prefix__cls-3","data-name":"Shape"}),e.jsx("circle",{id:"prefix__Oval",cx:12,cy:12,r:2,style:{fill:"#4285f4"}})]})})]}),t=r.memo(i),l={title:"GCP/CloudVisionApi",component:t},s={args:{width:"500px",height:"500px"}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+  args: {
+    width: "500px",
+    height: "500px"
+  }
+}`,...s.parameters?.docs?.source}}};const o=["Primary"];export{s as Primary,o as __namedExportsOrder,l as default};

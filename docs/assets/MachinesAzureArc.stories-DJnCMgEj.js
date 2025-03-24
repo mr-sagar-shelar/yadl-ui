@@ -1,0 +1,6 @@
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{a}from"./index-C4mD4Gko.js";const t=s=>e.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 18 18",...s,children:[e.jsx("defs",{children:e.jsxs("linearGradient",{id:"prefix__a",x1:9.23,x2:9.23,y2:18,gradientUnits:"userSpaceOnUse",children:[e.jsx("stop",{offset:0,stopColor:"#a67af4"}),e.jsx("stop",{offset:.999,stopColor:"#773adc"})]})}),e.jsx("path",{fill:"url(#prefix__a)",d:"M15.074 17.39a.645.645 0 0 1-.674.61H4.062a.645.645 0 0 1-.675-.61V.61A.645.645 0 0 1 4.062 0H14.4a.645.645 0 0 1 .675.61Z"}),e.jsx("path",{fill:"#552f99",d:"M13.461 7.7a1.34 1.34 0 0 0-1.27-1.4H6.375a1.34 1.34 0 0 0-1.27 1.4 1.34 1.34 0 0 0 1.27 1.4h5.816a1.34 1.34 0 0 0 1.27-1.4M13.461 3.537a1.34 1.34 0 0 0-1.27-1.4H6.375a1.34 1.34 0 0 0-1.27 1.4 1.34 1.34 0 0 0 1.27 1.4h5.816a1.34 1.34 0 0 0 1.27-1.4"}),e.jsx("circle",{cx:11.826,cy:3.537,r:.939,fill:"#50e6ff"}),e.jsx("circle",{cx:11.826,cy:7.695,r:.939,fill:"#50e6ff"})]}),o=a.memo(t),n={title:"Azure/ManagementGovernance/MachinesAzureArc",component:o},r={args:{width:"500px",height:"500px"}};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`{
+  args: {
+    width: "500px",
+    height: "500px"
+  }
+}`,...r.parameters?.docs?.source}}};const x=["Primary"];export{r as Primary,x as __namedExportsOrder,n as default};

@@ -1,0 +1,6 @@
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{a as t}from"./index-C4mD4Gko.js";const o=r=>e.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 18 18",...r,children:[e.jsxs("defs",{children:[e.jsxs("linearGradient",{id:"prefix__a",x1:9.006,x2:9.006,y1:16.875,y2:-3.164,gradientUnits:"userSpaceOnUse",children:[e.jsx("stop",{offset:.033,stopColor:"#0078d4"}),e.jsx("stop",{offset:.627,stopColor:"#03497f"})]}),e.jsxs("linearGradient",{id:"prefix__b",x1:9,x2:9,y1:17.793,y2:12.657,gradientUnits:"userSpaceOnUse",children:[e.jsx("stop",{offset:0,stopColor:"#50e6ff"}),e.jsx("stop",{offset:1,stopColor:"#32bedd"})]})]}),e.jsx("path",{fill:"url(#prefix__a)",d:"M9.006 0a7.88 7.88 0 0 1 7.875 7.875v9H1.131v-9A7.88 7.88 0 0 1 9.006 0"}),e.jsx("path",{fill:"#fff",d:"M5.625 12.375v-4.5C5.625 6.014 7.139 4.5 9 4.5s3.375 1.514 3.375 3.375v4.5z"}),e.jsx("path",{fill:"url(#prefix__b)",d:"M5.625 12.375 0 18h18l-5.625-5.625z"})]}),i=t.memo(o),p={title:"Azure/Other/AzureDevTunnels",component:i},s={args:{width:"500px",height:"500px"}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+  args: {
+    width: "500px",
+    height: "500px"
+  }
+}`,...s.parameters?.docs?.source}}};const x=["Primary"];export{s as Primary,x as __namedExportsOrder,p as default};

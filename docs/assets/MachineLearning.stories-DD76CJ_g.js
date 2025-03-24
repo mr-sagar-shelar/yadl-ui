@@ -1,0 +1,6 @@
+import{j as s}from"./jsx-runtime-D_zvdyIk.js";import{a as r}from"./index-C4mD4Gko.js";const o=t=>s.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 18 18",...t,children:[s.jsx("defs",{children:s.jsxs("linearGradient",{id:"prefix__a",x1:1.1,x2:11.12,y1:169,y2:169,gradientTransform:"translate(0 -160)",gradientUnits:"userSpaceOnUse",children:[s.jsx("stop",{offset:0,stopColor:"#50c7e8"}),s.jsx("stop",{offset:.25,stopColor:"#4cc3e4"}),s.jsx("stop",{offset:.51,stopColor:"#41b6da"}),s.jsx("stop",{offset:.77,stopColor:"#2fa2c8"}),s.jsx("stop",{offset:1,stopColor:"#1989b2"})]})}),s.jsx("path",{fill:"#198ab3",d:"M15.8 17.5H2.2l-1.1-4.1h15.8Z"}),s.jsx("path",{fill:"url(#prefix__a)",d:"M6.9.5v6.4l-5.8 6.5 1.1 4.1 8.9-10.6V.5z"}),s.jsx("path",{fill:"#32bedd",d:"m15.8 17.5-6.2-6.4 2.6-3 4.7 5.3Z"})]}),a=r.memo(o),p={title:"Azure/AiMachineLearning/MachineLearning",component:a},e={args:{width:"500px",height:"500px"}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+  args: {
+    width: "500px",
+    height: "500px"
+  }
+}`,...e.parameters?.docs?.source}}};const x=["Primary"];export{e as Primary,x as __namedExportsOrder,p as default};

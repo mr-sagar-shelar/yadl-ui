@@ -1,0 +1,6 @@
+import{j as s}from"./jsx-runtime-D_zvdyIk.js";import{a as r}from"./index-C4mD4Gko.js";const t=a=>s.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 24 24",...a,children:[s.jsx("defs",{children:s.jsx("style",{children:".prefix__cls-1{fill:#aecbfa}.prefix__cls-2{fill:#669df6}.prefix__cls-3{fill:#4285f4}"})}),s.jsxs("g",{"data-name":"Product Icons",children:[s.jsx("path",{d:"M9 9h6v6H9z",className:"prefix__cls-1"}),s.jsx("path",{d:"M11 2h2v4h-2zM7 2h2v4H7zM15 2h2v4h-2z",className:"prefix__cls-2"}),s.jsx("path",{d:"M11 18h2v4h-2zM7 18h2v4H7zM15 18h2v4h-2zM18 13v-2h4v2zM18 17v-2h4v2zM18 9V7h4v2z",className:"prefix__cls-3"}),s.jsx("path",{d:"M2 13v-2h4v2zM2 17v-2h4v2zM2 9V7h4v2z",className:"prefix__cls-2"}),s.jsx("path",{d:"M5 5v14h14V5Zm12 12H7V7h10Z",className:"prefix__cls-1"}),s.jsx("path",{d:"M9 15h6l-3-3z",className:"prefix__cls-2"}),s.jsx("path",{d:"m12 12 3 3V9z",className:"prefix__cls-3"})]})]}),h=r.memo(t),i={title:"GCP/ComputeEngine",component:h},e={args:{width:"500px",height:"500px"}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+  args: {
+    width: "500px",
+    height: "500px"
+  }
+}`,...e.parameters?.docs?.source}}};const l=["Primary"];export{e as Primary,l as __namedExportsOrder,i as default};

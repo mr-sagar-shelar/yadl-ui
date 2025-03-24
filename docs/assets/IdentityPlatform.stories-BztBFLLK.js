@@ -1,0 +1,6 @@
+import{j as s}from"./jsx-runtime-D_zvdyIk.js";import{a as t}from"./index-C4mD4Gko.js";const a=r=>s.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 24 24",...r,children:[s.jsx("defs",{children:s.jsx("style",{children:".prefix__cls-1,.prefix__cls-2{fill:#669df6;fill-rule:evenodd}.prefix__cls-2{fill:#4285f4}"})}),s.jsxs("g",{"data-name":"Product Icons",children:[s.jsx("path",{d:"M3.33 7 12 2l8.66 5v9.72L17.33 14H6.67l-3.34 2.67ZM16 8.67a4 4 0 1 0-4 4 4 4 0 0 0 4-4m-1.33 0A2.67 2.67 0 1 1 12 6a2.67 2.67 0 0 1 2.67 2.67",className:"prefix__cls-1"}),s.jsx("path",{d:"M12 12.67a4 4 0 0 0 0-8V2l8.66 5v9.72L17.33 14H12Zm2.67-4A2.67 2.67 0 0 1 12 11.31V6a2.67 2.67 0 0 1 2.67 2.66Z",className:"prefix__cls-2"}),s.jsx("path",{d:"m4 18 8 4 8-4-3.33-2.67H7.33z",className:"prefix__cls-1"}),s.jsx("path",{d:"m12 22 8-4-3.33-2.67H12z",className:"prefix__cls-2"})]})]}),l=t.memo(a),o={title:"GCP/IdentityPlatform",component:l},e={args:{width:"500px",height:"500px"}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+  args: {
+    width: "500px",
+    height: "500px"
+  }
+}`,...e.parameters?.docs?.source}}};const c=["Primary"];export{e as Primary,c as __namedExportsOrder,o as default};

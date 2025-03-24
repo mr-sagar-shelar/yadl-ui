@@ -1,0 +1,6 @@
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{a as r}from"./index-C4mD4Gko.js";const t=a=>e.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 24 24",...a,children:[e.jsx("defs",{children:e.jsx("style",{children:".prefix__cls-2{fill:#4285f4}.prefix__cls-3{fill:#669df6}"})}),e.jsxs("g",{"data-name":"Product Icons",children:[e.jsxs("g",{"data-name":"colored-32/traces",children:[e.jsx("path",{d:"M0 0h24v24H0z",style:{fill:"none"}}),e.jsx("path",{id:"prefix__Fill-1",d:"M12 14h10v-4H12z",className:"prefix__cls-2"}),e.jsx("g",{"data-name":"Shape",children:e.jsx("path",{id:"prefix__Fill-1-2",d:"M12 22h10v-4H12z",className:"prefix__cls-2","data-name":"Fill-1"})}),e.jsx("g",{"data-name":"Shape",children:e.jsx("path",{id:"prefix__Fill-1-3",d:"M8 22h4v-4H8z",className:"prefix__cls-3","data-name":"Fill-1"})})]}),e.jsx("path",{d:"M2 2h6v4H2zM2 10h10v4H2z",className:"prefix__cls-3"})]})]}),i=r.memo(t),d={title:"GCP/Trace",component:i},s={args:{width:"500px",height:"500px"}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+  args: {
+    width: "500px",
+    height: "500px"
+  }
+}`,...s.parameters?.docs?.source}}};const n=["Primary"];export{s as Primary,n as __namedExportsOrder,d as default};

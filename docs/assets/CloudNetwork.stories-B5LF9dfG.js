@@ -1,0 +1,6 @@
+import{j as s}from"./jsx-runtime-D_zvdyIk.js";import{a as c}from"./index-C4mD4Gko.js";const a=r=>s.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 24 24",...r,children:[s.jsx("defs",{children:s.jsx("style",{children:".prefix__cls-1{fill:#669df6;fill-rule:evenodd}.prefix__cls-2{fill:#4285f4}.prefix__cls-3{fill:#aecbfa}"})}),s.jsxs("g",{"data-name":"Product Icons",children:[s.jsx("path",{d:"m4.94 13.7 6.59 6.52 1.09-1.15-6.32-6.14zM12.57 4.06l-1.09 1.16 6.21 6.22 1.78-.38z",className:"prefix__cls-1"}),s.jsx("path",{d:"M11.38 5.13h1.25v5h-1.25zM11.38 14.5h1.25v5h-1.25z",className:"prefix__cls-2"}),s.jsx("circle",{id:"prefix__Oval",cx:12,cy:4.5,r:1.88,className:"prefix__cls-3"}),s.jsx("circle",{cx:12,cy:19.5,r:1.88,className:"prefix__cls-3"}),s.jsx("path",{d:"M2.66 11.38h15.07l3.64 1.87H6.3z",className:"prefix__cls-1"}),s.jsx("circle",{cx:4.5,cy:12.31,r:2.5,className:"prefix__cls-3"}),s.jsx("circle",{cx:19.5,cy:12.31,r:2.5,className:"prefix__cls-3"})]})]}),l=c.memo(a),x={title:"GCP/CloudNetwork",component:l},e={args:{width:"500px",height:"500px"}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
+  args: {
+    width: "500px",
+    height: "500px"
+  }
+}`,...e.parameters?.docs?.source}}};const o=["Primary"];export{e as Primary,o as __namedExportsOrder,x as default};
