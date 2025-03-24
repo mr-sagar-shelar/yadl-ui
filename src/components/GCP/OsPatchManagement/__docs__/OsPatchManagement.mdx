@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as OsPatchManagement from "./OsPatchManagement.stories.tsx";
+
+<Meta of={OsPatchManagement} title="GCP/OsPatchManagement" />
+
+# OsPatchManagement
+
+OsPatchManagement component with different props.
+
+#### Example
+
+<Canvas of={OsPatchManagement.Primary} />
+
+## Usage
+
+```ts
+import { OsPatchManagement } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <OsPatchManagement />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

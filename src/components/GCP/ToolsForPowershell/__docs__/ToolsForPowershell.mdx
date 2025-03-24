@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ToolsForPowershell from "./ToolsForPowershell.stories.tsx";
+
+<Meta of={ToolsForPowershell} title="GCP/ToolsForPowershell" />
+
+# ToolsForPowershell
+
+ToolsForPowershell component with different props.
+
+#### Example
+
+<Canvas of={ToolsForPowershell.Primary} />
+
+## Usage
+
+```ts
+import { ToolsForPowershell } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ToolsForPowershell />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

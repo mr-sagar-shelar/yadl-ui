@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CloudFunctions from "./CloudFunctions.stories.tsx";
+
+<Meta of={CloudFunctions} title="GCP/CloudFunctions" />
+
+# CloudFunctions
+
+CloudFunctions component with different props.
+
+#### Example
+
+<Canvas of={CloudFunctions.Primary} />
+
+## Usage
+
+```ts
+import { CloudFunctions } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CloudFunctions />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

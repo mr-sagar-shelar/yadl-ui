@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AdvancedAgentModeling from "./AdvancedAgentModeling.stories.tsx";
+
+<Meta of={AdvancedAgentModeling} title="GCP/AdvancedAgentModeling" />
+
+# AdvancedAgentModeling
+
+AdvancedAgentModeling component with different props.
+
+#### Example
+
+<Canvas of={AdvancedAgentModeling.Primary} />
+
+## Usage
+
+```ts
+import { AdvancedAgentModeling } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AdvancedAgentModeling />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

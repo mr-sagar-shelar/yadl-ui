@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Administration from "./Administration.stories.tsx";
+
+<Meta of={Administration} title="GCP/Administration" />
+
+# Administration
+
+Administration component with different props.
+
+#### Example
+
+<Canvas of={Administration.Primary} />
+
+## Usage
+
+```ts
+import { Administration } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Administration />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

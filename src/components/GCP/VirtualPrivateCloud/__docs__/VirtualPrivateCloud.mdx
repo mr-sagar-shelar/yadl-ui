@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as VirtualPrivateCloud from "./VirtualPrivateCloud.stories.tsx";
+
+<Meta of={VirtualPrivateCloud} title="GCP/VirtualPrivateCloud" />
+
+# VirtualPrivateCloud
+
+VirtualPrivateCloud component with different props.
+
+#### Example
+
+<Canvas of={VirtualPrivateCloud.Primary} />
+
+## Usage
+
+```ts
+import { VirtualPrivateCloud } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <VirtualPrivateCloud />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

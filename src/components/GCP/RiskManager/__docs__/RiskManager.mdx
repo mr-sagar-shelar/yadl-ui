@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as RiskManager from "./RiskManager.stories.tsx";
+
+<Meta of={RiskManager} title="GCP/RiskManager" />
+
+# RiskManager
+
+RiskManager component with different props.
+
+#### Example
+
+<Canvas of={RiskManager.Primary} />
+
+## Usage
+
+```ts
+import { RiskManager } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <RiskManager />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

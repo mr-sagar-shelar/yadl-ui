@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as VisualInspection from "./VisualInspection.stories.tsx";
+
+<Meta of={VisualInspection} title="GCP/VisualInspection" />
+
+# VisualInspection
+
+VisualInspection component with different props.
+
+#### Example
+
+<Canvas of={VisualInspection.Primary} />
+
+## Usage
+
+```ts
+import { VisualInspection } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <VisualInspection />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

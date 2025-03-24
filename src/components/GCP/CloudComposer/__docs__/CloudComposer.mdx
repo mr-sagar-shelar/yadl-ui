@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CloudComposer from "./CloudComposer.stories.tsx";
+
+<Meta of={CloudComposer} title="GCP/CloudComposer" />
+
+# CloudComposer
+
+CloudComposer component with different props.
+
+#### Example
+
+<Canvas of={CloudComposer.Primary} />
+
+## Usage
+
+```ts
+import { CloudComposer } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CloudComposer />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

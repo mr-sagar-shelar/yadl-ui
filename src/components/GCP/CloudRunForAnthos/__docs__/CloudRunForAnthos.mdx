@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CloudRunForAnthos from "./CloudRunForAnthos.stories.tsx";
+
+<Meta of={CloudRunForAnthos} title="GCP/CloudRunForAnthos" />
+
+# CloudRunForAnthos
+
+CloudRunForAnthos component with different props.
+
+#### Example
+
+<Canvas of={CloudRunForAnthos.Primary} />
+
+## Usage
+
+```ts
+import { CloudRunForAnthos } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CloudRunForAnthos />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

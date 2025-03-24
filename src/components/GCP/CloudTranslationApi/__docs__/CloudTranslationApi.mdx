@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CloudTranslationApi from "./CloudTranslationApi.stories.tsx";
+
+<Meta of={CloudTranslationApi} title="GCP/CloudTranslationApi" />
+
+# CloudTranslationApi
+
+CloudTranslationApi component with different props.
+
+#### Example
+
+<Canvas of={CloudTranslationApi.Primary} />
+
+## Usage
+
+```ts
+import { CloudTranslationApi } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CloudTranslationApi />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

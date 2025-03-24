@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Vertexai from "./Vertexai.stories.tsx";
+
+<Meta of={Vertexai} title="GCP/Vertexai" />
+
+# Vertexai
+
+Vertexai component with different props.
+
+#### Example
+
+<Canvas of={Vertexai.Primary} />
+
+## Usage
+
+```ts
+import { Vertexai } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Vertexai />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CloudDomains from "./CloudDomains.stories.tsx";
+
+<Meta of={CloudDomains} title="GCP/CloudDomains" />
+
+# CloudDomains
+
+CloudDomains component with different props.
+
+#### Example
+
+<Canvas of={CloudDomains.Primary} />
+
+## Usage
+
+```ts
+import { CloudDomains } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CloudDomains />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

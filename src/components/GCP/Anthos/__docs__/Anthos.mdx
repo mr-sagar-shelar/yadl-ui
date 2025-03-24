@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Anthos from "./Anthos.stories.tsx";
+
+<Meta of={Anthos} title="GCP/Anthos" />
+
+# Anthos
+
+Anthos component with different props.
+
+#### Example
+
+<Canvas of={Anthos.Primary} />
+
+## Usage
+
+```ts
+import { Anthos } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Anthos />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

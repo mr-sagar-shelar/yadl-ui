@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CloudTestLab from "./CloudTestLab.stories.tsx";
+
+<Meta of={CloudTestLab} title="GCP/CloudTestLab" />
+
+# CloudTestLab
+
+CloudTestLab component with different props.
+
+#### Example
+
+<Canvas of={CloudTestLab.Primary} />
+
+## Usage
+
+```ts
+import { CloudTestLab } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CloudTestLab />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

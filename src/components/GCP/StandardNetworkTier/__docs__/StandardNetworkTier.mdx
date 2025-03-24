@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as StandardNetworkTier from "./StandardNetworkTier.stories.tsx";
+
+<Meta of={StandardNetworkTier} title="GCP/StandardNetworkTier" />
+
+# StandardNetworkTier
+
+StandardNetworkTier component with different props.
+
+#### Example
+
+<Canvas of={StandardNetworkTier.Primary} />
+
+## Usage
+
+```ts
+import { StandardNetworkTier } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <StandardNetworkTier />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

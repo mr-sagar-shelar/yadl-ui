@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Texttospeech from "./Texttospeech.stories.tsx";
+
+<Meta of={Texttospeech} title="GCP/Texttospeech" />
+
+# Texttospeech
+
+Texttospeech component with different props.
+
+#### Example
+
+<Canvas of={Texttospeech.Primary} />
+
+## Usage
+
+```ts
+import { Texttospeech } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Texttospeech />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

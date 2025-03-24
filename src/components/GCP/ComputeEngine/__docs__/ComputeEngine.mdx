@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ComputeEngine from "./ComputeEngine.stories.tsx";
+
+<Meta of={ComputeEngine} title="GCP/ComputeEngine" />
+
+# ComputeEngine
+
+ComputeEngine component with different props.
+
+#### Example
+
+<Canvas of={ComputeEngine.Primary} />
+
+## Usage
+
+```ts
+import { ComputeEngine } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ComputeEngine />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

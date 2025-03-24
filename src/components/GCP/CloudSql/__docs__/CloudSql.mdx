@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CloudSql from "./CloudSql.stories.tsx";
+
+<Meta of={CloudSql} title="GCP/CloudSql" />
+
+# CloudSql
+
+CloudSql component with different props.
+
+#### Example
+
+<Canvas of={CloudSql.Primary} />
+
+## Usage
+
+```ts
+import { CloudSql } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CloudSql />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

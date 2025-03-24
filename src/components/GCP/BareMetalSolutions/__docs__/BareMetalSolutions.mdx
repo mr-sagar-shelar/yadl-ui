@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as BareMetalSolutions from "./BareMetalSolutions.stories.tsx";
+
+<Meta of={BareMetalSolutions} title="GCP/BareMetalSolutions" />
+
+# BareMetalSolutions
+
+BareMetalSolutions component with different props.
+
+#### Example
+
+<Canvas of={BareMetalSolutions.Primary} />
+
+## Usage
+
+```ts
+import { BareMetalSolutions } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <BareMetalSolutions />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

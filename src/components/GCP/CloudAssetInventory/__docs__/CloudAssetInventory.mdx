@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CloudAssetInventory from "./CloudAssetInventory.stories.tsx";
+
+<Meta of={CloudAssetInventory} title="GCP/CloudAssetInventory" />
+
+# CloudAssetInventory
+
+CloudAssetInventory component with different props.
+
+#### Example
+
+<Canvas of={CloudAssetInventory.Primary} />
+
+## Usage
+
+```ts
+import { CloudAssetInventory } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CloudAssetInventory />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

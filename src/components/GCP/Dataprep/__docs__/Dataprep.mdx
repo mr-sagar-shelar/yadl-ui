@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Dataprep from "./Dataprep.stories.tsx";
+
+<Meta of={Dataprep} title="GCP/Dataprep" />
+
+# Dataprep
+
+Dataprep component with different props.
+
+#### Example
+
+<Canvas of={Dataprep.Primary} />
+
+## Usage
+
+```ts
+import { Dataprep } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Dataprep />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

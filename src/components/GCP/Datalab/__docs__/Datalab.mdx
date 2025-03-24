@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Datalab from "./Datalab.stories.tsx";
+
+<Meta of={Datalab} title="GCP/Datalab" />
+
+# Datalab
+
+Datalab component with different props.
+
+#### Example
+
+<Canvas of={Datalab.Primary} />
+
+## Usage
+
+```ts
+import { Datalab } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Datalab />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

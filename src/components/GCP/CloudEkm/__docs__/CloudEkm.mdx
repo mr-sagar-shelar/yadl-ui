@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CloudEkm from "./CloudEkm.stories.tsx";
+
+<Meta of={CloudEkm} title="GCP/CloudEkm" />
+
+# CloudEkm
+
+CloudEkm component with different props.
+
+#### Example
+
+<Canvas of={CloudEkm.Primary} />
+
+## Usage
+
+```ts
+import { CloudEkm } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CloudEkm />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

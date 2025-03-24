@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as KeyAccessJustifications from "./KeyAccessJustifications.stories.tsx";
+
+<Meta of={KeyAccessJustifications} title="GCP/KeyAccessJustifications" />
+
+# KeyAccessJustifications
+
+KeyAccessJustifications component with different props.
+
+#### Example
+
+<Canvas of={KeyAccessJustifications.Primary} />
+
+## Usage
+
+```ts
+import { KeyAccessJustifications } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <KeyAccessJustifications />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

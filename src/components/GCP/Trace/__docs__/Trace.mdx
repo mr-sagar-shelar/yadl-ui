@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Trace from "./Trace.stories.tsx";
+
+<Meta of={Trace} title="GCP/Trace" />
+
+# Trace
+
+Trace component with different props.
+
+#### Example
+
+<Canvas of={Trace.Primary} />
+
+## Usage
+
+```ts
+import { Trace } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Trace />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

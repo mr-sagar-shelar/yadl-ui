@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CloudLogging from "./CloudLogging.stories.tsx";
+
+<Meta of={CloudLogging} title="GCP/CloudLogging" />
+
+# CloudLogging
+
+CloudLogging component with different props.
+
+#### Example
+
+<Canvas of={CloudLogging.Primary} />
+
+## Usage
+
+```ts
+import { CloudLogging } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CloudLogging />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

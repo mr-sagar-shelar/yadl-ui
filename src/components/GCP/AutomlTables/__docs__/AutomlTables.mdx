@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AutomlTables from "./AutomlTables.stories.tsx";
+
+<Meta of={AutomlTables} title="GCP/AutomlTables" />
+
+# AutomlTables
+
+AutomlTables component with different props.
+
+#### Example
+
+<Canvas of={AutomlTables.Primary} />
+
+## Usage
+
+```ts
+import { AutomlTables } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AutomlTables />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

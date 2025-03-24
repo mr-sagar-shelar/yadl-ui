@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ContainerRegistry from "./ContainerRegistry.stories.tsx";
+
+<Meta of={ContainerRegistry} title="GCP/ContainerRegistry" />
+
+# ContainerRegistry
+
+ContainerRegistry component with different props.
+
+#### Example
+
+<Canvas of={ContainerRegistry.Primary} />
+
+## Usage
+
+```ts
+import { ContainerRegistry } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ContainerRegistry />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

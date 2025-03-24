@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CertificateAuthorityService from "./CertificateAuthorityService.stories.tsx";
+
+<Meta of={CertificateAuthorityService} title="GCP/CertificateAuthorityService" />
+
+# CertificateAuthorityService
+
+CertificateAuthorityService component with different props.
+
+#### Example
+
+<Canvas of={CertificateAuthorityService.Primary} />
+
+## Usage
+
+```ts
+import { CertificateAuthorityService } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CertificateAuthorityService />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

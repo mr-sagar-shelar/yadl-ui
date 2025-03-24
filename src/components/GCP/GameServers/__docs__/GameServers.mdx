@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as GameServers from "./GameServers.stories.tsx";
+
+<Meta of={GameServers} title="GCP/GameServers" />
+
+# GameServers
+
+GameServers component with different props.
+
+#### Example
+
+<Canvas of={GameServers.Primary} />
+
+## Usage
+
+```ts
+import { GameServers } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <GameServers />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

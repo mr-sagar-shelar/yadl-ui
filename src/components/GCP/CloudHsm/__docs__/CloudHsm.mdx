@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CloudHsm from "./CloudHsm.stories.tsx";
+
+<Meta of={CloudHsm} title="GCP/CloudHsm" />
+
+# CloudHsm
+
+CloudHsm component with different props.
+
+#### Example
+
+<Canvas of={CloudHsm.Primary} />
+
+## Usage
+
+```ts
+import { CloudHsm } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CloudHsm />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

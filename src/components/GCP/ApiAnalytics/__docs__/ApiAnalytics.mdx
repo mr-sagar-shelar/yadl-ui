@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ApiAnalytics from "./ApiAnalytics.stories.tsx";
+
+<Meta of={ApiAnalytics} title="GCP/ApiAnalytics" />
+
+# ApiAnalytics
+
+ApiAnalytics component with different props.
+
+#### Example
+
+<Canvas of={ApiAnalytics.Primary} />
+
+## Usage
+
+```ts
+import { ApiAnalytics } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ApiAnalytics />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

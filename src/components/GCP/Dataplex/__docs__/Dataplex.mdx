@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Dataplex from "./Dataplex.stories.tsx";
+
+<Meta of={Dataplex} title="GCP/Dataplex" />
+
+# Dataplex
+
+Dataplex component with different props.
+
+#### Example
+
+<Canvas of={Dataplex.Primary} />
+
+## Usage
+
+```ts
+import { Dataplex } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Dataplex />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

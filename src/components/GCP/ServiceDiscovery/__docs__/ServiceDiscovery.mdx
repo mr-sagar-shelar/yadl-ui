@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ServiceDiscovery from "./ServiceDiscovery.stories.tsx";
+
+<Meta of={ServiceDiscovery} title="GCP/ServiceDiscovery" />
+
+# ServiceDiscovery
+
+ServiceDiscovery component with different props.
+
+#### Example
+
+<Canvas of={ServiceDiscovery.Primary} />
+
+## Usage
+
+```ts
+import { ServiceDiscovery } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ServiceDiscovery />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

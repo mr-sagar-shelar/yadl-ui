@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CloudExternalIpAddresses from "./CloudExternalIpAddresses.stories.tsx";
+
+<Meta of={CloudExternalIpAddresses} title="GCP/CloudExternalIpAddresses" />
+
+# CloudExternalIpAddresses
+
+CloudExternalIpAddresses component with different props.
+
+#### Example
+
+<Canvas of={CloudExternalIpAddresses.Primary} />
+
+## Usage
+
+```ts
+import { CloudExternalIpAddresses } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CloudExternalIpAddresses />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

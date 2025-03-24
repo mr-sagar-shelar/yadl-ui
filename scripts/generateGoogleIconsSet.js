@@ -53,16 +53,16 @@ import { transform } from "@svgr/core";
                     },
                     { componentName: fileName },
                   );
-                  console.log(`${componentCode}`);
-                  console.log(`./src/components/GCP/${fileName}`);
+                  // console.log(`${componentCode}`);
+                  // console.log(`./src/components/GCP/${fileName}`);
 
-                  // writeComponentSkeleton(
-                  //   fileName,
-                  //   `./src/components/GCP/${fileName}`,
-                  //   componentCode,
-                  //   `GCP`,
-                  //   "https://cloud.google.com/icons",
-                  // );
+                  writeComponentSkeleton(
+                    fileName,
+                    `./src/components/GCP/${fileName}`,
+                    componentCode,
+                    `GCP`,
+                    "https://cloud.google.com/icons",
+                  );
                 } catch (error) {
                   console.log(`Error Transforming ${fileName}`);
                   console.error(error);

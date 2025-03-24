@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as FinancialServicesMarketplace from "./FinancialServicesMarketplace.stories.tsx";
+
+<Meta of={FinancialServicesMarketplace} title="GCP/FinancialServicesMarketplace" />
+
+# FinancialServicesMarketplace
+
+FinancialServicesMarketplace component with different props.
+
+#### Example
+
+<Canvas of={FinancialServicesMarketplace.Primary} />
+
+## Usage
+
+```ts
+import { FinancialServicesMarketplace } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <FinancialServicesMarketplace />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

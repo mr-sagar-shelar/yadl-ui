@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CloudCode from "./CloudCode.stories.tsx";
+
+<Meta of={CloudCode} title="GCP/CloudCode" />
+
+# CloudCode
+
+CloudCode component with different props.
+
+#### Example
+
+<Canvas of={CloudCode.Primary} />
+
+## Usage
+
+```ts
+import { CloudCode } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CloudCode />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

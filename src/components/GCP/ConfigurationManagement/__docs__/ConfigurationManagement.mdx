@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ConfigurationManagement from "./ConfigurationManagement.stories.tsx";
+
+<Meta of={ConfigurationManagement} title="GCP/ConfigurationManagement" />
+
+# ConfigurationManagement
+
+ConfigurationManagement component with different props.
+
+#### Example
+
+<Canvas of={ConfigurationManagement.Primary} />
+
+## Usage
+
+```ts
+import { ConfigurationManagement } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ConfigurationManagement />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

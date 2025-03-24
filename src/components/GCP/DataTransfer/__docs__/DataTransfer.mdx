@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DataTransfer from "./DataTransfer.stories.tsx";
+
+<Meta of={DataTransfer} title="GCP/DataTransfer" />
+
+# DataTransfer
+
+DataTransfer component with different props.
+
+#### Example
+
+<Canvas of={DataTransfer.Primary} />
+
+## Usage
+
+```ts
+import { DataTransfer } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DataTransfer />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

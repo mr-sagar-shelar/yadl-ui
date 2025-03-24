@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Kuberun from "./Kuberun.stories.tsx";
+
+<Meta of={Kuberun} title="GCP/Kuberun" />
+
+# Kuberun
+
+Kuberun component with different props.
+
+#### Example
+
+<Canvas of={Kuberun.Primary} />
+
+## Usage
+
+```ts
+import { Kuberun } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Kuberun />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

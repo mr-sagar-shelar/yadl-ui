@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CloudOps from "./CloudOps.stories.tsx";
+
+<Meta of={CloudOps} title="GCP/CloudOps" />
+
+# CloudOps
+
+CloudOps component with different props.
+
+#### Example
+
+<Canvas of={CloudOps.Primary} />
+
+## Usage
+
+```ts
+import { CloudOps } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CloudOps />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

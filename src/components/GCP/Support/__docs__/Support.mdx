@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Support from "./Support.stories.tsx";
+
+<Meta of={Support} title="GCP/Support" />
+
+# Support
+
+Support component with different props.
+
+#### Example
+
+<Canvas of={Support.Primary} />
+
+## Usage
+
+```ts
+import { Support } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Support />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

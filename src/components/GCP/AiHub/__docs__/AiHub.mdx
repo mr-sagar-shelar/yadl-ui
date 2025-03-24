@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AiHub from "./AiHub.stories.tsx";
+
+<Meta of={AiHub} title="GCP/AiHub" />
+
+# AiHub
+
+AiHub component with different props.
+
+#### Example
+
+<Canvas of={AiHub.Primary} />
+
+## Usage
+
+```ts
+import { AiHub } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AiHub />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

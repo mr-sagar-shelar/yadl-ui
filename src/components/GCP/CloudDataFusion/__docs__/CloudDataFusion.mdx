@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CloudDataFusion from "./CloudDataFusion.stories.tsx";
+
+<Meta of={CloudDataFusion} title="GCP/CloudDataFusion" />
+
+# CloudDataFusion
+
+CloudDataFusion component with different props.
+
+#### Example
+
+<Canvas of={CloudDataFusion.Primary} />
+
+## Usage
+
+```ts
+import { CloudDataFusion } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CloudDataFusion />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

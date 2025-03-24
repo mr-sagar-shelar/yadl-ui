@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MyCloud from "./MyCloud.stories.tsx";
+
+<Meta of={MyCloud} title="GCP/MyCloud" />
+
+# MyCloud
+
+MyCloud component with different props.
+
+#### Example
+
+<Canvas of={MyCloud.Primary} />
+
+## Usage
+
+```ts
+import { MyCloud } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MyCloud />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as LocalSsd from "./LocalSsd.stories.tsx";
+
+<Meta of={LocalSsd} title="GCP/LocalSsd" />
+
+# LocalSsd
+
+LocalSsd component with different props.
+
+#### Example
+
+<Canvas of={LocalSsd.Primary} />
+
+## Usage
+
+```ts
+import { LocalSsd } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <LocalSsd />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

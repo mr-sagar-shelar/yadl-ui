@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Billing from "./Billing.stories.tsx";
+
+<Meta of={Billing} title="GCP/Billing" />
+
+# Billing
+
+Billing component with different props.
+
+#### Example
+
+<Canvas of={Billing.Primary} />
+
+## Usage
+
+```ts
+import { Billing } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Billing />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Bigquery from "./Bigquery.stories.tsx";
+
+<Meta of={Bigquery} title="GCP/Bigquery" />
+
+# Bigquery
+
+Bigquery component with different props.
+
+#### Example
+
+<Canvas of={Bigquery.Primary} />
+
+## Usage
+
+```ts
+import { Bigquery } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Bigquery />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

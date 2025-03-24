@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SecurityKeyEnforcement from "./SecurityKeyEnforcement.stories.tsx";
+
+<Meta of={SecurityKeyEnforcement} title="GCP/SecurityKeyEnforcement" />
+
+# SecurityKeyEnforcement
+
+SecurityKeyEnforcement component with different props.
+
+#### Example
+
+<Canvas of={SecurityKeyEnforcement.Primary} />
+
+## Usage
+
+```ts
+import { SecurityKeyEnforcement } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SecurityKeyEnforcement />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

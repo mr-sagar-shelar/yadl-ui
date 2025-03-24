@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DatabaseMigrationService from "./DatabaseMigrationService.stories.tsx";
+
+<Meta of={DatabaseMigrationService} title="GCP/DatabaseMigrationService" />
+
+# DatabaseMigrationService
+
+DatabaseMigrationService component with different props.
+
+#### Example
+
+<Canvas of={DatabaseMigrationService.Primary} />
+
+## Usage
+
+```ts
+import { DatabaseMigrationService } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DatabaseMigrationService />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

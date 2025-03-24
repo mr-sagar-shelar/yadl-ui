@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as WebSecurityScanner from "./WebSecurityScanner.stories.tsx";
+
+<Meta of={WebSecurityScanner} title="GCP/WebSecurityScanner" />
+
+# WebSecurityScanner
+
+WebSecurityScanner component with different props.
+
+#### Example
+
+<Canvas of={WebSecurityScanner.Primary} />
+
+## Usage
+
+```ts
+import { WebSecurityScanner } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <WebSecurityScanner />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

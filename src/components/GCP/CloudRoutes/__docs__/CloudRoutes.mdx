@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CloudRoutes from "./CloudRoutes.stories.tsx";
+
+<Meta of={CloudRoutes} title="GCP/CloudRoutes" />
+
+# CloudRoutes
+
+CloudRoutes component with different props.
+
+#### Example
+
+<Canvas of={CloudRoutes.Primary} />
+
+## Usage
+
+```ts
+import { CloudRoutes } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CloudRoutes />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

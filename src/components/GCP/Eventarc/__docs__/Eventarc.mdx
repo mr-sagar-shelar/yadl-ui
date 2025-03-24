@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Eventarc from "./Eventarc.stories.tsx";
+
+<Meta of={Eventarc} title="GCP/Eventarc" />
+
+# Eventarc
+
+Eventarc component with different props.
+
+#### Example
+
+<Canvas of={Eventarc.Primary} />
+
+## Usage
+
+```ts
+import { Eventarc } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Eventarc />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

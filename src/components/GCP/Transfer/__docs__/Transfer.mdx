@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Transfer from "./Transfer.stories.tsx";
+
+<Meta of={Transfer} title="GCP/Transfer" />
+
+# Transfer
+
+Transfer component with different props.
+
+#### Example
+
+<Canvas of={Transfer.Primary} />
+
+## Usage
+
+```ts
+import { Transfer } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Transfer />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

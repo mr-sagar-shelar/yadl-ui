@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as IdentityawareProxy from "./IdentityawareProxy.stories.tsx";
+
+<Meta of={IdentityawareProxy} title="GCP/IdentityawareProxy" />
+
+# IdentityawareProxy
+
+IdentityawareProxy component with different props.
+
+#### Example
+
+<Canvas of={IdentityawareProxy.Primary} />
+
+## Usage
+
+```ts
+import { IdentityawareProxy } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <IdentityawareProxy />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

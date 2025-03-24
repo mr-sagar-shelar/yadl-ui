@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SecurityCommandCenter from "./SecurityCommandCenter.stories.tsx";
+
+<Meta of={SecurityCommandCenter} title="GCP/SecurityCommandCenter" />
+
+# SecurityCommandCenter
+
+SecurityCommandCenter component with different props.
+
+#### Example
+
+<Canvas of={SecurityCommandCenter.Primary} />
+
+## Usage
+
+```ts
+import { SecurityCommandCenter } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SecurityCommandCenter />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

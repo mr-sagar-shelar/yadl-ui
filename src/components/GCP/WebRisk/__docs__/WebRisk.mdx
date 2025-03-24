@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as WebRisk from "./WebRisk.stories.tsx";
+
+<Meta of={WebRisk} title="GCP/WebRisk" />
+
+# WebRisk
+
+WebRisk component with different props.
+
+#### Example
+
+<Canvas of={WebRisk.Primary} />
+
+## Usage
+
+```ts
+import { WebRisk } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <WebRisk />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

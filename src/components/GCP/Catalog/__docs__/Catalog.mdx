@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Catalog from "./Catalog.stories.tsx";
+
+<Meta of={Catalog} title="GCP/Catalog" />
+
+# Catalog
+
+Catalog component with different props.
+
+#### Example
+
+<Canvas of={Catalog.Primary} />
+
+## Usage
+
+```ts
+import { Catalog } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Catalog />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

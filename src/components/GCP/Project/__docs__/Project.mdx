@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Project from "./Project.stories.tsx";
+
+<Meta of={Project} title="GCP/Project" />
+
+# Project
+
+Project component with different props.
+
+#### Example
+
+<Canvas of={Project.Primary} />
+
+## Usage
+
+```ts
+import { Project } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Project />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

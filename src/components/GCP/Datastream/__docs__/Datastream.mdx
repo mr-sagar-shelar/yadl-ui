@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Datastream from "./Datastream.stories.tsx";
+
+<Meta of={Datastream} title="GCP/Datastream" />
+
+# Datastream
+
+Datastream component with different props.
+
+#### Example
+
+<Canvas of={Datastream.Primary} />
+
+## Usage
+
+```ts
+import { Datastream } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Datastream />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as NetworkTiers from "./NetworkTiers.stories.tsx";
+
+<Meta of={NetworkTiers} title="GCP/NetworkTiers" />
+
+# NetworkTiers
+
+NetworkTiers component with different props.
+
+#### Example
+
+<Canvas of={NetworkTiers.Primary} />
+
+## Usage
+
+```ts
+import { NetworkTiers } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <NetworkTiers />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)

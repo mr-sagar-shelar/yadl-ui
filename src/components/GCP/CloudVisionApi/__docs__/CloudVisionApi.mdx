@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CloudVisionApi from "./CloudVisionApi.stories.tsx";
+
+<Meta of={CloudVisionApi} title="GCP/CloudVisionApi" />
+
+# CloudVisionApi
+
+CloudVisionApi component with different props.
+
+#### Example
+
+<Canvas of={CloudVisionApi.Primary} />
+
+## Usage
+
+```ts
+import { CloudVisionApi } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CloudVisionApi />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[GCP](https://cloud.google.com/icons)
