@@ -1,5 +1,3 @@
-import { chromium } from "playwright";
-
 import {
   writeComponentSkeleton,
   writeIndexFile,
