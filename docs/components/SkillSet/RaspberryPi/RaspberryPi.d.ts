@@ -1,3 +1,3 @@
 import { SVGProps } from '../../../../node_modules/react';
-declare const RaspberryPi: (props: SVGProps<SVGSVGElement>) => import("react/jsx-runtime").JSX.Element;
-export default RaspberryPi;
+declare const Memo: import('../../../../node_modules/react').MemoExoticComponent<(props: SVGProps<SVGSVGElement>) => import("react/jsx-runtime").JSX.Element>;
+export default Memo;

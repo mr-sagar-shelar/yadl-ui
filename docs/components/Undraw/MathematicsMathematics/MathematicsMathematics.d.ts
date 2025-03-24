@@ -1,3 +1,3 @@
 import { SVGProps } from '../../../../node_modules/react';
-declare const MathematicsMathematics: (props: SVGProps<SVGSVGElement>) => import("react/jsx-runtime").JSX.Element;
-export default MathematicsMathematics;
+declare const Memo: import('../../../../node_modules/react').MemoExoticComponent<(props: SVGProps<SVGSVGElement>) => import("react/jsx-runtime").JSX.Element>;
+export default Memo;

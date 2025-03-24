@@ -1,3 +1,3 @@
 import { SVGProps } from '../../../../node_modules/react';
-declare const Themeisle1: (props: SVGProps<SVGSVGElement>) => import("react/jsx-runtime").JSX.Element;
-export default Themeisle1;
+declare const Memo: import('../../../../node_modules/react').MemoExoticComponent<(props: SVGProps<SVGSVGElement>) => import("react/jsx-runtime").JSX.Element>;
+export default Memo;

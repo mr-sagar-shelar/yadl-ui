@@ -1,3 +1,3 @@
 import { SVGProps } from '../../../../node_modules/react';
-declare const CryptoPortfolio: (props: SVGProps<SVGSVGElement>) => import("react/jsx-runtime").JSX.Element;
-export default CryptoPortfolio;
+declare const Memo: import('../../../../node_modules/react').MemoExoticComponent<(props: SVGProps<SVGSVGElement>) => import("react/jsx-runtime").JSX.Element>;
+export default Memo;

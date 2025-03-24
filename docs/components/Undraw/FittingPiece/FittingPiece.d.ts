@@ -1,3 +1,3 @@
 import { SVGProps } from '../../../../node_modules/react';
-declare const FittingPiece: (props: SVGProps<SVGSVGElement>) => import("react/jsx-runtime").JSX.Element;
-export default FittingPiece;
+declare const Memo: import('../../../../node_modules/react').MemoExoticComponent<(props: SVGProps<SVGSVGElement>) => import("react/jsx-runtime").JSX.Element>;
+export default Memo;

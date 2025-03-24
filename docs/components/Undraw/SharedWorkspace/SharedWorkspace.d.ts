@@ -1,3 +1,3 @@
 import { SVGProps } from '../../../../node_modules/react';
-declare const SharedWorkspace: (props: SVGProps<SVGSVGElement>) => import("react/jsx-runtime").JSX.Element;
-export default SharedWorkspace;
+declare const Memo: import('../../../../node_modules/react').MemoExoticComponent<(props: SVGProps<SVGSVGElement>) => import("react/jsx-runtime").JSX.Element>;
+export default Memo;

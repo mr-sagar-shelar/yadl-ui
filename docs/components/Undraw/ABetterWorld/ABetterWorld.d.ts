@@ -1,3 +1,3 @@
 import { SVGProps } from '../../../../node_modules/react';
-declare const ABetterWorld: (props: SVGProps<SVGSVGElement>) => import("react/jsx-runtime").JSX.Element;
-export default ABetterWorld;
+declare const Memo: import('../../../../node_modules/react').MemoExoticComponent<(props: SVGProps<SVGSVGElement>) => import("react/jsx-runtime").JSX.Element>;
+export default Memo;
