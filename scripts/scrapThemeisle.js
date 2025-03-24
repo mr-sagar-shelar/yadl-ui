@@ -13,6 +13,7 @@ import { transform } from "@svgr/core";
   const page = await context.newPage();
   await page.goto("https://themeisle.com/illustrations/");
   await page.waitForLoadState("domcontentloaded");
+  let indexFileContents = "";
   let currentCount = 0;
 
   let allIllustrations = await page.locator(".illustrations").first();
@@ -31,7 +32,6 @@ import { transform } from "@svgr/core";
 
   // for (let i = 0; i < illustrationCount; i++) {
   for (let i = 0; i < currentCount; i++) {
-    console.log(`Starting ${i}`);
     const iconName = `Themeisle${i + 1}`;
     let svgCode = await allImages.nth(i).evaluate((evaluate) => {
       let content = evaluate.parentElement.innerHTML.replaceAll(
@@ -55,6 +55,8 @@ import { transform } from "@svgr/core";
           icon: true,
           jsxRuntime: "automatic",
           typescript: true,
+          memo: true,
+          svgo: true,
         },
         { componentName: iconName },
       );

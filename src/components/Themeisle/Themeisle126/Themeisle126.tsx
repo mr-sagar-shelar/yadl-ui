@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Themeisle126 = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -298,4 +299,5 @@ const Themeisle126 = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Themeisle126;
+const Memo = memo(Themeisle126);
+export default Memo;
