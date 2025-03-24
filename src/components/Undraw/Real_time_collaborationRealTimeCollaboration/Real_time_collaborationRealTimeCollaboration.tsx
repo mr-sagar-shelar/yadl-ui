@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Real_time_collaborationRealTimeCollaboration = (
   props: SVGProps<SVGSVGElement>
 ) => (
@@ -182,4 +183,5 @@ const Real_time_collaborationRealTimeCollaboration = (
     />
   </svg>
 );
-export default Real_time_collaborationRealTimeCollaboration;
+const Memo = memo(Real_time_collaborationRealTimeCollaboration);
+export default Memo;

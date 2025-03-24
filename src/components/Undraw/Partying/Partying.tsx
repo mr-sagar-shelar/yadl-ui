@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Partying = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -219,4 +220,5 @@ const Partying = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Partying;
+const Memo = memo(Partying);
+export default Memo;
