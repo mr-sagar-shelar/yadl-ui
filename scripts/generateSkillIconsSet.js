@@ -19,8 +19,7 @@ import { transform } from "@svgr/core";
       fileName = fileName.replaceAll("Light", "");
       fileName = fileName.substring(0, fileName.length - 4);
       if (!fileName.toLowerCase().includes("dark")) {
-        // console.log(fileName);
-        console.log(`D: ${toPascalCase(fileName)}`);
+        // console.log(`D: ${toPascalCase(fileName)}`);
         fs.readFile(
           `${folderName}/${file}`,
           "utf8",
