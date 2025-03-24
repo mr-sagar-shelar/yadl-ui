@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const QuickChat = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -52,4 +53,5 @@ const QuickChat = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default QuickChat;
+const Memo = memo(QuickChat);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const IntoTheNightIntoTheNight = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -175,4 +176,5 @@ const IntoTheNightIntoTheNight = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default IntoTheNightIntoTheNight;
+const Memo = memo(IntoTheNightIntoTheNight);
+export default Memo;

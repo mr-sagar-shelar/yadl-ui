@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Product_photographyProductPhotography = (
   props: SVGProps<SVGSVGElement>
 ) => (
@@ -177,4 +178,5 @@ const Product_photographyProductPhotography = (
     />
   </svg>
 );
-export default Product_photographyProductPhotography;
+const Memo = memo(Product_photographyProductPhotography);
+export default Memo;

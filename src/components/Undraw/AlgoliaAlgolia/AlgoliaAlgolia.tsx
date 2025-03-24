@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const AlgoliaAlgolia = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -288,4 +289,5 @@ const AlgoliaAlgolia = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default AlgoliaAlgolia;
+const Memo = memo(AlgoliaAlgolia);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Certificate = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -60,4 +61,5 @@ const Certificate = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={489.604} cy={158.503} r={17} fill="#f2f2f2" />
   </svg>
 );
-export default Certificate;
+const Memo = memo(Certificate);
+export default Memo;

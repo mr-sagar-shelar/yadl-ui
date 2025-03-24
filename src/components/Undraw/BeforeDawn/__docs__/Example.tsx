@@ -1,19 +1,20 @@
 import React, { FC } from "react";
-import BeforeDawn from "../BeforeDawn";
-
-const Example = () => {
-  return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100%",
-      }}
-    >
-      <BeforeDawn width="500px" height="500px" />
-    </div>
-  );
-};
-
-export default Example;
+  import BeforeDawn from "../BeforeDawn";
+  
+  const Example = () => {
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100%",
+        }}
+      >
+        <BeforeDawn width="500px" height="500px" />
+      </div>
+    );
+  };
+  
+  export default Example;
+  

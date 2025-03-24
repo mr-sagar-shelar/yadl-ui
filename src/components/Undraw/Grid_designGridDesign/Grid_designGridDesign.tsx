@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Grid_designGridDesign = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -212,4 +213,5 @@ const Grid_designGridDesign = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Grid_designGridDesign;
+const Memo = memo(Grid_designGridDesign);
+export default Memo;

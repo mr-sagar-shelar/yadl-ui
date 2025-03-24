@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Bear_marketBearMarket = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -74,4 +75,5 @@ const Bear_marketBearMarket = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={449.569} cy={159.026} r={11.583} fill="var(--color-primary)" />
   </svg>
 );
-export default Bear_marketBearMarket;
+const Memo = memo(Bear_marketBearMarket);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const WinterDesignerWinterDesigner = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -476,4 +477,5 @@ const WinterDesignerWinterDesigner = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default WinterDesignerWinterDesigner;
+const Memo = memo(WinterDesignerWinterDesigner);
+export default Memo;

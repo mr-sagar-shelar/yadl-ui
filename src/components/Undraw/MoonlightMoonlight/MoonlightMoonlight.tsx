@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const MoonlightMoonlight = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -127,4 +128,5 @@ const MoonlightMoonlight = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={334.788} cy={92.544} r={27} fill="#f2f2f2" />
   </svg>
 );
-export default MoonlightMoonlight;
+const Memo = memo(MoonlightMoonlight);
+export default Memo;

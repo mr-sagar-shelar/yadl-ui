@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const OnlineCalendar = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -96,4 +97,5 @@ const OnlineCalendar = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default OnlineCalendar;
+const Memo = memo(OnlineCalendar);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const OpenedTabs = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -259,4 +260,5 @@ const OpenedTabs = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default OpenedTabs;
+const Memo = memo(OpenedTabs);
+export default Memo;

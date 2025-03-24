@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Greek_freakGreekFreak = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -87,4 +88,5 @@ const Greek_freakGreekFreak = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Greek_freakGreekFreak;
+const Memo = memo(Greek_freakGreekFreak);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Pancakes = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -121,4 +122,5 @@ const Pancakes = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={594.146} cy={532.798} r={34} fill="#ccc" />
   </svg>
 );
-export default Pancakes;
+const Memo = memo(Pancakes);
+export default Memo;

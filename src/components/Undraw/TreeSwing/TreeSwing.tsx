@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const TreeSwing = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -382,4 +383,5 @@ const TreeSwing = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default TreeSwing;
+const Memo = memo(TreeSwing);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const RelaunchDay = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -109,4 +110,5 @@ const RelaunchDay = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={606.5} cy={114.5} r={11} fill="var(--color-primary)" />
   </svg>
 );
-export default RelaunchDay;
+const Memo = memo(RelaunchDay);
+export default Memo;

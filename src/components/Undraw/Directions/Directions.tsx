@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Directions = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -78,4 +79,5 @@ const Directions = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#3f3d56" d="M0 595.692h726v2H0z" />
   </svg>
 );
-export default Directions;
+const Memo = memo(Directions);
+export default Memo;

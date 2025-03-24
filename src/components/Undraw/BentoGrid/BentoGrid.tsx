@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const BentoGrid = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -83,4 +84,5 @@ const BentoGrid = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default BentoGrid;
+const Memo = memo(BentoGrid);
+export default Memo;

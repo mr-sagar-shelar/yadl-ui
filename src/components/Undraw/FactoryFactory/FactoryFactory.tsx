@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const FactoryFactory = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -94,4 +95,5 @@ const FactoryFactory = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#3f3d56" d="M0 458.295h888v2H0z" />
   </svg>
 );
-export default FactoryFactory;
+const Memo = memo(FactoryFactory);
+export default Memo;

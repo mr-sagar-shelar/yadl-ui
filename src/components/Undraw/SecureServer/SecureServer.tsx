@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const SecureServer = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -108,4 +109,5 @@ const SecureServer = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#cbcbcb" d="M825 541H1a1 1 0 0 1 0-2h824a1 1 0 0 1 0 2" />
   </svg>
 );
-export default SecureServer;
+const Memo = memo(SecureServer);
+export default Memo;

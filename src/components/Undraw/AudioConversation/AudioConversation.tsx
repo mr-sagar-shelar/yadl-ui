@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const AudioConversation = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -152,4 +153,5 @@ const AudioConversation = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#3f3d56" d="M921 383.583H0v-2h921a1 1 0 1 1 0 2" />
   </svg>
 );
-export default AudioConversation;
+const Memo = memo(AudioConversation);
+export default Memo;

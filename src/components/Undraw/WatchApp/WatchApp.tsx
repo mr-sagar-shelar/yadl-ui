@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const WatchApp = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -93,4 +94,5 @@ const WatchApp = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default WatchApp;
+const Memo = memo(WatchApp);
+export default Memo;

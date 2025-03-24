@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Fireworks = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -147,4 +148,5 @@ const Fireworks = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Fireworks;
+const Memo = memo(Fireworks);
+export default Memo;

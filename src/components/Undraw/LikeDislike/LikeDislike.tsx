@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const LikeDislike = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -95,4 +96,5 @@ const LikeDislike = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default LikeDislike;
+const Memo = memo(LikeDislike);
+export default Memo;

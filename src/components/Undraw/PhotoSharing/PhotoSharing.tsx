@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const PhotoSharing = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -102,4 +103,5 @@ const PhotoSharing = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default PhotoSharing;
+const Memo = memo(PhotoSharing);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Environment1Environment = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -297,4 +298,5 @@ const Environment1Environment = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default Environment1Environment;
+const Memo = memo(Environment1Environment);
+export default Memo;

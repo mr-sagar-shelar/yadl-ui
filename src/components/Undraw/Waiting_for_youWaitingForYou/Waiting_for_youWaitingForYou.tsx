@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Waiting_for_youWaitingForYou = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -109,4 +110,5 @@ const Waiting_for_youWaitingForYou = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Waiting_for_youWaitingForYou;
+const Memo = memo(Waiting_for_youWaitingForYou);
+export default Memo;

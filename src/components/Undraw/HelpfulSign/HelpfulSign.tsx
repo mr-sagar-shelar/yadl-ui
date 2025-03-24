@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const HelpfulSign = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -74,4 +75,5 @@ const HelpfulSign = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default HelpfulSign;
+const Memo = memo(HelpfulSign);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Ether = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -118,4 +119,5 @@ const Ether = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#8c8c8c" d="M123.498 73.595 163.2 97.091V129.5z" />
   </svg>
 );
-export default Ether;
+const Memo = memo(Ether);
+export default Memo;

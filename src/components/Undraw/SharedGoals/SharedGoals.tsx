@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const SharedGoals = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -133,4 +134,5 @@ const SharedGoals = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={463.286} cy={397.169} r={10.591} fill="#e6e6e6" />
   </svg>
 );
-export default SharedGoals;
+const Memo = memo(SharedGoals);
+export default Memo;

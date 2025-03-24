@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const AddColor = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -104,4 +105,5 @@ const AddColor = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default AddColor;
+const Memo = memo(AddColor);
+export default Memo;

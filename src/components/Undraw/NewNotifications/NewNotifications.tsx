@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const NewNotifications = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -129,4 +130,5 @@ const NewNotifications = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={277.991} cy={132.618} r={17} fill="var(--color-primary)" />
   </svg>
 );
-export default NewNotifications;
+const Memo = memo(NewNotifications);
+export default Memo;

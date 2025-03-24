@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const CreativeExperimentCreativeExperiment = (
   props: SVGProps<SVGSVGElement>
 ) => (
@@ -131,4 +132,5 @@ const CreativeExperimentCreativeExperiment = (
     <circle cx={771} cy={123.9} r={32} fill="#f2f2f2" />
   </svg>
 );
-export default CreativeExperimentCreativeExperiment;
+const Memo = memo(CreativeExperimentCreativeExperiment);
+export default Memo;

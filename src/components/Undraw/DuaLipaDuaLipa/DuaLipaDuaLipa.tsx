@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const DuaLipaDuaLipa = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -248,4 +249,5 @@ const DuaLipaDuaLipa = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={961} cy={682.54} r={40} opacity={0.1} />
   </svg>
 );
-export default DuaLipaDuaLipa;
+const Memo = memo(DuaLipaDuaLipa);
+export default Memo;

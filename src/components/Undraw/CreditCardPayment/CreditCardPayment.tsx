@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const CreditCardPayment = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -165,4 +166,5 @@ const CreditCardPayment = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default CreditCardPayment;
+const Memo = memo(CreditCardPayment);
+export default Memo;

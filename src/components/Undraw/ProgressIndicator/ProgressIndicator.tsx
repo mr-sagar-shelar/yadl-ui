@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const ProgressIndicator = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -246,4 +247,5 @@ const ProgressIndicator = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default ProgressIndicator;
+const Memo = memo(ProgressIndicator);
+export default Memo;

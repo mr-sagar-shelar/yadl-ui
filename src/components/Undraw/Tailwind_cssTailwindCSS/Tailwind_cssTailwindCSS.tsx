@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Tailwind_cssTailwindCSS = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -106,4 +107,5 @@ const Tailwind_cssTailwindCSS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Tailwind_cssTailwindCSS;
+const Memo = memo(Tailwind_cssTailwindCSS);
+export default Memo;

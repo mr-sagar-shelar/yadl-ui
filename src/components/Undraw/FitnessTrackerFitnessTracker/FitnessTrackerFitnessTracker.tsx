@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const FitnessTrackerFitnessTracker = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -193,4 +194,5 @@ const FitnessTrackerFitnessTracker = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default FitnessTrackerFitnessTracker;
+const Memo = memo(FitnessTrackerFitnessTracker);
+export default Memo;

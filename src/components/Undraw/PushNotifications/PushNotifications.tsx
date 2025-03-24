@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const PushNotifications = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -184,4 +185,5 @@ const PushNotifications = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default PushNotifications;
+const Memo = memo(PushNotifications);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const CodeInspection = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -181,4 +182,5 @@ const CodeInspection = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default CodeInspection;
+const Memo = memo(CodeInspection);
+export default Memo;

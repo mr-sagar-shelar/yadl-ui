@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const GoingOffline = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -46,4 +47,5 @@ const GoingOffline = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={358.182} cy={651.748} r={26} fill="#e6e6e6" />
   </svg>
 );
-export default GoingOffline;
+const Memo = memo(GoingOffline);
+export default Memo;

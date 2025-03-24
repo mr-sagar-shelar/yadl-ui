@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const ConferenceCall = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -118,4 +119,5 @@ const ConferenceCall = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={420.926} cy={340.424} r={12.801} fill="#2f2e41" />
   </svg>
 );
-export default ConferenceCall;
+const Memo = memo(ConferenceCall);
+export default Memo;

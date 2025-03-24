@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const WebsiteBuilder = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -196,4 +197,5 @@ const WebsiteBuilder = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default WebsiteBuilder;
+const Memo = memo(WebsiteBuilder);
+export default Memo;

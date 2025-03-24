@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const UnreadMessages = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -60,4 +61,5 @@ const UnreadMessages = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default UnreadMessages;
+const Memo = memo(UnreadMessages);
+export default Memo;

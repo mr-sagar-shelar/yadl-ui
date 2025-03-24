@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const ArtificialIntelligence = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -99,4 +100,5 @@ const ArtificialIntelligence = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default ArtificialIntelligence;
+const Memo = memo(ArtificialIntelligence);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const BrowsingOnline = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -162,4 +163,5 @@ const BrowsingOnline = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#cacaca" d="M0 540.262h738.22v2H0z" data-name="Rectangle 256" />
   </svg>
 );
-export default BrowsingOnline;
+const Memo = memo(BrowsingOnline);
+export default Memo;

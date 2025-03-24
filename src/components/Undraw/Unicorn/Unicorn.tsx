@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Unicorn = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -55,4 +56,5 @@ const Unicorn = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={513.847} cy={71.051} r={17.09} fill="#f2f2f2" />
   </svg>
 );
-export default Unicorn;
+const Memo = memo(Unicorn);
+export default Memo;

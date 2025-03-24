@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const CleanUp = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -131,4 +132,5 @@ const CleanUp = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#3f3d56" d="m204.988 282.462.025-2 71.81.905-.025 2z" />
   </svg>
 );
-export default CleanUp;
+const Memo = memo(CleanUp);
+export default Memo;

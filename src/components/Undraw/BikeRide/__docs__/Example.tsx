@@ -1,19 +1,20 @@
 import React, { FC } from "react";
-import BikeRide from "../BikeRide";
-
-const Example = () => {
-  return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100%",
-      }}
-    >
-      <BikeRide width="500px" height="500px" />
-    </div>
-  );
-};
-
-export default Example;
+  import BikeRide from "../BikeRide";
+  
+  const Example = () => {
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100%",
+        }}
+      >
+        <BikeRide width="500px" height="500px" />
+      </div>
+    );
+  };
+  
+  export default Example;
+  

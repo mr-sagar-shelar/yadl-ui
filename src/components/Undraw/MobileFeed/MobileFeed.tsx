@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const MobileFeed = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -76,4 +77,5 @@ const MobileFeed = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#3f3d56" d="M767 728.858H1a1 1 0 0 1 0-2h766a1 1 0 0 1 0 2" />
   </svg>
 );
-export default MobileFeed;
+const Memo = memo(MobileFeed);
+export default Memo;

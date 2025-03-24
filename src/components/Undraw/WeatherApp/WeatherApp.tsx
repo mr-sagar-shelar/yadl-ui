@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const WeatherApp = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -96,4 +97,5 @@ const WeatherApp = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default WeatherApp;
+const Memo = memo(WeatherApp);
+export default Memo;

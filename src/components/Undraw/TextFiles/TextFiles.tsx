@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const TextFiles = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -76,4 +77,5 @@ const TextFiles = (props: SVGProps<SVGSVGElement>) => (
     <path d="M494.602 240.599h-38a4 4 0 0 1-4-4v-34Z" opacity={0.2} />
   </svg>
 );
-export default TextFiles;
+const Memo = memo(TextFiles);
+export default Memo;

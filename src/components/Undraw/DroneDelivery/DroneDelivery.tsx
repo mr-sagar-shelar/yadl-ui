@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const DroneDelivery = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -117,4 +118,5 @@ const DroneDelivery = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default DroneDelivery;
+const Memo = memo(DroneDelivery);
+export default Memo;

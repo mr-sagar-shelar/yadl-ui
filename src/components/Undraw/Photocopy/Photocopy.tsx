@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Photocopy = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -135,4 +136,5 @@ const Photocopy = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Photocopy;
+const Memo = memo(Photocopy);
+export default Memo;

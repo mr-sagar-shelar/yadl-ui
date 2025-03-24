@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const FallIsComingFallIsComing = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -1513,4 +1514,5 @@ const FallIsComingFallIsComing = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default FallIsComingFallIsComing;
+const Memo = memo(FallIsComingFallIsComing);
+export default Memo;

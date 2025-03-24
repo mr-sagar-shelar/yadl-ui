@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Duplicate = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -92,4 +93,5 @@ const Duplicate = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Duplicate;
+const Memo = memo(Duplicate);
+export default Memo;

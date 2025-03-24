@@ -1,19 +1,20 @@
 import React, { FC } from "react";
-import Happy_musicHappyMusic from "../Happy_musicHappyMusic";
-
-const Example = () => {
-  return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100%",
-      }}
-    >
-      <Happy_musicHappyMusic width="500px" height="500px" />
-    </div>
-  );
-};
-
-export default Example;
+  import Happy_musicHappyMusic from "../Happy_musicHappyMusic";
+  
+  const Example = () => {
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100%",
+        }}
+      >
+        <Happy_musicHappyMusic width="500px" height="500px" />
+      </div>
+    );
+  };
+  
+  export default Example;
+  

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const ImageFocus = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -133,4 +134,5 @@ const ImageFocus = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default ImageFocus;
+const Memo = memo(ImageFocus);
+export default Memo;

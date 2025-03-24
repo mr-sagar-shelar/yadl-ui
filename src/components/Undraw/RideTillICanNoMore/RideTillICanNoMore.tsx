@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const RideTillICanNoMore = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -125,4 +126,5 @@ const RideTillICanNoMore = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default RideTillICanNoMore;
+const Memo = memo(RideTillICanNoMore);
+export default Memo;

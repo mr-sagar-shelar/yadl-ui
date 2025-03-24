@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Season_changeSeasonChange = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -95,4 +96,5 @@ const Season_changeSeasonChange = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={804.614} cy={249.178} r={5} fill="#e6e6e6" />
   </svg>
 );
-export default Season_changeSeasonChange;
+const Memo = memo(Season_changeSeasonChange);
+export default Memo;

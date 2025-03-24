@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const CohortAnalysis = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -197,4 +198,5 @@ const CohortAnalysis = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default CohortAnalysis;
+const Memo = memo(CohortAnalysis);
+export default Memo;

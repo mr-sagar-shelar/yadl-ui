@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const TutorialVideo = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -136,4 +137,5 @@ const TutorialVideo = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default TutorialVideo;
+const Memo = memo(TutorialVideo);
+export default Memo;

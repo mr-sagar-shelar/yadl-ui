@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const CMS = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -107,4 +108,5 @@ const CMS = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default CMS;
+const Memo = memo(CMS);
+export default Memo;

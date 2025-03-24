@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const MemoryStorageMemoryStorage = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -144,4 +145,5 @@ const MemoryStorageMemoryStorage = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#fff" d="M614.157 203.944h150.587v4.806H614.157z" />
   </svg>
 );
-export default MemoryStorageMemoryStorage;
+const Memo = memo(MemoryStorageMemoryStorage);
+export default Memo;

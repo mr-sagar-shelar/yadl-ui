@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const XmasSurpriseXmasSurprise = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -150,4 +151,5 @@ const XmasSurpriseXmasSurprise = (props: SVGProps<SVGSVGElement>) => (
     <path d="M236.41 538.79v56.1L.67 487.51v-51.62z" opacity={0.1} />
   </svg>
 );
-export default XmasSurpriseXmasSurprise;
+const Memo = memo(XmasSurpriseXmasSurprise);
+export default Memo;

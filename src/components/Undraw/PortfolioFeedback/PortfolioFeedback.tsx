@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const PortfolioFeedback = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -220,4 +221,5 @@ const PortfolioFeedback = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default PortfolioFeedback;
+const Memo = memo(PortfolioFeedback);
+export default Memo;

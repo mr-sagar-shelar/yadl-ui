@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const SaveToBookmarks = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -92,4 +93,5 @@ const SaveToBookmarks = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default SaveToBookmarks;
+const Memo = memo(SaveToBookmarks);
+export default Memo;

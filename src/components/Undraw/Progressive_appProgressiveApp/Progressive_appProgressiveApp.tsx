@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Progressive_appProgressiveApp = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -70,4 +71,5 @@ const Progressive_appProgressiveApp = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Progressive_appProgressiveApp;
+const Memo = memo(Progressive_appProgressiveApp);
+export default Memo;

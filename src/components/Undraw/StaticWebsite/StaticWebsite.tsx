@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const StaticWebsite = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -95,4 +96,5 @@ const StaticWebsite = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default StaticWebsite;
+const Memo = memo(StaticWebsite);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const LightbulbMoment = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -127,4 +128,5 @@ const LightbulbMoment = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default LightbulbMoment;
+const Memo = memo(LightbulbMoment);
+export default Memo;

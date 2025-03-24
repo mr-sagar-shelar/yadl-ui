@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const SnowFun = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -149,4 +150,5 @@ const SnowFun = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#ccc" d="M854 663.14H1a1 1 0 0 1 0-2h853a1 1 0 0 1 0 2" />
   </svg>
 );
-export default SnowFun;
+const Memo = memo(SnowFun);
+export default Memo;

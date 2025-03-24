@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const SocialShare = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -125,4 +126,5 @@ const SocialShare = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#cacaca" d="M820 545H1a1 1 0 0 1 0-2h819a1 1 0 0 1 0 2" />
   </svg>
 );
-export default SocialShare;
+const Memo = memo(SocialShare);
+export default Memo;

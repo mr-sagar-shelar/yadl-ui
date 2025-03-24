@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const EscapingEscaping = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -88,4 +89,5 @@ const EscapingEscaping = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#3f3d56" d="M188 729h520v2H188z" />
   </svg>
 );
-export default EscapingEscaping;
+const Memo = memo(EscapingEscaping);
+export default Memo;

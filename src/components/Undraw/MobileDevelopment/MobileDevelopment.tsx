@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const MobileDevelopment = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -148,4 +149,5 @@ const MobileDevelopment = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={398.042} cy={381.563} r={17.909} fill="#fff" />
   </svg>
 );
-export default MobileDevelopment;
+const Memo = memo(MobileDevelopment);
+export default Memo;

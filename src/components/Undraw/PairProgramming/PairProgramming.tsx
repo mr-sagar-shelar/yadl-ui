@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const PairProgramming = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -837,4 +838,5 @@ const PairProgramming = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default PairProgramming;
+const Memo = memo(PairProgramming);
+export default Memo;

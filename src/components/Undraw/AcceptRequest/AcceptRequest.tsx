@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const AcceptRequest = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -101,4 +102,5 @@ const AcceptRequest = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#ccc" d="M687.134 510.5h-209a1 1 0 0 1 0-2h209a1 1 0 0 1 0 2" />
   </svg>
 );
-export default AcceptRequest;
+const Memo = memo(AcceptRequest);
+export default Memo;

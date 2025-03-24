@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const MobileApplication = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -99,4 +100,5 @@ const MobileApplication = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={264.882} cy={310.486} r={58} fill="var(--color-primary)" />
   </svg>
 );
-export default MobileApplication;
+const Memo = memo(MobileApplication);
+export default Memo;

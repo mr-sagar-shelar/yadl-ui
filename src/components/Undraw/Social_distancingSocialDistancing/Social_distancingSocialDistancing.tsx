@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Social_distancingSocialDistancing = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -245,4 +246,5 @@ const Social_distancingSocialDistancing = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Social_distancingSocialDistancing;
+const Memo = memo(Social_distancingSocialDistancing);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const VotingVoting = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -227,4 +228,5 @@ const VotingVoting = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default VotingVoting;
+const Memo = memo(VotingVoting);
+export default Memo;

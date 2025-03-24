@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Next_jsNextJs = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -266,4 +267,5 @@ const Next_jsNextJs = (props: SVGProps<SVGSVGElement>) => (
     <path d="m858 334.354-1.462-1.124 14.327-26.401z" />
   </svg>
 );
-export default Next_jsNextJs;
+const Memo = memo(Next_jsNextJs);
+export default Memo;

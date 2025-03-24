@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const BullMarket = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -142,4 +143,5 @@ const BullMarket = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default BullMarket;
+const Memo = memo(BullMarket);
+export default Memo;

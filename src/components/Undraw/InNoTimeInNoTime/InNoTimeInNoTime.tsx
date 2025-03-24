@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const InNoTimeInNoTime = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -88,4 +89,5 @@ const InNoTimeInNoTime = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default InNoTimeInNoTime;
+const Memo = memo(InNoTimeInNoTime);
+export default Memo;

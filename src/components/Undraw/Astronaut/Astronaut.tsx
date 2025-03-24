@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Astronaut = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -69,4 +70,5 @@ const Astronaut = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={474.957} cy={265} r={15} fill="#fff" />
   </svg>
 );
-export default Astronaut;
+const Memo = memo(Astronaut);
+export default Memo;

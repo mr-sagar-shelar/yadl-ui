@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const IdeasFlow = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -303,4 +304,5 @@ const IdeasFlow = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={272.77} cy={262.572} r={5} fill="#ccc" />
   </svg>
 );
-export default IdeasFlow;
+const Memo = memo(IdeasFlow);
+export default Memo;

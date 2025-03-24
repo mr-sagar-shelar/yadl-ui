@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Web_browsingWebBrowsing = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -120,4 +121,5 @@ const Web_browsingWebBrowsing = (props: SVGProps<SVGSVGElement>) => (
     <path d="m629.821 346.926-3 57-44 9 40-16z" opacity={0.15} />
   </svg>
 );
-export default Web_browsingWebBrowsing;
+const Memo = memo(Web_browsingWebBrowsing);
+export default Memo;

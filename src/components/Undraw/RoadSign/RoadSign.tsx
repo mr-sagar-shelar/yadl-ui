@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const RoadSign = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -135,4 +136,5 @@ const RoadSign = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default RoadSign;
+const Memo = memo(RoadSign);
+export default Memo;

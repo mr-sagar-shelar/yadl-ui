@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Writer = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -136,4 +137,5 @@ const Writer = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Writer;
+const Memo = memo(Writer);
+export default Memo;

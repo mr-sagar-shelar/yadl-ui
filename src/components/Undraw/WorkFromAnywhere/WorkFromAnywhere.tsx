@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const WorkFromAnywhere = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -134,4 +135,5 @@ const WorkFromAnywhere = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default WorkFromAnywhere;
+const Memo = memo(WorkFromAnywhere);
+export default Memo;

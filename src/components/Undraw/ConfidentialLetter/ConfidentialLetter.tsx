@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const ConfidentialLetter = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -65,4 +66,5 @@ const ConfidentialLetter = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={209.004} cy={246.32} r={32} fill="var(--color-primary)" />
   </svg>
 );
-export default ConfidentialLetter;
+const Memo = memo(ConfidentialLetter);
+export default Memo;

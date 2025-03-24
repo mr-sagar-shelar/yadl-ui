@@ -32,7 +32,7 @@ import { transform } from "@svgr/core";
       const currentIcon = await allIllustrations.nth(i);
       let iconName = await currentIcon.allTextContents();
       iconName = toPascalCase(iconName[0]);
-      console.log(`${iconName}`);
+      // console.log(`${iconName}`);
 
       let svgCode = await currentIcon
         .getByRole("img")

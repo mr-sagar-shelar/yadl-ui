@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const SharedWorkspace = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -98,4 +99,5 @@ const SharedWorkspace = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default SharedWorkspace;
+const Memo = memo(SharedWorkspace);
+export default Memo;

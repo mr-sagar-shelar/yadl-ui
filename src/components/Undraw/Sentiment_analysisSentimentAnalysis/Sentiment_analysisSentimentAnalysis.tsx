@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Sentiment_analysisSentimentAnalysis = (
   props: SVGProps<SVGSVGElement>
 ) => (
@@ -76,4 +77,5 @@ const Sentiment_analysisSentimentAnalysis = (
     />
   </svg>
 );
-export default Sentiment_analysisSentimentAnalysis;
+const Memo = memo(Sentiment_analysisSentimentAnalysis);
+export default Memo;

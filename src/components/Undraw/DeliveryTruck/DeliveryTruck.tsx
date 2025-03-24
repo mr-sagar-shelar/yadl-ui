@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const DeliveryTruck = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -117,4 +118,5 @@ const DeliveryTruck = (props: SVGProps<SVGSVGElement>) => (
     <ellipse cx={75.666} cy={286.044} fill="#e6e6e6" rx={27} ry={23.5} />
   </svg>
 );
-export default DeliveryTruck;
+const Memo = memo(DeliveryTruck);
+export default Memo;

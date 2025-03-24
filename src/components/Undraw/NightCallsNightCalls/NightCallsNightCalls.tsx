@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const NightCallsNightCalls = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -500,4 +501,5 @@ const NightCallsNightCalls = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default NightCallsNightCalls;
+const Memo = memo(NightCallsNightCalls);
+export default Memo;

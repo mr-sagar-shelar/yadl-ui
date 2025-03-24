@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const FinanceGuyAvatar = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -76,4 +77,5 @@ const FinanceGuyAvatar = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default FinanceGuyAvatar;
+const Memo = memo(FinanceGuyAvatar);
+export default Memo;

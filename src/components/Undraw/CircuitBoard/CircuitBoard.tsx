@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const CircuitBoard = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -110,4 +111,5 @@ const CircuitBoard = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={251.469} cy={89.517} r={8} fill="var(--color-primary)" />
   </svg>
 );
-export default CircuitBoard;
+const Memo = memo(CircuitBoard);
+export default Memo;

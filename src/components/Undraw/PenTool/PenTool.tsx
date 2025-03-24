@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const PenTool = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -91,4 +92,5 @@ const PenTool = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={490.881} cy={112.98} r={5.595} fill="var(--color-primary)" />
   </svg>
 );
-export default PenTool;
+const Memo = memo(PenTool);
+export default Memo;

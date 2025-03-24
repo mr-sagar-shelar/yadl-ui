@@ -1,19 +1,20 @@
 import React, { FC } from "react";
-import MobileApp from "../MobileApp";
-
-const Example = () => {
-  return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100%",
-      }}
-    >
-      <MobileApp width="500px" height="500px" />
-    </div>
-  );
-};
-
-export default Example;
+  import MobileApp from "../MobileApp";
+  
+  const Example = () => {
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100%",
+        }}
+      >
+        <MobileApp width="500px" height="500px" />
+      </div>
+    );
+  };
+  
+  export default Example;
+  

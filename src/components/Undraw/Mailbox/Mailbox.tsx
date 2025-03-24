@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Mailbox = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -85,4 +86,5 @@ const Mailbox = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={203.277} cy={189} r={7} fill="#fff" />
   </svg>
 );
-export default Mailbox;
+const Memo = memo(Mailbox);
+export default Memo;

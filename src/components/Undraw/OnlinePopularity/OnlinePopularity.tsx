@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const OnlinePopularity = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -125,4 +126,5 @@ const OnlinePopularity = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#3f3d56" d="M865.64 586h-548a1 1 0 0 1 0-2h548a1 1 0 0 1 0 2" />
   </svg>
 );
-export default OnlinePopularity;
+const Memo = memo(OnlinePopularity);
+export default Memo;

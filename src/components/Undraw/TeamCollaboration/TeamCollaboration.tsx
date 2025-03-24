@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const TeamCollaboration = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -538,4 +539,5 @@ const TeamCollaboration = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default TeamCollaboration;
+const Memo = memo(TeamCollaboration);
+export default Memo;

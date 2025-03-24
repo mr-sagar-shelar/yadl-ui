@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Date_nightDateNight = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -107,4 +108,5 @@ const Date_nightDateNight = (props: SVGProps<SVGSVGElement>) => (
     <ellipse cx={724.057} cy={231.522} fill="#ffb8b8" rx={1.669} ry={3.337} />
   </svg>
 );
-export default Date_nightDateNight;
+const Memo = memo(Date_nightDateNight);
+export default Memo;

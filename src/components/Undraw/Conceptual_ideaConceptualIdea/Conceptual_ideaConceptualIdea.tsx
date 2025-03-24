@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Conceptual_ideaConceptualIdea = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -89,4 +90,5 @@ const Conceptual_ideaConceptualIdea = (props: SVGProps<SVGSVGElement>) => (
     <path d="m709.583 192.019-22.176 73.478 27.176-80.864z" opacity={0.2} />
   </svg>
 );
-export default Conceptual_ideaConceptualIdea;
+const Memo = memo(Conceptual_ideaConceptualIdea);
+export default Memo;

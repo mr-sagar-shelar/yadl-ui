@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Zoom_inZoomIn = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -69,4 +70,5 @@ const Zoom_inZoomIn = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Zoom_inZoomIn;
+const Memo = memo(Zoom_inZoomIn);
+export default Memo;

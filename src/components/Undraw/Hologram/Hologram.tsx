@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Hologram = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -150,4 +151,5 @@ const Hologram = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default Hologram;
+const Memo = memo(Hologram);
+export default Memo;

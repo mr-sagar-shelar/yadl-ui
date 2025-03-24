@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const ToDoList = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -116,4 +117,5 @@ const ToDoList = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={612.503} cy={360.882} r={13} fill="#ccc" />
   </svg>
 );
-export default ToDoList;
+const Memo = memo(ToDoList);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const TermSheet = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -174,4 +175,5 @@ const TermSheet = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={224.856} cy={226.099} r={7} fill="var(--color-primary)" />
   </svg>
 );
-export default TermSheet;
+const Memo = memo(TermSheet);
+export default Memo;

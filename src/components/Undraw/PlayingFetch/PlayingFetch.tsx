@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const PlayingFetch = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -114,4 +115,5 @@ const PlayingFetch = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default PlayingFetch;
+const Memo = memo(PlayingFetch);
+export default Memo;

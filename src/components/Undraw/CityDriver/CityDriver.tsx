@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const CityDriver = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -100,4 +101,5 @@ const CityDriver = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default CityDriver;
+const Memo = memo(CityDriver);
+export default Memo;

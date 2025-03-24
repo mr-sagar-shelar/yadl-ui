@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Energizer = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -125,4 +126,5 @@ const Energizer = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={171.718} cy={48.294} r={3.093} fill="#3f3d56" />
   </svg>
 );
-export default Energizer;
+const Memo = memo(Energizer);
+export default Memo;

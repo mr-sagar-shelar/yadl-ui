@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Creativity = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -190,4 +191,5 @@ const Creativity = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#ff6584" d="M419.918 222.17a3.995 3.995 0 1 1-4.93-6.03Z" />
   </svg>
 );
-export default Creativity;
+const Memo = memo(Creativity);
+export default Memo;

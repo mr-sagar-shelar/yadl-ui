@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Spreadsheet = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -89,4 +90,5 @@ const Spreadsheet = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#ccc" d="M171.738 536.777H0v-2.106h172.12z" />
   </svg>
 );
-export default Spreadsheet;
+const Memo = memo(Spreadsheet);
+export default Memo;

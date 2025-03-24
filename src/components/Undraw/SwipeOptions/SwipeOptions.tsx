@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const SwipeOptions = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -91,4 +92,5 @@ const SwipeOptions = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default SwipeOptions;
+const Memo = memo(SwipeOptions);
+export default Memo;

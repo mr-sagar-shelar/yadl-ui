@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const DoneChecking = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -136,4 +137,5 @@ const DoneChecking = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#3f3d56" d="M382 620H1a1 1 0 0 1 0-2h381a1 1 0 1 1 0 2" />
   </svg>
 );
-export default DoneChecking;
+const Memo = memo(DoneChecking);
+export default Memo;

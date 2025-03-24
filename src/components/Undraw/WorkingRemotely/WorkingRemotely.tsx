@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const WorkingRemotely = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -120,4 +121,5 @@ const WorkingRemotely = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default WorkingRemotely;
+const Memo = memo(WorkingRemotely);
+export default Memo;

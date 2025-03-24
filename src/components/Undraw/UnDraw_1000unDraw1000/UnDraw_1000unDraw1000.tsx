@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const UnDraw_1000unDraw1000 = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -155,4 +156,5 @@ const UnDraw_1000unDraw1000 = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default UnDraw_1000unDraw1000;
+const Memo = memo(UnDraw_1000unDraw1000);
+export default Memo;

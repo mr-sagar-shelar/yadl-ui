@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const OrganizingProjects = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -224,4 +225,5 @@ const OrganizingProjects = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default OrganizingProjects;
+const Memo = memo(OrganizingProjects);
+export default Memo;

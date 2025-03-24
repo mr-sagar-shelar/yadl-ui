@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const MobileUx = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -185,4 +186,5 @@ const MobileUx = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#cacaca" d="M0 770.409h738.22v2H0z" data-name="Rectangle 256" />
   </svg>
 );
-export default MobileUx;
+const Memo = memo(MobileUx);
+export default Memo;

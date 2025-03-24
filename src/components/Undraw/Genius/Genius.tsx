@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Genius = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -129,4 +130,5 @@ const Genius = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#cbcbcb" d="M930 533H613a1 1 0 0 1 0-2h317a1 1 0 0 1 0 2" />
   </svg>
 );
-export default Genius;
+const Memo = memo(Genius);
+export default Memo;

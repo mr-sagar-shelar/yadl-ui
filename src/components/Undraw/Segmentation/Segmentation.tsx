@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Segmentation = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -76,4 +77,5 @@ const Segmentation = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#3f3d56" d="M446.052 247.246v-140a132 132 0 1 0 131.752 140Z" />
   </svg>
 );
-export default Segmentation;
+const Memo = memo(Segmentation);
+export default Memo;

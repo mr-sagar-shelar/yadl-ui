@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const MyCurrentLocation = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -191,4 +192,5 @@ const MyCurrentLocation = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default MyCurrentLocation;
+const Memo = memo(MyCurrentLocation);
+export default Memo;

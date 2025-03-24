@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const PageNotFound = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -92,4 +93,5 @@ const PageNotFound = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default PageNotFound;
+const Memo = memo(PageNotFound);
+export default Memo;

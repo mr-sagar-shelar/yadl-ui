@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const HappyWomenDayHappyWomenDay = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -228,4 +229,5 @@ const HappyWomenDayHappyWomenDay = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={899} cy={295.714} r={21} fill="#3f3d56" />
   </svg>
 );
-export default HappyWomenDayHappyWomenDay;
+const Memo = memo(HappyWomenDayHappyWomenDay);
+export default Memo;

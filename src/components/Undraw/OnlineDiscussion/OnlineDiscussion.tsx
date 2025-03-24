@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const OnlineDiscussion = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -154,4 +155,5 @@ const OnlineDiscussion = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default OnlineDiscussion;
+const Memo = memo(OnlineDiscussion);
+export default Memo;

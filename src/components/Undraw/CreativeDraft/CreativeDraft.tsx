@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const CreativeDraft = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -82,4 +83,5 @@ const CreativeDraft = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={568.081} cy={623.023} r={30} fill="var(--color-primary)" />
   </svg>
 );
-export default CreativeDraft;
+const Memo = memo(CreativeDraft);
+export default Memo;

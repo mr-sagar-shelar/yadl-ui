@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Bookshelves = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -167,4 +168,5 @@ const Bookshelves = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#ccc" d="M732.083 594h-264a1 1 0 1 1 0-2h264a1 1 0 0 1 0 2" />
   </svg>
 );
-export default Bookshelves;
+const Memo = memo(Bookshelves);
+export default Memo;

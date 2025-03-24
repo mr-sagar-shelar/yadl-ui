@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Through_the_windowThroughTheWindow = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -215,4 +216,5 @@ const Through_the_windowThroughTheWindow = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#f2f2f2" d="M441 695h2v18.5h-2zM502 695h2v18.5h-2z" />
   </svg>
 );
-export default Through_the_windowThroughTheWindow;
+const Memo = memo(Through_the_windowThroughTheWindow);
+export default Memo;

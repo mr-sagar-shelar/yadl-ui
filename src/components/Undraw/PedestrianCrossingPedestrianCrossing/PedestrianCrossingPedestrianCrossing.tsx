@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const PedestrianCrossingPedestrianCrossing = (
   props: SVGProps<SVGSVGElement>
 ) => (
@@ -353,4 +354,5 @@ const PedestrianCrossingPedestrianCrossing = (
     />
   </svg>
 );
-export default PedestrianCrossingPedestrianCrossing;
+const Memo = memo(PedestrianCrossingPedestrianCrossing);
+export default Memo;

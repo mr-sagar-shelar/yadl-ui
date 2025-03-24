@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const ReadyForWaves = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -56,4 +57,5 @@ const ReadyForWaves = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default ReadyForWaves;
+const Memo = memo(ReadyForWaves);
+export default Memo;

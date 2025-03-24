@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const WorkingLate = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -215,4 +216,5 @@ const WorkingLate = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default WorkingLate;
+const Memo = memo(WorkingLate);
+export default Memo;

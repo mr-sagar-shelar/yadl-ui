@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const CompletionProgress = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -75,4 +76,5 @@ const CompletionProgress = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default CompletionProgress;
+const Memo = memo(CompletionProgress);
+export default Memo;

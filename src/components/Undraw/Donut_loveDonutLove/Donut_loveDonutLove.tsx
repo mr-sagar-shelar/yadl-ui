@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Donut_loveDonutLove = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -304,4 +305,5 @@ const Donut_loveDonutLove = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#3f3d56" d="m298.723 396.316.542.543-2.929 2.929-.542-.543z" />
   </svg>
 );
-export default Donut_loveDonutLove;
+const Memo = memo(Donut_loveDonutLove);
+export default Memo;

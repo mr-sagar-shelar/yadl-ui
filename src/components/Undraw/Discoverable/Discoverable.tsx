@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Discoverable = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -85,4 +86,5 @@ const Discoverable = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Discoverable;
+const Memo = memo(Discoverable);
+export default Memo;

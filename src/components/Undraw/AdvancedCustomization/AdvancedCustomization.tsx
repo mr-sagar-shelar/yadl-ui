@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const AdvancedCustomization = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -99,4 +100,5 @@ const AdvancedCustomization = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default AdvancedCustomization;
+const Memo = memo(AdvancedCustomization);
+export default Memo;

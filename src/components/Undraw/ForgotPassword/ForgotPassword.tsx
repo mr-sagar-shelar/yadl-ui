@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const ForgotPassword = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -70,4 +71,5 @@ const ForgotPassword = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={849.235} cy={106.162} r={15} fill="var(--color-primary)" />
   </svg>
 );
-export default ForgotPassword;
+const Memo = memo(ForgotPassword);
+export default Memo;

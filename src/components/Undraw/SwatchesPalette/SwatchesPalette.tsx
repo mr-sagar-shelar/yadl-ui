@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const SwatchesPalette = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -125,4 +126,5 @@ const SwatchesPalette = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default SwatchesPalette;
+const Memo = memo(SwatchesPalette);
+export default Memo;

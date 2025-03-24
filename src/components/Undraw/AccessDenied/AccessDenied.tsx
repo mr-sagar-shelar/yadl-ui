@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const AccessDenied = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -243,4 +244,5 @@ const AccessDenied = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default AccessDenied;
+const Memo = memo(AccessDenied);
+export default Memo;

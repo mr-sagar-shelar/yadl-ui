@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const FilingSystem = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -123,4 +124,5 @@ const FilingSystem = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#cbcbcb" d="M951 586H1a1 1 0 0 1 0-2h950a1 1 0 0 1 0 2" />
   </svg>
 );
-export default FilingSystem;
+const Memo = memo(FilingSystem);
+export default Memo;

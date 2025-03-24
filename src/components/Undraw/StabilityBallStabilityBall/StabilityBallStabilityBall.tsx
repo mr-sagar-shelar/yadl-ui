@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const StabilityBallStabilityBall = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -115,4 +116,5 @@ const StabilityBallStabilityBall = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default StabilityBallStabilityBall;
+const Memo = memo(StabilityBallStabilityBall);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const PreferencesPopup = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -115,4 +116,5 @@ const PreferencesPopup = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default PreferencesPopup;
+const Memo = memo(PreferencesPopup);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const BreakingObstaclesBreakingBarriers = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -88,4 +89,5 @@ const BreakingObstaclesBreakingBarriers = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default BreakingObstaclesBreakingBarriers;
+const Memo = memo(BreakingObstaclesBreakingBarriers);
+export default Memo;

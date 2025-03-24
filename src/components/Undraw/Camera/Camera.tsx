@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Camera = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -158,4 +159,5 @@ const Camera = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#ccc" d="M136.195 10.916h9.703v9.703h-9.703z" />
   </svg>
 );
-export default Camera;
+const Memo = memo(Camera);
+export default Memo;

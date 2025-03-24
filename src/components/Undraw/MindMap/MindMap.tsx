@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const MindMap = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -112,4 +113,5 @@ const MindMap = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default MindMap;
+const Memo = memo(MindMap);
+export default Memo;

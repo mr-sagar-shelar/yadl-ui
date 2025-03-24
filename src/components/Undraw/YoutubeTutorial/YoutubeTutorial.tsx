@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const YoutubeTutorial = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -124,4 +125,5 @@ const YoutubeTutorial = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#cacaca" d="M213 567.882H1a1 1 0 0 1 0-2h212a1 1 0 0 1 0 2" />
   </svg>
 );
-export default YoutubeTutorial;
+const Memo = memo(YoutubeTutorial);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Authentication = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -92,4 +93,5 @@ const Authentication = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Authentication;
+const Memo = memo(Authentication);
+export default Memo;

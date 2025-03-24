@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Vintage = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -85,4 +86,5 @@ const Vintage = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Vintage;
+const Memo = memo(Vintage);
+export default Memo;

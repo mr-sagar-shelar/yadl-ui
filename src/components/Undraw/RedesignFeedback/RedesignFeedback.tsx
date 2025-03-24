@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const RedesignFeedback = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -93,4 +94,5 @@ const RedesignFeedback = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default RedesignFeedback;
+const Memo = memo(RedesignFeedback);
+export default Memo;

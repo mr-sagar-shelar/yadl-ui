@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Virtual_assistantVirtualAssistant = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -96,4 +97,5 @@ const Virtual_assistantVirtualAssistant = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={571} cy={104.072} r={8} fill="#f2f2f2" />
   </svg>
 );
-export default Virtual_assistantVirtualAssistant;
+const Memo = memo(Virtual_assistantVirtualAssistant);
+export default Memo;

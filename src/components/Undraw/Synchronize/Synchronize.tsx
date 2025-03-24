@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Synchronize = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -42,4 +43,5 @@ const Synchronize = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Synchronize;
+const Memo = memo(Synchronize);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const TeamPage = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -98,4 +99,5 @@ const TeamPage = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default TeamPage;
+const Memo = memo(TeamPage);
+export default Memo;

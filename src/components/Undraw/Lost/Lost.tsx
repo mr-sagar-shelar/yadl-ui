@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Lost = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -96,4 +97,5 @@ const Lost = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#cacaca" d="M835 707.802H1a1 1 0 0 1 0-2h834a1 1 0 0 1 0 2" />
   </svg>
 );
-export default Lost;
+const Memo = memo(Lost);
+export default Memo;

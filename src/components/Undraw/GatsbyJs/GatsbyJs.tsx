@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const GatsbyJs = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -82,4 +83,5 @@ const GatsbyJs = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default GatsbyJs;
+const Memo = memo(GatsbyJs);
+export default Memo;

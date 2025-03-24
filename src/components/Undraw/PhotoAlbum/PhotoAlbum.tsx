@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const PhotoAlbum = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -273,4 +274,5 @@ const PhotoAlbum = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default PhotoAlbum;
+const Memo = memo(PhotoAlbum);
+export default Memo;

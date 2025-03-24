@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const GamingController = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -296,4 +297,5 @@ const GamingController = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default GamingController;
+const Memo = memo(GamingController);
+export default Memo;

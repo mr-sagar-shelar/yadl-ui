@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const PodcastListener = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -249,4 +250,5 @@ const PodcastListener = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default PodcastListener;
+const Memo = memo(PodcastListener);
+export default Memo;

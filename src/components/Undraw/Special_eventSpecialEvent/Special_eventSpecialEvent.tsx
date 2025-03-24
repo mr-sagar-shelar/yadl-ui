@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Special_eventSpecialEvent = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -287,4 +288,5 @@ const Special_eventSpecialEvent = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={581.21} cy={387.394} r={0.747} fill="var(--color-primary)" />
   </svg>
 );
-export default Special_eventSpecialEvent;
+const Memo = memo(Special_eventSpecialEvent);
+export default Memo;

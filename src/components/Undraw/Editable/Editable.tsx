@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Editable = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -121,4 +122,5 @@ const Editable = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Editable;
+const Memo = memo(Editable);
+export default Memo;

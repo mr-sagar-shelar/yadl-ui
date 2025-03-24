@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const ThrowAway = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -151,4 +152,5 @@ const ThrowAway = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default ThrowAway;
+const Memo = memo(ThrowAway);
+export default Memo;

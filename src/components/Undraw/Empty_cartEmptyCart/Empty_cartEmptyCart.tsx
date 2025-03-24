@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Empty_cartEmptyCart = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -141,4 +142,5 @@ const Empty_cartEmptyCart = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Empty_cartEmptyCart;
+const Memo = memo(Empty_cartEmptyCart);
+export default Memo;

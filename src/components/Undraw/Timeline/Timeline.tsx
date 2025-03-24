@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Timeline = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -109,4 +110,5 @@ const Timeline = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Timeline;
+const Memo = memo(Timeline);
+export default Memo;

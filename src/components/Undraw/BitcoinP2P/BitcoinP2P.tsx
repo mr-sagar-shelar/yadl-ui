@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const BitcoinP2P = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -133,4 +134,5 @@ const BitcoinP2P = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default BitcoinP2P;
+const Memo = memo(BitcoinP2P);
+export default Memo;

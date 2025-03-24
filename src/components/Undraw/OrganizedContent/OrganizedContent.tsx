@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const OrganizedContent = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -92,4 +93,5 @@ const OrganizedContent = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#2f2e41" d="M182.3 399.965h-44v-40a22 22 0 0 1 44 0Z" />
   </svg>
 );
-export default OrganizedContent;
+const Memo = memo(OrganizedContent);
+export default Memo;

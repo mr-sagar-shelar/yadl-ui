@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const ButtonStyle = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -205,4 +206,5 @@ const ButtonStyle = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default ButtonStyle;
+const Memo = memo(ButtonStyle);
+export default Memo;

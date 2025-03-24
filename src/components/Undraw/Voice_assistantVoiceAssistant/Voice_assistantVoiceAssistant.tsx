@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Voice_assistantVoiceAssistant = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -72,4 +73,5 @@ const Voice_assistantVoiceAssistant = (props: SVGProps<SVGSVGElement>) => (
     <path d="m614.115 309.917-4 40-35 15 39-9z" opacity={0.4} />
   </svg>
 );
-export default Voice_assistantVoiceAssistant;
+const Memo = memo(Voice_assistantVoiceAssistant);
+export default Memo;

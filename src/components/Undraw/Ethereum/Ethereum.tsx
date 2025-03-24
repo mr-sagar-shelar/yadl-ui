@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Ethereum = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -111,4 +112,5 @@ const Ethereum = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#3f3d56" d="M687 712H1a1 1 0 1 1 0-2h686a1 1 0 0 1 0 2" />
   </svg>
 );
-export default Ethereum;
+const Memo = memo(Ethereum);
+export default Memo;

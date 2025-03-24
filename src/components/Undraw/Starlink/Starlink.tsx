@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Starlink = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -232,4 +233,5 @@ const Starlink = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Starlink;
+const Memo = memo(Starlink);
+export default Memo;

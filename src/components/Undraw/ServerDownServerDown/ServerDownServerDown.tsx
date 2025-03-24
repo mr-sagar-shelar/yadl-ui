@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const ServerDownServerDown = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -141,4 +142,5 @@ const ServerDownServerDown = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default ServerDownServerDown;
+const Memo = memo(ServerDownServerDown);
+export default Memo;

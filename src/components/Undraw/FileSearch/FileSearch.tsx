@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const FileSearch = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -195,4 +196,5 @@ const FileSearch = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default FileSearch;
+const Memo = memo(FileSearch);
+export default Memo;

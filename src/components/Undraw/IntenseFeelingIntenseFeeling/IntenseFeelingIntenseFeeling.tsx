@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const IntenseFeelingIntenseFeeling = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -212,4 +213,5 @@ const IntenseFeelingIntenseFeeling = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={1044.884} cy={600.793} r={16.417} fill="#3f3d56" />
   </svg>
 );
-export default IntenseFeelingIntenseFeeling;
+const Memo = memo(IntenseFeelingIntenseFeeling);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const ServerStatus = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -103,4 +104,5 @@ const ServerStatus = (props: SVGProps<SVGSVGElement>) => (
     <path d="m171.977 128.64-3.079 64.85 9.788 18.15-3.709-24z" opacity={0.2} />
   </svg>
 );
-export default ServerStatus;
+const Memo = memo(ServerStatus);
+export default Memo;

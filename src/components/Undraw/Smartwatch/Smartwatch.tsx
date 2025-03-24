@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Smartwatch = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -314,4 +315,5 @@ const Smartwatch = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#3f3d56" d="M87.849 262.696h70.625v2H87.849z" />
   </svg>
 );
-export default Smartwatch;
+const Memo = memo(Smartwatch);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const TrackAndFieldTrackAndField = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -323,4 +324,5 @@ const TrackAndFieldTrackAndField = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default TrackAndFieldTrackAndField;
+const Memo = memo(TrackAndFieldTrackAndField);
+export default Memo;

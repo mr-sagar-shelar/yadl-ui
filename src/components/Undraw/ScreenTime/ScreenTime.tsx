@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const ScreenTime = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -98,4 +99,5 @@ const ScreenTime = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#3f3d56" d="M423 239.864H41V51.136h2v186.728h380z" />
   </svg>
 );
-export default ScreenTime;
+const Memo = memo(ScreenTime);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const PublicDiscussion = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -246,4 +247,5 @@ const PublicDiscussion = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={783.113} cy={256.7} r={10} fill="#9e616a" />
   </svg>
 );
-export default PublicDiscussion;
+const Memo = memo(PublicDiscussion);
+export default Memo;

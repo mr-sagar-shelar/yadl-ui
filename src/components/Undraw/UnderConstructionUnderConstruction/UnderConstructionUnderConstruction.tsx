@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const UnderConstructionUnderConstruction = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -335,4 +336,5 @@ const UnderConstructionUnderConstruction = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default UnderConstructionUnderConstruction;
+const Memo = memo(UnderConstructionUnderConstruction);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Online_transactionsOnlineTransactions = (
   props: SVGProps<SVGSVGElement>
 ) => (
@@ -205,4 +206,5 @@ const Online_transactionsOnlineTransactions = (
     />
   </svg>
 );
-export default Online_transactionsOnlineTransactions;
+const Memo = memo(Online_transactionsOnlineTransactions);
+export default Memo;

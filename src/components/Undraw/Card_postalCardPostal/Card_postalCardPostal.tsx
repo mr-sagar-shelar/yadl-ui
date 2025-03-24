@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Card_postalCardPostal = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -114,4 +115,5 @@ const Card_postalCardPostal = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Card_postalCardPostal;
+const Memo = memo(Card_postalCardPostal);
+export default Memo;

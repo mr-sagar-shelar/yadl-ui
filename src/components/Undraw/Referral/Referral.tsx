@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Referral = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -134,4 +135,5 @@ const Referral = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Referral;
+const Memo = memo(Referral);
+export default Memo;

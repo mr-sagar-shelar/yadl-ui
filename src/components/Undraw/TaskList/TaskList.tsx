@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const TaskList = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -76,4 +77,5 @@ const TaskList = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default TaskList;
+const Memo = memo(TaskList);
+export default Memo;

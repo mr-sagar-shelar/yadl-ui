@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Two_factor_authenticationTwoFactorAuthentication = (
   props: SVGProps<SVGSVGElement>
 ) => (
@@ -101,4 +102,5 @@ const Two_factor_authenticationTwoFactorAuthentication = (
     <circle cx={321.851} cy={492.707} r={11} fill="#3f3d56" />
   </svg>
 );
-export default Two_factor_authenticationTwoFactorAuthentication;
+const Memo = memo(Two_factor_authenticationTwoFactorAuthentication);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const AWholeYearAWholeYear = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -148,4 +149,5 @@ const AWholeYearAWholeYear = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default AWholeYearAWholeYear;
+const Memo = memo(AWholeYearAWholeYear);
+export default Memo;

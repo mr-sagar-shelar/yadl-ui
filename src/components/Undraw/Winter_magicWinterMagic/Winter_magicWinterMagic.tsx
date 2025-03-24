@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Winter_magicWinterMagic = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -127,4 +128,5 @@ const Winter_magicWinterMagic = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#3f3d56" d="M16.679 708h857v2h-857z" />
   </svg>
 );
-export default Winter_magicWinterMagic;
+const Memo = memo(Winter_magicWinterMagic);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const MobileBrowsers = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -164,4 +165,5 @@ const MobileBrowsers = (props: SVGProps<SVGSVGElement>) => (
     <path d="m149.692 106.536 1.023-5.272 2.25.437-1.023 5.272zM160.835 49.15l1.023-5.271 2.25.436-1.022 5.272z" />
   </svg>
 );
-export default MobileBrowsers;
+const Memo = memo(MobileBrowsers);
+export default Memo;

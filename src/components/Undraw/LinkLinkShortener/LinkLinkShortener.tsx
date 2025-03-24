@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const LinkLinkShortener = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -88,4 +89,5 @@ const LinkLinkShortener = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#2f2e41" d="M537 537.71H75v-257h462Zm-460-2h458v-253H77Z" />
   </svg>
 );
-export default LinkLinkShortener;
+const Memo = memo(LinkLinkShortener);
+export default Memo;

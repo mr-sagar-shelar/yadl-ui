@@ -1,19 +1,20 @@
 import React, { FC } from "react";
-import SourceCode from "../SourceCode";
-
-const Example = () => {
-  return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100%",
-      }}
-    >
-      <SourceCode width="500px" height="500px" />
-    </div>
-  );
-};
-
-export default Example;
+  import SourceCode from "../SourceCode";
+  
+  const Example = () => {
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100%",
+        }}
+      >
+        <SourceCode width="500px" height="500px" />
+      </div>
+    );
+  };
+  
+  export default Example;
+  

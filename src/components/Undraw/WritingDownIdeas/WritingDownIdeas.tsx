@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const WritingDownIdeas = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -93,4 +94,5 @@ const WritingDownIdeas = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default WritingDownIdeas;
+const Memo = memo(WritingDownIdeas);
+export default Memo;

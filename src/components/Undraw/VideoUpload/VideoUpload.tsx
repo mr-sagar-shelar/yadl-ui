@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const VideoUpload = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -244,4 +245,5 @@ const VideoUpload = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default VideoUpload;
+const Memo = memo(VideoUpload);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const GravitasGravitas = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -89,4 +90,5 @@ const GravitasGravitas = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={481.195} cy={272.318} r={41} fill="#f2f2f2" />
   </svg>
 );
-export default GravitasGravitas;
+const Memo = memo(GravitasGravitas);
+export default Memo;

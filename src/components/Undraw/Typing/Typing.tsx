@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Typing = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -83,4 +84,5 @@ const Typing = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={537.201} cy={256.063} r={26} fill="var(--color-primary)" />
   </svg>
 );
-export default Typing;
+const Memo = memo(Typing);
+export default Memo;

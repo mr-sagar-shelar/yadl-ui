@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const BrowserStats = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -79,4 +80,5 @@ const BrowserStats = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default BrowserStats;
+const Memo = memo(BrowserStats);
+export default Memo;

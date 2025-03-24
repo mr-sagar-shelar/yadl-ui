@@ -1,19 +1,20 @@
 import React, { FC } from "react";
-import Opened from "../Opened";
-
-const Example = () => {
-  return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100%",
-      }}
-    >
-      <Opened width="500px" height="500px" />
-    </div>
-  );
-};
-
-export default Example;
+  import Opened from "../Opened";
+  
+  const Example = () => {
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100%",
+        }}
+      >
+        <Opened width="500px" height="500px" />
+      </div>
+    );
+  };
+  
+  export default Example;
+  

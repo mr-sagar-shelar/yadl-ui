@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Among_natureAmongNature = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -148,4 +149,5 @@ const Among_natureAmongNature = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Among_natureAmongNature;
+const Memo = memo(Among_natureAmongNature);
+export default Memo;

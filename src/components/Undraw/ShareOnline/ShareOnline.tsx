@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const ShareOnline = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -187,4 +188,5 @@ const ShareOnline = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={467.407} cy={312} r={15} fill="#f0f0f0" />
   </svg>
 );
-export default ShareOnline;
+const Memo = memo(ShareOnline);
+export default Memo;

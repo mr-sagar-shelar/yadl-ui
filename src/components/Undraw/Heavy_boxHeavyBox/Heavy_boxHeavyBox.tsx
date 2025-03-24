@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Heavy_boxHeavyBox = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -80,4 +81,5 @@ const Heavy_boxHeavyBox = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={818.015} cy={520.193} r={16.424} fill="#e6e6e6" />
   </svg>
 );
-export default Heavy_boxHeavyBox;
+const Memo = memo(Heavy_boxHeavyBox);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const MonitorMonitor = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -252,4 +253,5 @@ const MonitorMonitor = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default MonitorMonitor;
+const Memo = memo(MonitorMonitor);
+export default Memo;

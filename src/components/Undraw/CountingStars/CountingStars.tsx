@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const CountingStars = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -452,4 +453,5 @@ const CountingStars = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={536.487} cy={267.983} r={18} fill="#3f3d56" />
   </svg>
 );
-export default CountingStars;
+const Memo = memo(CountingStars);
+export default Memo;

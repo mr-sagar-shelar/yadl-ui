@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Miro = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -181,4 +182,5 @@ const Miro = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Miro;
+const Memo = memo(Miro);
+export default Memo;

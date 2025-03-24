@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const QualityTime = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -139,4 +140,5 @@ const QualityTime = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default QualityTime;
+const Memo = memo(QualityTime);
+export default Memo;

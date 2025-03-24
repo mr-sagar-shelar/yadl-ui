@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const HotBeverage = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -78,4 +79,5 @@ const HotBeverage = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default HotBeverage;
+const Memo = memo(HotBeverage);
+export default Memo;

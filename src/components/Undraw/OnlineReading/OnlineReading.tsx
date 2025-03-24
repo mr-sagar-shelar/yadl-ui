@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const OnlineReading = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -63,4 +64,5 @@ const OnlineReading = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default OnlineReading;
+const Memo = memo(OnlineReading);
+export default Memo;

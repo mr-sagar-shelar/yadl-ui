@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const TrueFriendsTrueFriends = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -374,4 +375,5 @@ const TrueFriendsTrueFriends = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={593} cy={116} r={7} fill="var(--color-primary)" opacity={0.1} />
   </svg>
 );
-export default TrueFriendsTrueFriends;
+const Memo = memo(TrueFriendsTrueFriends);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Chatting = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -92,4 +93,5 @@ const Chatting = (props: SVGProps<SVGSVGElement>) => (
     <ellipse cx={335.644} cy={285.661} fill="#f2f2f2" rx={24.504} ry={2.72} />
   </svg>
 );
-export default Chatting;
+const Memo = memo(Chatting);
+export default Memo;

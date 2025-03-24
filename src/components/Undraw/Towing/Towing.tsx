@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Towing = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -237,4 +238,5 @@ const Towing = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default Towing;
+const Memo = memo(Towing);
+export default Memo;

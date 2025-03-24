@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Drone_surveillanceDroneSurveillance = (
   props: SVGProps<SVGSVGElement>
 ) => (
@@ -124,4 +125,5 @@ const Drone_surveillanceDroneSurveillance = (
     />
   </svg>
 );
-export default Drone_surveillanceDroneSurveillance;
+const Memo = memo(Drone_surveillanceDroneSurveillance);
+export default Memo;

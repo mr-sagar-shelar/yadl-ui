@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const True_loveTrueLove = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -103,4 +104,5 @@ const True_loveTrueLove = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default True_loveTrueLove;
+const Memo = memo(True_loveTrueLove);
+export default Memo;

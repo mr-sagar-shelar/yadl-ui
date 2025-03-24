@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Browsing = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -138,4 +139,5 @@ const Browsing = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={68.095} cy={202.054} r={16} fill="#2f2e41" />
   </svg>
 );
-export default Browsing;
+const Memo = memo(Browsing);
+export default Memo;

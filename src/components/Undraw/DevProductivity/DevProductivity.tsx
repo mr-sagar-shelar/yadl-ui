@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const DevProductivity = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -286,4 +287,5 @@ const DevProductivity = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default DevProductivity;
+const Memo = memo(DevProductivity);
+export default Memo;

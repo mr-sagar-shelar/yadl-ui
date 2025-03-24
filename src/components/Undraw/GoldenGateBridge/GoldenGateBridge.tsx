@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const GoldenGateBridge = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -302,4 +303,5 @@ const GoldenGateBridge = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default GoldenGateBridge;
+const Memo = memo(GoldenGateBridge);
+export default Memo;

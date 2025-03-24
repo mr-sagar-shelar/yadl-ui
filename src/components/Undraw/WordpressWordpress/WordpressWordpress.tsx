@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const WordpressWordpress = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -329,4 +330,5 @@ const WordpressWordpress = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default WordpressWordpress;
+const Memo = memo(WordpressWordpress);
+export default Memo;

@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const MomentToRemember = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -218,4 +219,5 @@ const MomentToRemember = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default MomentToRemember;
+const Memo = memo(MomentToRemember);
+export default Memo;

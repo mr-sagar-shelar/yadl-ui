@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const CloudDocs = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -167,4 +168,5 @@ const CloudDocs = (props: SVGProps<SVGSVGElement>) => (
     <circle cx={556.049} cy={494.189} r={14} fill="#e6e6e6" />
   </svg>
 );
-export default CloudDocs;
+const Memo = memo(CloudDocs);
+export default Memo;

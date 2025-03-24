@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const TeamSpirit = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -264,4 +265,5 @@ const TeamSpirit = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default TeamSpirit;
+const Memo = memo(TeamSpirit);
+export default Memo;

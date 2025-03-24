@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Runner_startRunnerStart = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -51,4 +52,5 @@ const Runner_startRunnerStart = (props: SVGProps<SVGSVGElement>) => (
     <path fill="var(--color-primary)" d="M96 617.871h29v50.612H96z" />
   </svg>
 );
-export default Runner_startRunnerStart;
+const Memo = memo(Runner_startRunnerStart);
+export default Memo;

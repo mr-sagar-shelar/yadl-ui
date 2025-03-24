@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const QuittingTime = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -109,4 +110,5 @@ const QuittingTime = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default QuittingTime;
+const Memo = memo(QuittingTime);
+export default Memo;

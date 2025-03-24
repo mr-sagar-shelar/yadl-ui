@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const InformedDecision = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -170,4 +171,5 @@ const InformedDecision = (props: SVGProps<SVGSVGElement>) => (
     <path fill="#3f3d56" d="M757.933 520.913h2v9h-2z" />
   </svg>
 );
-export default InformedDecision;
+const Memo = memo(InformedDecision);
+export default Memo;

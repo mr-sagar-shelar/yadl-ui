@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const RelaxMode = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -216,4 +217,5 @@ const RelaxMode = (props: SVGProps<SVGSVGElement>) => (
     </g>
   </svg>
 );
-export default RelaxMode;
+const Memo = memo(RelaxMode);
+export default Memo;

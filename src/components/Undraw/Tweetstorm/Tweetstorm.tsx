@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { memo } from "react";
 const Tweetstorm = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -160,4 +161,5 @@ const Tweetstorm = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-export default Tweetstorm;
+const Memo = memo(Tweetstorm);
+export default Memo;
