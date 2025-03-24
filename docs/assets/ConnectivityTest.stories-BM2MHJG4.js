@@ -1,0 +1,3 @@
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{a as r}from"./index-C4mD4Gko.js";const o=s=>e.jsx("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 24 24",...s,children:e.jsx("g",{fill:"none",fillRule:"evenodd",stroke:"#4285F4",strokeWidth:2,children:e.jsx("path",{d:"M20 4 4 13V6.717M4 21l16-9v6.283"})})}),n=r.memo(o),i=()=>e.jsx("div",{style:{display:"flex",justifyContent:"center",alignItems:"center",height:"100%"},children:e.jsx(n,{width:"500px",height:"500px"})}),c={title:"GCP/ConnectivityTest",component:i},t={args:{}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
+  args: {}
+}`,...t.parameters?.docs?.source}}};const l=["Primary"];export{t as Primary,l as __namedExportsOrder,c as default};

@@ -1,3 +1,0 @@
-import{j as t}from"./jsx-runtime-D_zvdyIk.js";const a=()=>t.jsx("div",{style:{display:"flex",justifyContent:"center",alignItems:"center",height:"100%"},children:t.jsx("p5js",{width:"500px",height:"500px"})});a.__docgenInfo={description:"",methods:[],displayName:"Example"};const n={title:"SkillSet/p5js",component:a},e={args:{}};var r,s,o;e.parameters={...e.parameters,docs:{...(r=e.parameters)==null?void 0:r.docs,source:{originalSource:`{
-  args: {}
-}`,...(o=(s=e.parameters)==null?void 0:s.docs)==null?void 0:o.source}}};const p=["Primary"],c=Object.freeze(Object.defineProperty({__proto__:null,Primary:e,__namedExportsOrder:p,default:n},Symbol.toStringTag,{value:"Module"}));export{e as P,c as p};

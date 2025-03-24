@@ -12,5 +12,5 @@
 
 ## Create storybook build
 
-- `npm run build-storybook -- -o ./docs`
+- `npm run build-storybook -- -o ./docs --test`
 - `http-server ./docs`

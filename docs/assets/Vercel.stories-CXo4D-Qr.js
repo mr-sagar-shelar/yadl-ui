@@ -1,0 +1,3 @@
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{a as s}from"./index-C4mD4Gko.js";const o=r=>e.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",fill:"none",viewBox:"0 0 256 256",...r,children:[e.jsx("rect",{width:256,height:256,fill:"#F4F2ED",rx:60}),e.jsx("path",{fill:"#000",d:"m128 34 95 164.853H33z"})]}),i=s.memo(o),a=()=>e.jsx("div",{style:{display:"flex",justifyContent:"center",alignItems:"center",height:"100%"},children:e.jsx(i,{width:"500px",height:"500px"})}),c={title:"SkillSet/Vercel",component:a},t={args:{}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
+  args: {}
+}`,...t.parameters?.docs?.source}}};const l=["Primary"];export{t as Primary,l as __namedExportsOrder,c as default};
