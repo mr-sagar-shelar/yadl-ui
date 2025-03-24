@@ -7,7 +7,14 @@ export const withTheme = (Story, context) => {
   return (
     <div
       data-theme={theme}
-      style={{ margin: 0, height: "100vh", width: "100%" }}
+      style={{
+        margin: 0,
+        height: "100vh",
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
     >
       <Story />
     </div>

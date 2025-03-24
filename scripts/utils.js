@@ -67,14 +67,19 @@ export const toPascalCase = (str) => {
 
 export const getStoriesContent = (componentName, title) => {
   return `import type { Meta, StoryObj } from "@storybook/react";
-import Example from "./Example";
+import ${componentName} from "../${componentName}";
 
-const meta: Meta<typeof Example> = { title: "${title}/${componentName}", component: Example };
+const meta: Meta<typeof ${componentName}> = { title: "${title}/${componentName}", component: ${componentName} };
 
 export default meta;
-type Story = StoryObj<typeof Example>;
+type Story = StoryObj<typeof ${componentName}>;
 
-export const Primary: Story = { args: {} };
+export const Primary: Story = {
+  args: {
+    width: "500px",
+    height: "500px",
+  },
+};
 `;
 };
 
@@ -190,28 +195,28 @@ export const writeComponentSkeleton = (
   fs.mkdirSync(`${dir}/__docs__`, { recursive: true });
   fs.mkdirSync(`${dir}/__test__`, { recursive: true });
 
-  fs.writeFile(
-    `${dir}/__docs__/Example.tsx`,
-    getExampleContents(componentName),
-    (err) => {
-      if (err) {
-        console.error(err);
-      } else {
-        // file written successfully
-      }
-    },
-  );
-  fs.writeFile(
-    `${dir}/__docs__/${componentName}.mdx`,
-    getMDXContent(componentName, title, sourceUrl),
-    (err) => {
-      if (err) {
-        console.error(err);
-      } else {
-        // file written successfully
-      }
-    },
-  );
+  // fs.writeFile(
+  //   `${dir}/__docs__/Example.tsx`,
+  //   getExampleContents(componentName),
+  //   (err) => {
+  //     if (err) {
+  //       console.error(err);
+  //     } else {
+  //       // file written successfully
+  //     }
+  //   },
+  // );
+  // fs.writeFile(
+  //   `${dir}/__docs__/${componentName}.mdx`,
+  //   getMDXContent(componentName, title, sourceUrl),
+  //   (err) => {
+  //     if (err) {
+  //       console.error(err);
+  //     } else {
+  //       // file written successfully
+  //     }
+  //   },
+  // );
   fs.writeFile(
     `${dir}/__docs__/${componentName}.stories.tsx`,
     getStoriesContent(componentName, title),
@@ -223,30 +228,30 @@ export const writeComponentSkeleton = (
       }
     },
   );
-  fs.writeFile(
-    `${dir}/__test__/${componentName}.test.tsx`,
-    getTestFileContents(componentName),
-    (err) => {
-      if (err) {
-        console.error(err);
-      } else {
-        // file written successfully
-      }
-    },
-  );
-  fs.writeFile(`${dir}/index.ts`, getIndexContents(componentName), (err) => {
-    if (err) {
-      console.error(err);
-    } else {
-      // file written successfully
-    }
-  });
+  // fs.writeFile(
+  //   `${dir}/__test__/${componentName}.test.tsx`,
+  //   getTestFileContents(componentName),
+  //   (err) => {
+  //     if (err) {
+  //       console.error(err);
+  //     } else {
+  //       // file written successfully
+  //     }
+  //   },
+  // );
+  // fs.writeFile(`${dir}/index.ts`, getIndexContents(componentName), (err) => {
+  //   if (err) {
+  //     console.error(err);
+  //   } else {
+  //     // file written successfully
+  //   }
+  // });
 
-  fs.writeFile(`${dir}/${componentName}.tsx`, componentCode, (err) => {
-    if (err) {
-      console.error(err);
-    } else {
-      // file written successfully
-    }
-  });
+  // fs.writeFile(`${dir}/${componentName}.tsx`, componentCode, (err) => {
+  //   if (err) {
+  //     console.error(err);
+  //   } else {
+  //     // file written successfully
+  //   }
+  // });
 };
