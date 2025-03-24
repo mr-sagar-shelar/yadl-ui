@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AutomationAccounts from "./AutomationAccounts.stories.tsx";
+
+<Meta of={AutomationAccounts} title="Azure/ManagementGovernance/AutomationAccounts" />
+
+# AutomationAccounts
+
+AutomationAccounts component with different props.
+
+#### Example
+
+<Canvas of={AutomationAccounts.Primary} />
+
+## Usage
+
+```ts
+import { AutomationAccounts } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AutomationAccounts />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/ManagementGovernance](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureWorkbooks from "./AzureWorkbooks.stories.tsx";
+
+<Meta of={AzureWorkbooks} title="Azure/Monitor/AzureWorkbooks" />
+
+# AzureWorkbooks
+
+AzureWorkbooks component with different props.
+
+#### Example
+
+<Canvas of={AzureWorkbooks.Primary} />
+
+## Usage
+
+```ts
+import { AzureWorkbooks } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureWorkbooks />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Monitor](https://learn.microsoft.com/en-us/azure/architecture/icons/)

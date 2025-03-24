@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Download from "./Download.stories.tsx";
+
+<Meta of={Download} title="Azure/General/Download" />
+
+# Download
+
+Download component with different props.
+
+#### Example
+
+<Canvas of={Download.Primary} />
+
+## Usage
+
+```ts
+import { Download } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Download />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

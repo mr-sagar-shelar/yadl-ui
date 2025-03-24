@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AllResources from "./AllResources.stories.tsx";
+
+<Meta of={AllResources} title="Azure/General/AllResources" />
+
+# AllResources
+
+AllResources component with different props.
+
+#### Example
+
+<Canvas of={AllResources.Primary} />
+
+## Usage
+
+```ts
+import { AllResources } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AllResources />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

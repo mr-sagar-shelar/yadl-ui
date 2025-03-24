@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CostExport from "./CostExport.stories.tsx";
+
+<Meta of={CostExport} title="Azure/Other/CostExport" />
+
+# CostExport
+
+CostExport component with different props.
+
+#### Example
+
+<Canvas of={CostExport.Primary} />
+
+## Usage
+
+```ts
+import { CostExport } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CostExport />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

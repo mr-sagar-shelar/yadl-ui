@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Subnet from "./Subnet.stories.tsx";
+
+<Meta of={Subnet} title="Azure/Networking/Subnet" />
+
+# Subnet
+
+Subnet component with different props.
+
+#### Example
+
+<Canvas of={Subnet.Primary} />
+
+## Usage
+
+```ts
+import { Subnet } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Subnet />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Networking](https://learn.microsoft.com/en-us/azure/architecture/icons/)

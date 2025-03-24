@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Groups from "./Groups.stories.tsx";
+
+<Meta of={Groups} title="Azure/Identity/Groups" />
+
+# Groups
+
+Groups component with different props.
+
+#### Example
+
+<Canvas of={Groups.Primary} />
+
+## Usage
+
+```ts
+import { Groups } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Groups />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Identity](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as LogAnalyticsQueryPack from "./LogAnalyticsQueryPack.stories.tsx";
+
+<Meta of={LogAnalyticsQueryPack} title="Azure/Other/LogAnalyticsQueryPack" />
+
+# LogAnalyticsQueryPack
+
+LogAnalyticsQueryPack component with different props.
+
+#### Example
+
+<Canvas of={LogAnalyticsQueryPack.Primary} />
+
+## Usage
+
+```ts
+import { LogAnalyticsQueryPack } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <LogAnalyticsQueryPack />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as BatchAccounts from "./BatchAccounts.stories.tsx";
+
+<Meta of={BatchAccounts} title="Azure/Compute/BatchAccounts" />
+
+# BatchAccounts
+
+BatchAccounts component with different props.
+
+#### Example
+
+<Canvas of={BatchAccounts.Primary} />
+
+## Usage
+
+```ts
+import { BatchAccounts } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <BatchAccounts />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Compute](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CDNProfiles from "./CDNProfiles.stories.tsx";
+
+<Meta of={CDNProfiles} title="Azure/AppServices/CDNProfiles" />
+
+# CDNProfiles
+
+CDNProfiles component with different props.
+
+#### Example
+
+<Canvas of={CDNProfiles.Primary} />
+
+## Usage
+
+```ts
+import { CDNProfiles } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CDNProfiles />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/AppServices](https://learn.microsoft.com/en-us/azure/architecture/icons/)

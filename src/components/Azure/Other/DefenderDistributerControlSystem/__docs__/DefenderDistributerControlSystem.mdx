@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DefenderDistributerControlSystem from "./DefenderDistributerControlSystem.stories.tsx";
+
+<Meta of={DefenderDistributerControlSystem} title="Azure/Other/DefenderDistributerControlSystem" />
+
+# DefenderDistributerControlSystem
+
+DefenderDistributerControlSystem component with different props.
+
+#### Example
+
+<Canvas of={DefenderDistributerControlSystem.Primary} />
+
+## Usage
+
+```ts
+import { DefenderDistributerControlSystem } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DefenderDistributerControlSystem />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

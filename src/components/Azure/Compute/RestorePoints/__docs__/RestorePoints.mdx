@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as RestorePoints from "./RestorePoints.stories.tsx";
+
+<Meta of={RestorePoints} title="Azure/Compute/RestorePoints" />
+
+# RestorePoints
+
+RestorePoints component with different props.
+
+#### Example
+
+<Canvas of={RestorePoints.Primary} />
+
+## Usage
+
+```ts
+import { RestorePoints } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <RestorePoints />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Compute](https://learn.microsoft.com/en-us/azure/architecture/icons/)

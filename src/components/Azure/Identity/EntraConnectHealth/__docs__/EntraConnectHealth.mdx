@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as EntraConnectHealth from "./EntraConnectHealth.stories.tsx";
+
+<Meta of={EntraConnectHealth} title="Azure/Identity/EntraConnectHealth" />
+
+# EntraConnectHealth
+
+EntraConnectHealth component with different props.
+
+#### Example
+
+<Canvas of={EntraConnectHealth.Primary} />
+
+## Usage
+
+```ts
+import { EntraConnectHealth } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <EntraConnectHealth />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Identity](https://learn.microsoft.com/en-us/azure/architecture/icons/)

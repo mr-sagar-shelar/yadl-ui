@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as EntraDomainServices from "./EntraDomainServices.stories.tsx";
+
+<Meta of={EntraDomainServices} title="Azure/Identity/EntraDomainServices" />
+
+# EntraDomainServices
+
+EntraDomainServices component with different props.
+
+#### Example
+
+<Canvas of={EntraDomainServices.Primary} />
+
+## Usage
+
+```ts
+import { EntraDomainServices } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <EntraDomainServices />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Identity](https://learn.microsoft.com/en-us/azure/architecture/icons/)

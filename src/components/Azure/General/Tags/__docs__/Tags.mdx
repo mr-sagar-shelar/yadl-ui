@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Tags from "./Tags.stories.tsx";
+
+<Meta of={Tags} title="Azure/General/Tags" />
+
+# Tags
+
+Tags component with different props.
+
+#### Example
+
+<Canvas of={Tags.Primary} />
+
+## Usage
+
+```ts
+import { Tags } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Tags />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

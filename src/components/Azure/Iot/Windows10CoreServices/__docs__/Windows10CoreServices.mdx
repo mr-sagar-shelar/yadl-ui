@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Windows10CoreServices from "./Windows10CoreServices.stories.tsx";
+
+<Meta of={Windows10CoreServices} title="Azure/Iot/Windows10CoreServices" />
+
+# Windows10CoreServices
+
+Windows10CoreServices component with different props.
+
+#### Example
+
+<Canvas of={Windows10CoreServices.Primary} />
+
+## Usage
+
+```ts
+import { Windows10CoreServices } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Windows10CoreServices />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Iot](https://learn.microsoft.com/en-us/azure/architecture/icons/)

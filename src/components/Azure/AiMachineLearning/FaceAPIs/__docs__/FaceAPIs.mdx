@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as FaceAPIs from "./FaceAPIs.stories.tsx";
+
+<Meta of={FaceAPIs} title="Azure/AiMachineLearning/FaceAPIs" />
+
+# FaceAPIs
+
+FaceAPIs component with different props.
+
+#### Example
+
+<Canvas of={FaceAPIs.Primary} />
+
+## Usage
+
+```ts
+import { FaceAPIs } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <FaceAPIs />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/AiMachineLearning](https://learn.microsoft.com/en-us/azure/architecture/icons/)

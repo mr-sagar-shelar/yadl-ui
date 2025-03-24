@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as VirtualMachinesClassic from "./VirtualMachinesClassic.stories.tsx";
+
+<Meta of={VirtualMachinesClassic} title="Azure/Compute/VirtualMachinesClassic" />
+
+# VirtualMachinesClassic
+
+VirtualMachinesClassic component with different props.
+
+#### Example
+
+<Canvas of={VirtualMachinesClassic.Primary} />
+
+## Usage
+
+```ts
+import { VirtualMachinesClassic } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <VirtualMachinesClassic />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Compute](https://learn.microsoft.com/en-us/azure/architecture/icons/)

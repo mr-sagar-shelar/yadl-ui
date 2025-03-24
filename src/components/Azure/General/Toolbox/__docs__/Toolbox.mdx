@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Toolbox from "./Toolbox.stories.tsx";
+
+<Meta of={Toolbox} title="Azure/General/Toolbox" />
+
+# Toolbox
+
+Toolbox component with different props.
+
+#### Example
+
+<Canvas of={Toolbox.Primary} />
+
+## Usage
+
+```ts
+import { Toolbox } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Toolbox />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

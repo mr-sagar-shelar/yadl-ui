@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as GenomicsAccounts from "./GenomicsAccounts.stories.tsx";
+
+<Meta of={GenomicsAccounts} title="Azure/AiMachineLearning/GenomicsAccounts" />
+
+# GenomicsAccounts
+
+GenomicsAccounts component with different props.
+
+#### Example
+
+<Canvas of={GenomicsAccounts.Primary} />
+
+## Usage
+
+```ts
+import { GenomicsAccounts } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <GenomicsAccounts />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/AiMachineLearning](https://learn.microsoft.com/en-us/azure/architecture/icons/)

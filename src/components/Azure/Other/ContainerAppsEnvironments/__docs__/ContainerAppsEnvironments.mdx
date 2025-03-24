@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ContainerAppsEnvironments from "./ContainerAppsEnvironments.stories.tsx";
+
+<Meta of={ContainerAppsEnvironments} title="Azure/Other/ContainerAppsEnvironments" />
+
+# ContainerAppsEnvironments
+
+ContainerAppsEnvironments component with different props.
+
+#### Example
+
+<Canvas of={ContainerAppsEnvironments.Primary} />
+
+## Usage
+
+```ts
+import { ContainerAppsEnvironments } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ContainerAppsEnvironments />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

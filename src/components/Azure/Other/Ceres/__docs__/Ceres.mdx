@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Ceres from "./Ceres.stories.tsx";
+
+<Meta of={Ceres} title="Azure/Other/Ceres" />
+
+# Ceres
+
+Ceres component with different props.
+
+#### Example
+
+<Canvas of={Ceres.Primary} />
+
+## Usage
+
+```ts
+import { Ceres } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Ceres />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

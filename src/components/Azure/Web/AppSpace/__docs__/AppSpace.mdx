@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AppSpace from "./AppSpace.stories.tsx";
+
+<Meta of={AppSpace} title="Azure/Web/AppSpace" />
+
+# AppSpace
+
+AppSpace component with different props.
+
+#### Example
+
+<Canvas of={AppSpace.Primary} />
+
+## Usage
+
+```ts
+import { AppSpace } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AppSpace />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Web](https://learn.microsoft.com/en-us/azure/architecture/icons/)

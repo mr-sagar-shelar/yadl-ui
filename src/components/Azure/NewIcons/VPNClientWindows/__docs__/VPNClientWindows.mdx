@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as VPNClientWindows from "./VPNClientWindows.stories.tsx";
+
+<Meta of={VPNClientWindows} title="Azure/NewIcons/VPNClientWindows" />
+
+# VPNClientWindows
+
+VPNClientWindows component with different props.
+
+#### Example
+
+<Canvas of={VPNClientWindows.Primary} />
+
+## Usage
+
+```ts
+import { VPNClientWindows } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <VPNClientWindows />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/NewIcons](https://learn.microsoft.com/en-us/azure/architecture/icons/)

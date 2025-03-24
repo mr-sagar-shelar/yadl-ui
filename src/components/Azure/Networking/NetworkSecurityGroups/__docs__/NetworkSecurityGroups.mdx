@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as NetworkSecurityGroups from "./NetworkSecurityGroups.stories.tsx";
+
+<Meta of={NetworkSecurityGroups} title="Azure/Networking/NetworkSecurityGroups" />
+
+# NetworkSecurityGroups
+
+NetworkSecurityGroups component with different props.
+
+#### Example
+
+<Canvas of={NetworkSecurityGroups.Primary} />
+
+## Usage
+
+```ts
+import { NetworkSecurityGroups } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <NetworkSecurityGroups />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Networking](https://learn.microsoft.com/en-us/azure/architecture/icons/)

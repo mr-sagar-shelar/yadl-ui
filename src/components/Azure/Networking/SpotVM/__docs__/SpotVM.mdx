@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SpotVM from "./SpotVM.stories.tsx";
+
+<Meta of={SpotVM} title="Azure/Networking/SpotVM" />
+
+# SpotVM
+
+SpotVM component with different props.
+
+#### Example
+
+<Canvas of={SpotVM.Primary} />
+
+## Usage
+
+```ts
+import { SpotVM } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SpotVM />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Networking](https://learn.microsoft.com/en-us/azure/architecture/icons/)

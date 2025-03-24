@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as StorSimpleDataManagers from "./StorSimpleDataManagers.stories.tsx";
+
+<Meta of={StorSimpleDataManagers} title="Azure/Storage/StorSimpleDataManagers" />
+
+# StorSimpleDataManagers
+
+StorSimpleDataManagers component with different props.
+
+#### Example
+
+<Canvas of={StorSimpleDataManagers.Primary} />
+
+## Usage
+
+```ts
+import { StorSimpleDataManagers } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <StorSimpleDataManagers />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Storage](https://learn.microsoft.com/en-us/azure/architecture/icons/)

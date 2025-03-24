@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ComputerVision from "./ComputerVision.stories.tsx";
+
+<Meta of={ComputerVision} title="Azure/AiMachineLearning/ComputerVision" />
+
+# ComputerVision
+
+ComputerVision component with different props.
+
+#### Example
+
+<Canvas of={ComputerVision.Primary} />
+
+## Usage
+
+```ts
+import { ComputerVision } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ComputerVision />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/AiMachineLearning](https://learn.microsoft.com/en-us/azure/architecture/icons/)

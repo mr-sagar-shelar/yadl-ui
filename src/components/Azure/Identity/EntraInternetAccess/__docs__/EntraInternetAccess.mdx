@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as EntraInternetAccess from "./EntraInternetAccess.stories.tsx";
+
+<Meta of={EntraInternetAccess} title="Azure/Identity/EntraInternetAccess" />
+
+# EntraInternetAccess
+
+EntraInternetAccess component with different props.
+
+#### Example
+
+<Canvas of={EntraInternetAccess.Primary} />
+
+## Usage
+
+```ts
+import { EntraInternetAccess } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <EntraInternetAccess />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Identity](https://learn.microsoft.com/en-us/azure/architecture/icons/)

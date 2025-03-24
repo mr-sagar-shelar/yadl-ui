@@ -55,14 +55,14 @@ import { transform } from "@svgr/core";
                     { componentName: fileName },
                   );
                   // console.log(`${componentCode}`);
-                  // console.log(`./src/components/GCP/${fileName}`);
-                  // writeComponentSkeleton(
-                  //   fileName,
-                  //   `./src/components/GCP/${fileName}`,
-                  //   componentCode,
-                  //   `GCP`,
-                  //   "https://cloud.google.com/icons",
-                  // );
+                  // console.log(`./src/components/Azure/${fileName}`);
+                  writeComponentSkeleton(
+                    fileName,
+                    `./src/components/Azure/${updatedFolderName}/${fileName}`,
+                    componentCode,
+                    `Azure/${updatedFolderName}`,
+                    "https://learn.microsoft.com/en-us/azure/architecture/icons/",
+                  );
                 } catch (error) {
                   console.log(`Error Transforming ${fileName}`);
                   console.error(error);
@@ -82,5 +82,5 @@ import { transform } from "@svgr/core";
       });
     });
   });
-  // writeIndexFile(indexFileContents, `./src/components/GCP/index.ts`);
+  // writeIndexFile(indexFileContents, `./src/components/Azure/index.ts`);
 })();

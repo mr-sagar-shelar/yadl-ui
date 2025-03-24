@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MaintenanceConfiguration from "./MaintenanceConfiguration.stories.tsx";
+
+<Meta of={MaintenanceConfiguration} title="Azure/Compute/MaintenanceConfiguration" />
+
+# MaintenanceConfiguration
+
+MaintenanceConfiguration component with different props.
+
+#### Example
+
+<Canvas of={MaintenanceConfiguration.Primary} />
+
+## Usage
+
+```ts
+import { MaintenanceConfiguration } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MaintenanceConfiguration />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Compute](https://learn.microsoft.com/en-us/azure/architecture/icons/)

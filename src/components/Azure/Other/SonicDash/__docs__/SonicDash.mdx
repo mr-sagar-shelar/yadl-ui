@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SonicDash from "./SonicDash.stories.tsx";
+
+<Meta of={SonicDash} title="Azure/Other/SonicDash" />
+
+# SonicDash
+
+SonicDash component with different props.
+
+#### Example
+
+<Canvas of={SonicDash.Primary} />
+
+## Usage
+
+```ts
+import { SonicDash } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SonicDash />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

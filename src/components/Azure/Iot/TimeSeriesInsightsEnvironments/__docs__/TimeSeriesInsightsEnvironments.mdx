@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as TimeSeriesInsightsEnvironments from "./TimeSeriesInsightsEnvironments.stories.tsx";
+
+<Meta of={TimeSeriesInsightsEnvironments} title="Azure/Iot/TimeSeriesInsightsEnvironments" />
+
+# TimeSeriesInsightsEnvironments
+
+TimeSeriesInsightsEnvironments component with different props.
+
+#### Example
+
+<Canvas of={TimeSeriesInsightsEnvironments.Primary} />
+
+## Usage
+
+```ts
+import { TimeSeriesInsightsEnvironments } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <TimeSeriesInsightsEnvironments />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Iot](https://learn.microsoft.com/en-us/azure/architecture/icons/)

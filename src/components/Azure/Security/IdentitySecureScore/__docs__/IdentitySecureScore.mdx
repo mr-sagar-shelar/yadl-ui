@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as IdentitySecureScore from "./IdentitySecureScore.stories.tsx";
+
+<Meta of={IdentitySecureScore} title="Azure/Security/IdentitySecureScore" />
+
+# IdentitySecureScore
+
+IdentitySecureScore component with different props.
+
+#### Example
+
+<Canvas of={IdentitySecureScore.Primary} />
+
+## Usage
+
+```ts
+import { IdentitySecureScore } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <IdentitySecureScore />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Security](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as PartnerTopic from "./PartnerTopic.stories.tsx";
+
+<Meta of={PartnerTopic} title="Azure/Integration/PartnerTopic" />
+
+# PartnerTopic
+
+PartnerTopic component with different props.
+
+#### Example
+
+<Canvas of={PartnerTopic.Primary} />
+
+## Usage
+
+```ts
+import { PartnerTopic } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <PartnerTopic />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Integration](https://learn.microsoft.com/en-us/azure/architecture/icons/)

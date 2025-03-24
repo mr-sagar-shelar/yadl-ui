@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ExchangeAccess from "./ExchangeAccess.stories.tsx";
+
+<Meta of={ExchangeAccess} title="Azure/Intune/ExchangeAccess" />
+
+# ExchangeAccess
+
+ExchangeAccess component with different props.
+
+#### Example
+
+<Canvas of={ExchangeAccess.Primary} />
+
+## Usage
+
+```ts
+import { ExchangeAccess } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ExchangeAccess />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Intune](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Updates from "./Updates.stories.tsx";
+
+<Meta of={Updates} title="Azure/AzureStack/Updates" />
+
+# Updates
+
+Updates component with different props.
+
+#### Example
+
+<Canvas of={Updates.Primary} />
+
+## Usage
+
+```ts
+import { Updates } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Updates />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/AzureStack](https://learn.microsoft.com/en-us/azure/architecture/icons/)

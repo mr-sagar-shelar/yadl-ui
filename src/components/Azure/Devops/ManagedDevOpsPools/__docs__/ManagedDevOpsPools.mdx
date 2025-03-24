@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ManagedDevOpsPools from "./ManagedDevOpsPools.stories.tsx";
+
+<Meta of={ManagedDevOpsPools} title="Azure/Devops/ManagedDevOpsPools" />
+
+# ManagedDevOpsPools
+
+ManagedDevOpsPools component with different props.
+
+#### Example
+
+<Canvas of={ManagedDevOpsPools.Primary} />
+
+## Usage
+
+```ts
+import { ManagedDevOpsPools } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ManagedDevOpsPools />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Devops](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Learn from "./Learn.stories.tsx";
+
+<Meta of={Learn} title="Azure/General/Learn" />
+
+# Learn
+
+Learn component with different props.
+
+#### Example
+
+<Canvas of={Learn.Primary} />
+
+## Usage
+
+```ts
+import { Learn } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Learn />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

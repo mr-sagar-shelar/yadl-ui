@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SSD from "./SSD.stories.tsx";
+
+<Meta of={SSD} title="Azure/General/SSD" />
+
+# SSD
+
+SSD component with different props.
+
+#### Example
+
+<Canvas of={SSD.Primary} />
+
+## Usage
+
+```ts
+import { SSD } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SSD />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

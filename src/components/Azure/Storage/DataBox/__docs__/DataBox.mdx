@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DataBox from "./DataBox.stories.tsx";
+
+<Meta of={DataBox} title="Azure/Storage/DataBox" />
+
+# DataBox
+
+DataBox component with different props.
+
+#### Example
+
+<Canvas of={DataBox.Primary} />
+
+## Usage
+
+```ts
+import { DataBox } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DataBox />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Storage](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CollaborativeService from "./CollaborativeService.stories.tsx";
+
+<Meta of={CollaborativeService} title="Azure/AzureEcosystem/CollaborativeService" />
+
+# CollaborativeService
+
+CollaborativeService component with different props.
+
+#### Example
+
+<Canvas of={CollaborativeService.Primary} />
+
+## Usage
+
+```ts
+import { CollaborativeService } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CollaborativeService />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/AzureEcosystem](https://learn.microsoft.com/en-us/azure/architecture/icons/)

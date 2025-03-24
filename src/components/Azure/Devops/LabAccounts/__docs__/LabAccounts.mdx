@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as LabAccounts from "./LabAccounts.stories.tsx";
+
+<Meta of={LabAccounts} title="Azure/Devops/LabAccounts" />
+
+# LabAccounts
+
+LabAccounts component with different props.
+
+#### Example
+
+<Canvas of={LabAccounts.Primary} />
+
+## Usage
+
+```ts
+import { LabAccounts } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <LabAccounts />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Devops](https://learn.microsoft.com/en-us/azure/architecture/icons/)

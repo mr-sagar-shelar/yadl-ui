@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MultiFactorAuthentication from "./MultiFactorAuthentication.stories.tsx";
+
+<Meta of={MultiFactorAuthentication} title="Azure/Identity/MultiFactorAuthentication" />
+
+# MultiFactorAuthentication
+
+MultiFactorAuthentication component with different props.
+
+#### Example
+
+<Canvas of={MultiFactorAuthentication.Primary} />
+
+## Usage
+
+```ts
+import { MultiFactorAuthentication } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MultiFactorAuthentication />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Identity](https://learn.microsoft.com/en-us/azure/architecture/icons/)

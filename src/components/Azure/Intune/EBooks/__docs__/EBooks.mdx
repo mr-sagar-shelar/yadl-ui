@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as EBooks from "./EBooks.stories.tsx";
+
+<Meta of={EBooks} title="Azure/Intune/EBooks" />
+
+# EBooks
+
+EBooks component with different props.
+
+#### Example
+
+<Canvas of={EBooks.Primary} />
+
+## Usage
+
+```ts
+import { EBooks } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <EBooks />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Intune](https://learn.microsoft.com/en-us/azure/architecture/icons/)

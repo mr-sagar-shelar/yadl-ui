@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureOperator5GCore from "./AzureOperator5GCore.stories.tsx";
+
+<Meta of={AzureOperator5GCore} title="Azure/HybridMulticloud/AzureOperator5GCore" />
+
+# AzureOperator5GCore
+
+AzureOperator5GCore component with different props.
+
+#### Example
+
+<Canvas of={AzureOperator5GCore.Primary} />
+
+## Usage
+
+```ts
+import { AzureOperator5GCore } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureOperator5GCore />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/HybridMulticloud](https://learn.microsoft.com/en-us/azure/architecture/icons/)

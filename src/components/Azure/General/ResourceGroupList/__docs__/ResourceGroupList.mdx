@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ResourceGroupList from "./ResourceGroupList.stories.tsx";
+
+<Meta of={ResourceGroupList} title="Azure/General/ResourceGroupList" />
+
+# ResourceGroupList
+
+ResourceGroupList component with different props.
+
+#### Example
+
+<Canvas of={ResourceGroupList.Primary} />
+
+## Usage
+
+```ts
+import { ResourceGroupList } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ResourceGroupList />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DefenderFreezerMonitor from "./DefenderFreezerMonitor.stories.tsx";
+
+<Meta of={DefenderFreezerMonitor} title="Azure/Other/DefenderFreezerMonitor" />
+
+# DefenderFreezerMonitor
+
+DefenderFreezerMonitor component with different props.
+
+#### Example
+
+<Canvas of={DefenderFreezerMonitor.Primary} />
+
+## Usage
+
+```ts
+import { DefenderFreezerMonitor } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DefenderFreezerMonitor />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

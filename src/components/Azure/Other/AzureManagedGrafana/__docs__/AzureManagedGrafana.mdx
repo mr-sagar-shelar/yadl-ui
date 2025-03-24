@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureManagedGrafana from "./AzureManagedGrafana.stories.tsx";
+
+<Meta of={AzureManagedGrafana} title="Azure/Other/AzureManagedGrafana" />
+
+# AzureManagedGrafana
+
+AzureManagedGrafana component with different props.
+
+#### Example
+
+<Canvas of={AzureManagedGrafana.Primary} />
+
+## Usage
+
+```ts
+import { AzureManagedGrafana } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureManagedGrafana />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

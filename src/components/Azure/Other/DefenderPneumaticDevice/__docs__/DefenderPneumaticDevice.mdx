@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DefenderPneumaticDevice from "./DefenderPneumaticDevice.stories.tsx";
+
+<Meta of={DefenderPneumaticDevice} title="Azure/Other/DefenderPneumaticDevice" />
+
+# DefenderPneumaticDevice
+
+DefenderPneumaticDevice component with different props.
+
+#### Example
+
+<Canvas of={DefenderPneumaticDevice.Primary} />
+
+## Usage
+
+```ts
+import { DefenderPneumaticDevice } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DefenderPneumaticDevice />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

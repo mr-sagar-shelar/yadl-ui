@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as PartnerNamespace from "./PartnerNamespace.stories.tsx";
+
+<Meta of={PartnerNamespace} title="Azure/Integration/PartnerNamespace" />
+
+# PartnerNamespace
+
+PartnerNamespace component with different props.
+
+#### Example
+
+<Canvas of={PartnerNamespace.Primary} />
+
+## Usage
+
+```ts
+import { PartnerNamespace } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <PartnerNamespace />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Integration](https://learn.microsoft.com/en-us/azure/architecture/icons/)

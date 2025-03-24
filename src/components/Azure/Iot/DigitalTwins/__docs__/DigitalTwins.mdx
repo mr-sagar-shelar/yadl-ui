@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DigitalTwins from "./DigitalTwins.stories.tsx";
+
+<Meta of={DigitalTwins} title="Azure/Iot/DigitalTwins" />
+
+# DigitalTwins
+
+DigitalTwins component with different props.
+
+#### Example
+
+<Canvas of={DigitalTwins.Primary} />
+
+## Usage
+
+```ts
+import { DigitalTwins } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DigitalTwins />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Iot](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DiskPool from "./DiskPool.stories.tsx";
+
+<Meta of={DiskPool} title="Azure/Other/DiskPool" />
+
+# DiskPool
+
+DiskPool component with different props.
+
+#### Example
+
+<Canvas of={DiskPool.Primary} />
+
+## Usage
+
+```ts
+import { DiskPool } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DiskPool />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

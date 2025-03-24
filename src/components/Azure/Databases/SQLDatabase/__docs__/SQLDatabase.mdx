@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SQLDatabase from "./SQLDatabase.stories.tsx";
+
+<Meta of={SQLDatabase} title="Azure/Databases/SQLDatabase" />
+
+# SQLDatabase
+
+SQLDatabase component with different props.
+
+#### Example
+
+<Canvas of={SQLDatabase.Primary} />
+
+## Usage
+
+```ts
+import { SQLDatabase } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SQLDatabase />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Databases](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MachineLearningStudioWorkspaces from "./MachineLearningStudioWorkspaces.stories.tsx";
+
+<Meta of={MachineLearningStudioWorkspaces} title="Azure/AiMachineLearning/MachineLearningStudioWorkspaces" />
+
+# MachineLearningStudioWorkspaces
+
+MachineLearningStudioWorkspaces component with different props.
+
+#### Example
+
+<Canvas of={MachineLearningStudioWorkspaces.Primary} />
+
+## Usage
+
+```ts
+import { MachineLearningStudioWorkspaces } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MachineLearningStudioWorkspaces />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/AiMachineLearning](https://learn.microsoft.com/en-us/azure/architecture/icons/)

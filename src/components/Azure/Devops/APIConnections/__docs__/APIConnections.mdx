@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as APIConnections from "./APIConnections.stories.tsx";
+
+<Meta of={APIConnections} title="Azure/Devops/APIConnections" />
+
+# APIConnections
+
+APIConnections component with different props.
+
+#### Example
+
+<Canvas of={APIConnections.Primary} />
+
+## Usage
+
+```ts
+import { APIConnections } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <APIConnections />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Devops](https://learn.microsoft.com/en-us/azure/architecture/icons/)

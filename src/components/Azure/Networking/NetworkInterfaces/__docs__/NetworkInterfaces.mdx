@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as NetworkInterfaces from "./NetworkInterfaces.stories.tsx";
+
+<Meta of={NetworkInterfaces} title="Azure/Networking/NetworkInterfaces" />
+
+# NetworkInterfaces
+
+NetworkInterfaces component with different props.
+
+#### Example
+
+<Canvas of={NetworkInterfaces.Primary} />
+
+## Usage
+
+```ts
+import { NetworkInterfaces } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <NetworkInterfaces />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Networking](https://learn.microsoft.com/en-us/azure/architecture/icons/)

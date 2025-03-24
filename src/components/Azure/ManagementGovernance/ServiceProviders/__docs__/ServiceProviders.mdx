@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ServiceProviders from "./ServiceProviders.stories.tsx";
+
+<Meta of={ServiceProviders} title="Azure/ManagementGovernance/ServiceProviders" />
+
+# ServiceProviders
+
+ServiceProviders component with different props.
+
+#### Example
+
+<Canvas of={ServiceProviders.Primary} />
+
+## Usage
+
+```ts
+import { ServiceProviders } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ServiceProviders />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/ManagementGovernance](https://learn.microsoft.com/en-us/azure/architecture/icons/)

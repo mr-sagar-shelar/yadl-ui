@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DefenderIndustrialPrinter from "./DefenderIndustrialPrinter.stories.tsx";
+
+<Meta of={DefenderIndustrialPrinter} title="Azure/Other/DefenderIndustrialPrinter" />
+
+# DefenderIndustrialPrinter
+
+DefenderIndustrialPrinter component with different props.
+
+#### Example
+
+<Canvas of={DefenderIndustrialPrinter.Primary} />
+
+## Usage
+
+```ts
+import { DefenderIndustrialPrinter } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DefenderIndustrialPrinter />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

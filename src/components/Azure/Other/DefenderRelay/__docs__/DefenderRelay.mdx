@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DefenderRelay from "./DefenderRelay.stories.tsx";
+
+<Meta of={DefenderRelay} title="Azure/Other/DefenderRelay" />
+
+# DefenderRelay
+
+DefenderRelay component with different props.
+
+#### Example
+
+<Canvas of={DefenderRelay.Primary} />
+
+## Usage
+
+```ts
+import { DefenderRelay } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DefenderRelay />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

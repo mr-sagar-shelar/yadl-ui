@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DataShareInvitations from "./DataShareInvitations.stories.tsx";
+
+<Meta of={DataShareInvitations} title="Azure/Storage/DataShareInvitations" />
+
+# DataShareInvitations
+
+DataShareInvitations component with different props.
+
+#### Example
+
+<Canvas of={DataShareInvitations.Primary} />
+
+## Usage
+
+```ts
+import { DataShareInvitations } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DataShareInvitations />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Storage](https://learn.microsoft.com/en-us/azure/architecture/icons/)

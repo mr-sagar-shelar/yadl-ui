@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Module from "./Module.stories.tsx";
+
+<Meta of={Module} title="Azure/General/Module" />
+
+# Module
+
+Module component with different props.
+
+#### Example
+
+<Canvas of={Module.Primary} />
+
+## Usage
+
+```ts
+import { Module } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Module />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as NotificationHubs from "./NotificationHubs.stories.tsx";
+
+<Meta of={NotificationHubs} title="Azure/Iot/NotificationHubs" />
+
+# NotificationHubs
+
+NotificationHubs component with different props.
+
+#### Example
+
+<Canvas of={NotificationHubs.Primary} />
+
+## Usage
+
+```ts
+import { NotificationHubs } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <NotificationHubs />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Iot](https://learn.microsoft.com/en-us/azure/architecture/icons/)

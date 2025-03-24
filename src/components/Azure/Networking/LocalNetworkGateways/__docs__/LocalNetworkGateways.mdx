@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as LocalNetworkGateways from "./LocalNetworkGateways.stories.tsx";
+
+<Meta of={LocalNetworkGateways} title="Azure/Networking/LocalNetworkGateways" />
+
+# LocalNetworkGateways
+
+LocalNetworkGateways component with different props.
+
+#### Example
+
+<Canvas of={LocalNetworkGateways.Primary} />
+
+## Usage
+
+```ts
+import { LocalNetworkGateways } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <LocalNetworkGateways />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Networking](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureVirtualDesktop from "./AzureVirtualDesktop.stories.tsx";
+
+<Meta of={AzureVirtualDesktop} title="Azure/Other/AzureVirtualDesktop" />
+
+# AzureVirtualDesktop
+
+AzureVirtualDesktop component with different props.
+
+#### Example
+
+<Canvas of={AzureVirtualDesktop.Primary} />
+
+## Usage
+
+```ts
+import { AzureVirtualDesktop } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureVirtualDesktop />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

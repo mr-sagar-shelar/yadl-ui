@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ArcSQLServer from "./ArcSQLServer.stories.tsx";
+
+<Meta of={ArcSQLServer} title="Azure/Other/ArcSQLServer" />
+
+# ArcSQLServer
+
+ArcSQLServer component with different props.
+
+#### Example
+
+<Canvas of={ArcSQLServer.Primary} />
+
+## Usage
+
+```ts
+import { ArcSQLServer } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ArcSQLServer />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

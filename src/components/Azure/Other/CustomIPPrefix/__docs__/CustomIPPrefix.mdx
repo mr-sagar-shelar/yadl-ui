@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CustomIPPrefix from "./CustomIPPrefix.stories.tsx";
+
+<Meta of={CustomIPPrefix} title="Azure/Other/CustomIPPrefix" />
+
+# CustomIPPrefix
+
+CustomIPPrefix component with different props.
+
+#### Example
+
+<Canvas of={CustomIPPrefix.Primary} />
+
+## Usage
+
+```ts
+import { CustomIPPrefix } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CustomIPPrefix />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

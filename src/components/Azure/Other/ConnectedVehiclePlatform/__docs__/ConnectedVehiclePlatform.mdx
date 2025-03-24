@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ConnectedVehiclePlatform from "./ConnectedVehiclePlatform.stories.tsx";
+
+<Meta of={ConnectedVehiclePlatform} title="Azure/Other/ConnectedVehiclePlatform" />
+
+# ConnectedVehiclePlatform
+
+ConnectedVehiclePlatform component with different props.
+
+#### Example
+
+<Canvas of={ConnectedVehiclePlatform.Primary} />
+
+## Usage
+
+```ts
+import { ConnectedVehiclePlatform } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ConnectedVehiclePlatform />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

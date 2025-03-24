@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SoftwareasaService from "./SoftwareasaService.stories.tsx";
+
+<Meta of={SoftwareasaService} title="Azure/Integration/SoftwareasaService" />
+
+# SoftwareasaService
+
+SoftwareasaService component with different props.
+
+#### Example
+
+<Canvas of={SoftwareasaService.Primary} />
+
+## Usage
+
+```ts
+import { SoftwareasaService } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SoftwareasaService />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Integration](https://learn.microsoft.com/en-us/azure/architecture/icons/)

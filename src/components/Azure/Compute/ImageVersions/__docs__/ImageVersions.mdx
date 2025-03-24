@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ImageVersions from "./ImageVersions.stories.tsx";
+
+<Meta of={ImageVersions} title="Azure/Compute/ImageVersions" />
+
+# ImageVersions
+
+ImageVersions component with different props.
+
+#### Example
+
+<Canvas of={ImageVersions.Primary} />
+
+## Usage
+
+```ts
+import { ImageVersions } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ImageVersions />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Compute](https://learn.microsoft.com/en-us/azure/architecture/icons/)

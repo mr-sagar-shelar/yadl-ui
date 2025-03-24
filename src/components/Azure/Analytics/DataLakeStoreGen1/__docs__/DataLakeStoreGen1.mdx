@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DataLakeStoreGen1 from "./DataLakeStoreGen1.stories.tsx";
+
+<Meta of={DataLakeStoreGen1} title="Azure/Analytics/DataLakeStoreGen1" />
+
+# DataLakeStoreGen1
+
+DataLakeStoreGen1 component with different props.
+
+#### Example
+
+<Canvas of={DataLakeStoreGen1.Primary} />
+
+## Usage
+
+```ts
+import { DataLakeStoreGen1 } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DataLakeStoreGen1 />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Analytics](https://learn.microsoft.com/en-us/azure/architecture/icons/)

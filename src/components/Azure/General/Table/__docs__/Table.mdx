@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Table from "./Table.stories.tsx";
+
+<Meta of={Table} title="Azure/General/Table" />
+
+# Table
+
+Table component with different props.
+
+#### Example
+
+<Canvas of={Table.Primary} />
+
+## Usage
+
+```ts
+import { Table } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Table />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as LogicApps from "./LogicApps.stories.tsx";
+
+<Meta of={LogicApps} title="Azure/Integration/LogicApps" />
+
+# LogicApps
+
+LogicApps component with different props.
+
+#### Example
+
+<Canvas of={LogicApps.Primary} />
+
+## Usage
+
+```ts
+import { LogicApps } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <LogicApps />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Integration](https://learn.microsoft.com/en-us/azure/architecture/icons/)

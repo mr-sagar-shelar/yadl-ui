@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureSpringApps from "./AzureSpringApps.stories.tsx";
+
+<Meta of={AzureSpringApps} title="Azure/Compute/AzureSpringApps" />
+
+# AzureSpringApps
+
+AzureSpringApps component with different props.
+
+#### Example
+
+<Canvas of={AzureSpringApps.Primary} />
+
+## Usage
+
+```ts
+import { AzureSpringApps } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureSpringApps />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Compute](https://learn.microsoft.com/en-us/azure/architecture/icons/)

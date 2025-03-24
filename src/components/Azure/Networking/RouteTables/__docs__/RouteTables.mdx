@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as RouteTables from "./RouteTables.stories.tsx";
+
+<Meta of={RouteTables} title="Azure/Networking/RouteTables" />
+
+# RouteTables
+
+RouteTables component with different props.
+
+#### Example
+
+<Canvas of={RouteTables.Primary} />
+
+## Usage
+
+```ts
+import { RouteTables } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <RouteTables />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Networking](https://learn.microsoft.com/en-us/azure/architecture/icons/)

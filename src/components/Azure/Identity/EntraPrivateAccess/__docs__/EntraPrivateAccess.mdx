@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as EntraPrivateAccess from "./EntraPrivateAccess.stories.tsx";
+
+<Meta of={EntraPrivateAccess} title="Azure/Identity/EntraPrivateAccess" />
+
+# EntraPrivateAccess
+
+EntraPrivateAccess component with different props.
+
+#### Example
+
+<Canvas of={EntraPrivateAccess.Primary} />
+
+## Usage
+
+```ts
+import { EntraPrivateAccess } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <EntraPrivateAccess />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Identity](https://learn.microsoft.com/en-us/azure/architecture/icons/)

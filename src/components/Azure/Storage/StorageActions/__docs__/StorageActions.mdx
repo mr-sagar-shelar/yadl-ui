@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as StorageActions from "./StorageActions.stories.tsx";
+
+<Meta of={StorageActions} title="Azure/Storage/StorageActions" />
+
+# StorageActions
+
+StorageActions component with different props.
+
+#### Example
+
+<Canvas of={StorageActions.Primary} />
+
+## Usage
+
+```ts
+import { StorageActions } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <StorageActions />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Storage](https://learn.microsoft.com/en-us/azure/architecture/icons/)

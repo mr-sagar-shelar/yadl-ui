@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ManagedDatabase from "./ManagedDatabase.stories.tsx";
+
+<Meta of={ManagedDatabase} title="Azure/Databases/ManagedDatabase" />
+
+# ManagedDatabase
+
+ManagedDatabase component with different props.
+
+#### Example
+
+<Canvas of={ManagedDatabase.Primary} />
+
+## Usage
+
+```ts
+import { ManagedDatabase } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ManagedDatabase />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Databases](https://learn.microsoft.com/en-us/azure/architecture/icons/)

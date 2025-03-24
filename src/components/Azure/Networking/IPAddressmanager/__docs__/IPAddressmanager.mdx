@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as IPAddressmanager from "./IPAddressmanager.stories.tsx";
+
+<Meta of={IPAddressmanager} title="Azure/Networking/IPAddressmanager" />
+
+# IPAddressmanager
+
+IPAddressmanager component with different props.
+
+#### Example
+
+<Canvas of={IPAddressmanager.Primary} />
+
+## Usage
+
+```ts
+import { IPAddressmanager } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <IPAddressmanager />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Networking](https://learn.microsoft.com/en-us/azure/architecture/icons/)

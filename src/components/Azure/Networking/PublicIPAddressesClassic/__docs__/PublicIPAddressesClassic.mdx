@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as PublicIPAddressesClassic from "./PublicIPAddressesClassic.stories.tsx";
+
+<Meta of={PublicIPAddressesClassic} title="Azure/Networking/PublicIPAddressesClassic" />
+
+# PublicIPAddressesClassic
+
+PublicIPAddressesClassic component with different props.
+
+#### Example
+
+<Canvas of={PublicIPAddressesClassic.Primary} />
+
+## Usage
+
+```ts
+import { PublicIPAddressesClassic } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <PublicIPAddressesClassic />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Networking](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as EntraManagedIdentities from "./EntraManagedIdentities.stories.tsx";
+
+<Meta of={EntraManagedIdentities} title="Azure/Identity/EntraManagedIdentities" />
+
+# EntraManagedIdentities
+
+EntraManagedIdentities component with different props.
+
+#### Example
+
+<Canvas of={EntraManagedIdentities.Primary} />
+
+## Usage
+
+```ts
+import { EntraManagedIdentities } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <EntraManagedIdentities />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Identity](https://learn.microsoft.com/en-us/azure/architecture/icons/)

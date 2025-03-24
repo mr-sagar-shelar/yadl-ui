@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as EntraIdentityRolesandAdministrators from "./EntraIdentityRolesandAdministrators.stories.tsx";
+
+<Meta of={EntraIdentityRolesandAdministrators} title="Azure/Intune/EntraIdentityRolesandAdministrators" />
+
+# EntraIdentityRolesandAdministrators
+
+EntraIdentityRolesandAdministrators component with different props.
+
+#### Example
+
+<Canvas of={EntraIdentityRolesandAdministrators.Primary} />
+
+## Usage
+
+```ts
+import { EntraIdentityRolesandAdministrators } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <EntraIdentityRolesandAdministrators />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Intune](https://learn.microsoft.com/en-us/azure/architecture/icons/)

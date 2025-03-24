@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as HostPools from "./HostPools.stories.tsx";
+
+<Meta of={HostPools} title="Azure/Compute/HostPools" />
+
+# HostPools
+
+HostPools component with different props.
+
+#### Example
+
+<Canvas of={HostPools.Primary} />
+
+## Usage
+
+```ts
+import { HostPools } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <HostPools />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Compute](https://learn.microsoft.com/en-us/azure/architecture/icons/)

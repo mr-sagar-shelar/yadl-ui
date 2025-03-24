@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureDataboxGateway from "./AzureDataboxGateway.stories.tsx";
+
+<Meta of={AzureDataboxGateway} title="Azure/Migrate/AzureDataboxGateway" />
+
+# AzureDataboxGateway
+
+AzureDataboxGateway component with different props.
+
+#### Example
+
+<Canvas of={AzureDataboxGateway.Primary} />
+
+## Usage
+
+```ts
+import { AzureDataboxGateway } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureDataboxGateway />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Migrate](https://learn.microsoft.com/en-us/azure/architecture/icons/)

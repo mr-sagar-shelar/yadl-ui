@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as EventHubs from "./EventHubs.stories.tsx";
+
+<Meta of={EventHubs} title="Azure/Analytics/EventHubs" />
+
+# EventHubs
+
+EventHubs component with different props.
+
+#### Example
+
+<Canvas of={EventHubs.Primary} />
+
+## Usage
+
+```ts
+import { EventHubs } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <EventHubs />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Analytics](https://learn.microsoft.com/en-us/azure/architecture/icons/)

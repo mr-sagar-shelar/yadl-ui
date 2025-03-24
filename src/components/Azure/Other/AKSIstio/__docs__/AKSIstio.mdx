@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AKSIstio from "./AKSIstio.stories.tsx";
+
+<Meta of={AKSIstio} title="Azure/Other/AKSIstio" />
+
+# AKSIstio
+
+AKSIstio component with different props.
+
+#### Example
+
+<Canvas of={AKSIstio.Primary} />
+
+## Usage
+
+```ts
+import { AKSIstio } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AKSIstio />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureDataExplorerClusters from "./AzureDataExplorerClusters.stories.tsx";
+
+<Meta of={AzureDataExplorerClusters} title="Azure/Analytics/AzureDataExplorerClusters" />
+
+# AzureDataExplorerClusters
+
+AzureDataExplorerClusters component with different props.
+
+#### Example
+
+<Canvas of={AzureDataExplorerClusters.Primary} />
+
+## Usage
+
+```ts
+import { AzureDataExplorerClusters } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureDataExplorerClusters />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Analytics](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SpotVMSS from "./SpotVMSS.stories.tsx";
+
+<Meta of={SpotVMSS} title="Azure/Networking/SpotVMSS" />
+
+# SpotVMSS
+
+SpotVMSS component with different props.
+
+#### Example
+
+<Canvas of={SpotVMSS.Primary} />
+
+## Usage
+
+```ts
+import { SpotVMSS } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SpotVMSS />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Networking](https://learn.microsoft.com/en-us/azure/architecture/icons/)

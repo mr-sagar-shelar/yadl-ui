@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Solutions from "./Solutions.stories.tsx";
+
+<Meta of={Solutions} title="Azure/ManagementGovernance/Solutions" />
+
+# Solutions
+
+Solutions component with different props.
+
+#### Example
+
+<Canvas of={Solutions.Primary} />
+
+## Usage
+
+```ts
+import { Solutions } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Solutions />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/ManagementGovernance](https://learn.microsoft.com/en-us/azure/architecture/icons/)

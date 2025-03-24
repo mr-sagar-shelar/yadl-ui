@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as UserPrivacy from "./UserPrivacy.stories.tsx";
+
+<Meta of={UserPrivacy} title="Azure/ManagementGovernance/UserPrivacy" />
+
+# UserPrivacy
+
+UserPrivacy component with different props.
+
+#### Example
+
+<Canvas of={UserPrivacy.Primary} />
+
+## Usage
+
+```ts
+import { UserPrivacy } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <UserPrivacy />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/ManagementGovernance](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DefenderPLC from "./DefenderPLC.stories.tsx";
+
+<Meta of={DefenderPLC} title="Azure/Other/DefenderPLC" />
+
+# DefenderPLC
+
+DefenderPLC component with different props.
+
+#### Example
+
+<Canvas of={DefenderPLC.Primary} />
+
+## Usage
+
+```ts
+import { DefenderPLC } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DefenderPLC />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

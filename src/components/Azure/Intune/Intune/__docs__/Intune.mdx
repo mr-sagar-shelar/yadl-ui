@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Intune from "./Intune.stories.tsx";
+
+<Meta of={Intune} title="Azure/Intune/Intune" />
+
+# Intune
+
+Intune component with different props.
+
+#### Example
+
+<Canvas of={Intune.Primary} />
+
+## Usage
+
+```ts
+import { Intune } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Intune />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Intune](https://learn.microsoft.com/en-us/azure/architecture/icons/)

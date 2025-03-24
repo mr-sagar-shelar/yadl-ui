@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Workflow from "./Workflow.stories.tsx";
+
+<Meta of={Workflow} title="Azure/General/Workflow" />
+
+# Workflow
+
+Workflow component with different props.
+
+#### Example
+
+<Canvas of={Workflow.Primary} />
+
+## Usage
+
+```ts
+import { Workflow } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Workflow />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

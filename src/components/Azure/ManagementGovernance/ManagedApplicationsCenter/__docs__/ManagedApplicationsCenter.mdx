@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ManagedApplicationsCenter from "./ManagedApplicationsCenter.stories.tsx";
+
+<Meta of={ManagedApplicationsCenter} title="Azure/ManagementGovernance/ManagedApplicationsCenter" />
+
+# ManagedApplicationsCenter
+
+ManagedApplicationsCenter component with different props.
+
+#### Example
+
+<Canvas of={ManagedApplicationsCenter.Primary} />
+
+## Usage
+
+```ts
+import { ManagedApplicationsCenter } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ManagedApplicationsCenter />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/ManagementGovernance](https://learn.microsoft.com/en-us/azure/architecture/icons/)

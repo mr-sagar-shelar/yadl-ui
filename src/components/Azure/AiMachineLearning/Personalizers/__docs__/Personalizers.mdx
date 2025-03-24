@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Personalizers from "./Personalizers.stories.tsx";
+
+<Meta of={Personalizers} title="Azure/AiMachineLearning/Personalizers" />
+
+# Personalizers
+
+Personalizers component with different props.
+
+#### Example
+
+<Canvas of={Personalizers.Primary} />
+
+## Usage
+
+```ts
+import { Personalizers } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Personalizers />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/AiMachineLearning](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as WebApplicationFirewallPoliciesWAF from "./WebApplicationFirewallPoliciesWAF.stories.tsx";
+
+<Meta of={WebApplicationFirewallPoliciesWAF} title="Azure/Networking/WebApplicationFirewallPoliciesWAF" />
+
+# WebApplicationFirewallPoliciesWAF
+
+WebApplicationFirewallPoliciesWAF component with different props.
+
+#### Example
+
+<Canvas of={WebApplicationFirewallPoliciesWAF.Primary} />
+
+## Usage
+
+```ts
+import { WebApplicationFirewallPoliciesWAF } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <WebApplicationFirewallPoliciesWAF />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Networking](https://learn.microsoft.com/en-us/azure/architecture/icons/)

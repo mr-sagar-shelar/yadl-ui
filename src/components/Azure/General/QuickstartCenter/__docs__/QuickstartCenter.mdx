@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as QuickstartCenter from "./QuickstartCenter.stories.tsx";
+
+<Meta of={QuickstartCenter} title="Azure/General/QuickstartCenter" />
+
+# QuickstartCenter
+
+QuickstartCenter component with different props.
+
+#### Example
+
+<Canvas of={QuickstartCenter.Primary} />
+
+## Usage
+
+```ts
+import { QuickstartCenter } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <QuickstartCenter />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

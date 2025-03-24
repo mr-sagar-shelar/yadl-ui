@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MachinesAzureArc from "./MachinesAzureArc.stories.tsx";
+
+<Meta of={MachinesAzureArc} title="Azure/ManagementGovernance/MachinesAzureArc" />
+
+# MachinesAzureArc
+
+MachinesAzureArc component with different props.
+
+#### Example
+
+<Canvas of={MachinesAzureArc.Primary} />
+
+## Usage
+
+```ts
+import { MachinesAzureArc } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MachinesAzureArc />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/ManagementGovernance](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as OnPremisesDataGateways from "./OnPremisesDataGateways.stories.tsx";
+
+<Meta of={OnPremisesDataGateways} title="Azure/Networking/OnPremisesDataGateways" />
+
+# OnPremisesDataGateways
+
+OnPremisesDataGateways component with different props.
+
+#### Example
+
+<Canvas of={OnPremisesDataGateways.Primary} />
+
+## Usage
+
+```ts
+import { OnPremisesDataGateways } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <OnPremisesDataGateways />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Networking](https://learn.microsoft.com/en-us/azure/architecture/icons/)

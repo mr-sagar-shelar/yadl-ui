@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Disks from "./Disks.stories.tsx";
+
+<Meta of={Disks} title="Azure/Compute/Disks" />
+
+# Disks
+
+Disks component with different props.
+
+#### Example
+
+<Canvas of={Disks.Primary} />
+
+## Usage
+
+```ts
+import { Disks } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Disks />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Compute](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ManagedServiceFabric from "./ManagedServiceFabric.stories.tsx";
+
+<Meta of={ManagedServiceFabric} title="Azure/Compute/ManagedServiceFabric" />
+
+# ManagedServiceFabric
+
+ManagedServiceFabric component with different props.
+
+#### Example
+
+<Canvas of={ManagedServiceFabric.Primary} />
+
+## Usage
+
+```ts
+import { ManagedServiceFabric } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ManagedServiceFabric />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Compute](https://learn.microsoft.com/en-us/azure/architecture/icons/)

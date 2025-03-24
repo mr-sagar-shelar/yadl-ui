@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Workbooks from "./Workbooks.stories.tsx";
+
+<Meta of={Workbooks} title="Azure/General/Workbooks" />
+
+# Workbooks
+
+Workbooks component with different props.
+
+#### Example
+
+<Canvas of={Workbooks.Primary} />
+
+## Usage
+
+```ts
+import { Workbooks } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Workbooks />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as VerificationAsAService from "./VerificationAsAService.stories.tsx";
+
+<Meta of={VerificationAsAService} title="Azure/Identity/VerificationAsAService" />
+
+# VerificationAsAService
+
+VerificationAsAService component with different props.
+
+#### Example
+
+<Canvas of={VerificationAsAService.Primary} />
+
+## Usage
+
+```ts
+import { VerificationAsAService } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <VerificationAsAService />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Identity](https://learn.microsoft.com/en-us/azure/architecture/icons/)

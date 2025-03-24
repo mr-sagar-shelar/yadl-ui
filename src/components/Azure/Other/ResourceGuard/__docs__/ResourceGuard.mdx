@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ResourceGuard from "./ResourceGuard.stories.tsx";
+
+<Meta of={ResourceGuard} title="Azure/Other/ResourceGuard" />
+
+# ResourceGuard
+
+ResourceGuard component with different props.
+
+#### Example
+
+<Canvas of={ResourceGuard.Primary} />
+
+## Usage
+
+```ts
+import { ResourceGuard } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ResourceGuard />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

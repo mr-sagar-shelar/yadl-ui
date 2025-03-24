@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as WindowsNotificationServices from "./WindowsNotificationServices.stories.tsx";
+
+<Meta of={WindowsNotificationServices} title="Azure/Other/WindowsNotificationServices" />
+
+# WindowsNotificationServices
+
+WindowsNotificationServices component with different props.
+
+#### Example
+
+<Canvas of={WindowsNotificationServices.Primary} />
+
+## Usage
+
+```ts
+import { WindowsNotificationServices } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <WindowsNotificationServices />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

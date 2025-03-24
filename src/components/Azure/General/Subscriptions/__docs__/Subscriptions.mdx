@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Subscriptions from "./Subscriptions.stories.tsx";
+
+<Meta of={Subscriptions} title="Azure/General/Subscriptions" />
+
+# Subscriptions
+
+Subscriptions component with different props.
+
+#### Example
+
+<Canvas of={Subscriptions.Primary} />
+
+## Usage
+
+```ts
+import { Subscriptions } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Subscriptions />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as APICenter from "./APICenter.stories.tsx";
+
+<Meta of={APICenter} title="Azure/Web/APICenter" />
+
+# APICenter
+
+APICenter component with different props.
+
+#### Example
+
+<Canvas of={APICenter.Primary} />
+
+## Usage
+
+```ts
+import { APICenter } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <APICenter />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Web](https://learn.microsoft.com/en-us/azure/architecture/icons/)

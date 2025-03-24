@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ApplicationGroup from "./ApplicationGroup.stories.tsx";
+
+<Meta of={ApplicationGroup} title="Azure/Compute/ApplicationGroup" />
+
+# ApplicationGroup
+
+ApplicationGroup component with different props.
+
+#### Example
+
+<Canvas of={ApplicationGroup.Primary} />
+
+## Usage
+
+```ts
+import { ApplicationGroup } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ApplicationGroup />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Compute](https://learn.microsoft.com/en-us/azure/architecture/icons/)

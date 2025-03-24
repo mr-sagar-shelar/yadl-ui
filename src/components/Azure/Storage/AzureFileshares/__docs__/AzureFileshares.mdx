@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureFileshares from "./AzureFileshares.stories.tsx";
+
+<Meta of={AzureFileshares} title="Azure/Storage/AzureFileshares" />
+
+# AzureFileshares
+
+AzureFileshares component with different props.
+
+#### Example
+
+<Canvas of={AzureFileshares.Primary} />
+
+## Usage
+
+```ts
+import { AzureFileshares } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureFileshares />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Storage](https://learn.microsoft.com/en-us/azure/architecture/icons/)

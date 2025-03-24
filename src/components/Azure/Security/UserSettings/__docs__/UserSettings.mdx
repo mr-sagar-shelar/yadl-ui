@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as UserSettings from "./UserSettings.stories.tsx";
+
+<Meta of={UserSettings} title="Azure/Security/UserSettings" />
+
+# UserSettings
+
+UserSettings component with different props.
+
+#### Example
+
+<Canvas of={UserSettings.Primary} />
+
+## Usage
+
+```ts
+import { UserSettings } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <UserSettings />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Security](https://learn.microsoft.com/en-us/azure/architecture/icons/)

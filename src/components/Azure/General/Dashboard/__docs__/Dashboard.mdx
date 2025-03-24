@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Dashboard from "./Dashboard.stories.tsx";
+
+<Meta of={Dashboard} title="Azure/General/Dashboard" />
+
+# Dashboard
+
+Dashboard component with different props.
+
+#### Example
+
+<Canvas of={Dashboard.Primary} />
+
+## Usage
+
+```ts
+import { Dashboard } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Dashboard />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

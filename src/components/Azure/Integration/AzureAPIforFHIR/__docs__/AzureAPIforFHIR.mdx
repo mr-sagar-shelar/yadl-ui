@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureAPIforFHIR from "./AzureAPIforFHIR.stories.tsx";
+
+<Meta of={AzureAPIforFHIR} title="Azure/Integration/AzureAPIforFHIR" />
+
+# AzureAPIforFHIR
+
+AzureAPIforFHIR component with different props.
+
+#### Example
+
+<Canvas of={AzureAPIforFHIR.Primary} />
+
+## Usage
+
+```ts
+import { AzureAPIforFHIR } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureAPIforFHIR />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Integration](https://learn.microsoft.com/en-us/azure/architecture/icons/)

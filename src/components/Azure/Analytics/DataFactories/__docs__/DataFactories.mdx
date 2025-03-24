@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DataFactories from "./DataFactories.stories.tsx";
+
+<Meta of={DataFactories} title="Azure/Analytics/DataFactories" />
+
+# DataFactories
+
+DataFactories component with different props.
+
+#### Example
+
+<Canvas of={DataFactories.Primary} />
+
+## Usage
+
+```ts
+import { DataFactories } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DataFactories />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Analytics](https://learn.microsoft.com/en-us/azure/architecture/icons/)

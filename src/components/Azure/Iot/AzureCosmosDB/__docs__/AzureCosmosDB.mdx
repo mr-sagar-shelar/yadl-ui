@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureCosmosDB from "./AzureCosmosDB.stories.tsx";
+
+<Meta of={AzureCosmosDB} title="Azure/Iot/AzureCosmosDB" />
+
+# AzureCosmosDB
+
+AzureCosmosDB component with different props.
+
+#### Example
+
+<Canvas of={AzureCosmosDB.Primary} />
+
+## Usage
+
+```ts
+import { AzureCosmosDB } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureCosmosDB />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Iot](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SQLElasticPools from "./SQLElasticPools.stories.tsx";
+
+<Meta of={SQLElasticPools} title="Azure/Databases/SQLElasticPools" />
+
+# SQLElasticPools
+
+SQLElasticPools component with different props.
+
+#### Example
+
+<Canvas of={SQLElasticPools.Primary} />
+
+## Usage
+
+```ts
+import { SQLElasticPools } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SQLElasticPools />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Databases](https://learn.microsoft.com/en-us/azure/architecture/icons/)

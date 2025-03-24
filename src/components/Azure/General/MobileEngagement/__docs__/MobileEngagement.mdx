@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MobileEngagement from "./MobileEngagement.stories.tsx";
+
+<Meta of={MobileEngagement} title="Azure/General/MobileEngagement" />
+
+# MobileEngagement
+
+MobileEngagement component with different props.
+
+#### Example
+
+<Canvas of={MobileEngagement.Primary} />
+
+## Usage
+
+```ts
+import { MobileEngagement } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MobileEngagement />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureOperatorServiceManager from "./AzureOperatorServiceManager.stories.tsx";
+
+<Meta of={AzureOperatorServiceManager} title="Azure/HybridMulticloud/AzureOperatorServiceManager" />
+
+# AzureOperatorServiceManager
+
+AzureOperatorServiceManager component with different props.
+
+#### Example
+
+<Canvas of={AzureOperatorServiceManager.Primary} />
+
+## Usage
+
+```ts
+import { AzureOperatorServiceManager } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureOperatorServiceManager />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/HybridMulticloud](https://learn.microsoft.com/en-us/azure/architecture/icons/)

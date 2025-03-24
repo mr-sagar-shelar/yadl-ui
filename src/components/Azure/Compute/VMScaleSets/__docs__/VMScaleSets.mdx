@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as VMScaleSets from "./VMScaleSets.stories.tsx";
+
+<Meta of={VMScaleSets} title="Azure/Compute/VMScaleSets" />
+
+# VMScaleSets
+
+VMScaleSets component with different props.
+
+#### Example
+
+<Canvas of={VMScaleSets.Primary} />
+
+## Usage
+
+```ts
+import { VMScaleSets } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <VMScaleSets />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Compute](https://learn.microsoft.com/en-us/azure/architecture/icons/)

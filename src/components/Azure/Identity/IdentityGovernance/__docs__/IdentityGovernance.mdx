@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as IdentityGovernance from "./IdentityGovernance.stories.tsx";
+
+<Meta of={IdentityGovernance} title="Azure/Identity/IdentityGovernance" />
+
+# IdentityGovernance
+
+IdentityGovernance component with different props.
+
+#### Example
+
+<Canvas of={IdentityGovernance.Primary} />
+
+## Usage
+
+```ts
+import { IdentityGovernance } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <IdentityGovernance />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Identity](https://learn.microsoft.com/en-us/azure/architecture/icons/)

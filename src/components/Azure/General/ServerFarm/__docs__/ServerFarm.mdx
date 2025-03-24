@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ServerFarm from "./ServerFarm.stories.tsx";
+
+<Meta of={ServerFarm} title="Azure/General/ServerFarm" />
+
+# ServerFarm
+
+ServerFarm component with different props.
+
+#### Example
+
+<Canvas of={ServerFarm.Primary} />
+
+## Usage
+
+```ts
+import { ServerFarm } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ServerFarm />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

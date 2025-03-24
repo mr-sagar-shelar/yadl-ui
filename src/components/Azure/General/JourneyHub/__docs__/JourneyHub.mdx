@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as JourneyHub from "./JourneyHub.stories.tsx";
+
+<Meta of={JourneyHub} title="Azure/General/JourneyHub" />
+
+# JourneyHub
+
+JourneyHub component with different props.
+
+#### Example
+
+<Canvas of={JourneyHub.Primary} />
+
+## Usage
+
+```ts
+import { JourneyHub } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <JourneyHub />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

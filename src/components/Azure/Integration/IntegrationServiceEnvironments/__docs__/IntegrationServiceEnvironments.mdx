@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as IntegrationServiceEnvironments from "./IntegrationServiceEnvironments.stories.tsx";
+
+<Meta of={IntegrationServiceEnvironments} title="Azure/Integration/IntegrationServiceEnvironments" />
+
+# IntegrationServiceEnvironments
+
+IntegrationServiceEnvironments component with different props.
+
+#### Example
+
+<Canvas of={IntegrationServiceEnvironments.Primary} />
+
+## Usage
+
+```ts
+import { IntegrationServiceEnvironments } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <IntegrationServiceEnvironments />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Integration](https://learn.microsoft.com/en-us/azure/architecture/icons/)

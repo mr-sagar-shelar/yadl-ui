@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as VMImageVersion from "./VMImageVersion.stories.tsx";
+
+<Meta of={VMImageVersion} title="Azure/Other/VMImageVersion" />
+
+# VMImageVersion
+
+VMImageVersion component with different props.
+
+#### Example
+
+<Canvas of={VMImageVersion.Primary} />
+
+## Usage
+
+```ts
+import { VMImageVersion } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <VMImageVersion />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

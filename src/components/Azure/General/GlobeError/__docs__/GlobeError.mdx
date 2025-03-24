@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as GlobeError from "./GlobeError.stories.tsx";
+
+<Meta of={GlobeError} title="Azure/General/GlobeError" />
+
+# GlobeError
+
+GlobeError component with different props.
+
+#### Example
+
+<Canvas of={GlobeError.Primary} />
+
+## Usage
+
+```ts
+import { GlobeError } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <GlobeError />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

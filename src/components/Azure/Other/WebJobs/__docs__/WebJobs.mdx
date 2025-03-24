@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as WebJobs from "./WebJobs.stories.tsx";
+
+<Meta of={WebJobs} title="Azure/Other/WebJobs" />
+
+# WebJobs
+
+WebJobs component with different props.
+
+#### Example
+
+<Canvas of={WebJobs.Primary} />
+
+## Usage
+
+```ts
+import { WebJobs } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <WebJobs />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

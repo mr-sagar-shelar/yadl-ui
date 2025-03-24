@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Mobile from "./Mobile.stories.tsx";
+
+<Meta of={Mobile} title="Azure/General/Mobile" />
+
+# Mobile
+
+Mobile component with different props.
+
+#### Example
+
+<Canvas of={Mobile.Primary} />
+
+## Usage
+
+```ts
+import { Mobile } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Mobile />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

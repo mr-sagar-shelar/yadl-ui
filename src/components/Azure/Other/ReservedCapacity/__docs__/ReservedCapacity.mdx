@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ReservedCapacity from "./ReservedCapacity.stories.tsx";
+
+<Meta of={ReservedCapacity} title="Azure/Other/ReservedCapacity" />
+
+# ReservedCapacity
+
+ReservedCapacity component with different props.
+
+#### Example
+
+<Canvas of={ReservedCapacity.Primary} />
+
+## Usage
+
+```ts
+import { ReservedCapacity } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ReservedCapacity />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

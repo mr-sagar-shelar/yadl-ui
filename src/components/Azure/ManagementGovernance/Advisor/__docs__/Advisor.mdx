@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Advisor from "./Advisor.stories.tsx";
+
+<Meta of={Advisor} title="Azure/ManagementGovernance/Advisor" />
+
+# Advisor
+
+Advisor component with different props.
+
+#### Example
+
+<Canvas of={Advisor.Primary} />
+
+## Usage
+
+```ts
+import { Advisor } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Advisor />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/ManagementGovernance](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ApplicationGateways from "./ApplicationGateways.stories.tsx";
+
+<Meta of={ApplicationGateways} title="Azure/Networking/ApplicationGateways" />
+
+# ApplicationGateways
+
+ApplicationGateways component with different props.
+
+#### Example
+
+<Canvas of={ApplicationGateways.Primary} />
+
+## Usage
+
+```ts
+import { ApplicationGateways } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ApplicationGateways />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Networking](https://learn.microsoft.com/en-us/azure/architecture/icons/)

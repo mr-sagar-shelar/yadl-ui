@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureSQLVM from "./AzureSQLVM.stories.tsx";
+
+<Meta of={AzureSQLVM} title="Azure/Databases/AzureSQLVM" />
+
+# AzureSQLVM
+
+AzureSQLVM component with different props.
+
+#### Example
+
+<Canvas of={AzureSQLVM.Primary} />
+
+## Usage
+
+```ts
+import { AzureSQLVM } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureSQLVM />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Databases](https://learn.microsoft.com/en-us/azure/architecture/icons/)

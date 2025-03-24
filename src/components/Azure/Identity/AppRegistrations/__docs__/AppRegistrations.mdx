@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AppRegistrations from "./AppRegistrations.stories.tsx";
+
+<Meta of={AppRegistrations} title="Azure/Identity/AppRegistrations" />
+
+# AppRegistrations
+
+AppRegistrations component with different props.
+
+#### Example
+
+<Canvas of={AppRegistrations.Primary} />
+
+## Usage
+
+```ts
+import { AppRegistrations } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AppRegistrations />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Identity](https://learn.microsoft.com/en-us/azure/architecture/icons/)

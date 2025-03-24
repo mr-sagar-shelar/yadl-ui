@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Bug from "./Bug.stories.tsx";
+
+<Meta of={Bug} title="Azure/General/Bug" />
+
+# Bug
+
+Bug component with different props.
+
+#### Example
+
+<Canvas of={Bug.Primary} />
+
+## Usage
+
+```ts
+import { Bug } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Bug />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

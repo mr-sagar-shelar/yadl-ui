@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as RouteFilters from "./RouteFilters.stories.tsx";
+
+<Meta of={RouteFilters} title="Azure/Networking/RouteFilters" />
+
+# RouteFilters
+
+RouteFilters component with different props.
+
+#### Example
+
+<Canvas of={RouteFilters.Primary} />
+
+## Usage
+
+```ts
+import { RouteFilters } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <RouteFilters />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Networking](https://learn.microsoft.com/en-us/azure/architecture/icons/)

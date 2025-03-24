@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as VirtualNetworkGateways from "./VirtualNetworkGateways.stories.tsx";
+
+<Meta of={VirtualNetworkGateways} title="Azure/Networking/VirtualNetworkGateways" />
+
+# VirtualNetworkGateways
+
+VirtualNetworkGateways component with different props.
+
+#### Example
+
+<Canvas of={VirtualNetworkGateways.Primary} />
+
+## Usage
+
+```ts
+import { VirtualNetworkGateways } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <VirtualNetworkGateways />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Networking](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as BusinessProcessTracking from "./BusinessProcessTracking.stories.tsx";
+
+<Meta of={BusinessProcessTracking} title="Azure/Integration/BusinessProcessTracking" />
+
+# BusinessProcessTracking
+
+BusinessProcessTracking component with different props.
+
+#### Example
+
+<Canvas of={BusinessProcessTracking.Primary} />
+
+## Usage
+
+```ts
+import { BusinessProcessTracking } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <BusinessProcessTracking />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Integration](https://learn.microsoft.com/en-us/azure/architecture/icons/)

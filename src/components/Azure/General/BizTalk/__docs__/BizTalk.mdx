@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as BizTalk from "./BizTalk.stories.tsx";
+
+<Meta of={BizTalk} title="Azure/General/BizTalk" />
+
+# BizTalk
+
+BizTalk component with different props.
+
+#### Example
+
+<Canvas of={BizTalk.Primary} />
+
+## Usage
+
+```ts
+import { BizTalk } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <BizTalk />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

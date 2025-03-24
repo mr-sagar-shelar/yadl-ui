@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ElasticSAN from "./ElasticSAN.stories.tsx";
+
+<Meta of={ElasticSAN} title="Azure/Other/ElasticSAN" />
+
+# ElasticSAN
+
+ElasticSAN component with different props.
+
+#### Example
+
+<Canvas of={ElasticSAN.Primary} />
+
+## Usage
+
+```ts
+import { ElasticSAN } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ElasticSAN />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as NetworkSecurityPerimeters from "./NetworkSecurityPerimeters.stories.tsx";
+
+<Meta of={NetworkSecurityPerimeters} title="Azure/Other/NetworkSecurityPerimeters" />
+
+# NetworkSecurityPerimeters
+
+NetworkSecurityPerimeters component with different props.
+
+#### Example
+
+<Canvas of={NetworkSecurityPerimeters.Primary} />
+
+## Usage
+
+```ts
+import { NetworkSecurityPerimeters } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <NetworkSecurityPerimeters />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

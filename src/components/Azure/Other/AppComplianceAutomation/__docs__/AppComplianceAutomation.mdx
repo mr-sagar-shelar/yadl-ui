@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AppComplianceAutomation from "./AppComplianceAutomation.stories.tsx";
+
+<Meta of={AppComplianceAutomation} title="Azure/Other/AppComplianceAutomation" />
+
+# AppComplianceAutomation
+
+AppComplianceAutomation component with different props.
+
+#### Example
+
+<Canvas of={AppComplianceAutomation.Primary} />
+
+## Usage
+
+```ts
+import { AppComplianceAutomation } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AppComplianceAutomation />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

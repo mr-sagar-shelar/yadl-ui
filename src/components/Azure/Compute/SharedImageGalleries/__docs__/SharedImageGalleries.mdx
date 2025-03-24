@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SharedImageGalleries from "./SharedImageGalleries.stories.tsx";
+
+<Meta of={SharedImageGalleries} title="Azure/Compute/SharedImageGalleries" />
+
+# SharedImageGalleries
+
+SharedImageGalleries component with different props.
+
+#### Example
+
+<Canvas of={SharedImageGalleries.Primary} />
+
+## Usage
+
+```ts
+import { SharedImageGalleries } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SharedImageGalleries />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Compute](https://learn.microsoft.com/en-us/azure/architecture/icons/)

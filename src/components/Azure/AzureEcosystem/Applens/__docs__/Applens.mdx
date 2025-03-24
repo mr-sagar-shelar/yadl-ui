@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Applens from "./Applens.stories.tsx";
+
+<Meta of={Applens} title="Azure/AzureEcosystem/Applens" />
+
+# Applens
+
+Applens component with different props.
+
+#### Example
+
+<Canvas of={Applens.Primary} />
+
+## Usage
+
+```ts
+import { Applens } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Applens />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/AzureEcosystem](https://learn.microsoft.com/en-us/azure/architecture/icons/)

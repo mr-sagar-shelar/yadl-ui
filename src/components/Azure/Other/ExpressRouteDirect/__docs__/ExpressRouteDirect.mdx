@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ExpressRouteDirect from "./ExpressRouteDirect.stories.tsx";
+
+<Meta of={ExpressRouteDirect} title="Azure/Other/ExpressRouteDirect" />
+
+# ExpressRouteDirect
+
+ExpressRouteDirect component with different props.
+
+#### Example
+
+<Canvas of={ExpressRouteDirect.Primary} />
+
+## Usage
+
+```ts
+import { ExpressRouteDirect } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ExpressRouteDirect />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

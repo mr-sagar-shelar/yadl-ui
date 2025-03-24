@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as StaticApps from "./StaticApps.stories.tsx";
+
+<Meta of={StaticApps} title="Azure/Web/StaticApps" />
+
+# StaticApps
+
+StaticApps component with different props.
+
+#### Example
+
+<Canvas of={StaticApps.Primary} />
+
+## Usage
+
+```ts
+import { StaticApps } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <StaticApps />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Web](https://learn.microsoft.com/en-us/azure/architecture/icons/)

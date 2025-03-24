@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Language from "./Language.stories.tsx";
+
+<Meta of={Language} title="Azure/AiMachineLearning/Language" />
+
+# Language
+
+Language component with different props.
+
+#### Example
+
+<Canvas of={Language.Primary} />
+
+## Usage
+
+```ts
+import { Language } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Language />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/AiMachineLearning](https://learn.microsoft.com/en-us/azure/architecture/icons/)

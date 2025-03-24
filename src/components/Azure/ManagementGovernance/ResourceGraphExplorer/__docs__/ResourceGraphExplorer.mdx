@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ResourceGraphExplorer from "./ResourceGraphExplorer.stories.tsx";
+
+<Meta of={ResourceGraphExplorer} title="Azure/ManagementGovernance/ResourceGraphExplorer" />
+
+# ResourceGraphExplorer
+
+ResourceGraphExplorer component with different props.
+
+#### Example
+
+<Canvas of={ResourceGraphExplorer.Primary} />
+
+## Usage
+
+```ts
+import { ResourceGraphExplorer } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ResourceGraphExplorer />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/ManagementGovernance](https://learn.microsoft.com/en-us/azure/architecture/icons/)

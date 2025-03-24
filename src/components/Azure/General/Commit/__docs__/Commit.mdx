@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Commit from "./Commit.stories.tsx";
+
+<Meta of={Commit} title="Azure/General/Commit" />
+
+# Commit
+
+Commit component with different props.
+
+#### Example
+
+<Canvas of={Commit.Primary} />
+
+## Usage
+
+```ts
+import { Commit } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Commit />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

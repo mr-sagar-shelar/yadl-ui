@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as IceToolchainOrchestrator from "./IceToolchainOrchestrator.stories.tsx";
+
+<Meta of={IceToolchainOrchestrator} title="Azure/NewIcons/IceToolchainOrchestrator" />
+
+# IceToolchainOrchestrator
+
+IceToolchainOrchestrator component with different props.
+
+#### Example
+
+<Canvas of={IceToolchainOrchestrator.Primary} />
+
+## Usage
+
+```ts
+import { IceToolchainOrchestrator } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <IceToolchainOrchestrator />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/NewIcons](https://learn.microsoft.com/en-us/azure/architecture/icons/)

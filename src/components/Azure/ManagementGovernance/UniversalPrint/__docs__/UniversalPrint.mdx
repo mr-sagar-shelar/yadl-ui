@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as UniversalPrint from "./UniversalPrint.stories.tsx";
+
+<Meta of={UniversalPrint} title="Azure/ManagementGovernance/UniversalPrint" />
+
+# UniversalPrint
+
+UniversalPrint component with different props.
+
+#### Example
+
+<Canvas of={UniversalPrint.Primary} />
+
+## Usage
+
+```ts
+import { UniversalPrint } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <UniversalPrint />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/ManagementGovernance](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureHCPCache from "./AzureHCPCache.stories.tsx";
+
+<Meta of={AzureHCPCache} title="Azure/Storage/AzureHCPCache" />
+
+# AzureHCPCache
+
+AzureHCPCache component with different props.
+
+#### Example
+
+<Canvas of={AzureHCPCache.Primary} />
+
+## Usage
+
+```ts
+import { AzureHCPCache } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureHCPCache />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Storage](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AppServiceDomains from "./AppServiceDomains.stories.tsx";
+
+<Meta of={AppServiceDomains} title="Azure/AppServices/AppServiceDomains" />
+
+# AppServiceDomains
+
+AppServiceDomains component with different props.
+
+#### Example
+
+<Canvas of={AppServiceDomains.Primary} />
+
+## Usage
+
+```ts
+import { AppServiceDomains } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AppServiceDomains />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/AppServices](https://learn.microsoft.com/en-us/azure/architecture/icons/)

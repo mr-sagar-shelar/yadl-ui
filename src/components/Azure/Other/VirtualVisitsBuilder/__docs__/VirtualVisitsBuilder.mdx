@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as VirtualVisitsBuilder from "./VirtualVisitsBuilder.stories.tsx";
+
+<Meta of={VirtualVisitsBuilder} title="Azure/Other/VirtualVisitsBuilder" />
+
+# VirtualVisitsBuilder
+
+VirtualVisitsBuilder component with different props.
+
+#### Example
+
+<Canvas of={VirtualVisitsBuilder.Primary} />
+
+## Usage
+
+```ts
+import { VirtualVisitsBuilder } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <VirtualVisitsBuilder />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

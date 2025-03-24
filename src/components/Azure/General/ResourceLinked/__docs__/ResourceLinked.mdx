@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ResourceLinked from "./ResourceLinked.stories.tsx";
+
+<Meta of={ResourceLinked} title="Azure/General/ResourceLinked" />
+
+# ResourceLinked
+
+ResourceLinked component with different props.
+
+#### Example
+
+<Canvas of={ResourceLinked.Primary} />
+
+## Usage
+
+```ts
+import { ResourceLinked } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ResourceLinked />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

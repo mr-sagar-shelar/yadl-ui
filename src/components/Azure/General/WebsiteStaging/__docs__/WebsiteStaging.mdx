@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as WebsiteStaging from "./WebsiteStaging.stories.tsx";
+
+<Meta of={WebsiteStaging} title="Azure/General/WebsiteStaging" />
+
+# WebsiteStaging
+
+WebsiteStaging component with different props.
+
+#### Example
+
+<Canvas of={WebsiteStaging.Primary} />
+
+## Usage
+
+```ts
+import { WebsiteStaging } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <WebsiteStaging />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

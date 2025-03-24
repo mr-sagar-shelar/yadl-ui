@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as StreamAnalyticsJobs from "./StreamAnalyticsJobs.stories.tsx";
+
+<Meta of={StreamAnalyticsJobs} title="Azure/Analytics/StreamAnalyticsJobs" />
+
+# StreamAnalyticsJobs
+
+StreamAnalyticsJobs component with different props.
+
+#### Example
+
+<Canvas of={StreamAnalyticsJobs.Primary} />
+
+## Usage
+
+```ts
+import { StreamAnalyticsJobs } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <StreamAnalyticsJobs />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Analytics](https://learn.microsoft.com/en-us/azure/architecture/icons/)

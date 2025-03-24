@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ServiceFabricClusters from "./ServiceFabricClusters.stories.tsx";
+
+<Meta of={ServiceFabricClusters} title="Azure/Compute/ServiceFabricClusters" />
+
+# ServiceFabricClusters
+
+ServiceFabricClusters component with different props.
+
+#### Example
+
+<Canvas of={ServiceFabricClusters.Primary} />
+
+## Usage
+
+```ts
+import { ServiceFabricClusters } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ServiceFabricClusters />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Compute](https://learn.microsoft.com/en-us/azure/architecture/icons/)

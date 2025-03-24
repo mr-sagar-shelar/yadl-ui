@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SignalR from "./SignalR.stories.tsx";
+
+<Meta of={SignalR} title="Azure/Web/SignalR" />
+
+# SignalR
+
+SignalR component with different props.
+
+#### Example
+
+<Canvas of={SignalR.Primary} />
+
+## Usage
+
+```ts
+import { SignalR } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SignalR />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Web](https://learn.microsoft.com/en-us/azure/architecture/icons/)

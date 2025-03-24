@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as VirtualNetworksClassic from "./VirtualNetworksClassic.stories.tsx";
+
+<Meta of={VirtualNetworksClassic} title="Azure/Networking/VirtualNetworksClassic" />
+
+# VirtualNetworksClassic
+
+VirtualNetworksClassic component with different props.
+
+#### Example
+
+<Canvas of={VirtualNetworksClassic.Primary} />
+
+## Usage
+
+```ts
+import { VirtualNetworksClassic } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <VirtualNetworksClassic />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Networking](https://learn.microsoft.com/en-us/azure/architecture/icons/)

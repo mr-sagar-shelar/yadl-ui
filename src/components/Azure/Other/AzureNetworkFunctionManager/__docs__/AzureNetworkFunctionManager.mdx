@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureNetworkFunctionManager from "./AzureNetworkFunctionManager.stories.tsx";
+
+<Meta of={AzureNetworkFunctionManager} title="Azure/Other/AzureNetworkFunctionManager" />
+
+# AzureNetworkFunctionManager
+
+AzureNetworkFunctionManager component with different props.
+
+#### Example
+
+<Canvas of={AzureNetworkFunctionManager.Primary} />
+
+## Usage
+
+```ts
+import { AzureNetworkFunctionManager } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureNetworkFunctionManager />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

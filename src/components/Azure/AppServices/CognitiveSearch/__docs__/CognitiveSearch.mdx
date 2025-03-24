@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CognitiveSearch from "./CognitiveSearch.stories.tsx";
+
+<Meta of={CognitiveSearch} title="Azure/AppServices/CognitiveSearch" />
+
+# CognitiveSearch
+
+CognitiveSearch component with different props.
+
+#### Example
+
+<Canvas of={CognitiveSearch.Primary} />
+
+## Usage
+
+```ts
+import { CognitiveSearch } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CognitiveSearch />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/AppServices](https://learn.microsoft.com/en-us/azure/architecture/icons/)

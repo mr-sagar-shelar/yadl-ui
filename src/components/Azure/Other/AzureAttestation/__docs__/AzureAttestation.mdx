@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureAttestation from "./AzureAttestation.stories.tsx";
+
+<Meta of={AzureAttestation} title="Azure/Other/AzureAttestation" />
+
+# AzureAttestation
+
+AzureAttestation component with different props.
+
+#### Example
+
+<Canvas of={AzureAttestation.Primary} />
+
+## Usage
+
+```ts
+import { AzureAttestation } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureAttestation />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

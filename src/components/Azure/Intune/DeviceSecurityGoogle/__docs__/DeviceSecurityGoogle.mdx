@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DeviceSecurityGoogle from "./DeviceSecurityGoogle.stories.tsx";
+
+<Meta of={DeviceSecurityGoogle} title="Azure/Intune/DeviceSecurityGoogle" />
+
+# DeviceSecurityGoogle
+
+DeviceSecurityGoogle component with different props.
+
+#### Example
+
+<Canvas of={DeviceSecurityGoogle.Primary} />
+
+## Usage
+
+```ts
+import { DeviceSecurityGoogle } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DeviceSecurityGoogle />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Intune](https://learn.microsoft.com/en-us/azure/architecture/icons/)

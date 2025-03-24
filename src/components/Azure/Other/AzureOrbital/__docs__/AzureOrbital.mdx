@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureOrbital from "./AzureOrbital.stories.tsx";
+
+<Meta of={AzureOrbital} title="Azure/Other/AzureOrbital" />
+
+# AzureOrbital
+
+AzureOrbital component with different props.
+
+#### Example
+
+<Canvas of={AzureOrbital.Primary} />
+
+## Usage
+
+```ts
+import { AzureOrbital } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureOrbital />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

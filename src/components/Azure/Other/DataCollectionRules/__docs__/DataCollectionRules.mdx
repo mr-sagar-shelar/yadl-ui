@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DataCollectionRules from "./DataCollectionRules.stories.tsx";
+
+<Meta of={DataCollectionRules} title="Azure/Other/DataCollectionRules" />
+
+# DataCollectionRules
+
+DataCollectionRules component with different props.
+
+#### Example
+
+<Canvas of={DataCollectionRules.Primary} />
+
+## Usage
+
+```ts
+import { DataCollectionRules } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DataCollectionRules />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SystemTopic from "./SystemTopic.stories.tsx";
+
+<Meta of={SystemTopic} title="Azure/Integration/SystemTopic" />
+
+# SystemTopic
+
+SystemTopic component with different props.
+
+#### Example
+
+<Canvas of={SystemTopic.Primary} />
+
+## Usage
+
+```ts
+import { SystemTopic } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SystemTopic />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Integration](https://learn.microsoft.com/en-us/azure/architecture/icons/)

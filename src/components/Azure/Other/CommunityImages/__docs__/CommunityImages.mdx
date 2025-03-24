@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CommunityImages from "./CommunityImages.stories.tsx";
+
+<Meta of={CommunityImages} title="Azure/Other/CommunityImages" />
+
+# CommunityImages
+
+CommunityImages component with different props.
+
+#### Example
+
+<Canvas of={CommunityImages.Primary} />
+
+## Usage
+
+```ts
+import { CommunityImages } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CommunityImages />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

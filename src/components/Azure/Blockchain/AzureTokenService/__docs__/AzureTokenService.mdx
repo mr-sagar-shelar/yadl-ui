@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureTokenService from "./AzureTokenService.stories.tsx";
+
+<Meta of={AzureTokenService} title="Azure/Blockchain/AzureTokenService" />
+
+# AzureTokenService
+
+AzureTokenService component with different props.
+
+#### Example
+
+<Canvas of={AzureTokenService.Primary} />
+
+## Usage
+
+```ts
+import { AzureTokenService } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureTokenService />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Blockchain](https://learn.microsoft.com/en-us/azure/architecture/icons/)

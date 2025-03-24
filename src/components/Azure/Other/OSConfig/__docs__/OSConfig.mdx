@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as OSConfig from "./OSConfig.stories.tsx";
+
+<Meta of={OSConfig} title="Azure/Other/OSConfig" />
+
+# OSConfig
+
+OSConfig component with different props.
+
+#### Example
+
+<Canvas of={OSConfig.Primary} />
+
+## Usage
+
+```ts
+import { OSConfig } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <OSConfig />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

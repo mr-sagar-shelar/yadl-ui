@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as RTOS from "./RTOS.stories.tsx";
+
+<Meta of={RTOS} title="Azure/Other/RTOS" />
+
+# RTOS
+
+RTOS component with different props.
+
+#### Example
+
+<Canvas of={RTOS.Primary} />
+
+## Usage
+
+```ts
+import { RTOS } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <RTOS />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

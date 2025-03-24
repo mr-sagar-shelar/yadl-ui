@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as NAT from "./NAT.stories.tsx";
+
+<Meta of={NAT} title="Azure/Networking/NAT" />
+
+# NAT
+
+NAT component with different props.
+
+#### Example
+
+<Canvas of={NAT.Primary} />
+
+## Usage
+
+```ts
+import { NAT } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <NAT />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Networking](https://learn.microsoft.com/en-us/azure/architecture/icons/)

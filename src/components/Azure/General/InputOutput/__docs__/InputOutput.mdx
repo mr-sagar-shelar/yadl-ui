@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as InputOutput from "./InputOutput.stories.tsx";
+
+<Meta of={InputOutput} title="Azure/General/InputOutput" />
+
+# InputOutput
+
+InputOutput component with different props.
+
+#### Example
+
+<Canvas of={InputOutput.Primary} />
+
+## Usage
+
+```ts
+import { InputOutput } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <InputOutput />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Location from "./Location.stories.tsx";
+
+<Meta of={Location} title="Azure/General/Location" />
+
+# Location
+
+Location component with different props.
+
+#### Example
+
+<Canvas of={Location.Primary} />
+
+## Usage
+
+```ts
+import { Location } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Location />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

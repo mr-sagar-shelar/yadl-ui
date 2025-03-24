@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SecurityBaselines from "./SecurityBaselines.stories.tsx";
+
+<Meta of={SecurityBaselines} title="Azure/Intune/SecurityBaselines" />
+
+# SecurityBaselines
+
+SecurityBaselines component with different props.
+
+#### Example
+
+<Canvas of={SecurityBaselines.Primary} />
+
+## Usage
+
+```ts
+import { SecurityBaselines } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SecurityBaselines />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Intune](https://learn.microsoft.com/en-us/azure/architecture/icons/)

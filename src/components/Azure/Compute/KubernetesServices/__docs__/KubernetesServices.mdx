@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as KubernetesServices from "./KubernetesServices.stories.tsx";
+
+<Meta of={KubernetesServices} title="Azure/Compute/KubernetesServices" />
+
+# KubernetesServices
+
+KubernetesServices component with different props.
+
+#### Example
+
+<Canvas of={KubernetesServices.Primary} />
+
+## Usage
+
+```ts
+import { KubernetesServices } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <KubernetesServices />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Compute](https://learn.microsoft.com/en-us/azure/architecture/icons/)

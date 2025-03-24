@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Marketplace from "./Marketplace.stories.tsx";
+
+<Meta of={Marketplace} title="Azure/General/Marketplace" />
+
+# Marketplace
+
+Marketplace component with different props.
+
+#### Example
+
+<Canvas of={Marketplace.Primary} />
+
+## Usage
+
+```ts
+import { Marketplace } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Marketplace />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

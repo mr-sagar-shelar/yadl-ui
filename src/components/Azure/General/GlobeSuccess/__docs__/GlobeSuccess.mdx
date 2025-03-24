@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as GlobeSuccess from "./GlobeSuccess.stories.tsx";
+
+<Meta of={GlobeSuccess} title="Azure/General/GlobeSuccess" />
+
+# GlobeSuccess
+
+GlobeSuccess component with different props.
+
+#### Example
+
+<Canvas of={GlobeSuccess.Primary} />
+
+## Usage
+
+```ts
+import { GlobeSuccess } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <GlobeSuccess />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

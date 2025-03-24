@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureMigrate from "./AzureMigrate.stories.tsx";
+
+<Meta of={AzureMigrate} title="Azure/Migrate/AzureMigrate" />
+
+# AzureMigrate
+
+AzureMigrate component with different props.
+
+#### Example
+
+<Canvas of={AzureMigrate.Primary} />
+
+## Usage
+
+```ts
+import { AzureMigrate } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureMigrate />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Migrate](https://learn.microsoft.com/en-us/azure/architecture/icons/)

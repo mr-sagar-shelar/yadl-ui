@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ProcessExplorer from "./ProcessExplorer.stories.tsx";
+
+<Meta of={ProcessExplorer} title="Azure/General/ProcessExplorer" />
+
+# ProcessExplorer
+
+ProcessExplorer component with different props.
+
+#### Example
+
+<Canvas of={ProcessExplorer.Primary} />
+
+## Usage
+
+```ts
+import { ProcessExplorer } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ProcessExplorer />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

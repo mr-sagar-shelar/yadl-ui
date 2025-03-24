@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ManagedDesktop from "./ManagedDesktop.stories.tsx";
+
+<Meta of={ManagedDesktop} title="Azure/ManagementGovernance/ManagedDesktop" />
+
+# ManagedDesktop
+
+ManagedDesktop component with different props.
+
+#### Example
+
+<Canvas of={ManagedDesktop.Primary} />
+
+## Usage
+
+```ts
+import { ManagedDesktop } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ManagedDesktop />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/ManagementGovernance](https://learn.microsoft.com/en-us/azure/architecture/icons/)

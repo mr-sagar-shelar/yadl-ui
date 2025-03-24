@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureRedHatOpenShift from "./AzureRedHatOpenShift.stories.tsx";
+
+<Meta of={AzureRedHatOpenShift} title="Azure/Containers/AzureRedHatOpenShift" />
+
+# AzureRedHatOpenShift
+
+AzureRedHatOpenShift component with different props.
+
+#### Example
+
+<Canvas of={AzureRedHatOpenShift.Primary} />
+
+## Usage
+
+```ts
+import { AzureRedHatOpenShift } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureRedHatOpenShift />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Containers](https://learn.microsoft.com/en-us/azure/architecture/icons/)

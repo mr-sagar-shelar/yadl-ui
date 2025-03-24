@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as LoadBalancerHub from "./LoadBalancerHub.stories.tsx";
+
+<Meta of={LoadBalancerHub} title="Azure/Networking/LoadBalancerHub" />
+
+# LoadBalancerHub
+
+LoadBalancerHub component with different props.
+
+#### Example
+
+<Canvas of={LoadBalancerHub.Primary} />
+
+## Usage
+
+```ts
+import { LoadBalancerHub } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <LoadBalancerHub />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Networking](https://learn.microsoft.com/en-us/azure/architecture/icons/)

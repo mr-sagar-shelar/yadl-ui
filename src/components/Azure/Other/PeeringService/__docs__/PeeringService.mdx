@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as PeeringService from "./PeeringService.stories.tsx";
+
+<Meta of={PeeringService} title="Azure/Other/PeeringService" />
+
+# PeeringService
+
+PeeringService component with different props.
+
+#### Example
+
+<Canvas of={PeeringService.Primary} />
+
+## Usage
+
+```ts
+import { PeeringService } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <PeeringService />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as RemoteRendering from "./RemoteRendering.stories.tsx";
+
+<Meta of={RemoteRendering} title="Azure/MixedReality/RemoteRendering" />
+
+# RemoteRendering
+
+RemoteRendering component with different props.
+
+#### Example
+
+<Canvas of={RemoteRendering.Primary} />
+
+## Usage
+
+```ts
+import { RemoteRendering } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <RemoteRendering />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/MixedReality](https://learn.microsoft.com/en-us/azure/architecture/icons/)

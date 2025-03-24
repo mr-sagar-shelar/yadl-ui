@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureStack from "./AzureStack.stories.tsx";
+
+<Meta of={AzureStack} title="Azure/Iot/AzureStack" />
+
+# AzureStack
+
+AzureStack component with different props.
+
+#### Example
+
+<Canvas of={AzureStack.Primary} />
+
+## Usage
+
+```ts
+import { AzureStack } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureStack />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Iot](https://learn.microsoft.com/en-us/azure/architecture/icons/)

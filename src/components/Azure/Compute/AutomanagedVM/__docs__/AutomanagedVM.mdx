@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AutomanagedVM from "./AutomanagedVM.stories.tsx";
+
+<Meta of={AutomanagedVM} title="Azure/Compute/AutomanagedVM" />
+
+# AutomanagedVM
+
+AutomanagedVM component with different props.
+
+#### Example
+
+<Canvas of={AutomanagedVM.Primary} />
+
+## Usage
+
+```ts
+import { AutomanagedVM } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AutomanagedVM />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Compute](https://learn.microsoft.com/en-us/azure/architecture/icons/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Backlog from "./Backlog.stories.tsx";
+
+<Meta of={Backlog} title="Azure/General/Backlog" />
+
+# Backlog
+
+Backlog component with different props.
+
+#### Example
+
+<Canvas of={Backlog.Primary} />
+
+## Usage
+
+```ts
+import { Backlog } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Backlog />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

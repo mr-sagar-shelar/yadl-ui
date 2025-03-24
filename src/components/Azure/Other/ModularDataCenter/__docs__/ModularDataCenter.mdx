@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ModularDataCenter from "./ModularDataCenter.stories.tsx";
+
+<Meta of={ModularDataCenter} title="Azure/Other/ModularDataCenter" />
+
+# ModularDataCenter
+
+ModularDataCenter component with different props.
+
+#### Example
+
+<Canvas of={ModularDataCenter.Primary} />
+
+## Usage
+
+```ts
+import { ModularDataCenter } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ModularDataCenter />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

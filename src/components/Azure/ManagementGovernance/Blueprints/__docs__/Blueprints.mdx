@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Blueprints from "./Blueprints.stories.tsx";
+
+<Meta of={Blueprints} title="Azure/ManagementGovernance/Blueprints" />
+
+# Blueprints
+
+Blueprints component with different props.
+
+#### Example
+
+<Canvas of={Blueprints.Primary} />
+
+## Usage
+
+```ts
+import { Blueprints } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Blueprints />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/ManagementGovernance](https://learn.microsoft.com/en-us/azure/architecture/icons/)

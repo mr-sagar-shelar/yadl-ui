@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as LogStreaming from "./LogStreaming.stories.tsx";
+
+<Meta of={LogStreaming} title="Azure/General/LogStreaming" />
+
+# LogStreaming
+
+LogStreaming component with different props.
+
+#### Example
+
+<Canvas of={LogStreaming.Primary} />
+
+## Usage
+
+```ts
+import { LogStreaming } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <LogStreaming />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

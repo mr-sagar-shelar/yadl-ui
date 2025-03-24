@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as WACInstaller from "./WACInstaller.stories.tsx";
+
+<Meta of={WACInstaller} title="Azure/Other/WACInstaller" />
+
+# WACInstaller
+
+WACInstaller component with different props.
+
+#### Example
+
+<Canvas of={WACInstaller.Primary} />
+
+## Usage
+
+```ts
+import { WACInstaller } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <WACInstaller />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Other](https://learn.microsoft.com/en-us/azure/architecture/icons/)

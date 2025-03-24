@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as GlobeWarning from "./GlobeWarning.stories.tsx";
+
+<Meta of={GlobeWarning} title="Azure/General/GlobeWarning" />
+
+# GlobeWarning
+
+GlobeWarning component with different props.
+
+#### Example
+
+<Canvas of={GlobeWarning.Primary} />
+
+## Usage
+
+```ts
+import { GlobeWarning } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <GlobeWarning />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

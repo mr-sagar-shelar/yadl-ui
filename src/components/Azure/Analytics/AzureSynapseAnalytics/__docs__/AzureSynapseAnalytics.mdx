@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureSynapseAnalytics from "./AzureSynapseAnalytics.stories.tsx";
+
+<Meta of={AzureSynapseAnalytics} title="Azure/Analytics/AzureSynapseAnalytics" />
+
+# AzureSynapseAnalytics
+
+AzureSynapseAnalytics component with different props.
+
+#### Example
+
+<Canvas of={AzureSynapseAnalytics.Primary} />
+
+## Usage
+
+```ts
+import { AzureSynapseAnalytics } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureSynapseAnalytics />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Analytics](https://learn.microsoft.com/en-us/azure/architecture/icons/)

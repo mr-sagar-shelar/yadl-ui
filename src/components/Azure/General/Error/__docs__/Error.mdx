@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Error from "./Error.stories.tsx";
+
+<Meta of={Error} title="Azure/General/Error" />
+
+# Error
+
+Error component with different props.
+
+#### Example
+
+<Canvas of={Error.Primary} />
+
+## Usage
+
+```ts
+import { Error } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Error />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

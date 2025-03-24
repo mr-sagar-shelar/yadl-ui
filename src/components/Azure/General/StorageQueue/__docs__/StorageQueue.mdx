@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as StorageQueue from "./StorageQueue.stories.tsx";
+
+<Meta of={StorageQueue} title="Azure/General/StorageQueue" />
+
+# StorageQueue
+
+StorageQueue component with different props.
+
+#### Example
+
+<Canvas of={StorageQueue.Primary} />
+
+## Usage
+
+```ts
+import { StorageQueue } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <StorageQueue />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

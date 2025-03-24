@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as BlobPage from "./BlobPage.stories.tsx";
+
+<Meta of={BlobPage} title="Azure/General/BlobPage" />
+
+# BlobPage
+
+BlobPage component with different props.
+
+#### Example
+
+<Canvas of={BlobPage.Primary} />
+
+## Usage
+
+```ts
+import { BlobPage } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <BlobPage />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

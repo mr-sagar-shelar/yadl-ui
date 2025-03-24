@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as BotServices from "./BotServices.stories.tsx";
+
+<Meta of={BotServices} title="Azure/AiMachineLearning/BotServices" />
+
+# BotServices
+
+BotServices component with different props.
+
+#### Example
+
+<Canvas of={BotServices.Primary} />
+
+## Usage
+
+```ts
+import { BotServices } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <BotServices />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/AiMachineLearning](https://learn.microsoft.com/en-us/azure/architecture/icons/)

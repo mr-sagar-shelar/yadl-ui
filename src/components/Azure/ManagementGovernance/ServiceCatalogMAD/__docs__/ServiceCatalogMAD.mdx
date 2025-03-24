@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ServiceCatalogMAD from "./ServiceCatalogMAD.stories.tsx";
+
+<Meta of={ServiceCatalogMAD} title="Azure/ManagementGovernance/ServiceCatalogMAD" />
+
+# ServiceCatalogMAD
+
+ServiceCatalogMAD component with different props.
+
+#### Example
+
+<Canvas of={ServiceCatalogMAD.Primary} />
+
+## Usage
+
+```ts
+import { ServiceCatalogMAD } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ServiceCatalogMAD />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/ManagementGovernance](https://learn.microsoft.com/en-us/azure/architecture/icons/)

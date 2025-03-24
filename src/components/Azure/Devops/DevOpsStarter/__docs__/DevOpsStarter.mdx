@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DevOpsStarter from "./DevOpsStarter.stories.tsx";
+
+<Meta of={DevOpsStarter} title="Azure/Devops/DevOpsStarter" />
+
+# DevOpsStarter
+
+DevOpsStarter component with different props.
+
+#### Example
+
+<Canvas of={DevOpsStarter.Primary} />
+
+## Usage
+
+```ts
+import { DevOpsStarter } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DevOpsStarter />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Devops](https://learn.microsoft.com/en-us/azure/architecture/icons/)

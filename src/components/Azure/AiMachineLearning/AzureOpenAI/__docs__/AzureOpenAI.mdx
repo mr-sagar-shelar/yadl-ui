@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureOpenAI from "./AzureOpenAI.stories.tsx";
+
+<Meta of={AzureOpenAI} title="Azure/AiMachineLearning/AzureOpenAI" />
+
+# AzureOpenAI
+
+AzureOpenAI component with different props.
+
+#### Example
+
+<Canvas of={AzureOpenAI.Primary} />
+
+## Usage
+
+```ts
+import { AzureOpenAI } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureOpenAI />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/AiMachineLearning](https://learn.microsoft.com/en-us/azure/architecture/icons/)

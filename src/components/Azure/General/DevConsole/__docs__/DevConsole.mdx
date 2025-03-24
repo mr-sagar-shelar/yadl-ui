@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DevConsole from "./DevConsole.stories.tsx";
+
+<Meta of={DevConsole} title="Azure/General/DevConsole" />
+
+# DevConsole
+
+DevConsole component with different props.
+
+#### Example
+
+<Canvas of={DevConsole.Primary} />
+
+## Usage
+
+```ts
+import { DevConsole } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DevConsole />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/General](https://learn.microsoft.com/en-us/azure/architecture/icons/)

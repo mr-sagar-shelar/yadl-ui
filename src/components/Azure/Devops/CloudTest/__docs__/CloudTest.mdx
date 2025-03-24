@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CloudTest from "./CloudTest.stories.tsx";
+
+<Meta of={CloudTest} title="Azure/Devops/CloudTest" />
+
+# CloudTest
+
+CloudTest component with different props.
+
+#### Example
+
+<Canvas of={CloudTest.Primary} />
+
+## Usage
+
+```ts
+import { CloudTest } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CloudTest />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Devops](https://learn.microsoft.com/en-us/azure/architecture/icons/)

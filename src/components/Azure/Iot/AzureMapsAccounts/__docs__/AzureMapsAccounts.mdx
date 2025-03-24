@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AzureMapsAccounts from "./AzureMapsAccounts.stories.tsx";
+
+<Meta of={AzureMapsAccounts} title="Azure/Iot/AzureMapsAccounts" />
+
+# AzureMapsAccounts
+
+AzureMapsAccounts component with different props.
+
+#### Example
+
+<Canvas of={AzureMapsAccounts.Primary} />
+
+## Usage
+
+```ts
+import { AzureMapsAccounts } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AzureMapsAccounts />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/Iot](https://learn.microsoft.com/en-us/azure/architecture/icons/)

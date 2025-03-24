@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MultiTenancy from "./MultiTenancy.stories.tsx";
+
+<Meta of={MultiTenancy} title="Azure/AzureStack/MultiTenancy" />
+
+# MultiTenancy
+
+MultiTenancy component with different props.
+
+#### Example
+
+<Canvas of={MultiTenancy.Primary} />
+
+## Usage
+
+```ts
+import { MultiTenancy } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MultiTenancy />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[Azure/AzureStack](https://learn.microsoft.com/en-us/azure/architecture/icons/)
