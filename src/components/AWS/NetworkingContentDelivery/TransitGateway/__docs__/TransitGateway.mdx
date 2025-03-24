@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as TransitGateway from "./TransitGateway.stories.tsx";
+
+<Meta of={TransitGateway} title="AWS/NetworkingContentDelivery/TransitGateway" />
+
+# TransitGateway
+
+TransitGateway component with different props.
+
+#### Example
+
+<Canvas of={TransitGateway.Primary} />
+
+## Usage
+
+```ts
+import { TransitGateway } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <TransitGateway />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/NetworkingContentDelivery](https://aws-icons.com/)

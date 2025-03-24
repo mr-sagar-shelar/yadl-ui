@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CodeBuild from "./CodeBuild.stories.tsx";
+
+<Meta of={CodeBuild} title="AWS/DeveloperTools/CodeBuild" />
+
+# CodeBuild
+
+CodeBuild component with different props.
+
+#### Example
+
+<Canvas of={CodeBuild.Primary} />
+
+## Usage
+
+```ts
+import { CodeBuild } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CodeBuild />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/DeveloperTools](https://aws-icons.com/)

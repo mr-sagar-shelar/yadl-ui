@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ResourceExplorer from "./ResourceExplorer.stories.tsx";
+
+<Meta of={ResourceExplorer} title="AWS/ManagementGovernance/ResourceExplorer" />
+
+# ResourceExplorer
+
+ResourceExplorer component with different props.
+
+#### Example
+
+<Canvas of={ResourceExplorer.Primary} />
+
+## Usage
+
+```ts
+import { ResourceExplorer } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ResourceExplorer />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/ManagementGovernance](https://aws-icons.com/)

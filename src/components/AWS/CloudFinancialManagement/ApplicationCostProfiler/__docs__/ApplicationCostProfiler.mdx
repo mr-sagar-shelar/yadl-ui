@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ApplicationCostProfiler from "./ApplicationCostProfiler.stories.tsx";
+
+<Meta of={ApplicationCostProfiler} title="AWS/CloudFinancialManagement/ApplicationCostProfiler" />
+
+# ApplicationCostProfiler
+
+ApplicationCostProfiler component with different props.
+
+#### Example
+
+<Canvas of={ApplicationCostProfiler.Primary} />
+
+## Usage
+
+```ts
+import { ApplicationCostProfiler } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ApplicationCostProfiler />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/CloudFinancialManagement](https://aws-icons.com/)

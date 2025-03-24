@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Outpostsservers from "./Outpostsservers.stories.tsx";
+
+<Meta of={Outpostsservers} title="AWS/Compute/Outpostsservers" />
+
+# Outpostsservers
+
+Outpostsservers component with different props.
+
+#### Example
+
+<Canvas of={Outpostsservers.Primary} />
+
+## Usage
+
+```ts
+import { Outpostsservers } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Outpostsservers />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Compute](https://aws-icons.com/)

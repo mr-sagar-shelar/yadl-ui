@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Config from "./Config.stories.tsx";
+
+<Meta of={Config} title="AWS/ManagementGovernance/Config" />
+
+# Config
+
+Config component with different props.
+
+#### Example
+
+<Canvas of={Config.Primary} />
+
+## Usage
+
+```ts
+import { Config } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Config />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/ManagementGovernance](https://aws-icons.com/)

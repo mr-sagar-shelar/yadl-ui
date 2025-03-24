@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ReservedInstanceReporting from "./ReservedInstanceReporting.stories.tsx";
+
+<Meta of={ReservedInstanceReporting} title="AWS/CloudFinancialManagement/ReservedInstanceReporting" />
+
+# ReservedInstanceReporting
+
+ReservedInstanceReporting component with different props.
+
+#### Example
+
+<Canvas of={ReservedInstanceReporting.Primary} />
+
+## Usage
+
+```ts
+import { ReservedInstanceReporting } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ReservedInstanceReporting />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/CloudFinancialManagement](https://aws-icons.com/)

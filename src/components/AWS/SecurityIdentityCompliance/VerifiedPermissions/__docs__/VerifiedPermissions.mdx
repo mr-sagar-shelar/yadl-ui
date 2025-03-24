@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as VerifiedPermissions from "./VerifiedPermissions.stories.tsx";
+
+<Meta of={VerifiedPermissions} title="AWS/SecurityIdentityCompliance/VerifiedPermissions" />
+
+# VerifiedPermissions
+
+VerifiedPermissions component with different props.
+
+#### Example
+
+<Canvas of={VerifiedPermissions.Primary} />
+
+## Usage
+
+```ts
+import { VerifiedPermissions } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <VerifiedPermissions />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/SecurityIdentityCompliance](https://aws-icons.com/)

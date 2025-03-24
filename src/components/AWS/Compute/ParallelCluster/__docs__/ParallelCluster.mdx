@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ParallelCluster from "./ParallelCluster.stories.tsx";
+
+<Meta of={ParallelCluster} title="AWS/Compute/ParallelCluster" />
+
+# ParallelCluster
+
+ParallelCluster component with different props.
+
+#### Example
+
+<Canvas of={ParallelCluster.Primary} />
+
+## Usage
+
+```ts
+import { ParallelCluster } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ParallelCluster />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Compute](https://aws-icons.com/)

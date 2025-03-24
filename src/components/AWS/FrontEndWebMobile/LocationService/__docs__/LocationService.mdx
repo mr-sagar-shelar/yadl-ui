@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as LocationService from "./LocationService.stories.tsx";
+
+<Meta of={LocationService} title="AWS/FrontEndWebMobile/LocationService" />
+
+# LocationService
+
+LocationService component with different props.
+
+#### Example
+
+<Canvas of={LocationService.Primary} />
+
+## Usage
+
+```ts
+import { LocationService } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <LocationService />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/FrontEndWebMobile](https://aws-icons.com/)

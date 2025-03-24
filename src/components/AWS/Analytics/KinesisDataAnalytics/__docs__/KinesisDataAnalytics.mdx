@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as KinesisDataAnalytics from "./KinesisDataAnalytics.stories.tsx";
+
+<Meta of={KinesisDataAnalytics} title="AWS/Analytics/KinesisDataAnalytics" />
+
+# KinesisDataAnalytics
+
+KinesisDataAnalytics component with different props.
+
+#### Example
+
+<Canvas of={KinesisDataAnalytics.Primary} />
+
+## Usage
+
+```ts
+import { KinesisDataAnalytics } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <KinesisDataAnalytics />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Analytics](https://aws-icons.com/)

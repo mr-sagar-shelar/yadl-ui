@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Lambda from "./Lambda.stories.tsx";
+
+<Meta of={Lambda} title="AWS/Compute/Lambda" />
+
+# Lambda
+
+Lambda component with different props.
+
+#### Example
+
+<Canvas of={Lambda.Primary} />
+
+## Usage
+
+```ts
+import { Lambda } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Lambda />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Compute](https://aws-icons.com/)

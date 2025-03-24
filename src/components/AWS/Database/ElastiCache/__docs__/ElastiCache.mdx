@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ElastiCache from "./ElastiCache.stories.tsx";
+
+<Meta of={ElastiCache} title="AWS/Database/ElastiCache" />
+
+# ElastiCache
+
+ElastiCache component with different props.
+
+#### Example
+
+<Canvas of={ElastiCache.Primary} />
+
+## Usage
+
+```ts
+import { ElastiCache } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ElastiCache />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Database](https://aws-icons.com/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ApplicationAutoScaling from "./ApplicationAutoScaling.stories.tsx";
+
+<Meta of={ApplicationAutoScaling} title="AWS/Compute/ApplicationAutoScaling" />
+
+# ApplicationAutoScaling
+
+ApplicationAutoScaling component with different props.
+
+#### Example
+
+<Canvas of={ApplicationAutoScaling.Primary} />
+
+## Usage
+
+```ts
+import { ApplicationAutoScaling } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ApplicationAutoScaling />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Compute](https://aws-icons.com/)

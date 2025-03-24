@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Textract from "./Textract.stories.tsx";
+
+<Meta of={Textract} title="AWS/MachineLearning/Textract" />
+
+# Textract
+
+Textract component with different props.
+
+#### Example
+
+<Canvas of={Textract.Primary} />
+
+## Usage
+
+```ts
+import { Textract } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Textract />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/MachineLearning](https://aws-icons.com/)

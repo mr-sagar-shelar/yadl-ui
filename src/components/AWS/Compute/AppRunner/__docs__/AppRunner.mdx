@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AppRunner from "./AppRunner.stories.tsx";
+
+<Meta of={AppRunner} title="AWS/Compute/AppRunner" />
+
+# AppRunner
+
+AppRunner component with different props.
+
+#### Example
+
+<Canvas of={AppRunner.Primary} />
+
+## Usage
+
+```ts
+import { AppRunner } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AppRunner />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Compute](https://aws-icons.com/)

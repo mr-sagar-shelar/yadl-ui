@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ServiceManagementConnector from "./ServiceManagementConnector.stories.tsx";
+
+<Meta of={ServiceManagementConnector} title="AWS/ManagementGovernance/ServiceManagementConnector" />
+
+# ServiceManagementConnector
+
+ServiceManagementConnector component with different props.
+
+#### Example
+
+<Canvas of={ServiceManagementConnector.Primary} />
+
+## Usage
+
+```ts
+import { ServiceManagementConnector } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ServiceManagementConnector />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/ManagementGovernance](https://aws-icons.com/)

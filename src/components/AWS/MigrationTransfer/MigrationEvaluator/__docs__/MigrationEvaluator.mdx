@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MigrationEvaluator from "./MigrationEvaluator.stories.tsx";
+
+<Meta of={MigrationEvaluator} title="AWS/MigrationTransfer/MigrationEvaluator" />
+
+# MigrationEvaluator
+
+MigrationEvaluator component with different props.
+
+#### Example
+
+<Canvas of={MigrationEvaluator.Primary} />
+
+## Usage
+
+```ts
+import { MigrationEvaluator } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MigrationEvaluator />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/MigrationTransfer](https://aws-icons.com/)

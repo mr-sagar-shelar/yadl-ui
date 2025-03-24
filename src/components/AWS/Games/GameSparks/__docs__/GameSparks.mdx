@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as GameSparks from "./GameSparks.stories.tsx";
+
+<Meta of={GameSparks} title="AWS/Games/GameSparks" />
+
+# GameSparks
+
+GameSparks component with different props.
+
+#### Example
+
+<Canvas of={GameSparks.Primary} />
+
+## Usage
+
+```ts
+import { GameSparks } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <GameSparks />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Games](https://aws-icons.com/)

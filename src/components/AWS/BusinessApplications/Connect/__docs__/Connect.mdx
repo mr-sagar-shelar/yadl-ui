@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Connect from "./Connect.stories.tsx";
+
+<Meta of={Connect} title="AWS/BusinessApplications/Connect" />
+
+# Connect
+
+Connect component with different props.
+
+#### Example
+
+<Canvas of={Connect.Primary} />
+
+## Usage
+
+```ts
+import { Connect } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Connect />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/BusinessApplications](https://aws-icons.com/)

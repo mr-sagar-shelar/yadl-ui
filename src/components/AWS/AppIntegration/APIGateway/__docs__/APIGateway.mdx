@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as APIGateway from "./APIGateway.stories.tsx";
+
+<Meta of={APIGateway} title="AWS/AppIntegration/APIGateway" />
+
+# APIGateway
+
+APIGateway component with different props.
+
+#### Example
+
+<Canvas of={APIGateway.Primary} />
+
+## Usage
+
+```ts
+import { APIGateway } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <APIGateway />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/AppIntegration](https://aws-icons.com/)

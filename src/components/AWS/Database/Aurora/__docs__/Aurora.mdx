@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Aurora from "./Aurora.stories.tsx";
+
+<Meta of={Aurora} title="AWS/Database/Aurora" />
+
+# Aurora
+
+Aurora component with different props.
+
+#### Example
+
+<Canvas of={Aurora.Primary} />
+
+## Usage
+
+```ts
+import { Aurora } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Aurora />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Database](https://aws-icons.com/)

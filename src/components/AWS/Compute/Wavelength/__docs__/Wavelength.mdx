@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Wavelength from "./Wavelength.stories.tsx";
+
+<Meta of={Wavelength} title="AWS/Compute/Wavelength" />
+
+# Wavelength
+
+Wavelength component with different props.
+
+#### Example
+
+<Canvas of={Wavelength.Primary} />
+
+## Usage
+
+```ts
+import { Wavelength } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Wavelength />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Compute](https://aws-icons.com/)

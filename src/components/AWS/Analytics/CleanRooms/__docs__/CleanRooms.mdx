@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CleanRooms from "./CleanRooms.stories.tsx";
+
+<Meta of={CleanRooms} title="AWS/Analytics/CleanRooms" />
+
+# CleanRooms
+
+CleanRooms component with different props.
+
+#### Example
+
+<Canvas of={CleanRooms.Primary} />
+
+## Usage
+
+```ts
+import { CleanRooms } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CleanRooms />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Analytics](https://aws-icons.com/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as IoTButton from "./IoTButton.stories.tsx";
+
+<Meta of={IoTButton} title="AWS/InternetofThings/IoTButton" />
+
+# IoTButton
+
+IoTButton component with different props.
+
+#### Example
+
+<Canvas of={IoTButton.Primary} />
+
+## Usage
+
+```ts
+import { IoTButton } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <IoTButton />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/InternetofThings](https://aws-icons.com/)

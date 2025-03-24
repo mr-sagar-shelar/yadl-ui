@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Snowball from "./Snowball.stories.tsx";
+
+<Meta of={Snowball} title="AWS/Storage/Snowball" />
+
+# Snowball
+
+Snowball component with different props.
+
+#### Example
+
+<Canvas of={Snowball.Primary} />
+
+## Usage
+
+```ts
+import { Snowball } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Snowball />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Storage](https://aws-icons.com/)

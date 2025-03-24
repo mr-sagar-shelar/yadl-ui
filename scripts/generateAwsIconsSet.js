@@ -54,18 +54,18 @@ import { transform } from "@svgr/core";
                 // console.log(`${componentCode}`);
                 let folderNameUpdated = currentFolder.replaceAll("-", "");
                 console.log(
-                  `$$$$ ./src/components/AWS/${folderNameUpdated}/${fileName}`,
+                  `./src/components/AWS/${folderNameUpdated}/${fileName}`,
                 );
 
-                // writeComponentSkeleton(
-                //   fileName,
-                //   `./src/components/AWS/${fileName}`,
-                //   componentCode,
-                //   "AWS",
-                //   "https://aws-icons.com/",
-                // );
+                writeComponentSkeleton(
+                  fileName,
+                  `./src/components/AWS/${folderNameUpdated}/${fileName}`,
+                  componentCode,
+                  `AWS/${folderNameUpdated}`,
+                  "https://aws-icons.com/",
+                );
               } catch (error) {
-                // console.log(`Error Transforming ${fileName}`);
+                console.log(`Error Transforming ${fileName}`);
                 console.error(error);
                 fs.appendFile(
                   "./Errors.txt",
@@ -75,7 +75,7 @@ import { transform } from "@svgr/core";
                   },
                 );
               }
-              // indexFileContents = `${indexFileContents}\nexport * from "./${fileName}";`;
+              indexFileContents = `${indexFileContents}\nexport * from "./${fileName}";`;
             },
           );
         });

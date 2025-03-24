@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CodePipeline from "./CodePipeline.stories.tsx";
+
+<Meta of={CodePipeline} title="AWS/DeveloperTools/CodePipeline" />
+
+# CodePipeline
+
+CodePipeline component with different props.
+
+#### Example
+
+<Canvas of={CodePipeline.Primary} />
+
+## Usage
+
+```ts
+import { CodePipeline } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CodePipeline />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/DeveloperTools](https://aws-icons.com/)

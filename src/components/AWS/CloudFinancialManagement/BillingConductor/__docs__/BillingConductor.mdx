@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as BillingConductor from "./BillingConductor.stories.tsx";
+
+<Meta of={BillingConductor} title="AWS/CloudFinancialManagement/BillingConductor" />
+
+# BillingConductor
+
+BillingConductor component with different props.
+
+#### Example
+
+<Canvas of={BillingConductor.Primary} />
+
+## Usage
+
+```ts
+import { BillingConductor } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <BillingConductor />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/CloudFinancialManagement](https://aws-icons.com/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Route53 from "./Route53.stories.tsx";
+
+<Meta of={Route53} title="AWS/NetworkingContentDelivery/Route53" />
+
+# Route53
+
+Route53 component with different props.
+
+#### Example
+
+<Canvas of={Route53.Primary} />
+
+## Usage
+
+```ts
+import { Route53 } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Route53 />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/NetworkingContentDelivery](https://aws-icons.com/)

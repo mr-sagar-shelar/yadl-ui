@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as WorkSpacesFamily from "./WorkSpacesFamily.stories.tsx";
+
+<Meta of={WorkSpacesFamily} title="AWS/EndUserComputing/WorkSpacesFamily" />
+
+# WorkSpacesFamily
+
+WorkSpacesFamily component with different props.
+
+#### Example
+
+<Canvas of={WorkSpacesFamily.Primary} />
+
+## Usage
+
+```ts
+import { WorkSpacesFamily } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <WorkSpacesFamily />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/EndUserComputing](https://aws-icons.com/)

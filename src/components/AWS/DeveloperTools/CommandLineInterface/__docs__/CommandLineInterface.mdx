@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CommandLineInterface from "./CommandLineInterface.stories.tsx";
+
+<Meta of={CommandLineInterface} title="AWS/DeveloperTools/CommandLineInterface" />
+
+# CommandLineInterface
+
+CommandLineInterface component with different props.
+
+#### Example
+
+<Canvas of={CommandLineInterface.Primary} />
+
+## Usage
+
+```ts
+import { CommandLineInterface } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CommandLineInterface />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/DeveloperTools](https://aws-icons.com/)

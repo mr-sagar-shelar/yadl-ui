@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as WAF from "./WAF.stories.tsx";
+
+<Meta of={WAF} title="AWS/SecurityIdentityCompliance/WAF" />
+
+# WAF
+
+WAF component with different props.
+
+#### Example
+
+<Canvas of={WAF.Primary} />
+
+## Usage
+
+```ts
+import { WAF } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <WAF />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/SecurityIdentityCompliance](https://aws-icons.com/)

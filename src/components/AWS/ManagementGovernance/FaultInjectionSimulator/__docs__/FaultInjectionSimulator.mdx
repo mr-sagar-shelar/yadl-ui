@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as FaultInjectionSimulator from "./FaultInjectionSimulator.stories.tsx";
+
+<Meta of={FaultInjectionSimulator} title="AWS/ManagementGovernance/FaultInjectionSimulator" />
+
+# FaultInjectionSimulator
+
+FaultInjectionSimulator component with different props.
+
+#### Example
+
+<Canvas of={FaultInjectionSimulator.Primary} />
+
+## Usage
+
+```ts
+import { FaultInjectionSimulator } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <FaultInjectionSimulator />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/ManagementGovernance](https://aws-icons.com/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ElasticBeanstalk from "./ElasticBeanstalk.stories.tsx";
+
+<Meta of={ElasticBeanstalk} title="AWS/Compute/ElasticBeanstalk" />
+
+# ElasticBeanstalk
+
+ElasticBeanstalk component with different props.
+
+#### Example
+
+<Canvas of={ElasticBeanstalk.Primary} />
+
+## Usage
+
+```ts
+import { ElasticBeanstalk } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ElasticBeanstalk />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Compute](https://aws-icons.com/)

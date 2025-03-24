@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ElasticBlockStore from "./ElasticBlockStore.stories.tsx";
+
+<Meta of={ElasticBlockStore} title="AWS/Storage/ElasticBlockStore" />
+
+# ElasticBlockStore
+
+ElasticBlockStore component with different props.
+
+#### Example
+
+<Canvas of={ElasticBlockStore.Primary} />
+
+## Usage
+
+```ts
+import { ElasticBlockStore } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ElasticBlockStore />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Storage](https://aws-icons.com/)

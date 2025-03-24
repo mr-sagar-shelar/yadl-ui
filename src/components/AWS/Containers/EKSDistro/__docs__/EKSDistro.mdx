@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as EKSDistro from "./EKSDistro.stories.tsx";
+
+<Meta of={EKSDistro} title="AWS/Containers/EKSDistro" />
+
+# EKSDistro
+
+EKSDistro component with different props.
+
+#### Example
+
+<Canvas of={EKSDistro.Primary} />
+
+## Usage
+
+```ts
+import { EKSDistro } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <EKSDistro />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Containers](https://aws-icons.com/)

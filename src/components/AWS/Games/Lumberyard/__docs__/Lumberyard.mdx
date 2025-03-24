@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Lumberyard from "./Lumberyard.stories.tsx";
+
+<Meta of={Lumberyard} title="AWS/Games/Lumberyard" />
+
+# Lumberyard
+
+Lumberyard component with different props.
+
+#### Example
+
+<Canvas of={Lumberyard.Primary} />
+
+## Usage
+
+```ts
+import { Lumberyard } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Lumberyard />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Games](https://aws-icons.com/)

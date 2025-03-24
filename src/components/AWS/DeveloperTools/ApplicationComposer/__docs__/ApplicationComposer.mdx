@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ApplicationComposer from "./ApplicationComposer.stories.tsx";
+
+<Meta of={ApplicationComposer} title="AWS/DeveloperTools/ApplicationComposer" />
+
+# ApplicationComposer
+
+ApplicationComposer component with different props.
+
+#### Example
+
+<Canvas of={ApplicationComposer.Primary} />
+
+## Usage
+
+```ts
+import { ApplicationComposer } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ApplicationComposer />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/DeveloperTools](https://aws-icons.com/)

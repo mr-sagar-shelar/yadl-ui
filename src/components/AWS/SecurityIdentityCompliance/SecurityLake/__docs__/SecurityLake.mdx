@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SecurityLake from "./SecurityLake.stories.tsx";
+
+<Meta of={SecurityLake} title="AWS/SecurityIdentityCompliance/SecurityLake" />
+
+# SecurityLake
+
+SecurityLake component with different props.
+
+#### Example
+
+<Canvas of={SecurityLake.Primary} />
+
+## Usage
+
+```ts
+import { SecurityLake } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SecurityLake />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/SecurityIdentityCompliance](https://aws-icons.com/)

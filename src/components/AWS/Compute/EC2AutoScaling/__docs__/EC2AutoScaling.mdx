@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as EC2AutoScaling from "./EC2AutoScaling.stories.tsx";
+
+<Meta of={EC2AutoScaling} title="AWS/Compute/EC2AutoScaling" />
+
+# EC2AutoScaling
+
+EC2AutoScaling component with different props.
+
+#### Example
+
+<Canvas of={EC2AutoScaling.Primary} />
+
+## Usage
+
+```ts
+import { EC2AutoScaling } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <EC2AutoScaling />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Compute](https://aws-icons.com/)

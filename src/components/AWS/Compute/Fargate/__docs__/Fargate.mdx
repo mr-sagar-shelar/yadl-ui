@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Fargate from "./Fargate.stories.tsx";
+
+<Meta of={Fargate} title="AWS/Compute/Fargate" />
+
+# Fargate
+
+Fargate component with different props.
+
+#### Example
+
+<Canvas of={Fargate.Primary} />
+
+## Usage
+
+```ts
+import { Fargate } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Fargate />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Compute](https://aws-icons.com/)

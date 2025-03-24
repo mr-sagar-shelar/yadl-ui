@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SystemsManager from "./SystemsManager.stories.tsx";
+
+<Meta of={SystemsManager} title="AWS/ManagementGovernance/SystemsManager" />
+
+# SystemsManager
+
+SystemsManager component with different props.
+
+#### Example
+
+<Canvas of={SystemsManager.Primary} />
+
+## Usage
+
+```ts
+import { SystemsManager } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SystemsManager />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/ManagementGovernance](https://aws-icons.com/)

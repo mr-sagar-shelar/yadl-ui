@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ElasticContainerRegistry from "./ElasticContainerRegistry.stories.tsx";
+
+<Meta of={ElasticContainerRegistry} title="AWS/Containers/ElasticContainerRegistry" />
+
+# ElasticContainerRegistry
+
+ElasticContainerRegistry component with different props.
+
+#### Example
+
+<Canvas of={ElasticContainerRegistry.Primary} />
+
+## Usage
+
+```ts
+import { ElasticContainerRegistry } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ElasticContainerRegistry />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Containers](https://aws-icons.com/)

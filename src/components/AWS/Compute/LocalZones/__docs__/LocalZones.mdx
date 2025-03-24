@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as LocalZones from "./LocalZones.stories.tsx";
+
+<Meta of={LocalZones} title="AWS/Compute/LocalZones" />
+
+# LocalZones
+
+LocalZones component with different props.
+
+#### Example
+
+<Canvas of={LocalZones.Primary} />
+
+## Usage
+
+```ts
+import { LocalZones } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <LocalZones />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Compute](https://aws-icons.com/)

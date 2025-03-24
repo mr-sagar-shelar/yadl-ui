@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Redshift from "./Redshift.stories.tsx";
+
+<Meta of={Redshift} title="AWS/Analytics/Redshift" />
+
+# Redshift
+
+Redshift component with different props.
+
+#### Example
+
+<Canvas of={Redshift.Primary} />
+
+## Usage
+
+```ts
+import { Redshift } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Redshift />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Analytics](https://aws-icons.com/)

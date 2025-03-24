@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SimpleNotificationService from "./SimpleNotificationService.stories.tsx";
+
+<Meta of={SimpleNotificationService} title="AWS/AppIntegration/SimpleNotificationService" />
+
+# SimpleNotificationService
+
+SimpleNotificationService component with different props.
+
+#### Example
+
+<Canvas of={SimpleNotificationService.Primary} />
+
+## Usage
+
+```ts
+import { SimpleNotificationService } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SimpleNotificationService />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/AppIntegration](https://aws-icons.com/)

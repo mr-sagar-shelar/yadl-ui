@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as KinesisVideoStreams from "./KinesisVideoStreams.stories.tsx";
+
+<Meta of={KinesisVideoStreams} title="AWS/MediaServices/KinesisVideoStreams" />
+
+# KinesisVideoStreams
+
+KinesisVideoStreams component with different props.
+
+#### Example
+
+<Canvas of={KinesisVideoStreams.Primary} />
+
+## Usage
+
+```ts
+import { KinesisVideoStreams } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <KinesisVideoStreams />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/MediaServices](https://aws-icons.com/)

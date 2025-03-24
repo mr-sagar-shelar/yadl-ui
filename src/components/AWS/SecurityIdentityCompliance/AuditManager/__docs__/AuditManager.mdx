@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as AuditManager from "./AuditManager.stories.tsx";
+
+<Meta of={AuditManager} title="AWS/SecurityIdentityCompliance/AuditManager" />
+
+# AuditManager
+
+AuditManager component with different props.
+
+#### Example
+
+<Canvas of={AuditManager.Primary} />
+
+## Usage
+
+```ts
+import { AuditManager } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <AuditManager />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/SecurityIdentityCompliance](https://aws-icons.com/)

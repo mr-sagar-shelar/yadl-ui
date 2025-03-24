@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CloudMap from "./CloudMap.stories.tsx";
+
+<Meta of={CloudMap} title="AWS/NetworkingContentDelivery/CloudMap" />
+
+# CloudMap
+
+CloudMap component with different props.
+
+#### Example
+
+<Canvas of={CloudMap.Primary} />
+
+## Usage
+
+```ts
+import { CloudMap } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CloudMap />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/NetworkingContentDelivery](https://aws-icons.com/)

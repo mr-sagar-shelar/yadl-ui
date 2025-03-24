@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Chatbot from "./Chatbot.stories.tsx";
+
+<Meta of={Chatbot} title="AWS/ManagementGovernance/Chatbot" />
+
+# Chatbot
+
+Chatbot component with different props.
+
+#### Example
+
+<Canvas of={Chatbot.Primary} />
+
+## Usage
+
+```ts
+import { Chatbot } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Chatbot />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/ManagementGovernance](https://aws-icons.com/)

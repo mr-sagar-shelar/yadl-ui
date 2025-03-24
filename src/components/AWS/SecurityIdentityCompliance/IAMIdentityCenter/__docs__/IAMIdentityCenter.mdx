@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as IAMIdentityCenter from "./IAMIdentityCenter.stories.tsx";
+
+<Meta of={IAMIdentityCenter} title="AWS/SecurityIdentityCompliance/IAMIdentityCenter" />
+
+# IAMIdentityCenter
+
+IAMIdentityCenter component with different props.
+
+#### Example
+
+<Canvas of={IAMIdentityCenter.Primary} />
+
+## Usage
+
+```ts
+import { IAMIdentityCenter } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <IAMIdentityCenter />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/SecurityIdentityCompliance](https://aws-icons.com/)

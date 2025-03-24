@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SimpleEmailService from "./SimpleEmailService.stories.tsx";
+
+<Meta of={SimpleEmailService} title="AWS/BusinessApplications/SimpleEmailService" />
+
+# SimpleEmailService
+
+SimpleEmailService component with different props.
+
+#### Example
+
+<Canvas of={SimpleEmailService.Primary} />
+
+## Usage
+
+```ts
+import { SimpleEmailService } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SimpleEmailService />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/BusinessApplications](https://aws-icons.com/)

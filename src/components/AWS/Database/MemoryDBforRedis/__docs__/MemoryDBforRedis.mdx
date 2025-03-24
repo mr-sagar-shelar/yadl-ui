@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as MemoryDBforRedis from "./MemoryDBforRedis.stories.tsx";
+
+<Meta of={MemoryDBforRedis} title="AWS/Database/MemoryDBforRedis" />
+
+# MemoryDBforRedis
+
+MemoryDBforRedis component with different props.
+
+#### Example
+
+<Canvas of={MemoryDBforRedis.Primary} />
+
+## Usage
+
+```ts
+import { MemoryDBforRedis } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <MemoryDBforRedis />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Database](https://aws-icons.com/)

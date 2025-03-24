@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as StepFunctions from "./StepFunctions.stories.tsx";
+
+<Meta of={StepFunctions} title="AWS/AppIntegration/StepFunctions" />
+
+# StepFunctions
+
+StepFunctions component with different props.
+
+#### Example
+
+<Canvas of={StepFunctions.Primary} />
+
+## Usage
+
+```ts
+import { StepFunctions } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <StepFunctions />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/AppIntegration](https://aws-icons.com/)

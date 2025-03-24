@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as NitroEnclaves from "./NitroEnclaves.stories.tsx";
+
+<Meta of={NitroEnclaves} title="AWS/Compute/NitroEnclaves" />
+
+# NitroEnclaves
+
+NitroEnclaves component with different props.
+
+#### Example
+
+<Canvas of={NitroEnclaves.Primary} />
+
+## Usage
+
+```ts
+import { NitroEnclaves } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <NitroEnclaves />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Compute](https://aws-icons.com/)

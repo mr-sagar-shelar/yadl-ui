@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as InteractiveVideoService from "./InteractiveVideoService.stories.tsx";
+
+<Meta of={InteractiveVideoService} title="AWS/MediaServices/InteractiveVideoService" />
+
+# InteractiveVideoService
+
+InteractiveVideoService component with different props.
+
+#### Example
+
+<Canvas of={InteractiveVideoService.Primary} />
+
+## Usage
+
+```ts
+import { InteractiveVideoService } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <InteractiveVideoService />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/MediaServices](https://aws-icons.com/)

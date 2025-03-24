@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Sail from "./Sail.stories.tsx";
+
+<Meta of={Sail} title="AWS/Compute/Sail" />
+
+# Sail
+
+Sail component with different props.
+
+#### Example
+
+<Canvas of={Sail.Primary} />
+
+## Usage
+
+```ts
+import { Sail } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Sail />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Compute](https://aws-icons.com/)

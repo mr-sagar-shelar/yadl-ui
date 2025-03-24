@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CostExplorer from "./CostExplorer.stories.tsx";
+
+<Meta of={CostExplorer} title="AWS/CloudFinancialManagement/CostExplorer" />
+
+# CostExplorer
+
+CostExplorer component with different props.
+
+#### Example
+
+<Canvas of={CostExplorer.Primary} />
+
+## Usage
+
+```ts
+import { CostExplorer } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CostExplorer />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/CloudFinancialManagement](https://aws-icons.com/)

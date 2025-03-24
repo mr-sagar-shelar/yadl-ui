@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DataZone from "./DataZone.stories.tsx";
+
+<Meta of={DataZone} title="AWS/Analytics/DataZone" />
+
+# DataZone
+
+DataZone component with different props.
+
+#### Example
+
+<Canvas of={DataZone.Primary} />
+
+## Usage
+
+```ts
+import { DataZone } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DataZone />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Analytics](https://aws-icons.com/)

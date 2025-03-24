@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DirectoryService from "./DirectoryService.stories.tsx";
+
+<Meta of={DirectoryService} title="AWS/SecurityIdentityCompliance/DirectoryService" />
+
+# DirectoryService
+
+DirectoryService component with different props.
+
+#### Example
+
+<Canvas of={DirectoryService.Primary} />
+
+## Usage
+
+```ts
+import { DirectoryService } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DirectoryService />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/SecurityIdentityCompliance](https://aws-icons.com/)

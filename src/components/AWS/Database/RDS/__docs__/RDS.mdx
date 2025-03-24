@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as RDS from "./RDS.stories.tsx";
+
+<Meta of={RDS} title="AWS/Database/RDS" />
+
+# RDS
+
+RDS component with different props.
+
+#### Example
+
+<Canvas of={RDS.Primary} />
+
+## Usage
+
+```ts
+import { RDS } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <RDS />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Database](https://aws-icons.com/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as SimpleStorageServiceGlacier from "./SimpleStorageServiceGlacier.stories.tsx";
+
+<Meta of={SimpleStorageServiceGlacier} title="AWS/Storage/SimpleStorageServiceGlacier" />
+
+# SimpleStorageServiceGlacier
+
+SimpleStorageServiceGlacier component with different props.
+
+#### Example
+
+<Canvas of={SimpleStorageServiceGlacier.Primary} />
+
+## Usage
+
+```ts
+import { SimpleStorageServiceGlacier } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <SimpleStorageServiceGlacier />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Storage](https://aws-icons.com/)

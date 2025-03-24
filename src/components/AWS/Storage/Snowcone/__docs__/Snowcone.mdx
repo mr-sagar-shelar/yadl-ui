@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Snowcone from "./Snowcone.stories.tsx";
+
+<Meta of={Snowcone} title="AWS/Storage/Snowcone" />
+
+# Snowcone
+
+Snowcone component with different props.
+
+#### Example
+
+<Canvas of={Snowcone.Primary} />
+
+## Usage
+
+```ts
+import { Snowcone } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Snowcone />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Storage](https://aws-icons.com/)

@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ClientVPN from "./ClientVPN.stories.tsx";
+
+<Meta of={ClientVPN} title="AWS/NetworkingContentDelivery/ClientVPN" />
+
+# ClientVPN
+
+ClientVPN component with different props.
+
+#### Example
+
+<Canvas of={ClientVPN.Primary} />
+
+## Usage
+
+```ts
+import { ClientVPN } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ClientVPN />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/NetworkingContentDelivery](https://aws-icons.com/)

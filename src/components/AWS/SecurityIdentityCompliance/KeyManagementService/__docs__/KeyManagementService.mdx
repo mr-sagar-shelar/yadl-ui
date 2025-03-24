@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as KeyManagementService from "./KeyManagementService.stories.tsx";
+
+<Meta of={KeyManagementService} title="AWS/SecurityIdentityCompliance/KeyManagementService" />
+
+# KeyManagementService
+
+KeyManagementService component with different props.
+
+#### Example
+
+<Canvas of={KeyManagementService.Primary} />
+
+## Usage
+
+```ts
+import { KeyManagementService } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <KeyManagementService />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/SecurityIdentityCompliance](https://aws-icons.com/)

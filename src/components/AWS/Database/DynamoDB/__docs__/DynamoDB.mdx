@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as DynamoDB from "./DynamoDB.stories.tsx";
+
+<Meta of={DynamoDB} title="AWS/Database/DynamoDB" />
+
+# DynamoDB
+
+DynamoDB component with different props.
+
+#### Example
+
+<Canvas of={DynamoDB.Primary} />
+
+## Usage
+
+```ts
+import { DynamoDB } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <DynamoDB />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Database](https://aws-icons.com/)

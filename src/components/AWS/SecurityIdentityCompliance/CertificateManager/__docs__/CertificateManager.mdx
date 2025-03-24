@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as CertificateManager from "./CertificateManager.stories.tsx";
+
+<Meta of={CertificateManager} title="AWS/SecurityIdentityCompliance/CertificateManager" />
+
+# CertificateManager
+
+CertificateManager component with different props.
+
+#### Example
+
+<Canvas of={CertificateManager.Primary} />
+
+## Usage
+
+```ts
+import { CertificateManager } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <CertificateManager />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/SecurityIdentityCompliance](https://aws-icons.com/)

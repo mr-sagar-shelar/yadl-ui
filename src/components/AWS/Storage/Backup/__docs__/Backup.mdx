@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as Backup from "./Backup.stories.tsx";
+
+<Meta of={Backup} title="AWS/Storage/Backup" />
+
+# Backup
+
+Backup component with different props.
+
+#### Example
+
+<Canvas of={Backup.Primary} />
+
+## Usage
+
+```ts
+import { Backup } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <Backup />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/Storage](https://aws-icons.com/)

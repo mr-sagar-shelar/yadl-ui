@@ -1,0 +1,30 @@
+import { Canvas, Meta } from "@storybook/blocks";
+import Example from "./Example.tsx";
+import * as ElasticTranscoder from "./ElasticTranscoder.stories.tsx";
+
+<Meta of={ElasticTranscoder} title="AWS/MediaServices/ElasticTranscoder" />
+
+# ElasticTranscoder
+
+ElasticTranscoder component with different props.
+
+#### Example
+
+<Canvas of={ElasticTranscoder.Primary} />
+
+## Usage
+
+```ts
+import { ElasticTranscoder } from "yadl-ui";
+
+const Example = () => {
+  return (
+      <ElasticTranscoder />
+  );
+};
+
+export default Example;
+```
+
+#### Credits
+[AWS/MediaServices](https://aws-icons.com/)
