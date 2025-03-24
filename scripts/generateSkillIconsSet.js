@@ -10,10 +10,13 @@ import { transform } from "@svgr/core";
 
 (async () => {
   const folderName = "./skill-icons";
+  let indexFileContents = "";
+
   fs.readdir(folderName, (err, files) => {
     files.forEach((file) => {
       let fileName = file;
       fileName = fileName.replaceAll("-", "");
+      fileName = fileName.replaceAll("Light", "");
       fileName = fileName.substring(0, fileName.length - 4);
       if (!fileName.toLowerCase().includes("dark")) {
         // console.log(fileName);

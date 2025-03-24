@@ -75,10 +75,10 @@ import { transform } from "@svgr/core";
         // console.log("Saved!");
       });
     }
-    // indexFileContents = `${indexFileContents}\nexport * from "./${iconName}";`;
+    indexFileContents = `${indexFileContents}\nexport * from "./${iconName}";`;
   }
 
-  // writeIndexFile(indexFileContents, `./src/components/Undraw/index.ts`);
+  writeIndexFile(indexFileContents, `./src/components/Themeisle/index.ts`);
 
   // await page.waitForTimeout(1000);
   // await page.getByText("Next ").click();
