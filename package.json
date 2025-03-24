@@ -31,11 +31,8 @@
   "homepage": "https://github.com/mr-sagar-shelar/yadl-ui#readme",
   "description": "",
   "devDependencies": {
-    "@chromatic-com/storybook": "^3.2.6",
     "@storybook/addon-controls": "^8.6.7",
     "@storybook/addon-essentials": "^8.6.7",
-    "@storybook/addon-interactions": "^8.6.7",
-    "@storybook/addon-onboarding": "^8.6.7",
     "@storybook/addon-themes": "^8.6.7",
     "@storybook/addon-toolbars": "^8.6.7",
     "@storybook/addon-viewport": "^8.6.7",
