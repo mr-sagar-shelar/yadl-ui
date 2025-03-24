@@ -1,5 +1,5 @@
 import { chromium } from "playwright";
-import { writeThemeisleComponentSkeleton, writeIndexFile } from "./utils.js";
+import { writeComponentSkeleton, writeIndexFile } from "./utils.js";
 import fs from "fs";
 import { transform } from "@svgr/core";
 
@@ -61,10 +61,12 @@ import { transform } from "@svgr/core";
 
       // console.log(`${componentCode}`);
 
-      writeThemeisleComponentSkeleton(
+      writeComponentSkeleton(
         iconName,
         `./src/components/Themeisle/${iconName}`,
         componentCode,
+        "Themeisle",
+        "https://themeisle.com/illustrations",
       );
     } catch (error) {
       // console.error(`${iconName}\n`);
