@@ -13,6 +13,122 @@ const Box = ({ animationClass }: AnimateBoxProps) => {
 };
 
 const AnimateCSS = () => {
+  //   let allUlElements = document.getElementsByTagName("ul");
+  //   let allClasses = [];
+  //   for (let i = 0; i < allUlElements.length; i++) {
+  //     console.log("");
+  //     let currentElement = allUlElements[i];
+  //     let children = currentElement.children;
+  //     for (let j = 0; j < children.length; j++) {
+  //       let currentChildren = children[j];
+  //       // let children = currentElement.children;
+  //       let name = currentChildren.getAttribute("data-animation");
+  //       if (name) {
+  //         // console.log(`name: ${name}: animate__${name}`);
+  //         console.log(`${name}`);
+  //         allClasses.push(name);
+  //       }
+  //     }
+  //   }
+  //   const allClasses = [
+  //     "bounce",
+  //     "flash",
+  //     "pulse",
+  //     "rubberBand",
+  //     "shakeX",
+  //     "shakeY",
+  //     "headShake",
+  //     "swing",
+  //     "tada",
+  //     "wobble",
+  //     "jello",
+  //     "heartBeat",
+  //     "backInDown",
+  //     "backInLeft",
+  //     "backInRight",
+  //     "backInUp",
+  //     "backOutDown",
+  //     "backOutLeft",
+  //     "backOutRight",
+  //     "backOutUp",
+  //     "bounceIn",
+  //     "bounceInDown",
+  //     "bounceInLeft",
+  //     "bounceInRight",
+  //     "bounceInUp",
+  //     "bounceOut",
+  //     "bounceOutDown",
+  //     "bounceOutLeft",
+  //     "bounceOutRight",
+  //     "bounceOutUp",
+  //     "fadeIn",
+  //     "fadeInDown",
+  //     "fadeInDownBig",
+  //     "fadeInLeft",
+  //     "fadeInLeftBig",
+  //     "fadeInRight",
+  //     "fadeInRightBig",
+  //     "fadeInUp",
+  //     "fadeInUpBig",
+  //     "fadeInTopLeft",
+  //     "fadeInTopRight",
+  //     "fadeInBottomLeft",
+  //     "fadeInBottomRight",
+  //     "fadeOut",
+  //     "fadeOutDown",
+  //     "fadeOutDownBig",
+  //     "fadeOutLeft",
+  //     "fadeOutLeftBig",
+  //     "fadeOutRight",
+  //     "fadeOutRightBig",
+  //     "fadeOutUp",
+  //     "fadeOutUpBig",
+  //     "fadeOutTopLeft",
+  //     "fadeOutTopRight",
+  //     "fadeOutBottomRight",
+  //     "fadeOutBottomLeft",
+  //     "flip",
+  //     "flipInX",
+  //     "flipInY",
+  //     "flipOutX",
+  //     "flipOutY",
+  //     "lightSpeedInRight",
+  //     "lightSpeedInLeft",
+  //     "lightSpeedOutRight",
+  //     "lightSpeedOutLeft",
+  //     "rotateIn",
+  //     "rotateInDownLeft",
+  //     "rotateInDownRight",
+  //     "rotateInUpLeft",
+  //     "rotateInUpRight",
+  //     "rotateOut",
+  //     "rotateOutDownLeft",
+  //     "rotateOutDownRight",
+  //     "rotateOutUpLeft",
+  //     "rotateOutUpRight",
+  //     "hinge",
+  //     "jackInTheBox",
+  //     "rollIn",
+  //     "rollOut",
+  //     "zoomIn",
+  //     "zoomInDown",
+  //     "zoomInLeft",
+  //     "zoomInRight",
+  //     "zoomInUp",
+  //     "zoomOut",
+  //     "zoomOutDown",
+  //     "zoomOutLeft",
+  //     "zoomOutRight",
+  //     "zoomOutUp",
+  //     "slideInDown",
+  //     "slideInLeft",
+  //     "slideInRight",
+  //     "slideInUp",
+  //     "slideOutDown",
+  //     "slideOutLeft",
+  //     "slideOutRight",
+  //     "slideOutUp"
+  // ];
   return (
     <>
       <div className="px-4 py-20 grid xs:grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
