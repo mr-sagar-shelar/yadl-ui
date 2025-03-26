@@ -1,5 +1,6 @@
 import type { Preview } from "@storybook/react";
 import "./storybook.css";
+import "./animate.min.css";
 import React from "react";
 
 export const withTheme = (Story, context) => {
