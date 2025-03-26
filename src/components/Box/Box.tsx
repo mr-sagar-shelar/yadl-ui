@@ -26,6 +26,14 @@ export type BoxProps = {
 //   text?: string;
 // }
 
+/*  
+Website for examples:
+https://tailscan.com/gradients
+https://gradienty.codes/
+https://www.tailwindgradient.com/
+https://www.creative-tim.com/twcomponents/gradient-generator
+*/
+
 const Box = (props: BoxProps) => {
   const { width = 200, height = 200, classes } = props;
   return (

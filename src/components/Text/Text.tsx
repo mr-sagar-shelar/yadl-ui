@@ -1,16 +1,17 @@
 export type TextProps = {
-  class?: string;
-  variant?: string;
+  classes?: string;
+  text?: string;
 };
 
-const Box = (props: TextProps) => {
+const Text = (props: TextProps) => {
+  const { classes } = props;
   return (
     <>
-      <button type="button" className="btn btn-soft">
-        Default
-      </button>
+      <div className={classes} {...props}>
+        {props.text}
+      </div>
     </>
   );
 };
 
-export default Box;
+export default Text;
