@@ -36,4 +36,4 @@ function searchFile(dir, fileName) {
   console.log(`$$$$$$ ${currentIndexContents}`);
 }
 
-searchFile("./src/components/SkillSet", "Button.tsx");
+searchFile("./src/components/GCP/", "Button.tsx");
