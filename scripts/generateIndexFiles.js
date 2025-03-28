@@ -2,9 +2,12 @@ import fs from "fs";
 import path from "path";
 
 function searchFile(dir, fileName) {
+  if (dir.endsWith("__")) {
+    return;
+  }
   // read the contents of the directory
   const files = fs.readdirSync(dir);
-  let currentIndexContents = [];
+  let currentIndexContents = "";
 
   // search through the files
   for (const file of files) {
@@ -33,7 +36,14 @@ function searchFile(dir, fileName) {
     }
   }
 
-  console.log(`$$$$$$ ${currentIndexContents}`);
+  if (currentIndexContents) {
+    console.log(`${dir}/index.ts --- ${currentIndexContents}`);
+    fs.writeFile(`${dir}/index.ts`, currentIndexContents, (err) => {
+      if (err) {
+        console.error(err);
+      }
+    });
+  }
 }
 
-searchFile("./src/components/GCP/", "Button.tsx");
+searchFile("./src/components/AWS/", "Button.tsx");

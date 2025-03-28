@@ -1,1 +1,1 @@
-export { default as Batch } from "./Batch";
+export { default as GCPBatch } from "./Batch";

@@ -1,1 +1,1 @@
-export { default as CloudShell } from "./CloudShell";
+export { default as GCPCloudShell } from "./CloudShell";
