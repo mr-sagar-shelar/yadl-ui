@@ -1,1 +1,1 @@
-export { default as Genomics } from "./Genomics";
+export { default as GCPGenomics } from "./Genomics";

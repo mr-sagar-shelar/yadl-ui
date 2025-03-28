@@ -1,1 +1,1 @@
-export { default as AzureSQLServerStretchDatabases } from "./AzureSQLServerStretchDatabases";
+export { default as AzureDatabasesAzureSQLServerStretchDatabases } from "./AzureSQLServerStretchDatabases";

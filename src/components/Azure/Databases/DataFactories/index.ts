@@ -1,1 +1,1 @@
-export { default as DataFactories } from "./DataFactories";
+export { default as AzureDatabasesDataFactories } from "./DataFactories";

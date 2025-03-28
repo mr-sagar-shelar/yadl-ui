@@ -1,1 +1,1 @@
-export { default as CognitiveSearch } from "./CognitiveSearch";
+export { default as AzureAppServicesCognitiveSearch } from "./CognitiveSearch";

@@ -1,1 +1,1 @@
-export { default as AppServices } from "./AppServices";
+export { default as AzureWebAppServices } from "./AppServices";

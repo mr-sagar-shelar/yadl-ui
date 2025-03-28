@@ -1,1 +1,1 @@
-export { default as EntraIdentityRolesandAdministrators } from "./EntraIdentityRolesandAdministrators";
+export { default as AzureIdentityEntraIdentityRolesandAdministrators } from "./EntraIdentityRolesandAdministrators";

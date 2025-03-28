@@ -1,1 +1,1 @@
-export { default as Security } from "./Security";
+export { default as GCPSecurity } from "./Security";

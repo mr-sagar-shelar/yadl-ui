@@ -1,1 +1,1 @@
-export { default as BatchAccounts } from "./BatchAccounts";
+export { default as AzureComputeBatchAccounts } from "./BatchAccounts";

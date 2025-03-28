@@ -1,1 +1,1 @@
-export { default as KubernetesServices } from "./KubernetesServices";
+export { default as AzureComputeKubernetesServices } from "./KubernetesServices";
