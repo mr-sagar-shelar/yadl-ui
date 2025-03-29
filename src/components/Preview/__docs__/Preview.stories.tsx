@@ -1,8 +1,8 @@
+import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import Preview from "../Preview";
-import React from "react";
 
-const meta: Meta<typeof Preview> = { title: "Preview", component: Preview };
+const meta: Meta<typeof Preview> = { title: "YadlPreview", component: Preview };
 
 export default meta;
 type Story = StoryObj<typeof Preview>;

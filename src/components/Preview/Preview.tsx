@@ -11,12 +11,12 @@ import {
 } from "@xyflow/react";
 import { YadlNodeTypes } from "./Nodes";
 
-export type PreviewProps = {
+export type YadlPreviewProps = {
   nodes: Node[];
   edges: Edge[];
 };
 
-const Preview = (props: PreviewProps) => {
+const YadlPreview = (props: YadlPreviewProps) => {
   const [nodes, setNodes] = useState(props.nodes);
   const [edges, setEdges] = useState(props.edges);
 
@@ -47,4 +47,4 @@ const Preview = (props: PreviewProps) => {
   );
 };
 
-export default Preview;
+export default YadlPreview;

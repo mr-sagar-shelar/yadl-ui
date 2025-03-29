@@ -1,7 +1,7 @@
 import type { Preview } from "@storybook/react";
-import "./storybook.css";
 import "./animate.min.css";
 import "@xyflow/react/dist/style.css";
+import "./storybook.css";
 
 import React from "react";
 

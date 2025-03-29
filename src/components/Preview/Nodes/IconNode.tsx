@@ -24,7 +24,6 @@ function IconNode(props: IconNodeProps) {
   return (
     <div>
       {iconNamePresent && <Icon width={width} height={height} />}
-      <h5>{icon}</h5>
       <Handle
         type="target"
         position={Position.Top}
