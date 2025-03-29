@@ -28,7 +28,9 @@ export const Interactivity: Story = {
           y: 110,
         },
         data: {
-          icon: "angular-dark",
+          icon: "athena",
+          width: 50,
+          height: 50,
         },
         type: "icon",
       },

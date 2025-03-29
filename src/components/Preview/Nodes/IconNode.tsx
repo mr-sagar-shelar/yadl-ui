@@ -1,7 +1,7 @@
 import { memo } from "react";
 import { Handle, Position } from "@xyflow/react";
-// import * as ICONS from "../svgIcons/index";
-// import { IconNames } from "utils/IconNames";
+import * as ICONS from "../../index";
+import { IconNames } from "./IconNames";
 
 interface IconNodeProps {
   data: {
@@ -11,13 +11,20 @@ interface IconNodeProps {
   };
 }
 function IconNode(props: IconNodeProps) {
-  const { data } = props;
-  // const iconNamePresent = IconNames[data.icon] != undefined;
-  // const Icon =  iconNamePresent ? ICONS[IconNames[data.icon]] : null;
+  const {
+    data: { icon, width = 100, height = 100 },
+  } = props;
+
+  let Icon = null;
+  const iconNamePresent: boolean = IconNames[icon] != undefined;
+  if (iconNamePresent) {
+    Icon = ICONS[IconNames[icon]] ?? null;
+  }
+
   return (
     <div>
-      {/* {iconNamePresent && <Icon width={data.width || 100} height={data.height || 100} />} */}
-      <h5>{data.icon}</h5>
+      {iconNamePresent && <Icon width={width} height={height} />}
+      <h5>{icon}</h5>
       <Handle
         type="target"
         position={Position.Top}
@@ -32,4 +39,6 @@ function IconNode(props: IconNodeProps) {
   );
 }
 
-export default memo(IconNode);
+const Memo = memo(IconNode);
+
+export default Memo;
