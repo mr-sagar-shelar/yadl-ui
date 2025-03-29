@@ -2,13 +2,3 @@
 @plugin "daisyui" {
   themes: all;
 }
-
-.react-flow__background {
-  background: var(--color-base-100);
-  color: var(--color-base-content);
-}
-
-.react-flow__node {
-  background: var(--color-base-200);
-  color: var(--color-base-content);
-}
