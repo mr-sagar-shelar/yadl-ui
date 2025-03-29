@@ -22,19 +22,26 @@ function IconNode(props: IconNodeProps) {
   }
 
   return (
-    <div>
-      {iconNamePresent && <Icon width={width} height={height} />}
-      <Handle
-        type="target"
-        position={Position.Top}
-        className="w-16 !bg-teal-500"
-      />
-      <Handle
-        type="source"
-        position={Position.Bottom}
-        className="w-16 !bg-teal-500"
-      />
-    </div>
+    <label htmlFor="properties-drawer">
+      <div
+        onClick={() => {
+          console.log("Clicked");
+        }}
+        // className="drawer-toggle"
+      >
+        {iconNamePresent && <Icon width={width} height={height} />}
+        <Handle
+          type="target"
+          position={Position.Top}
+          className="w-16 !bg-teal-500"
+        />
+        <Handle
+          type="source"
+          position={Position.Bottom}
+          className="w-16 !bg-teal-500"
+        />
+      </div>
+    </label>
   );
 }
 
