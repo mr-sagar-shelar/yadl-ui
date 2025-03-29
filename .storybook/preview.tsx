@@ -1,6 +1,8 @@
 import type { Preview } from "@storybook/react";
 import "./storybook.css";
 import "./animate.min.css";
+import "@xyflow/react/dist/style.css";
+
 import React from "react";
 
 export const withTheme = (Story, context) => {
