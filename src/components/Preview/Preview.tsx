@@ -21,7 +21,7 @@ import {
 } from "@xyflow/react";
 import { YadlNodeTypes } from "./Nodes";
 import Sidebar from "./Sidebar";
-import { DnDProvider, useDnD } from "./DnDContext";
+import { DnDProvider, useDnD, DragDropProps } from "./DnDContext";
 import "./xy-themes.css";
 
 export type YadlPreviewProps = {
@@ -72,7 +72,7 @@ const YadlPreview = (props: YadlPreviewProps) => {
   }, []);
 
   const onDrop = useCallback(
-    (event) => {
+    (event: any) => {
       event.preventDefault();
 
       if (!type) {
@@ -83,11 +83,14 @@ const YadlPreview = (props: YadlPreviewProps) => {
         x: event.clientX,
         y: event.clientY,
       });
+      const dataType = (type as unknown as DragDropProps).type;
+      const data = (type as unknown as DragDropProps).data;
+
       const newNode = {
         id: getId(),
-        type,
+        type: dataType,
         position,
-        data: { label: `${type} node` },
+        data: { label: `${dataType}`, ...data },
       };
 
       setNodes((nds) => nds.concat(newNode));
