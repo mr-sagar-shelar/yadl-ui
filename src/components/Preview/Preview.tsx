@@ -5,58 +5,46 @@ import {
   Background,
   applyNodeChanges,
   applyEdgeChanges,
+  Node,
+  Edge,
+  BackgroundVariant,
 } from "@xyflow/react";
+import { YadlNodeTypes } from "./Nodes";
 
-export type BoxProps = {
-  nodes?: string;
-  edges?: string;
+export type PreviewProps = {
+  nodes: Node[];
+  edges: Edge[];
 };
 
-const initialNodes = [
-  {
-    id: "1",
-    data: { label: "Hello" },
-    position: { x: 0, y: 0 },
-    type: "input",
-  },
-  {
-    id: "2",
-    data: { label: "World" },
-    position: { x: 100, y: 100 },
-  },
-];
-
-const initialEdges = [
-  { id: "1-2", source: "1", target: "2", label: "to the", type: "step" },
-];
-
-const Box = (props: BoxProps) => {
-  const [nodes, setNodes] = useState(initialNodes);
-  const [edges, setEdges] = useState(initialEdges);
+const Preview = (props: PreviewProps) => {
+  const [nodes, setNodes] = useState(props.nodes);
+  const [edges, setEdges] = useState(props.edges);
 
   const onNodesChange = useCallback(
-    (changes) => setNodes((nds) => applyNodeChanges(changes, nds)),
+    (changes: any) => setNodes((nds) => applyNodeChanges(changes, nds)),
     [],
   );
   const onEdgesChange = useCallback(
-    (changes) => setEdges((eds) => applyEdgeChanges(changes, eds)),
+    (changes: any) => setEdges((eds) => applyEdgeChanges(changes, eds)),
     [],
   );
-  console.log(nodes, edges);
   return (
     <div style={{ height: "100%", width: "100%" }}>
       <ReactFlow
         nodes={nodes}
-        onNodesChange={onNodesChange}
         edges={edges}
+        onNodesChange={onNodesChange}
         onEdgesChange={onEdgesChange}
         fitView
+        proOptions={{ hideAttribution: true }}
+        defaultEdgeOptions={{ animated: true }}
+        nodeTypes={YadlNodeTypes}
       >
-        <Background />
+        <Background variant={BackgroundVariant.Dots} gap={12} size={1} />
         <Controls />
       </ReactFlow>
     </div>
   );
 };
 
-export default Box;
+export default Preview;

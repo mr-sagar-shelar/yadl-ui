@@ -1,4 +1,5 @@
 export * from "./Button";
+export * from "./Preview";
 export * from "./Undraw/Undraw";
 export * from "./Undraw";
 export * from "./Animation";
