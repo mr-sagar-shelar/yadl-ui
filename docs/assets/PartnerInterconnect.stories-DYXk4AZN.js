@@ -1,6 +1,0 @@
-import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{a as t}from"./index-C4mD4Gko.js";const a=r=>e.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 24 24",...r,children:[e.jsx("defs",{children:e.jsx("style",{children:".prefix__cls-1{fill:#4285f4}.prefix__cls-2{fill:#669df6}"})}),e.jsxs("g",{"data-name":"Product Icons",children:[e.jsx("path",{d:"M11.19 6.86h1.62v10.27h-1.62z",className:"prefix__cls-1"}),e.jsx("path",{d:"M2 11.19h2.7v1.62H2z",className:"prefix__cls-2"}),e.jsx("rect",{width:4.86,height:6.49,x:4.43,y:8.76,className:"prefix__cls-1",rx:.24}),e.jsx("path",{d:"M11.19 6.86h1.62v10.27h-1.62zM19.3 11.19H22v1.62h-2.7zM6.59 17.14v1.33a.29.29 0 0 0 .29.29h10.24a.29.29 0 0 0 .29-.29v-1.33ZM17.12 5.24H6.88a.29.29 0 0 0-.29.29v1.33h10.82V5.53a.29.29 0 0 0-.29-.29",className:"prefix__cls-2"}),e.jsx("rect",{width:4.86,height:6.49,x:14.7,y:8.76,className:"prefix__cls-1",rx:.24})]})]}),c=t.memo(a),x={title:"GCP/PartnerInterconnect",component:c},s={args:{width:"500px",height:"500px"}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
-  args: {
-    width: "500px",
-    height: "500px"
-  }
-}`,...s.parameters?.docs?.source}}};const n=["Primary"];export{s as Primary,n as __namedExportsOrder,x as default};

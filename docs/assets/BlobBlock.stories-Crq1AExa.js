@@ -1,6 +1,0 @@
-import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{a as s}from"./index-C4mD4Gko.js";const o=r=>e.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 18 18",...r,children:[e.jsx("defs",{children:e.jsxs("linearGradient",{id:"prefix__a",x1:9,x2:9,y1:15.834,y2:5.788,gradientUnits:"userSpaceOnUse",children:[e.jsx("stop",{offset:0,stopColor:"#32bedd"}),e.jsx("stop",{offset:.775,stopColor:"#32d4f5"})]})}),e.jsx("path",{fill:"url(#prefix__a)",d:"M.5 5.788h17v9.478a.57.57 0 0 1-.568.568H1.068a.57.57 0 0 1-.568-.568z"}),e.jsx("path",{fill:"#0078d4",d:"M1.071 2.166h15.858a.57.57 0 0 1 .568.568v3.054H.5V2.734a.57.57 0 0 1 .571-.568"}),e.jsx("rect",{width:6.281,height:3.408,x:2.328,y:7.049,fill:"#0078d4",rx:.283}),e.jsx("rect",{width:6.281,height:3.408,x:9.336,y:7.049,fill:"#fff",rx:.283}),e.jsx("rect",{width:6.281,height:3.408,x:2.296,y:11.128,fill:"#0078d4",rx:.283}),e.jsx("rect",{width:6.281,height:3.408,x:9.304,y:11.128,fill:"#0078d4",rx:.283})]}),i=s.memo(o),d={title:"Azure/General/BlobBlock",component:i},t={args:{width:"500px",height:"500px"}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
-  args: {
-    width: "500px",
-    height: "500px"
-  }
-}`,...t.parameters?.docs?.source}}};const h=["Primary"];export{t as Primary,h as __namedExportsOrder,d as default};

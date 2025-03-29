@@ -1,6 +1,0 @@
-import{j as s}from"./jsx-runtime-D_zvdyIk.js";import{a as t}from"./index-C4mD4Gko.js";const r=o=>s.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 18 18",...o,children:[s.jsx("defs",{children:s.jsxs("linearGradient",{id:"prefix__a",x1:9,x2:9,y1:17.5,y2:.5,gradientUnits:"userSpaceOnUse",children:[s.jsx("stop",{offset:0,stopColor:"#005ba1"}),s.jsx("stop",{offset:.168,stopColor:"#0063ae"}),s.jsx("stop",{offset:.577,stopColor:"#0072ca"}),s.jsx("stop",{offset:.815,stopColor:"#0078d4"})]})}),s.jsx("circle",{cx:9,cy:9,r:8.5,fill:"url(#prefix__a)"}),s.jsx("path",{fill:"#32bedd",d:"M13.046 6.635v4.709l-4.062 2.363V8.992Z"}),s.jsx("path",{fill:"#9cebff",d:"M13.046 6.635 8.99 9 4.928 6.635 8.99 4.272Z"}),s.jsx("path",{fill:"#50e6ff",d:"M8.984 9v4.709l-4.056-2.365V6.635Z"}),s.jsx("path",{fill:"#9cebff",d:"m4.928 11.344 4.056-2.352v4.715Z"}),s.jsx("path",{fill:"#50e6ff",d:"M13.046 11.344 8.984 8.992v4.715Z"})]}),a=t.memo(r),l={title:"Azure/Compute/HostPools",component:a},e={args:{width:"500px",height:"500px"}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
-  args: {
-    width: "500px",
-    height: "500px"
-  }
-}`,...e.parameters?.docs?.source}}};const x=["Primary"];export{e as Primary,x as __namedExportsOrder,l as default};

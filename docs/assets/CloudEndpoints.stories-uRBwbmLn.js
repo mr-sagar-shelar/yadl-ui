@@ -1,6 +1,0 @@
-import{j as s}from"./jsx-runtime-D_zvdyIk.js";import{a as r}from"./index-C4mD4Gko.js";const t=a=>s.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 24 24",...a,children:[s.jsx("defs",{children:s.jsx("style",{children:".prefix__cls-1{fill:#4285f4}.prefix__cls-2{fill:#aecbfa}"})}),s.jsxs("g",{"data-name":"Product Icons",children:[s.jsxs("g",{"data-name":"colored-32/endpoints",children:[s.jsx("path",{d:"M15 10H9l-1 2 1 2h6l1-2z",className:"prefix__cls-1"}),s.jsx("path",{id:"prefix__Shape-2",d:"m16 12-1-2H9l-1 2z",className:"prefix__cls-2","data-name":"Shape"})]}),s.jsx("path",{d:"M18 6h-3l3.97 6 1.5-2.25z",className:"prefix__cls-1"}),s.jsx("path",{d:"m21.95 12-1.48-2.25-1.5 2.25L15 18h3z",className:"prefix__cls-2"}),s.jsx("path",{d:"M5.95 18h3l-3.97-6-1.5 2.25z",className:"prefix__cls-1"}),s.jsx("path",{d:"m2 12 1.48 2.25L4.98 12l3.97-6h-3z",className:"prefix__cls-2"})]})]}),l=r.memo(t),i={title:"GCP/CloudEndpoints",component:l},e={args:{width:"500px",height:"500px"}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
-  args: {
-    width: "500px",
-    height: "500px"
-  }
-}`,...e.parameters?.docs?.source}}};const o=["Primary"];export{e as Primary,o as __namedExportsOrder,i as default};

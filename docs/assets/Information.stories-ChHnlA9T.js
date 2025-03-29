@@ -1,6 +1,0 @@
-import{j as s}from"./jsx-runtime-D_zvdyIk.js";import{a as t}from"./index-C4mD4Gko.js";const r=e=>s.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 18 18",...e,children:[s.jsx("defs",{children:s.jsxs("linearGradient",{id:"prefix__a",x1:8.56,x2:8.56,y1:17.59,y2:.59,gradientUnits:"userSpaceOnUse",children:[s.jsx("stop",{offset:0,stopColor:"#1988d9"}),s.jsx("stop",{offset:.22,stopColor:"#218ddc"}),s.jsx("stop",{offset:.56,stopColor:"#379ce5"}),s.jsx("stop",{offset:.9,stopColor:"#54aef0"})]})}),s.jsx("path",{fill:"url(#prefix__a)",d:"M13.77 15.81A8.5 8.5 0 0 1 3.35 2.37l.09-.06a8.5 8.5 0 0 1 10.33 13.5"}),s.jsx("path",{fill:"#fff",d:"M8.56 6.17a1.24 1.24 0 0 1-.89-.33 1 1 0 0 1-.34-.79 1 1 0 0 1 .34-.79A1.3 1.3 0 0 1 8.56 4a1.28 1.28 0 0 1 .89.3 1 1 0 0 1 .35.79 1 1 0 0 1-.35.8 1.24 1.24 0 0 1-.89.28m.64 8.05H7.89a.42.42 0 0 1-.42-.42V7.69a.42.42 0 0 1 .42-.42H9.2a.42.42 0 0 1 .42.42v6.11a.42.42 0 0 1-.42.42"})]}),a=t.memo(r),p={title:"Azure/General/Information",component:a},o={args:{width:"500px",height:"500px"}};o.parameters={...o.parameters,docs:{...o.parameters?.docs,source:{originalSource:`{
-  args: {
-    width: "500px",
-    height: "500px"
-  }
-}`,...o.parameters?.docs?.source}}};const x=["Primary"];export{o as Primary,x as __namedExportsOrder,p as default};

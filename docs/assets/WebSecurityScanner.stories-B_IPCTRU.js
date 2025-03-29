@@ -1,6 +1,0 @@
-import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{a as c}from"./index-C4mD4Gko.js";const a=r=>e.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 24 24",...r,children:[e.jsx("defs",{children:e.jsx("style",{children:".prefix__cls-2{fill:#669df6}"})}),e.jsxs("g",{"data-name":"Product Icons",children:[e.jsx("circle",{cx:11.44,cy:11.5,r:2.97,style:{fill:"#4285f4"}}),e.jsx("circle",{cx:4.02,cy:10.79,r:2.02,className:"prefix__cls-2"}),e.jsx("circle",{cx:14.52,cy:18.62,r:2.02,className:"prefix__cls-2"}),e.jsx("path",{d:"M19.57 4.2A2.43 2.43 0 1 0 22 6.63a2.43 2.43 0 0 0-2.43-2.43m0 3.8a1.37 1.37 0 1 1 1.36-1.37A1.37 1.37 0 0 1 19.57 8",className:"prefix__cls-2"}),e.jsx("path",{d:"M18.2 6.68a8.3 8.3 0 0 0-5.06-3.32l-.28 1.34a6.95 6.95 0 1 1-8.22 5.38 6.9 6.9 0 0 1 1.87-3.47l-1-1a8.31 8.31 0 1 0 13.38 2.2 1.36 1.36 0 0 1-.69-1.13",className:"prefix__cls-2"})]})]}),t=c.memo(a),o={title:"GCP/WebSecurityScanner",component:t},s={args:{width:"500px",height:"500px"}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
-  args: {
-    width: "500px",
-    height: "500px"
-  }
-}`,...s.parameters?.docs?.source}}};const x=["Primary"];export{s as Primary,x as __namedExportsOrder,o as default};

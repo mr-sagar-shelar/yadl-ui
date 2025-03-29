@@ -1,6 +1,0 @@
-import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{a as s}from"./index-C4mD4Gko.js";const a=r=>e.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 18 18",...r,children:[e.jsx("defs",{children:e.jsxs("linearGradient",{id:"prefix__a",x1:9,x2:9,y1:15.799,y2:5.316,gradientUnits:"userSpaceOnUse",children:[e.jsx("stop",{offset:0,stopColor:"#a67af4"}),e.jsx("stop",{offset:.775,stopColor:"#b796f9"})]})}),e.jsx("path",{fill:"url(#prefix__a)",d:"M.544 5.316h16.912v9.918a.565.565 0 0 1-.565.565H1.109a.565.565 0 0 1-.565-.565z"}),e.jsx("path",{fill:"#773adc",d:"M1.112 2.2h15.776a.565.565 0 0 1 .565.565v2.55H.547V2.766a.565.565 0 0 1 .565-.566"}),e.jsxs("g",{fill:"#fff",children:[e.jsx("rect",{width:3.683,height:7.933,x:2.625,y:6.435,rx:.274}),e.jsx("rect",{width:3.683,height:7.933,x:7.158,y:6.435,opacity:.75,rx:.274}),e.jsx("rect",{width:3.683,height:7.933,x:11.692,y:6.435,opacity:.5,rx:.274})]})]}),o=s.memo(a),h={title:"Azure/General/StorageQueue",component:o},t={args:{width:"500px",height:"500px"}};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
-  args: {
-    width: "500px",
-    height: "500px"
-  }
-}`,...t.parameters?.docs?.source}}};const p=["Primary"];export{t as Primary,p as __namedExportsOrder,h as default};

@@ -1,6 +1,0 @@
-import{j as s}from"./jsx-runtime-D_zvdyIk.js";import{a as r}from"./index-C4mD4Gko.js";const t=a=>s.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 24 24",...a,children:[s.jsx("defs",{children:s.jsx("style",{children:".prefix__cls-1{fill:#aecbfa}.prefix__cls-2{fill:#669df6}.prefix__cls-3{fill:#4285f4}"})}),s.jsx("g",{"data-name":"Product Icons",children:s.jsxs("g",{"data-name":"Layer 1-2",children:[s.jsx("path",{d:"m5.45 8.53 3.1-3.11 3.1 3.11-3.1 3.12z",className:"prefix__cls-1"}),s.jsx("path",{d:"m2 12 3.1-3.12L8.2 12l-3.1 3.12z",className:"prefix__cls-2"}),s.jsx("path",{d:"m5.45 15.47 3.1-3.12 3.1 3.12-3.1 3.12z",className:"prefix__cls-3"}),s.jsx("path",{d:"m12.35 8.53 3.1-3.11 3.1 3.11-3.1 3.12z",className:"prefix__cls-1"}),s.jsx("path",{d:"m15.8 12 3.1-3.12L22 12l-3.1 3.12z",className:"prefix__cls-2"}),s.jsx("path",{d:"m12.35 15.47 3.1-3.12 3.1 3.12-3.1 3.12z",className:"prefix__cls-3"})]})})]}),c=r.memo(t),i={title:"GCP/CloudCode",component:c},e={args:{width:"500px",height:"500px"}};e.parameters={...e.parameters,docs:{...e.parameters?.docs,source:{originalSource:`{
-  args: {
-    width: "500px",
-    height: "500px"
-  }
-}`,...e.parameters?.docs?.source}}};const o=["Primary"];export{e as Primary,o as __namedExportsOrder,i as default};
