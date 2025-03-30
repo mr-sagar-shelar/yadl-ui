@@ -27,7 +27,6 @@ function IconNode(props: IconNodeProps) {
         onClick={() => {
           console.log("Clicked");
         }}
-        // className="drawer-toggle"
       >
         {iconNamePresent && <Icon width={width} height={height} />}
         <Handle

@@ -4,8 +4,15 @@ import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
 import { peerDependencies } from "./package.json";
 import tailwindcss from "@tailwindcss/vite";
+import path from "path";
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      "@utils": path.resolve(__dirname, "./src/utils/index.ts"),
+      "@components": path.resolve(__dirname, "../server/components/index.ts"),
+    },
+  },
   build: {
     lib: {
       entry: "./src/index.ts", // Specifies the entry point for building the library.
