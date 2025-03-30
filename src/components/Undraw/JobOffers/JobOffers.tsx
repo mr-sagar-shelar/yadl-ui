@@ -3,8 +3,6 @@ import { memo } from "react";
 const JobOffers = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
     className="prefix__injected-svg"
     viewBox="0 0 787.361 578.211"
     {...props}

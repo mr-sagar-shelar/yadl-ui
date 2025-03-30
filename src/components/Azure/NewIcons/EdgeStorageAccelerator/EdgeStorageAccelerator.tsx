@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const EdgeStorageAccelerator = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 18 18"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <path
       fill="#0078d4"
       d="M12.1 15.144c-3.158 0-5.716-.589-5.771-1.329v2.705c0 .748 2.586 1.356 5.777 1.356 3.124 0 5.666-.581 5.771-1.307v-2.778c-.002.748-2.587 1.356-5.777 1.356Z"

@@ -3,8 +3,6 @@ import { memo } from "react";
 const CloudHosting = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
     className="prefix__injected-svg"
     viewBox="0 0 672.129 669.164"
     {...props}

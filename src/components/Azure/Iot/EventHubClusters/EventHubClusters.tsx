@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const EventHubClusters = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 18 18"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <g fill="#b3b3b3">
       <path d="M9.18 8.24h.65v1.81a.14.14 0 0 1-.14.14H9a.14.14 0 0 1-.14-.14V8.53a.29.29 0 0 1 .32-.29" />
       <path

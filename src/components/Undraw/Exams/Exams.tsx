@@ -3,8 +3,6 @@ import { memo } from "react";
 const Exams = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
     className="prefix__injected-svg"
     viewBox="0 0 596.882 400.001"
     {...props}

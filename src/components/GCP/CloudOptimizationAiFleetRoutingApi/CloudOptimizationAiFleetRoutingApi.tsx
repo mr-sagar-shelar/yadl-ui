@@ -5,8 +5,6 @@ const CloudOptimizationAiFleetRoutingApi = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"
     id="prefix__Artwork"
-    width="1em"
-    height="1em"
     x={0}
     y={0}
     viewBox="0 0 24 24"

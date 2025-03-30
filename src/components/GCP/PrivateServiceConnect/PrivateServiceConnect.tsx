@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const PrivateServiceConnect = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 24 24"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
     <path
       d="m12 6.23-4.72 2.1v3.15A6.73 6.73 0 0 0 10 16.79a5.8 5.8 0 0 0 2 1Z"
       style={{

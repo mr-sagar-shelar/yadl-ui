@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const OutboundConnection = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 18 18"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <path fill="#773adc" d="M14.68 4.13v6.57l-5.64 3.29V7.42z" />
     <path fill="#b796f9" d="m14.68 4.13-5.64 3.3-5.64-3.3L9.04.83z" />
     <path fill="#a67af4" d="M9.04 7.43v6.56L3.4 10.7V4.13z" />

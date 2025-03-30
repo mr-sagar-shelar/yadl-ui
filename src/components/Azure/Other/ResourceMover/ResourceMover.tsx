@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const ResourceMover = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 18 18"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <path fill="#32bedd" d="M16.41 4.004v7.967l-6.885 4.003V7.995z" />
     <path fill="#9cebff" d="M16.41 4.004 9.526 8.006 2.64 4.003 9.526 0z" />
     <path fill="#50e6ff" d="M9.525 8.006v7.968L2.64 11.971V4.003z" />

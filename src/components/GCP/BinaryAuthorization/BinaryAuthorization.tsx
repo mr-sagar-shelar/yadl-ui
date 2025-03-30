@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const BinaryAuthorization = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 24 24"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
     <path
       d="M14.86 11.62h2v.06c0 5.91-3.44 8-4.58 8.54v1.53l.25-.08c.23-.08 5.77-2.08 5.77-10V10.2h-4.17Z"
       style={{

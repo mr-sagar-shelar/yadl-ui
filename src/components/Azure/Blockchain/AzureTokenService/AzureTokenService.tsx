@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const AzureTokenService = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 18 18"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <path fill="#773adc" d="M13.276 3.608V10.6l-6.01 3.514V7.11z" />
     <path fill="#b796f9" d="M13.276 3.608 7.268 7.12l-6-3.514 6-3.514z" />
     <path fill="#a67af4" d="M7.267 7.12v6.994L1.258 10.6V3.607l6.01 3.514z" />

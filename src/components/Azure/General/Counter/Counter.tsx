@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const Counter = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 18 18"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <path
       fill="#0078d4"
       d="M17.5 5.788V2.734a.57.57 0 0 0-.568-.568H1.071a.57.57 0 0 0-.571.568v12.532a.57.57 0 0 0 .568.568h15.864a.57.57 0 0 0 .568-.568z"

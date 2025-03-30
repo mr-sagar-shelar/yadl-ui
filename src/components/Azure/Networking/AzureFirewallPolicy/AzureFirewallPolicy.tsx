@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const AzureFirewallPolicy = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 18 18"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <path
       fill="#821010"
       d="M6 10.58V8.63h10.35V3.11a.64.64 0 0 0-.64-.64H.64a.64.64 0 0 0-.64.64v7.75a.64.64 0 0 0 .64.64H9v-.92ZM7.85 8H3.42V6h4.43ZM13 8H8.53V6H13Zm2.59 0h-1.88V6h1.84Zm-4.47-4.63h4.43v2h-4.43ZM6 3.37h4.43v2H6Zm-5.1 0h4.44v2H.9ZM.9 6h1.85v2H.9Zm4.44 4.58H.9V8.63h4.44Z"

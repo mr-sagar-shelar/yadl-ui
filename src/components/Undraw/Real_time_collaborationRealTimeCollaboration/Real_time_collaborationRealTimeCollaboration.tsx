@@ -1,12 +1,10 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const Real_time_collaborationRealTimeCollaboration = (
-  props: SVGProps<SVGSVGElement>
+  props: SVGProps<SVGSVGElement>,
 ) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
     className="prefix__injected-svg"
     data-name="Layer 1"
     viewBox="0 0 883.929 713.746"

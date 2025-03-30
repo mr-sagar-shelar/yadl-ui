@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const IoTCentralApplications = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 18 18"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <path
       fill="#a3a3a3"
       d="M9 0 1.15 4.49v3L4.2 9.34v-1.8l-1.6-.92V5.38L9 1.68l6.4 3.71v7.18L9 16.27l-7.85-4.49v1.68L9 18l7.85-4.49v-9Z"

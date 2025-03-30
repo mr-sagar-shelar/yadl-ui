@@ -3,8 +3,6 @@ import { memo } from "react";
 const EmailCapture = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
     className="prefix__injected-svg"
     data-name="Layer 1"
     viewBox="0 0 504.873 452.105"

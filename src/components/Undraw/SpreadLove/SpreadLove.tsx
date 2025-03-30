@@ -3,8 +3,6 @@ import { memo } from "react";
 const SpreadLove = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
     className="prefix__injected-svg"
     viewBox="0 0 748.775 487.44"
     {...props}

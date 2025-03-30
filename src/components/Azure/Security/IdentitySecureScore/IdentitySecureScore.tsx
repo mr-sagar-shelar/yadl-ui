@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const IdentitySecureScore = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 18 18"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <path
       fill="#ff8c00"
       d="M15.149 2.271H2.851A1.608 1.608 0 0 0 1.514 4.75a22 22 0 0 1 1.4 3.123A2.02 2.02 0 0 0 4.766 9h8.467a2.02 2.02 0 0 0 1.849-1.127 22 22 0 0 1 1.4-3.123 1.608 1.608 0 0 0-1.333-2.479m.434 1.919a22.6 22.6 0 0 0-1.5 3.322.7.7 0 0 1-.671.426H4.589a.7.7 0 0 1-.674-.432 22.6 22.6 0 0 0-1.5-3.316.58.58 0 0 1-.018-.6.49.49 0 0 1 .452-.261h12.3a.49.49 0 0 1 .452.261.58.58 0 0 1-.018.6"

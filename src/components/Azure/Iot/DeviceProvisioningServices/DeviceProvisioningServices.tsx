@@ -3,8 +3,6 @@ import { memo } from "react";
 const DeviceProvisioningServices = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
     data-name="Layer 1"
     viewBox="0 0 18 18"
     {...props}

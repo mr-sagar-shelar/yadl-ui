@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const CapacityReservationGroups = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 18 18"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <path
       fill="#a33a85"
       d="m15.434 9.798-1.71 1.01-1.72 1-3.01 1.77-3-1.77-1.71-1-1.72-1.01 1.35-.79 5.08 2.98 5.09-2.98z"

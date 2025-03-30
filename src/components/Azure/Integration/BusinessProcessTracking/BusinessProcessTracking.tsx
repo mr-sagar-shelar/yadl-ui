@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const BusinessProcessTracking = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 18 18"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <path
       fill="#76d263"
       d="M14.609 11.297 9 13.078l-5.609-1.781c-.34-.108-.691.133-.691.474v3.869c0 .215.145.406.359.474L9 18l5.941-1.886a.5.5 0 0 0 .359-.474v-3.869c0-.341-.351-.582-.691-.474"

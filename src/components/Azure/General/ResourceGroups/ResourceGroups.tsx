@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const ResourceGroups = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 18 18"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <path
       fill="#949494"
       d="M.5 15.08a.16.16 0 0 0 .08.14l1.16.65L3.7 17a.17.17 0 0 0 .23-.06l.66-1.12a.16.16 0 0 0-.06-.21l-2.3-1.3a.17.17 0 0 1-.08-.14V3.85a.16.16 0 0 1 .08-.14l2.3-1.3a.16.16 0 0 0 .06-.21l-.66-1.12A.17.17 0 0 0 3.7 1L1.78 2.11l-1.2.67a.16.16 0 0 0-.08.14z"

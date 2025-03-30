@@ -3,8 +3,6 @@ import { memo } from "react";
 const OnlineStats = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
     className="prefix__injected-svg"
     viewBox="0 0 774.04 475.137"
     {...props}

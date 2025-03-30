@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const BareMetalSolutions = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 24 24"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
     <g fill="#4285f4">
       <path d="m12 20.99-9-4.276 4.5-1.428L12 19.57l4.5-4.285 4.5 1.428z" />
       <path d="m12 3 7.5 7.143-7.5 7.143-7.5-7.143zm0 1.429-6 5.714 6 5.714 6-5.714z" />

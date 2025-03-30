@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const AccessContextManager = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 24 24"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
     <g data-name="Product Icons">
       <path
         d="M12 19.27 4.72 12 12 4.72l3.64 3.64L17 7l-5-5L2 12l10 10 5-5-1.36-1.36z"

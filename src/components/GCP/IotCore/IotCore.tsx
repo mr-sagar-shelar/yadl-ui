@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const IotCore = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 24 24"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
     <g data-name="Product Icons">
       <path
         d="M12.54 12.43V8a1.14 1.14 0 1 0-1 0v4.42H7.27V9.6a1.14 1.14 0 0 0-.53-2.15 1.14 1.14 0 0 0-.52 2.15v2.83H6a3.82 3.82 0 1 1 1.4-7.38A5.22 5.22 0 0 1 16.84 5a4 4 0 0 1 1.23-.2 3.83 3.83 0 0 1 0 7.66h-.25V9.6a1.14 1.14 0 1 0-1.06 0v2.83Z"

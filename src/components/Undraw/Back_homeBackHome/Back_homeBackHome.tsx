@@ -3,8 +3,6 @@ import { memo } from "react";
 const Back_homeBackHome = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
     className="prefix__injected-svg"
     data-name="Layer 1"
     viewBox="0 0 1126.182 694.222"

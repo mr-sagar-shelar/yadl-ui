@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const AnalyticsHub = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 24 24"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" {...props}>
     <path
       d="m10.53 11.68-2.6-1.57A1.3 1.3 0 0 0 8 9.76a1.37 1.37 0 1 0-1.36 1.36 1.32 1.32 0 0 0 .92-.37l2.61 1.57a.33.33 0 0 0 .19.06.38.38 0 0 0 .19-.7Zm-3.91-1.31a.61.61 0 1 1 0-1.22.61.61 0 0 1 0 1.22"
       style={{

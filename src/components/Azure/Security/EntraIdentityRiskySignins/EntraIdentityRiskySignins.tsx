@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const EntraIdentityRiskySignins = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 18 18"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <path
       fill="#57a300"
       d="M9.014 8.105 6.181 5.421h2.256L12.254 9l-3.76 3.579H6.181L9.015 9.9H1.007C.717 9.9.5 9.566.5 9.275v-.74c0-.291.217-.431.507-.431Z"

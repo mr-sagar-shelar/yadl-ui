@@ -4,8 +4,6 @@ const ServiceDiscovery = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     id="prefix__Product_Icons"
-    width="1em"
-    height="1em"
     data-name="Product Icons"
     viewBox="0 0 24 24"
     {...props}

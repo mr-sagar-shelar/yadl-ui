@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const AKSAutomatic = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 18 18"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <path
       fill="#0078d4"
       d="M7.456.608A5.2 5.2 0 0 0 4.558.191.21.21 0 0 1 4.64.37l-.082 1.405a3.6 3.6 0 0 1 2.65.469c.338.21.639.474.892.781l.061.069c.091.104.26.299.334.402a.1.1 0 0 1-.026.084l-.003.004-.052.048-.765.681a.095.095 0 0 0 .058.165l1.107.065 1.402.082a.21.21 0 0 0 .179-.083.2.2 0 0 0 .044-.117l.147-2.513a.095.095 0 0 0-.089-.1.1.1 0 0 0-.068.024l-.764.682v.003a5 5 0 0 0-.34-.467A5.15 5.15 0 0 0 7.456.609Z"

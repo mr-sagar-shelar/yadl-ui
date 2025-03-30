@@ -3,8 +3,6 @@ import { memo } from "react";
 const Externalidmodified = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
     viewBox="0 0 52.497 52.434"
     {...props}
   >

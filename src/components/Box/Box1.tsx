@@ -31,9 +31,7 @@ const Box = (props: BoxProps) => {
             {number}
           </p>
         </div>
-        <div className="w-12 fill-primary">
-          {SvgIcon && <SvgIcon fill="fill-primary" />}
-        </div>
+        <div className="w-12 fill-primary">{SvgIcon && <SvgIcon />}</div>
         <h1 className="font-bold text-xl text-neutral">{title}</h1>
         <p className="text-sm leading-6 text-neutral/50">{caption}</p>
       </div>

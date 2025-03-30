@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const ProximityPlacementGroups = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 18 18"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <path
       fill="#949494"
       d="M0 15.6a.16.16 0 0 0 .09.15l1.22.7 2.07 1.2a.18.18 0 0 0 .24-.06l.7-1.22a.16.16 0 0 0 0-.22l-2.5-1.42a.18.18 0 0 1-.08-.15V3.42a.18.18 0 0 1 .08-.15l2.43-1.4a.16.16 0 0 0 .07-.22L3.62.4a.18.18 0 0 0-.24-.06l-2 1.18-1.3.73a.16.16 0 0 0-.09.15z"

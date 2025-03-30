@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const Cubes = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 18 18"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <path fill="#76bc2d" d="M13.067 2.794v4.791L8.926 9.993V5.194z" />
     <path fill="#b4ec36" d="M13.067 2.794 8.926 5.201 4.785 2.793 8.926.386z" />
     <path fill="#86d633" d="M8.926 5.201v4.792L4.785 7.585V2.793z" />

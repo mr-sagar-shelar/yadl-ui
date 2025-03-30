@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const ProcessExplorer = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 18 18"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <path
       fill="#1f56a3"
       d="M13.022 16.764c-2.09-.28-2.055-1.624-2.045-3.8H7.061c.01 2.179.045 3.523-2.046 3.8a1.066 1.066 0 0 0-.984.958h9.981a1.07 1.07 0 0 0-.99-.958"

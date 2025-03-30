@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const ExternalIdentities = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 18 18"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <path
       fill="#59b4d9"
       d="M16.814 13.026a.7.7 0 0 1-.7.709H11.28a.7.7 0 0 1-.709-.7V5.081a.7.7 0 0 1 .7-.709h4.81a.7.7 0 0 1 .71.694v7.96Z"

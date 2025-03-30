@@ -1,13 +1,7 @@
 import type { SVGProps } from "react";
 import { memo } from "react";
 const AzureCenterforSAP = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 18 18"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" {...props}>
     <path fill="#32bedd" d="M11.189 4.827v2.688l-2.323 1.35V6.174z" />
     <path fill="#9cebff" d="m11.189 4.827-2.323 1.35-2.325-1.353 2.325-1.35z" />
     <path fill="#50e6ff" d="M8.866 6.177v2.688l-2.325-1.35V4.824z" />
