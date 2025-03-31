@@ -30,7 +30,7 @@ const Box = (props: BoxProps) => {
   const [recordingState, setRecordingState] = useState<RecordingState>(
     RecordingState.none,
   );
-  const [converstionState, setConversionState] = useState<ConversionState>(
+  const [conversionState, setConversionState] = useState<ConversionState>(
     ConversionState.none,
   );
   const [frameRate, setFrameRate] = useState<number>(15);
@@ -66,7 +66,6 @@ const Box = (props: BoxProps) => {
     mediaRecorder.onstop = async () => {
       const finalBlob = new Blob([...blobSlice], { type: "video/webm" });
       const duration = await getBlobDuration(finalBlob);
-      console.log(duration + " seconds");
       const fixedBlob = await fixWebmDuration(finalBlob, duration * 1000);
       setVideoBufferData(finalBlob);
       videoEl.srcObject = null;
@@ -88,14 +87,13 @@ const Box = (props: BoxProps) => {
 
   const convertToMp4 = async () => {
     setConversionState(ConversionState.converting);
-    // const message = document.getElementById("message");
     const { fetchFile } = FFmpegUtil;
     const { FFmpeg } = FFmpegWASM;
     let ffmpeg = null;
     if (ffmpeg === null) {
       ffmpeg = new FFmpeg();
       ffmpeg.on("log", ({ message }) => {
-        console.log(message);
+        console.info(message);
       });
       ffmpeg.on("progress", ({ progress, time }) => {
         setConvertionMessage(`${progress * 100} %, time: ${time / 1000000} s`);
@@ -112,9 +110,7 @@ const Box = (props: BoxProps) => {
     );
     setConvertionMessage(`Start transcoding`);
 
-    console.time("exec");
     await ffmpeg.exec(["-i", name, "output.mp4"]);
-    console.timeEnd("exec");
     setConvertionMessage(`Completed transcoding`);
     setConversionState(ConversionState.completed);
 
@@ -131,7 +127,10 @@ const Box = (props: BoxProps) => {
     <>
       <div
         {...props}
-        style={{ width, height }}
+        style={{
+          width,
+          height,
+        }}
         className="bg-primary-content p-4 flex flex-col gap-4"
       >
         <div className="flex flex-row gap-4">
@@ -181,10 +180,30 @@ const Box = (props: BoxProps) => {
           <button
             type="button"
             className={`btn btn-primary`}
+            disabled={conversionState == ConversionState.converting}
             onClick={() => {
               convertToMp4();
             }}
           >
+            {conversionState == ConversionState.completed && (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="2.5"
+                stroke="currentColor"
+                className="size-[1.2em]"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                />
+              </svg>
+            )}
+            {conversionState == ConversionState.converting && (
+              <span className="loading loading-spinner"></span>
+            )}
             Convert To MP4
           </button>
         )}
@@ -194,7 +213,7 @@ const Box = (props: BoxProps) => {
           style={{
             width: "100%",
             visibility:
-              converstionState == ConversionState.completed
+              conversionState == ConversionState.completed
                 ? "visible"
                 : "hidden",
           }}
