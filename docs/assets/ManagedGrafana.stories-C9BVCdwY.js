@@ -1,6 +1,0 @@
-import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{a as s}from"./index-DeeIzpjE.js";const t=r=>e.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"1em",height:"1em",viewBox:"0 0 80 80",...r,children:[e.jsx("defs",{children:e.jsxs("linearGradient",{id:"prefix__a",x1:"0%",x2:"100%",y1:"100%",y2:"0%",children:[e.jsx("stop",{offset:"0%",stopColor:"#B0084D"}),e.jsx("stop",{offset:"100%",stopColor:"#FF4F8B"})]})}),e.jsxs("g",{fill:"none",fillRule:"evenodd",children:[e.jsx("path",{fill:"url(#prefix__a)",d:"M0 0h80v80H0z"}),e.jsx("path",{fill:"#FFF",d:"M26 52h2V41h-2zm21 0h2V41h-2zm-7 0h2V27h-2zm-7 0h2V36h-2zm33 6.193-35.58 7.693-16.3-22.053 10.565-29.772 22.365 1.863.952 17.132a.998.998 0 0 0 1.109.938L66 32.117zm1.667-27.938a1 1 0 0 0-.777-.249L49.94 31.89l-.942-16.946a1 1 0 0 0-.915-.94l-24-2a.995.995 0 0 0-1.025.662l-11 31a1 1 0 0 0 .139.928l17 23a1 1 0 0 0 1.014.384l37-8A1 1 0 0 0 68 59V31a1 1 0 0 0-.333-.745"})]})]}),o=s.memo(t),l={title:"AWS/ManagementGovernance/ManagedGrafana",component:o},a={args:{width:"500px",height:"500px"}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
-  args: {
-    width: "500px",
-    height: "500px"
-  }
-}`,...a.parameters?.docs?.source}}};const m=["Primary"];export{a as Primary,m as __namedExportsOrder,l as default};
