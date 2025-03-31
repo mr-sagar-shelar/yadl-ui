@@ -1,1 +1,0 @@
-import{j as s}from"./jsx-runtime-D_zvdyIk.js";import{a as o}from"./index-P7CUG52Y.js";const r=t=>s.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",fill:"none",viewBox:"0 0 256 256",...t,children:[s.jsx("rect",{width:256,height:256,fill:"#F4F2ED",rx:60}),s.jsx("path",{fill:"#000",d:"m128 34 95 164.853H33z"})]}),m=o.memo(r);export{m as M};
