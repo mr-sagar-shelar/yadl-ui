@@ -76,10 +76,10 @@ const Box = (props: BoxProps) => {
     setRecordingState(RecordingState.recording);
   };
 
-  const stopRecording = () => {
-    mediaStream.getTracks().forEach((track) => track.stop());
-    mediaRecorder.stop();
-  };
+  // const stopRecording = () => {
+  //   mediaStream.getTracks().forEach((track) => track.stop());
+  //   mediaRecorder.stop();
+  // };
 
   useEffect(() => {
     videoEl = document.getElementById("captured-video") as HTMLVideoElement;
@@ -87,14 +87,18 @@ const Box = (props: BoxProps) => {
 
   const convertToMp4 = async () => {
     setConversionState(ConversionState.converting);
+    // @ts-ignore
     const { fetchFile } = FFmpegUtil;
+    // @ts-ignore
     const { FFmpeg } = FFmpegWASM;
     let ffmpeg = null;
     if (ffmpeg === null) {
       ffmpeg = new FFmpeg();
+      // @ts-ignore
       ffmpeg.on("log", ({ message }) => {
         console.info(message);
       });
+      // @ts-ignore
       ffmpeg.on("progress", ({ progress, time }) => {
         setConvertionMessage(`${progress * 100} %, time: ${time / 1000000} s`);
       });
@@ -117,6 +121,7 @@ const Box = (props: BoxProps) => {
     const data = await ffmpeg.readFile("output.mp4");
     const video = document.getElementById("mp4-video");
     if (video) {
+      // @ts-ignore
       video.src = URL.createObjectURL(
         new Blob([data.buffer], { type: "video/mp4" }),
       );

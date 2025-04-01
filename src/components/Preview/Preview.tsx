@@ -48,7 +48,7 @@ const YadlPreview = (props: YadlPreviewProps) => {
   const [type] = useDnD();
 
   const onConnect = useCallback(
-    (params) => setEdges((eds) => addEdge(params, eds)),
+    (params: any) => setEdges((eds) => addEdge(params, eds)),
     [],
   );
 
@@ -66,7 +66,7 @@ const YadlPreview = (props: YadlPreviewProps) => {
   //   [],
   // );
 
-  const onDragOver = useCallback((event) => {
+  const onDragOver = useCallback((event: any) => {
     event.preventDefault();
     event.dataTransfer.dropEffect = "move";
   }, []);

@@ -18,6 +18,7 @@ function IconNode(props: IconNodeProps) {
   let Icon = null;
   const iconNamePresent: boolean = IconNames[icon] != undefined;
   if (iconNamePresent) {
+    // @ts-ignore
     Icon = ICONS[IconNames[icon]] ?? null;
   }
 

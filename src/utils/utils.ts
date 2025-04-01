@@ -6,5 +6,6 @@ export const getIcon = (iconName: string) => {
   if (!iconNamePresent) {
     return null;
   }
+  // @ts-ignore
   return ICONS[IconNames[iconName]] ?? null;
 };
