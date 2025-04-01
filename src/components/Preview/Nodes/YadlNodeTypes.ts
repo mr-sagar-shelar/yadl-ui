@@ -1,4 +1,5 @@
-import IconNode from "./IconNode";
+// @ts-nocheck
+import IconNode, { IconNodeProps } from "./IconNode";
 
 export const YadlNodeTypes = {
   icon: IconNode,

@@ -3,7 +3,7 @@ import { Handle, Position } from "@xyflow/react";
 import * as ICONS from "../../index";
 import { IconNames } from "./IconNames";
 
-interface IconNodeProps {
+export interface IconNodeProps {
   data: {
     icon: string;
     width?: number;
