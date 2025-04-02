@@ -1,1 +1,1 @@
-export { default as Athena } from "./Athena";
+export { default as AWSAnalyticsAthena } from "./Athena";

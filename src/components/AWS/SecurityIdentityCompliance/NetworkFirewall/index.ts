@@ -1,1 +1,1 @@
-export { default as NetworkFirewall } from "./NetworkFirewall";
+export { default as AWSSecurityIdentityComplianceNetworkFirewall } from "./NetworkFirewall";

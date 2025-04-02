@@ -1,1 +1,1 @@
-export { default as ManagedBlockchain } from "./ManagedBlockchain";
+export { default as AWSBlockchainManagedBlockchain } from "./ManagedBlockchain";

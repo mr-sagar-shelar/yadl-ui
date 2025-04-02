@@ -1,1 +1,1 @@
-export { default as WorkSpacesFamily } from "./WorkSpacesFamily";
+export { default as AWSEndUserComputingWorkSpacesFamily } from "./WorkSpacesFamily";

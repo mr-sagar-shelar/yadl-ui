@@ -1,1 +1,1 @@
-export { default as ManagementConsole } from "./ManagementConsole";
+export { default as AWSManagementGovernanceManagementConsole } from "./ManagementConsole";

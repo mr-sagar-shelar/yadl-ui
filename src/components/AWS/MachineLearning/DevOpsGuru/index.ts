@@ -1,1 +1,1 @@
-export { default as DevOpsGuru } from "./DevOpsGuru";
+export { default as AWSMachineLearningDevOpsGuru } from "./DevOpsGuru";

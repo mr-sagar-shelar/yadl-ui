@@ -1,1 +1,1 @@
-export { default as FinSpace } from "./FinSpace";
+export { default as AWSAnalyticsFinSpace } from "./FinSpace";

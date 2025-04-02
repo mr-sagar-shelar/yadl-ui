@@ -1,1 +1,1 @@
-export { default as CloudSearch } from "./CloudSearch";
+export { default as AWSAnalyticsCloudSearch } from "./CloudSearch";

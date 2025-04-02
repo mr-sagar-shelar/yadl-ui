@@ -1,1 +1,1 @@
-export { default as CodeDeploy } from "./CodeDeploy";
+export { default as AWSDeveloperToolsCodeDeploy } from "./CodeDeploy";

@@ -1,1 +1,1 @@
-export { default as DynamoDB } from "./DynamoDB";
+export { default as AWSDatabaseDynamoDB } from "./DynamoDB";

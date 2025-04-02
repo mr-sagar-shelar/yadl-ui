@@ -1,1 +1,1 @@
-export { default as CodeArtifact } from "./CodeArtifact";
+export { default as AWSDeveloperToolsCodeArtifact } from "./CodeArtifact";

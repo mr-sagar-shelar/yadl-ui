@@ -1,1 +1,1 @@
-export { default as CloudDevelopmentKit } from "./CloudDevelopmentKit";
+export { default as AWSDeveloperToolsCloudDevelopmentKit } from "./CloudDevelopmentKit";

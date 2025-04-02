@@ -1,1 +1,1 @@
-export { default as DeepLens } from "./DeepLens";
+export { default as AWSMachineLearningDeepLens } from "./DeepLens";

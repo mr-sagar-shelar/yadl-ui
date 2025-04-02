@@ -1,1 +1,1 @@
-export { default as WorkLink } from "./WorkLink";
+export { default as AWSEndUserComputingWorkLink } from "./WorkLink";

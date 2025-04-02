@@ -1,1 +1,1 @@
-export { default as DirectoryService } from "./DirectoryService";
+export { default as AWSSecurityIdentityComplianceDirectoryService } from "./DirectoryService";

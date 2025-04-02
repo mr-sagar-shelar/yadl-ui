@@ -1,1 +1,1 @@
-export { default as SimSpaceWeaver } from "./SimSpaceWeaver";
+export { default as AWSComputeSimSpaceWeaver } from "./SimSpaceWeaver";

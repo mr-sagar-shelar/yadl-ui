@@ -1,1 +1,1 @@
-export { default as ApplicationCostProfiler } from "./ApplicationCostProfiler";
+export { default as AWSCloudFinancialManagementApplicationCostProfiler } from "./ApplicationCostProfiler";

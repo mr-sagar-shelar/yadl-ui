@@ -1,1 +1,1 @@
-export { default as MQ } from "./MQ";
+export { default as AWSAppIntegrationMQ } from "./MQ";

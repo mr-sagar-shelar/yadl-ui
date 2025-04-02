@@ -1,1 +1,1 @@
-export { default as CodeWhisperer } from "./CodeWhisperer";
+export { default as AWSMachineLearningCodeWhisperer } from "./CodeWhisperer";

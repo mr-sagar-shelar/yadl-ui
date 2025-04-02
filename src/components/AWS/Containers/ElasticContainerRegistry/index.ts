@@ -1,1 +1,1 @@
-export { default as ElasticContainerRegistry } from "./ElasticContainerRegistry";
+export { default as AWSContainersElasticContainerRegistry } from "./ElasticContainerRegistry";

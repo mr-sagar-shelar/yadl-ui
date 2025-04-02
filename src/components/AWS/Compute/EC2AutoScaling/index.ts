@@ -1,1 +1,1 @@
-export { default as EC2AutoScaling } from "./EC2AutoScaling";
+export { default as AWSComputeEC2AutoScaling } from "./EC2AutoScaling";

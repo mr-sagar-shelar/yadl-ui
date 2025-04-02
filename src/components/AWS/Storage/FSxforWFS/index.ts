@@ -1,1 +1,1 @@
-export { default as FSxforWFS } from "./FSxforWFS";
+export { default as AWSStorageFSxforWFS } from "./FSxforWFS";

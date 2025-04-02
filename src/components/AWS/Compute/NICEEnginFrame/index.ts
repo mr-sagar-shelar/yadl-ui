@@ -1,1 +1,1 @@
-export { default as NICEEnginFrame } from "./NICEEnginFrame";
+export { default as AWSComputeNICEEnginFrame } from "./NICEEnginFrame";

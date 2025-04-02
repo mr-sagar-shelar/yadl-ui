@@ -1,1 +1,1 @@
-export { default as ThinkboxKrakatoa } from "./ThinkboxKrakatoa";
+export { default as AWSComputeThinkboxKrakatoa } from "./ThinkboxKrakatoa";

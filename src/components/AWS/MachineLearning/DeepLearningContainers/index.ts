@@ -1,1 +1,1 @@
-export { default as DeepLearningContainers } from "./DeepLearningContainers";
+export { default as AWSMachineLearningDeepLearningContainers } from "./DeepLearningContainers";

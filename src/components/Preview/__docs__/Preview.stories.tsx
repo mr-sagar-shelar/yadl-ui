@@ -1,11 +1,14 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
-import Preview from "../Preview";
+import YadlPreview from "../YadlPreview";
 
-const meta: Meta<typeof Preview> = { title: "YadlPreview", component: Preview };
+const meta: Meta<typeof YadlPreview> = {
+  title: "YadlPreview",
+  component: YadlPreview,
+};
 
 export default meta;
-type Story = StoryObj<typeof Preview>;
+type Story = StoryObj<typeof YadlPreview>;
 
 export const Interactivity: Story = {
   args: {
@@ -42,7 +45,7 @@ export const Interactivity: Story = {
   },
   render: (args) => (
     <div style={{ height: "100%", width: "100%" }}>
-      <Preview {...args} />
+      <YadlPreview {...args} />
     </div>
   ),
 };

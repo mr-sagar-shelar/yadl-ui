@@ -1,1 +1,1 @@
-export { default as SageMakerStudioLab } from "./SageMakerStudioLab";
+export { default as AWSMachineLearningSageMakerStudioLab } from "./SageMakerStudioLab";

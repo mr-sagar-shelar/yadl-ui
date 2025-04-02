@@ -1,1 +1,1 @@
-export { default as GroundStation } from "./GroundStation";
+export { default as AWSSatelliteGroundStation } from "./GroundStation";

@@ -1,1 +1,1 @@
-export { default as ConsoleMobileApplication } from "./ConsoleMobileApplication";
+export { default as AWSAppIntegrationConsoleMobileApplication } from "./ConsoleMobileApplication";

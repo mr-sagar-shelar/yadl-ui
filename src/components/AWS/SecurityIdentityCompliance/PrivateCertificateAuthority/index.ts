@@ -1,1 +1,1 @@
-export { default as PrivateCertificateAuthority } from "./PrivateCertificateAuthority";
+export { default as AWSSecurityIdentityCompliancePrivateCertificateAuthority } from "./PrivateCertificateAuthority";

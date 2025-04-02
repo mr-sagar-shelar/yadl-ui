@@ -1,1 +1,1 @@
-export { default as FreeRTOS } from "./FreeRTOS";
+export { default as AWSInternetofThingsFreeRTOS } from "./FreeRTOS";

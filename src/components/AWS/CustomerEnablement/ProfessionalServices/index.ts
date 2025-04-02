@@ -1,1 +1,1 @@
-export { default as ProfessionalServices } from "./ProfessionalServices";
+export { default as AWSCustomerEnablementProfessionalServices } from "./ProfessionalServices";

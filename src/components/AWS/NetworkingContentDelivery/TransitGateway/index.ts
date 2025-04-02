@@ -1,1 +1,1 @@
-export { default as TransitGateway } from "./TransitGateway";
+export { default as AWSNetworkingContentDeliveryTransitGateway } from "./TransitGateway";

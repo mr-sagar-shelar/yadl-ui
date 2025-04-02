@@ -1,1 +1,1 @@
-export { default as ElasticFabricAdapter } from "./ElasticFabricAdapter";
+export { default as AWSComputeElasticFabricAdapter } from "./ElasticFabricAdapter";

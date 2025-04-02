@@ -1,1 +1,1 @@
-export { default as VirtualPrivateCloud } from "./VirtualPrivateCloud";
+export { default as AWSNetworkingContentDeliveryVirtualPrivateCloud } from "./VirtualPrivateCloud";

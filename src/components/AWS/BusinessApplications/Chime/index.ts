@@ -1,1 +1,1 @@
-export { default as Chime } from "./Chime";
+export { default as AWSBusinessApplicationsChime } from "./Chime";

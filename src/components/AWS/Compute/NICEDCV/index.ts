@@ -1,1 +1,1 @@
-export { default as NICEDCV } from "./NICEDCV";
+export { default as AWSComputeNICEDCV } from "./NICEDCV";

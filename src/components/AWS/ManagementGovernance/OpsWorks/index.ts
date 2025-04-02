@@ -1,1 +1,1 @@
-export { default as OpsWorks } from "./OpsWorks";
+export { default as AWSManagementGovernanceOpsWorks } from "./OpsWorks";

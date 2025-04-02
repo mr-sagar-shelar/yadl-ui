@@ -1,1 +1,1 @@
-export { default as Open3DEngine } from "./Open3DEngine";
+export { default as AWSGamesOpen3DEngine } from "./Open3DEngine";

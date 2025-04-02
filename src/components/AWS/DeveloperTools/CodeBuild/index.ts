@@ -1,1 +1,1 @@
-export { default as CodeBuild } from "./CodeBuild";
+export { default as AWSDeveloperToolsCodeBuild } from "./CodeBuild";

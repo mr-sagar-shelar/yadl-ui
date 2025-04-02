@@ -1,1 +1,1 @@
-export { default as IoTDeviceDefender } from "./IoTDeviceDefender";
+export { default as AWSInternetofThingsIoTDeviceDefender } from "./IoTDeviceDefender";

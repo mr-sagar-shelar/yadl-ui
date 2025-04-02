@@ -1,1 +1,1 @@
-export { default as ResilienceHub } from "./ResilienceHub";
+export { default as AWSManagementGovernanceResilienceHub } from "./ResilienceHub";

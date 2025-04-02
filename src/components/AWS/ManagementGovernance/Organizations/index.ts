@@ -1,1 +1,1 @@
-export { default as Organizations } from "./Organizations";
+export { default as AWSManagementGovernanceOrganizations } from "./Organizations";

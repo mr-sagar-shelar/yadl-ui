@@ -1,1 +1,1 @@
-export { default as Sail } from "./Sail";
+export { default as AWSComputeSail } from "./Sail";

@@ -1,1 +1,1 @@
-export { default as Fargate } from "./Fargate";
+export { default as AWSComputeFargate } from "./Fargate";

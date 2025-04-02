@@ -1,1 +1,1 @@
-export { default as CloudHSM } from "./CloudHSM";
+export { default as AWSSecurityIdentityComplianceCloudHSM } from "./CloudHSM";

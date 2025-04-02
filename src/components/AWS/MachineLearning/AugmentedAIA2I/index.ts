@@ -1,1 +1,1 @@
-export { default as AugmentedAIA2I } from "./AugmentedAIA2I";
+export { default as AWSMachineLearningAugmentedAIA2I } from "./AugmentedAIA2I";

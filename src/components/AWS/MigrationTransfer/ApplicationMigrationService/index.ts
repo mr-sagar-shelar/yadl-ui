@@ -1,1 +1,1 @@
-export { default as ApplicationMigrationService } from "./ApplicationMigrationService";
+export { default as AWSMigrationTransferApplicationMigrationService } from "./ApplicationMigrationService";

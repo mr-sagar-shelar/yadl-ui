@@ -1,1 +1,1 @@
-export { default as IoTEvents } from "./IoTEvents";
+export { default as AWSInternetofThingsIoTEvents } from "./IoTEvents";

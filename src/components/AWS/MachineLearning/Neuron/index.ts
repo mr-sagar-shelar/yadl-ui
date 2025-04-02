@@ -1,1 +1,1 @@
-export { default as Neuron } from "./Neuron";
+export { default as AWSMachineLearningNeuron } from "./Neuron";

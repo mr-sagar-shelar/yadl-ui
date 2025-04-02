@@ -1,1 +1,1 @@
-export { default as RDS } from "./RDS";
+export { default as AWSDatabaseRDS } from "./RDS";

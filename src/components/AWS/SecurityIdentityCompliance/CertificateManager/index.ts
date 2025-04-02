@@ -1,1 +1,1 @@
-export { default as CertificateManager } from "./CertificateManager";
+export { default as AWSSecurityIdentityComplianceCertificateManager } from "./CertificateManager";

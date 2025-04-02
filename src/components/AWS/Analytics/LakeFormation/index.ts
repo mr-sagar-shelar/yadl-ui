@@ -1,1 +1,1 @@
-export { default as LakeFormation } from "./LakeFormation";
+export { default as AWSAnalyticsLakeFormation } from "./LakeFormation";

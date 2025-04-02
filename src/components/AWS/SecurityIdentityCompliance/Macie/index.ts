@@ -1,1 +1,1 @@
-export { default as Macie } from "./Macie";
+export { default as AWSSecurityIdentityComplianceMacie } from "./Macie";

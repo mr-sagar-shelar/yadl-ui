@@ -1,1 +1,1 @@
-export { default as VerifiedPermissions } from "./VerifiedPermissions";
+export { default as AWSSecurityIdentityComplianceVerifiedPermissions } from "./VerifiedPermissions";

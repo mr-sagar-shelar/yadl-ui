@@ -1,1 +1,1 @@
-export { default as Translate } from "./Translate";
+export { default as AWSMachineLearningTranslate } from "./Translate";

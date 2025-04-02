@@ -1,1 +1,1 @@
-export { default as SimpleQueueService } from "./SimpleQueueService";
+export { default as AWSAppIntegrationSimpleQueueService } from "./SimpleQueueService";

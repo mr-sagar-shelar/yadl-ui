@@ -1,1 +1,1 @@
-export { default as QuantumLedgerDatabase } from "./QuantumLedgerDatabase";
+export { default as AWSBlockchainQuantumLedgerDatabase } from "./QuantumLedgerDatabase";

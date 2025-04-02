@@ -1,1 +1,1 @@
-export { default as CodeGuru } from "./CodeGuru";
+export { default as AWSMachineLearningCodeGuru } from "./CodeGuru";

@@ -1,1 +1,1 @@
-export { default as ToolsandSDKs } from "./ToolsandSDKs";
+export { default as AWSDeveloperToolsToolsandSDKs } from "./ToolsandSDKs";

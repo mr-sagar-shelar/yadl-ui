@@ -1,1 +1,1 @@
-export { default as SitetoSiteVPN } from "./SitetoSiteVPN";
+export { default as AWSNetworkingContentDeliverySitetoSiteVPN } from "./SitetoSiteVPN";

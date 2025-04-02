@@ -1,1 +1,1 @@
-export { default as StorageGateway } from "./StorageGateway";
+export { default as AWSStorageStorageGateway } from "./StorageGateway";

@@ -1,1 +1,1 @@
-export { default as XRay } from "./XRay";
+export { default as AWSDeveloperToolsXRay } from "./XRay";

@@ -1,1 +1,1 @@
-export { default as CostExplorer } from "./CostExplorer";
+export { default as AWSCloudFinancialManagementCostExplorer } from "./CostExplorer";

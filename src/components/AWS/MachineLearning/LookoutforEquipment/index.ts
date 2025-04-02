@@ -1,1 +1,1 @@
-export { default as LookoutforEquipment } from "./LookoutforEquipment";
+export { default as AWSMachineLearningLookoutforEquipment } from "./LookoutforEquipment";

@@ -1,1 +1,1 @@
-export { default as IoTCore } from "./IoTCore";
+export { default as AWSInternetofThingsIoTCore } from "./IoTCore";

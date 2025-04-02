@@ -1,1 +1,1 @@
-export { default as Transcribe } from "./Transcribe";
+export { default as AWSMachineLearningTranscribe } from "./Transcribe";

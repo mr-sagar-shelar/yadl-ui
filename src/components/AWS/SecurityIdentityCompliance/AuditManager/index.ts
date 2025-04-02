@@ -1,1 +1,1 @@
-export { default as AuditManager } from "./AuditManager";
+export { default as AWSSecurityIdentityComplianceAuditManager } from "./AuditManager";

@@ -1,1 +1,1 @@
-export { default as SavingsPlans } from "./SavingsPlans";
+export { default as AWSCloudFinancialManagementSavingsPlans } from "./SavingsPlans";

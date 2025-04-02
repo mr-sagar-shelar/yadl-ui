@@ -1,1 +1,1 @@
-export { default as Artifact } from "./Artifact";
+export { default as AWSSecurityIdentityComplianceArtifact } from "./Artifact";

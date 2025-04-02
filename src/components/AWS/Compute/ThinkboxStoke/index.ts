@@ -1,1 +1,1 @@
-export { default as ThinkboxStoke } from "./ThinkboxStoke";
+export { default as AWSComputeThinkboxStoke } from "./ThinkboxStoke";

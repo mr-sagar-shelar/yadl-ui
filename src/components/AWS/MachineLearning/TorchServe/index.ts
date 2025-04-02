@@ -1,1 +1,1 @@
-export { default as TorchServe } from "./TorchServe";
+export { default as AWSMachineLearningTorchServe } from "./TorchServe";

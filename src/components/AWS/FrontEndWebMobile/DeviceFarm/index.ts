@@ -1,1 +1,1 @@
-export { default as DeviceFarm } from "./DeviceFarm";
+export { default as AWSFrontEndWebMobileDeviceFarm } from "./DeviceFarm";

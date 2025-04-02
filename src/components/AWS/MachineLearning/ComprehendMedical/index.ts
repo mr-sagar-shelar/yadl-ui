@@ -1,1 +1,1 @@
-export { default as ComprehendMedical } from "./ComprehendMedical";
+export { default as AWSMachineLearningComprehendMedical } from "./ComprehendMedical";

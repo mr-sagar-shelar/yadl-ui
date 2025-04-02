@@ -1,1 +1,1 @@
-export { default as Textract } from "./Textract";
+export { default as AWSMachineLearningTextract } from "./Textract";

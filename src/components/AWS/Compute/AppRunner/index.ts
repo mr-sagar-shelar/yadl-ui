@@ -1,1 +1,1 @@
-export { default as AppRunner } from "./AppRunner";
+export { default as AWSComputeAppRunner } from "./AppRunner";

@@ -1,1 +1,1 @@
-export { default as GuardDuty } from "./GuardDuty";
+export { default as AWSSecurityIdentityComplianceGuardDuty } from "./GuardDuty";

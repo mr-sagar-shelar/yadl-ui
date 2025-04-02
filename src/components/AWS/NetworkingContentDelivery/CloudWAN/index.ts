@@ -1,1 +1,1 @@
-export { default as CloudWAN } from "./CloudWAN";
+export { default as AWSNetworkingContentDeliveryCloudWAN } from "./CloudWAN";

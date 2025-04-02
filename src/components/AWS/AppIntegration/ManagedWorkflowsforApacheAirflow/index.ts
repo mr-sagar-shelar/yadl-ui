@@ -1,1 +1,1 @@
-export { default as ManagedWorkflowsforApacheAirflow } from "./ManagedWorkflowsforApacheAirflow";
+export { default as AWSAppIntegrationManagedWorkflowsforApacheAirflow } from "./ManagedWorkflowsforApacheAirflow";

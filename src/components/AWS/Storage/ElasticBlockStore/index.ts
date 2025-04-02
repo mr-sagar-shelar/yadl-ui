@@ -1,1 +1,1 @@
-export { default as ElasticBlockStore } from "./ElasticBlockStore";
+export { default as AWSStorageElasticBlockStore } from "./ElasticBlockStore";

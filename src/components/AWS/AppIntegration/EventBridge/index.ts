@@ -1,1 +1,1 @@
-export { default as EventBridge } from "./EventBridge";
+export { default as AWSAppIntegrationEventBridge } from "./EventBridge";

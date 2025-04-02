@@ -1,1 +1,1 @@
-export { default as RePost } from "./RePost";
+export { default as AWSCustomerEnablementRePost } from "./RePost";

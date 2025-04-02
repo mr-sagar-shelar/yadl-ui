@@ -1,1 +1,1 @@
-export { default as Support } from "./Support";
+export { default as AWSCustomerEnablementSupport } from "./Support";

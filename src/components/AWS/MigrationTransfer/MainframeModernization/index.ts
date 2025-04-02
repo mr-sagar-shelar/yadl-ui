@@ -1,1 +1,1 @@
-export { default as MainframeModernization } from "./MainframeModernization";
+export { default as AWSMigrationTransferMainframeModernization } from "./MainframeModernization";

@@ -1,1 +1,1 @@
-export { default as CloudControlAPI } from "./CloudControlAPI";
+export { default as AWSDeveloperToolsCloudControlAPI } from "./CloudControlAPI";

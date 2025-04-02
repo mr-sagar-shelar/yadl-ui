@@ -1,1 +1,1 @@
-export { default as Glue } from "./Glue";
+export { default as AWSAnalyticsGlue } from "./Glue";

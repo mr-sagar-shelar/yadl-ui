@@ -1,1 +1,1 @@
-export { default as ElementalServer } from "./ElementalServer";
+export { default as AWSMediaServicesElementalServer } from "./ElementalServer";

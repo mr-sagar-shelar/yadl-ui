@@ -1,1 +1,1 @@
-export { default as SupplyChain } from "./SupplyChain";
+export { default as AWSBusinessApplicationsSupplyChain } from "./SupplyChain";

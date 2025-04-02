@@ -1,1 +1,1 @@
-export { default as EFS } from "./EFS";
+export { default as AWSStorageEFS } from "./EFS";

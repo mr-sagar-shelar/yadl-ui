@@ -1,1 +1,1 @@
-export { default as ComputeOptimizer } from "./ComputeOptimizer";
+export { default as AWSComputeComputeOptimizer } from "./ComputeOptimizer";

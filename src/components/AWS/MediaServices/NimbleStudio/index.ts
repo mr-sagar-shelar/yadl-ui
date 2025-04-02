@@ -1,1 +1,1 @@
-export { default as NimbleStudio } from "./NimbleStudio";
+export { default as AWSMediaServicesNimbleStudio } from "./NimbleStudio";

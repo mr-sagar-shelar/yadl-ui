@@ -1,1 +1,1 @@
-export { default as Config } from "./Config";
+export { default as AWSManagementGovernanceConfig } from "./Config";

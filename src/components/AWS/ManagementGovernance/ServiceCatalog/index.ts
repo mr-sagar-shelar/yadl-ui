@@ -1,1 +1,1 @@
-export { default as ServiceCatalog } from "./ServiceCatalog";
+export { default as AWSManagementGovernanceServiceCatalog } from "./ServiceCatalog";

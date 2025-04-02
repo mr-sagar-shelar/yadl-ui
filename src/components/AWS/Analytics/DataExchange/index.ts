@@ -1,1 +1,1 @@
-export { default as DataExchange } from "./DataExchange";
+export { default as AWSAnalyticsDataExchange } from "./DataExchange";

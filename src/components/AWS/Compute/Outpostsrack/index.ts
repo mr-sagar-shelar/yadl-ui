@@ -1,1 +1,1 @@
-export { default as Outpostsrack } from "./Outpostsrack";
+export { default as AWSComputeOutpostsrack } from "./Outpostsrack";

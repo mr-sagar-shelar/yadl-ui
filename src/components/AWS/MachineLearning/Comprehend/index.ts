@@ -1,1 +1,1 @@
-export { default as Comprehend } from "./Comprehend";
+export { default as AWSMachineLearningComprehend } from "./Comprehend";

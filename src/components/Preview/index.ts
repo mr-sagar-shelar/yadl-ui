@@ -1,1 +1,1 @@
-export { default as YadlPreview } from "./Preview";
+export { default as YadlPreview } from "./YadlPreview";

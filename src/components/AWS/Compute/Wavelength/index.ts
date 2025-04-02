@@ -1,1 +1,1 @@
-export { default as Wavelength } from "./Wavelength";
+export { default as AWSComputeWavelength } from "./Wavelength";

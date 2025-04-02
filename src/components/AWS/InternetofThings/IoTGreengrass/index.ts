@@ -1,1 +1,1 @@
-export { default as IoTGreengrass } from "./IoTGreengrass";
+export { default as AWSInternetofThingsIoTGreengrass } from "./IoTGreengrass";

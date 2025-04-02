@@ -1,1 +1,1 @@
-export { default as FaultInjectionSimulator } from "./FaultInjectionSimulator";
+export { default as AWSManagementGovernanceFaultInjectionSimulator } from "./FaultInjectionSimulator";

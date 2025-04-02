@@ -1,1 +1,1 @@
-export { default as TrustedAdvisor } from "./TrustedAdvisor";
+export { default as AWSManagementGovernanceTrustedAdvisor } from "./TrustedAdvisor";

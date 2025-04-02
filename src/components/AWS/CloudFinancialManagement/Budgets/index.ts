@@ -1,1 +1,1 @@
-export { default as Budgets } from "./Budgets";
+export { default as AWSCloudFinancialManagementBudgets } from "./Budgets";

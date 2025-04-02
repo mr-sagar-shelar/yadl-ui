@@ -1,1 +1,1 @@
-export { default as ResourceAccessManager } from "./ResourceAccessManager";
+export { default as AWSSecurityIdentityComplianceResourceAccessManager } from "./ResourceAccessManager";

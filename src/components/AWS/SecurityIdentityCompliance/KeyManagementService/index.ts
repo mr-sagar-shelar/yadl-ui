@@ -1,1 +1,1 @@
-export { default as KeyManagementService } from "./KeyManagementService";
+export { default as AWSSecurityIdentityComplianceKeyManagementService } from "./KeyManagementService";

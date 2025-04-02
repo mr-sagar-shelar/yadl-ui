@@ -1,1 +1,1 @@
-export { default as CloudFront } from "./CloudFront";
+export { default as AWSNetworkingContentDeliveryCloudFront } from "./CloudFront";

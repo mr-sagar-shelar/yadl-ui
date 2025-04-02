@@ -1,1 +1,1 @@
-export { default as CleanRooms } from "./CleanRooms";
+export { default as AWSAnalyticsCleanRooms } from "./CleanRooms";

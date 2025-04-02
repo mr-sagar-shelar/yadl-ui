@@ -1,1 +1,1 @@
-export { default as ElementalMediaLive } from "./ElementalMediaLive";
+export { default as AWSMediaServicesElementalMediaLive } from "./ElementalMediaLive";

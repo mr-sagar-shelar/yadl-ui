@@ -1,1 +1,1 @@
-export { default as AppMesh } from "./AppMesh";
+export { default as AWSNetworkingContentDeliveryAppMesh } from "./AppMesh";

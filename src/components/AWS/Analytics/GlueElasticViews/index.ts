@@ -1,1 +1,1 @@
-export { default as GlueElasticViews } from "./GlueElasticViews";
+export { default as AWSAnalyticsGlueElasticViews } from "./GlueElasticViews";

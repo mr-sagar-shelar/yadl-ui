@@ -1,1 +1,1 @@
-export { default as GameLift } from "./GameLift";
+export { default as AWSGamesGameLift } from "./GameLift";

@@ -1,1 +1,1 @@
-export { default as BillingConductor } from "./BillingConductor";
+export { default as AWSCloudFinancialManagementBillingConductor } from "./BillingConductor";

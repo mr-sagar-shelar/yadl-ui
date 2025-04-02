@@ -1,1 +1,1 @@
-export { default as ElastiCache } from "./ElastiCache";
+export { default as AWSDatabaseElastiCache } from "./ElastiCache";

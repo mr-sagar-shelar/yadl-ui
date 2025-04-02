@@ -1,1 +1,1 @@
-export { default as Sumerian } from "./Sumerian";
+export { default as AWSVRARSumerian } from "./Sumerian";

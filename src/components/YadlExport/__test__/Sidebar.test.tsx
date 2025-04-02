@@ -1,11 +1,11 @@
 import React from "react";
 import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
-import Sidebar from "../Export";
+import YadlExport from "../YadlExport";
 
-describe("Sidebar component", () => {
-  it("Sidebar should render correctly", () => {
-    render(<Sidebar />);
+describe("YadlExport component", () => {
+  it("YadlExport should render correctly", () => {
+    render(<YadlExport />);
     expect(true).toBeTruthy();
   });
 });

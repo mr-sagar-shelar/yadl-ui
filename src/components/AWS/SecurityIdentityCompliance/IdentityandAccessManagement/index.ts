@@ -1,1 +1,1 @@
-export { default as IdentityandAccessManagement } from "./IdentityandAccessManagement";
+export { default as AWSSecurityIdentityComplianceIdentityandAccessManagement } from "./IdentityandAccessManagement";

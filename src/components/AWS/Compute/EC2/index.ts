@@ -1,1 +1,1 @@
-export { default as EC2 } from "./EC2";
+export { default as AWSComputeEC2 } from "./EC2";

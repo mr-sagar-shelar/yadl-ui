@@ -1,1 +1,1 @@
-export { default as VMwareCloudonAWS } from "./VMwareCloudonAWS";
+export { default as AWSComputeVMwareCloudonAWS } from "./VMwareCloudonAWS";

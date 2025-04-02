@@ -1,1 +1,1 @@
-export { default as MigrationEvaluator } from "./MigrationEvaluator";
+export { default as AWSMigrationTransferMigrationEvaluator } from "./MigrationEvaluator";

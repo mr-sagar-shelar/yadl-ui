@@ -1,1 +1,1 @@
-export { default as AppStream } from "./AppStream";
+export { default as AWSEndUserComputingAppStream } from "./AppStream";

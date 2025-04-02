@@ -1,1 +1,1 @@
-export { default as ChimeVoiceConnector } from "./ChimeVoiceConnector";
+export { default as AWSBusinessApplicationsChimeVoiceConnector } from "./ChimeVoiceConnector";

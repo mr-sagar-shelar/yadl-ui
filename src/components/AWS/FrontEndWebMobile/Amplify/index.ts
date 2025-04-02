@@ -1,1 +1,1 @@
-export { default as Amplify } from "./Amplify";
+export { default as AWSFrontEndWebMobileAmplify } from "./Amplify";

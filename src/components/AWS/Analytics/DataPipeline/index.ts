@@ -1,1 +1,1 @@
-export { default as DataPipeline } from "./DataPipeline";
+export { default as AWSAnalyticsDataPipeline } from "./DataPipeline";

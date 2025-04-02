@@ -1,1 +1,1 @@
-export { default as ManagedGrafana } from "./ManagedGrafana";
+export { default as AWSManagementGovernanceManagedGrafana } from "./ManagedGrafana";

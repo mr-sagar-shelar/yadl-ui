@@ -1,1 +1,1 @@
-export { default as SecretsManager } from "./SecretsManager";
+export { default as AWSSecurityIdentityComplianceSecretsManager } from "./SecretsManager";

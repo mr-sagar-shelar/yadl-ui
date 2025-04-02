@@ -1,1 +1,1 @@
-export { default as ChimeSDK } from "./ChimeSDK";
+export { default as AWSBusinessApplicationsChimeSDK } from "./ChimeSDK";

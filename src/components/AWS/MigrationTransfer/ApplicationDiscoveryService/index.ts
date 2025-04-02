@@ -1,1 +1,1 @@
-export { default as ApplicationDiscoveryService } from "./ApplicationDiscoveryService";
+export { default as AWSMigrationTransferApplicationDiscoveryService } from "./ApplicationDiscoveryService";

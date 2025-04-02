@@ -1,1 +1,1 @@
-export { default as SnowballEdge } from "./SnowballEdge";
+export { default as AWSStorageSnowballEdge } from "./SnowballEdge";

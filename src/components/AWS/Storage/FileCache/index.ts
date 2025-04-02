@@ -1,1 +1,1 @@
-export { default as FileCache } from "./FileCache";
+export { default as AWSStorageFileCache } from "./FileCache";

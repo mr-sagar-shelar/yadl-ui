@@ -1,1 +1,1 @@
-export { default as Panorama } from "./Panorama";
+export { default as AWSMachineLearningPanorama } from "./Panorama";

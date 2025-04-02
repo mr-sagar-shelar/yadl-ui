@@ -1,1 +1,1 @@
-export { default as CloudTrail } from "./CloudTrail";
+export { default as AWSManagementGovernanceCloudTrail } from "./CloudTrail";

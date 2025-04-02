@@ -1,1 +1,1 @@
-export { default as VPCLattice } from "./VPCLattice";
+export { default as AWSNetworkingContentDeliveryVPCLattice } from "./VPCLattice";

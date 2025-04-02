@@ -1,1 +1,1 @@
-export { default as FSxforNetAppONTAP } from "./FSxforNetAppONTAP";
+export { default as AWSStorageFSxforNetAppONTAP } from "./FSxforNetAppONTAP";

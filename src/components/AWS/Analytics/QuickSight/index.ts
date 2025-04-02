@@ -1,1 +1,1 @@
-export { default as QuickSight } from "./QuickSight";
+export { default as AWSAnalyticsQuickSight } from "./QuickSight";

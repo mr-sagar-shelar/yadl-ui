@@ -1,1 +1,1 @@
-export { default as Shield } from "./Shield";
+export { default as AWSSecurityIdentityComplianceShield } from "./Shield";

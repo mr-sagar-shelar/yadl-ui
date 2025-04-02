@@ -1,1 +1,1 @@
-export { default as EC2ImageBuilder } from "./EC2ImageBuilder";
+export { default as AWSComputeEC2ImageBuilder } from "./EC2ImageBuilder";

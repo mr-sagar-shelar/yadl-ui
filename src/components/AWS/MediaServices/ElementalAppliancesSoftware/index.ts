@@ -1,1 +1,1 @@
-export { default as ElementalAppliancesSoftware } from "./ElementalAppliancesSoftware";
+export { default as AWSMediaServicesElementalAppliancesSoftware } from "./ElementalAppliancesSoftware";

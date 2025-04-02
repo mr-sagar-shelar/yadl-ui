@@ -1,1 +1,1 @@
-export { default as Neptune } from "./Neptune";
+export { default as AWSDatabaseNeptune } from "./Neptune";

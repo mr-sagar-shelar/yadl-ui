@@ -1,1 +1,1 @@
-export { default as ElasticKubernetesService } from "./ElasticKubernetesService";
+export { default as AWSContainersElasticKubernetesService } from "./ElasticKubernetesService";

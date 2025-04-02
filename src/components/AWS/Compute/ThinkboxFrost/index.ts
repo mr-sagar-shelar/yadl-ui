@@ -1,1 +1,1 @@
-export { default as ThinkboxFrost } from "./ThinkboxFrost";
+export { default as AWSComputeThinkboxFrost } from "./ThinkboxFrost";

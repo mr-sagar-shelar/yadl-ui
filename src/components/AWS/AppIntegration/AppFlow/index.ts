@@ -1,1 +1,1 @@
-export { default as AppFlow } from "./AppFlow";
+export { default as AWSAppIntegrationAppFlow } from "./AppFlow";

@@ -1,1 +1,1 @@
-export { default as Redshift } from "./Redshift";
+export { default as AWSAnalyticsRedshift } from "./Redshift";

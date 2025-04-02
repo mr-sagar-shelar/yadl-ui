@@ -1,1 +1,1 @@
-export { default as ApacheMXNetonAWS } from "./ApacheMXNetonAWS";
+export { default as AWSMachineLearningApacheMXNetonAWS } from "./ApacheMXNetonAWS";

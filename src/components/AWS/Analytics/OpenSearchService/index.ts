@@ -1,1 +1,1 @@
-export { default as OpenSearchService } from "./OpenSearchService";
+export { default as AWSAnalyticsOpenSearchService } from "./OpenSearchService";

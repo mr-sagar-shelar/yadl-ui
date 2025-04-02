@@ -1,1 +1,1 @@
-export { default as ElementalMediaTailor } from "./ElementalMediaTailor";
+export { default as AWSMediaServicesElementalMediaTailor } from "./ElementalMediaTailor";

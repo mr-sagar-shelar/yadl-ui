@@ -1,1 +1,1 @@
-export { default as AutoScaling } from "./AutoScaling";
+export { default as AWSManagementGovernanceAutoScaling } from "./AutoScaling";

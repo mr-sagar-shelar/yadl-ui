@@ -1,1 +1,1 @@
-export { default as Backup } from "./Backup";
+export { default as AWSStorageBackup } from "./Backup";

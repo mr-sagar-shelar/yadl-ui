@@ -1,1 +1,1 @@
-export { default as Lumberyard } from "./Lumberyard";
+export { default as AWSGamesLumberyard } from "./Lumberyard";

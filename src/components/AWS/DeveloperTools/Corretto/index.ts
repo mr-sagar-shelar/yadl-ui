@@ -1,1 +1,1 @@
-export { default as Corretto } from "./Corretto";
+export { default as AWSDeveloperToolsCorretto } from "./Corretto";

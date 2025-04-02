@@ -1,1 +1,1 @@
-export { default as Marketplace_ } from "./Marketplace_";
+export { default as AWSGeneralIconsMarketplace_ } from "./Marketplace_";

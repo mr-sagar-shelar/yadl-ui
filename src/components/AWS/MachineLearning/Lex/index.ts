@@ -1,1 +1,1 @@
-export { default as Lex } from "./Lex";
+export { default as AWSMachineLearningLex } from "./Lex";

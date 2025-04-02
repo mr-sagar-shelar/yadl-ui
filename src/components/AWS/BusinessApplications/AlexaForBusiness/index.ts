@@ -1,1 +1,1 @@
-export { default as AlexaForBusiness } from "./AlexaForBusiness";
+export { default as AWSBusinessApplicationsAlexaForBusiness } from "./AlexaForBusiness";

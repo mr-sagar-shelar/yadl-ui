@@ -1,1 +1,1 @@
-export { default as KinesisDataAnalytics } from "./KinesisDataAnalytics";
+export { default as AWSAnalyticsKinesisDataAnalytics } from "./KinesisDataAnalytics";

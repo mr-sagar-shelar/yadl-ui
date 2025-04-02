@@ -1,1 +1,1 @@
-export { default as MemoryDBforRedis } from "./MemoryDBforRedis";
+export { default as AWSDatabaseMemoryDBforRedis } from "./MemoryDBforRedis";

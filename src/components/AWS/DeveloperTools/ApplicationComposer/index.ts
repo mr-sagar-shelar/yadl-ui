@@ -1,1 +1,1 @@
-export { default as ApplicationComposer } from "./ApplicationComposer";
+export { default as AWSDeveloperToolsApplicationComposer } from "./ApplicationComposer";

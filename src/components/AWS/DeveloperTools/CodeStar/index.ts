@@ -1,1 +1,1 @@
-export { default as CodeStar } from "./CodeStar";
+export { default as AWSDeveloperToolsCodeStar } from "./CodeStar";

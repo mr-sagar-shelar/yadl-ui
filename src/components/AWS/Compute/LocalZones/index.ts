@@ -1,1 +1,1 @@
-export { default as LocalZones } from "./LocalZones";
+export { default as AWSComputeLocalZones } from "./LocalZones";

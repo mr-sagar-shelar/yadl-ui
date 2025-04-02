@@ -1,1 +1,1 @@
-export { default as ElementalMediaConnect } from "./ElementalMediaConnect";
+export { default as AWSMediaServicesElementalMediaConnect } from "./ElementalMediaConnect";

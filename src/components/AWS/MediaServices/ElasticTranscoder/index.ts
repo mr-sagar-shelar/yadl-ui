@@ -1,1 +1,1 @@
-export { default as ElasticTranscoder } from "./ElasticTranscoder";
+export { default as AWSMediaServicesElasticTranscoder } from "./ElasticTranscoder";

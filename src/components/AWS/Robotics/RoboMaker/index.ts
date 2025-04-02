@@ -1,1 +1,1 @@
-export { default as RoboMaker } from "./RoboMaker";
+export { default as AWSRoboticsRoboMaker } from "./RoboMaker";

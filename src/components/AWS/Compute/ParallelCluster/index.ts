@@ -1,1 +1,1 @@
-export { default as ParallelCluster } from "./ParallelCluster";
+export { default as AWSComputeParallelCluster } from "./ParallelCluster";

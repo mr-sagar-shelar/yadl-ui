@@ -1,1 +1,1 @@
-export { default as IoTSiteWise } from "./IoTSiteWise";
+export { default as AWSInternetofThingsIoTSiteWise } from "./IoTSiteWise";

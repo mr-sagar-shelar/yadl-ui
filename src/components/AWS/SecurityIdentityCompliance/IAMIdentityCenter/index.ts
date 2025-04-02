@@ -1,1 +1,1 @@
-export { default as IAMIdentityCenter } from "./IAMIdentityCenter";
+export { default as AWSSecurityIdentityComplianceIAMIdentityCenter } from "./IAMIdentityCenter";

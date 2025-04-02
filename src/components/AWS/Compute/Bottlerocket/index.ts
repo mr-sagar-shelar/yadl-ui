@@ -1,1 +1,1 @@
-export { default as Bottlerocket } from "./Bottlerocket";
+export { default as AWSComputeBottlerocket } from "./Bottlerocket";

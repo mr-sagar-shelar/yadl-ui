@@ -1,1 +1,1 @@
-export { default as ThinkboxXMesh } from "./ThinkboxXMesh";
+export { default as AWSComputeThinkboxXMesh } from "./ThinkboxXMesh";

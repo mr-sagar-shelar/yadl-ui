@@ -1,1 +1,1 @@
-export { default as ElasticLoadBalancing } from "./ElasticLoadBalancing";
+export { default as AWSNetworkingContentDeliveryElasticLoadBalancing } from "./ElasticLoadBalancing";

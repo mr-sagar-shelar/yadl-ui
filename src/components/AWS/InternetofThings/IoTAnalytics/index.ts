@@ -1,1 +1,1 @@
-export { default as IoTAnalytics } from "./IoTAnalytics";
+export { default as AWSInternetofThingsIoTAnalytics } from "./IoTAnalytics";

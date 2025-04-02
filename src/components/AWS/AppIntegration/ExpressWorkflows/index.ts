@@ -1,1 +1,1 @@
-export { default as ExpressWorkflows } from "./ExpressWorkflows";
+export { default as AWSAppIntegrationExpressWorkflows } from "./ExpressWorkflows";

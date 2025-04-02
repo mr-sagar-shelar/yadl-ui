@@ -1,1 +1,1 @@
-export { default as APIGateway } from "./APIGateway";
+export { default as AWSAppIntegrationAPIGateway } from "./APIGateway";

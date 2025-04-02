@@ -1,1 +1,1 @@
-export { default as Private5G } from "./Private5G";
+export { default as AWSNetworkingContentDeliveryPrivate5G } from "./Private5G";

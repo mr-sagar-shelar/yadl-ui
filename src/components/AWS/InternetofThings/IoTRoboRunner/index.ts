@@ -1,1 +1,1 @@
-export { default as IoTRoboRunner } from "./IoTRoboRunner";
+export { default as AWSInternetofThingsIoTRoboRunner } from "./IoTRoboRunner";

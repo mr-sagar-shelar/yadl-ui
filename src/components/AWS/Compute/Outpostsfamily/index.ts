@@ -1,1 +1,1 @@
-export { default as Outpostsfamily } from "./Outpostsfamily";
+export { default as AWSComputeOutpostsfamily } from "./Outpostsfamily";

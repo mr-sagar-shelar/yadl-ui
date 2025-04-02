@@ -1,1 +1,1 @@
-export { default as NitroEnclaves } from "./NitroEnclaves";
+export { default as AWSComputeNitroEnclaves } from "./NitroEnclaves";

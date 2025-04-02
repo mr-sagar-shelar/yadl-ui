@@ -1,1 +1,1 @@
-export { default as IoTButton } from "./IoTButton";
+export { default as AWSInternetofThingsIoTButton } from "./IoTButton";

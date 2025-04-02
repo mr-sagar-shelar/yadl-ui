@@ -1,1 +1,1 @@
-export { default as SimpleEmailService } from "./SimpleEmailService";
+export { default as AWSBusinessApplicationsSimpleEmailService } from "./SimpleEmailService";

@@ -1,1 +1,1 @@
-export { default as CostandUsageReport } from "./CostandUsageReport";
+export { default as AWSCloudFinancialManagementCostandUsageReport } from "./CostandUsageReport";

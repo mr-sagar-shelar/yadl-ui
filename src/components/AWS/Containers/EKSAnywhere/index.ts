@@ -1,1 +1,1 @@
-export { default as EKSAnywhere } from "./EKSAnywhere";
+export { default as AWSContainersEKSAnywhere } from "./EKSAnywhere";

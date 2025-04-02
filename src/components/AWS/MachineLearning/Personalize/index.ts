@@ -1,1 +1,1 @@
-export { default as Personalize } from "./Personalize";
+export { default as AWSMachineLearningPersonalize } from "./Personalize";

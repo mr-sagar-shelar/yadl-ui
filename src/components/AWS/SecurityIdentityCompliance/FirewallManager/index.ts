@@ -1,1 +1,1 @@
-export { default as FirewallManager } from "./FirewallManager";
+export { default as AWSSecurityIdentityComplianceFirewallManager } from "./FirewallManager";

@@ -1,1 +1,1 @@
-export { default as Rekognition } from "./Rekognition";
+export { default as AWSMachineLearningRekognition } from "./Rekognition";

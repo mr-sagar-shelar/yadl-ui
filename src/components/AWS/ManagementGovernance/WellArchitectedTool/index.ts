@@ -1,1 +1,1 @@
-export { default as WellArchitectedTool } from "./WellArchitectedTool";
+export { default as AWSManagementGovernanceWellArchitectedTool } from "./WellArchitectedTool";

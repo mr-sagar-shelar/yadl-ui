@@ -1,1 +1,1 @@
-export { default as SystemsManager } from "./SystemsManager";
+export { default as AWSManagementGovernanceSystemsManager } from "./SystemsManager";

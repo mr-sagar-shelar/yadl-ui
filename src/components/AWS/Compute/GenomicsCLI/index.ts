@@ -1,1 +1,1 @@
-export { default as GenomicsCLI } from "./GenomicsCLI";
+export { default as AWSComputeGenomicsCLI } from "./GenomicsCLI";

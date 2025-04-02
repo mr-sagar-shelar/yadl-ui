@@ -1,1 +1,1 @@
-export { default as ClientVPN } from "./ClientVPN";
+export { default as AWSNetworkingContentDeliveryClientVPN } from "./ClientVPN";

@@ -1,1 +1,1 @@
-export { default as DocumentDB } from "./DocumentDB";
+export { default as AWSDatabaseDocumentDB } from "./DocumentDB";

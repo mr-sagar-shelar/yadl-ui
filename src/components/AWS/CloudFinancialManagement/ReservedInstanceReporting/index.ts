@@ -1,1 +1,1 @@
-export { default as ReservedInstanceReporting } from "./ReservedInstanceReporting";
+export { default as AWSCloudFinancialManagementReservedInstanceReporting } from "./ReservedInstanceReporting";

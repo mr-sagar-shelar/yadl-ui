@@ -1,1 +1,1 @@
-export { default as IoTExpressLink } from "./IoTExpressLink";
+export { default as AWSInternetofThingsIoTExpressLink } from "./IoTExpressLink";

@@ -1,1 +1,1 @@
-export { default as Outpostsservers } from "./Outpostsservers";
+export { default as AWSComputeOutpostsservers } from "./Outpostsservers";

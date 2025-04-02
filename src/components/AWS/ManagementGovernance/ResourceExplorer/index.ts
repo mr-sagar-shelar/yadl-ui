@@ -1,1 +1,1 @@
-export { default as ResourceExplorer } from "./ResourceExplorer";
+export { default as AWSManagementGovernanceResourceExplorer } from "./ResourceExplorer";

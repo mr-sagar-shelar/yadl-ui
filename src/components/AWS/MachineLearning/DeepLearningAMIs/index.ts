@@ -1,1 +1,1 @@
-export { default as DeepLearningAMIs } from "./DeepLearningAMIs";
+export { default as AWSMachineLearningDeepLearningAMIs } from "./DeepLearningAMIs";

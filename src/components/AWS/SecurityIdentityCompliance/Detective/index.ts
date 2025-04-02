@@ -1,1 +1,1 @@
-export { default as Detective } from "./Detective";
+export { default as AWSSecurityIdentityComplianceDetective } from "./Detective";

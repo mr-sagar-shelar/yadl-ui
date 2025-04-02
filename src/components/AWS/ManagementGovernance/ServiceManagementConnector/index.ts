@@ -1,1 +1,1 @@
-export { default as ServiceManagementConnector } from "./ServiceManagementConnector";
+export { default as AWSManagementGovernanceServiceManagementConnector } from "./ServiceManagementConnector";

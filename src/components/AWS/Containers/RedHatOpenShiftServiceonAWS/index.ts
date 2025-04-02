@@ -1,1 +1,1 @@
-export { default as RedHatOpenShiftServiceonAWS } from "./RedHatOpenShiftServiceonAWS";
+export { default as AWSContainersRedHatOpenShiftServiceonAWS } from "./RedHatOpenShiftServiceonAWS";

@@ -1,1 +1,1 @@
-export { default as AppSync } from "./AppSync";
+export { default as AWSAppIntegrationAppSync } from "./AppSync";

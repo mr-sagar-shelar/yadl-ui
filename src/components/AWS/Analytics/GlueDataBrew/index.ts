@@ -1,1 +1,1 @@
-export { default as GlueDataBrew } from "./GlueDataBrew";
+export { default as AWSAnalyticsGlueDataBrew } from "./GlueDataBrew";

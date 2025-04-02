@@ -1,1 +1,1 @@
-export { default as Honeycode } from "./Honeycode";
+export { default as AWSBusinessApplicationsHoneycode } from "./Honeycode";

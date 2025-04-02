@@ -1,1 +1,1 @@
-export { default as EKSDistro } from "./EKSDistro";
+export { default as AWSContainersEKSDistro } from "./EKSDistro";

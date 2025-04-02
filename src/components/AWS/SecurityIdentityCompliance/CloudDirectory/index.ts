@@ -1,1 +1,1 @@
-export { default as CloudDirectory } from "./CloudDirectory";
+export { default as AWSSecurityIdentityComplianceCloudDirectory } from "./CloudDirectory";

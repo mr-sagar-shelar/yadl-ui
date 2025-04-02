@@ -1,1 +1,1 @@
-export { default as ElasticBeanstalk } from "./ElasticBeanstalk";
+export { default as AWSComputeElasticBeanstalk } from "./ElasticBeanstalk";

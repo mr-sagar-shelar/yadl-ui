@@ -1,1 +1,1 @@
-export { default as GameKit } from "./GameKit";
+export { default as AWSGamesGameKit } from "./GameKit";

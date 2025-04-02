@@ -1,1 +1,1 @@
-export { default as GameSparks } from "./GameSparks";
+export { default as AWSGamesGameSparks } from "./GameSparks";

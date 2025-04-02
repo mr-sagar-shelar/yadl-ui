@@ -1,1 +1,1 @@
-export { default as IoTTwinMaker } from "./IoTTwinMaker";
+export { default as AWSInternetofThingsIoTTwinMaker } from "./IoTTwinMaker";

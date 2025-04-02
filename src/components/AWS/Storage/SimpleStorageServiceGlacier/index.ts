@@ -1,1 +1,1 @@
-export { default as SimpleStorageServiceGlacier } from "./SimpleStorageServiceGlacier";
+export { default as AWSStorageSimpleStorageServiceGlacier } from "./SimpleStorageServiceGlacier";

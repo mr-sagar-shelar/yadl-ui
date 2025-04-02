@@ -1,1 +1,1 @@
-export { default as SecurityLake } from "./SecurityLake";
+export { default as AWSSecurityIdentityComplianceSecurityLake } from "./SecurityLake";

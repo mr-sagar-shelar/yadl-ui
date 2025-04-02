@@ -1,1 +1,1 @@
-export { default as FSxforOpenZFS } from "./FSxforOpenZFS";
+export { default as AWSStorageFSxforOpenZFS } from "./FSxforOpenZFS";

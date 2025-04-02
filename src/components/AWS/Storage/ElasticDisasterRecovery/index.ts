@@ -1,1 +1,1 @@
-export { default as ElasticDisasterRecovery } from "./ElasticDisasterRecovery";
+export { default as AWSStorageElasticDisasterRecovery } from "./ElasticDisasterRecovery";

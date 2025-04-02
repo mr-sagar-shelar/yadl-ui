@@ -1,1 +1,1 @@
-export { default as KinesisDataStreams } from "./KinesisDataStreams";
+export { default as AWSAnalyticsKinesisDataStreams } from "./KinesisDataStreams";

@@ -1,1 +1,1 @@
-export { default as BackintAgent } from "./BackintAgent";
+export { default as AWSManagementGovernanceBackintAgent } from "./BackintAgent";

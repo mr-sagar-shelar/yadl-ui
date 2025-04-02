@@ -1,1 +1,1 @@
-export { default as Keyspaces } from "./Keyspaces";
+export { default as AWSDatabaseKeyspaces } from "./Keyspaces";

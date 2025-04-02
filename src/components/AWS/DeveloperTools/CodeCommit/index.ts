@@ -1,1 +1,1 @@
-export { default as CodeCommit } from "./CodeCommit";
+export { default as AWSDeveloperToolsCodeCommit } from "./CodeCommit";

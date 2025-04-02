@@ -1,1 +1,1 @@
-export { default as TrainingCertification } from "./TrainingCertification";
+export { default as AWSCustomerEnablementTrainingCertification } from "./TrainingCertification";

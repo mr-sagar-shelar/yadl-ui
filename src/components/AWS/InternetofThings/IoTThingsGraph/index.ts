@@ -1,1 +1,1 @@
-export { default as IoTThingsGraph } from "./IoTThingsGraph";
+export { default as AWSInternetofThingsIoTThingsGraph } from "./IoTThingsGraph";

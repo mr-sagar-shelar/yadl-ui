@@ -1,1 +1,1 @@
-export { default as IoTEduKit } from "./IoTEduKit";
+export { default as AWSInternetofThingsIoTEduKit } from "./IoTEduKit";

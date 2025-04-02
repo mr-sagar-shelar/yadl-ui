@@ -1,1 +1,1 @@
-export { default as IoTDeviceManagement } from "./IoTDeviceManagement";
+export { default as AWSInternetofThingsIoTDeviceManagement } from "./IoTDeviceManagement";

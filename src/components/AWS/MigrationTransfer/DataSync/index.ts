@@ -1,1 +1,1 @@
-export { default as DataSync } from "./DataSync";
+export { default as AWSMigrationTransferDataSync } from "./DataSync";

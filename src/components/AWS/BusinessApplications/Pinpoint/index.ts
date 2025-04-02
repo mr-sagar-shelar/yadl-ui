@@ -1,1 +1,1 @@
-export { default as Pinpoint } from "./Pinpoint";
+export { default as AWSBusinessApplicationsPinpoint } from "./Pinpoint";

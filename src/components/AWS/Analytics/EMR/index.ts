@@ -1,1 +1,1 @@
-export { default as EMR } from "./EMR";
+export { default as AWSAnalyticsEMR } from "./EMR";

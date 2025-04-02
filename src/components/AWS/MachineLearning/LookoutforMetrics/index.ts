@@ -1,1 +1,1 @@
-export { default as LookoutforMetrics } from "./LookoutforMetrics";
+export { default as AWSMachineLearningLookoutforMetrics } from "./LookoutforMetrics";

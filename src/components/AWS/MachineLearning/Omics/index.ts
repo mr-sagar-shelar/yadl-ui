@@ -1,1 +1,1 @@
-export { default as Omics } from "./Omics";
+export { default as AWSMachineLearningOmics } from "./Omics";

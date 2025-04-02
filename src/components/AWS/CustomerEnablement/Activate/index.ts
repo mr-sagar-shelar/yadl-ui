@@ -1,1 +1,1 @@
-export { default as Activate } from "./Activate";
+export { default as AWSCustomerEnablementActivate } from "./Activate";

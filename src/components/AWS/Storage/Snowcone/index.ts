@@ -1,1 +1,1 @@
-export { default as Snowcone } from "./Snowcone";
+export { default as AWSStorageSnowcone } from "./Snowcone";

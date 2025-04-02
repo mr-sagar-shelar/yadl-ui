@@ -1,1 +1,1 @@
-export { default as CodePipeline } from "./CodePipeline";
+export { default as AWSDeveloperToolsCodePipeline } from "./CodePipeline";

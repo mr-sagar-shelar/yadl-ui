@@ -1,1 +1,1 @@
-export { default as SageMakerGroundTruth } from "./SageMakerGroundTruth";
+export { default as AWSMachineLearningSageMakerGroundTruth } from "./SageMakerGroundTruth";

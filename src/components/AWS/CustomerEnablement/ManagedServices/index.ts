@@ -1,1 +1,1 @@
-export { default as ManagedServices } from "./ManagedServices";
+export { default as AWSCustomerEnablementManagedServices } from "./ManagedServices";

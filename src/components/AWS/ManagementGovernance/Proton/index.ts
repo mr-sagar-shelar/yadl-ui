@@ -1,1 +1,1 @@
-export { default as Proton } from "./Proton";
+export { default as AWSManagementGovernanceProton } from "./Proton";

@@ -1,1 +1,1 @@
-export { default as MigrationHub } from "./MigrationHub";
+export { default as AWSMigrationTransferMigrationHub } from "./MigrationHub";

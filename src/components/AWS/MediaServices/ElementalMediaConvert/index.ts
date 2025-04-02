@@ -1,1 +1,1 @@
-export { default as ElementalMediaConvert } from "./ElementalMediaConvert";
+export { default as AWSMediaServicesElementalMediaConvert } from "./ElementalMediaConvert";

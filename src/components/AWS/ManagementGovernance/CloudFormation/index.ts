@@ -1,1 +1,1 @@
-export { default as CloudFormation } from "./CloudFormation";
+export { default as AWSManagementGovernanceCloudFormation } from "./CloudFormation";

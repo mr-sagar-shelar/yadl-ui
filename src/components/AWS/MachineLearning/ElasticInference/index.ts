@@ -1,1 +1,1 @@
-export { default as ElasticInference } from "./ElasticInference";
+export { default as AWSMachineLearningElasticInference } from "./ElasticInference";

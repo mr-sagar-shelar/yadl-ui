@@ -1,1 +1,1 @@
-export { default as ElasticContainerService } from "./ElasticContainerService";
+export { default as AWSContainersElasticContainerService } from "./ElasticContainerService";

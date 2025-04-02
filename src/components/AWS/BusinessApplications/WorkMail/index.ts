@@ -1,1 +1,1 @@
-export { default as WorkMail } from "./WorkMail";
+export { default as AWSBusinessApplicationsWorkMail } from "./WorkMail";

@@ -1,1 +1,1 @@
-export { default as LookoutforVision } from "./LookoutforVision";
+export { default as AWSMachineLearningLookoutforVision } from "./LookoutforVision";

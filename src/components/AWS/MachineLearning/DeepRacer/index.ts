@@ -1,1 +1,1 @@
-export { default as DeepRacer } from "./DeepRacer";
+export { default as AWSMachineLearningDeepRacer } from "./DeepRacer";

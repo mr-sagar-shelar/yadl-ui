@@ -1,1 +1,1 @@
-export { default as DataZone } from "./DataZone";
+export { default as AWSAnalyticsDataZone } from "./DataZone";

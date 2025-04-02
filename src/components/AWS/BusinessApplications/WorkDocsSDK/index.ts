@@ -1,1 +1,1 @@
-export { default as WorkDocsSDK } from "./WorkDocsSDK";
+export { default as AWSBusinessApplicationsWorkDocsSDK } from "./WorkDocsSDK";

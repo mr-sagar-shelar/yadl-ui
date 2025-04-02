@@ -1,1 +1,1 @@
-export { default as PersonalHealthDashboard } from "./PersonalHealthDashboard";
+export { default as AWSManagementGovernancePersonalHealthDashboard } from "./PersonalHealthDashboard";

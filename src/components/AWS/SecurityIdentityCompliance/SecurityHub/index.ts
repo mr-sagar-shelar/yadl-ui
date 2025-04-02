@@ -1,1 +1,1 @@
-export { default as SecurityHub } from "./SecurityHub";
+export { default as AWSSecurityIdentityComplianceSecurityHub } from "./SecurityHub";

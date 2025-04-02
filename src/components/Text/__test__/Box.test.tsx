@@ -1,11 +1,11 @@
 import React from "react";
 import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
-import Box from "../Box";
+import Text from "../Text";
 
-describe("Box component", () => {
-  it("Box should render correctly", () => {
-    render(<Box />);
+describe("Text component", () => {
+  it("Text should render correctly", () => {
+    render(<Text />);
     expect(true).toBeTruthy();
   });
 });

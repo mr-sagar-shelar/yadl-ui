@@ -1,1 +1,1 @@
-export { default as CommandLineInterface } from "./CommandLineInterface";
+export { default as AWSDeveloperToolsCommandLineInterface } from "./CommandLineInterface";

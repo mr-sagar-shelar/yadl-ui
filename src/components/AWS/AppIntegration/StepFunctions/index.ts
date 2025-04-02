@@ -1,1 +1,1 @@
-export { default as StepFunctions } from "./StepFunctions";
+export { default as AWSAppIntegrationStepFunctions } from "./StepFunctions";

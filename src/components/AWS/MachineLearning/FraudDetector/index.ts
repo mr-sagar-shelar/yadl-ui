@@ -1,1 +1,1 @@
-export { default as FraudDetector } from "./FraudDetector";
+export { default as AWSMachineLearningFraudDetector } from "./FraudDetector";

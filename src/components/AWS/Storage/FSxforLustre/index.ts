@@ -1,1 +1,1 @@
-export { default as FSxforLustre } from "./FSxforLustre";
+export { default as AWSStorageFSxforLustre } from "./FSxforLustre";

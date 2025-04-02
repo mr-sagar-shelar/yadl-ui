@@ -1,1 +1,1 @@
-export { default as Timestream } from "./Timestream";
+export { default as AWSDatabaseTimestream } from "./Timestream";

@@ -1,11 +1,11 @@
 import React from "react";
 import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
-import Box from "../Box";
+import AnimateCSS from "../AnimateCSS";
 
-describe("Box component", () => {
-  it("Box should render correctly", () => {
-    render(<Box />);
+describe("AnimateCSS component", () => {
+  it("AnimateCSS should render correctly", () => {
+    render(<AnimateCSS />);
     expect(true).toBeTruthy();
   });
 });

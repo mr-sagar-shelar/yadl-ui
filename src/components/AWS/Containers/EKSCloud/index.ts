@@ -1,1 +1,1 @@
-export { default as EKSCloud } from "./EKSCloud";
+export { default as AWSContainersEKSCloud } from "./EKSCloud";

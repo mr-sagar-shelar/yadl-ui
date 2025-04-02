@@ -1,1 +1,1 @@
-export { default as LaunchWizard } from "./LaunchWizard";
+export { default as AWSManagementGovernanceLaunchWizard } from "./LaunchWizard";

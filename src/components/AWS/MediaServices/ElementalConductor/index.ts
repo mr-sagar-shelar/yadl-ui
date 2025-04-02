@@ -1,1 +1,1 @@
-export { default as ElementalConductor } from "./ElementalConductor";
+export { default as AWSMediaServicesElementalConductor } from "./ElementalConductor";

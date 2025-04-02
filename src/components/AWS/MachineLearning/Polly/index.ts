@@ -1,1 +1,1 @@
-export { default as Polly } from "./Polly";
+export { default as AWSMachineLearningPolly } from "./Polly";

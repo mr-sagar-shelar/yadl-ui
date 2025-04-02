@@ -1,1 +1,1 @@
-export { default as ElementalDelta } from "./ElementalDelta";
+export { default as AWSMediaServicesElementalDelta } from "./ElementalDelta";

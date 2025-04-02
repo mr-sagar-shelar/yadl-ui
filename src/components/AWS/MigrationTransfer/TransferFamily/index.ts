@@ -1,1 +1,1 @@
-export { default as TransferFamily } from "./TransferFamily";
+export { default as AWSMigrationTransferTransferFamily } from "./TransferFamily";

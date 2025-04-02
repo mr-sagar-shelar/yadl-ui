@@ -1,1 +1,1 @@
-export { default as InteractiveVideoService } from "./InteractiveVideoService";
+export { default as AWSMediaServicesInteractiveVideoService } from "./InteractiveVideoService";

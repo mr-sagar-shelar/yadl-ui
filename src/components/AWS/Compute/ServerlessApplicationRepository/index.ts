@@ -1,1 +1,1 @@
-export { default as ServerlessApplicationRepository } from "./ServerlessApplicationRepository";
+export { default as AWSComputeServerlessApplicationRepository } from "./ServerlessApplicationRepository";

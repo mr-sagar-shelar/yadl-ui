@@ -1,1 +1,1 @@
-export { default as SimpleStorageService } from "./SimpleStorageService";
+export { default as AWSStorageSimpleStorageService } from "./SimpleStorageService";

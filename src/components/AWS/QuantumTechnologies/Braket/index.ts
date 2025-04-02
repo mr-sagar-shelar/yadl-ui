@@ -1,1 +1,1 @@
-export { default as Braket } from "./Braket";
+export { default as AWSQuantumTechnologiesBraket } from "./Braket";

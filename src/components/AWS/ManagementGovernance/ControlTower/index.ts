@@ -1,1 +1,1 @@
-export { default as ControlTower } from "./ControlTower";
+export { default as AWSManagementGovernanceControlTower } from "./ControlTower";

@@ -1,1 +1,1 @@
-export { default as RDSonVMware } from "./RDSonVMware";
+export { default as AWSDatabaseRDSonVMware } from "./RDSonVMware";

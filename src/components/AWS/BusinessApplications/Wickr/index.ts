@@ -1,1 +1,1 @@
-export { default as Wickr } from "./Wickr";
+export { default as AWSBusinessApplicationsWickr } from "./Wickr";

@@ -1,1 +1,1 @@
-export { default as WAF } from "./WAF";
+export { default as AWSSecurityIdentityComplianceWAF } from "./WAF";

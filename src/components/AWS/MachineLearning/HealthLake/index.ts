@@ -1,1 +1,1 @@
-export { default as HealthLake } from "./HealthLake";
+export { default as AWSMachineLearningHealthLake } from "./HealthLake";

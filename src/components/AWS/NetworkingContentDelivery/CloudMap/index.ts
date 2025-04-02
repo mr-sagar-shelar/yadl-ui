@@ -1,1 +1,1 @@
-export { default as CloudMap } from "./CloudMap";
+export { default as AWSNetworkingContentDeliveryCloudMap } from "./CloudMap";

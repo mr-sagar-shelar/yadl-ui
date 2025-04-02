@@ -1,1 +1,1 @@
-export { default as ManagedServiceforPrometheus } from "./ManagedServiceforPrometheus";
+export { default as AWSManagementGovernanceManagedServiceforPrometheus } from "./ManagedServiceforPrometheus";

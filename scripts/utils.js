@@ -99,7 +99,7 @@ describe("${componentName} component", () => {
 };
 
 export const getIndexContents = (componentName, title) => {
-  return `export { default as ${title}${componentName} } from "./${componentName}";`;
+  return `export { default as ${title.replaceAll("/", "")}${componentName} } from "./${componentName}";`;
 };
 
 export const writeUndrawComponentSkeleton = (

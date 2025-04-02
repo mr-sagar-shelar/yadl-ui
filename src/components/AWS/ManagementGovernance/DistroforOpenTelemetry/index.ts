@@ -1,1 +1,1 @@
-export { default as DistroforOpenTelemetry } from "./DistroforOpenTelemetry";
+export { default as AWSManagementGovernanceDistroforOpenTelemetry } from "./DistroforOpenTelemetry";

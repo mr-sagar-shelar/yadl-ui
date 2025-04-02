@@ -1,1 +1,1 @@
-export { default as Lambda } from "./Lambda";
+export { default as AWSComputeLambda } from "./Lambda";

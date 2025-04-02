@@ -1,1 +1,1 @@
-export { default as CodeCatalyst } from "./CodeCatalyst";
+export { default as AWSDeveloperToolsCodeCatalyst } from "./CodeCatalyst";

@@ -1,1 +1,1 @@
-export { default as ThinkboxDeadline } from "./ThinkboxDeadline";
+export { default as AWSComputeThinkboxDeadline } from "./ThinkboxDeadline";

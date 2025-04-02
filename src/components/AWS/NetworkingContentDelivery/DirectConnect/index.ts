@@ -1,1 +1,1 @@
-export { default as DirectConnect } from "./DirectConnect";
+export { default as AWSNetworkingContentDeliveryDirectConnect } from "./DirectConnect";

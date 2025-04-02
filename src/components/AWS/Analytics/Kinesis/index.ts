@@ -1,1 +1,1 @@
-export { default as Kinesis } from "./Kinesis";
+export { default as AWSAnalyticsKinesis } from "./Kinesis";

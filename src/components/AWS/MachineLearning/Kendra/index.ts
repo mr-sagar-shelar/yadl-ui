@@ -1,1 +1,1 @@
-export { default as Kendra } from "./Kendra";
+export { default as AWSMachineLearningKendra } from "./Kendra";

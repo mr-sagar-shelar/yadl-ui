@@ -1,1 +1,1 @@
-export { default as TensorFlowonAWS } from "./TensorFlowonAWS";
+export { default as AWSMachineLearningTensorFlowonAWS } from "./TensorFlowonAWS";

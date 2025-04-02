@@ -1,1 +1,1 @@
-export { default as VerifiedAccess } from "./VerifiedAccess";
+export { default as AWSNetworkingContentDeliveryVerifiedAccess } from "./VerifiedAccess";

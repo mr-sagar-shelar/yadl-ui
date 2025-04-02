@@ -1,1 +1,1 @@
-export { default as IQ } from "./IQ";
+export { default as AWSCustomerEnablementIQ } from "./IQ";

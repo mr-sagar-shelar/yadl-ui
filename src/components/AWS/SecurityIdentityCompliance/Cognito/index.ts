@@ -1,1 +1,1 @@
-export { default as Cognito } from "./Cognito";
+export { default as AWSSecurityIdentityComplianceCognito } from "./Cognito";

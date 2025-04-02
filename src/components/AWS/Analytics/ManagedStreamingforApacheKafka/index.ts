@@ -1,1 +1,1 @@
-export { default as ManagedStreamingforApacheKafka } from "./ManagedStreamingforApacheKafka";
+export { default as AWSAnalyticsManagedStreamingforApacheKafka } from "./ManagedStreamingforApacheKafka";

@@ -1,1 +1,1 @@
-export { default as ThinkboxSequoia } from "./ThinkboxSequoia";
+export { default as AWSComputeThinkboxSequoia } from "./ThinkboxSequoia";
