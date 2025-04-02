@@ -1,1 +1,1 @@
-export { default as Kuberun } from "./Kuberun";
+export { default as GCPKuberun } from "./Kuberun";

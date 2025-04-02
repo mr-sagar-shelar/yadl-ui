@@ -1,1 +1,1 @@
-export { default as AssetInventory } from "./AssetInventory";
+export { default as GCPAssetInventory } from "./AssetInventory";

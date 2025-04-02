@@ -1,1 +1,1 @@
-export { default as CloudTasks } from "./CloudTasks";
+export { default as GCPCloudTasks } from "./CloudTasks";

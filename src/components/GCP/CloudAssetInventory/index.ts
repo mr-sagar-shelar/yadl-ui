@@ -1,1 +1,1 @@
-export { default as CloudAssetInventory } from "./CloudAssetInventory";
+export { default as GCPCloudAssetInventory } from "./CloudAssetInventory";

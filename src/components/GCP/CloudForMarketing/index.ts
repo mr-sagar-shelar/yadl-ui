@@ -1,1 +1,1 @@
-export { default as CloudForMarketing } from "./CloudForMarketing";
+export { default as GCPCloudForMarketing } from "./CloudForMarketing";

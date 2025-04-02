@@ -1,1 +1,1 @@
-export { default as ConfigurationManagement } from "./ConfigurationManagement";
+export { default as GCPConfigurationManagement } from "./ConfigurationManagement";

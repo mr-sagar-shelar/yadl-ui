@@ -1,1 +1,1 @@
-export { default as CloudExternalIpAddresses } from "./CloudExternalIpAddresses";
+export { default as GCPCloudExternalIpAddresses } from "./CloudExternalIpAddresses";

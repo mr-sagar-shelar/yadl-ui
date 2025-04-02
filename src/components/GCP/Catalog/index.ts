@@ -1,1 +1,1 @@
-export { default as Catalog } from "./Catalog";
+export { default as GCPCatalog } from "./Catalog";

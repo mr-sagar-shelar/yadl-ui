@@ -1,1 +1,1 @@
-export { default as PersistentDisk } from "./PersistentDisk";
+export { default as GCPPersistentDisk } from "./PersistentDisk";

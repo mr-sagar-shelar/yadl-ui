@@ -1,1 +1,1 @@
-export { default as TransferAppliance } from "./TransferAppliance";
+export { default as GCPTransferAppliance } from "./TransferAppliance";

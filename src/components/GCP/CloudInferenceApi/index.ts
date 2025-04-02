@@ -1,1 +1,1 @@
-export { default as CloudInferenceApi } from "./CloudInferenceApi";
+export { default as GCPCloudInferenceApi } from "./CloudInferenceApi";

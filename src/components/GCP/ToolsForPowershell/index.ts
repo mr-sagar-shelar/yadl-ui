@@ -1,1 +1,1 @@
-export { default as ToolsForPowershell } from "./ToolsForPowershell";
+export { default as GCPToolsForPowershell } from "./ToolsForPowershell";

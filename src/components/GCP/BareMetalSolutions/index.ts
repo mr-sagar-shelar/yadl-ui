@@ -1,1 +1,1 @@
-export { default as BareMetalSolutions } from "./BareMetalSolutions";
+export { default as GCPBareMetalSolutions } from "./BareMetalSolutions";

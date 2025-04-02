@@ -1,1 +1,1 @@
-export { default as CloudMonitoring } from "./CloudMonitoring";
+export { default as GCPCloudMonitoring } from "./CloudMonitoring";

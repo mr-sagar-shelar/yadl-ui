@@ -1,1 +1,1 @@
-export { default as AiPlatformUnified } from "./AiPlatformUnified";
+export { default as GCPAiPlatformUnified } from "./AiPlatformUnified";

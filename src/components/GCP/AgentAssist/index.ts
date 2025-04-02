@@ -1,1 +1,1 @@
-export { default as AgentAssist } from "./AgentAssist";
+export { default as GCPAgentAssist } from "./AgentAssist";

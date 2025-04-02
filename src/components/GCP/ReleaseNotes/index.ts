@@ -1,1 +1,1 @@
-export { default as ReleaseNotes } from "./ReleaseNotes";
+export { default as GCPReleaseNotes } from "./ReleaseNotes";

@@ -1,1 +1,1 @@
-export { default as AutomlTables } from "./AutomlTables";
+export { default as GCPAutomlTables } from "./AutomlTables";

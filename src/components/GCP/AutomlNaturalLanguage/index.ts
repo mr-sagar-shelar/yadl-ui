@@ -1,1 +1,1 @@
-export { default as AutomlNaturalLanguage } from "./AutomlNaturalLanguage";
+export { default as GCPAutomlNaturalLanguage } from "./AutomlNaturalLanguage";

@@ -1,1 +1,1 @@
-export { default as ManagedServiceForMicrosoftActiveDirectory } from "./ManagedServiceForMicrosoftActiveDirectory";
+export { default as GCPManagedServiceForMicrosoftActiveDirectory } from "./ManagedServiceForMicrosoftActiveDirectory";

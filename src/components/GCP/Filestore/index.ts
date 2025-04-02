@@ -1,1 +1,1 @@
-export { default as Filestore } from "./Filestore";
+export { default as GCPFilestore } from "./Filestore";

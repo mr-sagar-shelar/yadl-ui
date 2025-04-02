@@ -1,1 +1,1 @@
-export { default as NetworkTiers } from "./NetworkTiers";
+export { default as GCPNetworkTiers } from "./NetworkTiers";

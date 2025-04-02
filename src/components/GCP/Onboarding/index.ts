@@ -1,1 +1,1 @@
-export { default as UndrawOnboarding } from "./Onboarding";
+export { default as GCPOnboarding } from "./Onboarding";

@@ -1,1 +1,1 @@
-export { default as NetworkIntelligenceCenter } from "./NetworkIntelligenceCenter";
+export { default as GCPNetworkIntelligenceCenter } from "./NetworkIntelligenceCenter";

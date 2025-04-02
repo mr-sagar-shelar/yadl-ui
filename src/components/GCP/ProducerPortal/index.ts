@@ -1,1 +1,1 @@
-export { default as ProducerPortal } from "./ProducerPortal";
+export { default as GCPProducerPortal } from "./ProducerPortal";

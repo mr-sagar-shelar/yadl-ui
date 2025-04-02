@@ -1,1 +1,1 @@
-export { default as PartnerPortal } from "./PartnerPortal";
+export { default as GCPPartnerPortal } from "./PartnerPortal";

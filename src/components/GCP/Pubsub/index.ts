@@ -1,1 +1,1 @@
-export { default as Pubsub } from "./Pubsub";
+export { default as GCPPubsub } from "./Pubsub";

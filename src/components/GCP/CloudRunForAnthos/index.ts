@@ -1,1 +1,1 @@
-export { default as CloudRunForAnthos } from "./CloudRunForAnthos";
+export { default as GCPCloudRunForAnthos } from "./CloudRunForAnthos";

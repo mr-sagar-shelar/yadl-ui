@@ -1,1 +1,1 @@
-export { default as Stackdriver } from "./Stackdriver";
+export { default as GCPStackdriver } from "./Stackdriver";

@@ -1,1 +1,1 @@
-export { default as IdentityPlatform } from "./IdentityPlatform";
+export { default as GCPIdentityPlatform } from "./IdentityPlatform";

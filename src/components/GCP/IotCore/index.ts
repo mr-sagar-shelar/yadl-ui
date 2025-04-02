@@ -1,1 +1,1 @@
-export { default as IotCore } from "./IotCore";
+export { default as GCPIotCore } from "./IotCore";

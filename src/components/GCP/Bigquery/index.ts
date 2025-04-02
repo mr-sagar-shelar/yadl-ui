@@ -1,1 +1,1 @@
-export { default as Bigquery } from "./Bigquery";
+export { default as GCPBigquery } from "./Bigquery";

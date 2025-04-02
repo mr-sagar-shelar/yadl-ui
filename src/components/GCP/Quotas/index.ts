@@ -1,1 +1,1 @@
-export { default as Quotas } from "./Quotas";
+export { default as GCPQuotas } from "./Quotas";

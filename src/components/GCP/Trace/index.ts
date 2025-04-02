@@ -1,1 +1,1 @@
-export { default as Trace } from "./Trace";
+export { default as GCPTrace } from "./Trace";

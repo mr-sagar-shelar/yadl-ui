@@ -1,1 +1,1 @@
-export { default as ComputeEngine } from "./ComputeEngine";
+export { default as GCPComputeEngine } from "./ComputeEngine";

@@ -1,1 +1,1 @@
-export { default as DataQna } from "./DataQna";
+export { default as GCPDataQna } from "./DataQna";

@@ -1,1 +1,1 @@
-export { default as SecurityKeyEnforcement } from "./SecurityKeyEnforcement";
+export { default as GCPSecurityKeyEnforcement } from "./SecurityKeyEnforcement";

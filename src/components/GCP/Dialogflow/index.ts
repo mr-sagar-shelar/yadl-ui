@@ -1,1 +1,1 @@
-export { default as Dialogflow } from "./Dialogflow";
+export { default as GCPDialogflow } from "./Dialogflow";

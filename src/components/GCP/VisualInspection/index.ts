@@ -1,1 +1,1 @@
-export { default as VisualInspection } from "./VisualInspection";
+export { default as GCPVisualInspection } from "./VisualInspection";

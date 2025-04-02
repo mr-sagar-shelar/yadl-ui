@@ -1,1 +1,1 @@
-export { default as HealthcareNlpApi } from "./HealthcareNlpApi";
+export { default as GCPHealthcareNlpApi } from "./HealthcareNlpApi";

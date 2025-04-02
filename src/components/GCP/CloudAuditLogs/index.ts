@@ -1,1 +1,1 @@
-export { default as CloudAuditLogs } from "./CloudAuditLogs";
+export { default as GCPCloudAuditLogs } from "./CloudAuditLogs";

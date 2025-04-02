@@ -1,1 +1,1 @@
-export { default as VmwareEngine } from "./VmwareEngine";
+export { default as GCPVmwareEngine } from "./VmwareEngine";

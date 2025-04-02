@@ -1,1 +1,1 @@
-export { default as WorkloadIdentityPool } from "./WorkloadIdentityPool";
+export { default as GCPWorkloadIdentityPool } from "./WorkloadIdentityPool";

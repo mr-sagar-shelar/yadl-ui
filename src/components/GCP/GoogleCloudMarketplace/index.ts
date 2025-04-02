@@ -1,1 +1,1 @@
-export { default as GoogleCloudMarketplace } from "./GoogleCloudMarketplace";
+export { default as GCPGoogleCloudMarketplace } from "./GoogleCloudMarketplace";

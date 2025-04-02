@@ -1,1 +1,1 @@
-export { default as MigrateForComputeEngine } from "./MigrateForComputeEngine";
+export { default as GCPMigrateForComputeEngine } from "./MigrateForComputeEngine";

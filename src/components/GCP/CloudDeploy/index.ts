@@ -1,1 +1,1 @@
-export { default as CloudDeploy } from "./CloudDeploy";
+export { default as GCPCloudDeploy } from "./CloudDeploy";

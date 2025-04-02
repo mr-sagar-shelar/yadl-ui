@@ -1,1 +1,1 @@
-export { default as Datastore } from "./Datastore";
+export { default as GCPDatastore } from "./Datastore";

@@ -1,1 +1,1 @@
-export { default as Bigtable } from "./Bigtable";
+export { default as GCPBigtable } from "./Bigtable";

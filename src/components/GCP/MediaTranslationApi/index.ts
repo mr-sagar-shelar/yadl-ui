@@ -1,1 +1,1 @@
-export { default as MediaTranslationApi } from "./MediaTranslationApi";
+export { default as GCPMediaTranslationApi } from "./MediaTranslationApi";

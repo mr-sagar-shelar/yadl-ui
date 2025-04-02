@@ -1,1 +1,1 @@
-export { default as CloudOps } from "./CloudOps";
+export { default as GCPCloudOps } from "./CloudOps";

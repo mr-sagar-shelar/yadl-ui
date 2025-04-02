@@ -1,1 +1,1 @@
-export { default as CloudJobsApi } from "./CloudJobsApi";
+export { default as GCPCloudJobsApi } from "./CloudJobsApi";

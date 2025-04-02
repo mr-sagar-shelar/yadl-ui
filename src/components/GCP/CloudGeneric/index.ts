@@ -1,1 +1,1 @@
-export { default as CloudGeneric } from "./CloudGeneric";
+export { default as GCPCloudGeneric } from "./CloudGeneric";

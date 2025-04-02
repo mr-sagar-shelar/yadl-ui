@@ -1,1 +1,1 @@
-export { default as Firestore } from "./Firestore";
+export { default as GCPFirestore } from "./Firestore";

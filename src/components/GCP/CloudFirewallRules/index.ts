@@ -1,1 +1,1 @@
-export { default as CloudFirewallRules } from "./CloudFirewallRules";
+export { default as GCPCloudFirewallRules } from "./CloudFirewallRules";

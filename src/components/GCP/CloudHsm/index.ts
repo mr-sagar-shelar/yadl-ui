@@ -1,1 +1,1 @@
-export { default as CloudHsm } from "./CloudHsm";
+export { default as GCPCloudHsm } from "./CloudHsm";

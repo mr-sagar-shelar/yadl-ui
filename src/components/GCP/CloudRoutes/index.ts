@@ -1,1 +1,1 @@
-export { default as CloudRoutes } from "./CloudRoutes";
+export { default as GCPCloudRoutes } from "./CloudRoutes";

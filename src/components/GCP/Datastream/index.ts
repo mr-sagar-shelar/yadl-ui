@@ -1,1 +1,1 @@
-export { default as Datastream } from "./Datastream";
+export { default as GCPDatastream } from "./Datastream";

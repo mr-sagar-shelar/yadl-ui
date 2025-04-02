@@ -1,1 +1,1 @@
-export { default as IdentityawareProxy } from "./IdentityawareProxy";
+export { default as GCPIdentityawareProxy } from "./IdentityawareProxy";

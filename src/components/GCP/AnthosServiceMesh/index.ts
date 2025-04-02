@@ -1,1 +1,1 @@
-export { default as AnthosServiceMesh } from "./AnthosServiceMesh";
+export { default as GCPAnthosServiceMesh } from "./AnthosServiceMesh";

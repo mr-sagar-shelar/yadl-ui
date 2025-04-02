@@ -1,1 +1,1 @@
-export { default as CloudNaturalLanguageApi } from "./CloudNaturalLanguageApi";
+export { default as GCPCloudNaturalLanguageApi } from "./CloudNaturalLanguageApi";

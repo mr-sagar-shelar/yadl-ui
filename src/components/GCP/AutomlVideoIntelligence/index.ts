@@ -1,1 +1,1 @@
-export { default as AutomlVideoIntelligence } from "./AutomlVideoIntelligence";
+export { default as GCPAutomlVideoIntelligence } from "./AutomlVideoIntelligence";

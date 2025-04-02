@@ -1,1 +1,1 @@
-export { default as CloudLogging } from "./CloudLogging";
+export { default as GCPCloudLogging } from "./CloudLogging";

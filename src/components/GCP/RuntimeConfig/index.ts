@@ -1,1 +1,1 @@
-export { default as RuntimeConfig } from "./RuntimeConfig";
+export { default as GCPRuntimeConfig } from "./RuntimeConfig";

@@ -1,1 +1,1 @@
-export { default as CloudIds } from "./CloudIds";
+export { default as GCPCloudIds } from "./CloudIds";

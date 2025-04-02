@@ -1,1 +1,1 @@
-export { default as CloudEkm } from "./CloudEkm";
+export { default as GCPCloudEkm } from "./CloudEkm";

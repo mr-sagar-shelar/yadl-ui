@@ -1,1 +1,1 @@
-export { default as DataCatalog } from "./DataCatalog";
+export { default as GCPDataCatalog } from "./DataCatalog";

@@ -1,1 +1,1 @@
-export { default as PrivateConnectivity } from "./PrivateConnectivity";
+export { default as GCPPrivateConnectivity } from "./PrivateConnectivity";

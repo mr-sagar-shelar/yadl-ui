@@ -1,1 +1,1 @@
-export { default as SecretManager } from "./SecretManager";
+export { default as GCPSecretManager } from "./SecretManager";

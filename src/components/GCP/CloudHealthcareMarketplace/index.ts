@@ -1,1 +1,1 @@
-export { default as CloudHealthcareMarketplace } from "./CloudHealthcareMarketplace";
+export { default as GCPCloudHealthcareMarketplace } from "./CloudHealthcareMarketplace";

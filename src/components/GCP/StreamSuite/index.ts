@@ -1,1 +1,1 @@
-export { default as StreamSuite } from "./StreamSuite";
+export { default as GCPStreamSuite } from "./StreamSuite";

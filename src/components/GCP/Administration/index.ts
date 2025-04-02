@@ -1,1 +1,1 @@
-export { default as Administration } from "./Administration";
+export { default as GCPAdministration } from "./Administration";

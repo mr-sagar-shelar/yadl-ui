@@ -1,1 +1,1 @@
-export { default as VideoIntelligenceApi } from "./VideoIntelligenceApi";
+export { default as GCPVideoIntelligenceApi } from "./VideoIntelligenceApi";

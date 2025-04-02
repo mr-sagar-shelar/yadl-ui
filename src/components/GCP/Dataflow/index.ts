@@ -1,1 +1,1 @@
-export { default as Dataflow } from "./Dataflow";
+export { default as GCPDataflow } from "./Dataflow";

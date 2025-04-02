@@ -1,1 +1,1 @@
-export { default as CloudVisionApi } from "./CloudVisionApi";
+export { default as GCPCloudVisionApi } from "./CloudVisionApi";

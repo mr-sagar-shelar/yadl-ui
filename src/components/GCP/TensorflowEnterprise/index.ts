@@ -1,1 +1,1 @@
-export { default as TensorflowEnterprise } from "./TensorflowEnterprise";
+export { default as GCPTensorflowEnterprise } from "./TensorflowEnterprise";

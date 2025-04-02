@@ -46,4 +46,4 @@ function searchFile(dir, fileName) {
   }
 }
 
-searchFile("./src/components/Azure/", "Button.tsx");
+searchFile("./src/components/GCP/", "Button.tsx");

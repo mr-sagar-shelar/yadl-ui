@@ -1,1 +1,1 @@
-export { default as CloudMediaEdge } from "./CloudMediaEdge";
+export { default as GCPCloudMediaEdge } from "./CloudMediaEdge";

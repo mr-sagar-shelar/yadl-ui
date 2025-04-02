@@ -1,1 +1,1 @@
-export { default as ConnectivityTest } from "./ConnectivityTest";
+export { default as GCPConnectivityTest } from "./ConnectivityTest";

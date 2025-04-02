@@ -1,1 +1,1 @@
-export { default as Anthos } from "./Anthos";
+export { default as GCPAnthos } from "./Anthos";

@@ -1,1 +1,1 @@
-export { default as NetworkSecurity } from "./NetworkSecurity";
+export { default as GCPNetworkSecurity } from "./NetworkSecurity";

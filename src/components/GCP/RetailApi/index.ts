@@ -1,1 +1,1 @@
-export { default as RetailApi } from "./RetailApi";
+export { default as GCPRetailApi } from "./RetailApi";

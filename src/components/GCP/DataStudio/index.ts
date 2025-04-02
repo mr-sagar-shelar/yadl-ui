@@ -1,1 +1,1 @@
-export { default as DataStudio } from "./DataStudio";
+export { default as GCPDataStudio } from "./DataStudio";

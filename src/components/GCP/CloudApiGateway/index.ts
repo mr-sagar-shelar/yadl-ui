@@ -1,1 +1,1 @@
-export { default as CloudApiGateway } from "./CloudApiGateway";
+export { default as GCPCloudApiGateway } from "./CloudApiGateway";

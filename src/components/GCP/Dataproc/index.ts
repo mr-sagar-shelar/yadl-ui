@@ -1,1 +1,1 @@
-export { default as Dataproc } from "./Dataproc";
+export { default as GCPDataproc } from "./Dataproc";

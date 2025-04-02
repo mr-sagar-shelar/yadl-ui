@@ -1,1 +1,1 @@
-export { default as DataprocMetastore } from "./DataprocMetastore";
+export { default as GCPDataprocMetastore } from "./DataprocMetastore";

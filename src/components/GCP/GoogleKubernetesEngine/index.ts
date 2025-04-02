@@ -1,1 +1,1 @@
-export { default as GoogleKubernetesEngine } from "./GoogleKubernetesEngine";
+export { default as GCPGoogleKubernetesEngine } from "./GoogleKubernetesEngine";

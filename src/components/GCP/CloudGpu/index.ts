@@ -1,1 +1,1 @@
-export { default as CloudGpu } from "./CloudGpu";
+export { default as GCPCloudGpu } from "./CloudGpu";

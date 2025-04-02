@@ -1,1 +1,1 @@
-export { default as SecurityHealthAdvisor } from "./SecurityHealthAdvisor";
+export { default as GCPSecurityHealthAdvisor } from "./SecurityHealthAdvisor";

@@ -1,1 +1,1 @@
-export { default as Workflows } from "./Workflows";
+export { default as GCPWorkflows } from "./Workflows";

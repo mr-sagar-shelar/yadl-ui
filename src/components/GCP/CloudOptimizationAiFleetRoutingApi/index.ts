@@ -1,1 +1,1 @@
-export { default as CloudOptimizationAiFleetRoutingApi } from "./CloudOptimizationAiFleetRoutingApi";
+export { default as GCPCloudOptimizationAiFleetRoutingApi } from "./CloudOptimizationAiFleetRoutingApi";

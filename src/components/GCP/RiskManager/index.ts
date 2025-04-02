@@ -1,1 +1,1 @@
-export { default as RiskManager } from "./RiskManager";
+export { default as GCPRiskManager } from "./RiskManager";

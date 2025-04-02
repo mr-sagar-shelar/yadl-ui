@@ -1,1 +1,1 @@
-export { default as CloudScheduler } from "./CloudScheduler";
+export { default as GCPCloudScheduler } from "./CloudScheduler";

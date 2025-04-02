@@ -1,1 +1,1 @@
-export { default as UserPreferences } from "./UserPreferences";
+export { default as GCPUserPreferences } from "./UserPreferences";

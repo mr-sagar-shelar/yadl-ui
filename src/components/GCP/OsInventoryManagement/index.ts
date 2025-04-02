@@ -1,1 +1,1 @@
-export { default as OsInventoryManagement } from "./OsInventoryManagement";
+export { default as GCPOsInventoryManagement } from "./OsInventoryManagement";

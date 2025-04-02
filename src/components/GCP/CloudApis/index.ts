@@ -1,1 +1,1 @@
-export { default as CloudApis } from "./CloudApis";
+export { default as GCPCloudApis } from "./CloudApis";

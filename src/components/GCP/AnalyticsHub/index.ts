@@ -1,1 +1,1 @@
-export { default as AnalyticsHub } from "./AnalyticsHub";
+export { default as GCPAnalyticsHub } from "./AnalyticsHub";

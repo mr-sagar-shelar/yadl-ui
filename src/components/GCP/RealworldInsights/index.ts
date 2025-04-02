@@ -1,1 +1,1 @@
-export { default as RealworldInsights } from "./RealworldInsights";
+export { default as GCPRealworldInsights } from "./RealworldInsights";

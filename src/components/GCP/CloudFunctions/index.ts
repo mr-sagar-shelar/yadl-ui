@@ -1,1 +1,1 @@
-export { default as CloudFunctions } from "./CloudFunctions";
+export { default as GCPCloudFunctions } from "./CloudFunctions";

@@ -1,1 +1,1 @@
-export { default as AiHub } from "./AiHub";
+export { default as GCPAiHub } from "./AiHub";

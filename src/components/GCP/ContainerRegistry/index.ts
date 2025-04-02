@@ -1,1 +1,1 @@
-export { default as ContainerRegistry } from "./ContainerRegistry";
+export { default as GCPContainerRegistry } from "./ContainerRegistry";

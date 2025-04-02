@@ -1,1 +1,1 @@
-export { default as ApiMonetization } from "./ApiMonetization";
+export { default as GCPApiMonetization } from "./ApiMonetization";

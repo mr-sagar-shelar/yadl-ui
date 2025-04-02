@@ -1,1 +1,1 @@
-export { default as Automl } from "./Automl";
+export { default as GCPAutoml } from "./Automl";

@@ -1,1 +1,1 @@
-export { default as ApigeeApiPlatform } from "./ApigeeApiPlatform";
+export { default as GCPApigeeApiPlatform } from "./ApigeeApiPlatform";

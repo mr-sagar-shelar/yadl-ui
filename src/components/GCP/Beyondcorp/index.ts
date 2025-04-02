@@ -1,1 +1,1 @@
-export { default as Beyondcorp } from "./Beyondcorp";
+export { default as GCPBeyondcorp } from "./Beyondcorp";

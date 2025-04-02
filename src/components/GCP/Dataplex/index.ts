@@ -1,1 +1,1 @@
-export { default as Dataplex } from "./Dataplex";
+export { default as GCPDataplex } from "./Dataplex";

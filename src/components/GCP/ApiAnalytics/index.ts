@@ -1,1 +1,1 @@
-export { default as ApiAnalytics } from "./ApiAnalytics";
+export { default as GCPApiAnalytics } from "./ApiAnalytics";

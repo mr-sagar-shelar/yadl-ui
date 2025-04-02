@@ -1,1 +1,1 @@
-export { default as PartnerInterconnect } from "./PartnerInterconnect";
+export { default as GCPPartnerInterconnect } from "./PartnerInterconnect";

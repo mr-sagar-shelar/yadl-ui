@@ -1,1 +1,1 @@
-export { default as DocumentAi } from "./DocumentAi";
+export { default as GCPDocumentAi } from "./DocumentAi";

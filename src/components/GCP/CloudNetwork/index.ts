@@ -1,1 +1,1 @@
-export { default as CloudNetwork } from "./CloudNetwork";
+export { default as GCPCloudNetwork } from "./CloudNetwork";

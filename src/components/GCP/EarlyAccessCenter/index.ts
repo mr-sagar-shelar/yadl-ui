@@ -1,1 +1,1 @@
-export { default as EarlyAccessCenter } from "./EarlyAccessCenter";
+export { default as GCPEarlyAccessCenter } from "./EarlyAccessCenter";

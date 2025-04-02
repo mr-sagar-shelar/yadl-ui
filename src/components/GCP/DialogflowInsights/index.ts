@@ -1,1 +1,1 @@
-export { default as DialogflowInsights } from "./DialogflowInsights";
+export { default as GCPDialogflowInsights } from "./DialogflowInsights";

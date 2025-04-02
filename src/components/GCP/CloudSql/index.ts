@@ -1,1 +1,1 @@
-export { default as CloudSql } from "./CloudSql";
+export { default as GCPCloudSql } from "./CloudSql";

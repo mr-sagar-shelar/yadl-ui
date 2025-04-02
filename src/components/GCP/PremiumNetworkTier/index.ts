@@ -1,1 +1,1 @@
-export { default as PremiumNetworkTier } from "./PremiumNetworkTier";
+export { default as GCPPremiumNetworkTier } from "./PremiumNetworkTier";

@@ -1,1 +1,1 @@
-export { default as CloudRouter } from "./CloudRouter";
+export { default as GCPCloudRouter } from "./CloudRouter";

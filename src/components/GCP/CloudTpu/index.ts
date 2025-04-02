@@ -1,1 +1,1 @@
-export { default as CloudTpu } from "./CloudTpu";
+export { default as GCPCloudTpu } from "./CloudTpu";

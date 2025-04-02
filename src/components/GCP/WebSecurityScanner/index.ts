@@ -1,1 +1,1 @@
-export { default as WebSecurityScanner } from "./WebSecurityScanner";
+export { default as GCPWebSecurityScanner } from "./WebSecurityScanner";

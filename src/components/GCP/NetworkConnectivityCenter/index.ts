@@ -1,1 +1,1 @@
-export { default as NetworkConnectivityCenter } from "./NetworkConnectivityCenter";
+export { default as GCPNetworkConnectivityCenter } from "./NetworkConnectivityCenter";

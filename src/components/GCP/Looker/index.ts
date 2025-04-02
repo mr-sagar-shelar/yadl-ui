@@ -1,1 +1,1 @@
-export { default as Looker } from "./Looker";
+export { default as GCPLooker } from "./Looker";

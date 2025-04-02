@@ -1,1 +1,1 @@
-export { default as AutomlTranslation } from "./AutomlTranslation";
+export { default as GCPAutomlTranslation } from "./AutomlTranslation";

@@ -1,1 +1,1 @@
-export { default as ErrorReporting } from "./ErrorReporting";
+export { default as GCPErrorReporting } from "./ErrorReporting";

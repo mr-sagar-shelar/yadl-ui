@@ -1,1 +1,1 @@
-export { default as CloudVpn } from "./CloudVpn";
+export { default as GCPCloudVpn } from "./CloudVpn";

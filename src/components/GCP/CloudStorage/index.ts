@@ -1,1 +1,1 @@
-export { default as CloudStorage } from "./CloudStorage";
+export { default as GCPCloudStorage } from "./CloudStorage";

@@ -1,1 +1,1 @@
-export { default as GameServers } from "./GameServers";
+export { default as GCPGameServers } from "./GameServers";

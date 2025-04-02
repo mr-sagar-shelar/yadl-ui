@@ -1,1 +1,1 @@
-export { default as CloudEndpoints } from "./CloudEndpoints";
+export { default as GCPCloudEndpoints } from "./CloudEndpoints";

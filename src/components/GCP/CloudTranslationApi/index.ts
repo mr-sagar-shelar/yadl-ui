@@ -1,1 +1,1 @@
-export { default as CloudTranslationApi } from "./CloudTranslationApi";
+export { default as GCPCloudTranslationApi } from "./CloudTranslationApi";

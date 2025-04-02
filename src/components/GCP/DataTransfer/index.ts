@@ -1,1 +1,1 @@
-export { default as DataTransfer } from "./DataTransfer";
+export { default as GCPDataTransfer } from "./DataTransfer";

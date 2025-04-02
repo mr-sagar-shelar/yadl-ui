@@ -1,1 +1,1 @@
-export { default as CloudDataFusion } from "./CloudDataFusion";
+export { default as GCPCloudDataFusion } from "./CloudDataFusion";

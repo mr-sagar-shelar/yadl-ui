@@ -1,1 +1,1 @@
-export { default as MigrateForAnthos } from "./MigrateForAnthos";
+export { default as GCPMigrateForAnthos } from "./MigrateForAnthos";

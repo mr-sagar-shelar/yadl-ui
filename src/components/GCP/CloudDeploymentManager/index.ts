@@ -1,1 +1,1 @@
-export { default as CloudDeploymentManager } from "./CloudDeploymentManager";
+export { default as GCPCloudDeploymentManager } from "./CloudDeploymentManager";

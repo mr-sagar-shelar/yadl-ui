@@ -1,1 +1,1 @@
-export { default as ContactCenterAi } from "./ContactCenterAi";
+export { default as GCPContactCenterAi } from "./ContactCenterAi";

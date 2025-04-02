@@ -1,1 +1,1 @@
-export { default as CloudCode } from "./CloudCode";
+export { default as GCPCloudCode } from "./CloudCode";

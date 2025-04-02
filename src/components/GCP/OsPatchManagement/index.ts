@@ -1,1 +1,1 @@
-export { default as OsPatchManagement } from "./OsPatchManagement";
+export { default as GCPOsPatchManagement } from "./OsPatchManagement";

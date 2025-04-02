@@ -1,1 +1,1 @@
-export { default as Datalab } from "./Datalab";
+export { default as GCPDatalab } from "./Datalab";

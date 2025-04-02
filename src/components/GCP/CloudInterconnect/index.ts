@@ -1,1 +1,1 @@
-export { default as CloudInterconnect } from "./CloudInterconnect";
+export { default as GCPCloudInterconnect } from "./CloudInterconnect";

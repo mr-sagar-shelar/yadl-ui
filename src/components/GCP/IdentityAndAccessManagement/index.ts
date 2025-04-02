@@ -1,1 +1,1 @@
-export { default as IdentityAndAccessManagement } from "./IdentityAndAccessManagement";
+export { default as GCPIdentityAndAccessManagement } from "./IdentityAndAccessManagement";

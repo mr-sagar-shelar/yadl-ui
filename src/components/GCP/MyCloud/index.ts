@@ -1,1 +1,1 @@
-export { default as MyCloud } from "./MyCloud";
+export { default as GCPMyCloud } from "./MyCloud";

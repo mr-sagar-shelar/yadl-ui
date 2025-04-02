@@ -1,1 +1,1 @@
-export { default as FreeTrial } from "./FreeTrial";
+export { default as GCPFreeTrial } from "./FreeTrial";

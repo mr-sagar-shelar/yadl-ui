@@ -1,1 +1,1 @@
-export { default as DeveloperPortal } from "./DeveloperPortal";
+export { default as GCPDeveloperPortal } from "./DeveloperPortal";

@@ -1,1 +1,1 @@
-export { default as Eventarc } from "./Eventarc";
+export { default as GCPEventarc } from "./Eventarc";

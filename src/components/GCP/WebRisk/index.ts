@@ -1,1 +1,1 @@
-export { default as WebRisk } from "./WebRisk";
+export { default as GCPWebRisk } from "./WebRisk";

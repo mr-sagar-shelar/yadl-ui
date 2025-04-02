@@ -1,1 +1,1 @@
-export { default as DataLabeling } from "./DataLabeling";
+export { default as GCPDataLabeling } from "./DataLabeling";

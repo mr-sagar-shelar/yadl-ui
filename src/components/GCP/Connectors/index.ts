@@ -1,1 +1,1 @@
-export { default as Connectors } from "./Connectors";
+export { default as GCPConnectors } from "./Connectors";

@@ -1,1 +1,1 @@
-export { default as CloudTestLab } from "./CloudTestLab";
+export { default as GCPCloudTestLab } from "./CloudTestLab";

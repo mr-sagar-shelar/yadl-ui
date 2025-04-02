@@ -1,1 +1,1 @@
-export { default as CloudComposer } from "./CloudComposer";
+export { default as GCPCloudComposer } from "./CloudComposer";

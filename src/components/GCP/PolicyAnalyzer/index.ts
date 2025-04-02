@@ -1,1 +1,1 @@
-export { default as PolicyAnalyzer } from "./PolicyAnalyzer";
+export { default as GCPPolicyAnalyzer } from "./PolicyAnalyzer";

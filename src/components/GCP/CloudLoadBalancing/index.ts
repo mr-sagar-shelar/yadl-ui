@@ -1,1 +1,1 @@
-export { default as CloudLoadBalancing } from "./CloudLoadBalancing";
+export { default as GCPCloudLoadBalancing } from "./CloudLoadBalancing";

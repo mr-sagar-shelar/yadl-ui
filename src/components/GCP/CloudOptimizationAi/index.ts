@@ -1,1 +1,1 @@
-export { default as CloudOptimizationAi } from "./CloudOptimizationAi";
+export { default as GCPCloudOptimizationAi } from "./CloudOptimizationAi";

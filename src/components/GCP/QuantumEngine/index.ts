@@ -1,1 +1,1 @@
-export { default as QuantumEngine } from "./QuantumEngine";
+export { default as GCPQuantumEngine } from "./QuantumEngine";

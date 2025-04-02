@@ -1,1 +1,1 @@
-export { default as GoogleMapsPlatform } from "./GoogleMapsPlatform";
+export { default as GCPGoogleMapsPlatform } from "./GoogleMapsPlatform";

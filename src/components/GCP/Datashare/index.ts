@@ -1,1 +1,1 @@
-export { default as Datashare } from "./Datashare";
+export { default as GCPDatashare } from "./Datashare";

@@ -1,1 +1,1 @@
-export { default as ArtifactRegistry } from "./ArtifactRegistry";
+export { default as GCPArtifactRegistry } from "./ArtifactRegistry";

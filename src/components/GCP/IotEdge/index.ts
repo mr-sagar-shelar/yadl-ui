@@ -1,1 +1,1 @@
-export { default as IotEdge } from "./IotEdge";
+export { default as GCPIotEdge } from "./IotEdge";

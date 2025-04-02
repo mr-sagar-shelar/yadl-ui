@@ -1,1 +1,1 @@
-export { default as GkeOnprem } from "./GkeOnprem";
+export { default as GCPGkeOnprem } from "./GkeOnprem";

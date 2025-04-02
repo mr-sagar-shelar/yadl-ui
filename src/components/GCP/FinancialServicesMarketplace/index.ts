@@ -1,1 +1,1 @@
-export { default as FinancialServicesMarketplace } from "./FinancialServicesMarketplace";
+export { default as GCPFinancialServicesMarketplace } from "./FinancialServicesMarketplace";

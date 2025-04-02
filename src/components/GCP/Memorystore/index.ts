@@ -1,1 +1,1 @@
-export { default as Memorystore } from "./Memorystore";
+export { default as GCPMemorystore } from "./Memorystore";

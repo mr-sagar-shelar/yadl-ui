@@ -1,1 +1,1 @@
-export { default as AutomlVision } from "./AutomlVision";
+export { default as GCPAutomlVision } from "./AutomlVision";

@@ -1,1 +1,1 @@
-export { default as Permissions } from "./Permissions";
+export { default as GCPPermissions } from "./Permissions";

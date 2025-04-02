@@ -1,1 +1,1 @@
-export { default as CloudSpanner } from "./CloudSpanner";
+export { default as GCPCloudSpanner } from "./CloudSpanner";

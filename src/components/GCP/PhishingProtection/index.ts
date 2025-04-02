@@ -1,1 +1,1 @@
-export { default as PhishingProtection } from "./PhishingProtection";
+export { default as GCPPhishingProtection } from "./PhishingProtection";

@@ -1,1 +1,1 @@
-export { default as CloudNat } from "./CloudNat";
+export { default as GCPCloudNat } from "./CloudNat";

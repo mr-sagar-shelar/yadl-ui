@@ -1,1 +1,1 @@
-export { default as CloudBuild } from "./CloudBuild";
+export { default as GCPCloudBuild } from "./CloudBuild";

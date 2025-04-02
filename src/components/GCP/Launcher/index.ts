@@ -1,1 +1,1 @@
-export { default as Launcher } from "./Launcher";
+export { default as GCPLauncher } from "./Launcher";

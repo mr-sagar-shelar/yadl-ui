@@ -1,1 +1,1 @@
-export { default as AssuredWorkloads } from "./AssuredWorkloads";
+export { default as GCPAssuredWorkloads } from "./AssuredWorkloads";

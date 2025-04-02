@@ -1,1 +1,1 @@
-export { default as ApigeeSense } from "./ApigeeSense";
+export { default as GCPApigeeSense } from "./ApigeeSense";

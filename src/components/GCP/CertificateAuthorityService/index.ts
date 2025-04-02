@@ -1,1 +1,1 @@
-export { default as CertificateAuthorityService } from "./CertificateAuthorityService";
+export { default as GCPCertificateAuthorityService } from "./CertificateAuthorityService";

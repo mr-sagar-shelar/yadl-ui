@@ -1,1 +1,1 @@
-export { default as DataLayers } from "./DataLayers";
+export { default as GCPDataLayers } from "./DataLayers";

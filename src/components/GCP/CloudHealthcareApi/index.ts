@@ -1,1 +1,1 @@
-export { default as CloudHealthcareApi } from "./CloudHealthcareApi";
+export { default as GCPCloudHealthcareApi } from "./CloudHealthcareApi";

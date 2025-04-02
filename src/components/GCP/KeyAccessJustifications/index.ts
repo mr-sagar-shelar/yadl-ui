@@ -1,1 +1,1 @@
-export { default as KeyAccessJustifications } from "./KeyAccessJustifications";
+export { default as GCPKeyAccessJustifications } from "./KeyAccessJustifications";

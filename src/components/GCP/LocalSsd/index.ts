@@ -1,1 +1,1 @@
-export { default as LocalSsd } from "./LocalSsd";
+export { default as GCPLocalSsd } from "./LocalSsd";

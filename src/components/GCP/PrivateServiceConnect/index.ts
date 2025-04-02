@@ -1,1 +1,1 @@
-export { default as PrivateServiceConnect } from "./PrivateServiceConnect";
+export { default as GCPPrivateServiceConnect } from "./PrivateServiceConnect";

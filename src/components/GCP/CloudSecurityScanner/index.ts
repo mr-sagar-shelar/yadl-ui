@@ -1,1 +1,1 @@
-export { default as CloudSecurityScanner } from "./CloudSecurityScanner";
+export { default as GCPCloudSecurityScanner } from "./CloudSecurityScanner";

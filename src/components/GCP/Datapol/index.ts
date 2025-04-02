@@ -1,1 +1,1 @@
-export { default as Datapol } from "./Datapol";
+export { default as GCPDatapol } from "./Datapol";

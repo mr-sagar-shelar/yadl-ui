@@ -1,1 +1,1 @@
-export { default as CloudArmor } from "./CloudArmor";
+export { default as GCPCloudArmor } from "./CloudArmor";

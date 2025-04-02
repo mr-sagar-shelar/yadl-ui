@@ -1,1 +1,1 @@
-export { default as ServiceDiscovery } from "./ServiceDiscovery";
+export { default as GCPServiceDiscovery } from "./ServiceDiscovery";

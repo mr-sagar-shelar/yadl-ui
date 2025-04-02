@@ -1,1 +1,1 @@
-export { default as CloudRun } from "./CloudRun";
+export { default as GCPCloudRun } from "./CloudRun";

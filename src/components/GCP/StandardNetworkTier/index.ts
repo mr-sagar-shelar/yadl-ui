@@ -1,1 +1,1 @@
-export { default as StandardNetworkTier } from "./StandardNetworkTier";
+export { default as GCPStandardNetworkTier } from "./StandardNetworkTier";

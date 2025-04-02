@@ -1,1 +1,1 @@
-export { default as DataLossPreventionApi } from "./DataLossPreventionApi";
+export { default as GCPDataLossPreventionApi } from "./DataLossPreventionApi";

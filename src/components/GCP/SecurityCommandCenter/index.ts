@@ -1,1 +1,1 @@
-export { default as SecurityCommandCenter } from "./SecurityCommandCenter";
+export { default as GCPSecurityCommandCenter } from "./SecurityCommandCenter";

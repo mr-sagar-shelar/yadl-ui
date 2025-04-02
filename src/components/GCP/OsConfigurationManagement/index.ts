@@ -1,1 +1,1 @@
-export { default as OsConfigurationManagement } from "./OsConfigurationManagement";
+export { default as GCPOsConfigurationManagement } from "./OsConfigurationManagement";

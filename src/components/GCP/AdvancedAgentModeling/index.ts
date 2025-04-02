@@ -1,1 +1,1 @@
-export { default as AdvancedAgentModeling } from "./AdvancedAgentModeling";
+export { default as GCPAdvancedAgentModeling } from "./AdvancedAgentModeling";

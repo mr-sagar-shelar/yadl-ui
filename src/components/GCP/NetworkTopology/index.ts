@@ -1,1 +1,1 @@
-export { default as NetworkTopology } from "./NetworkTopology";
+export { default as GCPNetworkTopology } from "./NetworkTopology";

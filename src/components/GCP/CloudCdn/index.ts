@@ -1,1 +1,1 @@
-export { default as CloudCdn } from "./CloudCdn";
+export { default as GCPCloudCdn } from "./CloudCdn";

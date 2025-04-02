@@ -1,1 +1,1 @@
-export { default as Speechtotext } from "./Speechtotext";
+export { default as GCPSpeechtotext } from "./Speechtotext";

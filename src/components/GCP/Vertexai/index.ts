@@ -1,1 +1,1 @@
-export { default as Vertexai } from "./Vertexai";
+export { default as GCPVertexai } from "./Vertexai";

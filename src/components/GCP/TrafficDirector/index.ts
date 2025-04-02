@@ -1,1 +1,1 @@
-export { default as TrafficDirector } from "./TrafficDirector";
+export { default as GCPTrafficDirector } from "./TrafficDirector";

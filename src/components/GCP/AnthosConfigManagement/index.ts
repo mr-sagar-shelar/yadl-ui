@@ -1,1 +1,1 @@
-export { default as AnthosConfigManagement } from "./AnthosConfigManagement";
+export { default as GCPAnthosConfigManagement } from "./AnthosConfigManagement";

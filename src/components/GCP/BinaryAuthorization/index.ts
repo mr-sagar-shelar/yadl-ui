@@ -1,1 +1,1 @@
-export { default as BinaryAuthorization } from "./BinaryAuthorization";
+export { default as GCPBinaryAuthorization } from "./BinaryAuthorization";

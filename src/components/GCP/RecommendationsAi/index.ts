@@ -1,1 +1,1 @@
-export { default as RecommendationsAi } from "./RecommendationsAi";
+export { default as GCPRecommendationsAi } from "./RecommendationsAi";

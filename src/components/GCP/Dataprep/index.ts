@@ -1,1 +1,1 @@
-export { default as Dataprep } from "./Dataprep";
+export { default as GCPDataprep } from "./Dataprep";

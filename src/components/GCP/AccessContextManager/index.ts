@@ -1,1 +1,1 @@
-export { default as AccessContextManager } from "./AccessContextManager";
+export { default as GCPAccessContextManager } from "./AccessContextManager";
