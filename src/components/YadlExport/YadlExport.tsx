@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import getBlobDuration from "get-blob-duration";
 import { fixWebmDuration } from "@fix-webm-duration/fix";
 
-export type BoxProps = {
+export type YadlExportProps = {
   text?: string;
   width?: number;
   height?: number;
@@ -20,7 +20,7 @@ enum ConversionState {
   completed = 2,
 }
 
-const Box = (props: BoxProps) => {
+const YadlExport = (props: YadlExportProps) => {
   const { width = 200, height = 200 } = props;
   let mediaStream: MediaStream;
   let videoEl: HTMLVideoElement;
@@ -36,6 +36,7 @@ const Box = (props: BoxProps) => {
   const [frameRate, setFrameRate] = useState<number>(15);
   const [videoBufferData, setVideoBufferData] = useState<any>();
   const [convertionMessage, setConvertionMessage] = useState<string>("");
+  console.log(setConvertionMessage);
 
   const startRecording = async () => {
     const width = window.innerWidth || 1280;
@@ -100,12 +101,14 @@ const Box = (props: BoxProps) => {
       });
       // @ts-ignore
       ffmpeg.on("progress", ({ progress, time }) => {
+        console.info(`progress ${progress}, ${time}`);
         setConvertionMessage(`${progress * 100} %, time: ${time / 1000000} s`);
       });
       await ffmpeg.load({
         coreURL: "/assets/core-mt/package/dist/umd/ffmpeg-core.js",
       });
       setConvertionMessage(`Loading complete...`);
+      console.log(`Loading complete...`);
     }
     const name = "toConvert.webm";
     await ffmpeg.writeFile(
@@ -113,14 +116,18 @@ const Box = (props: BoxProps) => {
       await fetchFile(URL.createObjectURL(videoBufferData)),
     );
     setConvertionMessage(`Start transcoding`);
+    console.log(`Start transcoding`);
 
     await ffmpeg.exec(["-i", name, "output.mp4"]);
     setConvertionMessage(`Completed transcoding`);
+    console.log(`Completed transcoding`);
     setConversionState(ConversionState.completed);
 
     const data = await ffmpeg.readFile("output.mp4");
+    console.log(`file read`);
     const video = document.getElementById("mp4-video");
     if (video) {
+      console.log(`video source setting`);
       // @ts-ignore
       video.src = URL.createObjectURL(
         new Blob([data.buffer], { type: "video/mp4" }),
@@ -228,4 +235,4 @@ const Box = (props: BoxProps) => {
   );
 };
 
-export default Box;
+export default YadlExport;

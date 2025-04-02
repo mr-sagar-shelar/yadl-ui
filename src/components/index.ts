@@ -8,3 +8,4 @@ export * from "./Themeisle";
 export * from "./GCP";
 export * from "./AWS";
 export * from "./Azure";
+export * from "./YadlExport";
