@@ -18,6 +18,7 @@ import { transform } from "@svgr/core";
   await page.goto("https://undraw.co/illustrations");
   await page.waitForLoadState("domcontentloaded");
   let indexFileContents = "";
+  let fileNames = "";
 
   for (let i = 0; i < 36; i++) {
     const allIllustrations = await page
@@ -25,14 +26,20 @@ import { transform } from "@svgr/core";
       .nth(2)
       .locator(".bg-gray-50");
     const illustrationCount = await allIllustrations.count();
-    console.log(`********* illustrations = ${illustrationCount}`);
+    // console.log(`********* illustrations = ${illustrationCount}`);
 
     // for (let i = 0; i < illustrationCount; i++) {
-    for (let i = 0; i < illustrationCount; i++) {
-      const currentIcon = await allIllustrations.nth(i);
+    for (let j = 0; j < illustrationCount; j++) {
+      const currentIcon = await allIllustrations.nth(j);
       let iconName = await currentIcon.allTextContents();
+      iconName = `${iconName}`.trim();
+      if (iconName.length < 50) {
+        console.log(`$${i + 1}-${j + 1}: ${iconName}`);
+        fileNames = `${fileNames}\n$${i}-${j}: ${iconName}";`;
+      } else {
+        fileNames = `${fileNames}\nIssue On:  $${i}-${j}";`;
+      }
       iconName = toPascalCase(iconName[0]);
-      // console.log(`${iconName}`);
 
       let svgCode = await currentIcon
         .getByRole("img")
@@ -62,9 +69,7 @@ import { transform } from "@svgr/core";
           },
           { componentName: iconName },
         );
-
-        // console.log(`${componentCode}`);
-
+        console.log(`${componentCode}`);
         writeUndrawComponentSkeleton(
           iconName,
           `./src/components/Undraw/${iconName}`,
@@ -80,6 +85,7 @@ import { transform } from "@svgr/core";
       indexFileContents = `${indexFileContents}\nexport * from "./${iconName}";`;
     }
 
+    // writeIndexFile(fileNames, `./src/components/fileNames.txt`);
     writeIndexFile(indexFileContents, `./src/components/Undraw/index.ts`);
 
     await page.waitForTimeout(1000);

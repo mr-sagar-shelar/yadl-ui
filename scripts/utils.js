@@ -157,21 +157,25 @@ export const writeUndrawComponentSkeleton = (
   //     }
   //   },
   // );
-  // fs.writeFile(`${dir}/index.ts`, getIndexContents(componentName), (err) => {
-  //   if (err) {
-  //     console.error(err);
-  //   } else {
-  //     // file written successfully
-  //   }
-  // });
+  fs.writeFile(
+    `${dir}/index.ts`,
+    getIndexContents(componentName, "Undraw"),
+    (err) => {
+      if (err) {
+        console.error(err);
+      } else {
+        // file written successfully
+      }
+    },
+  );
 
-  // fs.writeFile(`${dir}/${componentName}.tsx`, componentCode, (err) => {
-  //   if (err) {
-  //     console.error(err);
-  //   } else {
-  //     // file written successfully
-  //   }
-  // });
+  fs.writeFile(`${dir}/${componentName}.tsx`, componentCode, (err) => {
+    if (err) {
+      console.error(err);
+    } else {
+      // file written successfully
+    }
+  });
 };
 
 export const writeIndexFile = (contents, filePath) => {
