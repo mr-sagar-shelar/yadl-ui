@@ -240,6 +240,4 @@ export const IconNames: IconNames = {
   skillIconYew: "SkillIconYew",
   skillIconZig: "SkillIconZig",
   skillIconp5js: "SkillIconp5js",
-  athena: "Athena",
-  cleanRooms: "CleanRooms",
 };

@@ -10,17 +10,17 @@ export type SearchSkillIconsProps = {
 const SearchSkillIcons = (props: SearchSkillIconsProps) => {
   console.log(Object.keys(IconNames).length);
   const AllIcons = useMemo(() => {
-    const listItems = Object.keys(IconNames).map((iconName) => {
-      const iconNamePresent: boolean = IconNames[iconName] != undefined;
-      let Icon = null;
+    const listItems = Object.values(IconNames).map((iconName) => {
+      // @ts-ignore
+      let Icon = ICONS[iconName];
 
-      if (iconNamePresent) {
+      if (Icon) {
         // @ts-ignore
-        Icon = ICONS[IconNames[iconName]] ?? null;
+        return (
+          <div key={iconName}>{Icon && <Icon width={100} height={100} />}</div>
+        );
       }
-      return (
-        <div key={iconName}>{Icon && <Icon width={100} height={100} />}</div>
-      );
+      return null;
     });
     return listItems;
   }, []);
