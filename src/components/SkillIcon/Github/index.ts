@@ -1,0 +1,1 @@
+export { default as SkillIconGithub } from "./Github";

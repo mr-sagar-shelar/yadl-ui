@@ -3,7 +3,7 @@ export * from "./Preview";
 export * from "./Undraw/Undraw";
 export * from "./Undraw";
 export * from "./Animation";
-export * from "./SkillSet";
+export * from "./SkillIcon";
 export * from "./Themeisle";
 export * from "./GCP";
 export * from "./AWS";

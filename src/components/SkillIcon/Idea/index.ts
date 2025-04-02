@@ -1,0 +1,1 @@
+export { default as SkillIconIdea } from "./Idea";

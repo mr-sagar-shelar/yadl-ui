@@ -1,0 +1,1 @@
+export { default as SkillIconDynamoDB } from "./DynamoDB";

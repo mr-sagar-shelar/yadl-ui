@@ -1,0 +1,1 @@
+export { default as SkillIconTailwindCSS } from "./TailwindCSS";

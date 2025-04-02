@@ -1,0 +1,1 @@
+export { default as SkillIconEmber } from "./Ember";

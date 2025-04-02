@@ -46,7 +46,7 @@ import { transform } from "@svgr/core";
                 fileName,
                 `./src/components/SkillSet/${fileName}`,
                 componentCode,
-                "SkillSet",
+                "SkillIcon",
                 "https://skillicons.dev",
               );
             } catch (error) {

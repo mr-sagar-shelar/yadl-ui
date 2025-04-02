@@ -1,0 +1,1 @@
+export { default as SkillIconElectron } from "./Electron";

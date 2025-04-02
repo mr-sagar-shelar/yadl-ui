@@ -1,0 +1,1 @@
+export { default as SkillIconp5js } from "./p5js";

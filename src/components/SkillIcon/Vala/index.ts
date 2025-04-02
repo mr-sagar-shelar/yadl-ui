@@ -1,0 +1,1 @@
+export { default as SkillIconVala } from "./Vala";

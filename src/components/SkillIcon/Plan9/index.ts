@@ -1,0 +1,1 @@
+export { default as SkillIconPlan9 } from "./Plan9";

@@ -1,0 +1,1 @@
+export { default as SkillIconSwift } from "./Swift";

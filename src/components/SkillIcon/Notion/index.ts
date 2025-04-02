@@ -1,0 +1,1 @@
+export { default as SkillIconNotion } from "./Notion";

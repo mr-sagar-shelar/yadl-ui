@@ -1,0 +1,1 @@
+export { default as SkillIconAtom } from "./Atom";

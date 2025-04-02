@@ -98,8 +98,8 @@ describe("${componentName} component", () => {
 `;
 };
 
-export const getIndexContents = (componentName) => {
-  return `export { default as ${componentName} } from "./${componentName}";`;
+export const getIndexContents = (componentName, title) => {
+  return `export { default as ${title}${componentName} } from "./${componentName}";`;
 };
 
 export const writeUndrawComponentSkeleton = (
@@ -228,30 +228,34 @@ export const writeComponentSkeleton = (
       }
     },
   );
-  // fs.writeFile(
-  //   `${dir}/__test__/${componentName}.test.tsx`,
-  //   getTestFileContents(componentName),
-  //   (err) => {
-  //     if (err) {
-  //       console.error(err);
-  //     } else {
-  //       // file written successfully
-  //     }
-  //   },
-  // );
-  // fs.writeFile(`${dir}/index.ts`, getIndexContents(componentName), (err) => {
-  //   if (err) {
-  //     console.error(err);
-  //   } else {
-  //     // file written successfully
-  //   }
-  // });
+  fs.writeFile(
+    `${dir}/__test__/${componentName}.test.tsx`,
+    getTestFileContents(componentName),
+    (err) => {
+      if (err) {
+        console.error(err);
+      } else {
+        // file written successfully
+      }
+    },
+  );
+  fs.writeFile(
+    `${dir}/index.ts`,
+    getIndexContents(componentName, title),
+    (err) => {
+      if (err) {
+        console.error(err);
+      } else {
+        // file written successfully
+      }
+    },
+  );
 
-  // fs.writeFile(`${dir}/${componentName}.tsx`, componentCode, (err) => {
-  //   if (err) {
-  //     console.error(err);
-  //   } else {
-  //     // file written successfully
-  //   }
-  // });
+  fs.writeFile(`${dir}/${componentName}.tsx`, componentCode, (err) => {
+    if (err) {
+      console.error(err);
+    } else {
+      // file written successfully
+    }
+  });
 };

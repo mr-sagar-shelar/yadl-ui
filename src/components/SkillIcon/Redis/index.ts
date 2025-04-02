@@ -1,0 +1,1 @@
+export { default as SkillIconRedis } from "./Redis";
