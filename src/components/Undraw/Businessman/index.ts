@@ -1,1 +1,1 @@
-export { default as UndrawBusinessMan } from "./BusinessMan";
+export { default as UndrawBusinessMan } from "./Businessman";
