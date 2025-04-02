@@ -1,1 +1,1 @@
-export { default as Smartphone } from "./Smartphone";
+export { default as UndrawSmartphone } from "./Smartphone";

@@ -1,1 +1,1 @@
-export { default as SwipeProfiles } from "./SwipeProfiles";
+export { default as UndrawSwipeProfiles } from "./SwipeProfiles";

@@ -1,1 +1,1 @@
-export { default as ModernProfessional } from "./ModernProfessional";
+export { default as UndrawModernProfessional } from "./ModernProfessional";

@@ -1,1 +1,1 @@
-export { default as ModernArt } from "./ModernArt";
+export { default as UndrawModernArt } from "./ModernArt";

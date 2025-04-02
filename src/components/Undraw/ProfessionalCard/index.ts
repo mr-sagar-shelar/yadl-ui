@@ -1,1 +1,1 @@
-export { default as ProfessionalCard } from "./ProfessionalCard";
+export { default as UndrawProfessionalCard } from "./ProfessionalCard";

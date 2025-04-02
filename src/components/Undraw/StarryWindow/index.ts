@@ -1,1 +1,1 @@
-export { default as StarryWindow } from "./StarryWindow";
+export { default as UndrawStarryWindow } from "./StarryWindow";

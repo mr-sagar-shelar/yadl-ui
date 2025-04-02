@@ -1,1 +1,1 @@
-export { default as SiteContent } from "./SiteContent";
+export { default as UndrawSiteContent } from "./SiteContent";

@@ -1,1 +1,1 @@
-export { default as WallPost } from "./WallPost";
+export { default as UndrawWallPost } from "./WallPost";

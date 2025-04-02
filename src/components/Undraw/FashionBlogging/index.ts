@@ -1,1 +1,1 @@
-export { default as FashionBlogging } from "./FashionBlogging";
+export { default as UndrawFashionBlogging } from "./FashionBlogging";

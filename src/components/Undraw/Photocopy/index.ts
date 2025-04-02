@@ -1,1 +1,1 @@
-export { default as Photocopy } from "./Photocopy";
+export { default as UndrawPhotocopy } from "./Photocopy";

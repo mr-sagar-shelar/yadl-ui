@@ -1,1 +1,1 @@
-export { default as TakeOutBoxes } from "./TakeOutBoxes";
+export { default as UndrawTakeOutBoxes } from "./TakeOutBoxes";

@@ -1,1 +1,1 @@
-export { default as InformedDecision } from "./InformedDecision";
+export { default as UndrawInformedDecision } from "./InformedDecision";

@@ -1,1 +1,1 @@
-export { default as MonthlyUsers } from "./MonthlyUsers";
+export { default as UndrawMonthlyUsers } from "./MonthlyUsers";

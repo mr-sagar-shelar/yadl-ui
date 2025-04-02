@@ -1,1 +1,1 @@
-export { default as HappyWomenDayHappyWomenDay } from "./HappyWomenDayHappyWomenDay";
+export { default as UndrawHappyWomenDayHappyWomenDay } from "./HappyWomenDayHappyWomenDay";

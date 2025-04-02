@@ -1,1 +1,1 @@
-export { default as VoiceControlVoiceControl } from "./VoiceControlVoiceControl";
+export { default as UndrawVoiceControlVoiceControl } from "./VoiceControlVoiceControl";

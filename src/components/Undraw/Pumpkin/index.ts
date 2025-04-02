@@ -1,1 +1,1 @@
-export { default as Pumpkin } from "./Pumpkin";
+export { default as UndrawPumpkin } from "./Pumpkin";

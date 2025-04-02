@@ -1,1 +1,1 @@
-export { default as BestPlace } from "./BestPlace";
+export { default as UndrawBestPlace } from "./BestPlace";

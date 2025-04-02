@@ -1,1 +1,1 @@
-export { default as MobileBrowsers } from "./MobileBrowsers";
+export { default as UndrawMobileBrowsers } from "./MobileBrowsers";

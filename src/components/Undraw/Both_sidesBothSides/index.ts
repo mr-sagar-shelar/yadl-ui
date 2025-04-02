@@ -1,1 +1,1 @@
-export { default as Both_sidesBothSides } from "./Both_sidesBothSides";
+export { default as UndrawBoth_sidesBothSides } from "./Both_sidesBothSides";

@@ -1,1 +1,1 @@
-export { default as QualityTime } from "./QualityTime";
+export { default as UndrawQualityTime } from "./QualityTime";

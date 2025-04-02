@@ -1,1 +1,1 @@
-export { default as LogoDesign } from "./LogoDesign";
+export { default as UndrawLogoDesign } from "./LogoDesign";

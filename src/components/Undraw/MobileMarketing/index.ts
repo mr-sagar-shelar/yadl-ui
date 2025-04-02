@@ -1,1 +1,1 @@
-export { default as MobileMarketing } from "./MobileMarketing";
+export { default as UndrawMobileMarketing } from "./MobileMarketing";

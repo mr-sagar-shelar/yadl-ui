@@ -1,1 +1,1 @@
-export { default as WellDone } from "./WellDone";
+export { default as UndrawWellDone } from "./WellDone";

@@ -1,1 +1,1 @@
-export { default as DeliveryTruck } from "./DeliveryTruck";
+export { default as UndrawDeliveryTruck } from "./DeliveryTruck";

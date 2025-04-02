@@ -1,1 +1,1 @@
-export { default as CookieLove } from "./CookieLove";
+export { default as UndrawCookieLove } from "./CookieLove";

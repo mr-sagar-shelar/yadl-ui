@@ -1,1 +1,1 @@
-export { default as SelectHouse } from "./SelectHouse";
+export { default as UndrawSelectHouse } from "./SelectHouse";

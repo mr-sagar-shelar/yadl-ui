@@ -1,1 +1,1 @@
-export { default as QuickChat } from "./QuickChat";
+export { default as UndrawQuickChat } from "./QuickChat";

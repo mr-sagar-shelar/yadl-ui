@@ -1,1 +1,1 @@
-export { default as AddInformation } from "./AddInformation";
+export { default as UndrawAddInformation } from "./AddInformation";

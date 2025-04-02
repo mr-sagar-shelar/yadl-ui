@@ -1,1 +1,1 @@
-export { default as EcoConscious } from "./EcoConscious";
+export { default as UndrawEcoConscious } from "./EcoConscious";

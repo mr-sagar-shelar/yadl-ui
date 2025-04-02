@@ -1,1 +1,1 @@
-export { default as PersonalData } from "./PersonalData";
+export { default as UndrawPersonalData } from "./PersonalData";

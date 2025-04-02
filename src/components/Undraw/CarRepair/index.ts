@@ -1,1 +1,1 @@
-export { default as CarRepair } from "./CarRepair";
+export { default as UndrawCarRepair } from "./CarRepair";

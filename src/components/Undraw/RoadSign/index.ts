@@ -1,1 +1,1 @@
-export { default as RoadSign } from "./RoadSign";
+export { default as UndrawRoadSign } from "./RoadSign";

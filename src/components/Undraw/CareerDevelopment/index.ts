@@ -1,1 +1,1 @@
-export { default as CareerDevelopment } from "./CareerDevelopment";
+export { default as UndrawCareerDevelopment } from "./CareerDevelopment";

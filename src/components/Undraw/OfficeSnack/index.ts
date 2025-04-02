@@ -1,1 +1,1 @@
-export { default as OfficeSnack } from "./OfficeSnack";
+export { default as UndrawOfficeSnack } from "./OfficeSnack";

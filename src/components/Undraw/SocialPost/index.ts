@@ -1,1 +1,1 @@
-export { default as SocialPost } from "./SocialPost";
+export { default as UndrawSocialPost } from "./SocialPost";

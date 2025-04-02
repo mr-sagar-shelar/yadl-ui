@@ -1,1 +1,1 @@
-export { default as MissedChancesMissedChances } from "./MissedChancesMissedChances";
+export { default as UndrawMissedChancesMissedChances } from "./MissedChancesMissedChances";

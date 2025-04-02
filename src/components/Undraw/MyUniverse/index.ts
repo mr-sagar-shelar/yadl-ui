@@ -1,1 +1,1 @@
-export { default as MyUniverse } from "./MyUniverse";
+export { default as UndrawMyUniverse } from "./MyUniverse";

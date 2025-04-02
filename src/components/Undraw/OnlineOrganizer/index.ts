@@ -1,1 +1,1 @@
-export { default as OnlineOrganizer } from "./OnlineOrganizer";
+export { default as UndrawOnlineOrganizer } from "./OnlineOrganizer";

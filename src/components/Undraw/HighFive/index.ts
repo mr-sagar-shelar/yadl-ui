@@ -1,1 +1,1 @@
-export { default as HighFive } from "./HighFive";
+export { default as UndrawHighFive } from "./HighFive";

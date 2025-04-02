@@ -1,1 +1,1 @@
-export { default as Ethereum } from "./Ethereum";
+export { default as UndrawEthereum } from "./Ethereum";

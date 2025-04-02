@@ -1,1 +1,1 @@
-export { default as VideoStreaming } from "./VideoStreaming";
+export { default as UndrawVideoStreaming } from "./VideoStreaming";

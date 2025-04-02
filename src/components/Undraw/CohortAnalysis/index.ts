@@ -1,1 +1,1 @@
-export { default as CohortAnalysis } from "./CohortAnalysis";
+export { default as UndrawCohortAnalysis } from "./CohortAnalysis";

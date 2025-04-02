@@ -1,1 +1,1 @@
-export { default as AwardsAwards } from "./AwardsAwards";
+export { default as UndrawAwardsAwards } from "./AwardsAwards";

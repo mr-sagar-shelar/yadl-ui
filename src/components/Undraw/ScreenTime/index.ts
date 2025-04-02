@@ -1,1 +1,1 @@
-export { default as ScreenTime } from "./ScreenTime";
+export { default as UndrawScreenTime } from "./ScreenTime";

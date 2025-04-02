@@ -1,1 +1,1 @@
-export { default as MailSent } from "./MailSent";
+export { default as UndrawMailSent } from "./MailSent";

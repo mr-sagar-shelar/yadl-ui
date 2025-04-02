@@ -1,1 +1,1 @@
-export { default as RideABicycle } from "./RideABicycle";
+export { default as UndrawRideABicycle } from "./RideABicycle";

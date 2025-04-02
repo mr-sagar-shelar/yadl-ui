@@ -1,1 +1,1 @@
-export { default as OnlineArticles } from "./OnlineArticles";
+export { default as UndrawOnlineArticles } from "./OnlineArticles";

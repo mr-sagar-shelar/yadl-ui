@@ -1,1 +1,1 @@
-export { default as FestivitiesFestivities } from "./FestivitiesFestivities";
+export { default as UndrawFestivitiesFestivities } from "./FestivitiesFestivities";

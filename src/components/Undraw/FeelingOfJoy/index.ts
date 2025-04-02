@@ -1,1 +1,1 @@
-export { default as FeelingOfJoy } from "./FeelingOfJoy";
+export { default as UndrawFeelingOfJoy } from "./FeelingOfJoy";

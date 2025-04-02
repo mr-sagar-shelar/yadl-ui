@@ -1,1 +1,1 @@
-export { default as SocialNotifications } from "./SocialNotifications";
+export { default as UndrawSocialNotifications } from "./SocialNotifications";

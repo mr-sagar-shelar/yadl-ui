@@ -1,1 +1,1 @@
-export { default as MedicalResearch } from "./MedicalResearch";
+export { default as UndrawMedicalResearch } from "./MedicalResearch";

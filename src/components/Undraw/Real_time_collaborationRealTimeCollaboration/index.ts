@@ -1,1 +1,1 @@
-export { default as Real_time_collaborationRealTimeCollaboration } from "./Real_time_collaborationRealTimeCollaboration";
+export { default as UndrawReal_time_collaborationRealTimeCollaboration } from "./Real_time_collaborationRealTimeCollaboration";

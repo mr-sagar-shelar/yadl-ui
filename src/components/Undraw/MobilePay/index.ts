@@ -1,1 +1,1 @@
-export { default as MobilePay } from "./MobilePay";
+export { default as UndrawMobilePay } from "./MobilePay";

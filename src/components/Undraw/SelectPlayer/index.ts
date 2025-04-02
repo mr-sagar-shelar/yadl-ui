@@ -1,1 +1,1 @@
-export { default as SelectPlayer } from "./SelectPlayer";
+export { default as UndrawSelectPlayer } from "./SelectPlayer";

@@ -1,1 +1,1 @@
-export { default as DomainNames } from "./DomainNames";
+export { default as UndrawDomainNames } from "./DomainNames";

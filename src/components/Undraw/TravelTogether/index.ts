@@ -1,1 +1,1 @@
-export { default as TravelTogether } from "./TravelTogether";
+export { default as UndrawTravelTogether } from "./TravelTogether";

@@ -1,1 +1,1 @@
-export { default as Imagination } from "./Imagination";
+export { default as UndrawImagination } from "./Imagination";

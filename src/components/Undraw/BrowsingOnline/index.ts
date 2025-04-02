@@ -1,1 +1,1 @@
-export { default as BrowsingOnline } from "./BrowsingOnline";
+export { default as UndrawBrowsingOnline } from "./BrowsingOnline";

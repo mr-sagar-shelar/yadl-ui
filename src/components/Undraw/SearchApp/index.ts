@@ -1,1 +1,1 @@
-export { default as SearchApp } from "./SearchApp";
+export { default as UndrawSearchApp } from "./SearchApp";

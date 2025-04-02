@@ -1,1 +1,1 @@
-export { default as PicProfile } from "./PicProfile";
+export { default as UndrawPicProfile } from "./PicProfile";

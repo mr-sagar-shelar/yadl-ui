@@ -1,1 +1,1 @@
-export { default as DataPoints } from "./DataPoints";
+export { default as UndrawDataPoints } from "./DataPoints";

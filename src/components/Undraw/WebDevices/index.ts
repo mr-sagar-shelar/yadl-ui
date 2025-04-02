@@ -1,1 +1,1 @@
-export { default as WebDevices } from "./WebDevices";
+export { default as UndrawWebDevices } from "./WebDevices";

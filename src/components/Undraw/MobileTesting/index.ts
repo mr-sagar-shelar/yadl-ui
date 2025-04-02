@@ -1,1 +1,1 @@
-export { default as MobileTesting } from "./MobileTesting";
+export { default as UndrawMobileTesting } from "./MobileTesting";

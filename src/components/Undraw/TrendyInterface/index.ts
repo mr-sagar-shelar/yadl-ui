@@ -1,1 +1,1 @@
-export { default as TrendyInterface } from "./TrendyInterface";
+export { default as UndrawTrendyInterface } from "./TrendyInterface";

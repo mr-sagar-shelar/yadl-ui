@@ -1,1 +1,1 @@
-export { default as VirtualReality } from "./VirtualReality";
+export { default as UndrawVirtualReality } from "./VirtualReality";

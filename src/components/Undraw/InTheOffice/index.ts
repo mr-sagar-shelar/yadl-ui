@@ -1,1 +1,1 @@
-export { default as InTheOffice } from "./InTheOffice";
+export { default as UndrawInTheOffice } from "./InTheOffice";

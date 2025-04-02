@@ -1,1 +1,1 @@
-export { default as LandscapePhotographer } from "./LandscapePhotographer";
+export { default as UndrawLandscapePhotographer } from "./LandscapePhotographer";

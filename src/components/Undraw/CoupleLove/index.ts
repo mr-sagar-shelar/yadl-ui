@@ -1,1 +1,1 @@
-export { default as CoupleLove } from "./CoupleLove";
+export { default as UndrawCoupleLove } from "./CoupleLove";

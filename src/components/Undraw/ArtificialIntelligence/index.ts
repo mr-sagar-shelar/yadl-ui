@@ -1,1 +1,1 @@
-export { default as ArtificialIntelligence } from "./ArtificialIntelligence";
+export { default as UndrawArtificialIntelligence } from "./ArtificialIntelligence";

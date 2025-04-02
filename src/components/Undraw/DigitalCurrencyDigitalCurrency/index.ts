@@ -1,1 +1,1 @@
-export { default as DigitalCurrencyDigitalCurrency } from "./DigitalCurrencyDigitalCurrency";
+export { default as UndrawDigitalCurrencyDigitalCurrency } from "./DigitalCurrencyDigitalCurrency";

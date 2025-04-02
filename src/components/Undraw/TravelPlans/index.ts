@@ -1,1 +1,1 @@
-export { default as TravelPlans } from "./TravelPlans";
+export { default as UndrawTravelPlans } from "./TravelPlans";

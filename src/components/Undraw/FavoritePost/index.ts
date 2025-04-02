@@ -1,1 +1,1 @@
-export { default as FavoritePost } from "./FavoritePost";
+export { default as UndrawFavoritePost } from "./FavoritePost";

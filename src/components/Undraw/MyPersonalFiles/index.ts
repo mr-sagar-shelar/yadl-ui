@@ -1,1 +1,1 @@
-export { default as MyPersonalFiles } from "./MyPersonalFiles";
+export { default as UndrawMyPersonalFiles } from "./MyPersonalFiles";

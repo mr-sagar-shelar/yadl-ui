@@ -1,1 +1,1 @@
-export { default as ComputerApps } from "./ComputerApps";
+export { default as UndrawComputerApps } from "./ComputerApps";

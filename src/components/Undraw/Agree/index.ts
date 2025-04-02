@@ -1,1 +1,1 @@
-export { default as Agree } from "./Agree";
+export { default as UndrawAgree } from "./Agree";

@@ -1,1 +1,1 @@
-export { default as Newspaper } from "./Newspaper";
+export { default as UndrawNewspaper } from "./Newspaper";

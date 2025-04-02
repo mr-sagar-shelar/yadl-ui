@@ -1,1 +1,1 @@
-export { default as PlayingGolf } from "./PlayingGolf";
+export { default as UndrawPlayingGolf } from "./PlayingGolf";

@@ -1,1 +1,1 @@
-export { default as StepToTheSunStepToTheSun } from "./StepToTheSunStepToTheSun";
+export { default as UndrawStepToTheSunStepToTheSun } from "./StepToTheSunStepToTheSun";

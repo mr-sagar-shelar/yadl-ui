@@ -1,1 +1,1 @@
-export { default as SecureLogin } from "./SecureLogin";
+export { default as UndrawSecureLogin } from "./SecureLogin";

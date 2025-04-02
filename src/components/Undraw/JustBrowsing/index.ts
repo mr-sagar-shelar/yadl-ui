@@ -1,1 +1,1 @@
-export { default as JustBrowsing } from "./JustBrowsing";
+export { default as UndrawJustBrowsing } from "./JustBrowsing";

@@ -1,1 +1,1 @@
-export { default as GrowthCurve } from "./GrowthCurve";
+export { default as UndrawGrowthCurve } from "./GrowthCurve";

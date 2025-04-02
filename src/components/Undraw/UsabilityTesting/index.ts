@@ -1,1 +1,1 @@
-export { default as UsabilityTesting } from "./UsabilityTesting";
+export { default as UndrawUsabilityTesting } from "./UsabilityTesting";

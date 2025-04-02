@@ -1,1 +1,1 @@
-export { default as ChefChef } from "./ChefChef";
+export { default as UndrawChefChef } from "./ChefChef";

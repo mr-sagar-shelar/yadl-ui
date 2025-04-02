@@ -1,1 +1,1 @@
-export { default as FileSynchronization } from "./FileSynchronization";
+export { default as UndrawFileSynchronization } from "./FileSynchronization";

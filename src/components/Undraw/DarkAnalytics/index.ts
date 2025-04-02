@@ -1,1 +1,1 @@
-export { default as DarkAnalytics } from "./DarkAnalytics";
+export { default as UndrawDarkAnalytics } from "./DarkAnalytics";

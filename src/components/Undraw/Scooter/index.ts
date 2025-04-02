@@ -1,1 +1,1 @@
-export { default as Scooter } from "./Scooter";
+export { default as UndrawScooter } from "./Scooter";

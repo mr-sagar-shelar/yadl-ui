@@ -1,1 +1,1 @@
-export { default as SharingKnowledge } from "./SharingKnowledge";
+export { default as UndrawSharingKnowledge } from "./SharingKnowledge";

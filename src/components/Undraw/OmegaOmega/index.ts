@@ -1,1 +1,1 @@
-export { default as OmegaOmega } from "./OmegaOmega";
+export { default as UndrawOmegaOmega } from "./OmegaOmega";

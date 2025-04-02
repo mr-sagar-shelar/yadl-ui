@@ -1,1 +1,1 @@
-export { default as MessagingApp } from "./MessagingApp";
+export { default as UndrawMessagingApp } from "./MessagingApp";

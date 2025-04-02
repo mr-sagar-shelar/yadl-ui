@@ -1,1 +1,1 @@
-export { default as WeatherApp } from "./WeatherApp";
+export { default as UndrawWeatherApp } from "./WeatherApp";

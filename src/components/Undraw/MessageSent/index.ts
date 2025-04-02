@@ -1,1 +1,1 @@
-export { default as MessageSent } from "./MessageSent";
+export { default as UndrawMessageSent } from "./MessageSent";

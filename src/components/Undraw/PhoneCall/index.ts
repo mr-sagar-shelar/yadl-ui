@@ -1,1 +1,1 @@
-export { default as PhoneCall } from "./PhoneCall";
+export { default as UndrawPhoneCall } from "./PhoneCall";

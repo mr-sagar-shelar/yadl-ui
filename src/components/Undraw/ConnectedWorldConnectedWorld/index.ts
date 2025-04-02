@@ -1,1 +1,1 @@
-export { default as ConnectedWorldConnectedWorld } from "./ConnectedWorldConnectedWorld";
+export { default as UndrawConnectedWorldConnectedWorld } from "./ConnectedWorldConnectedWorld";

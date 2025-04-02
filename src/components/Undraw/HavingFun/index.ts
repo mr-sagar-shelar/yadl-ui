@@ -1,1 +1,1 @@
-export { default as HavingFun } from "./HavingFun";
+export { default as UndrawHavingFun } from "./HavingFun";

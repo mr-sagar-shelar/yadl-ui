@@ -1,1 +1,1 @@
-export { default as Departing } from "./Departing";
+export { default as UndrawDeparting } from "./Departing";

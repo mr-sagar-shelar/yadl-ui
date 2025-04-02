@@ -1,1 +1,1 @@
-export { default as Winter_roadWinterRoad } from "./Winter_roadWinterRoad";
+export { default as UndrawWinter_roadWinterRoad } from "./Winter_roadWinterRoad";

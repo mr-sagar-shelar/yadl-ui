@@ -1,1 +1,1 @@
-export { default as OnlineWishesOnlineWishes } from "./OnlineWishesOnlineWishes";
+export { default as UndrawOnlineWishesOnlineWishes } from "./OnlineWishesOnlineWishes";

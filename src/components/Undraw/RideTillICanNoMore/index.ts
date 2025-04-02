@@ -1,1 +1,1 @@
-export { default as RideTillICanNoMore } from "./RideTillICanNoMore";
+export { default as UndrawRideTillICanNoMore } from "./RideTillICanNoMore";

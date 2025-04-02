@@ -1,1 +1,1 @@
-export { default as CompleteDesign } from "./CompleteDesign";
+export { default as UndrawCompleteDesign } from "./CompleteDesign";

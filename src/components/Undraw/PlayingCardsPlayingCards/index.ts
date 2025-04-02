@@ -1,1 +1,1 @@
-export { default as PlayingCardsPlayingCards } from "./PlayingCardsPlayingCards";
+export { default as UndrawPlayingCardsPlayingCards } from "./PlayingCardsPlayingCards";

@@ -1,1 +1,1 @@
-export { default as ConferenceSpeaker } from "./ConferenceSpeaker";
+export { default as UndrawConferenceSpeaker } from "./ConferenceSpeaker";

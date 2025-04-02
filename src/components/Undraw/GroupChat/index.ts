@@ -1,1 +1,1 @@
-export { default as GroupChat } from "./GroupChat";
+export { default as UndrawGroupChat } from "./GroupChat";

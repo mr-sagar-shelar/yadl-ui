@@ -1,1 +1,1 @@
-export { default as ProudCoder } from "./ProudCoder";
+export { default as UndrawProudCoder } from "./ProudCoder";

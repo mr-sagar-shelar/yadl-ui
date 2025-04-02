@@ -1,1 +1,1 @@
-export { default as MyApp } from "./MyApp";
+export { default as UndrawMyApp } from "./MyApp";

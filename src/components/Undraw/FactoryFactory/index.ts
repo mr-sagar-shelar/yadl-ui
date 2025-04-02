@@ -1,1 +1,1 @@
-export { default as FactoryFactory } from "./FactoryFactory";
+export { default as UndrawFactoryFactory } from "./FactoryFactory";

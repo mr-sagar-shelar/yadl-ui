@@ -1,1 +1,1 @@
-export { default as MakingArt } from "./MakingArt";
+export { default as UndrawMakingArt } from "./MakingArt";

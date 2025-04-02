@@ -1,1 +1,1 @@
-export { default as MindMap } from "./MindMap";
+export { default as UndrawMindMap } from "./MindMap";

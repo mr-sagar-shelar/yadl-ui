@@ -1,1 +1,1 @@
-export { default as Hologram } from "./Hologram";
+export { default as UndrawHologram } from "./Hologram";

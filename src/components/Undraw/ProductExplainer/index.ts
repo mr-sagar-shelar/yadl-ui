@@ -1,1 +1,1 @@
-export { default as ProductExplainer } from "./ProductExplainer";
+export { default as UndrawProductExplainer } from "./ProductExplainer";

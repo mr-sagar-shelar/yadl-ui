@@ -1,1 +1,1 @@
-export { default as Invite } from "./Invite";
+export { default as UndrawInvite } from "./Invite";

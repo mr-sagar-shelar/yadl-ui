@@ -1,1 +1,1 @@
-export { default as Fireworks } from "./Fireworks";
+export { default as UndrawFireworks } from "./Fireworks";

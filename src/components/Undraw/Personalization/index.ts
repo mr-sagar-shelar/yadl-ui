@@ -1,1 +1,1 @@
-export { default as Personalization } from "./Personalization";
+export { default as UndrawPersonalization } from "./Personalization";

@@ -1,1 +1,1 @@
-export { default as NuxtJs } from "./NuxtJs";
+export { default as UndrawNuxtJs } from "./NuxtJs";

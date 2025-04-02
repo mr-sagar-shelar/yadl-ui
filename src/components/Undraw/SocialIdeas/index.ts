@@ -1,1 +1,1 @@
-export { default as SocialIdeas } from "./SocialIdeas";
+export { default as UndrawSocialIdeas } from "./SocialIdeas";

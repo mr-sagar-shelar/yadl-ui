@@ -1,1 +1,1 @@
-export { default as WebShopping } from "./WebShopping";
+export { default as UndrawWebShopping } from "./WebShopping";

@@ -1,1 +1,1 @@
-export { default as Shopping } from "./Shopping";
+export { default as UndrawShopping } from "./Shopping";

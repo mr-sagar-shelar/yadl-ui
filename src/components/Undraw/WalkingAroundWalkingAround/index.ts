@@ -1,1 +1,1 @@
-export { default as WalkingAroundWalkingAround } from "./WalkingAroundWalkingAround";
+export { default as UndrawWalkingAroundWalkingAround } from "./WalkingAroundWalkingAround";

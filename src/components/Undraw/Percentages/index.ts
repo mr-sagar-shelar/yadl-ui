@@ -1,1 +1,1 @@
-export { default as Percentages } from "./Percentages";
+export { default as UndrawPercentages } from "./Percentages";

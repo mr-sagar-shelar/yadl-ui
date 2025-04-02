@@ -1,1 +1,1 @@
-export { default as FriendsOnline } from "./FriendsOnline";
+export { default as UndrawFriendsOnline } from "./FriendsOnline";

@@ -1,1 +1,1 @@
-export { default as PublishPost } from "./PublishPost";
+export { default as UndrawPublishPost } from "./PublishPost";

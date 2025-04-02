@@ -1,1 +1,1 @@
-export { default as Savings } from "./Savings";
+export { default as UndrawSavings } from "./Savings";

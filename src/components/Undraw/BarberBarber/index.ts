@@ -1,1 +1,1 @@
-export { default as BarberBarber } from "./BarberBarber";
+export { default as UndrawBarberBarber } from "./BarberBarber";

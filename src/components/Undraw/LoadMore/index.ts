@@ -1,1 +1,1 @@
-export { default as LoadMore } from "./LoadMore";
+export { default as UndrawLoadMore } from "./LoadMore";

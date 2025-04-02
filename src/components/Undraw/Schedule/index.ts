@@ -1,1 +1,1 @@
-export { default as Schedule } from "./Schedule";
+export { default as UndrawSchedule } from "./Schedule";

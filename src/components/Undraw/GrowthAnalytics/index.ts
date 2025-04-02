@@ -1,1 +1,1 @@
-export { default as GrowthAnalytics } from "./GrowthAnalytics";
+export { default as UndrawGrowthAnalytics } from "./GrowthAnalytics";

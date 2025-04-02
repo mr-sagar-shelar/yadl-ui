@@ -1,1 +1,1 @@
-export { default as SharedWorkspace } from "./SharedWorkspace";
+export { default as UndrawSharedWorkspace } from "./SharedWorkspace";

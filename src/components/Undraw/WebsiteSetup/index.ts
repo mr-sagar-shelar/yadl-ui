@@ -1,1 +1,1 @@
-export { default as WebsiteSetup } from "./WebsiteSetup";
+export { default as UndrawWebsiteSetup } from "./WebsiteSetup";

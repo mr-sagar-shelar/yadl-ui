@@ -1,1 +1,1 @@
-export { default as SocialUser } from "./SocialUser";
+export { default as UndrawSocialUser } from "./SocialUser";

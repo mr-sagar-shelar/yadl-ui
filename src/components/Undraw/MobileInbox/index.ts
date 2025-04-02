@@ -1,1 +1,1 @@
-export { default as MobileInbox } from "./MobileInbox";
+export { default as UndrawMobileInbox } from "./MobileInbox";

@@ -1,1 +1,1 @@
-export { default as OnlineCv } from "./OnlineCv";
+export { default as UndrawOnlineCv } from "./OnlineCv";

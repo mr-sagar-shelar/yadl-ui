@@ -1,1 +1,1 @@
-export { default as WorkingFromAnywhere } from "./WorkingFromAnywhere";
+export { default as UndrawWorkingFromAnywhere } from "./WorkingFromAnywhere";

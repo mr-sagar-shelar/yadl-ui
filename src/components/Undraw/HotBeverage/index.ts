@@ -1,1 +1,1 @@
-export { default as HotBeverage } from "./HotBeverage";
+export { default as UndrawHotBeverage } from "./HotBeverage";

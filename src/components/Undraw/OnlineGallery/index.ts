@@ -1,1 +1,1 @@
-export { default as OnlineGallery } from "./OnlineGallery";
+export { default as UndrawOnlineGallery } from "./OnlineGallery";

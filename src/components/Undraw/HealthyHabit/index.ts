@@ -1,1 +1,1 @@
-export { default as HealthyHabit } from "./HealthyHabit";
+export { default as UndrawHealthyHabit } from "./HealthyHabit";

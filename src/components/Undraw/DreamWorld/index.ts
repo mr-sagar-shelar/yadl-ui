@@ -1,1 +1,1 @@
-export { default as DreamWorld } from "./DreamWorld";
+export { default as UndrawDreamWorld } from "./DreamWorld";

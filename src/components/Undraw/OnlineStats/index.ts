@@ -1,1 +1,1 @@
-export { default as OnlineStats } from "./OnlineStats";
+export { default as UndrawOnlineStats } from "./OnlineStats";

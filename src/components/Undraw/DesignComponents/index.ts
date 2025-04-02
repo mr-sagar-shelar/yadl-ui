@@ -1,1 +1,1 @@
-export { default as DesignComponents } from "./DesignComponents";
+export { default as UndrawDesignComponents } from "./DesignComponents";

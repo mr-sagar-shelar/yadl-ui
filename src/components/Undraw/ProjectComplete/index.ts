@@ -1,1 +1,1 @@
-export { default as ProjectComplete } from "./ProjectComplete";
+export { default as UndrawProjectComplete } from "./ProjectComplete";

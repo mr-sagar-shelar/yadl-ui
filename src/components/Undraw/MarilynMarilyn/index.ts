@@ -1,1 +1,1 @@
-export { default as MarilynMarilyn } from "./MarilynMarilyn";
+export { default as UndrawMarilynMarilyn } from "./MarilynMarilyn";

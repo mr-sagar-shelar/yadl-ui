@@ -1,1 +1,1 @@
-export { default as SaveToBookmarks } from "./SaveToBookmarks";
+export { default as UndrawSaveToBookmarks } from "./SaveToBookmarks";

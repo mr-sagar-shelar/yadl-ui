@@ -1,1 +1,1 @@
-export { default as GroupVideo } from "./GroupVideo";
+export { default as UndrawGroupVideo } from "./GroupVideo";

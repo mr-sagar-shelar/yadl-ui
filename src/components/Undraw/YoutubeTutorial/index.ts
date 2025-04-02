@@ -1,1 +1,1 @@
-export { default as YoutubeTutorial } from "./YoutubeTutorial";
+export { default as UndrawYoutubeTutorial } from "./YoutubeTutorial";

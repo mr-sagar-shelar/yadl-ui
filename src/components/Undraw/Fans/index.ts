@@ -1,1 +1,1 @@
-export { default as Fans } from "./Fans";
+export { default as UndrawFans } from "./Fans";

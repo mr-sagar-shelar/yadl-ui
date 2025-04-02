@@ -1,1 +1,1 @@
-export { default as StatusUpdate } from "./StatusUpdate";
+export { default as UndrawStatusUpdate } from "./StatusUpdate";

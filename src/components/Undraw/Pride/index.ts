@@ -1,1 +1,1 @@
-export { default as Pride } from "./Pride";
+export { default as UndrawPride } from "./Pride";

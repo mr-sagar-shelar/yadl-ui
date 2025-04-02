@@ -1,1 +1,1 @@
-export { default as Teaching } from "./Teaching";
+export { default as UndrawTeaching } from "./Teaching";

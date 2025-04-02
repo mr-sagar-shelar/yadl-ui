@@ -1,1 +1,1 @@
-export { default as InRealLife } from "./InRealLife";
+export { default as UndrawInRealLife } from "./InRealLife";

@@ -1,1 +1,1 @@
-export { default as ImageFolder } from "./ImageFolder";
+export { default as UndrawImageFolder } from "./ImageFolder";

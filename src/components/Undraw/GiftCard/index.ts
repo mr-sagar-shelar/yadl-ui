@@ -1,1 +1,1 @@
-export { default as GiftCard } from "./GiftCard";
+export { default as UndrawGiftCard } from "./GiftCard";

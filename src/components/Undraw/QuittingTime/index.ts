@@ -1,1 +1,1 @@
-export { default as QuittingTime } from "./QuittingTime";
+export { default as UndrawQuittingTime } from "./QuittingTime";

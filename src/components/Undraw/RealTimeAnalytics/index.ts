@@ -1,1 +1,1 @@
-export { default as RealTimeAnalytics } from "./RealTimeAnalytics";
+export { default as UndrawRealTimeAnalytics } from "./RealTimeAnalytics";

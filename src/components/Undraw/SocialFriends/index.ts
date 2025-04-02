@@ -1,1 +1,1 @@
-export { default as SocialFriends } from "./SocialFriends";
+export { default as UndrawSocialFriends } from "./SocialFriends";

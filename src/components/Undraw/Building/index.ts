@@ -1,1 +1,1 @@
-export { default as Building } from "./Building";
+export { default as UndrawBuilding } from "./Building";

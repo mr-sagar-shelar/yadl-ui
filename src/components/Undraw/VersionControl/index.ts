@@ -1,1 +1,1 @@
-export { default as VersionControl } from "./VersionControl";
+export { default as UndrawVersionControl } from "./VersionControl";

@@ -1,1 +1,1 @@
-export { default as EverydayLife } from "./EverydayLife";
+export { default as UndrawEverydayLife } from "./EverydayLife";

@@ -1,1 +1,1 @@
-export { default as BodyText } from "./BodyText";
+export { default as UndrawBodyText } from "./BodyText";

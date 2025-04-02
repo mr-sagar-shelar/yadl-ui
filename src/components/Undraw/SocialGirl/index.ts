@@ -1,1 +1,1 @@
-export { default as SocialGirl } from "./SocialGirl";
+export { default as UndrawSocialGirl } from "./SocialGirl";

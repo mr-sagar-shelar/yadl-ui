@@ -1,1 +1,1 @@
-export { default as PersonalEmail } from "./PersonalEmail";
+export { default as UndrawPersonalEmail } from "./PersonalEmail";

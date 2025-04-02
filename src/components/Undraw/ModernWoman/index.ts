@@ -1,1 +1,1 @@
-export { default as ModernWoman } from "./ModernWoman";
+export { default as UndrawModernWoman } from "./ModernWoman";

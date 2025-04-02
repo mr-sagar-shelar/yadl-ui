@@ -1,1 +1,1 @@
-export { default as Placeholders } from "./Placeholders";
+export { default as UndrawPlaceholders } from "./Placeholders";

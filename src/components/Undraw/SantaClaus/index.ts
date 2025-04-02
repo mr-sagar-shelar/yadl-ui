@@ -1,1 +1,1 @@
-export { default as SantaClaus } from "./SantaClaus";
+export { default as UndrawSantaClaus } from "./SantaClaus";

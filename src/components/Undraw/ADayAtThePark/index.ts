@@ -1,1 +1,1 @@
-export { default as ADayAtThePark } from "./ADayAtThePark";
+export { default as UndrawADayAtThePark } from "./ADayAtThePark";

@@ -1,1 +1,1 @@
-export { default as SpeechToText } from "./SpeechToText";
+export { default as UndrawSpeechToText } from "./SpeechToText";

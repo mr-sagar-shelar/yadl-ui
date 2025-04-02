@@ -1,1 +1,1 @@
-export { default as ArtistArtist } from "./ArtistArtist";
+export { default as UndrawArtistArtist } from "./ArtistArtist";

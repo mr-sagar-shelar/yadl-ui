@@ -1,1 +1,1 @@
-export { default as SuccessFactors } from "./SuccessFactors";
+export { default as UndrawSuccessFactors } from "./SuccessFactors";

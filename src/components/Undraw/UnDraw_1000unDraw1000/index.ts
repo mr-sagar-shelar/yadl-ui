@@ -1,1 +1,1 @@
-export { default as UnDraw_1000unDraw1000 } from "./UnDraw_1000unDraw1000";
+export { default as UndrawUnDraw_1000unDraw1000 } from "./UnDraw_1000unDraw1000";

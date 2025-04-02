@@ -1,1 +1,1 @@
-export { default as ComputerFiles } from "./ComputerFiles";
+export { default as UndrawComputerFiles } from "./ComputerFiles";

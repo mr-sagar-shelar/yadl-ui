@@ -1,1 +1,1 @@
-export { default as GoneShopping } from "./GoneShopping";
+export { default as UndrawGoneShopping } from "./GoneShopping";

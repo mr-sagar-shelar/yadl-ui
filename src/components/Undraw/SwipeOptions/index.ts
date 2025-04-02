@@ -1,1 +1,1 @@
-export { default as SwipeOptions } from "./SwipeOptions";
+export { default as UndrawSwipeOptions } from "./SwipeOptions";

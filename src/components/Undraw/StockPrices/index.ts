@@ -1,1 +1,1 @@
-export { default as StockPrices } from "./StockPrices";
+export { default as UndrawStockPrices } from "./StockPrices";

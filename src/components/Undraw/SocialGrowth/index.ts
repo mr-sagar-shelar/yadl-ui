@@ -1,1 +1,1 @@
-export { default as SocialGrowth } from "./SocialGrowth";
+export { default as UndrawSocialGrowth } from "./SocialGrowth";

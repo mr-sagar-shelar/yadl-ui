@@ -1,1 +1,1 @@
-export { default as BusinessAnalytics } from "./BusinessAnalytics";
+export { default as UndrawBusinessAnalytics } from "./BusinessAnalytics";

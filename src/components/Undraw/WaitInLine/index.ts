@@ -1,1 +1,1 @@
-export { default as WaitInLine } from "./WaitInLine";
+export { default as UndrawWaitInLine } from "./WaitInLine";

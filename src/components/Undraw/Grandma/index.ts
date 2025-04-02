@@ -1,1 +1,1 @@
-export { default as Grandma } from "./Grandma";
+export { default as UndrawGrandma } from "./Grandma";

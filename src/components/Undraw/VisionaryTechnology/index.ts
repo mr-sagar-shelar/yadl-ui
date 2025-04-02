@@ -1,1 +1,1 @@
-export { default as VisionaryTechnology } from "./VisionaryTechnology";
+export { default as UndrawVisionaryTechnology } from "./VisionaryTechnology";

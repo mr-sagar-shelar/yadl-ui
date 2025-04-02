@@ -1,1 +1,1 @@
-export { default as OutdoorParty } from "./OutdoorParty";
+export { default as UndrawOutdoorParty } from "./OutdoorParty";

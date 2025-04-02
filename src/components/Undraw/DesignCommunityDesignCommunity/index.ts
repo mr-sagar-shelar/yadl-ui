@@ -1,1 +1,1 @@
-export { default as DesignCommunityDesignCommunity } from "./DesignCommunityDesignCommunity";
+export { default as UndrawDesignCommunityDesignCommunity } from "./DesignCommunityDesignCommunity";

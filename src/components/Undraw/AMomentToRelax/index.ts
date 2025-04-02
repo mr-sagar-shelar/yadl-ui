@@ -1,1 +1,1 @@
-export { default as AMomentToRelax } from "./AMomentToRelax";
+export { default as UndrawAMomentToRelax } from "./AMomentToRelax";

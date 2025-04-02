@@ -1,1 +1,1 @@
-export { default as ColorPalette } from "./ColorPalette";
+export { default as UndrawColorPalette } from "./ColorPalette";

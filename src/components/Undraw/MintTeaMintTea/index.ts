@@ -1,1 +1,1 @@
-export { default as MintTeaMintTea } from "./MintTeaMintTea";
+export { default as UndrawMintTeaMintTea } from "./MintTeaMintTea";

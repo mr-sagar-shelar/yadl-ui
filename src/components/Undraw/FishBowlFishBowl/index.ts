@@ -1,1 +1,1 @@
-export { default as FishBowlFishBowl } from "./FishBowlFishBowl";
+export { default as UndrawFishBowlFishBowl } from "./FishBowlFishBowl";

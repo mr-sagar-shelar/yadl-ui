@@ -1,1 +1,1 @@
-export { default as SpreadLove } from "./SpreadLove";
+export { default as UndrawSpreadLove } from "./SpreadLove";

@@ -1,1 +1,1 @@
-export { default as SteppingUp } from "./SteppingUp";
+export { default as UndrawSteppingUp } from "./SteppingUp";

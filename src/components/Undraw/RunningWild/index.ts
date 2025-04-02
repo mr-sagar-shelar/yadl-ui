@@ -1,1 +1,1 @@
-export { default as RunningWild } from "./RunningWild";
+export { default as UndrawRunningWild } from "./RunningWild";

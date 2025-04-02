@@ -1,1 +1,1 @@
-export { default as ThrowDownThrowDown } from "./ThrowDownThrowDown";
+export { default as UndrawThrowDownThrowDown } from "./ThrowDownThrowDown";

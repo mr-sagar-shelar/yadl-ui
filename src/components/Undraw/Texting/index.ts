@@ -1,1 +1,1 @@
-export { default as Texting } from "./Texting";
+export { default as UndrawTexting } from "./Texting";

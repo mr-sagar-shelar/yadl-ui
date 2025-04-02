@@ -1,1 +1,1 @@
-export { default as CircuitBoard } from "./CircuitBoard";
+export { default as UndrawCircuitBoard } from "./CircuitBoard";

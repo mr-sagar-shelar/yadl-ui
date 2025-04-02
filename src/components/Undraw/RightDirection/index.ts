@@ -1,1 +1,1 @@
-export { default as RightDirection } from "./RightDirection";
+export { default as UndrawRightDirection } from "./RightDirection";

@@ -1,1 +1,1 @@
-export { default as UsersPerMinute } from "./UsersPerMinute";
+export { default as UndrawUsersPerMinute } from "./UsersPerMinute";

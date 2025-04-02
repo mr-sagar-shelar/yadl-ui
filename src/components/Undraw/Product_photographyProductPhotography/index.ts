@@ -1,1 +1,1 @@
-export { default as Product_photographyProductPhotography } from "./Product_photographyProductPhotography";
+export { default as UndrawProduct_photographyProductPhotography } from "./Product_photographyProductPhotography";

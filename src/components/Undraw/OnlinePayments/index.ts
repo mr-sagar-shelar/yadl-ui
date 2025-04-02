@@ -1,1 +1,1 @@
-export { default as OnlinePayments } from "./OnlinePayments";
+export { default as UndrawOnlinePayments } from "./OnlinePayments";

@@ -1,1 +1,1 @@
-export { default as Notify } from "./Notify";
+export { default as UndrawNotify } from "./Notify";

@@ -1,1 +1,1 @@
-export { default as MobileProfile } from "./MobileProfile";
+export { default as UndrawMobileProfile } from "./MobileProfile";

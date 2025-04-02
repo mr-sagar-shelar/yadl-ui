@@ -1,1 +1,1 @@
-export { default as FileBundle } from "./FileBundle";
+export { default as UndrawFileBundle } from "./FileBundle";

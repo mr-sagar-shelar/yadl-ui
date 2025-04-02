@@ -1,1 +1,1 @@
-export { default as GdprGDPR } from "./GdprGDPR";
+export { default as UndrawGdprGDPR } from "./GdprGDPR";

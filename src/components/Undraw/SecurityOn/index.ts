@@ -1,1 +1,1 @@
-export { default as SecurityOn } from "./SecurityOn";
+export { default as UndrawSecurityOn } from "./SecurityOn";

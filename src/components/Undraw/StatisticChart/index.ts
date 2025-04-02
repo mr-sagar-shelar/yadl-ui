@@ -1,1 +1,1 @@
-export { default as StatisticChart } from "./StatisticChart";
+export { default as UndrawStatisticChart } from "./StatisticChart";

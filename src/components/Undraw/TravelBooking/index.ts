@@ -1,1 +1,1 @@
-export { default as TravelBooking } from "./TravelBooking";
+export { default as UndrawTravelBooking } from "./TravelBooking";

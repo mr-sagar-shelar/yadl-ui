@@ -1,1 +1,1 @@
-export { default as PrototypingProcess } from "./PrototypingProcess";
+export { default as UndrawPrototypingProcess } from "./PrototypingProcess";

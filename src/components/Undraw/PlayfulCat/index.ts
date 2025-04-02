@@ -1,1 +1,1 @@
-export { default as PlayfulCat } from "./PlayfulCat";
+export { default as UndrawPlayfulCat } from "./PlayfulCat";

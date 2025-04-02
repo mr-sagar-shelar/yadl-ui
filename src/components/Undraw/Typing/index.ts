@@ -1,1 +1,1 @@
-export { default as Typing } from "./Typing";
+export { default as UndrawTyping } from "./Typing";

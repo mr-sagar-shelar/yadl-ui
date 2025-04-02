@@ -1,1 +1,1 @@
-export { default as Composition } from "./Composition";
+export { default as UndrawComposition } from "./Composition";

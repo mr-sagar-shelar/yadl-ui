@@ -1,1 +1,1 @@
-export { default as HelpfulSign } from "./HelpfulSign";
+export { default as UndrawHelpfulSign } from "./HelpfulSign";

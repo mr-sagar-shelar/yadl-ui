@@ -1,1 +1,1 @@
-export { default as OutdoorAdventure } from "./OutdoorAdventure";
+export { default as UndrawOutdoorAdventure } from "./OutdoorAdventure";

@@ -1,1 +1,1 @@
-export { default as Projections } from "./Projections";
+export { default as UndrawProjections } from "./Projections";

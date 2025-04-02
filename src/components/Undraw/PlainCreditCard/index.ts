@@ -1,1 +1,1 @@
-export { default as PlainCreditCard } from "./PlainCreditCard";
+export { default as UndrawPlainCreditCard } from "./PlainCreditCard";

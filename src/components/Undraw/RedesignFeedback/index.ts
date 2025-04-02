@@ -1,1 +1,1 @@
-export { default as RedesignFeedback } from "./RedesignFeedback";
+export { default as UndrawRedesignFeedback } from "./RedesignFeedback";

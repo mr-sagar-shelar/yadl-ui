@@ -1,1 +1,1 @@
-export { default as Report } from "./Report";
+export { default as UndrawReport } from "./Report";

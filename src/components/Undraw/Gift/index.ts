@@ -1,1 +1,1 @@
-export { default as Gift } from "./Gift";
+export { default as UndrawGift } from "./Gift";

@@ -1,1 +1,1 @@
-export { default as Picture } from "./Picture";
+export { default as UndrawPicture } from "./Picture";

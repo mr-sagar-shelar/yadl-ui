@@ -1,1 +1,1 @@
-export { default as LightbulbMoment } from "./LightbulbMoment";
+export { default as UndrawLightbulbMoment } from "./LightbulbMoment";

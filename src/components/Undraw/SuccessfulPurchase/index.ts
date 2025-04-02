@@ -1,1 +1,1 @@
-export { default as SuccessfulPurchase } from "./SuccessfulPurchase";
+export { default as UndrawSuccessfulPurchase } from "./SuccessfulPurchase";

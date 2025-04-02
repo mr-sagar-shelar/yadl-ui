@@ -1,1 +1,1 @@
-export { default as ThroughTheDesert } from "./ThroughTheDesert";
+export { default as UndrawThroughTheDesert } from "./ThroughTheDesert";

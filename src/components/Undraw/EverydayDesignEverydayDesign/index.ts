@@ -1,1 +1,1 @@
-export { default as EverydayDesignEverydayDesign } from "./EverydayDesignEverydayDesign";
+export { default as UndrawEverydayDesignEverydayDesign } from "./EverydayDesignEverydayDesign";

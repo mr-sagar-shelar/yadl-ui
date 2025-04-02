@@ -1,1 +1,1 @@
-export { default as InstructionManualInstructionManual } from "./InstructionManualInstructionManual";
+export { default as UndrawInstructionManualInstructionManual } from "./InstructionManualInstructionManual";

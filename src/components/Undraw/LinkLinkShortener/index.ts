@@ -1,1 +1,1 @@
-export { default as LinkLinkShortener } from "./LinkLinkShortener";
+export { default as UndrawLinkLinkShortener } from "./LinkLinkShortener";

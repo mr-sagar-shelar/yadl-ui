@@ -1,1 +1,1 @@
-export { default as OnlineCollaboration } from "./OnlineCollaboration";
+export { default as UndrawOnlineCollaboration } from "./OnlineCollaboration";

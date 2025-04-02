@@ -1,1 +1,1 @@
-export { default as WorkChat } from "./WorkChat";
+export { default as UndrawWorkChat } from "./WorkChat";

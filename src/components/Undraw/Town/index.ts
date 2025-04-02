@@ -1,1 +1,1 @@
-export { default as Town } from "./Town";
+export { default as UndrawTown } from "./Town";

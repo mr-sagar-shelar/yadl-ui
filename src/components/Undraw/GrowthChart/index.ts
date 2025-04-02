@@ -1,1 +1,1 @@
-export { default as GrowthChart } from "./GrowthChart";
+export { default as UndrawGrowthChart } from "./GrowthChart";

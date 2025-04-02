@@ -1,1 +1,1 @@
-export { default as BreakingObstaclesBreakingBarriers } from "./BreakingObstaclesBreakingBarriers";
+export { default as UndrawBreakingObstaclesBreakingBarriers } from "./BreakingObstaclesBreakingBarriers";

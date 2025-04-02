@@ -1,1 +1,1 @@
-export { default as WebsiteBuilder } from "./WebsiteBuilder";
+export { default as UndrawWebsiteBuilder } from "./WebsiteBuilder";

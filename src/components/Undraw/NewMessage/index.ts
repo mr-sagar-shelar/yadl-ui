@@ -1,1 +1,1 @@
-export { default as NewMessage } from "./NewMessage";
+export { default as UndrawNewMessage } from "./NewMessage";

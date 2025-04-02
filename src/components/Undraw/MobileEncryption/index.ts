@@ -1,1 +1,1 @@
-export { default as MobileEncryption } from "./MobileEncryption";
+export { default as UndrawMobileEncryption } from "./MobileEncryption";

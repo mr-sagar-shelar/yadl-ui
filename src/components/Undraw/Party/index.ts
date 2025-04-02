@@ -1,1 +1,1 @@
-export { default as Party } from "./Party";
+export { default as UndrawParty } from "./Party";

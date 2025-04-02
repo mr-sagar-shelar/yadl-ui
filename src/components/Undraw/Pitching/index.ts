@@ -1,1 +1,1 @@
-export { default as Pitching } from "./Pitching";
+export { default as UndrawPitching } from "./Pitching";

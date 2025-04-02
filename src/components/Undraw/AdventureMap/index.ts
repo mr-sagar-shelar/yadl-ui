@@ -1,1 +1,1 @@
-export { default as AdventureMap } from "./AdventureMap";
+export { default as UndrawAdventureMap } from "./AdventureMap";

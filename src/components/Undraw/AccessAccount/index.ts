@@ -1,1 +1,1 @@
-export { default as AccessAccount } from "./AccessAccount";
+export { default as UndrawAccessAccount } from "./AccessAccount";

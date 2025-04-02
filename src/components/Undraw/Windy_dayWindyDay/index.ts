@@ -1,1 +1,1 @@
-export { default as Windy_dayWindyDay } from "./Windy_dayWindyDay";
+export { default as UndrawWindy_dayWindyDay } from "./Windy_dayWindyDay";

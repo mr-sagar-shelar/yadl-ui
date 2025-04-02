@@ -1,1 +1,1 @@
-export { default as PostingPhoto } from "./PostingPhoto";
+export { default as UndrawPostingPhoto } from "./PostingPhoto";

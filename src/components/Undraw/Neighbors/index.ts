@@ -1,1 +1,1 @@
-export { default as Neighbors } from "./Neighbors";
+export { default as UndrawNeighbors } from "./Neighbors";

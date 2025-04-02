@@ -1,1 +1,1 @@
-export { default as OrganizeResume } from "./OrganizeResume";
+export { default as UndrawOrganizeResume } from "./OrganizeResume";

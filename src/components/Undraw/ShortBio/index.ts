@@ -1,1 +1,1 @@
-export { default as ShortBio } from "./ShortBio";
+export { default as UndrawShortBio } from "./ShortBio";

@@ -1,1 +1,1 @@
-export { default as Wireframing } from "./Wireframing";
+export { default as UndrawWireframing } from "./Wireframing";

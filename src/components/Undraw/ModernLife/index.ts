@@ -1,1 +1,1 @@
-export { default as ModernLife } from "./ModernLife";
+export { default as UndrawModernLife } from "./ModernLife";

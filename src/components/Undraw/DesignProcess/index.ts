@@ -1,1 +1,1 @@
-export { default as DesignProcess } from "./DesignProcess";
+export { default as UndrawDesignProcess } from "./DesignProcess";

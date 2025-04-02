@@ -1,1 +1,1 @@
-export { default as WordOfMouth } from "./WordOfMouth";
+export { default as UndrawWordOfMouth } from "./WordOfMouth";

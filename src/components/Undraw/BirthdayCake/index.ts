@@ -1,1 +1,1 @@
-export { default as BirthdayCake } from "./BirthdayCake";
+export { default as UndrawBirthdayCake } from "./BirthdayCake";

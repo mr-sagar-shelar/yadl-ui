@@ -1,1 +1,1 @@
-export { default as RightPlaces } from "./RightPlaces";
+export { default as UndrawRightPlaces } from "./RightPlaces";

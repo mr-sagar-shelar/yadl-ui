@@ -1,1 +1,1 @@
-export { default as Suburbs } from "./Suburbs";
+export { default as UndrawSuburbs } from "./Suburbs";

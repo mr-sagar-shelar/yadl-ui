@@ -1,1 +1,1 @@
-export { default as Aircraft } from "./Aircraft";
+export { default as UndrawAircraft } from "./Aircraft";

@@ -1,1 +1,1 @@
-export { default as Updated } from "./Updated";
+export { default as UndrawUpdated } from "./Updated";

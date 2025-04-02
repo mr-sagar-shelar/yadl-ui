@@ -1,1 +1,1 @@
-export { default as MobileUser } from "./MobileUser";
+export { default as UndrawMobileUser } from "./MobileUser";

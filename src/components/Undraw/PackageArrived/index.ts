@@ -1,1 +1,1 @@
-export { default as PackageArrived } from "./PackageArrived";
+export { default as UndrawPackageArrived } from "./PackageArrived";

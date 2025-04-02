@@ -1,1 +1,1 @@
-export { default as TreasureTreasure } from "./TreasureTreasure";
+export { default as UndrawTreasureTreasure } from "./TreasureTreasure";

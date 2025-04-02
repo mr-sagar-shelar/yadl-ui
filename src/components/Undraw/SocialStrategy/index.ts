@@ -1,1 +1,1 @@
-export { default as SocialStrategy } from "./SocialStrategy";
+export { default as UndrawSocialStrategy } from "./SocialStrategy";

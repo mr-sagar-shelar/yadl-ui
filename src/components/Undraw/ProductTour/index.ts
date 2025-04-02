@@ -1,1 +1,1 @@
-export { default as ProductTour } from "./ProductTour";
+export { default as UndrawProductTour } from "./ProductTour";

@@ -1,1 +1,1 @@
-export { default as OnlinePopularity } from "./OnlinePopularity";
+export { default as UndrawOnlinePopularity } from "./OnlinePopularity";

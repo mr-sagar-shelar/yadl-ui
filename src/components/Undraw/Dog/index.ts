@@ -1,1 +1,1 @@
-export { default as Dog } from "./Dog";
+export { default as UndrawDog } from "./Dog";

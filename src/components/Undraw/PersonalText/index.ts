@@ -1,1 +1,1 @@
-export { default as PersonalText } from "./PersonalText";
+export { default as UndrawPersonalText } from "./PersonalText";

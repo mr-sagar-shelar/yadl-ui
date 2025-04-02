@@ -1,1 +1,1 @@
-export { default as Mailbox } from "./Mailbox";
+export { default as UndrawMailbox } from "./Mailbox";

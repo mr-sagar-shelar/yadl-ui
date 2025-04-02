@@ -1,1 +1,1 @@
-export { default as Followers } from "./Followers";
+export { default as UndrawFollowers } from "./Followers";

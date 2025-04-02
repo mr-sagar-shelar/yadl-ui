@@ -1,1 +1,1 @@
-export { default as EverywhereTogether } from "./EverywhereTogether";
+export { default as UndrawEverywhereTogether } from "./EverywhereTogether";

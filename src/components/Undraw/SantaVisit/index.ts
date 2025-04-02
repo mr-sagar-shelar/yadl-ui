@@ -1,1 +1,1 @@
-export { default as SantaVisit } from "./SantaVisit";
+export { default as UndrawSantaVisit } from "./SantaVisit";

@@ -1,1 +1,1 @@
-export { default as LiveCollaboration } from "./LiveCollaboration";
+export { default as UndrawLiveCollaboration } from "./LiveCollaboration";

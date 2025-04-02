@@ -1,1 +1,1 @@
-export { default as TreeSwing } from "./TreeSwing";
+export { default as UndrawTreeSwing } from "./TreeSwing";

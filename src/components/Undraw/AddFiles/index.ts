@@ -1,1 +1,1 @@
-export { default as AddFiles } from "./AddFiles";
+export { default as UndrawAddFiles } from "./AddFiles";

@@ -1,1 +1,1 @@
-export { default as Starlink } from "./Starlink";
+export { default as UndrawStarlink } from "./Starlink";

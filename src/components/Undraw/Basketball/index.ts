@@ -1,1 +1,1 @@
-export { default as Basketball } from "./Basketball";
+export { default as UndrawBasketball } from "./Basketball";

@@ -1,1 +1,1 @@
-export { default as SoftwareEngineer } from "./SoftwareEngineer";
+export { default as UndrawSoftwareEngineer } from "./SoftwareEngineer";

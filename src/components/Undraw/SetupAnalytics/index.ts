@@ -1,1 +1,1 @@
-export { default as SetupAnalytics } from "./SetupAnalytics";
+export { default as UndrawSetupAnalytics } from "./SetupAnalytics";

@@ -1,1 +1,1 @@
-export { default as DecorateChristmasTree } from "./DecorateChristmasTree";
+export { default as UndrawDecorateChristmasTree } from "./DecorateChristmasTree";

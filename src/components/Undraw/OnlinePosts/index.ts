@@ -1,1 +1,1 @@
-export { default as OnlinePosts } from "./OnlinePosts";
+export { default as UndrawOnlinePosts } from "./OnlinePosts";

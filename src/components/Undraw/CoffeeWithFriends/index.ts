@@ -1,1 +1,1 @@
-export { default as CoffeeWithFriends } from "./CoffeeWithFriends";
+export { default as UndrawCoffeeWithFriends } from "./CoffeeWithFriends";

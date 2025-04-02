@@ -1,1 +1,1 @@
-export { default as Booked } from "./Booked";
+export { default as UndrawBooked } from "./Booked";

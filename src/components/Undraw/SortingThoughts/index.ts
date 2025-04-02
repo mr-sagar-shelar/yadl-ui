@@ -1,1 +1,1 @@
-export { default as SortingThoughts } from "./SortingThoughts";
+export { default as UndrawSortingThoughts } from "./SortingThoughts";

@@ -1,1 +1,1 @@
-export { default as BusinessChat } from "./BusinessChat";
+export { default as UndrawBusinessChat } from "./BusinessChat";

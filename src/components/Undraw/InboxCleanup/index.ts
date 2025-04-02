@@ -1,1 +1,1 @@
-export { default as InboxCleanup } from "./InboxCleanup";
+export { default as UndrawInboxCleanup } from "./InboxCleanup";

@@ -1,1 +1,1 @@
-export { default as SocialDashboard } from "./SocialDashboard";
+export { default as UndrawSocialDashboard } from "./SocialDashboard";

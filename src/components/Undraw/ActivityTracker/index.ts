@@ -1,1 +1,1 @@
-export { default as ActivityTracker } from "./ActivityTracker";
+export { default as UndrawActivityTracker } from "./ActivityTracker";

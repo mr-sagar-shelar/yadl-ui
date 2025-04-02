@@ -1,1 +1,1 @@
-export { default as MobileApps } from "./MobileApps";
+export { default as UndrawMobileApps } from "./MobileApps";

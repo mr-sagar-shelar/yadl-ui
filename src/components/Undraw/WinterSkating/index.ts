@@ -1,1 +1,1 @@
-export { default as WinterSkating } from "./WinterSkating";
+export { default as UndrawWinterSkating } from "./WinterSkating";

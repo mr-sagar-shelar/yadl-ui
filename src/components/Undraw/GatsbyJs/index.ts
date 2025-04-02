@@ -1,1 +1,1 @@
-export { default as GatsbyJs } from "./GatsbyJs";
+export { default as UndrawGatsbyJs } from "./GatsbyJs";

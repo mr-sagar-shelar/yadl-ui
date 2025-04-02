@@ -1,1 +1,1 @@
-export { default as SendGift } from "./SendGift";
+export { default as UndrawSendGift } from "./SendGift";

@@ -1,1 +1,1 @@
-export { default as Visualization } from "./Visualization";
+export { default as UndrawVisualization } from "./Visualization";

@@ -1,1 +1,1 @@
-export { default as OrderConfirmed } from "./OrderConfirmed";
+export { default as UndrawOrderConfirmed } from "./OrderConfirmed";

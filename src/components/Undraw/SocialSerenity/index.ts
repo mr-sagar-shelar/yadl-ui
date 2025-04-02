@@ -1,1 +1,1 @@
-export { default as SocialSerenity } from "./SocialSerenity";
+export { default as UndrawSocialSerenity } from "./SocialSerenity";

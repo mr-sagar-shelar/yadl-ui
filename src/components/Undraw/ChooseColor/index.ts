@@ -1,1 +1,1 @@
-export { default as ChooseColor } from "./ChooseColor";
+export { default as UndrawChooseColor } from "./ChooseColor";

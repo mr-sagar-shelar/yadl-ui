@@ -1,1 +1,1 @@
-export { default as Target } from "./Target";
+export { default as UndrawTarget } from "./Target";

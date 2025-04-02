@@ -1,1 +1,1 @@
-export { default as ShoppingApp } from "./ShoppingApp";
+export { default as UndrawShoppingApp } from "./ShoppingApp";

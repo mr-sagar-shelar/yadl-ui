@@ -1,1 +1,1 @@
-export { default as Hiring } from "./Hiring";
+export { default as UndrawHiring } from "./Hiring";

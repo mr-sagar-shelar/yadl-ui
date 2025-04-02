@@ -1,1 +1,1 @@
-export { default as Injured } from "./Injured";
+export { default as UndrawInjured } from "./Injured";

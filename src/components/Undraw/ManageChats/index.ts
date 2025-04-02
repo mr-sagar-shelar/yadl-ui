@@ -1,1 +1,1 @@
-export { default as ManageChats } from "./ManageChats";
+export { default as UndrawManageChats } from "./ManageChats";

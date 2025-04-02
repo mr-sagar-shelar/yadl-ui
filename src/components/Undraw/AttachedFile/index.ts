@@ -1,1 +1,1 @@
-export { default as AttachedFile } from "./AttachedFile";
+export { default as UndrawAttachedFile } from "./AttachedFile";

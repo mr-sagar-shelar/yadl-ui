@@ -1,1 +1,1 @@
-export { default as IconDesign } from "./IconDesign";
+export { default as UndrawIconDesign } from "./IconDesign";

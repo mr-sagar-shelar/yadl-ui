@@ -1,1 +1,1 @@
-export { default as StartBuilding } from "./StartBuilding";
+export { default as UndrawStartBuilding } from "./StartBuilding";

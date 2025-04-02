@@ -1,1 +1,1 @@
-export { default as LikePost } from "./LikePost";
+export { default as UndrawLikePost } from "./LikePost";

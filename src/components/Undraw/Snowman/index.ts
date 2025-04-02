@@ -1,1 +1,1 @@
-export { default as Snowman } from "./Snowman";
+export { default as UndrawSnowman } from "./Snowman";

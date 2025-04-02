@@ -1,1 +1,1 @@
-export { default as Growing } from "./Growing";
+export { default as UndrawGrowing } from "./Growing";

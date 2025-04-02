@@ -1,1 +1,1 @@
-export { default as Mobile_webMobileWeb } from "./Mobile_webMobileWeb";
+export { default as UndrawMobile_webMobileWeb } from "./Mobile_webMobileWeb";

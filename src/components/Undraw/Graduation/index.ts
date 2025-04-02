@@ -1,1 +1,1 @@
-export { default as Graduation } from "./Graduation";
+export { default as UndrawGraduation } from "./Graduation";

@@ -1,1 +1,1 @@
-export { default as InSync } from "./InSync";
+export { default as UndrawInSync } from "./InSync";

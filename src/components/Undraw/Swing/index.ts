@@ -1,1 +1,1 @@
-export { default as Swing } from "./Swing";
+export { default as UndrawSwing } from "./Swing";

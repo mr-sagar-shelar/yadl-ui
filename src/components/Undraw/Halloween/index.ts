@@ -1,1 +1,1 @@
-export { default as Halloween } from "./Halloween";
+export { default as UndrawHalloween } from "./Halloween";

@@ -1,1 +1,1 @@
-export { default as Contrast } from "./Contrast";
+export { default as UndrawContrast } from "./Contrast";

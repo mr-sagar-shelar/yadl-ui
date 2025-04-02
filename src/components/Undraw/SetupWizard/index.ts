@@ -1,1 +1,1 @@
-export { default as SetupWizard } from "./SetupWizard";
+export { default as UndrawSetupWizard } from "./SetupWizard";

@@ -1,1 +1,1 @@
-export { default as Wash_handsWashHands } from "./Wash_handsWashHands";
+export { default as UndrawWash_handsWashHands } from "./Wash_handsWashHands";

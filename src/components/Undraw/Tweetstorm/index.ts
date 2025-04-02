@@ -1,1 +1,1 @@
-export { default as Tweetstorm } from "./Tweetstorm";
+export { default as UndrawTweetstorm } from "./Tweetstorm";

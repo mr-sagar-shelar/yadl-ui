@@ -1,1 +1,1 @@
-export { default as CreativeThinking } from "./CreativeThinking";
+export { default as UndrawCreativeThinking } from "./CreativeThinking";

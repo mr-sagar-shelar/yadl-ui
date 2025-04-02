@@ -1,1 +1,1 @@
-export { default as MomentsMoments } from "./MomentsMoments";
+export { default as UndrawMomentsMoments } from "./MomentsMoments";

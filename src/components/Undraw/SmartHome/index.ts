@@ -1,1 +1,1 @@
-export { default as SmartHome } from "./SmartHome";
+export { default as UndrawSmartHome } from "./SmartHome";

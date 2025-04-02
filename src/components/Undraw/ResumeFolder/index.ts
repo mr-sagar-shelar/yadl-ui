@@ -1,1 +1,1 @@
-export { default as ResumeFolder } from "./ResumeFolder";
+export { default as UndrawResumeFolder } from "./ResumeFolder";

@@ -1,1 +1,1 @@
-export { default as Connected } from "./Connected";
+export { default as UndrawConnected } from "./Connected";

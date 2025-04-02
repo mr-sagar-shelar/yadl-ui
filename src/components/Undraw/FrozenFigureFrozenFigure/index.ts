@@ -1,1 +1,1 @@
-export { default as FrozenFigureFrozenFigure } from "./FrozenFigureFrozenFigure";
+export { default as UndrawFrozenFigureFrozenFigure } from "./FrozenFigureFrozenFigure";

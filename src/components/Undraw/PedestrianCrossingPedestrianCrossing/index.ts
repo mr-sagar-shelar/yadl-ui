@@ -1,1 +1,1 @@
-export { default as PedestrianCrossingPedestrianCrossing } from "./PedestrianCrossingPedestrianCrossing";
+export { default as UndrawPedestrianCrossingPedestrianCrossing } from "./PedestrianCrossingPedestrianCrossing";

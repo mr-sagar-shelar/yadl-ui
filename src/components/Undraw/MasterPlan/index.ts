@@ -1,1 +1,1 @@
-export { default as MasterPlan } from "./MasterPlan";
+export { default as UndrawMasterPlan } from "./MasterPlan";

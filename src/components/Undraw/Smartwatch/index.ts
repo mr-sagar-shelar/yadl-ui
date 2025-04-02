@@ -1,1 +1,1 @@
-export { default as Smartwatch } from "./Smartwatch";
+export { default as UndrawSmartwatch } from "./Smartwatch";

@@ -1,1 +1,1 @@
-export { default as TravelMode } from "./TravelMode";
+export { default as UndrawTravelMode } from "./TravelMode";

@@ -1,1 +1,1 @@
-export { default as GrandSlam } from "./GrandSlam";
+export { default as UndrawGrandSlam } from "./GrandSlam";

@@ -1,1 +1,1 @@
-export { default as Noted } from "./Noted";
+export { default as UndrawNoted } from "./Noted";

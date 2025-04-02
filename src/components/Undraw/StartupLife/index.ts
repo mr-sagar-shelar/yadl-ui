@@ -1,1 +1,1 @@
-export { default as StartupLife } from "./StartupLife";
+export { default as UndrawStartupLife } from "./StartupLife";

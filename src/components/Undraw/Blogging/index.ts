@@ -1,1 +1,1 @@
-export { default as Blogging } from "./Blogging";
+export { default as UndrawBlogging } from "./Blogging";

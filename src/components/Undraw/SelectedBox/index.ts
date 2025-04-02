@@ -1,1 +1,1 @@
-export { default as SelectedBox } from "./SelectedBox";
+export { default as UndrawSelectedBox } from "./SelectedBox";

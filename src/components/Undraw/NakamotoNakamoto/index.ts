@@ -1,1 +1,1 @@
-export { default as NakamotoNakamoto } from "./NakamotoNakamoto";
+export { default as UndrawNakamotoNakamoto } from "./NakamotoNakamoto";

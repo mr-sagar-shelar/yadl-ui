@@ -1,1 +1,1 @@
-export { default as SignalSearching } from "./SignalSearching";
+export { default as UndrawSignalSearching } from "./SignalSearching";

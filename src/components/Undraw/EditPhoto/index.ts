@@ -1,1 +1,1 @@
-export { default as EditPhoto } from "./EditPhoto";
+export { default as UndrawEditPhoto } from "./EditPhoto";

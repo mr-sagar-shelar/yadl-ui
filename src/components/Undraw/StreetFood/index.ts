@@ -1,1 +1,1 @@
-export { default as StreetFood } from "./StreetFood";
+export { default as UndrawStreetFood } from "./StreetFood";

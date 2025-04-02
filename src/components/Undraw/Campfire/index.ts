@@ -1,1 +1,1 @@
-export { default as Campfire } from "./Campfire";
+export { default as UndrawCampfire } from "./Campfire";

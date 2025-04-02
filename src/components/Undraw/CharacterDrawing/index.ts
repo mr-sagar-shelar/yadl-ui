@@ -1,1 +1,1 @@
-export { default as CharacterDrawing } from "./CharacterDrawing";
+export { default as UndrawCharacterDrawing } from "./CharacterDrawing";

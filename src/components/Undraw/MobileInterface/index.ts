@@ -1,1 +1,1 @@
-export { default as MobileInterface } from "./MobileInterface";
+export { default as UndrawMobileInterface } from "./MobileInterface";

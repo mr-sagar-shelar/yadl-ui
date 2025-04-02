@@ -1,1 +1,1 @@
-export { default as Vault } from "./Vault";
+export { default as UndrawVault } from "./Vault";

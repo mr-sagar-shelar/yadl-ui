@@ -1,1 +1,1 @@
-export { default as CheckingBoxes } from "./CheckingBoxes";
+export { default as UndrawCheckingBoxes } from "./CheckingBoxes";

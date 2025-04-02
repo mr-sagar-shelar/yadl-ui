@@ -1,1 +1,1 @@
-export { default as DiscountDiscount } from "./DiscountDiscount";
+export { default as UndrawDiscountDiscount } from "./DiscountDiscount";

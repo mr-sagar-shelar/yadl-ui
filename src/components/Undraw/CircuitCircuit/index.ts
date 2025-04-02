@@ -1,1 +1,1 @@
-export { default as CircuitCircuit } from "./CircuitCircuit";
+export { default as UndrawCircuitCircuit } from "./CircuitCircuit";

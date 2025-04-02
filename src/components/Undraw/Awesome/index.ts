@@ -1,1 +1,1 @@
-export { default as Awesome } from "./Awesome";
+export { default as UndrawAwesome } from "./Awesome";

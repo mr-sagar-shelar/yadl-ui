@@ -1,1 +1,1 @@
-export { default as SharedGoals } from "./SharedGoals";
+export { default as UndrawSharedGoals } from "./SharedGoals";

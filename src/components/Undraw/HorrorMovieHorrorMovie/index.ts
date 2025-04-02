@@ -1,1 +1,1 @@
-export { default as HorrorMovieHorrorMovie } from "./HorrorMovieHorrorMovie";
+export { default as UndrawHorrorMovieHorrorMovie } from "./HorrorMovieHorrorMovie";

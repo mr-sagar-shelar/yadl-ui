@@ -1,1 +1,1 @@
-export { default as DoneChecking } from "./DoneChecking";
+export { default as UndrawDoneChecking } from "./DoneChecking";

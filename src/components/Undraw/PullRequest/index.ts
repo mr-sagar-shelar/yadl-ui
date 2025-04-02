@@ -1,1 +1,1 @@
-export { default as PullRequest } from "./PullRequest";
+export { default as UndrawPullRequest } from "./PullRequest";

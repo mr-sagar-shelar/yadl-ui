@@ -1,1 +1,1 @@
-export { default as ChoreList } from "./ChoreList";
+export { default as UndrawChoreList } from "./ChoreList";

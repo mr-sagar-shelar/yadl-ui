@@ -1,1 +1,1 @@
-export { default as NewEntries } from "./NewEntries";
+export { default as UndrawNewEntries } from "./NewEntries";

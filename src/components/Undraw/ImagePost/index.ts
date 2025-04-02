@@ -1,1 +1,1 @@
-export { default as ImagePost } from "./ImagePost";
+export { default as UndrawImagePost } from "./ImagePost";

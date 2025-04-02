@@ -1,1 +1,1 @@
-export { default as NatureFun } from "./NatureFun";
+export { default as UndrawNatureFun } from "./NatureFun";

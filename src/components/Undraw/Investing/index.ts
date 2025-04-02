@@ -1,1 +1,1 @@
-export { default as Investing } from "./Investing";
+export { default as UndrawInvesting } from "./Investing";

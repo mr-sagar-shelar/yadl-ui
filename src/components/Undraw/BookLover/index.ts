@@ -1,1 +1,1 @@
-export { default as BookLover } from "./BookLover";
+export { default as UndrawBookLover } from "./BookLover";

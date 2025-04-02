@@ -1,1 +1,1 @@
-export { default as InteriorDesign } from "./InteriorDesign";
+export { default as UndrawInteriorDesign } from "./InteriorDesign";

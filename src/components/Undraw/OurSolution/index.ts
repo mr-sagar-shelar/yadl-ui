@@ -1,1 +1,1 @@
-export { default as OurSolution } from "./OurSolution";
+export { default as UndrawOurSolution } from "./OurSolution";

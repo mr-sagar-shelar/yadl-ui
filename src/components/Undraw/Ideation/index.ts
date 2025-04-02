@@ -1,1 +1,1 @@
-export { default as Ideation } from "./Ideation";
+export { default as UndrawIdeation } from "./Ideation";

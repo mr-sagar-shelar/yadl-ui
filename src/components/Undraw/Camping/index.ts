@@ -1,1 +1,1 @@
-export { default as Camping } from "./Camping";
+export { default as UndrawCamping } from "./Camping";

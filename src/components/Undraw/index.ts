@@ -508,6 +508,7 @@ export * from "./CryptoFlowers";
 export * from "./Personalization";
 export * from "./Firmware";
 export * from "./Reminders";
+export * from "./Businessman";
 export * from "./ModernWoman";
 export * from "./ManageChats";
 export * from "./Details";

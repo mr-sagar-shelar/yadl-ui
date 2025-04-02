@@ -1,1 +1,1 @@
-export { default as AmusementPark } from "./AmusementPark";
+export { default as UndrawAmusementPark } from "./AmusementPark";

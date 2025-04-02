@@ -1,1 +1,1 @@
-export { default as MyWorkspace } from "./MyWorkspace";
+export { default as UndrawMyWorkspace } from "./MyWorkspace";

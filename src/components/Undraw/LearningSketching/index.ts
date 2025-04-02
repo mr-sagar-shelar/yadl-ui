@@ -1,1 +1,1 @@
-export { default as LearningSketching } from "./LearningSketching";
+export { default as UndrawLearningSketching } from "./LearningSketching";

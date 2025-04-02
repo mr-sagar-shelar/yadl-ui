@@ -1,1 +1,1 @@
-export { default as MobileMessages } from "./MobileMessages";
+export { default as UndrawMobileMessages } from "./MobileMessages";

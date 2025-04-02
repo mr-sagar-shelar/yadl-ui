@@ -1,1 +1,1 @@
-export { default as BeginChat } from "./BeginChat";
+export { default as UndrawBeginChat } from "./BeginChat";

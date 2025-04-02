@@ -1,1 +1,1 @@
-export { default as New_decadeNewDecade } from "./New_decadeNewDecade";
+export { default as UndrawNew_decadeNewDecade } from "./New_decadeNewDecade";

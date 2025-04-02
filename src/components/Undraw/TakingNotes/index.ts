@@ -1,1 +1,1 @@
-export { default as TakingNotes } from "./TakingNotes";
+export { default as UndrawTakingNotes } from "./TakingNotes";

@@ -1,1 +1,1 @@
-export { default as Fast } from "./Fast";
+export { default as UndrawFast } from "./Fast";

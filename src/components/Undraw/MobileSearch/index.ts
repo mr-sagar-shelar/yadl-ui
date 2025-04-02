@@ -1,1 +1,1 @@
-export { default as MobileSearch } from "./MobileSearch";
+export { default as UndrawMobileSearch } from "./MobileSearch";

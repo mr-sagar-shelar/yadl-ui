@@ -1,1 +1,1 @@
-export { default as MedicalCare } from "./MedicalCare";
+export { default as UndrawMedicalCare } from "./MedicalCare";

@@ -1,1 +1,1 @@
-export { default as AboutUsPage } from "./AboutUsPage";
+export { default as UndrawAboutUsPage } from "./AboutUsPage";

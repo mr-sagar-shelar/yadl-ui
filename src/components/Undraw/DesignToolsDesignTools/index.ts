@@ -1,1 +1,1 @@
-export { default as DesignToolsDesignTools } from "./DesignToolsDesignTools";
+export { default as UndrawDesignToolsDesignTools } from "./DesignToolsDesignTools";

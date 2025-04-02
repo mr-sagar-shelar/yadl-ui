@@ -1,1 +1,1 @@
-export { default as TransferFiles } from "./TransferFiles";
+export { default as UndrawTransferFiles } from "./TransferFiles";

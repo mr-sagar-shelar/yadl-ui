@@ -1,1 +1,1 @@
-export { default as NoteList } from "./NoteList";
+export { default as UndrawNoteList } from "./NoteList";

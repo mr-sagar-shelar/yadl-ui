@@ -1,1 +1,1 @@
-export { default as Testimonials } from "./Testimonials";
+export { default as UndrawTestimonials } from "./Testimonials";

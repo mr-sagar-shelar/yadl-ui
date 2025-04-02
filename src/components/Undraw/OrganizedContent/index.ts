@@ -1,1 +1,1 @@
-export { default as OrganizedContent } from "./OrganizedContent";
+export { default as UndrawOrganizedContent } from "./OrganizedContent";

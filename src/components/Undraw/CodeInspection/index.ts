@@ -1,1 +1,1 @@
-export { default as CodeInspection } from "./CodeInspection";
+export { default as UndrawCodeInspection } from "./CodeInspection";

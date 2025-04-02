@@ -1,1 +1,1 @@
-export { default as TeamPage } from "./TeamPage";
+export { default as UndrawTeamPage } from "./TeamPage";

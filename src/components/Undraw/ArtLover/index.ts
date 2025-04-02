@@ -1,1 +1,1 @@
-export { default as ArtLover } from "./ArtLover";
+export { default as UndrawArtLover } from "./ArtLover";

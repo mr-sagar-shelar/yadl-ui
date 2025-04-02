@@ -1,1 +1,1 @@
-export { default as FavouriteItem } from "./FavouriteItem";
+export { default as UndrawFavouriteItem } from "./FavouriteItem";

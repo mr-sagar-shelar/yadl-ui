@@ -1,1 +1,1 @@
-export { default as Sunlight } from "./Sunlight";
+export { default as UndrawSunlight } from "./Sunlight";

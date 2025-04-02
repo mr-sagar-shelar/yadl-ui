@@ -1,1 +1,1 @@
-export { default as FitnessTrackerFitnessTracker } from "./FitnessTrackerFitnessTracker";
+export { default as UndrawFitnessTrackerFitnessTracker } from "./FitnessTrackerFitnessTracker";

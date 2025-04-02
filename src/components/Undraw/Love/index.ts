@@ -1,1 +1,1 @@
-export { default as Love } from "./Love";
+export { default as UndrawLove } from "./Love";

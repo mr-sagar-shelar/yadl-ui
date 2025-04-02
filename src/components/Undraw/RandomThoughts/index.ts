@@ -1,1 +1,1 @@
-export { default as RandomThoughts } from "./RandomThoughts";
+export { default as UndrawRandomThoughts } from "./RandomThoughts";

@@ -1,1 +1,1 @@
-export { default as JewelleriesJewelry } from "./JewelleriesJewelry";
+export { default as UndrawJewelleriesJewelry } from "./JewelleriesJewelry";

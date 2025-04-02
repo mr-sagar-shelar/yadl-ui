@@ -1,1 +1,1 @@
-export { default as Journey } from "./Journey";
+export { default as UndrawJourney } from "./Journey";

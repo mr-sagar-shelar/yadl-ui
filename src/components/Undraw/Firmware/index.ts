@@ -1,1 +1,1 @@
-export { default as Firmware } from "./Firmware";
+export { default as UndrawFirmware } from "./Firmware";

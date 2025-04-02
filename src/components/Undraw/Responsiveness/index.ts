@@ -1,1 +1,1 @@
-export { default as Responsiveness } from "./Responsiveness";
+export { default as UndrawResponsiveness } from "./Responsiveness";

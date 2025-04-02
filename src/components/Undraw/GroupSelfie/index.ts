@@ -1,1 +1,1 @@
-export { default as GroupSelfie } from "./GroupSelfie";
+export { default as UndrawGroupSelfie } from "./GroupSelfie";

@@ -1,1 +1,1 @@
-export { default as CandidateCandidate } from "./CandidateCandidate";
+export { default as UndrawCandidateCandidate } from "./CandidateCandidate";

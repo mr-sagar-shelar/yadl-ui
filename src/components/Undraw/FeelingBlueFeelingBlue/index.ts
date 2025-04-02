@@ -1,1 +1,1 @@
-export { default as FeelingBlueFeelingBlue } from "./FeelingBlueFeelingBlue";
+export { default as UndrawFeelingBlueFeelingBlue } from "./FeelingBlueFeelingBlue";

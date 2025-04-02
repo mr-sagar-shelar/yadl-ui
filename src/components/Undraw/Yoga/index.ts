@@ -1,1 +1,1 @@
-export { default as Yoga } from "./Yoga";
+export { default as UndrawYoga } from "./Yoga";

@@ -1,1 +1,1 @@
-export { default as PieGraph } from "./PieGraph";
+export { default as UndrawPieGraph } from "./PieGraph";

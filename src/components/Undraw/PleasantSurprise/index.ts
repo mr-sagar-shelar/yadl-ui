@@ -1,1 +1,1 @@
-export { default as PleasantSurprise } from "./PleasantSurprise";
+export { default as UndrawPleasantSurprise } from "./PleasantSurprise";

@@ -1,1 +1,1 @@
-export { default as ChooseCard } from "./ChooseCard";
+export { default as UndrawChooseCard } from "./ChooseCard";

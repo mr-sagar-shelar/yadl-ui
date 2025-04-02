@@ -1,1 +1,1 @@
-export { default as OnlineTest } from "./OnlineTest";
+export { default as UndrawOnlineTest } from "./OnlineTest";

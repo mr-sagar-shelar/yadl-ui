@@ -1,1 +1,1 @@
-export { default as FastLoading } from "./FastLoading";
+export { default as UndrawFastLoading } from "./FastLoading";

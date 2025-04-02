@@ -1,1 +1,1 @@
-export { default as PersonalSettings } from "./PersonalSettings";
+export { default as UndrawPersonalSettings } from "./PersonalSettings";

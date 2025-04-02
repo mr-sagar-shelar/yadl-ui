@@ -1,1 +1,1 @@
-export { default as SocialBio } from "./SocialBio";
+export { default as UndrawSocialBio } from "./SocialBio";

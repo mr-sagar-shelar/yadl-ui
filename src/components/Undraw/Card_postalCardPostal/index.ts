@@ -1,1 +1,1 @@
-export { default as Card_postalCardPostal } from "./Card_postalCardPostal";
+export { default as UndrawCard_postalCardPostal } from "./Card_postalCardPostal";

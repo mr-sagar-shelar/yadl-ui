@@ -1,1 +1,1 @@
-export { default as TeamGoals } from "./TeamGoals";
+export { default as UndrawTeamGoals } from "./TeamGoals";

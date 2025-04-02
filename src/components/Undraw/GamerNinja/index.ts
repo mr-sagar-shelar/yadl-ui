@@ -1,1 +1,1 @@
-export { default as GamerNinja } from "./GamerNinja";
+export { default as UndrawGamerNinja } from "./GamerNinja";

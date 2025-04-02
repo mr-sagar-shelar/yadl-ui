@@ -1,1 +1,1 @@
-export { default as ConfidentialLetter } from "./ConfidentialLetter";
+export { default as UndrawConfidentialLetter } from "./ConfidentialLetter";

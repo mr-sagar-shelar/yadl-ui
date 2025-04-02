@@ -1,1 +1,1 @@
-export { default as CompletionProgress } from "./CompletionProgress";
+export { default as UndrawCompletionProgress } from "./CompletionProgress";

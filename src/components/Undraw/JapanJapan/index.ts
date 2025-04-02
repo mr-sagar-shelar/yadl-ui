@@ -1,1 +1,1 @@
-export { default as JapanJapan } from "./JapanJapan";
+export { default as UndrawJapanJapan } from "./JapanJapan";

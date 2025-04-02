@@ -1,1 +1,1 @@
-export { default as AICodeGeneration } from "./AICodeGeneration";
+export { default as UndrawAICodeGeneration } from "./AICodeGeneration";

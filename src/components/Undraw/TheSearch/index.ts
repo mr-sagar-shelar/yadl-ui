@@ -1,1 +1,1 @@
-export { default as TheSearch } from "./TheSearch";
+export { default as UndrawTheSearch } from "./TheSearch";

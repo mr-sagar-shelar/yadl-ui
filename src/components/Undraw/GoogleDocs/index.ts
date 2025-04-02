@@ -1,1 +1,1 @@
-export { default as GoogleDocs } from "./GoogleDocs";
+export { default as UndrawGoogleDocs } from "./GoogleDocs";

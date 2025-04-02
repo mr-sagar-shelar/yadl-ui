@@ -1,1 +1,1 @@
-export { default as DietDiet } from "./DietDiet";
+export { default as UndrawDietDiet } from "./DietDiet";

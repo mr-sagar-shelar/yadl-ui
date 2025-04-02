@@ -1,1 +1,1 @@
-export { default as ProgressTracking } from "./ProgressTracking";
+export { default as UndrawProgressTracking } from "./ProgressTracking";

@@ -1,1 +1,1 @@
-export { default as OnTheWay } from "./OnTheWay";
+export { default as UndrawOnTheWay } from "./OnTheWay";

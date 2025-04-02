@@ -1,1 +1,1 @@
-export { default as Cooking } from "./Cooking";
+export { default as UndrawCooking } from "./Cooking";

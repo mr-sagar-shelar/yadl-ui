@@ -1,1 +1,1 @@
-export { default as EffortlessLove } from "./EffortlessLove";
+export { default as UndrawEffortlessLove } from "./EffortlessLove";

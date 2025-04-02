@@ -1,1 +1,1 @@
-export { default as Barista } from "./Barista";
+export { default as UndrawBarista } from "./Barista";

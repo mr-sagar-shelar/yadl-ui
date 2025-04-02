@@ -1,1 +1,1 @@
-export { default as WebDeveloper } from "./WebDeveloper";
+export { default as UndrawWebDeveloper } from "./WebDeveloper";

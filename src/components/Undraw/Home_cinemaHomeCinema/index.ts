@@ -1,1 +1,1 @@
-export { default as Home_cinemaHomeCinema } from "./Home_cinemaHomeCinema";
+export { default as UndrawHome_cinemaHomeCinema } from "./Home_cinemaHomeCinema";

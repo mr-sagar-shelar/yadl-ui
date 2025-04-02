@@ -1,1 +1,1 @@
-export { default as Barbecue } from "./Barbecue";
+export { default as UndrawBarbecue } from "./Barbecue";

@@ -1,1 +1,1 @@
-export { default as VotingVoting } from "./VotingVoting";
+export { default as UndrawVotingVoting } from "./VotingVoting";

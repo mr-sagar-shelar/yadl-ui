@@ -1,1 +1,1 @@
-export { default as EmptyStreet } from "./EmptyStreet";
+export { default as UndrawEmptyStreet } from "./EmptyStreet";

@@ -1,1 +1,1 @@
-export { default as SocialExpert } from "./SocialExpert";
+export { default as UndrawSocialExpert } from "./SocialExpert";

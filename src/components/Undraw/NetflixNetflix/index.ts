@@ -1,1 +1,1 @@
-export { default as NetflixNetflix } from "./NetflixNetflix";
+export { default as UndrawNetflixNetflix } from "./NetflixNetflix";

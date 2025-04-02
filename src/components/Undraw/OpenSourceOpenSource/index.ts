@@ -1,1 +1,1 @@
-export { default as OpenSourceOpenSource } from "./OpenSourceOpenSource";
+export { default as UndrawOpenSourceOpenSource } from "./OpenSourceOpenSource";

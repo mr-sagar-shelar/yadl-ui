@@ -1,1 +1,1 @@
-export { default as Science } from "./Science";
+export { default as UndrawScience } from "./Science";

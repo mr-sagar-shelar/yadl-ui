@@ -1,1 +1,1 @@
-export { default as SmileyFace } from "./SmileyFace";
+export { default as UndrawSmileyFace } from "./SmileyFace";

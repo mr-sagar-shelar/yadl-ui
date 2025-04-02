@@ -1,1 +1,1 @@
-export { default as AlgoliaAlgolia } from "./AlgoliaAlgolia";
+export { default as UndrawAlgoliaAlgolia } from "./AlgoliaAlgolia";

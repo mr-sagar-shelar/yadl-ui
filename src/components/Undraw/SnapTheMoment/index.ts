@@ -1,1 +1,1 @@
-export { default as SnapTheMoment } from "./SnapTheMoment";
+export { default as UndrawSnapTheMoment } from "./SnapTheMoment";

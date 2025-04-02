@@ -1,1 +1,1 @@
-export { default as CodeThinking } from "./CodeThinking";
+export { default as UndrawCodeThinking } from "./CodeThinking";

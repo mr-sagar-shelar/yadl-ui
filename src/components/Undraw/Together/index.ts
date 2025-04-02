@@ -1,1 +1,1 @@
-export { default as Together } from "./Together";
+export { default as UndrawTogether } from "./Together";

@@ -1,1 +1,1 @@
-export { default as CryptoPortfolio } from "./CryptoPortfolio";
+export { default as UndrawCryptoPortfolio } from "./CryptoPortfolio";

@@ -1,1 +1,1 @@
-export { default as GamingController } from "./GamingController";
+export { default as UndrawGamingController } from "./GamingController";

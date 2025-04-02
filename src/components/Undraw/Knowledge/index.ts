@@ -1,1 +1,1 @@
-export { default as Knowledge } from "./Knowledge";
+export { default as UndrawKnowledge } from "./Knowledge";

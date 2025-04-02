@@ -1,1 +1,1 @@
-export { default as SnowFun } from "./SnowFun";
+export { default as UndrawSnowFun } from "./SnowFun";

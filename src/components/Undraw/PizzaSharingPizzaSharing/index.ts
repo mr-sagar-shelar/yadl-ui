@@ -1,1 +1,1 @@
-export { default as PizzaSharingPizzaSharing } from "./PizzaSharingPizzaSharing";
+export { default as UndrawPizzaSharingPizzaSharing } from "./PizzaSharingPizzaSharing";

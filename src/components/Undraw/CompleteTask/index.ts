@@ -1,1 +1,1 @@
-export { default as CompleteTask } from "./CompleteTask";
+export { default as UndrawCompleteTask } from "./CompleteTask";

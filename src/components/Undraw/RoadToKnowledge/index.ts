@@ -1,1 +1,1 @@
-export { default as RoadToKnowledge } from "./RoadToKnowledge";
+export { default as UndrawRoadToKnowledge } from "./RoadToKnowledge";

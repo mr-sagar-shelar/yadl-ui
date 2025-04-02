@@ -1,1 +1,1 @@
-export { default as SolutionMindset } from "./SolutionMindset";
+export { default as UndrawSolutionMindset } from "./SolutionMindset";

@@ -1,1 +1,1 @@
-export { default as FeaturesOverview } from "./FeaturesOverview";
+export { default as UndrawFeaturesOverview } from "./FeaturesOverview";

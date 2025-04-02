@@ -1,1 +1,1 @@
-export { default as FriendsFriends } from "./FriendsFriends";
+export { default as UndrawFriendsFriends } from "./FriendsFriends";

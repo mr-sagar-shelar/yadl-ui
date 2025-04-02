@@ -1,1 +1,1 @@
-export { default as Marketing } from "./Marketing";
+export { default as UndrawMarketing } from "./Marketing";

@@ -1,1 +1,1 @@
-export { default as RemoteMeeting } from "./RemoteMeeting";
+export { default as UndrawRemoteMeeting } from "./RemoteMeeting";

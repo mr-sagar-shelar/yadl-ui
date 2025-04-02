@@ -1,1 +1,1 @@
-export { default as AddColor } from "./AddColor";
+export { default as UndrawAddColor } from "./AddColor";

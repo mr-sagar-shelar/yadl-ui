@@ -1,1 +1,1 @@
-export { default as MovingForward } from "./MovingForward";
+export { default as UndrawMovingForward } from "./MovingForward";

@@ -1,1 +1,1 @@
-export { default as MobileFeed } from "./MobileFeed";
+export { default as UndrawMobileFeed } from "./MobileFeed";

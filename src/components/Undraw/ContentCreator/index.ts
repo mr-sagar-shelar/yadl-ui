@@ -1,1 +1,1 @@
-export { default as ContentCreator } from "./ContentCreator";
+export { default as UndrawContentCreator } from "./ContentCreator";

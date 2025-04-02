@@ -1,1 +1,1 @@
-export { default as Freelancer } from "./Freelancer";
+export { default as UndrawFreelancer } from "./Freelancer";

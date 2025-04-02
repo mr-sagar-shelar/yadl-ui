@@ -1,1 +1,1 @@
-export { default as BusinessDeal } from "./BusinessDeal";
+export { default as UndrawBusinessDeal } from "./BusinessDeal";

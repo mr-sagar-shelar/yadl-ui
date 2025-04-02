@@ -1,1 +1,1 @@
-export { default as GroupHangout } from "./GroupHangout";
+export { default as UndrawGroupHangout } from "./GroupHangout";

@@ -1,1 +1,1 @@
-export { default as MovieNight } from "./MovieNight";
+export { default as UndrawMovieNight } from "./MovieNight";

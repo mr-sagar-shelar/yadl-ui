@@ -1,1 +1,1 @@
-export { default as ChristmasMode } from "./ChristmasMode";
+export { default as UndrawChristmasMode } from "./ChristmasMode";

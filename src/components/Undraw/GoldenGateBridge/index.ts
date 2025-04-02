@@ -1,1 +1,1 @@
-export { default as GoldenGateBridge } from "./GoldenGateBridge";
+export { default as UndrawGoldenGateBridge } from "./GoldenGateBridge";

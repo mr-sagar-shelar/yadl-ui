@@ -1,1 +1,1 @@
-export { default as ProcessingThoughts } from "./ProcessingThoughts";
+export { default as UndrawProcessingThoughts } from "./ProcessingThoughts";

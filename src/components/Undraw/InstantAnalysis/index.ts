@@ -1,1 +1,1 @@
-export { default as InstantAnalysis } from "./InstantAnalysis";
+export { default as UndrawInstantAnalysis } from "./InstantAnalysis";

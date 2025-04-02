@@ -1,1 +1,1 @@
-export { default as InformationTab } from "./InformationTab";
+export { default as UndrawInformationTab } from "./InformationTab";

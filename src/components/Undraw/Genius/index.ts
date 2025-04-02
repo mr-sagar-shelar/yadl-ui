@@ -1,1 +1,1 @@
-export { default as Genius } from "./Genius";
+export { default as UndrawGenius } from "./Genius";

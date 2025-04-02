@@ -1,1 +1,1 @@
-export { default as InstantInformation } from "./InstantInformation";
+export { default as UndrawInstantInformation } from "./InstantInformation";

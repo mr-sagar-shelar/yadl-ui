@@ -1,1 +1,1 @@
-export { default as MyFeed } from "./MyFeed";
+export { default as UndrawMyFeed } from "./MyFeed";

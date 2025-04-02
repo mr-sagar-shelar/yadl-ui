@@ -1,1 +1,1 @@
-export { default as ProgressOverview } from "./ProgressOverview";
+export { default as UndrawProgressOverview } from "./ProgressOverview";

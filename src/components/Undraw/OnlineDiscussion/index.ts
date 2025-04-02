@@ -1,1 +1,1 @@
-export { default as OnlineDiscussion } from "./OnlineDiscussion";
+export { default as UndrawOnlineDiscussion } from "./OnlineDiscussion";

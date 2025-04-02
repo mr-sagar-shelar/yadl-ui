@@ -1,1 +1,1 @@
-export { default as ThrowAway } from "./ThrowAway";
+export { default as UndrawThrowAway } from "./ThrowAway";

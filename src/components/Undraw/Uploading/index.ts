@@ -1,1 +1,1 @@
-export { default as Uploading } from "./Uploading";
+export { default as UndrawUploading } from "./Uploading";

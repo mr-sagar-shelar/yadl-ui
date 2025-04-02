@@ -1,1 +1,1 @@
-export { default as Partying } from "./Partying";
+export { default as UndrawPartying } from "./Partying";

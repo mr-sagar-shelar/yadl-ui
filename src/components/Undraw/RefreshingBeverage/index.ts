@@ -1,1 +1,1 @@
-export { default as RefreshingBeverage } from "./RefreshingBeverage";
+export { default as UndrawRefreshingBeverage } from "./RefreshingBeverage";

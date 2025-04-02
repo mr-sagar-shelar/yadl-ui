@@ -1,1 +1,1 @@
-export { default as OpenNotes } from "./OpenNotes";
+export { default as UndrawOpenNotes } from "./OpenNotes";

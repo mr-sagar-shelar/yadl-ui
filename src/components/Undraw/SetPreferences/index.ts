@@ -1,1 +1,1 @@
-export { default as SetPreferences } from "./SetPreferences";
+export { default as UndrawSetPreferences } from "./SetPreferences";

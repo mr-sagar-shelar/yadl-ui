@@ -1,1 +1,1 @@
-export { default as MyCurrentLocation } from "./MyCurrentLocation";
+export { default as UndrawMyCurrentLocation } from "./MyCurrentLocation";

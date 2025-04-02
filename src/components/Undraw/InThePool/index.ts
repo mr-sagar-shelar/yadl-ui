@@ -1,1 +1,1 @@
-export { default as InThePool } from "./InThePool";
+export { default as UndrawInThePool } from "./InThePool";

@@ -1,1 +1,1 @@
-export { default as ThingsToSay } from "./ThingsToSay";
+export { default as UndrawThingsToSay } from "./ThingsToSay";

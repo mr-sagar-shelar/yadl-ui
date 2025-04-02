@@ -1,1 +1,1 @@
-export { default as Baby } from "./Baby";
+export { default as UndrawBaby } from "./Baby";

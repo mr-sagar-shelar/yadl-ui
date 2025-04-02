@@ -1,1 +1,1 @@
-export { default as InternetOnTheGo } from "./InternetOnTheGo";
+export { default as UndrawInternetOnTheGo } from "./InternetOnTheGo";

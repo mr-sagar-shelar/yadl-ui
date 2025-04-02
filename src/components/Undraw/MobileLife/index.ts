@@ -1,1 +1,1 @@
-export { default as MobileLife } from "./MobileLife";
+export { default as UndrawMobileLife } from "./MobileLife";

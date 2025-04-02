@@ -1,1 +1,1 @@
-export { default as Subscriber } from "./Subscriber";
+export { default as UndrawSubscriber } from "./Subscriber";

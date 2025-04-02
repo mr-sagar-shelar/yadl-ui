@@ -1,1 +1,1 @@
-export { default as Lost } from "./Lost";
+export { default as UndrawLost } from "./Lost";

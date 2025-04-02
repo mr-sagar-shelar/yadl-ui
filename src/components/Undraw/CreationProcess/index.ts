@@ -1,1 +1,1 @@
-export { default as CreationProcess } from "./CreationProcess";
+export { default as UndrawCreationProcess } from "./CreationProcess";

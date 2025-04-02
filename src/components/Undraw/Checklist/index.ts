@@ -1,1 +1,1 @@
-export { default as Checklist } from "./Checklist";
+export { default as UndrawChecklist } from "./Checklist";

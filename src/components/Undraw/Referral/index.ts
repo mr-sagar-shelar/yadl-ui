@@ -1,1 +1,1 @@
-export { default as Referral } from "./Referral";
+export { default as UndrawReferral } from "./Referral";

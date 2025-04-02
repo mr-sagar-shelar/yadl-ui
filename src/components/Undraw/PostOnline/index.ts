@@ -1,1 +1,1 @@
-export { default as PostOnline } from "./PostOnline";
+export { default as UndrawPostOnline } from "./PostOnline";

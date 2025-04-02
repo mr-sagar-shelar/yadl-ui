@@ -1,1 +1,1 @@
-export { default as FarmGirl } from "./FarmGirl";
+export { default as UndrawFarmGirl } from "./FarmGirl";

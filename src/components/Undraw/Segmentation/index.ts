@@ -1,1 +1,1 @@
-export { default as Segmentation } from "./Segmentation";
+export { default as UndrawSegmentation } from "./Segmentation";

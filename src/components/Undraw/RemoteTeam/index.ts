@@ -1,1 +1,1 @@
-export { default as RemoteTeam } from "./RemoteTeam";
+export { default as UndrawRemoteTeam } from "./RemoteTeam";

@@ -1,1 +1,1 @@
-export { default as Grades } from "./Grades";
+export { default as UndrawGrades } from "./Grades";

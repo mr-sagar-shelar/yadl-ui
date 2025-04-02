@@ -1,1 +1,1 @@
-export { default as LocationReview } from "./LocationReview";
+export { default as UndrawLocationReview } from "./LocationReview";

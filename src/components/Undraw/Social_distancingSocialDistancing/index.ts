@@ -1,1 +1,1 @@
-export { default as Social_distancingSocialDistancing } from "./Social_distancingSocialDistancing";
+export { default as UndrawSocial_distancingSocialDistancing } from "./Social_distancingSocialDistancing";

@@ -1,1 +1,1 @@
-export { default as Specs } from "./Specs";
+export { default as UndrawSpecs } from "./Specs";

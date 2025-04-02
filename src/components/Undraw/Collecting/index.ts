@@ -1,1 +1,1 @@
-export { default as Collecting } from "./Collecting";
+export { default as UndrawCollecting } from "./Collecting";

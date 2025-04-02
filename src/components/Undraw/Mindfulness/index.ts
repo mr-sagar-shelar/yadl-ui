@@ -1,1 +1,1 @@
-export { default as Mindfulness } from "./Mindfulness";
+export { default as UndrawMindfulness } from "./Mindfulness";

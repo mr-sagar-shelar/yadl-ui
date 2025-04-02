@@ -1,1 +1,1 @@
-export { default as DesignSprint } from "./DesignSprint";
+export { default as UndrawDesignSprint } from "./DesignSprint";

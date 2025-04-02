@@ -1,1 +1,1 @@
-export { default as SplitTesting } from "./SplitTesting";
+export { default as UndrawSplitTesting } from "./SplitTesting";

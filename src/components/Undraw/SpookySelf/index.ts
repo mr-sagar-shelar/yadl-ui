@@ -1,1 +1,1 @@
-export { default as SpookySelf } from "./SpookySelf";
+export { default as UndrawSpookySelf } from "./SpookySelf";

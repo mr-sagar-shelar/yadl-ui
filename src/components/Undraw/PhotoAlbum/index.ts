@@ -1,1 +1,1 @@
-export { default as PhotoAlbum } from "./PhotoAlbum";
+export { default as UndrawPhotoAlbum } from "./PhotoAlbum";

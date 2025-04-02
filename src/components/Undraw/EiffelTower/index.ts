@@ -1,1 +1,1 @@
-export { default as EiffelTower } from "./EiffelTower";
+export { default as UndrawEiffelTower } from "./EiffelTower";

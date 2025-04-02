@@ -1,1 +1,1 @@
-export { default as Zoom_inZoomIn } from "./Zoom_inZoomIn";
+export { default as UndrawZoom_inZoomIn } from "./Zoom_inZoomIn";

@@ -1,1 +1,1 @@
-export { default as Miro } from "./Miro";
+export { default as UndrawMiro } from "./Miro";

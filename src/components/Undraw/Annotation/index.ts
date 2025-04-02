@@ -1,1 +1,1 @@
-export { default as Annotation } from "./Annotation";
+export { default as UndrawAnnotation } from "./Annotation";

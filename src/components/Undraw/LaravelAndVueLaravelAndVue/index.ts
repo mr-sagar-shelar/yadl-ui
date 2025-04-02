@@ -1,1 +1,1 @@
-export { default as LaravelAndVueLaravelAndVue } from "./LaravelAndVueLaravelAndVue";
+export { default as UndrawLaravelAndVueLaravelAndVue } from "./LaravelAndVueLaravelAndVue";

@@ -1,1 +1,1 @@
-export { default as MobileContent } from "./MobileContent";
+export { default as UndrawMobileContent } from "./MobileContent";

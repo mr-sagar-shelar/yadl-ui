@@ -1,1 +1,1 @@
-export { default as CloudSync } from "./CloudSync";
+export { default as UndrawCloudSync } from "./CloudSync";

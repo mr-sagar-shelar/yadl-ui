@@ -1,1 +1,1 @@
-export { default as Groceries } from "./Groceries";
+export { default as UndrawGroceries } from "./Groceries";

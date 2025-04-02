@@ -1,1 +1,1 @@
-export { default as ProblemSolving } from "./ProblemSolving";
+export { default as UndrawProblemSolving } from "./ProblemSolving";

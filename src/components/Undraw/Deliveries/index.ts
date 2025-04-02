@@ -1,1 +1,1 @@
-export { default as Deliveries } from "./Deliveries";
+export { default as UndrawDeliveries } from "./Deliveries";

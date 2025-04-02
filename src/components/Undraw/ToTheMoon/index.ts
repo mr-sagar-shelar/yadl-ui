@@ -1,1 +1,1 @@
-export { default as ToTheMoon } from "./ToTheMoon";
+export { default as UndrawToTheMoon } from "./ToTheMoon";

@@ -1,1 +1,1 @@
-export { default as Welcoming } from "./Welcoming";
+export { default as UndrawWelcoming } from "./Welcoming";

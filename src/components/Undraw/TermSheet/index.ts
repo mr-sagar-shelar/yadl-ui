@@ -1,1 +1,1 @@
-export { default as TermSheet } from "./TermSheet";
+export { default as UndrawTermSheet } from "./TermSheet";

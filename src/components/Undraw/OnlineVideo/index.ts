@@ -1,1 +1,1 @@
-export { default as OnlineVideo } from "./OnlineVideo";
+export { default as UndrawOnlineVideo } from "./OnlineVideo";

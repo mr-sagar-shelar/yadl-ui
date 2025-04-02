@@ -1,1 +1,1 @@
-export { default as HangOut } from "./HangOut";
+export { default as UndrawHangOut } from "./HangOut";

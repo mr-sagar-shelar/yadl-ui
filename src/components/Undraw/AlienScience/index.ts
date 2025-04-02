@@ -1,1 +1,1 @@
-export { default as AlienScience } from "./AlienScience";
+export { default as UndrawAlienScience } from "./AlienScience";

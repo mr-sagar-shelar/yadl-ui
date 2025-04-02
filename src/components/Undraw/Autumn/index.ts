@@ -1,1 +1,1 @@
-export { default as Autumn } from "./Autumn";
+export { default as UndrawAutumn } from "./Autumn";

@@ -1,1 +1,1 @@
-export { default as WindTurbineWindTurbine } from "./WindTurbineWindTurbine";
+export { default as UndrawWindTurbineWindTurbine } from "./WindTurbineWindTurbine";

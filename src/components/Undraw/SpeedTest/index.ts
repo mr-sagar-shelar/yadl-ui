@@ -1,1 +1,1 @@
-export { default as SpeedTest } from "./SpeedTest";
+export { default as UndrawSpeedTest } from "./SpeedTest";

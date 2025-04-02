@@ -1,1 +1,1 @@
-export { default as ProductTeardown } from "./ProductTeardown";
+export { default as UndrawProductTeardown } from "./ProductTeardown";

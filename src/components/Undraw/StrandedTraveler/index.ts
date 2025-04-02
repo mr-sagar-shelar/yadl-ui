@@ -1,1 +1,1 @@
-export { default as StrandedTraveler } from "./StrandedTraveler";
+export { default as UndrawStrandedTraveler } from "./StrandedTraveler";

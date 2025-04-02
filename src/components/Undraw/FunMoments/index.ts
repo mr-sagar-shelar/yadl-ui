@@ -1,1 +1,1 @@
-export { default as FunMoments } from "./FunMoments";
+export { default as UndrawFunMoments } from "./FunMoments";

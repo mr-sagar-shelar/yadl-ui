@@ -1,1 +1,1 @@
-export { default as ConferenceCall } from "./ConferenceCall";
+export { default as UndrawConferenceCall } from "./ConferenceCall";

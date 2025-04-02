@@ -1,1 +1,1 @@
-export { default as ScrumBoard } from "./ScrumBoard";
+export { default as UndrawScrumBoard } from "./ScrumBoard";

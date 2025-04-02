@@ -1,1 +1,1 @@
-export { default as AcceptRequest } from "./AcceptRequest";
+export { default as UndrawAcceptRequest } from "./AcceptRequest";

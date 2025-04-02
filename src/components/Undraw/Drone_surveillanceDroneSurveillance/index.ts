@@ -1,1 +1,1 @@
-export { default as Drone_surveillanceDroneSurveillance } from "./Drone_surveillanceDroneSurveillance";
+export { default as UndrawDrone_surveillanceDroneSurveillance } from "./Drone_surveillanceDroneSurveillance";

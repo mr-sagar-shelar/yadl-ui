@@ -1,1 +1,1 @@
-export { default as ScheduleMeeting } from "./ScheduleMeeting";
+export { default as UndrawScheduleMeeting } from "./ScheduleMeeting";

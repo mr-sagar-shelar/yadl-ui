@@ -1,1 +1,1 @@
-export { default as CloudHosting } from "./CloudHosting";
+export { default as UndrawCloudHosting } from "./CloudHosting";

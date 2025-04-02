@@ -1,1 +1,1 @@
-export { default as OnlineParty } from "./OnlineParty";
+export { default as UndrawOnlineParty } from "./OnlineParty";

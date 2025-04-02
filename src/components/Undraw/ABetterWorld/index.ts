@@ -1,1 +1,1 @@
-export { default as ABetterWorld } from "./ABetterWorld";
+export { default as UndrawABetterWorld } from "./ABetterWorld";

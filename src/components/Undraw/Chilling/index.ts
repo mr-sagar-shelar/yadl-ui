@@ -1,1 +1,1 @@
-export { default as Chilling } from "./Chilling";
+export { default as UndrawChilling } from "./Chilling";

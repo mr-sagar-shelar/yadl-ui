@@ -1,1 +1,1 @@
-export { default as MyDocuments } from "./MyDocuments";
+export { default as UndrawMyDocuments } from "./MyDocuments";

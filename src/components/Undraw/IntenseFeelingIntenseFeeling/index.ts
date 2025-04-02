@@ -1,1 +1,1 @@
-export { default as IntenseFeelingIntenseFeeling } from "./IntenseFeelingIntenseFeeling";
+export { default as UndrawIntenseFeelingIntenseFeeling } from "./IntenseFeelingIntenseFeeling";

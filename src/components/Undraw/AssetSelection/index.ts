@@ -1,1 +1,1 @@
-export { default as AssetSelection } from "./AssetSelection";
+export { default as UndrawAssetSelection } from "./AssetSelection";

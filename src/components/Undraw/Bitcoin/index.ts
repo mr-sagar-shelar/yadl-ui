@@ -1,1 +1,1 @@
-export { default as Bitcoin } from "./Bitcoin";
+export { default as UndrawBitcoin } from "./Bitcoin";

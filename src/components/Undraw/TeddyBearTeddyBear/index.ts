@@ -1,1 +1,1 @@
-export { default as TeddyBearTeddyBear } from "./TeddyBearTeddyBear";
+export { default as UndrawTeddyBearTeddyBear } from "./TeddyBearTeddyBear";

@@ -1,1 +1,1 @@
-export { default as RelaxedReading } from "./RelaxedReading";
+export { default as UndrawRelaxedReading } from "./RelaxedReading";

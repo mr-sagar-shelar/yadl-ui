@@ -1,1 +1,1 @@
-export { default as BuildingWebsites } from "./BuildingWebsites";
+export { default as UndrawBuildingWebsites } from "./BuildingWebsites";

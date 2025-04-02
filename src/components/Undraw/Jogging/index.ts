@@ -1,1 +1,1 @@
-export { default as Jogging } from "./Jogging";
+export { default as UndrawJogging } from "./Jogging";

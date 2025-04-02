@@ -1,1 +1,1 @@
-export { default as MobileAnalytics } from "./MobileAnalytics";
+export { default as UndrawMobileAnalytics } from "./MobileAnalytics";

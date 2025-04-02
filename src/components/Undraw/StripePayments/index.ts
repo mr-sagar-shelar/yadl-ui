@@ -1,1 +1,1 @@
-export { default as StripePayments } from "./StripePayments";
+export { default as UndrawStripePayments } from "./StripePayments";

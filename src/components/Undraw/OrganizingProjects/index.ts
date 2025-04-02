@@ -1,1 +1,1 @@
-export { default as OrganizingProjects } from "./OrganizingProjects";
+export { default as UndrawOrganizingProjects } from "./OrganizingProjects";

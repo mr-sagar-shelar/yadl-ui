@@ -1,1 +1,1 @@
-export { default as MyPassword } from "./MyPassword";
+export { default as UndrawMyPassword } from "./MyPassword";

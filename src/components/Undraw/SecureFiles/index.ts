@@ -1,1 +1,1 @@
-export { default as SecureFiles } from "./SecureFiles";
+export { default as UndrawSecureFiles } from "./SecureFiles";

@@ -1,1 +1,1 @@
-export { default as TeamUp } from "./TeamUp";
+export { default as UndrawTeamUp } from "./TeamUp";

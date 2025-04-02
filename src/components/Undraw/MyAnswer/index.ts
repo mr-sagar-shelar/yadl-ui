@@ -1,1 +1,1 @@
-export { default as MyAnswer } from "./MyAnswer";
+export { default as UndrawMyAnswer } from "./MyAnswer";

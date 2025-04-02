@@ -1,1 +1,1 @@
-export { default as JobHunt } from "./JobHunt";
+export { default as UndrawJobHunt } from "./JobHunt";

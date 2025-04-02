@@ -1,1 +1,1 @@
-export { default as Verified } from "./Verified";
+export { default as UndrawVerified } from "./Verified";

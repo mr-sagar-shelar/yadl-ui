@@ -1,1 +1,1 @@
-export { default as AppData } from "./AppData";
+export { default as UndrawAppData } from "./AppData";

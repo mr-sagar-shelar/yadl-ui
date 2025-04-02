@@ -1,1 +1,1 @@
-export { default as InvestorUpdate } from "./InvestorUpdate";
+export { default as UndrawInvestorUpdate } from "./InvestorUpdate";

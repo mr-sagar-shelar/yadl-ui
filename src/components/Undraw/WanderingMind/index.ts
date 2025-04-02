@@ -1,1 +1,1 @@
-export { default as WanderingMind } from "./WanderingMind";
+export { default as UndrawWanderingMind } from "./WanderingMind";

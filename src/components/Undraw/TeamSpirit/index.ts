@@ -1,1 +1,1 @@
-export { default as TeamSpirit } from "./TeamSpirit";
+export { default as UndrawTeamSpirit } from "./TeamSpirit";

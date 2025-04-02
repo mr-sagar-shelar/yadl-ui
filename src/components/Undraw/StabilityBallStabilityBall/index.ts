@@ -1,1 +1,1 @@
-export { default as StabilityBallStabilityBall } from "./StabilityBallStabilityBall";
+export { default as UndrawStabilityBallStabilityBall } from "./StabilityBallStabilityBall";

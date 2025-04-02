@@ -1,1 +1,1 @@
-export { default as WordpressWordpress } from "./WordpressWordpress";
+export { default as UndrawWordpressWordpress } from "./WordpressWordpress";

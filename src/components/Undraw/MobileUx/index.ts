@@ -1,1 +1,1 @@
-export { default as MobileUx } from "./MobileUx";
+export { default as UndrawMobileUx } from "./MobileUx";

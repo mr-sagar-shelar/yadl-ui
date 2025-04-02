@@ -1,1 +1,1 @@
-export { default as Mobile_imagesMobileImages } from "./Mobile_imagesMobileImages";
+export { default as UndrawMobile_imagesMobileImages } from "./Mobile_imagesMobileImages";

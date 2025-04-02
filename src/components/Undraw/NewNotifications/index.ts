@@ -1,1 +1,1 @@
-export { default as NewNotifications } from "./NewNotifications";
+export { default as UndrawNewNotifications } from "./NewNotifications";

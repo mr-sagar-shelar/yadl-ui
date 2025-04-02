@@ -1,1 +1,1 @@
-export { default as Judge_katerina_limpitsouniJudge } from "./Judge_katerina_limpitsouniJudge";
+export { default as UndrawJudge_katerina_limpitsouniJudge } from "./Judge_katerina_limpitsouniJudge";

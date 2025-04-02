@@ -1,1 +1,1 @@
-export { default as SuperThankYou } from "./SuperThankYou";
+export { default as UndrawSuperThankYou } from "./SuperThankYou";

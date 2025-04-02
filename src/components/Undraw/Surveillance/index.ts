@@ -1,1 +1,1 @@
-export { default as Surveillance } from "./Surveillance";
+export { default as UndrawSurveillance } from "./Surveillance";

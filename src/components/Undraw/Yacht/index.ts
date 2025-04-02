@@ -1,1 +1,1 @@
-export { default as Yacht } from "./Yacht";
+export { default as UndrawYacht } from "./Yacht";

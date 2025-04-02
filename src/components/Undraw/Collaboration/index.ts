@@ -1,1 +1,1 @@
-export { default as Collaboration } from "./Collaboration";
+export { default as UndrawCollaboration } from "./Collaboration";

@@ -1,1 +1,1 @@
-export { default as SiteStats } from "./SiteStats";
+export { default as UndrawSiteStats } from "./SiteStats";

@@ -1,1 +1,1 @@
-export { default as ShipIt } from "./ShipIt";
+export { default as UndrawShipIt } from "./ShipIt";

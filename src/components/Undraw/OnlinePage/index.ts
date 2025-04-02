@@ -1,1 +1,1 @@
-export { default as OnlinePage } from "./OnlinePage";
+export { default as UndrawOnlinePage } from "./OnlinePage";

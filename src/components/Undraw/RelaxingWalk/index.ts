@@ -1,1 +1,1 @@
-export { default as RelaxingWalk } from "./RelaxingWalk";
+export { default as UndrawRelaxingWalk } from "./RelaxingWalk";

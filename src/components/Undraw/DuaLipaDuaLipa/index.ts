@@ -1,1 +1,1 @@
-export { default as DuaLipaDuaLipa } from "./DuaLipaDuaLipa";
+export { default as UndrawDuaLipaDuaLipa } from "./DuaLipaDuaLipa";

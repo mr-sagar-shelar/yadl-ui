@@ -1,1 +1,1 @@
-export { default as PersonalTraining } from "./PersonalTraining";
+export { default as UndrawPersonalTraining } from "./PersonalTraining";

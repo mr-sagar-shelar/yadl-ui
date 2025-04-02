@@ -1,1 +1,1 @@
-export { default as CMS } from "./CMS";
+export { default as UndrawCMS } from "./CMS";

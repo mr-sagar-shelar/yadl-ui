@@ -1,1 +1,1 @@
-export { default as Pancakes } from "./Pancakes";
+export { default as UndrawPancakes } from "./Pancakes";

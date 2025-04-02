@@ -1,1 +1,1 @@
-export { default as Wilderness } from "./Wilderness";
+export { default as UndrawWilderness } from "./Wilderness";

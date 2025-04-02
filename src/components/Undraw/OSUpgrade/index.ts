@@ -1,1 +1,1 @@
-export { default as OSUpgrade } from "./OSUpgrade";
+export { default as UndrawOSUpgrade } from "./OSUpgrade";

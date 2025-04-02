@@ -1,1 +1,1 @@
-export { default as Meditation } from "./Meditation";
+export { default as UndrawMeditation } from "./Meditation";

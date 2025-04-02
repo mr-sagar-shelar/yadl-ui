@@ -1,1 +1,1 @@
-export { default as Tutor } from "./Tutor";
+export { default as UndrawTutor } from "./Tutor";

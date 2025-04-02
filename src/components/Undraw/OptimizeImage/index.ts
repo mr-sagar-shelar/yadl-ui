@@ -1,1 +1,1 @@
-export { default as OptimizeImage } from "./OptimizeImage";
+export { default as UndrawOptimizeImage } from "./OptimizeImage";

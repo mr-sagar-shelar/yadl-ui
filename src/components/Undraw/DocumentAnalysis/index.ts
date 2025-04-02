@@ -1,1 +1,1 @@
-export { default as DocumentAnalysis } from "./DocumentAnalysis";
+export { default as UndrawDocumentAnalysis } from "./DocumentAnalysis";

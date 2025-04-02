@@ -1,1 +1,1 @@
-export { default as GameWorld } from "./GameWorld";
+export { default as UndrawGameWorld } from "./GameWorld";

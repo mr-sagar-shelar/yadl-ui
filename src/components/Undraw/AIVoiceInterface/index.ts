@@ -1,1 +1,1 @@
-export { default as AIVoiceInterface } from "./AIVoiceInterface";
+export { default as UndrawAIVoiceInterface } from "./AIVoiceInterface";

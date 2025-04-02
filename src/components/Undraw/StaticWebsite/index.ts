@@ -1,1 +1,1 @@
-export { default as StaticWebsite } from "./StaticWebsite";
+export { default as UndrawStaticWebsite } from "./StaticWebsite";

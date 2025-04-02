@@ -1,1 +1,1 @@
-export { default as AnonymousFeedback } from "./AnonymousFeedback";
+export { default as UndrawAnonymousFeedback } from "./AnonymousFeedback";

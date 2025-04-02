@@ -1,1 +1,1 @@
-export { default as OnlineAd } from "./OnlineAd";
+export { default as UndrawOnlineAd } from "./OnlineAd";

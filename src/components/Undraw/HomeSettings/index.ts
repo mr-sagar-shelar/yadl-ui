@@ -1,1 +1,1 @@
-export { default as HomeSettings } from "./HomeSettings";
+export { default as UndrawHomeSettings } from "./HomeSettings";

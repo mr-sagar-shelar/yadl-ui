@@ -1,1 +1,1 @@
-export { default as WineTasting } from "./WineTasting";
+export { default as UndrawWineTasting } from "./WineTasting";

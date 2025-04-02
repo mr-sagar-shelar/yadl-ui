@@ -1,1 +1,1 @@
-export { default as Scientist } from "./Scientist";
+export { default as UndrawScientist } from "./Scientist";

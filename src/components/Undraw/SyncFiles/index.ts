@@ -1,1 +1,1 @@
-export { default as SyncFiles } from "./SyncFiles";
+export { default as UndrawSyncFiles } from "./SyncFiles";

@@ -1,1 +1,1 @@
-export { default as DesignObjectives } from "./DesignObjectives";
+export { default as UndrawDesignObjectives } from "./DesignObjectives";

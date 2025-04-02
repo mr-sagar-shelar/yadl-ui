@@ -1,1 +1,1 @@
-export { default as PersonalNotesPersonalNotes } from "./PersonalNotesPersonalNotes";
+export { default as UndrawPersonalNotesPersonalNotes } from "./PersonalNotesPersonalNotes";

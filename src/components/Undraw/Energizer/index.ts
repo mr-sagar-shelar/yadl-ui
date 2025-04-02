@@ -1,1 +1,1 @@
-export { default as Energizer } from "./Energizer";
+export { default as UndrawEnergizer } from "./Energizer";

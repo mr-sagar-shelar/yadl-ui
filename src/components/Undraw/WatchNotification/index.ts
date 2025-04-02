@@ -1,1 +1,1 @@
-export { default as WatchNotification } from "./WatchNotification";
+export { default as UndrawWatchNotification } from "./WatchNotification";

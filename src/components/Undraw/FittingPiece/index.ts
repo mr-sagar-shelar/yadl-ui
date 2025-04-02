@@ -1,1 +1,1 @@
-export { default as FittingPiece } from "./FittingPiece";
+export { default as UndrawFittingPiece } from "./FittingPiece";

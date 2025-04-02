@@ -1,1 +1,1 @@
-export { default as Discoverable } from "./Discoverable";
+export { default as UndrawDiscoverable } from "./Discoverable";

@@ -1,1 +1,1 @@
-export { default as RomanticGetaway } from "./RomanticGetaway";
+export { default as UndrawRomanticGetaway } from "./RomanticGetaway";

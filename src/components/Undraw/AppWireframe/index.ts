@@ -1,1 +1,1 @@
-export { default as AppWireframe } from "./AppWireframe";
+export { default as UndrawAppWireframe } from "./AppWireframe";

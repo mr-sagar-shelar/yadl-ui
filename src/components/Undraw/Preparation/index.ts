@@ -1,1 +1,1 @@
-export { default as Preparation } from "./Preparation";
+export { default as UndrawPreparation } from "./Preparation";

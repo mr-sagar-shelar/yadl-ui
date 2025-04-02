@@ -1,1 +1,1 @@
-export { default as Progressive_appProgressiveApp } from "./Progressive_appProgressiveApp";
+export { default as UndrawProgressive_appProgressiveApp } from "./Progressive_appProgressiveApp";

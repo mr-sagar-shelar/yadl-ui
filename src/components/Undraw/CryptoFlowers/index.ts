@@ -1,1 +1,1 @@
-export { default as CryptoFlowers } from "./CryptoFlowers";
+export { default as UndrawCryptoFlowers } from "./CryptoFlowers";

@@ -1,1 +1,1 @@
-export { default as Certification } from "./Certification";
+export { default as UndrawCertification } from "./Certification";

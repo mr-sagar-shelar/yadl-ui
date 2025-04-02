@@ -1,1 +1,1 @@
-export { default as Prioritise } from "./Prioritise";
+export { default as UndrawPrioritise } from "./Prioritise";

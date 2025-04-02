@@ -1,1 +1,1 @@
-export { default as IdeasFlow } from "./IdeasFlow";
+export { default as UndrawIdeasFlow } from "./IdeasFlow";

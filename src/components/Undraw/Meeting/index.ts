@@ -1,1 +1,1 @@
-export { default as Meeting } from "./Meeting";
+export { default as UndrawMeeting } from "./Meeting";

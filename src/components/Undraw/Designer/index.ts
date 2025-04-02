@@ -1,1 +1,1 @@
-export { default as Designer } from "./Designer";
+export { default as UndrawDesigner } from "./Designer";

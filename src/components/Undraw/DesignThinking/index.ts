@@ -1,1 +1,1 @@
-export { default as DesignThinking } from "./DesignThinking";
+export { default as UndrawDesignThinking } from "./DesignThinking";

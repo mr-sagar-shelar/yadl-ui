@@ -1,1 +1,1 @@
-export { default as OnlineMedia } from "./OnlineMedia";
+export { default as UndrawOnlineMedia } from "./OnlineMedia";

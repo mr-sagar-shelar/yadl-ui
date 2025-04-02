@@ -1,1 +1,1 @@
-export { default as CountrySide } from "./CountrySide";
+export { default as UndrawCountrySide } from "./CountrySide";

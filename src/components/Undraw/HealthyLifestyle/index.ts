@@ -1,1 +1,1 @@
-export { default as HealthyLifestyle } from "./HealthyLifestyle";
+export { default as UndrawHealthyLifestyle } from "./HealthyLifestyle";

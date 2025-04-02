@@ -1,1 +1,1 @@
-export { default as QuietTown } from "./QuietTown";
+export { default as UndrawQuietTown } from "./QuietTown";

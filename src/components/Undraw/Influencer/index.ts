@@ -1,1 +1,1 @@
-export { default as Influencer } from "./Influencer";
+export { default as UndrawInfluencer } from "./Influencer";

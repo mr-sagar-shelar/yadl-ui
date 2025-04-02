@@ -1,1 +1,1 @@
-export { default as BuyHouse } from "./BuyHouse";
+export { default as UndrawBuyHouse } from "./BuyHouse";

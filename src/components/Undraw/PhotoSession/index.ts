@@ -1,1 +1,1 @@
-export { default as PhotoSession } from "./PhotoSession";
+export { default as UndrawPhotoSession } from "./PhotoSession";

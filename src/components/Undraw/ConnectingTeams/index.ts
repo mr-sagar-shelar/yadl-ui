@@ -1,1 +1,1 @@
-export { default as ConnectingTeams } from "./ConnectingTeams";
+export { default as UndrawConnectingTeams } from "./ConnectingTeams";

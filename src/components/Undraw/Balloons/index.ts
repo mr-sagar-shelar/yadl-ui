@@ -1,1 +1,1 @@
-export { default as Balloons } from "./Balloons";
+export { default as UndrawBalloons } from "./Balloons";

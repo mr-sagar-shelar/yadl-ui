@@ -1,1 +1,1 @@
-export { default as HeatmapHeatmap } from "./HeatmapHeatmap";
+export { default as UndrawHeatmapHeatmap } from "./HeatmapHeatmap";

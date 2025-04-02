@@ -1,1 +1,1 @@
-export { default as SmallTown } from "./SmallTown";
+export { default as UndrawSmallTown } from "./SmallTown";

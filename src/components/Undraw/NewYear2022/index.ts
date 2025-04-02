@@ -1,1 +1,1 @@
-export { default as NewYear2022 } from "./NewYear2022";
+export { default as UndrawNewYear2022 } from "./NewYear2022";

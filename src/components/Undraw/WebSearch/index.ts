@@ -1,1 +1,1 @@
-export { default as WebSearch } from "./WebSearch";
+export { default as UndrawWebSearch } from "./WebSearch";

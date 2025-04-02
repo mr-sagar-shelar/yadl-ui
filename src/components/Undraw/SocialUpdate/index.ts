@@ -1,1 +1,1 @@
-export { default as SocialUpdate } from "./SocialUpdate";
+export { default as UndrawSocialUpdate } from "./SocialUpdate";

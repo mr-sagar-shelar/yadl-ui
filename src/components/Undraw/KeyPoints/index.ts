@@ -1,1 +1,1 @@
-export { default as KeyPoints } from "./KeyPoints";
+export { default as UndrawKeyPoints } from "./KeyPoints";

@@ -1,1 +1,1 @@
-export { default as DeveloperActivity } from "./DeveloperActivity";
+export { default as UndrawDeveloperActivity } from "./DeveloperActivity";

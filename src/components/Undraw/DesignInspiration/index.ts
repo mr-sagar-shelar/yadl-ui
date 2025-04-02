@@ -1,1 +1,1 @@
-export { default as DesignInspiration } from "./DesignInspiration";
+export { default as UndrawDesignInspiration } from "./DesignInspiration";

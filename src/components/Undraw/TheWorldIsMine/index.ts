@@ -1,1 +1,1 @@
-export { default as TheWorldIsMine } from "./TheWorldIsMine";
+export { default as UndrawTheWorldIsMine } from "./TheWorldIsMine";

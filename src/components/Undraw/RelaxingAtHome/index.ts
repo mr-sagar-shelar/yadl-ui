@@ -1,1 +1,1 @@
-export { default as RelaxingAtHome } from "./RelaxingAtHome";
+export { default as UndrawRelaxingAtHome } from "./RelaxingAtHome";

@@ -1,1 +1,1 @@
-export { default as Relaxation } from "./Relaxation";
+export { default as UndrawRelaxation } from "./Relaxation";

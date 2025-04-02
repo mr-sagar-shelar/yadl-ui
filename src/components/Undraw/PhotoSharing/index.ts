@@ -1,1 +1,1 @@
-export { default as PhotoSharing } from "./PhotoSharing";
+export { default as UndrawPhotoSharing } from "./PhotoSharing";

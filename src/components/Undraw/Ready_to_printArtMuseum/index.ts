@@ -1,1 +1,1 @@
-export { default as Ready_to_printArtMuseum } from "./Ready_to_printArtMuseum";
+export { default as UndrawReady_to_printArtMuseum } from "./Ready_to_printArtMuseum";

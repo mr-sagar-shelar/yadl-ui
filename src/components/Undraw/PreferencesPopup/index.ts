@@ -1,1 +1,1 @@
-export { default as PreferencesPopup } from "./PreferencesPopup";
+export { default as UndrawPreferencesPopup } from "./PreferencesPopup";

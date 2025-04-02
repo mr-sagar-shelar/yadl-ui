@@ -1,1 +1,1 @@
-export { default as Motherhood } from "./Motherhood";
+export { default as UndrawMotherhood } from "./Motherhood";

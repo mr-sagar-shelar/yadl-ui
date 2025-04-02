@@ -1,1 +1,1 @@
-export { default as WeatherNotification } from "./WeatherNotification";
+export { default as UndrawWeatherNotification } from "./WeatherNotification";

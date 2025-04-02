@@ -1,1 +1,1 @@
-export { default as YoungManAvatar } from "./YoungManAvatar";
+export { default as UndrawYoungManAvatar } from "./YoungManAvatar";

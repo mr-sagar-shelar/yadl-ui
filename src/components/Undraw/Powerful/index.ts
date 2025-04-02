@@ -1,1 +1,1 @@
-export { default as Powerful } from "./Powerful";
+export { default as UndrawPowerful } from "./Powerful";

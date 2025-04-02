@@ -1,1 +1,1 @@
-export { default as Choice } from "./Choice";
+export { default as UndrawChoice } from "./Choice";

@@ -1,1 +1,1 @@
-export { default as MillennialGirlMillennialGirl } from "./MillennialGirlMillennialGirl";
+export { default as UndrawMillennialGirlMillennialGirl } from "./MillennialGirlMillennialGirl";

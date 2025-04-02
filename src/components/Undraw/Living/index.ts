@@ -1,1 +1,1 @@
-export { default as Living } from "./Living";
+export { default as UndrawLiving } from "./Living";

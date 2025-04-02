@@ -1,1 +1,1 @@
-export { default as OnlineResume } from "./OnlineResume";
+export { default as UndrawOnlineResume } from "./OnlineResume";

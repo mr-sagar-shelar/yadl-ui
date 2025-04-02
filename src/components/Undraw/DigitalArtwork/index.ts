@@ -1,1 +1,1 @@
-export { default as DigitalArtwork } from "./DigitalArtwork";
+export { default as UndrawDigitalArtwork } from "./DigitalArtwork";

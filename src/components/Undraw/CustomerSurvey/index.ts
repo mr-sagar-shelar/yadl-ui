@@ -1,1 +1,1 @@
-export { default as CustomerSurvey } from "./CustomerSurvey";
+export { default as UndrawCustomerSurvey } from "./CustomerSurvey";

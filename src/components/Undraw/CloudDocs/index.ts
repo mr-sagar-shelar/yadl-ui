@@ -1,1 +1,1 @@
-export { default as CloudDocs } from "./CloudDocs";
+export { default as UndrawCloudDocs } from "./CloudDocs";

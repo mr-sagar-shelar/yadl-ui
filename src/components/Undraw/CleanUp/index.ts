@@ -1,1 +1,1 @@
-export { default as CleanUp } from "./CleanUp";
+export { default as UndrawCleanUp } from "./CleanUp";

@@ -1,1 +1,1 @@
-export { default as Web_browsingWebBrowsing } from "./Web_browsingWebBrowsing";
+export { default as UndrawWeb_browsingWebBrowsing } from "./Web_browsingWebBrowsing";

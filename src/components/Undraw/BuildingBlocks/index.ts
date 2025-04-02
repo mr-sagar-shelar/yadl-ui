@@ -1,1 +1,1 @@
-export { default as BuildingBlocks } from "./BuildingBlocks";
+export { default as UndrawBuildingBlocks } from "./BuildingBlocks";

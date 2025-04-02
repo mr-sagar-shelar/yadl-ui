@@ -1,1 +1,1 @@
-export { default as Arrived } from "./Arrived";
+export { default as UndrawArrived } from "./Arrived";

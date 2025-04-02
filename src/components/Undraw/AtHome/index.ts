@@ -1,1 +1,1 @@
-export { default as AtHome } from "./AtHome";
+export { default as UndrawAtHome } from "./AtHome";

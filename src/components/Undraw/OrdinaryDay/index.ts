@@ -1,1 +1,1 @@
-export { default as OrdinaryDay } from "./OrdinaryDay";
+export { default as UndrawOrdinaryDay } from "./OrdinaryDay";

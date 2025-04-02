@@ -1,1 +1,1 @@
-export { default as Floating } from "./Floating";
+export { default as UndrawFloating } from "./Floating";

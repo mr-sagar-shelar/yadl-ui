@@ -1,1 +1,1 @@
-export { default as GoingOffline } from "./GoingOffline";
+export { default as UndrawGoingOffline } from "./GoingOffline";

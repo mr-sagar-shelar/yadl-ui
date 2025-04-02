@@ -1,1 +1,1 @@
-export { default as SecureServer } from "./SecureServer";
+export { default as UndrawSecureServer } from "./SecureServer";

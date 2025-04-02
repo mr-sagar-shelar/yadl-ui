@@ -1,1 +1,1 @@
-export { default as EnvironmentalStudy } from "./EnvironmentalStudy";
+export { default as UndrawEnvironmentalStudy } from "./EnvironmentalStudy";

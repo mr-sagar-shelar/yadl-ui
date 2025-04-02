@@ -1,1 +1,1 @@
-export { default as Next_jsNextJs } from "./Next_jsNextJs";
+export { default as UndrawNext_jsNextJs } from "./Next_jsNextJs";

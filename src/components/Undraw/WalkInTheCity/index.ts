@@ -1,1 +1,1 @@
-export { default as WalkInTheCity } from "./WalkInTheCity";
+export { default as UndrawWalkInTheCity } from "./WalkInTheCity";

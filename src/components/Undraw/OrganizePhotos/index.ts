@@ -1,1 +1,1 @@
-export { default as OrganizePhotos } from "./OrganizePhotos";
+export { default as UndrawOrganizePhotos } from "./OrganizePhotos";

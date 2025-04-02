@@ -1,1 +1,1 @@
-export { default as DetailedInformation } from "./DetailedInformation";
+export { default as UndrawDetailedInformation } from "./DetailedInformation";

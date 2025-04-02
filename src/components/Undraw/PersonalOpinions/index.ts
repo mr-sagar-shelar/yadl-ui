@@ -1,1 +1,1 @@
-export { default as PersonalOpinions } from "./PersonalOpinions";
+export { default as UndrawPersonalOpinions } from "./PersonalOpinions";

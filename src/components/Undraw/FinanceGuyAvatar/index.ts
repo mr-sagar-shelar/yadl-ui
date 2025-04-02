@@ -1,1 +1,1 @@
-export { default as FinanceGuyAvatar } from "./FinanceGuyAvatar";
+export { default as UndrawFinanceGuyAvatar } from "./FinanceGuyAvatar";

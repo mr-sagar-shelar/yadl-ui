@@ -1,1 +1,1 @@
-export { default as MicDrop } from "./MicDrop";
+export { default as UndrawMicDrop } from "./MicDrop";

@@ -1,1 +1,1 @@
-export { default as BrowserStats } from "./BrowserStats";
+export { default as UndrawBrowserStats } from "./BrowserStats";

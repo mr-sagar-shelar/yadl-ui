@@ -1,1 +1,1 @@
-export { default as Electricity } from "./Electricity";
+export { default as UndrawElectricity } from "./Electricity";

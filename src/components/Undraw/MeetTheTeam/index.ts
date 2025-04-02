@@ -1,1 +1,1 @@
-export { default as MeetTheTeam } from "./MeetTheTeam";
+export { default as UndrawMeetTheTeam } from "./MeetTheTeam";

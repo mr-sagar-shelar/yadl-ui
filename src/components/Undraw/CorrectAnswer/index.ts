@@ -1,1 +1,1 @@
-export { default as CorrectAnswer } from "./CorrectAnswer";
+export { default as UndrawCorrectAnswer } from "./CorrectAnswer";

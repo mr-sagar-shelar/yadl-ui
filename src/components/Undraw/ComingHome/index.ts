@@ -1,1 +1,1 @@
-export { default as ComingHome } from "./ComingHome";
+export { default as UndrawComingHome } from "./ComingHome";

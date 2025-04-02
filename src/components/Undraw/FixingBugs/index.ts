@@ -1,1 +1,1 @@
-export { default as FixingBugs } from "./FixingBugs";
+export { default as UndrawFixingBugs } from "./FixingBugs";

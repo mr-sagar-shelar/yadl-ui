@@ -1,1 +1,1 @@
-export { default as Surfer } from "./Surfer";
+export { default as UndrawSurfer } from "./Surfer";

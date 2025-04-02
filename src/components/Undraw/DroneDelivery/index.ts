@@ -1,1 +1,1 @@
-export { default as DroneDelivery } from "./DroneDelivery";
+export { default as UndrawDroneDelivery } from "./DroneDelivery";

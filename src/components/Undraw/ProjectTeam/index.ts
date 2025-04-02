@@ -1,1 +1,1 @@
-export { default as ProjectTeam } from "./ProjectTeam";
+export { default as UndrawProjectTeam } from "./ProjectTeam";

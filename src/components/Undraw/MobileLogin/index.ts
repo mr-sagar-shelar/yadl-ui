@@ -1,1 +1,1 @@
-export { default as MobileLogin } from "./MobileLogin";
+export { default as UndrawMobileLogin } from "./MobileLogin";

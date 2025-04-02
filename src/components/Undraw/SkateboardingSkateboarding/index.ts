@@ -1,1 +1,1 @@
-export { default as SkateboardingSkateboarding } from "./SkateboardingSkateboarding";
+export { default as UndrawSkateboardingSkateboarding } from "./SkateboardingSkateboarding";

@@ -1,1 +1,1 @@
-export { default as SocialSharing } from "./SocialSharing";
+export { default as UndrawSocialSharing } from "./SocialSharing";

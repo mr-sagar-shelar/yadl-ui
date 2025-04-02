@@ -1,1 +1,1 @@
-export { default as ChoosingHouse } from "./ChoosingHouse";
+export { default as UndrawChoosingHouse } from "./ChoosingHouse";

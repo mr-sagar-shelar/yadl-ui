@@ -1,1 +1,1 @@
-export { default as Educator } from "./Educator";
+export { default as UndrawEducator } from "./Educator";

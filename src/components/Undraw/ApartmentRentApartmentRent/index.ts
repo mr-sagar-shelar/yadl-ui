@@ -1,1 +1,1 @@
-export { default as ApartmentRentApartmentRent } from "./ApartmentRentApartmentRent";
+export { default as UndrawApartmentRentApartmentRent } from "./ApartmentRentApartmentRent";

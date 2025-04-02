@@ -1,1 +1,1 @@
-export { default as RemoteDesignTeam } from "./RemoteDesignTeam";
+export { default as UndrawRemoteDesignTeam } from "./RemoteDesignTeam";

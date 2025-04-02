@@ -1,1 +1,1 @@
-export { default as Switches } from "./Switches";
+export { default as UndrawSwitches } from "./Switches";

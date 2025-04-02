@@ -1,1 +1,1 @@
-export { default as AddContent } from "./AddContent";
+export { default as UndrawAddContent } from "./AddContent";

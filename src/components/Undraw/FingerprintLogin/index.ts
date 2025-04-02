@@ -1,1 +1,1 @@
-export { default as FingerprintLogin } from "./FingerprintLogin";
+export { default as UndrawFingerprintLogin } from "./FingerprintLogin";

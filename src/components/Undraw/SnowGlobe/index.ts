@@ -1,1 +1,1 @@
-export { default as SnowGlobe } from "./SnowGlobe";
+export { default as UndrawSnowGlobe } from "./SnowGlobe";

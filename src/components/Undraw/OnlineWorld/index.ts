@@ -1,1 +1,1 @@
-export { default as OnlineWorld } from "./OnlineWorld";
+export { default as UndrawOnlineWorld } from "./OnlineWorld";

@@ -1,1 +1,1 @@
-export { default as ReviewedDocs } from "./ReviewedDocs";
+export { default as UndrawReviewedDocs } from "./ReviewedDocs";

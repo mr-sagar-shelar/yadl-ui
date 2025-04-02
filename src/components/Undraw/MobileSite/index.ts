@@ -1,1 +1,1 @@
-export { default as MobileSite } from "./MobileSite";
+export { default as UndrawMobileSite } from "./MobileSite";

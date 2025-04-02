@@ -1,1 +1,1 @@
-export { default as FilesSent } from "./FilesSent";
+export { default as UndrawFilesSent } from "./FilesSent";

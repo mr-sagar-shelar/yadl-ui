@@ -1,1 +1,1 @@
-export { default as Contemplating } from "./Contemplating";
+export { default as UndrawContemplating } from "./Contemplating";

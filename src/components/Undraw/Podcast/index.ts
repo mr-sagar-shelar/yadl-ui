@@ -1,1 +1,1 @@
-export { default as Podcast } from "./Podcast";
+export { default as UndrawPodcast } from "./Podcast";

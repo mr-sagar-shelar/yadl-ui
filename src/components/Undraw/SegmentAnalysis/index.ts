@@ -1,1 +1,1 @@
-export { default as SegmentAnalysis } from "./SegmentAnalysis";
+export { default as UndrawSegmentAnalysis } from "./SegmentAnalysis";

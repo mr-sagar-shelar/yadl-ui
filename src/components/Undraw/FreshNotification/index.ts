@@ -1,1 +1,1 @@
-export { default as FreshNotification } from "./FreshNotification";
+export { default as UndrawFreshNotification } from "./FreshNotification";

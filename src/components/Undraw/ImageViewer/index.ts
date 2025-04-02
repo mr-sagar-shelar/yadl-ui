@@ -1,1 +1,1 @@
-export { default as ImageViewer } from "./ImageViewer";
+export { default as UndrawImageViewer } from "./ImageViewer";

@@ -1,1 +1,1 @@
-export { default as Multitasking } from "./Multitasking";
+export { default as UndrawMultitasking } from "./Multitasking";

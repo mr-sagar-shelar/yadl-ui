@@ -1,1 +1,1 @@
-export { default as CityLife } from "./CityLife";
+export { default as UndrawCityLife } from "./CityLife";

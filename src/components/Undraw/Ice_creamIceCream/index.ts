@@ -1,1 +1,1 @@
-export { default as Ice_creamIceCream } from "./Ice_creamIceCream";
+export { default as UndrawIce_creamIceCream } from "./Ice_creamIceCream";

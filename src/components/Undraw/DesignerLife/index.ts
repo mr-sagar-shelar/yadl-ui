@@ -1,1 +1,1 @@
-export { default as DesignerLife } from "./DesignerLife";
+export { default as UndrawDesignerLife } from "./DesignerLife";

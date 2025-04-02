@@ -1,1 +1,1 @@
-export { default as Brainstorming } from "./Brainstorming";
+export { default as UndrawBrainstorming } from "./Brainstorming";

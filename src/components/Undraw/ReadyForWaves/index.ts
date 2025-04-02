@@ -1,1 +1,1 @@
-export { default as ReadyForWaves } from "./ReadyForWaves";
+export { default as UndrawReadyForWaves } from "./ReadyForWaves";

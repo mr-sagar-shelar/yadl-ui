@@ -1,1 +1,1 @@
-export { default as MultipleChoice } from "./MultipleChoice";
+export { default as UndrawMultipleChoice } from "./MultipleChoice";

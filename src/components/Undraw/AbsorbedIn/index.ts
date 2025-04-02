@@ -1,1 +1,1 @@
-export { default as AbsorbedIn } from "./AbsorbedIn";
+export { default as UndrawAbsorbedIn } from "./AbsorbedIn";

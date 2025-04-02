@@ -1,1 +1,1 @@
-export { default as CabinCabin } from "./CabinCabin";
+export { default as UndrawCabinCabin } from "./CabinCabin";

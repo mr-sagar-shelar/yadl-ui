@@ -1,1 +1,1 @@
-export { default as IndoorBike } from "./IndoorBike";
+export { default as UndrawIndoorBike } from "./IndoorBike";

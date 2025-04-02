@@ -1,1 +1,1 @@
-export { default as EmailCampaign } from "./EmailCampaign";
+export { default as UndrawEmailCampaign } from "./EmailCampaign";

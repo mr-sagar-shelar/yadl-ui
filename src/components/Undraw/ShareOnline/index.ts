@@ -1,1 +1,1 @@
-export { default as ShareOnline } from "./ShareOnline";
+export { default as UndrawShareOnline } from "./ShareOnline";

@@ -1,1 +1,1 @@
-export { default as Editable } from "./Editable";
+export { default as UndrawEditable } from "./Editable";

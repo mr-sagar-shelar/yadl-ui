@@ -1,1 +1,1 @@
-export { default as Decide } from "./Decide";
+export { default as UndrawDecide } from "./Decide";

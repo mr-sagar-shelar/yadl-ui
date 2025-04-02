@@ -1,1 +1,1 @@
-export { default as LivePhoto } from "./LivePhoto";
+export { default as UndrawLivePhoto } from "./LivePhoto";

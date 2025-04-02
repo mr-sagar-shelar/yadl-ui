@@ -1,1 +1,1 @@
-export { default as UnderConstructionUnderConstruction } from "./UnderConstructionUnderConstruction";
+export { default as UndrawUnderConstructionUnderConstruction } from "./UnderConstructionUnderConstruction";

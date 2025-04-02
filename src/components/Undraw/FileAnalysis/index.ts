@@ -1,1 +1,1 @@
-export { default as FileAnalysis } from "./FileAnalysis";
+export { default as UndrawFileAnalysis } from "./FileAnalysis";

@@ -1,1 +1,1 @@
-export { default as SweetHome } from "./SweetHome";
+export { default as UndrawSweetHome } from "./SweetHome";

@@ -1,1 +1,1 @@
-export { default as ReadingTime } from "./ReadingTime";
+export { default as UndrawReadingTime } from "./ReadingTime";

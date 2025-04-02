@@ -1,1 +1,1 @@
-export { default as VRChat } from "./VRChat";
+export { default as UndrawVRChat } from "./VRChat";

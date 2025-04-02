@@ -1,1 +1,1 @@
-export { default as AddFriends } from "./AddFriends";
+export { default as UndrawAddFriends } from "./AddFriends";

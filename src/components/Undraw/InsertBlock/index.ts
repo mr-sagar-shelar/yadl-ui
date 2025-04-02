@@ -1,1 +1,1 @@
-export { default as InsertBlock } from "./InsertBlock";
+export { default as UndrawInsertBlock } from "./InsertBlock";

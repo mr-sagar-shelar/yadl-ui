@@ -1,1 +1,1 @@
-export { default as UpdatedResume } from "./UpdatedResume";
+export { default as UndrawUpdatedResume } from "./UpdatedResume";

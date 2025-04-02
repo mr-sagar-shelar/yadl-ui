@@ -1,1 +1,1 @@
-export { default as PushNotifications } from "./PushNotifications";
+export { default as UndrawPushNotifications } from "./PushNotifications";

@@ -1,1 +1,1 @@
-export { default as ServerStatus } from "./ServerStatus";
+export { default as UndrawServerStatus } from "./ServerStatus";

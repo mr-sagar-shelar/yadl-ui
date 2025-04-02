@@ -1,1 +1,1 @@
-export { default as AppsNotifications } from "./AppsNotifications";
+export { default as UndrawAppsNotifications } from "./AppsNotifications";

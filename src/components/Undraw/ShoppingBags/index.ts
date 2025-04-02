@@ -1,1 +1,1 @@
-export { default as ShoppingBags } from "./ShoppingBags";
+export { default as UndrawShoppingBags } from "./ShoppingBags";

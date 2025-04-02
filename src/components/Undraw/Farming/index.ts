@@ -1,1 +1,1 @@
-export { default as Farming } from "./Farming";
+export { default as UndrawFarming } from "./Farming";

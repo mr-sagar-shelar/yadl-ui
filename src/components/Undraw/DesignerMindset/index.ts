@@ -1,1 +1,1 @@
-export { default as DesignerMindset } from "./DesignerMindset";
+export { default as UndrawDesignerMindset } from "./DesignerMindset";

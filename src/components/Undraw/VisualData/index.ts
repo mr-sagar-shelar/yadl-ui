@@ -1,1 +1,1 @@
-export { default as VisualData } from "./VisualData";
+export { default as UndrawVisualData } from "./VisualData";

@@ -1,1 +1,1 @@
-export { default as SocialInteraction } from "./SocialInteraction";
+export { default as UndrawSocialInteraction } from "./SocialInteraction";

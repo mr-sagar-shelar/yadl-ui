@@ -1,1 +1,1 @@
-export { default as TakingPhoto } from "./TakingPhoto";
+export { default as UndrawTakingPhoto } from "./TakingPhoto";

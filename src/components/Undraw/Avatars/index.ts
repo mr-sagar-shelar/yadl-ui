@@ -1,1 +1,1 @@
-export { default as Avatars } from "./Avatars";
+export { default as UndrawAvatars } from "./Avatars";

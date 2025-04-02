@@ -1,1 +1,1 @@
-export { default as PendingApproval } from "./PendingApproval";
+export { default as UndrawPendingApproval } from "./PendingApproval";

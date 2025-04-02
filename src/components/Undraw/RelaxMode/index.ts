@@ -1,1 +1,1 @@
-export { default as RelaxMode } from "./RelaxMode";
+export { default as UndrawRelaxMode } from "./RelaxMode";

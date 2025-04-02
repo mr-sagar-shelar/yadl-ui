@@ -1,1 +1,1 @@
-export { default as InThought } from "./InThought";
+export { default as UndrawInThought } from "./InThought";

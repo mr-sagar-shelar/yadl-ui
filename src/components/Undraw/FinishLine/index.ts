@@ -1,1 +1,1 @@
-export { default as FinishLine } from "./FinishLine";
+export { default as UndrawFinishLine } from "./FinishLine";

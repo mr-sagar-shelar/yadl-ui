@@ -1,1 +1,1 @@
-export { default as VideoInfluencer } from "./VideoInfluencer";
+export { default as UndrawVideoInfluencer } from "./VideoInfluencer";

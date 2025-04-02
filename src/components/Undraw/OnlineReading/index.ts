@@ -1,1 +1,1 @@
-export { default as OnlineReading } from "./OnlineReading";
+export { default as UndrawOnlineReading } from "./OnlineReading";

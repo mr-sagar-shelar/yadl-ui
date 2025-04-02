@@ -1,1 +1,1 @@
-export { default as SharingArticles } from "./SharingArticles";
+export { default as UndrawSharingArticles } from "./SharingArticles";

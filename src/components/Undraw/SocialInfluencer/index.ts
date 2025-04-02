@@ -1,1 +1,1 @@
-export { default as SocialInfluencer } from "./SocialInfluencer";
+export { default as UndrawSocialInfluencer } from "./SocialInfluencer";

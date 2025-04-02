@@ -1,1 +1,1 @@
-export { default as Coolness } from "./Coolness";
+export { default as UndrawCoolness } from "./Coolness";

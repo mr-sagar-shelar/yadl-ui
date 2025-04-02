@@ -1,1 +1,1 @@
-export { default as TextFiles } from "./TextFiles";
+export { default as UndrawTextFiles } from "./TextFiles";

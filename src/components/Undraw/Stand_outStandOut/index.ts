@@ -1,1 +1,1 @@
-export { default as Stand_outStandOut } from "./Stand_outStandOut";
+export { default as UndrawStand_outStandOut } from "./Stand_outStandOut";

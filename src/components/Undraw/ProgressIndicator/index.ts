@@ -1,1 +1,1 @@
-export { default as ProgressIndicator } from "./ProgressIndicator";
+export { default as UndrawProgressIndicator } from "./ProgressIndicator";

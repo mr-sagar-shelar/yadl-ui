@@ -1,1 +1,1 @@
-export { default as TrueFriendsTrueFriends } from "./TrueFriendsTrueFriends";
+export { default as UndrawTrueFriendsTrueFriends } from "./TrueFriendsTrueFriends";

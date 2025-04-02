@@ -1,1 +1,1 @@
-export { default as ThoughtProcess } from "./ThoughtProcess";
+export { default as UndrawThoughtProcess } from "./ThoughtProcess";

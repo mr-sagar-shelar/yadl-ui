@@ -1,1 +1,1 @@
-export { default as UpToDate } from "./UpToDate";
+export { default as UndrawUpToDate } from "./UpToDate";

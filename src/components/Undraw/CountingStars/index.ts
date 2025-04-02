@@ -1,1 +1,1 @@
-export { default as CountingStars } from "./CountingStars";
+export { default as UndrawCountingStars } from "./CountingStars";

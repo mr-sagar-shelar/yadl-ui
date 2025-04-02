@@ -1,1 +1,1 @@
-export { default as ContentStructure } from "./ContentStructure";
+export { default as UndrawContentStructure } from "./ContentStructure";

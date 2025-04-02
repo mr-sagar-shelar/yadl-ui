@@ -1,1 +1,1 @@
-export { default as Inspection } from "./Inspection";
+export { default as UndrawInspection } from "./Inspection";

@@ -1,1 +1,1 @@
-export { default as WorkTime } from "./WorkTime";
+export { default as UndrawWorkTime } from "./WorkTime";

@@ -1,1 +1,1 @@
-export { default as PassingBy } from "./PassingBy";
+export { default as UndrawPassingBy } from "./PassingBy";

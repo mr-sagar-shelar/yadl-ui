@@ -1,1 +1,1 @@
-export { default as SmartResize } from "./SmartResize";
+export { default as UndrawSmartResize } from "./SmartResize";

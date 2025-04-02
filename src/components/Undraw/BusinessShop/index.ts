@@ -1,1 +1,1 @@
-export { default as BusinessShop } from "./BusinessShop";
+export { default as UndrawBusinessShop } from "./BusinessShop";

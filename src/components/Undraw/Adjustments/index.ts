@@ -1,1 +1,1 @@
-export { default as Adjustments } from "./Adjustments";
+export { default as UndrawAdjustments } from "./Adjustments";

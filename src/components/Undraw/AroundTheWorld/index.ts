@@ -1,1 +1,1 @@
-export { default as AroundTheWorld } from "./AroundTheWorld";
+export { default as UndrawAroundTheWorld } from "./AroundTheWorld";

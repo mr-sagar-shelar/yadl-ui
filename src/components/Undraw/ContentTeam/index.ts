@@ -1,1 +1,1 @@
-export { default as ContentTeam } from "./ContentTeam";
+export { default as UndrawContentTeam } from "./ContentTeam";

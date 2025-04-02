@@ -1,1 +1,1 @@
-export { default as ClickHere } from "./ClickHere";
+export { default as UndrawClickHere } from "./ClickHere";

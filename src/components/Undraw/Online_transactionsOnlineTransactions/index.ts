@@ -1,1 +1,1 @@
-export { default as Online_transactionsOnlineTransactions } from "./Online_transactionsOnlineTransactions";
+export { default as UndrawOnline_transactionsOnlineTransactions } from "./Online_transactionsOnlineTransactions";

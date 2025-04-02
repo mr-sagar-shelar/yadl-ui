@@ -1,1 +1,1 @@
-export { default as Greek_freakGreekFreak } from "./Greek_freakGreekFreak";
+export { default as UndrawGreek_freakGreekFreak } from "./Greek_freakGreekFreak";

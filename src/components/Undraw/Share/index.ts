@@ -1,1 +1,1 @@
-export { default as Share } from "./Share";
+export { default as UndrawShare } from "./Share";

@@ -1,1 +1,1 @@
-export { default as FlyingDrone } from "./FlyingDrone";
+export { default as UndrawFlyingDrone } from "./FlyingDrone";

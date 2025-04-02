@@ -1,1 +1,1 @@
-export { default as PersonalFinance } from "./PersonalFinance";
+export { default as UndrawPersonalFinance } from "./PersonalFinance";

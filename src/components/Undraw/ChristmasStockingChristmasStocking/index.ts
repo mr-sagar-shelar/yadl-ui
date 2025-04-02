@@ -1,1 +1,1 @@
-export { default as ChristmasStockingChristmasStocking } from "./ChristmasStockingChristmasStocking";
+export { default as UndrawChristmasStockingChristmasStocking } from "./ChristmasStockingChristmasStocking";

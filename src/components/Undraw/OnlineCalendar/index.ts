@@ -1,1 +1,1 @@
-export { default as OnlineCalendar } from "./OnlineCalendar";
+export { default as UndrawOnlineCalendar } from "./OnlineCalendar";

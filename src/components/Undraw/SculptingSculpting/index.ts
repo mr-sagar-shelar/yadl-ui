@@ -1,1 +1,1 @@
-export { default as SculptingSculpting } from "./SculptingSculpting";
+export { default as UndrawSculptingSculpting } from "./SculptingSculpting";

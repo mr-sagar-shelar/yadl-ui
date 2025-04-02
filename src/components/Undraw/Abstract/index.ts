@@ -1,1 +1,1 @@
-export { default as Abstract } from "./Abstract";
+export { default as UndrawAbstract } from "./Abstract";

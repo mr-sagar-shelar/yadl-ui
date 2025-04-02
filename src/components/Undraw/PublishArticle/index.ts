@@ -1,1 +1,1 @@
-export { default as PublishArticle } from "./PublishArticle";
+export { default as UndrawPublishArticle } from "./PublishArticle";

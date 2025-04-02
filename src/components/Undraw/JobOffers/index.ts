@@ -1,1 +1,1 @@
-export { default as JobOffers } from "./JobOffers";
+export { default as UndrawJobOffers } from "./JobOffers";

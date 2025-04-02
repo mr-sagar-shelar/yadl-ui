@@ -1,1 +1,1 @@
-export { default as WatchApp } from "./WatchApp";
+export { default as UndrawWatchApp } from "./WatchApp";

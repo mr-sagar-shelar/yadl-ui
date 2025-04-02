@@ -1,1 +1,1 @@
-export { default as NatureBenefits } from "./NatureBenefits";
+export { default as UndrawNatureBenefits } from "./NatureBenefits";

@@ -1,1 +1,1 @@
-export { default as LogisticsLogistics } from "./LogisticsLogistics";
+export { default as UndrawLogisticsLogistics } from "./LogisticsLogistics";

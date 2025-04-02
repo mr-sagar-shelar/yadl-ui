@@ -1,1 +1,1 @@
-export { default as FashionPhotoshoot } from "./FashionPhotoshoot";
+export { default as UndrawFashionPhotoshoot } from "./FashionPhotoshoot";

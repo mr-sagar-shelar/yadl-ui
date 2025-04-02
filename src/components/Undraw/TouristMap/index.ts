@@ -1,1 +1,1 @@
-export { default as TouristMap } from "./TouristMap";
+export { default as UndrawTouristMap } from "./TouristMap";

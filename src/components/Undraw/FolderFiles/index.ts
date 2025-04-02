@@ -1,1 +1,1 @@
-export { default as FolderFiles } from "./FolderFiles";
+export { default as UndrawFolderFiles } from "./FolderFiles";

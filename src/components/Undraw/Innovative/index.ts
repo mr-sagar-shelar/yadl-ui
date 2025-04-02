@@ -1,1 +1,1 @@
-export { default as Innovative } from "./Innovative";
+export { default as UndrawInnovative } from "./Innovative";

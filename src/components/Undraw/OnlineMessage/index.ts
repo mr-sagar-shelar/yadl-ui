@@ -1,1 +1,1 @@
-export { default as OnlineMessage } from "./OnlineMessage";
+export { default as UndrawOnlineMessage } from "./OnlineMessage";

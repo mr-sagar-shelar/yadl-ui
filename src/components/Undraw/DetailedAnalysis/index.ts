@@ -1,1 +1,1 @@
-export { default as DetailedAnalysis } from "./DetailedAnalysis";
+export { default as UndrawDetailedAnalysis } from "./DetailedAnalysis";

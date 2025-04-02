@@ -1,1 +1,1 @@
-export { default as TutorialVideo } from "./TutorialVideo";
+export { default as UndrawTutorialVideo } from "./TutorialVideo";

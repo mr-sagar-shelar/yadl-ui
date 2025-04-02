@@ -1,1 +1,1 @@
-export { default as OuterSpace } from "./OuterSpace";
+export { default as UndrawOuterSpace } from "./OuterSpace";

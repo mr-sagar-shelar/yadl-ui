@@ -1,1 +1,1 @@
-export { default as VideoFiles } from "./VideoFiles";
+export { default as UndrawVideoFiles } from "./VideoFiles";

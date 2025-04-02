@@ -1,1 +1,1 @@
-export { default as VideoCall } from "./VideoCall";
+export { default as UndrawVideoCall } from "./VideoCall";

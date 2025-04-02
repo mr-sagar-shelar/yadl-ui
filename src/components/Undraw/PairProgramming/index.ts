@@ -1,1 +1,1 @@
-export { default as PairProgramming } from "./PairProgramming";
+export { default as UndrawPairProgramming } from "./PairProgramming";

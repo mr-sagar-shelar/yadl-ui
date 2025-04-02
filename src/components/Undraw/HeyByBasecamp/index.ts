@@ -1,1 +1,1 @@
-export { default as HeyByBasecamp } from "./HeyByBasecamp";
+export { default as UndrawHeyByBasecamp } from "./HeyByBasecamp";

@@ -1,1 +1,1 @@
-export { default as PublicDiscussion } from "./PublicDiscussion";
+export { default as UndrawPublicDiscussion } from "./PublicDiscussion";

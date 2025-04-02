@@ -1,1 +1,1 @@
-export { default as AdvancedCustomization } from "./AdvancedCustomization";
+export { default as UndrawAdvancedCustomization } from "./AdvancedCustomization";

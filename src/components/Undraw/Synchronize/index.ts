@@ -1,1 +1,1 @@
-export { default as Synchronize } from "./Synchronize";
+export { default as UndrawSynchronize } from "./Synchronize";

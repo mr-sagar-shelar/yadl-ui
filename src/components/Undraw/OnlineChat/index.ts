@@ -1,1 +1,1 @@
-export { default as OnlineChat } from "./OnlineChat";
+export { default as UndrawOnlineChat } from "./OnlineChat";

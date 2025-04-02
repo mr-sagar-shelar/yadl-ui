@@ -1,1 +1,1 @@
-export { default as MaleAvatar } from "./MaleAvatar";
+export { default as UndrawMaleAvatar } from "./MaleAvatar";

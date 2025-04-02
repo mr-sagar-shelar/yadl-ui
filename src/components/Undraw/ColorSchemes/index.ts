@@ -1,1 +1,1 @@
-export { default as ColorSchemes } from "./ColorSchemes";
+export { default as UndrawColorSchemes } from "./ColorSchemes";

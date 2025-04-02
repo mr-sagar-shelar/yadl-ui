@@ -1,1 +1,1 @@
-export { default as Vintage } from "./Vintage";
+export { default as UndrawVintage } from "./Vintage";

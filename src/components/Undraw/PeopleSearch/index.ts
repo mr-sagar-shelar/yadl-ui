@@ -1,1 +1,1 @@
-export { default as PeopleSearch } from "./PeopleSearch";
+export { default as UndrawPeopleSearch } from "./PeopleSearch";

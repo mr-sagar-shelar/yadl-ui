@@ -1,1 +1,1 @@
-export { default as Confirmation } from "./Confirmation";
+export { default as UndrawConfirmation } from "./Confirmation";

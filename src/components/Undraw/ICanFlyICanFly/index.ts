@@ -1,1 +1,1 @@
-export { default as ICanFlyICanFly } from "./ICanFlyICanFly";
+export { default as UndrawICanFlyICanFly } from "./ICanFlyICanFly";

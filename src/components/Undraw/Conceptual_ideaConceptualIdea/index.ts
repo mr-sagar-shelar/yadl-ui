@@ -1,1 +1,1 @@
-export { default as Conceptual_ideaConceptualIdea } from "./Conceptual_ideaConceptualIdea";
+export { default as UndrawConceptual_ideaConceptualIdea } from "./Conceptual_ideaConceptualIdea";

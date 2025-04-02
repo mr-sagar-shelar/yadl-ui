@@ -1,1 +1,1 @@
-export { default as NavigatorNavigator } from "./NavigatorNavigator";
+export { default as UndrawNavigatorNavigator } from "./NavigatorNavigator";

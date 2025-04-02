@@ -1,1 +1,1 @@
-export { default as MobilePosts } from "./MobilePosts";
+export { default as UndrawMobilePosts } from "./MobilePosts";

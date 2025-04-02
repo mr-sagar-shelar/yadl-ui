@@ -1,1 +1,1 @@
-export { default as ComposeMusic } from "./ComposeMusic";
+export { default as UndrawComposeMusic } from "./ComposeMusic";

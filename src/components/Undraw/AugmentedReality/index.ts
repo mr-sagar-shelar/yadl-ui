@@ -1,1 +1,1 @@
-export { default as AugmentedReality } from "./AugmentedReality";
+export { default as UndrawAugmentedReality } from "./AugmentedReality";

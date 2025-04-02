@@ -1,1 +1,1 @@
-export { default as SunnyDay } from "./SunnyDay";
+export { default as UndrawSunnyDay } from "./SunnyDay";

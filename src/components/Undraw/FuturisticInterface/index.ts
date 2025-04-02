@@ -1,1 +1,1 @@
-export { default as FuturisticInterface } from "./FuturisticInterface";
+export { default as UndrawFuturisticInterface } from "./FuturisticInterface";

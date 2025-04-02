@@ -1,1 +1,1 @@
-export { default as Gardening } from "./Gardening";
+export { default as UndrawGardening } from "./Gardening";

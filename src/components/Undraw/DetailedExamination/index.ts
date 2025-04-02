@@ -1,1 +1,1 @@
-export { default as DetailedExamination } from "./DetailedExamination";
+export { default as UndrawDetailedExamination } from "./DetailedExamination";

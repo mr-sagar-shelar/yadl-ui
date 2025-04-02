@@ -1,1 +1,1 @@
-export { default as MathematicsMathematics } from "./MathematicsMathematics";
+export { default as UndrawMathematicsMathematics } from "./MathematicsMathematics";

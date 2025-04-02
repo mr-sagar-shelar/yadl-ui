@@ -1,1 +1,1 @@
-export { default as MomentToRemember } from "./MomentToRemember";
+export { default as UndrawMomentToRemember } from "./MomentToRemember";

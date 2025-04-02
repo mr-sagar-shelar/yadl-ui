@@ -1,1 +1,1 @@
-export { default as Upgrade } from "./Upgrade";
+export { default as UndrawUpgrade } from "./Upgrade";

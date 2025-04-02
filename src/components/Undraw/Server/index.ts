@@ -1,1 +1,1 @@
-export { default as Server } from "./Server";
+export { default as UndrawServer } from "./Server";

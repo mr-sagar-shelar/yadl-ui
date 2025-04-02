@@ -1,1 +1,1 @@
-export { default as Analyze } from "./Analyze";
+export { default as UndrawAnalyze } from "./Analyze";

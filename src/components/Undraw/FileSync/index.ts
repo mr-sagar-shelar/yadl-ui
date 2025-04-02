@@ -1,1 +1,1 @@
-export { default as FileSync } from "./FileSync";
+export { default as UndrawFileSync } from "./FileSync";

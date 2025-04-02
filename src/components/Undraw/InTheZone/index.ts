@@ -1,1 +1,1 @@
-export { default as InTheZone } from "./InTheZone";
+export { default as UndrawInTheZone } from "./InTheZone";

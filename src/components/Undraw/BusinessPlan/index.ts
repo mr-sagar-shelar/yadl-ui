@@ -1,1 +1,1 @@
-export { default as BusinessPlan } from "./BusinessPlan";
+export { default as UndrawBusinessPlan } from "./BusinessPlan";

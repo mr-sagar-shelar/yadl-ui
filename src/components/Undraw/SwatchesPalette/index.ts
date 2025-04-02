@@ -1,1 +1,1 @@
-export { default as SwatchesPalette } from "./SwatchesPalette";
+export { default as UndrawSwatchesPalette } from "./SwatchesPalette";

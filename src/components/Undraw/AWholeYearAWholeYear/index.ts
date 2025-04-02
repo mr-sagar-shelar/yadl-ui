@@ -1,1 +1,1 @@
-export { default as AWholeYearAWholeYear } from "./AWholeYearAWholeYear";
+export { default as UndrawAWholeYearAWholeYear } from "./AWholeYearAWholeYear";

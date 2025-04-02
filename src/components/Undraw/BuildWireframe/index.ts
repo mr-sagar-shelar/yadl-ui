@@ -1,1 +1,1 @@
-export { default as BuildWireframe } from "./BuildWireframe";
+export { default as UndrawBuildWireframe } from "./BuildWireframe";

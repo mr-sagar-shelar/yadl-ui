@@ -1,1 +1,1 @@
-export { default as PrintingInvoicesPrintingInvoices } from "./PrintingInvoicesPrintingInvoices";
+export { default as UndrawPrintingInvoicesPrintingInvoices } from "./PrintingInvoicesPrintingInvoices";

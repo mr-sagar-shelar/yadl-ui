@@ -1,1 +1,1 @@
-export { default as HappyNews } from "./HappyNews";
+export { default as UndrawHappyNews } from "./HappyNews";

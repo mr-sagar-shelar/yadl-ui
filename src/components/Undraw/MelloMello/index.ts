@@ -1,1 +1,1 @@
-export { default as MelloMello } from "./MelloMello";
+export { default as UndrawMelloMello } from "./MelloMello";

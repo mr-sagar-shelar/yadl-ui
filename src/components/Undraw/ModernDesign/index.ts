@@ -1,1 +1,1 @@
-export { default as ModernDesign } from "./ModernDesign";
+export { default as UndrawModernDesign } from "./ModernDesign";

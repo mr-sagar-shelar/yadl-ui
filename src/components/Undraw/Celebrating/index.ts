@@ -1,1 +1,1 @@
-export { default as Celebrating } from "./Celebrating";
+export { default as UndrawCelebrating } from "./Celebrating";

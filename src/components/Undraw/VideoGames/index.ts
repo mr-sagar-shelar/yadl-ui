@@ -1,1 +1,1 @@
-export { default as VideoGames } from "./VideoGames";
+export { default as UndrawVideoGames } from "./VideoGames";

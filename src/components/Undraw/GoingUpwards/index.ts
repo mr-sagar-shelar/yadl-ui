@@ -1,1 +1,1 @@
-export { default as GoingUpwards } from "./GoingUpwards";
+export { default as UndrawGoingUpwards } from "./GoingUpwards";

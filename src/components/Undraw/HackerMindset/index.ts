@@ -1,1 +1,1 @@
-export { default as HackerMindset } from "./HackerMindset";
+export { default as UndrawHackerMindset } from "./HackerMindset";

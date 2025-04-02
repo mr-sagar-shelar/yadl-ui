@@ -1,1 +1,1 @@
-export { default as Astronaut } from "./Astronaut";
+export { default as UndrawAstronaut } from "./Astronaut";

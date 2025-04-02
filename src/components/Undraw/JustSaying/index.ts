@@ -1,1 +1,1 @@
-export { default as JustSaying } from "./JustSaying";
+export { default as UndrawJustSaying } from "./JustSaying";

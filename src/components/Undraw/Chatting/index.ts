@@ -1,1 +1,1 @@
-export { default as Chatting } from "./Chatting";
+export { default as UndrawChatting } from "./Chatting";

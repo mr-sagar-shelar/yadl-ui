@@ -1,1 +1,1 @@
-export { default as DesignStats } from "./DesignStats";
+export { default as UndrawDesignStats } from "./DesignStats";

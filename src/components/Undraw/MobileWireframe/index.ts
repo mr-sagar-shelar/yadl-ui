@@ -1,1 +1,1 @@
-export { default as MobileWireframe } from "./MobileWireframe";
+export { default as UndrawMobileWireframe } from "./MobileWireframe";

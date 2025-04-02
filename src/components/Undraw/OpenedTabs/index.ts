@@ -1,1 +1,1 @@
-export { default as OpenedTabs } from "./OpenedTabs";
+export { default as UndrawOpenedTabs } from "./OpenedTabs";

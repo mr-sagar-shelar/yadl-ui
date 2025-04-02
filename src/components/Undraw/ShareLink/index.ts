@@ -1,1 +1,1 @@
-export { default as ShareLink } from "./ShareLink";
+export { default as UndrawShareLink } from "./ShareLink";

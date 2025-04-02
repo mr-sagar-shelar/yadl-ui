@@ -1,1 +1,1 @@
-export { default as Learning } from "./Learning";
+export { default as UndrawLearning } from "./Learning";

@@ -1,1 +1,1 @@
-export { default as Junior_soccerJuniorSoccer } from "./Junior_soccerJuniorSoccer";
+export { default as UndrawJunior_soccerJuniorSoccer } from "./Junior_soccerJuniorSoccer";

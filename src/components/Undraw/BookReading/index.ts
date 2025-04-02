@@ -1,1 +1,1 @@
-export { default as BookReading } from "./BookReading";
+export { default as UndrawBookReading } from "./BookReading";

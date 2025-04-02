@@ -1,1 +1,1 @@
-export { default as PredictiveAnalytics } from "./PredictiveAnalytics";
+export { default as UndrawPredictiveAnalytics } from "./PredictiveAnalytics";

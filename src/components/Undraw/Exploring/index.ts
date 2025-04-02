@@ -1,1 +1,1 @@
-export { default as Exploring } from "./Exploring";
+export { default as UndrawExploring } from "./Exploring";

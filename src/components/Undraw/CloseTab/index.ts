@@ -1,1 +1,1 @@
-export { default as CloseTab } from "./CloseTab";
+export { default as UndrawCloseTab } from "./CloseTab";

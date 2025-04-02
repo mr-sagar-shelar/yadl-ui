@@ -1,1 +1,1 @@
-export { default as MonitorMonitor } from "./MonitorMonitor";
+export { default as UndrawMonitorMonitor } from "./MonitorMonitor";

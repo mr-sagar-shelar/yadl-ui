@@ -1,1 +1,1 @@
-export { default as WritingDownIdeas } from "./WritingDownIdeas";
+export { default as UndrawWritingDownIdeas } from "./WritingDownIdeas";

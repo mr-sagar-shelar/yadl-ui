@@ -1,1 +1,1 @@
-export { default as SocialNetworking } from "./SocialNetworking";
+export { default as UndrawSocialNetworking } from "./SocialNetworking";

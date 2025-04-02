@@ -1,1 +1,1 @@
-export { default as HouseSearching } from "./HouseSearching";
+export { default as UndrawHouseSearching } from "./HouseSearching";

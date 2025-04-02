@@ -1,1 +1,1 @@
-export { default as MyCodeSnippets } from "./MyCodeSnippets";
+export { default as UndrawMyCodeSnippets } from "./MyCodeSnippets";

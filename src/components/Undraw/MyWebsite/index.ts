@@ -1,1 +1,1 @@
-export { default as MyWebsite } from "./MyWebsite";
+export { default as UndrawMyWebsite } from "./MyWebsite";

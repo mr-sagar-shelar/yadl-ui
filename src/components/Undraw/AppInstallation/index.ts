@@ -1,1 +1,1 @@
-export { default as AppInstallation } from "./AppInstallation";
+export { default as UndrawAppInstallation } from "./AppInstallation";

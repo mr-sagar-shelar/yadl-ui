@@ -1,1 +1,1 @@
-export { default as OnlineLearning } from "./OnlineLearning";
+export { default as UndrawOnlineLearning } from "./OnlineLearning";

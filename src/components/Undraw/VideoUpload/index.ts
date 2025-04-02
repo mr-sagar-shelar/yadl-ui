@@ -1,1 +1,1 @@
-export { default as VideoUpload } from "./VideoUpload";
+export { default as UndrawVideoUpload } from "./VideoUpload";

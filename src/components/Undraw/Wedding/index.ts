@@ -1,1 +1,1 @@
-export { default as Wedding } from "./Wedding";
+export { default as UndrawWedding } from "./Wedding";

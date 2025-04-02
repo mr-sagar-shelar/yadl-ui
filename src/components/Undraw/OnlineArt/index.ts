@@ -1,1 +1,1 @@
-export { default as OnlineArt } from "./OnlineArt";
+export { default as UndrawOnlineArt } from "./OnlineArt";

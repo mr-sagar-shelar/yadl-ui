@@ -1,1 +1,1 @@
-export { default as WorkInProgress } from "./WorkInProgress";
+export { default as UndrawWorkInProgress } from "./WorkInProgress";

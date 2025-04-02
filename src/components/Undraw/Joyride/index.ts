@@ -1,1 +1,1 @@
-export { default as Joyride } from "./Joyride";
+export { default as UndrawJoyride } from "./Joyride";

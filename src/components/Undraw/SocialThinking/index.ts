@@ -1,1 +1,1 @@
-export { default as SocialThinking } from "./SocialThinking";
+export { default as UndrawSocialThinking } from "./SocialThinking";

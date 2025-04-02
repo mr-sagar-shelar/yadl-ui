@@ -1,1 +1,1 @@
-export { default as VibeCoding } from "./VibeCoding";
+export { default as UndrawVibeCoding } from "./VibeCoding";

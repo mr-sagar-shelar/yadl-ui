@@ -1,1 +1,1 @@
-export { default as Mobile_devicesMobileDevices } from "./Mobile_devicesMobileDevices";
+export { default as UndrawMobile_devicesMobileDevices } from "./Mobile_devicesMobileDevices";

@@ -1,1 +1,1 @@
-export { default as LoveIsInTheAir } from "./LoveIsInTheAir";
+export { default as UndrawLoveIsInTheAir } from "./LoveIsInTheAir";

@@ -1,1 +1,1 @@
-export { default as DeliveryAddress } from "./DeliveryAddress";
+export { default as UndrawDeliveryAddress } from "./DeliveryAddress";

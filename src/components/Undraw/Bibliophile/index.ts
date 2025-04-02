@@ -1,1 +1,1 @@
-export { default as Bibliophile } from "./Bibliophile";
+export { default as UndrawBibliophile } from "./Bibliophile";

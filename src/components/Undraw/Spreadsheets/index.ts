@@ -1,1 +1,1 @@
-export { default as Spreadsheets } from "./Spreadsheets";
+export { default as UndrawSpreadsheets } from "./Spreadsheets";

@@ -1,1 +1,1 @@
-export { default as OnlineInformation } from "./OnlineInformation";
+export { default as UndrawOnlineInformation } from "./OnlineInformation";

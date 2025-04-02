@@ -1,1 +1,1 @@
-export { default as CompletedSteps } from "./CompletedSteps";
+export { default as UndrawCompletedSteps } from "./CompletedSteps";

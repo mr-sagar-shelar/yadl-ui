@@ -1,1 +1,1 @@
-export { default as MapDark } from "./MapDark";
+export { default as UndrawMapDark } from "./MapDark";

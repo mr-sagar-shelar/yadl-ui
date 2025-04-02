@@ -1,1 +1,1 @@
-export { default as ImageFocus } from "./ImageFocus";
+export { default as UndrawImageFocus } from "./ImageFocus";

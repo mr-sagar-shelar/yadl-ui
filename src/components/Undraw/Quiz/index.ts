@@ -1,1 +1,1 @@
-export { default as Quiz } from "./Quiz";
+export { default as UndrawQuiz } from "./Quiz";

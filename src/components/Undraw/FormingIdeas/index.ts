@@ -1,1 +1,1 @@
-export { default as FormingIdeas } from "./FormingIdeas";
+export { default as UndrawFormingIdeas } from "./FormingIdeas";

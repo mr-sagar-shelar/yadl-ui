@@ -1,1 +1,1 @@
-export { default as Pilates } from "./Pilates";
+export { default as UndrawPilates } from "./Pilates";

@@ -1,1 +1,1 @@
-export { default as SettingsTab } from "./SettingsTab";
+export { default as UndrawSettingsTab } from "./SettingsTab";

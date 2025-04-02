@@ -1,1 +1,1 @@
-export { default as NatureOnScreen } from "./NatureOnScreen";
+export { default as UndrawNatureOnScreen } from "./NatureOnScreen";

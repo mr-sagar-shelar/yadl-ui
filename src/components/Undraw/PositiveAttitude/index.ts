@@ -1,1 +1,1 @@
-export { default as PositiveAttitude } from "./PositiveAttitude";
+export { default as UndrawPositiveAttitude } from "./PositiveAttitude";

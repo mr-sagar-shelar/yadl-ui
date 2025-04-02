@@ -1,1 +1,1 @@
-export { default as CollabCollab } from "./CollabCollab";
+export { default as UndrawCollabCollab } from "./CollabCollab";
