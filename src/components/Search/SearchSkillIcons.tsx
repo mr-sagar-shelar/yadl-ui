@@ -1,6 +1,7 @@
 import { IconNames } from "@utils";
 import { useMemo } from "react";
 import * as ICONS from "../../index";
+import { memo } from "react";
 
 export type SearchSkillIconsProps = {
   width?: number;
@@ -26,11 +27,12 @@ const SearchSkillIcons = (props: SearchSkillIconsProps) => {
   }, []);
   return (
     <>
-      <div className="grid xs:grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 overflow-auto">
+      <div className="p-10 grid grid-cols-3 gap-6 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-10 2xl:grid-cols-12 overflow-auto w-full h-full">
         {AllIcons}
       </div>
     </>
   );
 };
 
-export default SearchSkillIcons;
+const Memo = memo(SearchSkillIcons);
+export default Memo;
