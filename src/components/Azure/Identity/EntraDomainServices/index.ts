@@ -1,1 +1,1 @@
-export { default as EntraDomainServices } from "./EntraDomainServices";
+export { default as AzureIdentityEntraDomainServices } from "./EntraDomainServices";

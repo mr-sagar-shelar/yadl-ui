@@ -1,1 +1,1 @@
-export { default as SQLManagedInstance } from "./SQLManagedInstance";
+export { default as AzureDatabasesSQLManagedInstance } from "./SQLManagedInstance";

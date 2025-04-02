@@ -1,1 +1,1 @@
-export { default as EventGridSubscriptions } from "./EventGridSubscriptions";
+export { default as AzureIntegrationEventGridSubscriptions } from "./EventGridSubscriptions";

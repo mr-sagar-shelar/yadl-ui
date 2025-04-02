@@ -1,1 +1,1 @@
-export { default as Detonation } from "./Detonation";
+export { default as AzureSecurityDetonation } from "./Detonation";

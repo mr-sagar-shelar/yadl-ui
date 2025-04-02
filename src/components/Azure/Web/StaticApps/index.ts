@@ -1,1 +1,1 @@
-export { default as StaticApps } from "./StaticApps";
+export { default as AzureWebStaticApps } from "./StaticApps";

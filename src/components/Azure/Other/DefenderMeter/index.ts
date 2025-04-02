@@ -1,1 +1,1 @@
-export { default as DefenderMeter } from "./DefenderMeter";
+export { default as AzureOtherDefenderMeter } from "./DefenderMeter";

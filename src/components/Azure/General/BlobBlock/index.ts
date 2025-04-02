@@ -1,1 +1,1 @@
-export { default as BlobBlock } from "./BlobBlock";
+export { default as AzureGeneralBlobBlock } from "./BlobBlock";

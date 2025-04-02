@@ -1,1 +1,1 @@
-export { default as ReservedIPAddressesClassic } from "./ReservedIPAddressesClassic";
+export { default as AzureNetworkingReservedIPAddressesClassic } from "./ReservedIPAddressesClassic";

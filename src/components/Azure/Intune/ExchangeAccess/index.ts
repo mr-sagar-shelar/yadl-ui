@@ -1,1 +1,1 @@
-export { default as ExchangeAccess } from "./ExchangeAccess";
+export { default as AzureIntuneExchangeAccess } from "./ExchangeAccess";

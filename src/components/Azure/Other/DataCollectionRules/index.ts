@@ -1,1 +1,1 @@
-export { default as DataCollectionRules } from "./DataCollectionRules";
+export { default as AzureOtherDataCollectionRules } from "./DataCollectionRules";

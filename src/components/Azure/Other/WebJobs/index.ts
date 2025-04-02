@@ -1,1 +1,1 @@
-export { default as WebJobs } from "./WebJobs";
+export { default as AzureOtherWebJobs } from "./WebJobs";

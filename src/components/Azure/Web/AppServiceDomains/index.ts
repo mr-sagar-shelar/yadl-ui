@@ -1,1 +1,1 @@
-export { default as AppServiceDomains } from "./AppServiceDomains";
+export { default as AzureWebAppServiceDomains } from "./AppServiceDomains";

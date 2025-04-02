@@ -1,1 +1,1 @@
-export { default as DefenderWebGuidingSystem } from "./DefenderWebGuidingSystem";
+export { default as AzureOtherDefenderWebGuidingSystem } from "./DefenderWebGuidingSystem";

@@ -1,1 +1,1 @@
-export { default as WebTest } from "./WebTest";
+export { default as AzureGeneralWebTest } from "./WebTest";

@@ -1,1 +1,1 @@
-export { default as TimeSeriesInsightsAccessPolicies } from "./TimeSeriesInsightsAccessPolicies";
+export { default as AzureIotTimeSeriesInsightsAccessPolicies } from "./TimeSeriesInsightsAccessPolicies";

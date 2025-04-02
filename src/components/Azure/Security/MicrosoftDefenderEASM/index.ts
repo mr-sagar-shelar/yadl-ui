@@ -1,1 +1,1 @@
-export { default as MicrosoftDefenderEASM } from "./MicrosoftDefenderEASM";
+export { default as AzureSecurityMicrosoftDefenderEASM } from "./MicrosoftDefenderEASM";

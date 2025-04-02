@@ -1,1 +1,1 @@
-export { default as SignalR } from "./SignalR";
+export { default as AzureWebSignalR } from "./SignalR";

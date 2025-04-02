@@ -1,1 +1,1 @@
-export { default as StorSimpleDataManagers } from "./StorSimpleDataManagers";
+export { default as AzureStorageStorSimpleDataManagers } from "./StorSimpleDataManagers";

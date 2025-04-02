@@ -1,1 +1,1 @@
-export { default as EntraGlobalSecureAccess } from "./EntraGlobalSecureAccess";
+export { default as AzureIdentityEntraGlobalSecureAccess } from "./EntraGlobalSecureAccess";

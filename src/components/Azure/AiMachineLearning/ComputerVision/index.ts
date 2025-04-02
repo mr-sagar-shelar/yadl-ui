@@ -1,1 +1,1 @@
-export { default as ComputerVision } from "./ComputerVision";
+export { default as AzureAiMachineLearningComputerVision } from "./ComputerVision";

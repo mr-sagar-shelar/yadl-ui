@@ -1,1 +1,1 @@
-export { default as Reservations } from "./Reservations";
+export { default as AzureGeneralReservations } from "./Reservations";

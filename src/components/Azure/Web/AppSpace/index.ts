@@ -1,1 +1,1 @@
-export { default as AppSpace } from "./AppSpace";
+export { default as AzureWebAppSpace } from "./AppSpace";

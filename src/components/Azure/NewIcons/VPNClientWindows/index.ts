@@ -1,1 +1,1 @@
-export { default as VPNClientWindows } from "./VPNClientWindows";
+export { default as AzureNewIconsVPNClientWindows } from "./VPNClientWindows";

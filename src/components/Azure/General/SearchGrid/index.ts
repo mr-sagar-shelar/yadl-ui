@@ -1,1 +1,1 @@
-export { default as SearchGrid } from "./SearchGrid";
+export { default as AzureGeneralSearchGrid } from "./SearchGrid";

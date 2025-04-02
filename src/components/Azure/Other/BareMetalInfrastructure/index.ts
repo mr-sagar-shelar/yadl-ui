@@ -1,1 +1,1 @@
-export { default as BareMetalInfrastructure } from "./BareMetalInfrastructure";
+export { default as AzureOtherBareMetalInfrastructure } from "./BareMetalInfrastructure";

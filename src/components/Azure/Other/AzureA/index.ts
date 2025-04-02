@@ -1,1 +1,1 @@
-export { default as AzureA } from "./AzureA";
+export { default as AzureOtherAzureA } from "./AzureA";

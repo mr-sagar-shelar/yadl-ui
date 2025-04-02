@@ -1,1 +1,1 @@
-export { default as Fiji } from "./Fiji";
+export { default as AzureOtherFiji } from "./Fiji";

@@ -1,1 +1,1 @@
-export { default as CloudServicesClassic } from "./CloudServicesClassic";
+export { default as AzureComputeCloudServicesClassic } from "./CloudServicesClassic";

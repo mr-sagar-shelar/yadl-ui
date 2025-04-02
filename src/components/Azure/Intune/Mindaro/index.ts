@@ -1,1 +1,1 @@
-export { default as Mindaro } from "./Mindaro";
+export { default as AzureIntuneMindaro } from "./Mindaro";

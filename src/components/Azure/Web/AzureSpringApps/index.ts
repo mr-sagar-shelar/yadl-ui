@@ -1,1 +1,1 @@
-export { default as AzureSpringApps } from "./AzureSpringApps";
+export { default as AzureWebAzureSpringApps } from "./AzureSpringApps";

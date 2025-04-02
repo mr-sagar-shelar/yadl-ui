@@ -1,1 +1,1 @@
-export { default as AzureVirtualDesktop } from "./AzureVirtualDesktop";
+export { default as AzureOtherAzureVirtualDesktop } from "./AzureVirtualDesktop";

@@ -1,1 +1,1 @@
-export { default as HDIAKSCluster } from "./HDIAKSCluster";
+export { default as AzureOtherHDIAKSCluster } from "./HDIAKSCluster";

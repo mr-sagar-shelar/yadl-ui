@@ -1,1 +1,1 @@
-export { default as MyCustomers } from "./MyCustomers";
+export { default as AzureManagementGovernanceMyCustomers } from "./MyCustomers";

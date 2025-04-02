@@ -1,1 +1,1 @@
-export { default as ModularDataCenter } from "./ModularDataCenter";
+export { default as AzureOtherModularDataCenter } from "./ModularDataCenter";

@@ -1,1 +1,1 @@
-export { default as CostAlerts } from "./CostAlerts";
+export { default as AzureGeneralCostAlerts } from "./CostAlerts";

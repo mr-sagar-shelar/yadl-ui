@@ -1,1 +1,1 @@
-export { default as FrontDoorandCDNProfiles } from "./FrontDoorandCDNProfiles";
+export { default as AzureWebFrontDoorandCDNProfiles } from "./FrontDoorandCDNProfiles";

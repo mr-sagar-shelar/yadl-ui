@@ -1,1 +1,1 @@
-export { default as AzureDataboxGateway } from "./AzureDataboxGateway";
+export { default as AzureIntegrationAzureDataboxGateway } from "./AzureDataboxGateway";

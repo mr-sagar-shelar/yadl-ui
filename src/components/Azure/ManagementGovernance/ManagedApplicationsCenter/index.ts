@@ -1,1 +1,1 @@
-export { default as ManagedApplicationsCenter } from "./ManagedApplicationsCenter";
+export { default as AzureManagementGovernanceManagedApplicationsCenter } from "./ManagedApplicationsCenter";

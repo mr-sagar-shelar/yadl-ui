@@ -1,1 +1,1 @@
-export { default as SQLDataWarehouses } from "./SQLDataWarehouses";
+export { default as AzureIntegrationSQLDataWarehouses } from "./SQLDataWarehouses";

@@ -1,1 +1,1 @@
-export { default as FunctionApps } from "./FunctionApps";
+export { default as AzureComputeFunctionApps } from "./FunctionApps";

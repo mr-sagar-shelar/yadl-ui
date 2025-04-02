@@ -1,1 +1,1 @@
-export { default as VMImageVersion } from "./VMImageVersion";
+export { default as AzureOtherVMImageVersion } from "./VMImageVersion";

@@ -1,1 +1,1 @@
-export { default as CostExport } from "./CostExport";
+export { default as AzureOtherCostExport } from "./CostExport";

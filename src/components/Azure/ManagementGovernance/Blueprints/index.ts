@@ -1,1 +1,1 @@
-export { default as Blueprints } from "./Blueprints";
+export { default as AzureManagementGovernanceBlueprints } from "./Blueprints";

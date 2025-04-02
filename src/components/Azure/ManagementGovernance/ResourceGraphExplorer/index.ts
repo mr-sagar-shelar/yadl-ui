@@ -1,1 +1,1 @@
-export { default as ResourceGraphExplorer } from "./ResourceGraphExplorer";
+export { default as AzureManagementGovernanceResourceGraphExplorer } from "./ResourceGraphExplorer";

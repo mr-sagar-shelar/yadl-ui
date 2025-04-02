@@ -1,1 +1,1 @@
-export { default as DefenderRTU } from "./DefenderRTU";
+export { default as AzureOtherDefenderRTU } from "./DefenderRTU";

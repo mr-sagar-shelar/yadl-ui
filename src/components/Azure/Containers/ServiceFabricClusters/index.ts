@@ -1,1 +1,1 @@
-export { default as ServiceFabricClusters } from "./ServiceFabricClusters";
+export { default as AzureContainersServiceFabricClusters } from "./ServiceFabricClusters";

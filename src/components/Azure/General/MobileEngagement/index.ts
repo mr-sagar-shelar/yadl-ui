@@ -1,1 +1,1 @@
-export { default as MobileEngagement } from "./MobileEngagement";
+export { default as AzureGeneralMobileEngagement } from "./MobileEngagement";

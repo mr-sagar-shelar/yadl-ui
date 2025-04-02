@@ -1,1 +1,1 @@
-export { default as ExtendedSecurityUpdates } from "./ExtendedSecurityUpdates";
+export { default as AzureSecurityExtendedSecurityUpdates } from "./ExtendedSecurityUpdates";

@@ -1,1 +1,1 @@
-export { default as SQLServerRegistries } from "./SQLServerRegistries";
+export { default as AzureDatabasesSQLServerRegistries } from "./SQLServerRegistries";

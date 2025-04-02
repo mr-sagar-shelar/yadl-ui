@@ -1,1 +1,1 @@
-export { default as ContainerInstances } from "./ContainerInstances";
+export { default as AzureContainersContainerInstances } from "./ContainerInstances";

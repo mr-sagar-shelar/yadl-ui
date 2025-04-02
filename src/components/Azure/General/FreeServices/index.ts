@@ -1,1 +1,1 @@
-export { default as FreeServices } from "./FreeServices";
+export { default as AzureGeneralFreeServices } from "./FreeServices";

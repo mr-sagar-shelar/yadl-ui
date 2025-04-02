@@ -1,1 +1,1 @@
-export { default as Image } from "./Image";
+export { default as AzureGeneralImage } from "./Image";

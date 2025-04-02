@@ -1,1 +1,1 @@
-export { default as CustomIPPrefix } from "./CustomIPPrefix";
+export { default as AzureOtherCustomIPPrefix } from "./CustomIPPrefix";

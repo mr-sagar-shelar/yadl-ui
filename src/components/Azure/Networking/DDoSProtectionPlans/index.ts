@@ -1,1 +1,1 @@
-export { default as DDoSProtectionPlans } from "./DDoSProtectionPlans";
+export { default as AzureNetworkingDDoSProtectionPlans } from "./DDoSProtectionPlans";

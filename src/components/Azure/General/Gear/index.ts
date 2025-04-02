@@ -1,1 +1,1 @@
-export { default as Gear } from "./Gear";
+export { default as AzureGeneralGear } from "./Gear";

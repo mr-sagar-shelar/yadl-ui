@@ -1,1 +1,1 @@
-export { default as DefenderProgramableBoard } from "./DefenderProgramableBoard";
+export { default as AzureOtherDefenderProgramableBoard } from "./DefenderProgramableBoard";

@@ -1,1 +1,1 @@
-export { default as APIProxy } from "./APIProxy";
+export { default as AzureIdentityAPIProxy } from "./APIProxy";

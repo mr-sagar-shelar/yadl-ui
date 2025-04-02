@@ -1,1 +1,1 @@
-export { default as Azurite } from "./Azurite";
+export { default as AzureOtherAzurite } from "./Azurite";

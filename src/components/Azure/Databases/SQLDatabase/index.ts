@@ -1,1 +1,1 @@
-export { default as SQLDatabase } from "./SQLDatabase";
+export { default as AzureDatabasesSQLDatabase } from "./SQLDatabase";

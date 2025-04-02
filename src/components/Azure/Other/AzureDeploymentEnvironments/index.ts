@@ -1,1 +1,1 @@
-export { default as AzureDeploymentEnvironments } from "./AzureDeploymentEnvironments";
+export { default as AzureOtherAzureDeploymentEnvironments } from "./AzureDeploymentEnvironments";

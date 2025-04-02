@@ -1,1 +1,1 @@
-export { default as AzureEdgeHardwareCenter } from "./AzureEdgeHardwareCenter";
+export { default as AzureOtherAzureEdgeHardwareCenter } from "./AzureEdgeHardwareCenter";

@@ -1,1 +1,1 @@
-export { default as PowerBIEmbedded } from "./PowerBIEmbedded";
+export { default as AzureAnalyticsPowerBIEmbedded } from "./PowerBIEmbedded";

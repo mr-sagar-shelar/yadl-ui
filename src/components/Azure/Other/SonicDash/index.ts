@@ -1,1 +1,1 @@
-export { default as SonicDash } from "./SonicDash";
+export { default as AzureOtherSonicDash } from "./SonicDash";

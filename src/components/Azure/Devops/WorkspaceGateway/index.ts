@@ -1,1 +1,1 @@
-export { default as WorkspaceGateway } from "./WorkspaceGateway";
+export { default as AzureDevopsWorkspaceGateway } from "./WorkspaceGateway";

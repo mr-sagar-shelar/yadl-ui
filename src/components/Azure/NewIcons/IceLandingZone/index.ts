@@ -1,1 +1,1 @@
-export { default as IceLandingZone } from "./IceLandingZone";
+export { default as AzureNewIconsIceLandingZone } from "./IceLandingZone";

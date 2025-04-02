@@ -1,1 +1,1 @@
-export { default as OutboundConnection } from "./OutboundConnection";
+export { default as AzureBlockchainOutboundConnection } from "./OutboundConnection";

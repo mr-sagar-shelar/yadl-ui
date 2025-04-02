@@ -1,1 +1,1 @@
-export { default as ArcMachines } from "./ArcMachines";
+export { default as AzureManagementGovernanceArcMachines } from "./ArcMachines";

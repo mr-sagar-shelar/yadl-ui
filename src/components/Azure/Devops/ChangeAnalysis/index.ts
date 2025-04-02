@@ -1,1 +1,1 @@
-export { default as ChangeAnalysis } from "./ChangeAnalysis";
+export { default as AzureDevopsChangeAnalysis } from "./ChangeAnalysis";

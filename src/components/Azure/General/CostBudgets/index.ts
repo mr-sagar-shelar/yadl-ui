@@ -1,1 +1,1 @@
-export { default as CostBudgets } from "./CostBudgets";
+export { default as AzureGeneralCostBudgets } from "./CostBudgets";

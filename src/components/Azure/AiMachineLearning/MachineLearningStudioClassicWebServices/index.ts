@@ -1,1 +1,1 @@
-export { default as MachineLearningStudioClassicWebServices } from "./MachineLearningStudioClassicWebServices";
+export { default as AzureAiMachineLearningMachineLearningStudioClassicWebServices } from "./MachineLearningStudioClassicWebServices";

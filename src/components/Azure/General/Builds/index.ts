@@ -1,1 +1,1 @@
-export { default as Builds } from "./Builds";
+export { default as AzureGeneralBuilds } from "./Builds";

@@ -1,1 +1,1 @@
-export { default as MobileNetworks } from "./MobileNetworks";
+export { default as AzureOtherMobileNetworks } from "./MobileNetworks";

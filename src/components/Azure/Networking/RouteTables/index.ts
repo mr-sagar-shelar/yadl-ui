@@ -1,1 +1,1 @@
-export { default as RouteTables } from "./RouteTables";
+export { default as AzureNetworkingRouteTables } from "./RouteTables";

@@ -1,1 +1,1 @@
-export { default as VirtualVisitsBuilder } from "./VirtualVisitsBuilder";
+export { default as AzureOtherVirtualVisitsBuilder } from "./VirtualVisitsBuilder";

@@ -1,1 +1,1 @@
-export { default as AzureFileshares } from "./AzureFileshares";
+export { default as AzureStorageAzureFileshares } from "./AzureFileshares";

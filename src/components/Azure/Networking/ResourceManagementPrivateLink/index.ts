@@ -1,1 +1,1 @@
-export { default as ResourceManagementPrivateLink } from "./ResourceManagementPrivateLink";
+export { default as AzureNetworkingResourceManagementPrivateLink } from "./ResourceManagementPrivateLink";

@@ -1,1 +1,1 @@
-export { default as OperationLogClassic } from "./OperationLogClassic";
+export { default as AzureManagementGovernanceOperationLogClassic } from "./OperationLogClassic";

@@ -1,1 +1,1 @@
-export { default as CustomerLockboxforMicrosoftAzure } from "./CustomerLockboxforMicrosoftAzure";
+export { default as AzureManagementGovernanceCustomerLockboxforMicrosoftAzure } from "./CustomerLockboxforMicrosoftAzure";

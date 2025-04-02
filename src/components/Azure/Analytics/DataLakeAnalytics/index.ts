@@ -1,1 +1,1 @@
-export { default as DataLakeAnalytics } from "./DataLakeAnalytics";
+export { default as AzureAnalyticsDataLakeAnalytics } from "./DataLakeAnalytics";

@@ -1,1 +1,1 @@
-export { default as ComputeFleet } from "./ComputeFleet";
+export { default as AzureComputeComputeFleet } from "./ComputeFleet";

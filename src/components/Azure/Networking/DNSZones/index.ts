@@ -1,1 +1,1 @@
-export { default as DNSZones } from "./DNSZones";
+export { default as AzureNetworkingDNSZones } from "./DNSZones";

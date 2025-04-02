@@ -1,1 +1,1 @@
-export { default as RecoveryServicesVaults } from "./RecoveryServicesVaults";
+export { default as AzureStorageRecoveryServicesVaults } from "./RecoveryServicesVaults";

@@ -1,1 +1,1 @@
-export { default as SoftwareUpdates } from "./SoftwareUpdates";
+export { default as AzureIntuneSoftwareUpdates } from "./SoftwareUpdates";

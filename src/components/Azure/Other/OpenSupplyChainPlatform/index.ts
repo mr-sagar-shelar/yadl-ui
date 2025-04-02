@@ -1,1 +1,1 @@
-export { default as OpenSupplyChainPlatform } from "./OpenSupplyChainPlatform";
+export { default as AzureOtherOpenSupplyChainPlatform } from "./OpenSupplyChainPlatform";

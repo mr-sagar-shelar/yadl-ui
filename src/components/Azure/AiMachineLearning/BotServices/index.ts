@@ -1,1 +1,1 @@
-export { default as BotServices } from "./BotServices";
+export { default as AzureAiMachineLearningBotServices } from "./BotServices";

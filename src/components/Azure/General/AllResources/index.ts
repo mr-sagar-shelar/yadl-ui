@@ -1,1 +1,1 @@
-export { default as AllResources } from "./AllResources";
+export { default as AzureGeneralAllResources } from "./AllResources";

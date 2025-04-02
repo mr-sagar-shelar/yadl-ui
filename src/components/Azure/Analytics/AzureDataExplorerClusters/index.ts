@@ -1,1 +1,1 @@
-export { default as AzureAnalyticsDataExplorerClusters } from "./AzureDataExplorerClusters";
+export { default as AzureAnalyticsAzureDataExplorerClusters } from "./AzureDataExplorerClusters";

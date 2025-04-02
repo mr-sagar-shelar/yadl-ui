@@ -1,1 +1,1 @@
-export { default as AzureDatabasePostgreSQLServerGroup } from "./AzureDatabasePostgreSQLServerGroup";
+export { default as AzureDatabasesAzureDatabasePostgreSQLServerGroup } from "./AzureDatabasePostgreSQLServerGroup";

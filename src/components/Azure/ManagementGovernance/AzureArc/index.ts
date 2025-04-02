@@ -1,1 +1,1 @@
-export { default as AzureArc } from "./AzureArc";
+export { default as AzureManagementGovernanceAzureArc } from "./AzureArc";

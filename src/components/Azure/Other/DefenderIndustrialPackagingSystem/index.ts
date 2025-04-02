@@ -1,1 +1,1 @@
-export { default as DefenderIndustrialPackagingSystem } from "./DefenderIndustrialPackagingSystem";
+export { default as AzureOtherDefenderIndustrialPackagingSystem } from "./DefenderIndustrialPackagingSystem";

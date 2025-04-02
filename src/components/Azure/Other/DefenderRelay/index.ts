@@ -1,1 +1,1 @@
-export { default as DefenderRelay } from "./DefenderRelay";
+export { default as AzureOtherDefenderRelay } from "./DefenderRelay";

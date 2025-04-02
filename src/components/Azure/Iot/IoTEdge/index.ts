@@ -1,1 +1,1 @@
-export { default as IoTEdge } from "./IoTEdge";
+export { default as AzureIotIoTEdge } from "./IoTEdge";

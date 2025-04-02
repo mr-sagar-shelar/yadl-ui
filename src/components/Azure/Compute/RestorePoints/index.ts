@@ -1,1 +1,1 @@
-export { default as RestorePoints } from "./RestorePoints";
+export { default as AzureComputeRestorePoints } from "./RestorePoints";

@@ -1,1 +1,1 @@
-export { default as AzureMonitorPipeline } from "./AzureMonitorPipeline";
+export { default as AzureHybridMulticloudAzureMonitorPipeline } from "./AzureMonitorPipeline";

@@ -1,1 +1,1 @@
-export { default as ArcSQLManagedInstance } from "./ArcSQLManagedInstance";
+export { default as AzureOtherArcSQLManagedInstance } from "./ArcSQLManagedInstance";

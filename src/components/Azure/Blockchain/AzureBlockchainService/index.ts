@@ -1,1 +1,1 @@
-export { default as AzureBlockchainService } from "./AzureBlockchainService";
+export { default as AzureBlockchainAzureBlockchainService } from "./AzureBlockchainService";

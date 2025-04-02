@@ -1,1 +1,1 @@
-export { default as DNSSecurityPolicy } from "./DNSSecurityPolicy";
+export { default as AzureNetworkingDNSSecurityPolicy } from "./DNSSecurityPolicy";

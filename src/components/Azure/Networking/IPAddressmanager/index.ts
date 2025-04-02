@@ -1,1 +1,1 @@
-export { default as IPAddressmanager } from "./IPAddressmanager";
+export { default as AzureNetworkingIPAddressmanager } from "./IPAddressmanager";

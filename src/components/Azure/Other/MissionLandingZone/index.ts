@@ -1,1 +1,1 @@
-export { default as MissionLandingZone } from "./MissionLandingZone";
+export { default as AzureOtherMissionLandingZone } from "./MissionLandingZone";

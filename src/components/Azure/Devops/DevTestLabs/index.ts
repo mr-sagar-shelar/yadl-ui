@@ -1,1 +1,1 @@
-export { default as DevTestLabs } from "./DevTestLabs";
+export { default as AzureDevopsDevTestLabs } from "./DevTestLabs";

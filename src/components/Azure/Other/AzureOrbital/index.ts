@@ -1,1 +1,1 @@
-export { default as AzureOrbital } from "./AzureOrbital";
+export { default as AzureOtherAzureOrbital } from "./AzureOrbital";

@@ -1,1 +1,1 @@
-export { default as ServiceProviders } from "./ServiceProviders";
+export { default as AzureManagementGovernanceServiceProviders } from "./ServiceProviders";

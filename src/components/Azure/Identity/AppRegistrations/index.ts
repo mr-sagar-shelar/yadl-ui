@@ -1,1 +1,1 @@
-export { default as AppRegistrations } from "./AppRegistrations";
+export { default as AzureIdentityAppRegistrations } from "./AppRegistrations";

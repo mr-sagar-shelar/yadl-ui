@@ -1,1 +1,1 @@
-export { default as DashboardHub } from "./DashboardHub";
+export { default as AzureOtherDashboardHub } from "./DashboardHub";

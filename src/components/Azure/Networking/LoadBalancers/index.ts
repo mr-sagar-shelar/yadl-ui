@@ -1,1 +1,1 @@
-export { default as LoadBalancers } from "./LoadBalancers";
+export { default as AzureNetworkingLoadBalancers } from "./LoadBalancers";

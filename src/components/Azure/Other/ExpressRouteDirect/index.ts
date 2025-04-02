@@ -1,1 +1,1 @@
-export { default as ExpressRouteDirect } from "./ExpressRouteDirect";
+export { default as AzureOtherExpressRouteDirect } from "./ExpressRouteDirect";

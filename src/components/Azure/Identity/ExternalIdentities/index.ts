@@ -1,1 +1,1 @@
-export { default as ExternalIdentities } from "./ExternalIdentities";
+export { default as AzureIdentityExternalIdentities } from "./ExternalIdentities";

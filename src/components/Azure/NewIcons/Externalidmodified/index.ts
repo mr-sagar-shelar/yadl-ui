@@ -1,1 +1,1 @@
-export { default as Externalidmodified } from "./Externalidmodified";
+export { default as AzureNewIconsExternalidmodified } from "./Externalidmodified";

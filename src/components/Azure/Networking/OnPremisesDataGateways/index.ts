@@ -1,1 +1,1 @@
-export { default as OnPremisesDataGateways } from "./OnPremisesDataGateways";
+export { default as AzureNetworkingOnPremisesDataGateways } from "./OnPremisesDataGateways";

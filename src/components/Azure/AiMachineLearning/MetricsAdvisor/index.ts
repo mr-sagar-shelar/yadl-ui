@@ -1,1 +1,1 @@
-export { default as MetricsAdvisor } from "./MetricsAdvisor";
+export { default as AzureAiMachineLearningMetricsAdvisor } from "./MetricsAdvisor";

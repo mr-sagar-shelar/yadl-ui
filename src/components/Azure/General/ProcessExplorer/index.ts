@@ -1,1 +1,1 @@
-export { default as ProcessExplorer } from "./ProcessExplorer";
+export { default as AzureGeneralProcessExplorer } from "./ProcessExplorer";

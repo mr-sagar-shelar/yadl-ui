@@ -1,1 +1,1 @@
-export { default as IoTCentralApplications } from "./IoTCentralApplications";
+export { default as AzureIotIoTCentralApplications } from "./IoTCentralApplications";

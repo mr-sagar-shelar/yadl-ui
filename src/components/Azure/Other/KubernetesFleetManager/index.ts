@@ -1,1 +1,1 @@
-export { default as KubernetesFleetManager } from "./KubernetesFleetManager";
+export { default as AzureOtherKubernetesFleetManager } from "./KubernetesFleetManager";

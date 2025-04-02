@@ -1,1 +1,1 @@
-export { default as AzureProgrammableConnectivity } from "./AzureProgrammableConnectivity";
+export { default as AzureHybridMulticloudAzureProgrammableConnectivity } from "./AzureProgrammableConnectivity";

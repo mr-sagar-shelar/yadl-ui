@@ -1,1 +1,1 @@
-export { default as PowerUp } from "./PowerUp";
+export { default as AzureGeneralPowerUp } from "./PowerUp";

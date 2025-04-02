@@ -1,1 +1,1 @@
-export { default as DNSPrivateResolver } from "./DNSPrivateResolver";
+export { default as AzureNetworkingDNSPrivateResolver } from "./DNSPrivateResolver";

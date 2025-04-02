@@ -1,1 +1,1 @@
-export { default as DisksSnapshots } from "./DisksSnapshots";
+export { default as AzureComputeDisksSnapshots } from "./DisksSnapshots";

@@ -1,1 +1,1 @@
-export { default as DefenderIndustrialRobot } from "./DefenderIndustrialRobot";
+export { default as AzureOtherDefenderIndustrialRobot } from "./DefenderIndustrialRobot";

@@ -1,1 +1,1 @@
-export { default as EntraIdentityCustomRoles } from "./EntraIdentityCustomRoles";
+export { default as AzureIdentityEntraIdentityCustomRoles } from "./EntraIdentityCustomRoles";

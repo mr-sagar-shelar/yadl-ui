@@ -1,1 +1,1 @@
-export { default as AzureAPIforFHIR } from "./AzureAPIforFHIR";
+export { default as AzureIntegrationAzureAPIforFHIR } from "./AzureAPIforFHIR";

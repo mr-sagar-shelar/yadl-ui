@@ -1,1 +1,1 @@
-export { default as DefenderSensor } from "./DefenderSensor";
+export { default as AzureOtherDefenderSensor } from "./DefenderSensor";

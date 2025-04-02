@@ -1,1 +1,1 @@
-export { default as AzureAttestation } from "./AzureAttestation";
+export { default as AzureOtherAzureAttestation } from "./AzureAttestation";

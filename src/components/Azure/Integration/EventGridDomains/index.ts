@@ -1,1 +1,1 @@
-export { default as EventGridDomains } from "./EventGridDomains";
+export { default as AzureIntegrationEventGridDomains } from "./EventGridDomains";

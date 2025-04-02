@@ -1,1 +1,1 @@
-export { default as AzureVMwareSolution } from "./AzureVMwareSolution";
+export { default as AzureOtherAzureVMwareSolution } from "./AzureVMwareSolution";

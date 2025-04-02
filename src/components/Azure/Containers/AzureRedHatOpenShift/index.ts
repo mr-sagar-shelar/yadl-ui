@@ -1,1 +1,1 @@
-export { default as AzureRedHatOpenShift } from "./AzureRedHatOpenShift";
+export { default as AzureContainersAzureRedHatOpenShift } from "./AzureRedHatOpenShift";

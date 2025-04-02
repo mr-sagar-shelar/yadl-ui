@@ -1,1 +1,1 @@
-export { default as DiskPool } from "./DiskPool";
+export { default as AzureOtherDiskPool } from "./DiskPool";

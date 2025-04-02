@@ -1,1 +1,1 @@
-export { default as IPGroups } from "./IPGroups";
+export { default as AzureNetworkingIPGroups } from "./IPGroups";

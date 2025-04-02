@@ -1,1 +1,1 @@
-export { default as FHIRService } from "./FHIRService";
+export { default as AzureOtherFHIRService } from "./FHIRService";

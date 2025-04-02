@@ -1,1 +1,1 @@
-export { default as AzureCommunicationsGateway } from "./AzureCommunicationsGateway";
+export { default as AzureNetworkingAzureCommunicationsGateway } from "./AzureCommunicationsGateway";

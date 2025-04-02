@@ -1,1 +1,1 @@
-export { default as MachineLearningStudioWebServicePlans } from "./MachineLearningStudioWebServicePlans";
+export { default as AzureIotMachineLearningStudioWebServicePlans } from "./MachineLearningStudioWebServicePlans";

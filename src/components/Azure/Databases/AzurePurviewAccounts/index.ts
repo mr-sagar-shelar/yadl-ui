@@ -1,1 +1,1 @@
-export { default as AzurePurviewAccounts } from "./AzurePurviewAccounts";
+export { default as AzureDatabasesAzurePurviewAccounts } from "./AzurePurviewAccounts";

@@ -1,1 +1,1 @@
-export { default as AzureMapsAccounts } from "./AzureMapsAccounts";
+export { default as AzureIotAzureMapsAccounts } from "./AzureMapsAccounts";

@@ -1,1 +1,1 @@
-export { default as AppServiceEnvironments } from "./AppServiceEnvironments";
+export { default as AzureWebAppServiceEnvironments } from "./AppServiceEnvironments";

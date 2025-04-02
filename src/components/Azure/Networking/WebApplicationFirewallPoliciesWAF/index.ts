@@ -1,1 +1,1 @@
-export { default as WebApplicationFirewallPoliciesWAF } from "./WebApplicationFirewallPoliciesWAF";
+export { default as AzureNetworkingWebApplicationFirewallPoliciesWAF } from "./WebApplicationFirewallPoliciesWAF";

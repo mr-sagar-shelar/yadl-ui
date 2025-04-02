@@ -1,1 +1,1 @@
-export { default as TimeSeriesInsightsEventSources } from "./TimeSeriesInsightsEventSources";
+export { default as AzureIotTimeSeriesInsightsEventSources } from "./TimeSeriesInsightsEventSources";

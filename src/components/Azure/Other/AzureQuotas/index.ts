@@ -1,1 +1,1 @@
-export { default as AzureQuotas } from "./AzureQuotas";
+export { default as AzureOtherAzureQuotas } from "./AzureQuotas";

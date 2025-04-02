@@ -1,1 +1,1 @@
-export { default as Commit } from "./Commit";
+export { default as AzureGeneralCommit } from "./Commit";

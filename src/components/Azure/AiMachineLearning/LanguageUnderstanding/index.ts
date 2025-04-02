@@ -1,1 +1,1 @@
-export { default as LanguageUnderstanding } from "./LanguageUnderstanding";
+export { default as AzureAiMachineLearningLanguageUnderstanding } from "./LanguageUnderstanding";

@@ -1,1 +1,1 @@
-export { default as AzureBackupCenter } from "./AzureBackupCenter";
+export { default as AzureOtherAzureBackupCenter } from "./AzureBackupCenter";

@@ -1,1 +1,1 @@
-export { default as RouteFilters } from "./RouteFilters";
+export { default as AzureNetworkingRouteFilters } from "./RouteFilters";

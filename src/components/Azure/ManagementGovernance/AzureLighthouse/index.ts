@@ -1,1 +1,1 @@
-export { default as AzureLighthouse } from "./AzureLighthouse";
+export { default as AzureManagementGovernanceAzureLighthouse } from "./AzureLighthouse";

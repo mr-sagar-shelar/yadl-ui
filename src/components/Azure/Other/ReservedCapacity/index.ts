@@ -1,1 +1,1 @@
-export { default as ReservedCapacity } from "./ReservedCapacity";
+export { default as AzureOtherReservedCapacity } from "./ReservedCapacity";

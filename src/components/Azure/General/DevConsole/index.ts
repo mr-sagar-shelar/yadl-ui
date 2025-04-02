@@ -1,1 +1,1 @@
-export { default as DevConsole } from "./DevConsole";
+export { default as AzureGeneralDevConsole } from "./DevConsole";

@@ -1,1 +1,1 @@
-export { default as Aquila } from "./Aquila";
+export { default as AzureOtherAquila } from "./Aquila";

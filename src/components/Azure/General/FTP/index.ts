@@ -1,1 +1,1 @@
-export { default as FTP } from "./FTP";
+export { default as AzureGeneralFTP } from "./FTP";

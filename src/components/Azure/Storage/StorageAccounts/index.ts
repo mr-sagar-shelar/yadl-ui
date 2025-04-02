@@ -1,1 +1,1 @@
-export { default as StorageAccounts } from "./StorageAccounts";
+export { default as AzureStorageStorageAccounts } from "./StorageAccounts";

@@ -1,1 +1,1 @@
-export { default as RemoteRendering } from "./RemoteRendering";
+export { default as AzureMixedRealityRemoteRendering } from "./RemoteRendering";

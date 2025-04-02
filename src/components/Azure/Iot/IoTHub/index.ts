@@ -1,1 +1,1 @@
-export { default as IoTHub } from "./IoTHub";
+export { default as AzureIotIoTHub } from "./IoTHub";

@@ -1,1 +1,1 @@
-export { default as AzureOperatorServiceManager } from "./AzureOperatorServiceManager";
+export { default as AzureHybridMulticloudAzureOperatorServiceManager } from "./AzureOperatorServiceManager";

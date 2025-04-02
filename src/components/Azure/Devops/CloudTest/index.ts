@@ -1,1 +1,1 @@
-export { default as CloudTest } from "./CloudTest";
+export { default as AzureDevopsCloudTest } from "./CloudTest";

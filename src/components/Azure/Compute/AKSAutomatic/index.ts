@@ -1,1 +1,1 @@
-export { default as AKSAutomatic } from "./AKSAutomatic";
+export { default as AzureComputeAKSAutomatic } from "./AKSAutomatic";

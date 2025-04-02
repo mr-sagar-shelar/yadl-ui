@@ -1,1 +1,1 @@
-export { default as StreamAnalyticsJobs } from "./StreamAnalyticsJobs";
+export { default as AzureIotStreamAnalyticsJobs } from "./StreamAnalyticsJobs";

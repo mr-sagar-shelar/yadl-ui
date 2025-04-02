@@ -1,1 +1,1 @@
-export { default as VerificationAsAService } from "./VerificationAsAService";
+export { default as AzureIdentityVerificationAsAService } from "./VerificationAsAService";

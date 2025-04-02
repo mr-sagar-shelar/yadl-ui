@@ -1,1 +1,1 @@
-export { default as ArcDataservices } from "./ArcDataservices";
+export { default as AzureOtherArcDataservices } from "./ArcDataservices";

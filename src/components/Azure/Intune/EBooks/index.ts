@@ -1,1 +1,1 @@
-export { default as EBooks } from "./EBooks";
+export { default as AzureIntuneEBooks } from "./EBooks";

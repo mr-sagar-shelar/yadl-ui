@@ -1,1 +1,1 @@
-export { default as AzureComputeGalleries } from "./AzureComputeGalleries";
+export { default as AzureComputeAzureComputeGalleries } from "./AzureComputeGalleries";

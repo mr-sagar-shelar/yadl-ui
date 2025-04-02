@@ -1,1 +1,1 @@
-export { default as DataShareInvitations } from "./DataShareInvitations";
+export { default as AzureStorageDataShareInvitations } from "./DataShareInvitations";

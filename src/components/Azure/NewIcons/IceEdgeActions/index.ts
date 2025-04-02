@@ -1,1 +1,1 @@
-export { default as IceEdgeActions } from "./IceEdgeActions";
+export { default as AzureNewIconsIceEdgeActions } from "./IceEdgeActions";

@@ -1,1 +1,1 @@
-export { default as GlobeError } from "./GlobeError";
+export { default as AzureGeneralGlobeError } from "./GlobeError";

@@ -1,1 +1,1 @@
-export { default as AKSIstio } from "./AKSIstio";
+export { default as AzureOtherAKSIstio } from "./AKSIstio";

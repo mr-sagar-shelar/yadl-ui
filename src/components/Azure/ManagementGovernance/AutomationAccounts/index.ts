@@ -1,1 +1,1 @@
-export { default as AutomationAccounts } from "./AutomationAccounts";
+export { default as AzureManagementGovernanceAutomationAccounts } from "./AutomationAccounts";

@@ -1,1 +1,1 @@
-export { default as DefenderFreezerMonitor } from "./DefenderFreezerMonitor";
+export { default as AzureOtherDefenderFreezerMonitor } from "./DefenderFreezerMonitor";

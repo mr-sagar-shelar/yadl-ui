@@ -1,1 +1,1 @@
-export { default as Keys } from "./Keys";
+export { default as AzureMenuKeys } from "./Keys";

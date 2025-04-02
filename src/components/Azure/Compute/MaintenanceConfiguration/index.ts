@@ -1,1 +1,1 @@
-export { default as MaintenanceConfiguration } from "./MaintenanceConfiguration";
+export { default as AzureComputeMaintenanceConfiguration } from "./MaintenanceConfiguration";

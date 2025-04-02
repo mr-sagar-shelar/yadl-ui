@@ -1,1 +1,1 @@
-export { default as PeeringService } from "./PeeringService";
+export { default as AzureOtherPeeringService } from "./PeeringService";

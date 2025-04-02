@@ -1,1 +1,1 @@
-export { default as NetworkSecurityPerimeters } from "./NetworkSecurityPerimeters";
+export { default as AzureOtherNetworkSecurityPerimeters } from "./NetworkSecurityPerimeters";

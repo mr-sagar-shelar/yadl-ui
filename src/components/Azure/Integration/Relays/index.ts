@@ -1,1 +1,1 @@
-export { default as Relays } from "./Relays";
+export { default as AzureIntegrationRelays } from "./Relays";

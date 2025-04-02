@@ -1,1 +1,1 @@
-export { default as ApplicationGatewayContainers } from "./ApplicationGatewayContainers";
+export { default as AzureNetworkingApplicationGatewayContainers } from "./ApplicationGatewayContainers";

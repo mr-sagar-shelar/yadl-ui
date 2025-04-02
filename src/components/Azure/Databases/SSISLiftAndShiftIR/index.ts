@@ -1,1 +1,1 @@
-export { default as SSISLiftAndShiftIR } from "./SSISLiftAndShiftIR";
+export { default as AzureDatabasesSSISLiftAndShiftIR } from "./SSISLiftAndShiftIR";

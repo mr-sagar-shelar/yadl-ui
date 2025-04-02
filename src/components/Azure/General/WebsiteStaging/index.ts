@@ -1,1 +1,1 @@
-export { default as WebsiteStaging } from "./WebsiteStaging";
+export { default as AzureGeneralWebsiteStaging } from "./WebsiteStaging";

@@ -1,1 +1,1 @@
-export { default as AzureTokenService } from "./AzureTokenService";
+export { default as AzureBlockchainAzureTokenService } from "./AzureTokenService";

@@ -1,1 +1,1 @@
-export { default as EventHubs } from "./EventHubs";
+export { default as AzureAnalyticsEventHubs } from "./EventHubs";

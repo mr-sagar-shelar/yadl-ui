@@ -1,1 +1,1 @@
-export { default as CostAnalysis } from "./CostAnalysis";
+export { default as AzureGeneralCostAnalysis } from "./CostAnalysis";

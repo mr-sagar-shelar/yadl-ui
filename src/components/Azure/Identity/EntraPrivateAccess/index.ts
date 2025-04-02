@@ -1,1 +1,1 @@
-export { default as EntraPrivateAccess } from "./EntraPrivateAccess";
+export { default as AzureIdentityEntraPrivateAccess } from "./EntraPrivateAccess";

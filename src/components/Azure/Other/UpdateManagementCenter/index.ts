@@ -1,1 +1,1 @@
-export { default as UpdateManagementCenter } from "./UpdateManagementCenter";
+export { default as AzureOtherUpdateManagementCenter } from "./UpdateManagementCenter";

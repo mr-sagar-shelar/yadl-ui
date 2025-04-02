@@ -1,1 +1,1 @@
-export { default as AppComplianceAutomation } from "./AppComplianceAutomation";
+export { default as AzureOtherAppComplianceAutomation } from "./AppComplianceAutomation";

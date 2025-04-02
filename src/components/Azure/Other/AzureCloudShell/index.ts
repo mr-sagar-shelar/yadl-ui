@@ -1,1 +1,1 @@
-export { default as AzureCloudShell } from "./AzureCloudShell";
+export { default as AzureOtherAzureCloudShell } from "./AzureCloudShell";

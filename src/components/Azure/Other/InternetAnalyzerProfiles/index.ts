@@ -1,1 +1,1 @@
-export { default as InternetAnalyzerProfiles } from "./InternetAnalyzerProfiles";
+export { default as AzureOtherInternetAnalyzerProfiles } from "./InternetAnalyzerProfiles";

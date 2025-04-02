@@ -1,1 +1,1 @@
-export { default as AzureResourceExplorer } from "./ResourceExplorer";
+export { default as AzureGeneralResourceExplorer } from "./ResourceExplorer";

@@ -1,1 +1,1 @@
-export { default as Peerings } from "./Peerings";
+export { default as AzureOtherPeerings } from "./Peerings";

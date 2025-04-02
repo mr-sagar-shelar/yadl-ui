@@ -1,1 +1,1 @@
-export { default as TenantProperties } from "./TenantProperties";
+export { default as AzureIdentityTenantProperties } from "./TenantProperties";

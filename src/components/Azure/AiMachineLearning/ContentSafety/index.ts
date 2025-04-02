@@ -1,1 +1,1 @@
-export { default as ContentSafety } from "./ContentSafety";
+export { default as AzureAiMachineLearningContentSafety } from "./ContentSafety";

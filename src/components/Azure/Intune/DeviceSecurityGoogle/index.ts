@@ -1,1 +1,1 @@
-export { default as DeviceSecurityGoogle } from "./DeviceSecurityGoogle";
+export { default as AzureIntuneDeviceSecurityGoogle } from "./DeviceSecurityGoogle";

@@ -1,1 +1,1 @@
-export { default as ManagedFileShares } from "./ManagedFileShares";
+export { default as AzureStorageManagedFileShares } from "./ManagedFileShares";

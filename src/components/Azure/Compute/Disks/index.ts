@@ -1,1 +1,1 @@
-export { default as Disks } from "./Disks";
+export { default as AzureComputeDisks } from "./Disks";

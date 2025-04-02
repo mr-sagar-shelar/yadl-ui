@@ -1,1 +1,1 @@
-export { default as Capacity } from "./Capacity";
+export { default as AzureAzureStackCapacity } from "./Capacity";

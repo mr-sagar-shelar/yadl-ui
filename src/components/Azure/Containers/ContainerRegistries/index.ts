@@ -1,1 +1,1 @@
-export { default as ContainerRegistries } from "./ContainerRegistries";
+export { default as AzureContainersContainerRegistries } from "./ContainerRegistries";

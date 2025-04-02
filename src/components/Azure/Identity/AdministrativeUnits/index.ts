@@ -1,1 +1,1 @@
-export { default as AdministrativeUnits } from "./AdministrativeUnits";
+export { default as AzureIdentityAdministrativeUnits } from "./AdministrativeUnits";

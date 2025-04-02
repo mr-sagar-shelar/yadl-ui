@@ -1,1 +1,1 @@
-export { default as MonitorHealthModels } from "./MonitorHealthModels";
+export { default as AzureOtherMonitorHealthModels } from "./MonitorHealthModels";

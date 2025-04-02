@@ -1,1 +1,1 @@
-export { default as AzureDevOps } from "./AzureDevOps";
+export { default as AzureDevopsAzureDevOps } from "./AzureDevOps";

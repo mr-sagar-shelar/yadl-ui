@@ -1,1 +1,1 @@
-export { default as IntuneForEducation } from "./IntuneForEducation";
+export { default as AzureIntuneIntuneForEducation } from "./IntuneForEducation";

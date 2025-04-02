@@ -1,1 +1,1 @@
-export { default as PrivateEndpoints } from "./PrivateEndpoints";
+export { default as AzureOtherPrivateEndpoints } from "./PrivateEndpoints";

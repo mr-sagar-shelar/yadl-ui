@@ -1,1 +1,1 @@
-export { default as WACInstaller } from "./WACInstaller";
+export { default as AzureOtherWACInstaller } from "./WACInstaller";

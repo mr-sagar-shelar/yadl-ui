@@ -1,1 +1,1 @@
-export { default as PreviewFeatures } from "./PreviewFeatures";
+export { default as AzureGeneralPreviewFeatures } from "./PreviewFeatures";

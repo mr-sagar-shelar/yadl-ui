@@ -1,1 +1,1 @@
-export { default as AzureHCPCache } from "./AzureHCPCache";
+export { default as AzureStorageAzureHCPCache } from "./AzureHCPCache";

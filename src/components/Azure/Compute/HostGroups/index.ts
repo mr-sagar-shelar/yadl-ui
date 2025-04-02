@@ -1,1 +1,1 @@
-export { default as HostGroups } from "./HostGroups";
+export { default as AzureComputeHostGroups } from "./HostGroups";

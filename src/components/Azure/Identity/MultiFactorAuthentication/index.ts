@@ -1,1 +1,1 @@
-export { default as MultiFactorAuthentication } from "./MultiFactorAuthentication";
+export { default as AzureIdentityMultiFactorAuthentication } from "./MultiFactorAuthentication";

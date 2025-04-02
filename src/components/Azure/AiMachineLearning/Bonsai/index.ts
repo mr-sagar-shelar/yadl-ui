@@ -1,1 +1,1 @@
-export { default as Bonsai } from "./Bonsai";
+export { default as AzureAiMachineLearningBonsai } from "./Bonsai";

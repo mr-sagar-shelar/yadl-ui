@@ -1,1 +1,1 @@
-export { default as CostManagementandBilling } from "./CostManagementandBilling";
+export { default as AzureManagementGovernanceCostManagementandBilling } from "./CostManagementandBilling";

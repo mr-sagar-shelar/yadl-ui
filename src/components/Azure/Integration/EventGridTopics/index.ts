@@ -1,1 +1,1 @@
-export { default as EventGridTopics } from "./EventGridTopics";
+export { default as AzureIntegrationEventGridTopics } from "./EventGridTopics";

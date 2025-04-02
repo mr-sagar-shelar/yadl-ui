@@ -1,1 +1,1 @@
-export { default as SSD } from "./SSD";
+export { default as AzureGeneralSSD } from "./SSD";

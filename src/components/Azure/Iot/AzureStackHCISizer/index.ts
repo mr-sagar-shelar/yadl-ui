@@ -1,1 +1,1 @@
-export { default as AzureStackHCISizer } from "./AzureStackHCISizer";
+export { default as AzureIotAzureStackHCISizer } from "./AzureStackHCISizer";

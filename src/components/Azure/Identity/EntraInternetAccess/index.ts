@@ -1,1 +1,1 @@
-export { default as EntraInternetAccess } from "./EntraInternetAccess";
+export { default as AzureIdentityEntraInternetAccess } from "./EntraInternetAccess";

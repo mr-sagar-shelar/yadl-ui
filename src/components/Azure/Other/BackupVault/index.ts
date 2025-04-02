@@ -1,1 +1,1 @@
-export { default as BackupVault } from "./BackupVault";
+export { default as AzureOtherBackupVault } from "./BackupVault";

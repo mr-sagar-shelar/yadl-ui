@@ -1,1 +1,1 @@
-export { default as DefenderHistorian } from "./DefenderHistorian";
+export { default as AzureOtherDefenderHistorian } from "./DefenderHistorian";

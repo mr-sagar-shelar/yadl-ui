@@ -1,1 +1,1 @@
-export { default as KeyVaults } from "./KeyVaults";
+export { default as AzureSecurityKeyVaults } from "./KeyVaults";

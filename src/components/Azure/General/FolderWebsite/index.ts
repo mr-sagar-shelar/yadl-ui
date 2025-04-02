@@ -1,1 +1,1 @@
-export { default as FolderWebsite } from "./FolderWebsite";
+export { default as AzureGeneralFolderWebsite } from "./FolderWebsite";

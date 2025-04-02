@@ -1,1 +1,1 @@
-export { default as AzureHybridCenter } from "./AzureHybridCenter";
+export { default as AzureAzureEcosystemAzureHybridCenter } from "./AzureHybridCenter";

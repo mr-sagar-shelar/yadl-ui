@@ -1,1 +1,1 @@
-export { default as Branch } from "./Branch";
+export { default as AzureGeneralBranch } from "./Branch";

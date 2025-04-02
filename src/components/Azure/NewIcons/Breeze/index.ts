@@ -1,1 +1,1 @@
-export { default as Breeze } from "./Breeze";
+export { default as AzureNewIconsBreeze } from "./Breeze";

@@ -1,1 +1,1 @@
-export { default as AzureSustainability } from "./AzureSustainability";
+export { default as AzureOtherAzureSustainability } from "./AzureSustainability";

@@ -1,1 +1,1 @@
-export { default as SQLElasticPools } from "./SQLElasticPools";
+export { default as AzureDatabasesSQLElasticPools } from "./SQLElasticPools";

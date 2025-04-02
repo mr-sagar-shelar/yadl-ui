@@ -1,1 +1,1 @@
-export { default as UserSubscriptions } from "./UserSubscriptions";
+export { default as AzureAzureStackUserSubscriptions } from "./UserSubscriptions";

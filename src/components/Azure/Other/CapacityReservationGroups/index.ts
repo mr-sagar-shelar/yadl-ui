@@ -1,1 +1,1 @@
-export { default as CapacityReservationGroups } from "./CapacityReservationGroups";
+export { default as AzureOtherCapacityReservationGroups } from "./CapacityReservationGroups";

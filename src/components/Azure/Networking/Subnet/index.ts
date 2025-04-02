@@ -1,1 +1,1 @@
-export { default as Subnet } from "./Subnet";
+export { default as AzureNetworkingSubnet } from "./Subnet";

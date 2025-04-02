@@ -1,1 +1,1 @@
-export { default as ClientApps } from "./ClientApps";
+export { default as AzureIntuneClientApps } from "./ClientApps";

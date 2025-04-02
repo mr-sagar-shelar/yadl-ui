@@ -1,1 +1,1 @@
-export { default as VMImagesClassic } from "./VMImagesClassic";
+export { default as AzureComputeVMImagesClassic } from "./VMImagesClassic";

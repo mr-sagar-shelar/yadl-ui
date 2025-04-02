@@ -1,1 +1,1 @@
-export { default as ExpressRouteCircuits } from "./ExpressRouteCircuits";
+export { default as AzureNetworkingExpressRouteCircuits } from "./ExpressRouteCircuits";

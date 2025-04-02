@@ -1,1 +1,1 @@
-export { default as IntuneAppProtection } from "./IntuneAppProtection";
+export { default as AzureIntuneIntuneAppProtection } from "./IntuneAppProtection";

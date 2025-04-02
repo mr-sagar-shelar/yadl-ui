@@ -1,1 +1,1 @@
-export { default as EventHubClusters } from "./EventHubClusters";
+export { default as AzureAnalyticsEventHubClusters } from "./EventHubClusters";

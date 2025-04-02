@@ -1,1 +1,1 @@
-export { default as NAT } from "./NAT";
+export { default as AzureNetworkingNAT } from "./NAT";

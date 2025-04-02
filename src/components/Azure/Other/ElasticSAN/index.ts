@@ -1,1 +1,1 @@
-export { default as ElasticSAN } from "./ElasticSAN";
+export { default as AzureOtherElasticSAN } from "./ElasticSAN";

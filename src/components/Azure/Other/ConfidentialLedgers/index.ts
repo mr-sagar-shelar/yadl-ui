@@ -1,1 +1,1 @@
-export { default as ConfidentialLedgers } from "./ConfidentialLedgers";
+export { default as AzureOtherConfidentialLedgers } from "./ConfidentialLedgers";

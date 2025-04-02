@@ -1,1 +1,1 @@
-export { default as VirtualEnclaves } from "./VirtualEnclaves";
+export { default as AzureOtherVirtualEnclaves } from "./VirtualEnclaves";

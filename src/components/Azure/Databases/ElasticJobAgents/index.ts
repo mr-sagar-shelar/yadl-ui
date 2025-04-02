@@ -1,1 +1,1 @@
-export { default as ElasticJobAgents } from "./ElasticJobAgents";
+export { default as AzureDatabasesElasticJobAgents } from "./ElasticJobAgents";

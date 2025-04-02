@@ -1,1 +1,1 @@
-export { default as FaceAPIs } from "./FaceAPIs";
+export { default as AzureAiMachineLearningFaceAPIs } from "./FaceAPIs";

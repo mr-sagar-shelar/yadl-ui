@@ -1,1 +1,1 @@
-export { default as TenantStatus } from "./TenantStatus";
+export { default as AzureIntuneTenantStatus } from "./TenantStatus";

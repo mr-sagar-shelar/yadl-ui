@@ -1,1 +1,1 @@
-export { default as Workspaces } from "./Workspaces";
+export { default as AzureComputeWorkspaces } from "./Workspaces";

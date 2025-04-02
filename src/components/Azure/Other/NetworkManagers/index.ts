@@ -1,1 +1,1 @@
-export { default as NetworkManagers } from "./NetworkManagers";
+export { default as AzureOtherNetworkManagers } from "./NetworkManagers";

@@ -1,1 +1,1 @@
-export { default as GenomicsAccounts } from "./GenomicsAccounts";
+export { default as AzureAiMachineLearningGenomicsAccounts } from "./GenomicsAccounts";

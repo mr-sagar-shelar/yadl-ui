@@ -1,1 +1,1 @@
-export { default as Files } from "./Files";
+export { default as AzureGeneralFiles } from "./Files";

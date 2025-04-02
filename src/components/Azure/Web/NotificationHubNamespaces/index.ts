@@ -1,1 +1,1 @@
-export { default as NotificationHubNamespaces } from "./NotificationHubNamespaces";
+export { default as AzureWebNotificationHubNamespaces } from "./NotificationHubNamespaces";

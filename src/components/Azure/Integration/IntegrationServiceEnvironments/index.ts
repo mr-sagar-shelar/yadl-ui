@@ -1,1 +1,1 @@
-export { default as IntegrationServiceEnvironments } from "./IntegrationServiceEnvironments";
+export { default as AzureIntegrationIntegrationServiceEnvironments } from "./IntegrationServiceEnvironments";

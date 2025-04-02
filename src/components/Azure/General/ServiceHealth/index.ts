@@ -1,1 +1,1 @@
-export { default as ServiceHealth } from "./ServiceHealth";
+export { default as AzureGeneralServiceHealth } from "./ServiceHealth";

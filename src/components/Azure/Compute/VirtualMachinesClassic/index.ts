@@ -1,1 +1,1 @@
-export { default as VirtualMachinesClassic } from "./VirtualMachinesClassic";
+export { default as AzureComputeVirtualMachinesClassic } from "./VirtualMachinesClassic";

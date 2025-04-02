@@ -1,1 +1,1 @@
-export { default as Personalizers } from "./Personalizers";
+export { default as AzureAiMachineLearningPersonalizers } from "./Personalizers";

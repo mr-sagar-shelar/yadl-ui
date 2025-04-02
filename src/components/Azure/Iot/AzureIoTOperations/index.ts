@@ -1,1 +1,1 @@
-export { default as AzureIoTOperations } from "./AzureIoTOperations";
+export { default as AzureIotAzureIoTOperations } from "./AzureIoTOperations";

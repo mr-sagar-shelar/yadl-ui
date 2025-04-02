@@ -1,1 +1,1 @@
-export { default as VirtualClusters } from "./VirtualClusters";
+export { default as AzureDatabasesVirtualClusters } from "./VirtualClusters";

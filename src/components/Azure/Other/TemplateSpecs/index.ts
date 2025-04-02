@@ -1,1 +1,1 @@
-export { default as TemplateSpecs } from "./TemplateSpecs";
+export { default as AzureOtherTemplateSpecs } from "./TemplateSpecs";

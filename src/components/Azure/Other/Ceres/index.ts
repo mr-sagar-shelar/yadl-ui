@@ -1,1 +1,1 @@
-export { default as Ceres } from "./Ceres";
+export { default as AzureOtherCeres } from "./Ceres";

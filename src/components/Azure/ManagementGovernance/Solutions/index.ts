@@ -1,1 +1,1 @@
-export { default as Solutions } from "./Solutions";
+export { default as AzureManagementGovernanceSolutions } from "./Solutions";

@@ -1,1 +1,1 @@
-export { default as StorageFunctions } from "./StorageFunctions";
+export { default as AzureOtherStorageFunctions } from "./StorageFunctions";

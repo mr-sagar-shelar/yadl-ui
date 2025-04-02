@@ -1,1 +1,1 @@
-export { default as AzureSphere } from "./AzureSphere";
+export { default as AzureOtherAzureSphere } from "./AzureSphere";

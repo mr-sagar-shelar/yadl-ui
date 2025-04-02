@@ -1,1 +1,1 @@
-export { default as VirtualWANs } from "./VirtualWANs";
+export { default as AzureNetworkingVirtualWANs } from "./VirtualWANs";

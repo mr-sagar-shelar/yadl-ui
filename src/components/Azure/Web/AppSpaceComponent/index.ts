@@ -1,1 +1,1 @@
-export { default as AppSpaceComponent } from "./AppSpaceComponent";
+export { default as AzureWebAppSpaceComponent } from "./AppSpaceComponent";

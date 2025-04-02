@@ -1,1 +1,1 @@
-export { default as SoftwareasaService } from "./SoftwareasaService";
+export { default as AzureIntegrationSoftwareasaService } from "./SoftwareasaService";

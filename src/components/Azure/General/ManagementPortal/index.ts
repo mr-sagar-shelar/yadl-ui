@@ -1,1 +1,1 @@
-export { default as ManagementPortal } from "./ManagementPortal";
+export { default as AzureGeneralManagementPortal } from "./ManagementPortal";

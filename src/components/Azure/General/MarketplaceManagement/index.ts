@@ -1,1 +1,1 @@
-export { default as MarketplaceManagement } from "./MarketplaceManagement";
+export { default as AzureGeneralMarketplaceManagement } from "./MarketplaceManagement";

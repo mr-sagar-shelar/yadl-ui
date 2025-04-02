@@ -1,1 +1,1 @@
-export { default as LoadBalancerHub } from "./LoadBalancerHub";
+export { default as AzureNetworkingLoadBalancerHub } from "./LoadBalancerHub";

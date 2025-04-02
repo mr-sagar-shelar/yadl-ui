@@ -1,1 +1,1 @@
-export { default as FolderBlank } from "./FolderBlank";
+export { default as AzureGeneralFolderBlank } from "./FolderBlank";

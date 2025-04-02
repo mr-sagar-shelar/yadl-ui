@@ -1,1 +1,1 @@
-export { default as APIConnections } from "./APIConnections";
+export { default as AzureIntegrationAPIConnections } from "./APIConnections";

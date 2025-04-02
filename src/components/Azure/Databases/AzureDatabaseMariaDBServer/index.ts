@@ -1,1 +1,1 @@
-export { default as AzureDatabaseMariaDBServer } from "./AzureDatabaseMariaDBServer";
+export { default as AzureDatabasesAzureDatabaseMariaDBServer } from "./AzureDatabaseMariaDBServer";

@@ -1,1 +1,1 @@
-export { default as VMAppDefinitions } from "./VMAppDefinitions";
+export { default as AzureOtherVMAppDefinitions } from "./VMAppDefinitions";

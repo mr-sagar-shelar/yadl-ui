@@ -1,1 +1,1 @@
-export { default as AzureDatabaseMigrationServices } from "./AzureDatabaseMigrationServices";
+export { default as AzureDatabasesAzureDatabaseMigrationServices } from "./AzureDatabaseMigrationServices";

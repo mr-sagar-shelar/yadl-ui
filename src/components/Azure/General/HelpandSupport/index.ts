@@ -1,1 +1,1 @@
-export { default as HelpandSupport } from "./HelpandSupport";
+export { default as AzureGeneralHelpandSupport } from "./HelpandSupport";

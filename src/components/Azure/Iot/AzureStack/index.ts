@@ -1,1 +1,1 @@
-export { default as AzureStack } from "./AzureStack";
+export { default as AzureIotAzureStack } from "./AzureStack";

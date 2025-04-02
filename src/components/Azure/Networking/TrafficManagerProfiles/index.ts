@@ -1,1 +1,1 @@
-export { default as TrafficManagerProfiles } from "./TrafficManagerProfiles";
+export { default as AzureNetworkingTrafficManagerProfiles } from "./TrafficManagerProfiles";

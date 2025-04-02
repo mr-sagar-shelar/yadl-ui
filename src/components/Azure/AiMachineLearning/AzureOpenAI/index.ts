@@ -1,1 +1,1 @@
-export { default as AzureOpenAI } from "./AzureOpenAI";
+export { default as AzureAiMachineLearningAzureOpenAI } from "./AzureOpenAI";

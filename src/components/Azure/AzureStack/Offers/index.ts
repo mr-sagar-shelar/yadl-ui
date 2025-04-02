@@ -1,1 +1,1 @@
-export { default as Offers } from "./Offers";
+export { default as AzureAzureStackOffers } from "./Offers";

@@ -1,1 +1,1 @@
-export { default as AzureWorkbooks } from "./AzureWorkbooks";
+export { default as AzureAnalyticsAzureWorkbooks } from "./AzureWorkbooks";

@@ -1,1 +1,1 @@
-export { default as AzureDevelopsAPIManagementServices } from "./APIManagementServices";
+export { default as AzureDevopsAPIManagementServices } from "./APIManagementServices";

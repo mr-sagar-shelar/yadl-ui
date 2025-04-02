@@ -1,1 +1,1 @@
-export { default as ManagedDevOpsPools } from "./ManagedDevOpsPools";
+export { default as AzureDevopsManagedDevOpsPools } from "./ManagedDevOpsPools";

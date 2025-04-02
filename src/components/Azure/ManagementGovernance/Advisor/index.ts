@@ -1,1 +1,1 @@
-export { default as Advisor } from "./Advisor";
+export { default as AzureManagementGovernanceAdvisor } from "./Advisor";

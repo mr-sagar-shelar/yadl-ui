@@ -1,1 +1,1 @@
-export { default as ServerlessSearch } from "./ServerlessSearch";
+export { default as AzureAiMachineLearningServerlessSearch } from "./ServerlessSearch";

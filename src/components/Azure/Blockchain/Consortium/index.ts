@@ -1,1 +1,1 @@
-export { default as Consortium } from "./Consortium";
+export { default as AzureBlockchainConsortium } from "./Consortium";

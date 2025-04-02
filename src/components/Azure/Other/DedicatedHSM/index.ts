@@ -1,1 +1,1 @@
-export { default as DedicatedHSM } from "./DedicatedHSM";
+export { default as AzureOtherDedicatedHSM } from "./DedicatedHSM";

@@ -1,1 +1,1 @@
-export { default as LogAnalyticsWorkspaces } from "./LogAnalyticsWorkspaces";
+export { default as AzureAnalyticsLogAnalyticsWorkspaces } from "./LogAnalyticsWorkspaces";

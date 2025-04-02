@@ -1,1 +1,1 @@
-export { default as EntraIdentityRiskyUsers } from "./EntraIdentityRiskyUsers";
+export { default as AzureSecurityEntraIdentityRiskyUsers } from "./EntraIdentityRiskyUsers";

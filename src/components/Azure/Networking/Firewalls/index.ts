@@ -1,1 +1,1 @@
-export { default as Firewalls } from "./Firewalls";
+export { default as AzureNetworkingFirewalls } from "./Firewalls";

@@ -1,1 +1,1 @@
-export { default as APICenter } from "./APICenter";
+export { default as AzureWebAPICenter } from "./APICenter";

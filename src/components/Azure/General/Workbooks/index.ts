@@ -1,1 +1,1 @@
-export { default as Workbooks } from "./Workbooks";
+export { default as AzureGeneralWorkbooks } from "./Workbooks";

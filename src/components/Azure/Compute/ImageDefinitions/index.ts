@@ -1,1 +1,1 @@
-export { default as ImageDefinitions } from "./ImageDefinitions";
+export { default as AzureComputeImageDefinitions } from "./ImageDefinitions";

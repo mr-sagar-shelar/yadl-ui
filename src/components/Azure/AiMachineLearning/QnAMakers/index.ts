@@ -1,1 +1,1 @@
-export { default as QnAMakers } from "./QnAMakers";
+export { default as AzureAiMachineLearningQnAMakers } from "./QnAMakers";

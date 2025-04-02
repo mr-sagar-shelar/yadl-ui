@@ -1,1 +1,1 @@
-export { default as ResourcesProvider } from "./ResourcesProvider";
+export { default as AzureManagementGovernanceResourcesProvider } from "./ResourcesProvider";

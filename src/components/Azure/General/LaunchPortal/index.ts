@@ -1,1 +1,1 @@
-export { default as LaunchPortal } from "./LaunchPortal";
+export { default as AzureGeneralLaunchPortal } from "./LaunchPortal";

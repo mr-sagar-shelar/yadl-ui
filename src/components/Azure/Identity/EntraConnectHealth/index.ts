@@ -1,1 +1,1 @@
-export { default as EntraConnectHealth } from "./EntraConnectHealth";
+export { default as AzureIdentityEntraConnectHealth } from "./EntraConnectHealth";

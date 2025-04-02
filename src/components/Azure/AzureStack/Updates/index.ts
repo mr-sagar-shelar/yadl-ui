@@ -1,1 +1,1 @@
-export { default as Updates } from "./Updates";
+export { default as AzureAzureStackUpdates } from "./Updates";

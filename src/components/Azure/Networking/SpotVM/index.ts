@@ -1,1 +1,1 @@
-export { default as SpotVM } from "./SpotVM";
+export { default as AzureNetworkingSpotVM } from "./SpotVM";

@@ -1,1 +1,1 @@
-export { default as StorageSyncServices } from "./StorageSyncServices";
+export { default as AzureStorageStorageSyncServices } from "./StorageSyncServices";

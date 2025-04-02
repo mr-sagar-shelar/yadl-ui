@@ -1,1 +1,1 @@
-export { default as DeviceCompliance } from "./DeviceCompliance";
+export { default as AzureIntuneDeviceCompliance } from "./DeviceCompliance";

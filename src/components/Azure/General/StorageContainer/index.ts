@@ -1,1 +1,1 @@
-export { default as StorageContainer } from "./StorageContainer";
+export { default as AzureGeneralStorageContainer } from "./StorageContainer";

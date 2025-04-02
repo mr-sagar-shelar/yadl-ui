@@ -1,1 +1,1 @@
-export { default as Bastions } from "./Bastions";
+export { default as AzureNetworkingBastions } from "./Bastions";

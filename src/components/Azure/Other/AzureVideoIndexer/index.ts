@@ -1,1 +1,1 @@
-export { default as AzureVideoIndexer } from "./AzureVideoIndexer";
+export { default as AzureOtherAzureVideoIndexer } from "./AzureVideoIndexer";

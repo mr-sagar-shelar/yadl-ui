@@ -1,1 +1,1 @@
-export { default as StorageAzureFiles } from "./StorageAzureFiles";
+export { default as AzureGeneralStorageAzureFiles } from "./StorageAzureFiles";

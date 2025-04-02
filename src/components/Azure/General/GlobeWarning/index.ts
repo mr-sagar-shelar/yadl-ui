@@ -1,1 +1,1 @@
-export { default as GlobeWarning } from "./GlobeWarning";
+export { default as AzureGeneralGlobeWarning } from "./GlobeWarning";

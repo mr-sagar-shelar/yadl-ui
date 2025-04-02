@@ -1,1 +1,1 @@
-export { default as AzureContainerAppServices } from "./AppServices";
+export { default as AzureContainersAppServices } from "./AppServices";

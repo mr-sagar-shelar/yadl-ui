@@ -1,1 +1,1 @@
-export { default as DeviceConfiguration } from "./DeviceConfiguration";
+export { default as AzureIntuneDeviceConfiguration } from "./DeviceConfiguration";

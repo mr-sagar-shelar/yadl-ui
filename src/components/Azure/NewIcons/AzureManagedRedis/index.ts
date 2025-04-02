@@ -1,1 +1,1 @@
-export { default as AzureManagedRedis } from "./AzureManagedRedis";
+export { default as AzureNewIconsAzureManagedRedis } from "./AzureManagedRedis";

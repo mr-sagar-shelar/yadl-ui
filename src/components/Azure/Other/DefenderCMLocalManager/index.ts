@@ -1,1 +1,1 @@
-export { default as DefenderCMLocalManager } from "./DefenderCMLocalManager";
+export { default as AzureOtherDefenderCMLocalManager } from "./DefenderCMLocalManager";

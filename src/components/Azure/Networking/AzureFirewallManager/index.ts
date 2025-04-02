@@ -1,1 +1,1 @@
-export { default as AzureFirewallManager } from "./AzureFirewallManager";
+export { default as AzureNetworkingAzureFirewallManager } from "./AzureFirewallManager";

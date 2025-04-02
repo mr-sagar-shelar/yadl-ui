@@ -1,1 +1,1 @@
-export { default as StorageQueue } from "./StorageQueue";
+export { default as AzureGeneralStorageQueue } from "./StorageQueue";

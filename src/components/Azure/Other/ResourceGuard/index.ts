@@ -1,1 +1,1 @@
-export { default as ResourceGuard } from "./ResourceGuard";
+export { default as AzureOtherResourceGuard } from "./ResourceGuard";

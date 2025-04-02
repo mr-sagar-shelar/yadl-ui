@@ -1,1 +1,1 @@
-export { default as EntraIDProtection } from "./EntraIDProtection";
+export { default as AzureIdentityEntraIDProtection } from "./EntraIDProtection";

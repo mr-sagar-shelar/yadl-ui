@@ -1,1 +1,1 @@
-export { default as ExpressRouteTrafficCollector } from "./ExpressRouteTrafficCollector";
+export { default as AzureOtherExpressRouteTrafficCollector } from "./ExpressRouteTrafficCollector";

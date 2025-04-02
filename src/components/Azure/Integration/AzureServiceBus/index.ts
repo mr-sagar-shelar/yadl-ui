@@ -1,1 +1,1 @@
-export { default as AzureServiceBus } from "./AzureServiceBus";
+export { default as AzureIntegrationAzureServiceBus } from "./AzureServiceBus";

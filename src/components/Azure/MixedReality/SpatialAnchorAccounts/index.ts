@@ -1,1 +1,1 @@
-export { default as SpatialAnchorAccounts } from "./SpatialAnchorAccounts";
+export { default as AzureMixedRealitySpatialAnchorAccounts } from "./SpatialAnchorAccounts";

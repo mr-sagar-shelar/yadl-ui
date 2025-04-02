@@ -1,1 +1,1 @@
-export { default as ConnectedCache } from "./ConnectedCache";
+export { default as AzureNetworkingConnectedCache } from "./ConnectedCache";

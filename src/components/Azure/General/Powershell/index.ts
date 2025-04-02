@@ -1,1 +1,1 @@
-export { default as Powershell } from "./Powershell";
+export { default as AzureGeneralPowershell } from "./Powershell";

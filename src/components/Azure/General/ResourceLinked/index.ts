@@ -1,1 +1,1 @@
-export { default as ResourceLinked } from "./ResourceLinked";
+export { default as AzureGeneralResourceLinked } from "./ResourceLinked";

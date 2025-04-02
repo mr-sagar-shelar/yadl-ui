@@ -1,1 +1,1 @@
-export { default as AnomalyDetector } from "./AnomalyDetector";
+export { default as AzureAiMachineLearningAnomalyDetector } from "./AnomalyDetector";

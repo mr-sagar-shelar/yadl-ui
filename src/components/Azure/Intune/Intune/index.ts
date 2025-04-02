@@ -1,1 +1,1 @@
-export { default as Intune } from "./Intune";
+export { default as AzureIntuneIntune } from "./Intune";

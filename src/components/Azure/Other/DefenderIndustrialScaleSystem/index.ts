@@ -1,1 +1,1 @@
-export { default as DefenderIndustrialScaleSystem } from "./DefenderIndustrialScaleSystem";
+export { default as AzureOtherDefenderIndustrialScaleSystem } from "./DefenderIndustrialScaleSystem";

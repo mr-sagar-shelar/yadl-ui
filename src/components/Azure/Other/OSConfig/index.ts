@@ -1,1 +1,1 @@
-export { default as OSConfig } from "./OSConfig";
+export { default as AzureOtherOSConfig } from "./OSConfig";

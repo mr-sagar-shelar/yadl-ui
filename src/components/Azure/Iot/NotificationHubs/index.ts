@@ -1,1 +1,1 @@
-export { default as NotificationHubs } from "./NotificationHubs";
+export { default as AzureIotNotificationHubs } from "./NotificationHubs";

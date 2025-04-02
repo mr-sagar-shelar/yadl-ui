@@ -1,1 +1,1 @@
-export { default as Cubes } from "./Cubes";
+export { default as AzureGeneralCubes } from "./Cubes";

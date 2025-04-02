@@ -1,1 +1,1 @@
-export { default as MicrosoftDefenderforIoT } from "./MicrosoftDefenderforIoT";
+export { default as AzureSecurityMicrosoftDefenderforIoT } from "./MicrosoftDefenderforIoT";

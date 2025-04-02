@@ -1,1 +1,1 @@
-export { default as ContainerServicesDeprecated } from "./ContainerServicesDeprecated";
+export { default as AzureComputeContainerServicesDeprecated } from "./ContainerServicesDeprecated";

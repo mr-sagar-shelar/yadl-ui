@@ -1,1 +1,1 @@
-export { default as ServiceEndpointPolicies } from "./ServiceEndpointPolicies";
+export { default as AzureNetworkingServiceEndpointPolicies } from "./ServiceEndpointPolicies";

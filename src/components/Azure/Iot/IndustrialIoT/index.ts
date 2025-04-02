@@ -1,1 +1,1 @@
-export { default as IndustrialIoT } from "./IndustrialIoT";
+export { default as AzureIotIndustrialIoT } from "./IndustrialIoT";

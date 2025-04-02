@@ -1,1 +1,1 @@
-export { default as AzureSQL } from "./AzureSQL";
+export { default as AzureDatabasesAzureSQL } from "./AzureSQL";

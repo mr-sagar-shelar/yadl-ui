@@ -1,1 +1,1 @@
-export { default as CommunityImages } from "./CommunityImages";
+export { default as AzureOtherCommunityImages } from "./CommunityImages";

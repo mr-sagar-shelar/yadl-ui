@@ -1,1 +1,1 @@
-export { default as SCVMMManagementServers } from "./SCVMMManagementServers";
+export { default as AzureOtherSCVMMManagementServers } from "./SCVMMManagementServers";

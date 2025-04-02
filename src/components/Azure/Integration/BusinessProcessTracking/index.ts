@@ -1,1 +1,1 @@
-export { default as BusinessProcessTracking } from "./BusinessProcessTracking";
+export { default as AzureIntegrationBusinessProcessTracking } from "./BusinessProcessTracking";

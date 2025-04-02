@@ -1,1 +1,1 @@
-export { default as CostManagement } from "./CostManagement";
+export { default as AzureGeneralCostManagement } from "./CostManagement";

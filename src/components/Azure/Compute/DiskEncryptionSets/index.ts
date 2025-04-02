@@ -1,1 +1,1 @@
-export { default as DiskEncryptionSets } from "./DiskEncryptionSets";
+export { default as AzureComputeDiskEncryptionSets } from "./DiskEncryptionSets";

@@ -1,1 +1,1 @@
-export { default as IcMTroubleshooting } from "./IcMTroubleshooting";
+export { default as AzureOtherIcMTroubleshooting } from "./IcMTroubleshooting";

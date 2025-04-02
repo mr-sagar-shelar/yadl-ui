@@ -1,1 +1,1 @@
-export { default as EdgeManagement } from "./EdgeManagement";
+export { default as AzureOtherEdgeManagement } from "./EdgeManagement";

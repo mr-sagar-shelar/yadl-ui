@@ -1,1 +1,1 @@
-export { default as CloudServicesextendedsupport } from "./CloudServicesextendedsupport";
+export { default as AzureOtherCloudServicesextendedsupport } from "./CloudServicesextendedsupport";

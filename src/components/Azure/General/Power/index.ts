@@ -1,1 +1,1 @@
-export { default as Power } from "./Power";
+export { default as AzureGeneralPower } from "./Power";

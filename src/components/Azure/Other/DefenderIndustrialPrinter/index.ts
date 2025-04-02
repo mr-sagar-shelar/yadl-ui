@@ -1,1 +1,1 @@
-export { default as DefenderIndustrialPrinter } from "./DefenderIndustrialPrinter";
+export { default as AzureOtherDefenderIndustrialPrinter } from "./DefenderIndustrialPrinter";

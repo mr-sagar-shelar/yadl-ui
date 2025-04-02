@@ -1,1 +1,1 @@
-export { default as PartnerTopic } from "./PartnerTopic";
+export { default as AzureIntegrationPartnerTopic } from "./PartnerTopic";

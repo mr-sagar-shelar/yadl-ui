@@ -1,1 +1,1 @@
-export { default as NetworkInterfaces } from "./NetworkInterfaces";
+export { default as AzureNetworkingNetworkInterfaces } from "./NetworkInterfaces";

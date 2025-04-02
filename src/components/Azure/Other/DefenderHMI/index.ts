@@ -1,1 +1,1 @@
-export { default as DefenderHMI } from "./DefenderHMI";
+export { default as AzureOtherDefenderHMI } from "./DefenderHMI";

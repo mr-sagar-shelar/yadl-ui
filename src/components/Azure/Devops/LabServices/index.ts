@@ -1,1 +1,1 @@
-export { default as LabServices } from "./LabServices";
+export { default as AzureDevopsLabServices } from "./LabServices";

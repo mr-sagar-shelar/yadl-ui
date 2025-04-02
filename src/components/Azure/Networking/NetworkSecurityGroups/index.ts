@@ -1,1 +1,1 @@
-export { default as NetworkSecurityGroups } from "./NetworkSecurityGroups";
+export { default as AzureNetworkingNetworkSecurityGroups } from "./NetworkSecurityGroups";

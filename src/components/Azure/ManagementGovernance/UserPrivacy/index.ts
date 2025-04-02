@@ -1,1 +1,1 @@
-export { default as UserPrivacy } from "./UserPrivacy";
+export { default as AzureManagementGovernanceUserPrivacy } from "./UserPrivacy";

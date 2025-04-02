@@ -1,1 +1,1 @@
-export { default as Information } from "./Information";
+export { default as AzureGeneralInformation } from "./Information";

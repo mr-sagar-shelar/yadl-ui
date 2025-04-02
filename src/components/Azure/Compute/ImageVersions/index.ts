@@ -1,1 +1,1 @@
-export { default as ImageVersions } from "./ImageVersions";
+export { default as AzureComputeImageVersions } from "./ImageVersions";

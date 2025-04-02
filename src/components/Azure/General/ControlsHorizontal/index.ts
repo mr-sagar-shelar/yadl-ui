@@ -1,1 +1,1 @@
-export { default as ControlsHorizontal } from "./ControlsHorizontal";
+export { default as AzureGeneralControlsHorizontal } from "./ControlsHorizontal";

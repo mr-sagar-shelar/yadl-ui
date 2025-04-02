@@ -1,1 +1,1 @@
-export { default as ProductionReadyDatabase } from "./ProductionReadyDatabase";
+export { default as AzureGeneralProductionReadyDatabase } from "./ProductionReadyDatabase";

@@ -1,1 +1,1 @@
-export { default as GlobeSuccess } from "./GlobeSuccess";
+export { default as AzureGeneralGlobeSuccess } from "./GlobeSuccess";

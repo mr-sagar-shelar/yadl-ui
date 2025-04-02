@@ -1,1 +1,1 @@
-export { default as AzureSynapseAnalytics } from "./AzureSynapseAnalytics";
+export { default as AzureDatabasesAzureSynapseAnalytics } from "./AzureSynapseAnalytics";

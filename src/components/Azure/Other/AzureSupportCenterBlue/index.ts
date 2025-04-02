@@ -1,1 +1,1 @@
-export { default as AzureSupportCenterBlue } from "./AzureSupportCenterBlue";
+export { default as AzureOtherAzureSupportCenterBlue } from "./AzureSupportCenterBlue";

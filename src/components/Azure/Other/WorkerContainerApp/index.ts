@@ -1,1 +1,1 @@
-export { default as WorkerContainerApp } from "./WorkerContainerApp";
+export { default as AzureOtherWorkerContainerApp } from "./WorkerContainerApp";

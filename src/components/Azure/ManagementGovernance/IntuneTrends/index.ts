@@ -1,1 +1,1 @@
-export { default as IntuneTrends } from "./IntuneTrends";
+export { default as AzureManagementGovernanceIntuneTrends } from "./IntuneTrends";

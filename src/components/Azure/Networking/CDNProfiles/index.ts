@@ -1,1 +1,1 @@
-export { default as CDNProfiles } from "./CDNProfiles";
+export { default as AzureNetworkingCDNProfiles } from "./CDNProfiles";

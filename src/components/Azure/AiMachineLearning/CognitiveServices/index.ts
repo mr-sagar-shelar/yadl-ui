@@ -1,1 +1,1 @@
-export { default as CognitiveServices } from "./CognitiveServices";
+export { default as AzureAiMachineLearningCognitiveServices } from "./CognitiveServices";

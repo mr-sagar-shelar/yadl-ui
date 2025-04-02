@@ -1,1 +1,1 @@
-export { default as AzureCosmosDB } from "./AzureCosmosDB";
+export { default as AzureDatabasesAzureCosmosDB } from "./AzureCosmosDB";

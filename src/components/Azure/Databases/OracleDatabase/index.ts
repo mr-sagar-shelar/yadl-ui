@@ -1,1 +1,1 @@
-export { default as OracleDatabase } from "./OracleDatabase";
+export { default as AzureDatabasesOracleDatabase } from "./OracleDatabase";

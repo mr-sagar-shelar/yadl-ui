@@ -1,1 +1,1 @@
-export { default as StackHCIPremium } from "./StackHCIPremium";
+export { default as AzureIotStackHCIPremium } from "./StackHCIPremium";

@@ -1,1 +1,1 @@
-export { default as LogicApps } from "./LogicApps";
+export { default as AzureIotLogicApps } from "./LogicApps";

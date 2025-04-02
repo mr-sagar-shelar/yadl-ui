@@ -1,1 +1,1 @@
-export { default as FunctionApps } from "./FunctionApps";
+export { default as AzureIotFunctionApps } from "./FunctionApps";

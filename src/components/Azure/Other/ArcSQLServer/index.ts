@@ -1,1 +1,1 @@
-export { default as ArcSQLServer } from "./ArcSQLServer";
+export { default as AzureOtherArcSQLServer } from "./ArcSQLServer";

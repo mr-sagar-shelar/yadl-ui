@@ -1,1 +1,1 @@
-export { default as StorSimpleDeviceManagers } from "./StorSimpleDeviceManagers";
+export { default as AzureIntegrationStorSimpleDeviceManagers } from "./StorSimpleDeviceManagers";

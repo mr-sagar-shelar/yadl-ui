@@ -1,1 +1,1 @@
-export { default as AzureOperatorNexus } from "./AzureOperatorNexus";
+export { default as AzureHybridMulticloudAzureOperatorNexus } from "./AzureOperatorNexus";

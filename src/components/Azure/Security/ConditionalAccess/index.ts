@@ -1,1 +1,1 @@
-export { default as ConditionalAccess } from "./ConditionalAccess";
+export { default as AzureSecurityConditionalAccess } from "./ConditionalAccess";

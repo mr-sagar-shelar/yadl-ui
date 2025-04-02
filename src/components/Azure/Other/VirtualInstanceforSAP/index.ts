@@ -1,1 +1,1 @@
-export { default as VirtualInstanceforSAP } from "./VirtualInstanceforSAP";
+export { default as AzureOtherVirtualInstanceforSAP } from "./VirtualInstanceforSAP";

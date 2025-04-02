@@ -1,1 +1,1 @@
-export { default as LogAnalyticsQueryPack } from "./LogAnalyticsQueryPack";
+export { default as AzureOtherLogAnalyticsQueryPack } from "./LogAnalyticsQueryPack";

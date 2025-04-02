@@ -1,1 +1,1 @@
-export { default as AzureNetworkFunctionManager } from "./AzureNetworkFunctionManager";
+export { default as AzureOtherAzureNetworkFunctionManager } from "./AzureNetworkFunctionManager";

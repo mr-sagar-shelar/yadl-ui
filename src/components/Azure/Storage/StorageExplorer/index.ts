@@ -1,1 +1,1 @@
-export { default as StorageExplorer } from "./StorageExplorer";
+export { default as AzureStorageStorageExplorer } from "./StorageExplorer";

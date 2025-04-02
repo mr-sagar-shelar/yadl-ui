@@ -1,1 +1,1 @@
-export { default as PublicIPPrefixes } from "./PublicIPPrefixes";
+export { default as AzureNetworkingPublicIPPrefixes } from "./PublicIPPrefixes";

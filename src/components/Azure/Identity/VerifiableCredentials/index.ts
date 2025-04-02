@@ -1,1 +1,1 @@
-export { default as VerifiableCredentials } from "./VerifiableCredentials";
+export { default as AzureIdentityVerifiableCredentials } from "./VerifiableCredentials";

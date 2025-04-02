@@ -1,1 +1,1 @@
-export { default as TranslatorText } from "./TranslatorText";
+export { default as AzureAiMachineLearningTranslatorText } from "./TranslatorText";

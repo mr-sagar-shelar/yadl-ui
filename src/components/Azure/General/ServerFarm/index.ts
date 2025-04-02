@@ -1,1 +1,1 @@
-export { default as ServerFarm } from "./ServerFarm";
+export { default as AzureGeneralServerFarm } from "./ServerFarm";

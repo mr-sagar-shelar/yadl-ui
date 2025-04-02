@@ -1,1 +1,1 @@
-export { default as ATMMultistack } from "./ATMMultistack";
+export { default as AzureNetworkingATMMultistack } from "./ATMMultistack";

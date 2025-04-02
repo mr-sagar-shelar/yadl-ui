@@ -1,1 +1,1 @@
-export { default as Connections } from "./Connections";
+export { default as AzureNetworkingConnections } from "./Connections";

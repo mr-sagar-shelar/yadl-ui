@@ -1,1 +1,1 @@
-export { default as ArcKubernetes } from "./ArcKubernetes";
+export { default as AzureOtherArcKubernetes } from "./ArcKubernetes";

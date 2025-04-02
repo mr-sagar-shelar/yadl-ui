@@ -1,1 +1,1 @@
-export { default as ExchangeOnPremisesAccess } from "./ExchangeOnPremisesAccess";
+export { default as AzureOtherExchangeOnPremisesAccess } from "./ExchangeOnPremisesAccess";

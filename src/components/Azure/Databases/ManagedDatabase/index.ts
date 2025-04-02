@@ -1,1 +1,1 @@
-export { default as ManagedDatabase } from "./ManagedDatabase";
+export { default as AzureDatabasesManagedDatabase } from "./ManagedDatabase";

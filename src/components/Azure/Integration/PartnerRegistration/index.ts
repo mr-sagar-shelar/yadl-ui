@@ -1,1 +1,1 @@
-export { default as PartnerRegistration } from "./PartnerRegistration";
+export { default as AzureIntegrationPartnerRegistration } from "./PartnerRegistration";

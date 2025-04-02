@@ -1,1 +1,1 @@
-export { default as VMAppVersions } from "./VMAppVersions";
+export { default as AzureOtherVMAppVersions } from "./VMAppVersions";

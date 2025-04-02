@@ -1,1 +1,1 @@
-export { default as LoadTesting } from "./LoadTesting";
+export { default as AzureDevopsLoadTesting } from "./LoadTesting";

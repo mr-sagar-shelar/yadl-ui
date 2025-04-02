@@ -1,1 +1,1 @@
-export { default as ManagedInstanceApacheCassandra } from "./ManagedInstanceApacheCassandra";
+export { default as AzureOtherManagedInstanceApacheCassandra } from "./ManagedInstanceApacheCassandra";

@@ -1,1 +1,1 @@
-export { default as AzureMigrate } from "./AzureMigrate";
+export { default as AzureMigrateAzureMigrate } from "./AzureMigrate";

@@ -1,1 +1,1 @@
-export { default as AzureSentinel } from "./AzureSentinel";
+export { default as AzureSecurityAzureSentinel } from "./AzureSentinel";

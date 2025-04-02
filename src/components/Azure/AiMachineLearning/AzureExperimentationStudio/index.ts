@@ -1,1 +1,1 @@
-export { default as AzureExperimentationStudio } from "./AzureExperimentationStudio";
+export { default as AzureAiMachineLearningAzureExperimentationStudio } from "./AzureExperimentationStudio";

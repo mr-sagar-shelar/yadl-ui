@@ -1,1 +1,1 @@
-export { default as QuickstartCenter } from "./QuickstartCenter";
+export { default as AzureGeneralQuickstartCenter } from "./QuickstartCenter";

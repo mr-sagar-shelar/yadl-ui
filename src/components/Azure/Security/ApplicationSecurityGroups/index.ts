@@ -1,1 +1,1 @@
-export { default as ApplicationSecurityGroups } from "./ApplicationSecurityGroups";
+export { default as AzureSecurityApplicationSecurityGroups } from "./ApplicationSecurityGroups";

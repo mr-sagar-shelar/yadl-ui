@@ -1,1 +1,1 @@
-export { default as CacheRedis } from "./CacheRedis";
+export { default as AzureDatabasesCacheRedis } from "./CacheRedis";

@@ -1,1 +1,1 @@
-export { default as InstancePools } from "./InstancePools";
+export { default as AzureDatabasesInstancePools } from "./InstancePools";

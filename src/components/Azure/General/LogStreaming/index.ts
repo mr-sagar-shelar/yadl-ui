@@ -1,1 +1,1 @@
-export { default as LogStreaming } from "./LogStreaming";
+export { default as AzureGeneralLogStreaming } from "./LogStreaming";

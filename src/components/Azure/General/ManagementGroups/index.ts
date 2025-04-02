@@ -1,1 +1,1 @@
-export { default as ManagementGroups } from "./ManagementGroups";
+export { default as AzureGeneralManagementGroups } from "./ManagementGroups";

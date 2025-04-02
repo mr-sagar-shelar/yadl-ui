@@ -1,1 +1,1 @@
-export { default as DefenderMarquee } from "./DefenderMarquee";
+export { default as AzureOtherDefenderMarquee } from "./DefenderMarquee";

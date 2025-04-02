@@ -1,1 +1,1 @@
-export { default as SpeechServices } from "./SpeechServices";
+export { default as AzureAiMachineLearningSpeechServices } from "./SpeechServices";

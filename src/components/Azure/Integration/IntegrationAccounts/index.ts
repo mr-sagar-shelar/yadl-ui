@@ -1,1 +1,1 @@
-export { default as IntegrationAccounts } from "./IntegrationAccounts";
+export { default as AzureIntegrationIntegrationAccounts } from "./IntegrationAccounts";

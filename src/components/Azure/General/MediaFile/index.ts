@@ -1,1 +1,1 @@
-export { default as MediaFile } from "./MediaFile";
+export { default as AzureGeneralMediaFile } from "./MediaFile";

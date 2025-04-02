@@ -1,1 +1,1 @@
-export { default as DeviceEnrollment } from "./DeviceEnrollment";
+export { default as AzureIntuneDeviceEnrollment } from "./DeviceEnrollment";

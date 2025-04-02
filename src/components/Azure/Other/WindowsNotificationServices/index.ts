@@ -1,1 +1,1 @@
-export { default as WindowsNotificationServices } from "./WindowsNotificationServices";
+export { default as AzureOtherWindowsNotificationServices } from "./WindowsNotificationServices";

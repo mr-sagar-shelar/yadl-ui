@@ -1,1 +1,1 @@
-export { default as DatabaseInstanceForSAP } from "./DatabaseInstanceForSAP";
+export { default as AzureOtherDatabaseInstanceForSAP } from "./DatabaseInstanceForSAP";

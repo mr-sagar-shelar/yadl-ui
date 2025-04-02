@@ -1,1 +1,1 @@
-export { default as ImmersiveReaders } from "./ImmersiveReaders";
+export { default as AzureAiMachineLearningImmersiveReaders } from "./ImmersiveReaders";

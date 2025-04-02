@@ -1,1 +1,1 @@
-export { default as AzureDataCatalog } from "./AzureDataCatalog";
+export { default as AzureIntegrationAzureDataCatalog } from "./AzureDataCatalog";

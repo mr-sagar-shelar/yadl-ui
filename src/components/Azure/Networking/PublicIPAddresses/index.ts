@@ -1,1 +1,1 @@
-export { default as PublicIPAddresses } from "./PublicIPAddresses";
+export { default as AzureNetworkingPublicIPAddresses } from "./PublicIPAddresses";

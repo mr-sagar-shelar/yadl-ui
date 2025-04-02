@@ -1,1 +1,1 @@
-export { default as SecurityBaselines } from "./SecurityBaselines";
+export { default as AzureIntuneSecurityBaselines } from "./SecurityBaselines";

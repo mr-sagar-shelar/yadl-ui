@@ -1,1 +1,1 @@
-export { default as Education } from "./Education";
+export { default as AzureManagementGovernanceEducation } from "./Education";

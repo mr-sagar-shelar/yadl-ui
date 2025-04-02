@@ -1,1 +1,1 @@
-export { default as AzureWorkbooks } from "./AzureWorkbooks";
+export { default as AzureMonitorAzureWorkbooks } from "./AzureWorkbooks";

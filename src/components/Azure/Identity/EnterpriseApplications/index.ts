@@ -1,1 +1,1 @@
-export { default as EnterpriseApplications } from "./EnterpriseApplications";
+export { default as AzureIdentityEnterpriseApplications } from "./EnterpriseApplications";

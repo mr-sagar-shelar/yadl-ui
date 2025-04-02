@@ -1,1 +1,1 @@
-export { default as Hosts } from "./Hosts";
+export { default as AzureComputeHosts } from "./Hosts";

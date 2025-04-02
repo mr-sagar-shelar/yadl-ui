@@ -1,1 +1,1 @@
-export { default as DefenderRobotController } from "./DefenderRobotController";
+export { default as AzureOtherDefenderRobotController } from "./DefenderRobotController";

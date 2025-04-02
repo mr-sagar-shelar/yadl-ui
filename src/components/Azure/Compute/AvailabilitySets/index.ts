@@ -1,1 +1,1 @@
-export { default as AvailabilitySets } from "./AvailabilitySets";
+export { default as AzureComputeAvailabilitySets } from "./AvailabilitySets";

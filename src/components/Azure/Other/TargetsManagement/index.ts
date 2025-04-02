@@ -1,1 +1,1 @@
-export { default as TargetsManagement } from "./TargetsManagement";
+export { default as AzureOtherTargetsManagement } from "./TargetsManagement";

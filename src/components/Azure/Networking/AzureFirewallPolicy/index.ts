@@ -1,1 +1,1 @@
-export { default as AzureFirewallPolicy } from "./AzureFirewallPolicy";
+export { default as AzureNetworkingAzureFirewallPolicy } from "./AzureFirewallPolicy";

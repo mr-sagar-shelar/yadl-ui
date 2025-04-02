@@ -1,1 +1,1 @@
-export { default as RTOS } from "./RTOS";
+export { default as AzureOtherRTOS } from "./RTOS";

@@ -1,1 +1,1 @@
-export { default as DefenderExternalManagement } from "./DefenderExternalManagement";
+export { default as AzureOtherDefenderExternalManagement } from "./DefenderExternalManagement";

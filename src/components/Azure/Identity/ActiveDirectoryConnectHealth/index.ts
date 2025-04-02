@@ -1,1 +1,1 @@
-export { default as ActiveDirectoryConnectHealth } from "./ActiveDirectoryConnectHealth";
+export { default as AzureIdentityActiveDirectoryConnectHealth } from "./ActiveDirectoryConnectHealth";

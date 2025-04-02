@@ -1,1 +1,1 @@
-export { default as FeaturePreviews } from "./FeaturePreviews";
+export { default as AzureGeneralFeaturePreviews } from "./FeaturePreviews";

@@ -1,1 +1,1 @@
-export { default as EntraConnect } from "./EntraConnect";
+export { default as AzureIdentityEntraConnect } from "./EntraConnect";

@@ -1,1 +1,1 @@
-export { default as Troubleshoot } from "./Troubleshoot";
+export { default as AzureGeneralTroubleshoot } from "./Troubleshoot";

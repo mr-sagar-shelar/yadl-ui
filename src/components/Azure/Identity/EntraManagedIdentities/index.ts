@@ -1,1 +1,1 @@
-export { default as EntraManagedIdentities } from "./EntraManagedIdentities";
+export { default as AzureIdentityEntraManagedIdentities } from "./EntraManagedIdentities";

@@ -1,1 +1,1 @@
-export { default as AzureMediaService } from "./AzureMediaService";
+export { default as AzureWebAzureMediaService } from "./AzureMediaService";

@@ -1,1 +1,1 @@
-export { default as MachineLearningStudioWorkspaces } from "./MachineLearningStudioWorkspaces";
+export { default as AzureIotMachineLearningStudioWorkspaces } from "./MachineLearningStudioWorkspaces";

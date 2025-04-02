@@ -1,1 +1,1 @@
-export { default as LocalNetworkGateways } from "./LocalNetworkGateways";
+export { default as AzureOtherLocalNetworkGateways } from "./LocalNetworkGateways";

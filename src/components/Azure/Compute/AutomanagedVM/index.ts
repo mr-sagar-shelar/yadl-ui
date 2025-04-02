@@ -1,1 +1,1 @@
-export { default as AutomanagedVM } from "./AutomanagedVM";
+export { default as AzureComputeAutomanagedVM } from "./AutomanagedVM";

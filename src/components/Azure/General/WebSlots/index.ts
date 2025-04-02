@@ -1,1 +1,1 @@
-export { default as WebSlots } from "./WebSlots";
+export { default as AzureGeneralWebSlots } from "./WebSlots";

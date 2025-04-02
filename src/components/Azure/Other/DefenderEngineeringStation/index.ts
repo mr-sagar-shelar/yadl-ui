@@ -1,1 +1,1 @@
-export { default as DefenderEngineeringStation } from "./DefenderEngineeringStation";
+export { default as AzureOtherDefenderEngineeringStation } from "./DefenderEngineeringStation";

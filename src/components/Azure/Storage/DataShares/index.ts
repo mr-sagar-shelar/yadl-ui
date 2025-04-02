@@ -1,1 +1,1 @@
-export { default as DataShares } from "./DataShares";
+export { default as AzureStorageDataShares } from "./DataShares";

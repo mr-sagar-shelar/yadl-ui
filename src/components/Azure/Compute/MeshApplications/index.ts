@@ -1,1 +1,1 @@
-export { default as MeshApplications } from "./MeshApplications";
+export { default as AzureComputeMeshApplications } from "./MeshApplications";

@@ -1,1 +1,1 @@
-export { default as AzureCenterforSAP } from "./AzureCenterforSAP";
+export { default as AzureOtherAzureCenterforSAP } from "./AzureCenterforSAP";

@@ -1,1 +1,1 @@
-export { default as ActivityLog } from "./ActivityLog";
+export { default as AzureMonitorActivityLog } from "./ActivityLog";

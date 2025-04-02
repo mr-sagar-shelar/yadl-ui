@@ -1,1 +1,1 @@
-export { default as RegionManagement } from "./RegionManagement";
+export { default as AzureGeneralRegionManagement } from "./RegionManagement";

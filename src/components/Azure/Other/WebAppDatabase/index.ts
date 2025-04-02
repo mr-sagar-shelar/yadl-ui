@@ -1,1 +1,1 @@
-export { default as WebAppDatabase } from "./WebAppDatabase";
+export { default as AzureOtherWebAppDatabase } from "./WebAppDatabase";

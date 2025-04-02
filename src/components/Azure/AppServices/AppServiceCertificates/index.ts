@@ -1,1 +1,1 @@
-export { default as AppServiceCertificates } from "./AppServiceCertificates";
+export { default as AzureAppServicesAppServiceCertificates } from "./AppServiceCertificates";

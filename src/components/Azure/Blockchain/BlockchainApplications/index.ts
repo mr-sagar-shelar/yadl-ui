@@ -1,1 +1,1 @@
-export { default as BlockchainApplications } from "./BlockchainApplications";
+export { default as AzureBlockchainBlockchainApplications } from "./BlockchainApplications";

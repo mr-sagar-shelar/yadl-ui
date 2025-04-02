@@ -1,1 +1,1 @@
-export { default as MicrosoftDevBox } from "./MicrosoftDevBox";
+export { default as AzureOtherMicrosoftDevBox } from "./MicrosoftDevBox";

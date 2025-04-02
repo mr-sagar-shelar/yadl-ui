@@ -1,1 +1,1 @@
-export { default as AnalysisServices } from "./AnalysisServices";
+export { default as AzureAnalyticsAnalysisServices } from "./AnalysisServices";

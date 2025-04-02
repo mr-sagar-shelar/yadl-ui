@@ -1,1 +1,1 @@
-export { default as SpotVMSS } from "./SpotVMSS";
+export { default as AzureNetworkingSpotVMSS } from "./SpotVMSS";

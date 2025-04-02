@@ -1,1 +1,1 @@
-export { default as AzureContainerBatchAccounts } from "./BatchAccounts";
+export { default as AzureContainersBatchAccounts } from "./BatchAccounts";

@@ -1,1 +1,1 @@
-export { default as StorageActions } from "./StorageActions";
+export { default as AzureStorageStorageActions } from "./StorageActions";

@@ -1,1 +1,1 @@
-export { default as AutoScale } from "./AutoScale";
+export { default as AzureMonitorAutoScale } from "./AutoScale";

@@ -1,1 +1,1 @@
-export { default as FormRecognizers } from "./FormRecognizers";
+export { default as AzureAiMachineLearningFormRecognizers } from "./FormRecognizers";

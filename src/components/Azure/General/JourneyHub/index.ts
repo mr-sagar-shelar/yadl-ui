@@ -1,1 +1,1 @@
-export { default as JourneyHub } from "./JourneyHub";
+export { default as AzureGeneralJourneyHub } from "./JourneyHub";

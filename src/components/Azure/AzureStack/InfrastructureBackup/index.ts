@@ -1,1 +1,1 @@
-export { default as InfrastructureBackup } from "./InfrastructureBackup";
+export { default as AzureAzureStackInfrastructureBackup } from "./InfrastructureBackup";

@@ -1,1 +1,1 @@
-export { default as ImageTemplates } from "./ImageTemplates";
+export { default as AzureComputeImageTemplates } from "./ImageTemplates";

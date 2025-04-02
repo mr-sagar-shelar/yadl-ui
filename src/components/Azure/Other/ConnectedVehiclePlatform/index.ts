@@ -1,1 +1,1 @@
-export { default as ConnectedVehiclePlatform } from "./ConnectedVehiclePlatform";
+export { default as AzureOtherConnectedVehiclePlatform } from "./ConnectedVehiclePlatform";

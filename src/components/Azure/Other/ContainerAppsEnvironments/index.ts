@@ -1,1 +1,1 @@
-export { default as ContainerAppsEnvironments } from "./ContainerAppsEnvironments";
+export { default as AzureOtherContainerAppsEnvironments } from "./ContainerAppsEnvironments";

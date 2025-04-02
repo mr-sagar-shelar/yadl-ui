@@ -1,1 +1,1 @@
-export { default as AzureNetAppFiles } from "./AzureNetAppFiles";
+export { default as AzureStorageAzureNetAppFiles } from "./AzureNetAppFiles";

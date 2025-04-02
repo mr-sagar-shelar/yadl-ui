@@ -1,1 +1,1 @@
-export { default as AzureDatabaseMySQLServer } from "./AzureDatabaseMySQLServer";
+export { default as AzureDatabasesAzureDatabaseMySQLServer } from "./AzureDatabaseMySQLServer";

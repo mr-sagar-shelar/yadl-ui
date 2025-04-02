@@ -1,1 +1,1 @@
-export { default as PartnerNamespace } from "./PartnerNamespace";
+export { default as AzureIntegrationPartnerNamespace } from "./PartnerNamespace";

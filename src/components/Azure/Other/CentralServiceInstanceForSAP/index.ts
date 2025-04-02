@@ -1,1 +1,1 @@
-export { default as CentralServiceInstanceForSAP } from "./CentralServiceInstanceForSAP";
+export { default as AzureOtherCentralServiceInstanceForSAP } from "./CentralServiceInstanceForSAP";

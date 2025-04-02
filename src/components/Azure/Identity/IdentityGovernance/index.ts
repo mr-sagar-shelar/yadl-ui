@@ -1,1 +1,1 @@
-export { default as IdentityGovernance } from "./IdentityGovernance";
+export { default as AzureIdentityIdentityGovernance } from "./IdentityGovernance";

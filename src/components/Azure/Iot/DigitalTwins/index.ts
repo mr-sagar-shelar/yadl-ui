@@ -1,1 +1,1 @@
-export { default as DigitalTwins } from "./DigitalTwins";
+export { default as AzureIotDigitalTwins } from "./DigitalTwins";

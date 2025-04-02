@@ -1,1 +1,1 @@
-export { default as AzureInformationProtection } from "./AzureInformationProtection";
+export { default as AzureSecurityAzureInformationProtection } from "./AzureInformationProtection";

@@ -1,1 +1,1 @@
-export { default as AzureCommunicationServices } from "./AzureCommunicationServices";
+export { default as AzureOtherAzureCommunicationServices } from "./AzureCommunicationServices";

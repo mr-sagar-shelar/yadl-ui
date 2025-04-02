@@ -1,1 +1,1 @@
-export { default as SendGridAccounts } from "./SendGridAccounts";
+export { default as AzureIntegrationSendGridAccounts } from "./SendGridAccounts";

@@ -1,1 +1,1 @@
-export { default as Compliance } from "./Compliance";
+export { default as AzureManagementGovernanceCompliance } from "./Compliance";

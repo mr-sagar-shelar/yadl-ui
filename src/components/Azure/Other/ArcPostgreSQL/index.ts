@@ -1,1 +1,1 @@
-export { default as ArcPostgreSQL } from "./ArcPostgreSQL";
+export { default as AzureOtherArcPostgreSQL } from "./ArcPostgreSQL";

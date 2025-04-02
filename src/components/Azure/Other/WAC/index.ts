@@ -1,1 +1,1 @@
-export { default as WAC } from "./WAC";
+export { default as AzureOtherWAC } from "./WAC";

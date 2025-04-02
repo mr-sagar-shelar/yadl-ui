@@ -1,1 +1,1 @@
-export { default as TFSVCRepository } from "./TFSVCRepository";
+export { default as AzureGeneralTFSVCRepository } from "./TFSVCRepository";

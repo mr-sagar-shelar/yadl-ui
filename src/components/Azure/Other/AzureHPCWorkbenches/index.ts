@@ -1,1 +1,1 @@
-export { default as AzureHPCWorkbenches } from "./AzureHPCWorkbenches";
+export { default as AzureOtherAzureHPCWorkbenches } from "./AzureHPCWorkbenches";

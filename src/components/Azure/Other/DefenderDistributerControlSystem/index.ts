@@ -1,1 +1,1 @@
-export { default as DefenderDistributerControlSystem } from "./DefenderDistributerControlSystem";
+export { default as AzureOtherDefenderDistributerControlSystem } from "./DefenderDistributerControlSystem";

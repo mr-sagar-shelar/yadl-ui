@@ -1,1 +1,1 @@
-export { default as BlobPage } from "./BlobPage";
+export { default as AzureGeneralBlobPage } from "./BlobPage";

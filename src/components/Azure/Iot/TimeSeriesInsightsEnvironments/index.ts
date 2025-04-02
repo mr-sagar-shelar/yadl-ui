@@ -1,1 +1,1 @@
-export { default as TimeSeriesInsightsEnvironments } from "./TimeSeriesInsightsEnvironments";
+export { default as AzureIotTimeSeriesInsightsEnvironments } from "./TimeSeriesInsightsEnvironments";

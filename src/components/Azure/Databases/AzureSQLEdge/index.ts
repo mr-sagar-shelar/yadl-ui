@@ -1,1 +1,1 @@
-export { default as AzureSQLEdge } from "./AzureSQLEdge";
+export { default as AzureDatabasesAzureSQLEdge } from "./AzureSQLEdge";

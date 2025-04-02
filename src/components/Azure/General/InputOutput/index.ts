@@ -1,1 +1,1 @@
-export { default as InputOutput } from "./InputOutput";
+export { default as AzureGeneralInputOutput } from "./InputOutput";

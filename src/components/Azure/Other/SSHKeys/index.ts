@@ -1,1 +1,1 @@
-export { default as SSHKeys } from "./SSHKeys";
+export { default as AzureOtherSSHKeys } from "./SSHKeys";

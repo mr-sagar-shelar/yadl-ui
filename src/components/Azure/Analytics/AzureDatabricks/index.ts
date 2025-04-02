@@ -1,1 +1,1 @@
-export { default as AzureDatabricks } from "./AzureDatabricks";
+export { default as AzureAnalyticsAzureDatabricks } from "./AzureDatabricks";

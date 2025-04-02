@@ -1,1 +1,1 @@
-export { default as WebsitePower } from "./WebsitePower";
+export { default as AzureGeneralWebsitePower } from "./WebsitePower";

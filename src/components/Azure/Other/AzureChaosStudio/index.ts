@@ -1,1 +1,1 @@
-export { default as AzureChaosStudio } from "./AzureChaosStudio";
+export { default as AzureOtherAzureChaosStudio } from "./AzureChaosStudio";

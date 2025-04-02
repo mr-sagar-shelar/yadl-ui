@@ -1,1 +1,1 @@
-export { default as EntraPrivlegedIdentityManagement } from "./EntraPrivlegedIdentityManagement";
+export { default as AzureIdentityEntraPrivlegedIdentityManagement } from "./EntraPrivlegedIdentityManagement";

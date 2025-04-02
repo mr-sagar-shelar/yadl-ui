@@ -1,1 +1,1 @@
-export { default as CollaborativeService } from "./CollaborativeService";
+export { default as AzureAzureEcosystemCollaborativeService } from "./CollaborativeService";

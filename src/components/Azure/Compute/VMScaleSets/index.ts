@@ -1,1 +1,1 @@
-export { default as VMScaleSets } from "./VMScaleSets";
+export { default as AzureComputeVMScaleSets } from "./VMScaleSets";

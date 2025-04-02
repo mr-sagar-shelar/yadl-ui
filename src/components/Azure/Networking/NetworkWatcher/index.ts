@@ -1,1 +1,1 @@
-export { default as NetworkWatcher } from "./NetworkWatcher";
+export { default as AzureNetworkingNetworkWatcher } from "./NetworkWatcher";

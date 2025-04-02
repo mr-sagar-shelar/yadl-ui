@@ -1,1 +1,1 @@
-export { default as CodeOptimization } from "./CodeOptimization";
+export { default as AzureDevopsCodeOptimization } from "./CodeOptimization";

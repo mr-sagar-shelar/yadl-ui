@@ -1,1 +1,1 @@
-export { default as ManagedDesktop } from "./ManagedDesktop";
+export { default as AzureManagementGovernanceManagedDesktop } from "./ManagedDesktop";

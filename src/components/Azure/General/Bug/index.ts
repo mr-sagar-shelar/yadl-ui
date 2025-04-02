@@ -1,1 +1,1 @@
-export { default as Bug } from "./Bug";
+export { default as AzureGeneralBug } from "./Bug";

@@ -1,1 +1,1 @@
-export { default as IdentitySecureScore } from "./IdentitySecureScore";
+export { default as AzureSecurityIdentitySecureScore } from "./IdentitySecureScore";

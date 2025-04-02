@@ -1,1 +1,1 @@
-export { default as TestBase } from "./TestBase";
+export { default as AzureOtherTestBase } from "./TestBase";

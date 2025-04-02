@@ -1,1 +1,1 @@
-export { default as OSImagesClassic } from "./OSImagesClassic";
+export { default as AzureComputeOSImagesClassic } from "./OSImagesClassic";

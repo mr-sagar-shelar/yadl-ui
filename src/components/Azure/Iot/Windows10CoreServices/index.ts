@@ -1,1 +1,1 @@
-export { default as Windows10CoreServices } from "./Windows10CoreServices";
+export { default as AzureIotWindows10CoreServices } from "./Windows10CoreServices";

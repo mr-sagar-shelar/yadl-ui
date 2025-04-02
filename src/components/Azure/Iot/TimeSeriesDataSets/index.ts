@@ -1,1 +1,1 @@
-export { default as TimeSeriesDataSets } from "./TimeSeriesDataSets";
+export { default as AzureIotTimeSeriesDataSets } from "./TimeSeriesDataSets";

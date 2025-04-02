@@ -1,1 +1,1 @@
-export { default as HostPools } from "./HostPools";
+export { default as AzureComputeHostPools } from "./HostPools";

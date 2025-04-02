@@ -1,1 +1,1 @@
-export { default as AzureMonitorsforSAPSolutions } from "./AzureMonitorsforSAPSolutions";
+export { default as AzureMonitorAzureMonitorsforSAPSolutions } from "./AzureMonitorsforSAPSolutions";

@@ -1,1 +1,1 @@
-export { default as AzureSQLVM } from "./AzureSQLVM";
+export { default as AzureDatabasesAzureSQLVM } from "./AzureSQLVM";

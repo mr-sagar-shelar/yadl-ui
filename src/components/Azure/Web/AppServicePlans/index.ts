@@ -1,1 +1,1 @@
-export { default as AppServicePlans } from "./AppServicePlans";
+export { default as AzureWebAppServicePlans } from "./AppServicePlans";

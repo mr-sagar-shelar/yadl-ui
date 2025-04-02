@@ -1,1 +1,1 @@
-export { default as DeviceSecurityApple } from "./DeviceSecurityApple";
+export { default as AzureIntuneDeviceSecurityApple } from "./DeviceSecurityApple";

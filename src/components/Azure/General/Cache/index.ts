@@ -1,1 +1,1 @@
-export { default as Cache } from "./Cache";
+export { default as AzureGeneralCache } from "./Cache";

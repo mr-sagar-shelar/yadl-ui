@@ -1,1 +1,1 @@
-export { default as MultiTenancy } from "./MultiTenancy";
+export { default as AzureAzureStackMultiTenancy } from "./MultiTenancy";

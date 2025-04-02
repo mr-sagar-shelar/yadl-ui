@@ -1,1 +1,1 @@
-export { default as DeviceUpdateIoTHub } from "./DeviceUpdateIoTHub";
+export { default as AzureOtherDeviceUpdateIoTHub } from "./DeviceUpdateIoTHub";

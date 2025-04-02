@@ -1,1 +1,1 @@
-export { default as PowerPlatform } from "./PowerPlatform";
+export { default as AzureMobilePowerPlatform } from "./PowerPlatform";

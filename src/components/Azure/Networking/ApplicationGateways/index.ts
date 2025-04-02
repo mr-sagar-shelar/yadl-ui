@@ -1,1 +1,1 @@
-export { default as ApplicationGateways } from "./ApplicationGateways";
+export { default as AzureNetworkingApplicationGateways } from "./ApplicationGateways";

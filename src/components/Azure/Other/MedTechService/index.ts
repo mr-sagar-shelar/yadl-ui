@@ -1,1 +1,1 @@
-export { default as MedTechService } from "./MedTechService";
+export { default as AzureOtherMedTechService } from "./MedTechService";

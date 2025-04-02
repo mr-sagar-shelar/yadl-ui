@@ -1,1 +1,1 @@
-export { default as DeviceSecurityWindows } from "./DeviceSecurityWindows";
+export { default as AzureIntuneDeviceSecurityWindows } from "./DeviceSecurityWindows";

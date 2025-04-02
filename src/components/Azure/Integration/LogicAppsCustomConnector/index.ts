@@ -1,1 +1,1 @@
-export { default as LogicAppsCustomConnector } from "./LogicAppsCustomConnector";
+export { default as AzureIntegrationLogicAppsCustomConnector } from "./LogicAppsCustomConnector";

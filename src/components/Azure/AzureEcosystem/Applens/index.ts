@@ -1,1 +1,1 @@
-export { default as Applens } from "./Applens";
+export { default as AzureAzureEcosystemApplens } from "./Applens";

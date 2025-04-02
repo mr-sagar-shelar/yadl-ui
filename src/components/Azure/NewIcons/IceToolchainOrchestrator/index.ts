@@ -1,1 +1,1 @@
-export { default as IceToolchainOrchestrator } from "./IceToolchainOrchestrator";
+export { default as AzureNewIconsIceToolchainOrchestrator } from "./IceToolchainOrchestrator";

@@ -1,1 +1,1 @@
-export { default as DiagnosticsSettings } from "./DiagnosticsSettings";
+export { default as AzureManagementGovernanceDiagnosticsSettings } from "./DiagnosticsSettings";

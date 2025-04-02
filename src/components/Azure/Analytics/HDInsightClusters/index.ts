@@ -1,1 +1,1 @@
-export { default as HDInsightClusters } from "./HDInsightClusters";
+export { default as AzureAnalyticsHDInsightClusters } from "./HDInsightClusters";

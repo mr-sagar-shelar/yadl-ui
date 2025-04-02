@@ -1,1 +1,1 @@
-export { default as BizTalk } from "./BizTalk";
+export { default as AzureGeneralBizTalk } from "./BizTalk";

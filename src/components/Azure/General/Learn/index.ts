@@ -1,1 +1,1 @@
-export { default as Learn } from "./Learn";
+export { default as AzureGeneralLearn } from "./Learn";

@@ -1,1 +1,1 @@
-export { default as DefenderPneumaticDevice } from "./DefenderPneumaticDevice";
+export { default as AzureOtherDefenderPneumaticDevice } from "./DefenderPneumaticDevice";

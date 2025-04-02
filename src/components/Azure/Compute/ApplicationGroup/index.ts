@@ -1,1 +1,1 @@
-export { default as ApplicationGroup } from "./ApplicationGroup";
+export { default as AzureComputeApplicationGroup } from "./ApplicationGroup";

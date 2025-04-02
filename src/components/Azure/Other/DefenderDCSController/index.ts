@@ -1,1 +1,1 @@
-export { default as DefenderDCSController } from "./DefenderDCSController";
+export { default as AzureOtherDefenderDCSController } from "./DefenderDCSController";

@@ -1,1 +1,1 @@
-export { default as MicrosoftDefenderforCloud } from "./MicrosoftDefenderforCloud";
+export { default as AzureSecurityMicrosoftDefenderforCloud } from "./MicrosoftDefenderforCloud";

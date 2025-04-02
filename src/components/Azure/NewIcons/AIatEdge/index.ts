@@ -1,1 +1,1 @@
-export { default as AIatEdge } from "./AIatEdge";
+export { default as AzureNewIconsAIatEdge } from "./AIatEdge";

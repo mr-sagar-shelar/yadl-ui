@@ -1,1 +1,1 @@
-export { default as SchedulerJobCollections } from "./SchedulerJobCollections";
+export { default as AzureManagementGovernanceSchedulerJobCollections } from "./SchedulerJobCollections";

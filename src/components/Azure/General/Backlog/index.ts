@@ -1,1 +1,1 @@
-export { default as Backlog } from "./Backlog";
+export { default as AzureGeneralBacklog } from "./Backlog";

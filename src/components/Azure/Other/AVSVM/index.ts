@@ -1,1 +1,1 @@
-export { default as AVSVM } from "./AVSVM";
+export { default as AzureOtherAVSVM } from "./AVSVM";

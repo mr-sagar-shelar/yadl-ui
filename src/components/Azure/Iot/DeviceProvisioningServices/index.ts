@@ -1,1 +1,1 @@
-export { default as DeviceProvisioningServices } from "./DeviceProvisioningServices";
+export { default as AzureIotDeviceProvisioningServices } from "./DeviceProvisioningServices";

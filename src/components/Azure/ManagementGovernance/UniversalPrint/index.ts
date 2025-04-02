@@ -1,1 +1,1 @@
-export { default as UniversalPrint } from "./UniversalPrint";
+export { default as AzureManagementGovernanceUniversalPrint } from "./UniversalPrint";

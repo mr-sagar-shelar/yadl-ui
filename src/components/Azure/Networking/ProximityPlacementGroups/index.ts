@@ -1,1 +1,1 @@
-export { default as ProximityPlacementGroups } from "./ProximityPlacementGroups";
+export { default as AzureNetworkingProximityPlacementGroups } from "./ProximityPlacementGroups";

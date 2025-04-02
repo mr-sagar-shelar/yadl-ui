@@ -1,1 +1,1 @@
-export { default as Recent } from "./Recent";
+export { default as AzureGeneralRecent } from "./Recent";

@@ -1,1 +1,1 @@
-export { default as AppConfiguration } from "./AppConfiguration";
+export { default as AzureIntegrationAppConfiguration } from "./AppConfiguration";

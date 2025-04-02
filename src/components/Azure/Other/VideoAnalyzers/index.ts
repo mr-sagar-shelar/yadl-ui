@@ -1,1 +1,1 @@
-export { default as VideoAnalyzers } from "./VideoAnalyzers";
+export { default as AzureOtherVideoAnalyzers } from "./VideoAnalyzers";

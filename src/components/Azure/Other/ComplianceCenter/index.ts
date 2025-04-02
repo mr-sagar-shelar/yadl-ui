@@ -1,1 +1,1 @@
-export { default as ComplianceCenter } from "./ComplianceCenter";
+export { default as AzureOtherComplianceCenter } from "./ComplianceCenter";

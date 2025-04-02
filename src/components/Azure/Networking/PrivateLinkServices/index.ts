@@ -1,1 +1,1 @@
-export { default as PrivateLinkServices } from "./PrivateLinkServices";
+export { default as AzureNetworkingPrivateLinkServices } from "./PrivateLinkServices";

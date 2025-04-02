@@ -1,1 +1,1 @@
-export { default as DefenderPLC } from "./DefenderPLC";
+export { default as AzureOtherDefenderPLC } from "./DefenderPLC";

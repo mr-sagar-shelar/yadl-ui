@@ -1,1 +1,1 @@
-export { default as SystemTopic } from "./SystemTopic";
+export { default as AzureIntegrationSystemTopic } from "./SystemTopic";

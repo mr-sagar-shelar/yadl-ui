@@ -1,1 +1,1 @@
-export { default as EdgeStorageAccelerator } from "./EdgeStorageAccelerator";
+export { default as AzureNewIconsEdgeStorageAccelerator } from "./EdgeStorageAccelerator";

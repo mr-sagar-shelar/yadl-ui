@@ -1,1 +1,1 @@
-export { default as BatchAI } from "./BatchAI";
+export { default as AzureAiMachineLearningBatchAI } from "./BatchAI";

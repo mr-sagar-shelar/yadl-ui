@@ -1,1 +1,1 @@
-export { default as AzureMonitorDashboard } from "./AzureMonitorDashboard";
+export { default as AzureOtherAzureMonitorDashboard } from "./AzureMonitorDashboard";

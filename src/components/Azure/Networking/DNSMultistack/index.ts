@@ -1,1 +1,1 @@
-export { default as DNSMultistack } from "./DNSMultistack";
+export { default as AzureNetworkingDNSMultistack } from "./DNSMultistack";

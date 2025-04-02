@@ -1,1 +1,1 @@
-export { default as ResourceMover } from "./ResourceMover";
+export { default as AzureOtherResourceMover } from "./ResourceMover";

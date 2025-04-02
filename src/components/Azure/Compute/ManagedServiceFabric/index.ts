@@ -1,1 +1,1 @@
-export { default as ManagedServiceFabric } from "./ManagedServiceFabric";
+export { default as AzureComputeManagedServiceFabric } from "./ManagedServiceFabric";

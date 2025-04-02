@@ -1,1 +1,1 @@
-export { default as ABSMember } from "./ABSMember";
+export { default as AzureBlockchainABSMember } from "./ABSMember";

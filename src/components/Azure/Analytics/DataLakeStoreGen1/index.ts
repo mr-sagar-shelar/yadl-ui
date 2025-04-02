@@ -1,1 +1,1 @@
-export { default as DataLakeStoreGen1 } from "./DataLakeStoreGen1";
+export { default as AzureAnalyticsDataLakeStoreGen1 } from "./DataLakeStoreGen1";

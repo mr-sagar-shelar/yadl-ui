@@ -1,1 +1,1 @@
-export { default as AzureOperator5GCore } from "./AzureOperator5GCore";
+export { default as AzureHybridMulticloudAzureOperator5GCore } from "./AzureOperator5GCore";

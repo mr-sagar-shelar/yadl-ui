@@ -1,1 +1,1 @@
-export { default as VirtualNetworkGateways } from "./VirtualNetworkGateways";
+export { default as AzureNetworkingVirtualNetworkGateways } from "./VirtualNetworkGateways";

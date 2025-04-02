@@ -1,1 +1,1 @@
-export { default as AzureStackEdge } from "./AzureStackEdge";
+export { default as AzureStorageAzureStackEdge } from "./AzureStackEdge";

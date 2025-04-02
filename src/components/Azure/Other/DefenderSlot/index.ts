@@ -1,1 +1,1 @@
-export { default as DefenderSlot } from "./DefenderSlot";
+export { default as AzureOtherDefenderSlot } from "./DefenderSlot";

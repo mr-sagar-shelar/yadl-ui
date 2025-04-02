@@ -1,1 +1,1 @@
-export { default as ContentModerators } from "./ContentModerators";
+export { default as AzureAiMachineLearningContentModerators } from "./ContentModerators";

@@ -1,1 +1,1 @@
-export { default as AzureStorageMover } from "./AzureStorageMover";
+export { default as AzureOtherAzureStorageMover } from "./AzureStorageMover";

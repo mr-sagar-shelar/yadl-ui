@@ -1,1 +1,1 @@
-export { default as VirtualRouter } from "./VirtualRouter";
+export { default as AzureNetworkingVirtualRouter } from "./VirtualRouter";

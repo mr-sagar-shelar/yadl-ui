@@ -1,1 +1,1 @@
-export { default as EndpointAnalytics } from "./EndpointAnalytics";
+export { default as AzureAnalyticsEndpointAnalytics } from "./EndpointAnalytics";

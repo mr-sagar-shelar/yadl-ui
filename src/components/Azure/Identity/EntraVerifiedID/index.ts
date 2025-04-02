@@ -1,1 +1,1 @@
-export { default as EntraVerifiedID } from "./EntraVerifiedID";
+export { default as AzureIdentityEntraVerifiedID } from "./EntraVerifiedID";

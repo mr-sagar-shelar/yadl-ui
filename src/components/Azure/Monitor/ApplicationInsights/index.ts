@@ -1,1 +1,1 @@
-export { default as ApplicationInsights } from "./ApplicationInsights";
+export { default as AzureMonitorApplicationInsights } from "./ApplicationInsights";
