@@ -1,4 +1,4 @@
-import { SkillIconNames } from "@utils";
+import { SkillIconNames, SkillIcons } from "@utils";
 import { useMemo } from "react";
 import * as ICONS from "../../index";
 import { memo } from "react";
@@ -6,14 +6,17 @@ import { memo } from "react";
 const SearchSkillIcons = () => {
   console.log(Object.keys(SkillIconNames).length);
   const AllIcons = useMemo(() => {
-    const listItems = Object.values(SkillIconNames).map((iconName) => {
+    const listItems = Object.values(SkillIcons).map((iconDetails) => {
       // @ts-ignore
-      let Icon = ICONS[iconName];
+      let Icon = ICONS[iconDetails.icon];
 
       if (Icon) {
         // @ts-ignore
         return (
-          <div key={iconName}>{Icon && <Icon width={60} height={60} />}</div>
+          <div key={iconDetails.icon}>
+            {Icon && <Icon width={60} height={60} />}
+            {iconDetails.name}
+          </div>
         );
       }
       return null;
