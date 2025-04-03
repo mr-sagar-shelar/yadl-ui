@@ -3,6 +3,8 @@ import {
   writeUndrawComponentSkeleton,
   writeIndexFile,
   toPascalCase,
+  toCamelCase,
+  toSpacedCase,
 } from "./utils.js";
 import fs from "fs";
 import { transform } from "@svgr/core";
@@ -20,7 +22,7 @@ import { transform } from "@svgr/core";
   let indexFileContents = "";
   let fileNames = "";
 
-  for (let i = 0; i < 36; i++) {
+  for (let i = 0; i < 18; i++) {
     const allIllustrations = await page
       .locator(".appcontainer")
       .nth(2)
@@ -33,60 +35,76 @@ import { transform } from "@svgr/core";
       const currentIcon = await allIllustrations.nth(j);
       let iconName = await currentIcon.allTextContents();
       iconName = `${iconName}`.trim();
+      // if (iconName.length < 50) {
+      //   console.log(`$${i + 1}-${j + 1}: ${iconName}`);
+      //   fileNames = `${fileNames}\n$${i}-${j}: ${iconName}";`;
+      // } else {
+      //   fileNames = `${fileNames}\nIssue On:  $${i}-${j}";`;
+      // }
+
       if (iconName.length < 50) {
-        console.log(`$${i + 1}-${j + 1}: ${iconName}`);
-        fileNames = `${fileNames}\n$${i}-${j}: ${iconName}";`;
-      } else {
-        fileNames = `${fileNames}\nIssue On:  $${i}-${j}";`;
-      }
-      iconName = toPascalCase(iconName[0]);
+        iconName = toPascalCase(iconName);
 
-      let svgCode = await currentIcon
-        .getByRole("img")
-        .first()
-        .evaluate((evaluate) =>
-          evaluate.parentElement.innerHTML.replaceAll(
-            "currentColor",
-            "var(--color-primary)",
-          ),
-        );
-      // console.log(`${svgCode}`);
+        let originalFileName = iconName;
 
-      try {
-        const componentCode = await transform(
-          svgCode,
-          {
-            plugins: [
-              "@svgr/plugin-svgo",
-              "@svgr/plugin-jsx",
-              "@svgr/plugin-prettier",
-            ],
-            icon: true,
-            jsxRuntime: "automatic",
-            typescript: true,
-            memo: true,
-            svgo: true,
-          },
-          { componentName: iconName },
-        );
-        console.log(`${componentCode}`);
-        writeUndrawComponentSkeleton(
-          iconName,
-          `./src/components/Undraw/${iconName}`,
-          componentCode,
-        );
-      } catch (error) {
-        // console.error(`${iconName}\n`);
-        fs.appendFile("./Errors.txt", `Error: ${iconName}\n`, function (err) {
-          if (err) throw err;
-          // console.log("Saved!");
-        });
+        // let svgCode = await currentIcon
+        //   .getByRole("img")
+        //   .first()
+        //   .evaluate((evaluate) =>
+        //     evaluate.parentElement.innerHTML.replaceAll(
+        //       "currentColor",
+        //       "var(--color-primary)",
+        //     ),
+        //   );
+        // console.log(`${svgCode}`);
+
+        try {
+          // const componentCode = await transform(
+          //   svgCode,
+          //   {
+          //     plugins: [
+          //       "@svgr/plugin-svgo",
+          //       "@svgr/plugin-jsx",
+          //       "@svgr/plugin-prettier",
+          //     ],
+          //     icon: true,
+          //     jsxRuntime: "automatic",
+          //     typescript: true,
+          //     memo: true,
+          //     svgo: true,
+          //   },
+          //   { componentName: iconName },
+          // );
+          // console.log(`${componentCode}`);
+
+          const indexName = `Undraw${iconName}`.replaceAll(" ", "");
+          const newPayload = {
+            name: toSpacedCase(originalFileName).trim(),
+            icon: indexName,
+          };
+          // console.log(`${toCamelCase(indexName)}: "${indexName}" ,`);
+          console.log(
+            `${toCamelCase(indexName)}: ${JSON.stringify(newPayload)} ,`,
+          );
+
+          // writeUndrawComponentSkeleton(
+          //   iconName,
+          //   `./src/components/Undraw/${iconName}`,
+          //   componentCode,
+          // );
+        } catch (error) {
+          // console.error(`${iconName}\n`);
+          // fs.appendFile("./Errors.txt", `Error: ${iconName}\n`, function (err) {
+          //   if (err) throw err;
+          //   // console.log("Saved!");
+          // });
+        }
+        indexFileContents = `${indexFileContents}\nexport * from "./${iconName}";`;
       }
-      indexFileContents = `${indexFileContents}\nexport * from "./${iconName}";`;
     }
 
     // writeIndexFile(fileNames, `./src/components/fileNames.txt`);
-    writeIndexFile(indexFileContents, `./src/components/Undraw/index.ts`);
+    // writeIndexFile(indexFileContents, `./src/components/Undraw/index.ts`);
 
     await page.waitForTimeout(1000);
     // await page.getByText("Next ").click();

@@ -5,3 +5,4 @@ export * from "./AzureIcons";
 export * from "./SkillIcons";
 export * from "./GcpIcons";
 export * from "./ThemeIsleIcons";
+export * from "./UndrawIcons";
