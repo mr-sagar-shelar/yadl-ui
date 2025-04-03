@@ -1,4 +1,4 @@
-import { SkillIcons, AwsIcons } from "@utils";
+import { SkillIcons, AwsIcons, AzureIcons } from "@utils";
 import { useMemo } from "react";
 import * as ICONS from "../../index";
 import { memo } from "react";
@@ -24,6 +24,24 @@ const SearchSkillIcons = () => {
   }, []);
   const AwsIconsComponent = useMemo(() => {
     const listItems = Object.values(AwsIcons).map((iconDetails) => {
+      // @ts-ignore
+      let Icon = ICONS[iconDetails.icon];
+
+      if (Icon) {
+        // @ts-ignore
+        return (
+          <div key={iconDetails.icon}>
+            {Icon && <Icon width={60} height={60} />}
+            {iconDetails.name}
+          </div>
+        );
+      }
+      return null;
+    });
+    return listItems;
+  }, []);
+  const AzureIconsComponent = useMemo(() => {
+    const listItems = Object.values(AzureIcons).map((iconDetails) => {
       // @ts-ignore
       let Icon = ICONS[iconDetails.icon];
 
@@ -81,7 +99,11 @@ const SearchSkillIcons = () => {
           className="tab"
           aria-label="Azure"
         />
-        <div className="tab-content bg-base-100 border-base-300 p-6">Azure</div>
+        <div className="tab-content bg-base-100 border-base-300 p-6">
+          <div className="grid grid-cols-5 gap-6 sm:grid-cols-6 md:grid-cols-7 lg:grid-cols-8 xl:grid-cols-12 2xl:grid-cols-14 overflow-auto w-full h-full">
+            {AzureIconsComponent}
+          </div>
+        </div>
         <input
           type="radio"
           name="searchIconTabs"
