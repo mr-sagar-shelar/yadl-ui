@@ -1,4 +1,10 @@
-import { SkillIcons, AwsIcons, AzureIcons, GCPIcons } from "@utils";
+import {
+  SkillIcons,
+  AwsIcons,
+  AzureIcons,
+  GCPIcons,
+  ThemeisleIcons,
+} from "@utils";
 import { useMemo } from "react";
 import * as ICONS from "../../index";
 import { memo } from "react";
@@ -76,6 +82,24 @@ const SearchSkillIcons = () => {
     });
     return listItems;
   }, []);
+  const ThemeIsleComponent = useMemo(() => {
+    const listItems = Object.values(ThemeisleIcons).map((iconDetails) => {
+      // @ts-ignore
+      let Icon = ICONS[iconDetails.icon];
+
+      if (Icon) {
+        // @ts-ignore
+        return (
+          <div key={iconDetails.icon}>
+            {Icon && <Icon width={300} height={300} />}
+            {iconDetails.name}
+          </div>
+        );
+      }
+      return null;
+    });
+    return listItems;
+  }, []);
   return (
     <>
       <div className="tabs tabs-box p-5  w-full h-full">
@@ -133,7 +157,9 @@ const SearchSkillIcons = () => {
           aria-label="Themeisle"
         />
         <div className="tab-content bg-base-100 border-base-300 p-6">
-          Themeisle
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 overflow-auto w-full h-full">
+            {ThemeIsleComponent}
+          </div>
         </div>
         <input
           type="radio"

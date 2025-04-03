@@ -1,7 +1,20 @@
 import { chromium } from "playwright";
-import { writeComponentSkeleton, writeIndexFile } from "./utils.js";
+import {
+  toCamelCase,
+  writeComponentSkeleton,
+  writeIndexFile,
+} from "./utils.js";
 import fs from "fs";
 import { transform } from "@svgr/core";
+
+// for (let i = 1; i <= 500; i++) {
+//   const currentName = `Themeisle${i}`;
+//   const newPayload = {
+//     name: `Themeisle ${i}`,
+//     icon: currentName,
+//   };
+//   console.log(`${toCamelCase(currentName)}: ${JSON.stringify(newPayload)} ,`);
+// }
 
 (async () => {
   const browser = await chromium.launch({

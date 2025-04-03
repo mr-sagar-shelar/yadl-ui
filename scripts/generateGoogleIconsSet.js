@@ -1,6 +1,8 @@
 import {
   writeComponentSkeleton,
   writeIndexFile,
+  toSpacedCase,
+  toCamelCase,
   toPascalCase,
 } from "./utils.js";
 import fs from "fs";
@@ -13,12 +15,26 @@ import { transform } from "@svgr/core";
   fs.readdir(rootFolder, (err, folders) => {
     folders.forEach((currentFolder) => {
       let folderName = `${rootFolder}/${currentFolder}`;
-      console.log(`${folderName}`);
+      // console.log(`${folderName}`);
 
       fs.readdir(folderName, (err, folders) => {
         folders.forEach((file) => {
           if (!file.toLowerCase().endsWith(".png")) {
             let fileName = file;
+            let originalFileName = file;
+            originalFileName = originalFileName.replaceAll("-", " ");
+            originalFileName = originalFileName.replaceAll("_", " ");
+            originalFileName = originalFileName.substring(
+              0,
+              fileName.length - 4,
+            );
+            originalFileName = originalFileName.replaceAll("Light", " ");
+            originalFileName = originalFileName.trim();
+            originalFileName = toPascalCase(originalFileName);
+            originalFileName = toSpacedCase(originalFileName);
+            originalFileName = originalFileName.trim();
+            originalFileName = originalFileName.replaceAll("  ", " ");
+
             fileName = fileName.replaceAll("-", "");
             fileName = fileName.replaceAll("&", "");
             fileName = fileName.replaceAll("Light", "");
@@ -37,42 +53,56 @@ import { transform } from "@svgr/core";
 
                 try {
                   // console.log(`$$$$ Transforming ${fileName}`);
-                  const componentCode = await transform(
-                    svgCode,
-                    {
-                      plugins: [
-                        "@svgr/plugin-svgo",
-                        "@svgr/plugin-jsx",
-                        "@svgr/plugin-prettier",
-                      ],
-                      icon: true,
-                      jsxRuntime: "automatic",
-                      typescript: true,
-                      memo: true,
-                      svgo: true,
-                    },
-                    { componentName: fileName },
-                  );
+                  // const componentCode = await transform(
+                  //   svgCode,
+                  //   {
+                  //     plugins: [
+                  //       "@svgr/plugin-svgo",
+                  //       "@svgr/plugin-jsx",
+                  //       "@svgr/plugin-prettier",
+                  //     ],
+                  //     icon: true,
+                  //     jsxRuntime: "automatic",
+                  //     typescript: true,
+                  //     memo: true,
+                  //     svgo: true,
+                  //   },
+                  //   { componentName: fileName },
+                  // );
                   // console.log(`${componentCode}`);
                   // console.log(`./src/components/GCP/${fileName}`);
 
-                  writeComponentSkeleton(
-                    fileName,
-                    `./src/components/GCP/${fileName}`,
-                    componentCode,
-                    `GCP`,
-                    "https://cloud.google.com/icons",
+                  const tempTitle = `GCP/${fileName}`
+                    .replaceAll("/", "")
+                    .replaceAll("_", " ");
+
+                  const indexName = `GCP${fileName}`;
+                  const newPayload = {
+                    name: originalFileName,
+                    icon: indexName,
+                  };
+                  // console.log(`${toCamelCase(indexName)}: "${indexName}" ,`);
+                  console.log(
+                    `${toCamelCase(indexName)}: ${JSON.stringify(newPayload)} ,`,
                   );
+
+                  // writeComponentSkeleton(
+                  //   fileName,
+                  //   `./src/components/GCP/${fileName}`,
+                  //   componentCode,
+                  //   `GCP`,
+                  //   "https://cloud.google.com/icons",
+                  // );
                 } catch (error) {
                   console.log(`Error Transforming ${fileName}`);
                   console.error(error);
-                  fs.appendFile(
-                    "./Errors.txt",
-                    `Error: ${fileName}\n`,
-                    function (err) {
-                      if (err) throw err;
-                    },
-                  );
+                  // fs.appendFile(
+                  //   "./Errors.txt",
+                  //   `Error: ${fileName}\n`,
+                  //   function (err) {
+                  //     if (err) throw err;
+                  //   },
+                  // );
                 }
                 // indexFileContents = `${indexFileContents}\nexport * from "./${fileName}";`;
               },

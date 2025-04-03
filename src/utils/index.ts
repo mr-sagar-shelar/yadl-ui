@@ -4,3 +4,4 @@ export * from "./AwsIcons";
 export * from "./AzureIcons";
 export * from "./SkillIcons";
 export * from "./GcpIcons";
+export * from "./ThemeIsleIcons";
