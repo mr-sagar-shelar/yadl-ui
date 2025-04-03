@@ -1,17 +1,12 @@
-import { IconNames } from "@utils";
+import { SkillIconNames } from "@utils";
 import { useMemo } from "react";
 import * as ICONS from "../../index";
 import { memo } from "react";
 
-export type SearchSkillIconsProps = {
-  width?: number;
-  height?: number;
-};
-
-const SearchSkillIcons = (props: SearchSkillIconsProps) => {
-  console.log(Object.keys(IconNames).length);
+const SearchSkillIcons = () => {
+  console.log(Object.keys(SkillIconNames).length);
   const AllIcons = useMemo(() => {
-    const listItems = Object.values(IconNames).map((iconName) => {
+    const listItems = Object.values(SkillIconNames).map((iconName) => {
       // @ts-ignore
       let Icon = ICONS[iconName];
 

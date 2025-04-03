@@ -65,6 +65,20 @@ export const toPascalCase = (str) => {
     .replace(/\s+/g, "");
 };
 
+export const toSpacedCase = (str) => {
+  return str.replace(/([A-Z])/g, " $1").replace(/^./, function (str) {
+    return str.toUpperCase();
+  });
+};
+
+export const toCamelCase = (str) => {
+  return str
+    .replace(/(?:^\w|[A-Z]|\b\w)/g, function (word, index) {
+      return index === 0 ? word.toLowerCase() : word.toUpperCase();
+    })
+    .replace(/\s+/g, "");
+};
+
 export const getStoriesContent = (componentName, title) => {
   return `import type { Meta, StoryObj } from "@storybook/react";
 import ${componentName} from "../${componentName}";
@@ -221,28 +235,28 @@ export const writeComponentSkeleton = (
   //     }
   //   },
   // );
-  fs.writeFile(
-    `${dir}/__docs__/${componentName}.stories.tsx`,
-    getStoriesContent(componentName, title),
-    (err) => {
-      if (err) {
-        console.error(err);
-      } else {
-        // file written successfully
-      }
-    },
-  );
-  fs.writeFile(
-    `${dir}/__test__/${componentName}.test.tsx`,
-    getTestFileContents(componentName),
-    (err) => {
-      if (err) {
-        console.error(err);
-      } else {
-        // file written successfully
-      }
-    },
-  );
+  // fs.writeFile(
+  //   `${dir}/__docs__/${componentName}.stories.tsx`,
+  //   getStoriesContent(componentName, title),
+  //   (err) => {
+  //     if (err) {
+  //       console.error(err);
+  //     } else {
+  //       // file written successfully
+  //     }
+  //   },
+  // );
+  // fs.writeFile(
+  //   `${dir}/__test__/${componentName}.test.tsx`,
+  //   getTestFileContents(componentName),
+  //   (err) => {
+  //     if (err) {
+  //       console.error(err);
+  //     } else {
+  //       // file written successfully
+  //     }
+  //   },
+  // );
   fs.writeFile(
     `${dir}/index.ts`,
     getIndexContents(componentName, title),
@@ -255,11 +269,11 @@ export const writeComponentSkeleton = (
     },
   );
 
-  fs.writeFile(`${dir}/${componentName}.tsx`, componentCode, (err) => {
-    if (err) {
-      console.error(err);
-    } else {
-      // file written successfully
-    }
-  });
+  // fs.writeFile(`${dir}/${componentName}.tsx`, componentCode, (err) => {
+  //   if (err) {
+  //     console.error(err);
+  //   } else {
+  //     // file written successfully
+  //   }
+  // });
 };
