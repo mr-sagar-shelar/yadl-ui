@@ -1,12 +1,12 @@
-import { SkillIcons } from "@utils";
+import { UndrawIcons } from "@utils";
 import { useMemo, useState } from "react";
 import * as ICONS from "../../index";
 import { memo } from "react";
 
-const SearchAWS = () => {
+const SearchUndrawIcons = () => {
   const [searchInput, setSearchInput] = useState<string>("");
   const IconsComponent = useMemo(() => {
-    const listItems = Object.values(SkillIcons)
+    const listItems = Object.values(UndrawIcons)
       .filter((iconDetails) => {
         if (searchInput == "") {
           return true;
@@ -71,5 +71,5 @@ const SearchAWS = () => {
   );
 };
 
-const Memo = memo(SearchAWS);
+const Memo = memo(SearchUndrawIcons);
 export default Memo;

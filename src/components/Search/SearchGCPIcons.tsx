@@ -1,12 +1,12 @@
-import { SkillIcons } from "@utils";
+import { GCPIcons } from "@utils";
 import { useMemo, useState } from "react";
 import * as ICONS from "../../index";
 import { memo } from "react";
 
-const SearchAWS = () => {
+const SearchGCPIcons = () => {
   const [searchInput, setSearchInput] = useState<string>("");
-  const IconsComponent = useMemo(() => {
-    const listItems = Object.values(SkillIcons)
+  const GCPIconsComponent = useMemo(() => {
+    const listItems = Object.values(GCPIcons)
       .filter((iconDetails) => {
         if (searchInput == "") {
           return true;
@@ -64,12 +64,12 @@ const SearchAWS = () => {
           </label>
         </div>
         <div className="grid grid-cols-5 gap-6 sm:grid-cols-6 md:grid-cols-7 lg:grid-cols-8 xl:grid-cols-12 2xl:grid-cols-14 overflow-auto w-full h-full">
-          {IconsComponent}
+          {GCPIconsComponent}
         </div>
       </div>
     </>
   );
 };
 
-const Memo = memo(SearchAWS);
+const Memo = memo(SearchGCPIcons);
 export default Memo;

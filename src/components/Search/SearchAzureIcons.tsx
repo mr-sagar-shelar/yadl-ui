@@ -1,12 +1,12 @@
-import { GCPIcons } from "@utils";
+import { AzureIcons } from "@utils";
 import { useMemo, useState } from "react";
 import * as ICONS from "../../index";
 import { memo } from "react";
 
-const SearchGCP = () => {
+const SearchAzureIcons = () => {
   const [searchInput, setSearchInput] = useState<string>("");
-  const GCPIconsComponent = useMemo(() => {
-    const listItems = Object.values(GCPIcons)
+  const IconsComponent = useMemo(() => {
+    const listItems = Object.values(AzureIcons)
       .filter((iconDetails) => {
         if (searchInput == "") {
           return true;
@@ -64,12 +64,12 @@ const SearchGCP = () => {
           </label>
         </div>
         <div className="grid grid-cols-5 gap-6 sm:grid-cols-6 md:grid-cols-7 lg:grid-cols-8 xl:grid-cols-12 2xl:grid-cols-14 overflow-auto w-full h-full">
-          {GCPIconsComponent}
+          {IconsComponent}
         </div>
       </div>
     </>
   );
 };
 
-const Memo = memo(SearchGCP);
+const Memo = memo(SearchAzureIcons);
 export default Memo;
