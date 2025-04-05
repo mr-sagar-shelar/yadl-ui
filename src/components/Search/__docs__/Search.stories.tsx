@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import SearchSkillIcons from "../SearchSkillIcons";
+import SearchSkillIcons from "../Search";
 
 const meta: Meta<typeof SearchSkillIcons> = {
-  title: "Search/SkillIcons",
+  title: "Search",
   component: SearchSkillIcons,
 };
 
