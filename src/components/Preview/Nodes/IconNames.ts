@@ -3,5 +3,5 @@ interface IconNames {
 }
 
 export const IconNames: IconNames = {
-  athena: "Athena",
+  athena: "AWSAnalyticsAthena",
 };

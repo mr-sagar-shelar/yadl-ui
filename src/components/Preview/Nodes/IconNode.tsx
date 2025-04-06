@@ -1,7 +1,7 @@
 import { memo } from "react";
 import { Handle, Position } from "@xyflow/react";
 import * as ICONS from "../../index";
-import { IconNames } from "./IconNames";
+import { SkillIconNames } from "@utils";
 
 export interface IconNodeProps {
   data: {
@@ -16,10 +16,10 @@ function IconNode(props: IconNodeProps) {
   } = props;
 
   let Icon = null;
-  const iconNamePresent: boolean = IconNames[icon] != undefined;
+  const iconNamePresent: boolean = SkillIconNames[icon] != undefined;
   if (iconNamePresent) {
     // @ts-ignore
-    Icon = ICONS[IconNames[icon]] ?? null;
+    Icon = ICONS[SkillIconNames[icon]] ?? null;
   }
 
   return (

@@ -1,3 +1,4 @@
+// import { SearchIcons } from "../Search";
 import { DragDropProps, useDnD } from "./DnDContext";
 
 export default () => {
@@ -12,6 +13,8 @@ export default () => {
 
   return (
     <div>
+      {/* <SearchIcons /> */}
+
       <div className="tabs tabs-lift">
         <label className="tab">
           <input type="radio" name="my_tabs_4" />
@@ -122,7 +125,7 @@ export default () => {
               onDragStart(event, {
                 type: "icon",
                 data: {
-                  icon: "athena",
+                  icon: "skillIconAbleton",
                   width: 50,
                   height: 50,
                 },
@@ -135,20 +138,12 @@ export default () => {
         </div>
       </div>
 
-      <div className="drawer drawer-end">
+      {/* <div className="drawer drawer-end">
         <input
           id="properties-drawer"
           type="checkbox"
           className="drawer-toggle"
         />
-        {/* <div className="drawer-content">
-          <label
-            htmlFor="properties-drawer"
-            className="drawer-button btn btn-primary"
-          >
-            Open drawer
-          </label>
-        </div> */}
         <div className="drawer-side">
           <label
             htmlFor="properties-drawer"
@@ -156,7 +151,6 @@ export default () => {
             className="drawer-overlay"
           ></label>
           <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-            {/* Sidebar content here */}
             <li>
               <a>Sidebar Item 1</a>
             </li>
@@ -165,7 +159,7 @@ export default () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
