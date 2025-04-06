@@ -94,8 +94,8 @@ function IconNode(props: IconNodeProps) {
         <NodeResizer
           color="#ff0071"
           isVisible={selected}
-          minWidth={50}
-          minHeight={50}
+          // minWidth={50}
+          // minHeight={50}
           onResize={(
             _event: ResizeDragEvent,
             params: ResizeParamsWithDirection,
@@ -109,12 +109,12 @@ function IconNode(props: IconNodeProps) {
         <Handle
           type="target"
           position={Position.Top}
-          className="w-16 !bg-teal-500"
+          className={`invisible w-16 !bg-teal-500 ${selected && "visible"}`}
         />
         <Handle
           type="source"
           position={Position.Bottom}
-          className="w-16 !bg-teal-500"
+          className={`invisible w-16 !bg-teal-500 ${selected && "visible"}`}
         />
       </div>
     </label>
