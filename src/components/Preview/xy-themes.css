@@ -17,11 +17,11 @@
 }
 
 .dndflow .dndnode {
-  height: 20px;
-  padding: 4px;
+  height: 60px;
+  /* padding: 4px;
   border: 1px solid #1a192b;
   border-radius: 2px;
-  margin-bottom: 10px;
+  margin-bottom: 10px; */
   display: flex;
   justify-content: center;
   align-items: center;
