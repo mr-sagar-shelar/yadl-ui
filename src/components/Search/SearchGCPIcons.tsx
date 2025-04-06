@@ -63,7 +63,8 @@ const SearchGCPIcons = () => {
             />
           </label>
         </div>
-        <div className="grid grid-cols-5 gap-6 sm:grid-cols-6 md:grid-cols-7 lg:grid-cols-8 xl:grid-cols-12 2xl:grid-cols-14 overflow-auto w-full h-full">
+        {/* <div className="grid grid-cols-5 gap-6 sm:grid-cols-6 md:grid-cols-7 lg:grid-cols-8 xl:grid-cols-12 2xl:grid-cols-14 overflow-auto w-full h-full"> */}
+        <div className="grid grid-cols-2 overflow-auto w-full h-full">
           {GCPIconsComponent}
         </div>
       </div>

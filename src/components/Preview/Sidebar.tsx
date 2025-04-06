@@ -1,4 +1,4 @@
-// import { SearchIcons } from "../Search";
+import { SearchIcons } from "../Search";
 import { useMemo } from "react";
 import { DragDropProps, useDnD } from "./DnDContext";
 import { SkillIcons } from "@utils";
@@ -49,9 +49,9 @@ export default () => {
 
   return (
     <div>
-      {/* <SearchIcons /> */}
+      <SearchIcons />
 
-      <div className="tabs tabs-lift">
+      {/* <div className="tabs tabs-lift">
         <label className="tab">
           <input type="radio" name="my_tabs_4" />
           <svg
@@ -155,25 +155,9 @@ export default () => {
           GCP
         </label>
         <div className="tab-content">
-          {/* <div
-            className="dndnode input"
-            onDragStart={(event) =>
-              onDragStart(event, {
-                type: "icon",
-                data: {
-                  icon: "skillIconAbleton",
-                  width: 50,
-                  height: 50,
-                },
-              })
-            }
-            draggable
-          >
-            Athena
-          </div> */}
           {IconsComponent}
         </div>
-      </div>
+      </div> */}
 
       {/* <div className="drawer drawer-end">
         <input
