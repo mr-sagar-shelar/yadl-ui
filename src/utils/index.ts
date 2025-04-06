@@ -6,3 +6,11 @@ export * from "./SkillIcons";
 export * from "./GCPIcons";
 export * from "./ThemeIsleIcons";
 export * from "./UndrawIcons";
+
+export interface IconDetails {
+  name: string;
+  icon: string;
+}
+export interface IconNames {
+  [key: string]: IconDetails;
+}

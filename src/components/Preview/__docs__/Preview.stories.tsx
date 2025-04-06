@@ -34,6 +34,7 @@ export const Interactivity: Story = {
           icon: "skillIconActivityPub",
           width: 50,
           height: 50,
+          category: "skill",
         },
         type: "icon",
       },

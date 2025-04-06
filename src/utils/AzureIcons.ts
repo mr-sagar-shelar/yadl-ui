@@ -1,4 +1,6 @@
-export const AzureIcons = {
+import { IconNames } from "@utils";
+
+export const AzureIcons: IconNames = {
   azureAiMachineLearningGenomics: {
     name: "Genomics",
     icon: "AzureAiMachineLearningGenomics",

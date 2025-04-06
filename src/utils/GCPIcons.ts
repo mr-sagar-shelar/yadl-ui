@@ -1,4 +1,6 @@
-export const GCPIcons = {
+import { IconNames } from "@utils";
+
+export const GCPIcons: IconNames = {
   gCPAccessContextManager: {
     name: "Access Context Manager",
     icon: "GCPAccessContextManager",

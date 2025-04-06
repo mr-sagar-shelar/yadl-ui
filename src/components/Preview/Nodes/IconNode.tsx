@@ -1,7 +1,14 @@
 import { memo } from "react";
 import { Handle, Position } from "@xyflow/react";
 import * as ICONS from "../../index";
-import { SkillIconNames } from "@utils";
+import {
+  AwsIcons,
+  AzureIcons,
+  GCPIcons,
+  SkillIcons,
+  UndrawIcons,
+  ThemeisleIcons,
+} from "@utils";
 
 export interface IconNodeProps {
   data: {
@@ -16,12 +23,55 @@ function IconNode(props: IconNodeProps) {
     data: { icon, width = 100, height = 100, category = "skill" },
   } = props;
 
+  let iconNamePresent: boolean = false;
   let Icon = null;
-  const iconNamePresent: boolean = SkillIconNames[icon] != undefined;
-  console.log(` ${icon}, category: ${category}`);
-  if (iconNamePresent) {
-    // @ts-ignore
-    Icon = ICONS[SkillIconNames[icon]] ?? null;
+
+  switch (category) {
+    case "aws":
+      iconNamePresent = AwsIcons[icon] != undefined;
+      if (iconNamePresent) {
+        // @ts-ignore
+        Icon = ICONS[AwsIcons[icon].icon] ?? null;
+      }
+      break;
+    case "gcp":
+      iconNamePresent = GCPIcons[icon] != undefined;
+      if (iconNamePresent) {
+        // @ts-ignore
+        Icon = ICONS[GCPIcons[icon].icon] ?? null;
+      }
+      break;
+    case "skill":
+      iconNamePresent = SkillIcons[icon] != undefined;
+      if (iconNamePresent) {
+        // @ts-ignore
+        Icon = ICONS[SkillIcons[icon].icon] ?? null;
+      }
+      console.log(
+        `##### Present=${iconNamePresent}, icon=${icon}, Icon=${Icon}`,
+      );
+      break;
+    case "azure":
+      iconNamePresent = AzureIcons[icon] != undefined;
+      if (iconNamePresent) {
+        // @ts-ignore
+        Icon = ICONS[AzureIcons[icon].icon] ?? null;
+      }
+      break;
+    case "undraw":
+      iconNamePresent = UndrawIcons[icon] != undefined;
+      if (iconNamePresent) {
+        // @ts-ignore
+        Icon = ICONS[UndrawIcons[icon].icon] ?? null;
+      }
+      break;
+    case "themeisle":
+      iconNamePresent = ThemeisleIcons[icon] != undefined;
+      if (iconNamePresent) {
+        // @ts-ignore
+        Icon = ICONS[ThemeisleIcons[icon].icon] ?? null;
+      }
+      break;
   }
 
   return (

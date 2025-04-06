@@ -1,4 +1,6 @@
-export const SkillIcons = {
+import { IconNames } from "@utils";
+
+export const SkillIcons: IconNames = {
   skillIconActivityPub: {
     name: "Activity Pub",
     icon: "SkillIconActivityPub",

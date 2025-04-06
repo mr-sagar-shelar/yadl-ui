@@ -1,4 +1,6 @@
-export const UndrawIcons = {
+import { IconNames } from "@utils";
+
+export const UndrawIcons: IconNames = {
   undrawPhoneCall: { name: "Phone Call", icon: "UndrawPhoneCall" },
   undrawDesigner: { name: "Designer", icon: "UndrawDesigner" },
   undrawVoiceMessages: { name: "Voice Messages", icon: "UndrawVoiceMessages" },
