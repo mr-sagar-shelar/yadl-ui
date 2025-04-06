@@ -2,27 +2,50 @@ import { ThemeisleIcons } from "@utils";
 import { useMemo, useState } from "react";
 import * as ICONS from "../../index";
 import { memo } from "react";
+import { DragDropProps, useDnD } from "../Preview/DnDContext";
 
 const SearchThemeIsleIcons = () => {
   const [searchInput, setSearchInput] = useState<string>("");
+  const [_, setType] = useDnD();
+  const onDragStart = (event: any, nodePayload: DragDropProps) => {
+    if (setType) {
+      setType(nodePayload);
+    }
+    event.dataTransfer.effectAllowed = "move";
+  };
+
   const IconsComponent = useMemo(() => {
-    const listItems = Object.values(ThemeisleIcons)
-      .filter((iconDetails) => {
+    const listItems = Object.entries(ThemeisleIcons)
+      .filter((icons) => {
         if (searchInput == "") {
           return true;
         }
-        return iconDetails.name
-          .toLowerCase()
-          .includes(searchInput.toLowerCase());
+        return icons[1].name.toLowerCase().includes(searchInput.toLowerCase());
       })
-      .map((iconDetails) => {
+      .map((icons) => {
+        const [key, iconDetails] = icons;
         // @ts-ignore
         let Icon = ICONS[iconDetails.icon];
 
         if (Icon) {
           // @ts-ignore
           return (
-            <div key={iconDetails.icon}>
+            <div
+              key={key}
+              className="dndnode input"
+              onDragStart={(event) =>
+                onDragStart(event, {
+                  type: "icon",
+                  data: {
+                    icon: `${key}`,
+                    width: 20,
+                    height: 20,
+                    category: "themeisle",
+                  },
+                })
+              }
+              draggable
+            >
               {Icon && <Icon width={60} height={60} />}
               {iconDetails.name}
             </div>

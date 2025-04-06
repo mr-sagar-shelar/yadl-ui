@@ -8,15 +8,17 @@ export interface IconNodeProps {
     icon: string;
     width?: number;
     height?: number;
+    category?: string;
   };
 }
 function IconNode(props: IconNodeProps) {
   const {
-    data: { icon, width = 100, height = 100 },
+    data: { icon, width = 100, height = 100, category = "skill" },
   } = props;
 
   let Icon = null;
   const iconNamePresent: boolean = SkillIconNames[icon] != undefined;
+  console.log(` ${icon}, category: ${category}`);
   if (iconNamePresent) {
     // @ts-ignore
     Icon = ICONS[SkillIconNames[icon]] ?? null;

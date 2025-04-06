@@ -2,27 +2,50 @@ import { GCPIcons } from "@utils";
 import { useMemo, useState } from "react";
 import * as ICONS from "../../index";
 import { memo } from "react";
+import { DragDropProps, useDnD } from "../Preview/DnDContext";
 
 const SearchGCPIcons = () => {
   const [searchInput, setSearchInput] = useState<string>("");
-  const GCPIconsComponent = useMemo(() => {
-    const listItems = Object.values(GCPIcons)
-      .filter((iconDetails) => {
+  const [_, setType] = useDnD();
+  const onDragStart = (event: any, nodePayload: DragDropProps) => {
+    if (setType) {
+      setType(nodePayload);
+    }
+    event.dataTransfer.effectAllowed = "move";
+  };
+
+  const IconsComponent = useMemo(() => {
+    const listItems = Object.entries(GCPIcons)
+      .filter((icons) => {
         if (searchInput == "") {
           return true;
         }
-        return iconDetails.name
-          .toLowerCase()
-          .includes(searchInput.toLowerCase());
+        return icons[1].name.toLowerCase().includes(searchInput.toLowerCase());
       })
-      .map((iconDetails) => {
+      .map((icons) => {
+        const [key, iconDetails] = icons;
         // @ts-ignore
         let Icon = ICONS[iconDetails.icon];
 
         if (Icon) {
           // @ts-ignore
           return (
-            <div key={iconDetails.icon}>
+            <div
+              key={key}
+              className="dndnode input"
+              onDragStart={(event) =>
+                onDragStart(event, {
+                  type: "icon",
+                  data: {
+                    icon: `${key}`,
+                    width: 20,
+                    height: 20,
+                    category: "gcp",
+                  },
+                })
+              }
+              draggable
+            >
               {Icon && <Icon width={60} height={60} />}
               {iconDetails.name}
             </div>
@@ -65,7 +88,7 @@ const SearchGCPIcons = () => {
         </div>
         {/* <div className="grid grid-cols-5 gap-6 sm:grid-cols-6 md:grid-cols-7 lg:grid-cols-8 xl:grid-cols-12 2xl:grid-cols-14 overflow-auto w-full h-full"> */}
         <div className="grid grid-cols-2 overflow-auto w-full h-full">
-          {GCPIconsComponent}
+          {IconsComponent}
         </div>
       </div>
     </>
