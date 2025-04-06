@@ -1,14 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import SearchSkillIcons from "../Search";
+import SearchIcons from "../SearchIcons";
 
-const meta: Meta<typeof SearchSkillIcons> = {
+const meta: Meta<typeof SearchIcons> = {
   title: "Search",
-  component: SearchSkillIcons,
+  component: SearchIcons,
 };
 
 export default meta;
-type Story = StoryObj<typeof SearchSkillIcons>;
+type Story = StoryObj<typeof SearchIcons>;
 
-export const Gradients: Story = {
+export const Primary: Story = {
   args: {},
 };

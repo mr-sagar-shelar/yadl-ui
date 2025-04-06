@@ -24,19 +24,19 @@ export const Interactivity: Story = {
         data: { label: "World" },
         position: { x: 100, y: 100 },
       },
-      {
-        id: "icon-0",
-        position: {
-          x: 0,
-          y: 110,
-        },
-        data: {
-          icon: "athena",
-          width: 50,
-          height: 50,
-        },
-        type: "icon",
-      },
+      // {
+      //   id: "icon-0",
+      //   position: {
+      //     x: 0,
+      //     y: 110,
+      //   },
+      //   data: {
+      //     icon: "skillIconActivityPub",
+      //     width: 50,
+      //     height: 50,
+      //   },
+      //   type: "icon",
+      // },
     ],
     edges: [
       { id: "1-2", source: "1", target: "2", label: "to the", type: "step" },
