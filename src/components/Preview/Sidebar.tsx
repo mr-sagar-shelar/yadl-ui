@@ -1,52 +1,6 @@
 import { SearchIcons } from "../Search";
-import { useMemo } from "react";
-import { DragDropProps, useDnD } from "./DnDContext";
-import { SkillIcons } from "@utils";
-import * as ICONS from "../../index";
 
 export default () => {
-  const [_, setType] = useDnD();
-  const IconsComponent = useMemo(() => {
-    const listItems = Object.entries(SkillIcons).map((icons) => {
-      const [key, iconDetails] = icons;
-      // @ts-ignore
-      let Icon = ICONS[iconDetails.icon];
-
-      if (Icon) {
-        // @ts-ignore
-        return (
-          <div
-            key={key}
-            className="dndnode input"
-            onDragStart={(event) =>
-              onDragStart(event, {
-                type: "icon",
-                data: {
-                  icon: `${key}`,
-                  width: 20,
-                  height: 20,
-                },
-              })
-            }
-            draggable
-          >
-            {Icon && <Icon width={60} height={60} />}
-            {iconDetails.name}
-          </div>
-        );
-      }
-      return null;
-    });
-    return listItems;
-  }, []);
-
-  const onDragStart = (event: any, nodePayload: DragDropProps) => {
-    if (setType) {
-      setType(nodePayload);
-    }
-    event.dataTransfer.effectAllowed = "move";
-  };
-
   return (
     <div>
       <SearchIcons />

@@ -18,10 +18,7 @@
 
 .dndflow .dndnode {
   height: 60px;
-  /* padding: 4px;
-  border: 1px solid #1a192b;
-  border-radius: 2px;
-  margin-bottom: 10px; */
+  width: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,18 +83,19 @@
 /* Customizing Default Theming */
 
 .react-flow__node {
-  box-shadow: var(--xy-node-boxshadow-default);
-  border-radius: var(--xy-node-border-radius-default);
+  /* box-shadow: var(--xy-node-boxshadow-default); */
+  /* border-radius: var(--xy-node-border-radius-default); */
   /* background-color: var(--xy-node-background-color-default); */
-  background-color: var(--color-base-200);
+  /* background-color: var(--color-base-200); */
+  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 10px;
+  /* padding: 10px; */
   font-size: 12px;
   flex-direction: column;
-  border: var(--xy-node-border-default);
+  /* border: var(--xy-node-border-default); */
   /* color: var(--xy-node-color, var(--xy-node-color-default)); */
   color: var(--color-base-content);
 }

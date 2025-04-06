@@ -32,8 +32,6 @@ export const Interactivity: Story = {
         },
         data: {
           icon: "skillIconActivityPub",
-          width: 50,
-          height: 50,
           category: "skill",
         },
         type: "icon",

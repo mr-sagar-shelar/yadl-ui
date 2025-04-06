@@ -32,22 +32,20 @@ const SearchAzureIcons = () => {
           return (
             <div
               key={key}
-              className="dndnode input"
+              className="dndnode m-2"
               onDragStart={(event) =>
                 onDragStart(event, {
                   type: "icon",
                   data: {
                     icon: `${key}`,
-                    width: 20,
-                    height: 20,
                     category: "azure",
                   },
                 })
               }
               draggable
+              title={iconDetails.name}
             >
-              {Icon && <Icon width={60} height={60} />}
-              {iconDetails.name}
+              {Icon && <Icon width={50} height={50} />}
             </div>
           );
         }
@@ -87,7 +85,7 @@ const SearchAzureIcons = () => {
           </label>
         </div>
         {/* <div className="grid grid-cols-5 gap-6 sm:grid-cols-6 md:grid-cols-7 lg:grid-cols-8 xl:grid-cols-12 2xl:grid-cols-14 overflow-auto w-full h-full"> */}
-        <div className="grid grid-cols-2 overflow-auto w-full h-full">
+        <div className="grid grid-cols-3 overflow-auto w-full h-full">
           {IconsComponent}
         </div>
       </div>

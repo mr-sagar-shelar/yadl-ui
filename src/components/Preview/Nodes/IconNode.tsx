@@ -1,5 +1,11 @@
-import { memo } from "react";
-import { Handle, Position } from "@xyflow/react";
+import { memo, useState } from "react";
+import {
+  Handle,
+  Position,
+  NodeResizer,
+  ResizeDragEvent,
+  ResizeParamsWithDirection,
+} from "@xyflow/react";
 import * as ICONS from "../../index";
 import {
   AwsIcons,
@@ -17,11 +23,15 @@ export interface IconNodeProps {
     height?: number;
     category?: string;
   };
+  selected: boolean;
 }
 function IconNode(props: IconNodeProps) {
   const {
-    data: { icon, width = 100, height = 100, category = "skill" },
+    data: { icon, width = 25, height = 25, category = "skill" },
+    selected = false,
   } = props;
+  const [currentWidth, setCurrentWidth] = useState<number>(width);
+  const [currentHeight, setCurrentHeight] = useState<number>(height);
 
   let iconNamePresent: boolean = false;
   let Icon = null;
@@ -47,9 +57,6 @@ function IconNode(props: IconNodeProps) {
         // @ts-ignore
         Icon = ICONS[SkillIcons[icon].icon] ?? null;
       }
-      console.log(
-        `##### Present=${iconNamePresent}, icon=${icon}, Icon=${Icon}`,
-      );
       break;
     case "azure":
       iconNamePresent = AzureIcons[icon] != undefined;
@@ -81,7 +88,24 @@ function IconNode(props: IconNodeProps) {
           console.log("Clicked");
         }}
       >
-        {iconNamePresent && <Icon width={width} height={height} />}
+        {iconNamePresent && (
+          <Icon width={currentWidth} height={currentHeight} />
+        )}
+        <NodeResizer
+          color="#ff0071"
+          isVisible={selected}
+          minWidth={50}
+          minHeight={50}
+          onResize={(
+            _event: ResizeDragEvent,
+            params: ResizeParamsWithDirection,
+          ) => {
+            setCurrentWidth(params.width);
+            setCurrentHeight(params.height);
+          }}
+          keepAspectRatio
+        />
+
         <Handle
           type="target"
           position={Position.Top}
