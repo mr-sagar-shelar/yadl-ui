@@ -6,35 +6,26 @@ import {
   ResizeDragEvent,
   ResizeParamsWithDirection,
 } from "@xyflow/react";
-import * as ICONS from "../../index";
-import { BoxNames } from "@utils";
+import { Text } from "../../index";
 
-export interface BoxNodeProps {
+export interface TextNodeProps {
   data: {
-    component: string;
+    name: string;
     props?: any;
+    text: string;
+    classes: string;
   };
   selected: boolean;
 }
-function BoxNode(properties: BoxNodeProps) {
+function TextNode(properties: TextNodeProps) {
   const {
-    data: { component, props },
+    data: { name, text, classes, props },
     selected = false,
   } = properties;
   const [currentWidth, setCurrentWidth] = useState<number>(props.width || 50);
   const [currentHeight, setCurrentHeight] = useState<number>(
     props.height || 50,
   );
-
-  let iconNamePresent: boolean = false;
-  let Icon = null;
-
-  iconNamePresent = BoxNames[component] != undefined;
-  if (iconNamePresent) {
-    // @ts-ignore
-    Icon = ICONS[BoxNames[component].component] ?? null;
-    // console.log(` Presetn: ${iconNamePresent}, Icon=${Icon}`);
-  }
 
   return (
     <label htmlFor="properties-drawer">
@@ -43,9 +34,13 @@ function BoxNode(properties: BoxNodeProps) {
           console.log("Clicked");
         }}
       >
-        {iconNamePresent && (
-          <Icon {...props} width={currentWidth} height={currentHeight} />
-        )}
+        <Text
+          text={text}
+          classes={classes}
+          {...props}
+          width={currentWidth}
+          height={currentHeight}
+        />
         <NodeResizer
           color="#ff0071"
           isVisible={selected}
@@ -72,6 +67,6 @@ function BoxNode(properties: BoxNodeProps) {
   );
 }
 
-const Memo = memo(BoxNode);
+const Memo = memo(TextNode);
 
 export default Memo;
