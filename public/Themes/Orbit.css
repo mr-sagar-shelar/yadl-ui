@@ -1,0 +1,186 @@
+@import "tailwindcss";
+
+@plugin "daisyui/theme" {
+  name: "Orbit";
+  default: false;
+  prefersdark: false;
+  /* color-scheme: light; */
+
+  --color-base-100: COLOR;
+  --color-base-200: COLOR;
+  --color-base-300: COLOR;
+  --color-base-content: COLOR;
+  --color-primary: COLOR;
+  --color-primary-content: COLOR;
+  --color-secondary: COLOR;
+  --color-secondary-content: COLOR;
+  --color-accent: COLOR;
+  --color-accent-content: COLOR;
+  --color-neutral: COLOR;
+  --color-neutral-content: COLOR;
+  --color-info: COLOR;
+  --color-info-content: COLOR;
+  --color-success: COLOR;
+  --color-success-content: COLOR;
+  --color-warning: COLOR;
+  --color-warning-content: COLOR;
+  --color-error: COLOR;
+  --color-error-content: COLOR;
+
+  --color-muted: COLOR;
+  --color-muted-content: COLOR;
+  --color-outline: COLOR;
+  --color-outline-content: COLOR;
+  --color-transparent: COLOR;
+  --color-transparent-content: COLOR;
+  --color-highlight: COLOR;
+  --color-highlight-content: COLOR;
+  --color-inverted: COLOR;
+  --color-inverted-content: COLOR;
+  --color-focus: COLOR;
+  --color-focus-content: COLOR;
+  --color-elevated: COLOR;
+  --color-elevated-content: COLOR;
+  --color-flat: COLOR;
+  --color-flat-content: COLOR;
+  --color-pastel: COLOR;
+  --color-pastel-content: COLOR;
+
+  /* border radius */
+  --radius-selector: 1rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+
+  /* base sizes */
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  /* border size */
+  --border: 1px;
+
+  /* effects */
+  --depth: 1;
+  --noise: 0;
+}
+
+[data-theme="Orbit"] {
+  --gradient-primary-from: COLOR;
+  --gradient-primary-via: COLOR;
+  --gradient-primary-to: COLOR;
+  --gradient-primary-content: COLOR;
+
+  --gradient-secondary-from: COLOR;
+  --gradient-secondary-via: COLOR;
+  --gradient-secondary-to: COLOR;
+  --gradient-secondary-content: COLOR;
+
+  --gradient-accent-from: COLOR;
+  --gradient-accent-via: COLOR;
+  --gradient-accent-to: COLOR;
+  --gradient-accent-content: COLOR;
+
+  --gradient-neutral-from: COLOR;
+  --gradient-neutral-via: COLOR;
+  --gradient-neutral-to: COLOR;
+  --gradient-neutral-content: COLOR;
+
+  --gradient-info-from: COLOR;
+  --gradient-info-via: COLOR;
+  --gradient-info-to: COLOR;
+  --gradient-info-content: COLOR;
+
+  --gradient-success-from: COLOR;
+  --gradient-success-via: COLOR;
+  --gradient-success-to: COLOR;
+  --gradient-success-content: COLOR;
+
+  --gradient-warning-from: COLOR;
+  --gradient-warning-via: COLOR;
+  --gradient-warning-to: COLOR;
+  --gradient-warning-content: COLOR;
+
+  --gradient-error-from: COLOR;
+  --gradient-error-via: COLOR;
+  --gradient-error-to: COLOR;
+  --gradient-error-content: COLOR;
+
+  --gradient-error-from: COLOR;
+  --gradient-error-via: COLOR;
+  --gradient-error-to: COLOR;
+  --gradient-error-content: COLOR;
+
+  --gradient-outline-from: COLOR;
+  --gradient-outline-via: COLOR;
+  --gradient-outline-to: COLOR;
+  --gradient-outline-content: COLOR;
+
+  --gradient-transparent-from: COLOR;
+  --gradient-transparent-via: COLOR;
+  --gradient-transparent-to: COLOR;
+  --gradient-transparent-content: COLOR;
+
+  --gradient-highlight-from: COLOR;
+  --gradient-highlight-via: COLOR;
+  --gradient-highlight-to: COLOR;
+  --gradient-highlight-content: COLOR;
+
+  --gradient-inverted-from: COLOR;
+  --gradient-inverted-via: COLOR;
+  --gradient-inverted-to: COLOR;
+  --gradient-inverted-content: COLOR;
+
+  --gradient-focus-from: COLOR;
+  --gradient-focus-via: COLOR;
+  --gradient-focus-to: COLOR;
+  --gradient-focus-content: COLOR;
+
+  --gradient-elevated-from: COLOR;
+  --gradient-elevated-via: COLOR;
+  --gradient-elevated-to: COLOR;
+  --gradient-elevated-content: COLOR;
+
+  --gradient-flat-from: COLOR;
+  --gradient-flat-via: COLOR;
+  --gradient-flat-to: COLOR;
+  --gradient-flat-content: COLOR;
+
+  --gradient-pastel-from: COLOR;
+  --gradient-pastel-via: COLOR;
+  --gradient-pastel-to: COLOR;
+  --gradient-pastel-content: COLOR;
+
+  --gradient-rainbow-from: COLOR;
+  --gradient-rainbow-via: COLOR;
+  --gradient-rainbow-to: COLOR;
+  --gradient-rainbow-content: COLOR;
+
+  --gradient-sunset-from: COLOR;
+  --gradient-sunset-via: COLOR;
+  --gradient-sunset-to: COLOR;
+  --gradient-sunset-content: COLOR;
+
+  --gradient-ocean-from: COLOR;
+  --gradient-ocean-via: COLOR;
+  --gradient-ocean-to: COLOR;
+  --gradient-ocean-content: COLOR;
+
+  --gradient-fire-from: COLOR;
+  --gradient-fire-via: COLOR;
+  --gradient-fire-to: COLOR;
+  --gradient-fire-content: COLOR;
+
+  --gradient-forest-from: COLOR;
+  --gradient-forest-via: COLOR;
+  --gradient-forest-to: COLOR;
+  --gradient-forest-content: COLOR;
+
+  --gradient-ice-from: COLOR;
+  --gradient-ice-via: COLOR;
+  --gradient-ice-to: COLOR;
+  --gradient-ice-content: COLOR;
+
+  --gradient-metallic-from: COLOR;
+  --gradient-metallic-via: COLOR;
+  --gradient-metallic-to: COLOR;
+  --gradient-metallic-content: COLOR;
+}
