@@ -14,7 +14,7 @@ const Box = (props: BoxProps) => {
   return (
     <>
       <article
-        className="w-72 bg-primary-content/80 shadow p-4 space-y-2 rounded-md"
+        className="w-72 bg-primary-content/80 shadow p-4 space-y-2 rounded-md overflow-hidden"
         style={{ width, height }}
       >
         {SvgIcon && (

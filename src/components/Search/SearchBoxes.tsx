@@ -25,7 +25,7 @@ const SearchBoxes = () => {
       .map((icons) => {
         const [key, iconDetails] = icons;
         // @ts-ignore
-        let Component = ICONS[iconDetails.icon];
+        let Component = ICONS[iconDetails.component];
         if (Component) {
           // @ts-ignore
           return (
@@ -37,6 +37,7 @@ const SearchBoxes = () => {
                   type: "box",
                   data: {
                     component: `${key}`,
+                    props: iconDetails.props,
                   },
                 })
               }

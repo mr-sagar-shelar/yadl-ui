@@ -15,7 +15,7 @@ const Box = (props: BoxProps) => {
   return (
     <>
       <div
-        className="text-primary border border-base-content grid grid-col-2 justify-center p-4 gap-5 rounded-2xl bg-primary-content"
+        className="text-primary border border-base-content grid grid-col-2 justify-center p-4 gap-5 rounded-2xl bg-primary-content overflow-hidden"
         style={{ width, height }}
       >
         <div className="col-span-2 text-lg font-bold capitalize rounded-md">
