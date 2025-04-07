@@ -25,6 +25,13 @@
   cursor: grab;
 }
 
+.dndflow .dndbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+}
+
 .dndflow .reactflow-wrapper {
   flex-grow: 1;
   height: 100%;

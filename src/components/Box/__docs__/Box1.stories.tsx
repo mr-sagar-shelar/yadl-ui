@@ -11,7 +11,6 @@ export const Primary: Story = {
     height: 284,
     width: 256,
     title: "UI / UX Creative Desing",
-    icon: "athena",
     caption:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fuga adipisicing elit",
   },

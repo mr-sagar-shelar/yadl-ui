@@ -1,4 +1,4 @@
-import { AwsIcons } from "@utils";
+import { BoxNames } from "@utils";
 import { useMemo, useState } from "react";
 import * as ICONS from "../../index";
 import { memo } from "react";
@@ -14,8 +14,8 @@ const SearchBoxes = () => {
     event.dataTransfer.effectAllowed = "move";
   };
 
-  const IconsComponent = useMemo(() => {
-    const listItems = Object.entries(AwsIcons)
+  const AllComponent = useMemo(() => {
+    const listItems = Object.entries(BoxNames)
       .filter((icons) => {
         if (searchInput == "") {
           return true;
@@ -25,27 +25,25 @@ const SearchBoxes = () => {
       .map((icons) => {
         const [key, iconDetails] = icons;
         // @ts-ignore
-        let Icon = ICONS[iconDetails.icon];
-
-        if (Icon) {
+        let Component = ICONS[iconDetails.icon];
+        if (Component) {
           // @ts-ignore
           return (
             <div
               key={key}
-              className="dndnode m-2"
+              className="dndbox"
               onDragStart={(event) =>
                 onDragStart(event, {
-                  type: "icon",
+                  type: "box",
                   data: {
-                    icon: `${key}`,
-                    category: "aws",
+                    component: `${key}`,
                   },
                 })
               }
               draggable
               title={iconDetails.name}
             >
-              {Icon && <Icon width={50} height={50} />}
+              {Component && <Component {...iconDetails.props} />}
             </div>
           );
         }
@@ -84,8 +82,8 @@ const SearchBoxes = () => {
             />
           </label>
         </div>
-        <div className="grid grid-cols-3 overflow-auto w-full h-full">
-          Search Boxes Components
+        <div className="grid grid-cols-1 overflow-auto w-full h-full">
+          {AllComponent}
         </div>
       </div>
     </>

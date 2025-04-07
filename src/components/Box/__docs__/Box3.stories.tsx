@@ -10,7 +10,6 @@ export const Primary: Story = {
   args: {
     height: 330,
     width: 250,
-    icon: "cleanRooms",
     title: "Card Title",
     text: "Using Lorem ipsum to focus attention on graphic elements in a webpage design proposal · One of the earliest examples of the Lorem ipsum placeholder text on 1960s advertising...",
   },

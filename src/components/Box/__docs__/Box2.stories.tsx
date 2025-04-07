@@ -10,7 +10,6 @@ export const Primary: Story = {
   args: {
     height: 200,
     width: 288,
-    icon: "cleanRooms",
     caption:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fuga adipisicing elit",
   },

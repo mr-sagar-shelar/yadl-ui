@@ -10,3 +10,4 @@ export * from "./AWS";
 export * from "./Azure";
 export * from "./YadlExport";
 export * from "./Search";
+export * from "./Box";
