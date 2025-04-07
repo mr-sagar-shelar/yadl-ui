@@ -6,6 +6,9 @@ import {
   SearchAzureIcons,
   SearchThemeIsleIcons,
   SearchUndrawIcons,
+  SearchBoxes,
+  SearchTypography,
+  SearchShapes,
 } from "./index";
 
 const SearchIcons = () => {
@@ -16,8 +19,38 @@ const SearchIcons = () => {
           type="radio"
           name="searchIconTabs"
           className="tab"
-          aria-label="Skill Icons"
+          aria-label="Boxes"
           defaultChecked
+        />
+        <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
+          <SearchBoxes />
+        </div>
+
+        <input
+          type="radio"
+          name="searchIconTabs"
+          className="tab"
+          aria-label="Typography"
+        />
+        <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
+          <SearchTypography />
+        </div>
+
+        <input
+          type="radio"
+          name="searchIconTabs"
+          className="tab"
+          aria-label="Shapes"
+        />
+        <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
+          <SearchShapes />
+        </div>
+
+        <input
+          type="radio"
+          name="searchIconTabs"
+          className="tab"
+          aria-label="Skill Icons"
         />
         <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
           <SearchSkillIcons />

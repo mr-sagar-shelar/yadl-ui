@@ -5,3 +5,6 @@ export { default as SearchGCPIcons } from "./SearchGCPIcons";
 export { default as SearchThemeIsleIcons } from "./SearchThemeIsleIcons";
 export { default as SearchUndrawIcons } from "./SearchUndrawIcons";
 export { default as SearchIcons } from "./SearchIcons";
+export { default as SearchBoxes } from "./SearchBoxes";
+export { default as SearchTypography } from "./SearchTypography";
+export { default as SearchShapes } from "./SearchShapes";
