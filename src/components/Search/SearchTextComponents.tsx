@@ -1,10 +1,10 @@
-import { AwsIcons } from "@utils";
+import { TextNames } from "@utils";
 import { useMemo, useState } from "react";
 import * as ICONS from "../../index";
 import { memo } from "react";
 import { DragDropProps, useDnD } from "../Preview/DnDContext";
 
-const SearchTypography = () => {
+const SearchTextComponents = () => {
   const [searchInput, setSearchInput] = useState<string>("");
   const [_, setType] = useDnD();
   const onDragStart = (event: any, nodePayload: DragDropProps) => {
@@ -14,8 +14,8 @@ const SearchTypography = () => {
     event.dataTransfer.effectAllowed = "move";
   };
 
-  const IconsComponent = useMemo(() => {
-    const listItems = Object.entries(AwsIcons)
+  const TextComponent = useMemo(() => {
+    const listItems = Object.entries(TextNames)
       .filter((icons) => {
         if (searchInput == "") {
           return true;
@@ -23,29 +23,36 @@ const SearchTypography = () => {
         return icons[1].name.toLowerCase().includes(searchInput.toLowerCase());
       })
       .map((icons) => {
-        const [key, iconDetails] = icons;
+        const [key, textDetails] = icons;
         // @ts-ignore
-        let Icon = ICONS[iconDetails.icon];
+        let Component = ICONS[textDetails.component];
 
-        if (Icon) {
+        if (Component) {
           // @ts-ignore
           return (
             <div
               key={key}
-              className="dndnode m-2"
+              className="m-2 cursor-grab"
               onDragStart={(event) =>
                 onDragStart(event, {
-                  type: "icon",
+                  type: "text",
                   data: {
                     icon: `${key}`,
-                    category: "aws",
+                    classes: textDetails.classes,
+                    text: textDetails.text,
+                    props: textDetails.props,
                   },
                 })
               }
               draggable
-              title={iconDetails.name}
+              title={textDetails.name}
             >
-              {Icon && <Icon width={50} height={50} />}
+              {Component && (
+                <Component
+                  text={textDetails.text}
+                  classes={textDetails.classes}
+                />
+              )}
             </div>
           );
         }
@@ -84,13 +91,13 @@ const SearchTypography = () => {
             />
           </label>
         </div>
-        <div className="grid grid-cols-3 overflow-auto w-full h-full">
-          Search Typography Components
+        <div className="grid grid-cols-1 overflow-auto w-full h-full">
+          {TextComponent}
         </div>
       </div>
     </>
   );
 };
 
-const Memo = memo(SearchTypography);
+const Memo = memo(SearchTextComponents);
 export default Memo;

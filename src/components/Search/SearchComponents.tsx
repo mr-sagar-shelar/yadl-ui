@@ -7,11 +7,11 @@ import {
   SearchThemeIsleIcons,
   SearchUndrawIcons,
   SearchBoxes,
-  SearchTypography,
+  SearchTextComponents,
   SearchShapes,
 } from "./index";
 
-const SearchIcons = () => {
+const SearchComponents = () => {
   return (
     <>
       <div className="tabs tabs-box p-5 w-100 h-full">
@@ -33,7 +33,7 @@ const SearchIcons = () => {
           aria-label="Typography"
         />
         <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
-          <SearchTypography />
+          <SearchTextComponents />
         </div>
 
         <input
@@ -107,5 +107,5 @@ const SearchIcons = () => {
   );
 };
 
-const Memo = memo(SearchIcons);
+const Memo = memo(SearchComponents);
 export default Memo;

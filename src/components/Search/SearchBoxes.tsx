@@ -23,28 +23,28 @@ const SearchBoxes = () => {
         return icons[1].name.toLowerCase().includes(searchInput.toLowerCase());
       })
       .map((icons) => {
-        const [key, iconDetails] = icons;
+        const [key, boxDetails] = icons;
         // @ts-ignore
-        let Component = ICONS[iconDetails.component];
+        let Component = ICONS[boxDetails.component];
         if (Component) {
           // @ts-ignore
           return (
             <div
               key={key}
-              className="dndbox"
+              className="m-2 cursor-grab flex justify-center align-middle"
               onDragStart={(event) =>
                 onDragStart(event, {
                   type: "box",
                   data: {
                     component: `${key}`,
-                    props: iconDetails.props,
+                    props: boxDetails.props,
                   },
                 })
               }
               draggable
-              title={iconDetails.name}
+              title={boxDetails.name}
             >
-              {Component && <Component {...iconDetails.props} />}
+              {Component && <Component {...boxDetails.props} />}
             </div>
           );
         }
