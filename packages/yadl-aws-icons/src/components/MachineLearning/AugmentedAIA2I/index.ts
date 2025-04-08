@@ -1,0 +1,1 @@
+export { default as AWSMachineLearningAugmentedAIA2I } from "./AugmentedAIA2I";

@@ -1,0 +1,1 @@
+export { default as AWSStorageSimpleStorageService } from "./SimpleStorageService";

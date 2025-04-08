@@ -1,0 +1,1 @@
+export { default as AWSComputeElasticBeanstalk } from "./ElasticBeanstalk";

@@ -1,0 +1,1 @@
+export { default as AWSAppIntegrationConsoleMobileApplication } from "./ConsoleMobileApplication";

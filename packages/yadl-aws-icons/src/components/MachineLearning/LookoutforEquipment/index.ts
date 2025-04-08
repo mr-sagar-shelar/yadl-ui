@@ -1,0 +1,1 @@
+export { default as AWSMachineLearningLookoutforEquipment } from "./LookoutforEquipment";

@@ -1,0 +1,1 @@
+export { default as AWSInternetofThingsIoTAnalytics } from "./IoTAnalytics";

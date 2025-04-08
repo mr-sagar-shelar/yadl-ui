@@ -1,0 +1,1 @@
+export { default as AWSInternetofThingsIoT1Click } from "./IoT1Click";

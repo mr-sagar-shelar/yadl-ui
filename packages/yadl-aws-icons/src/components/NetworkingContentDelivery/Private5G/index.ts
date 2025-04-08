@@ -1,0 +1,1 @@
+export { default as AWSNetworkingContentDeliveryPrivate5G } from "./Private5G";

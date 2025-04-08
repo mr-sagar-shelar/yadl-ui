@@ -1,0 +1,1 @@
+export { default as AWSNetworkingContentDeliveryGlobalAccelerator } from "./GlobalAccelerator";

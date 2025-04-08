@@ -1,0 +1,1 @@
+export { default as AWSCustomerEnablementActivate } from "./Activate";

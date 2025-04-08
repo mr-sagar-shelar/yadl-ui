@@ -1,0 +1,1 @@
+export { default as AWSMachineLearningLookoutforVision } from "./LookoutforVision";

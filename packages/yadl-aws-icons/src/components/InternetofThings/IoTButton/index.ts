@@ -1,0 +1,1 @@
+export { default as AWSInternetofThingsIoTButton } from "./IoTButton";

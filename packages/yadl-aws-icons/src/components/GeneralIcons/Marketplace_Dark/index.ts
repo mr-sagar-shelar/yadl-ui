@@ -1,0 +1,1 @@
+export { default as AWSGeneralIconsMarketplace_Dark } from "./Marketplace_Dark";

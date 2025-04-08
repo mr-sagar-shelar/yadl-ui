@@ -1,0 +1,1 @@
+export { default as AWSAnalyticsGlue } from "./Glue";

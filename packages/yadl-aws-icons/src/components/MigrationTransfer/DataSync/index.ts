@@ -1,0 +1,1 @@
+export { default as AWSMigrationTransferDataSync } from "./DataSync";

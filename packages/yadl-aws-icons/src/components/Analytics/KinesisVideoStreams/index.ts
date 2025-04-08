@@ -1,0 +1,1 @@
+export { default as AWSAnalyticsKinesisVideoStreams } from "./KinesisVideoStreams";

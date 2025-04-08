@@ -1,0 +1,1 @@
+export { default as AWSNetworkingContentDeliveryRoute53 } from "./Route53";

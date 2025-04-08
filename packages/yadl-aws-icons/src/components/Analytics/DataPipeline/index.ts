@@ -1,0 +1,1 @@
+export { default as AWSAnalyticsDataPipeline } from "./DataPipeline";

@@ -1,0 +1,1 @@
+export { default as AWSManagementGovernanceChatbot } from "./Chatbot";

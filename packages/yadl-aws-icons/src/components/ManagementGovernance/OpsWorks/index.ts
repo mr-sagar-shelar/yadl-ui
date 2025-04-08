@@ -1,0 +1,1 @@
+export { default as AWSManagementGovernanceOpsWorks } from "./OpsWorks";

@@ -1,0 +1,1 @@
+export { default as AWSComputeEC2AutoScaling } from "./EC2AutoScaling";

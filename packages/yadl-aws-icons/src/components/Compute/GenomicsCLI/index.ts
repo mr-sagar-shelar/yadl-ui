@@ -1,0 +1,1 @@
+export { default as AWSComputeGenomicsCLI } from "./GenomicsCLI";

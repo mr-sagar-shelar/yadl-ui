@@ -1,0 +1,1 @@
+export { default as AWSMachineLearningCodeWhisperer } from "./CodeWhisperer";

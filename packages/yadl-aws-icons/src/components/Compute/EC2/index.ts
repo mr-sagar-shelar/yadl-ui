@@ -1,0 +1,1 @@
+export { default as AWSComputeEC2 } from "./EC2";
