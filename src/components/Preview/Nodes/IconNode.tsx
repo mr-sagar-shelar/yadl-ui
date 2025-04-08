@@ -8,13 +8,14 @@ import {
 } from "@xyflow/react";
 import * as ICONS from "../../index";
 import {
-  AwsIcons,
   AzureIcons,
   GCPIcons,
   SkillIcons,
   UndrawIcons,
   ThemeisleIcons,
 } from "@utils";
+import * as AWSIcons from "yadl-aws-icons";
+import { AwsIconNames } from "yadl-aws-icons";
 
 export interface IconNodeProps {
   data: {
@@ -38,10 +39,10 @@ function IconNode(props: IconNodeProps) {
 
   switch (category) {
     case "aws":
-      iconNamePresent = AwsIcons[icon] != undefined;
+      iconNamePresent = AwsIconNames[icon] != undefined;
       if (iconNamePresent) {
         // @ts-ignore
-        Icon = ICONS[AwsIcons[icon].icon] ?? null;
+        Icon = AWSIcons[AwsIconNames[icon].icon] ?? null;
       }
       break;
     case "gcp":

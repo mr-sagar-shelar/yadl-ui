@@ -1,4 +1,4 @@
-export * from "./AwsIcons";
+export * from "./AwsIconNames";
 
 export interface IconDetails {
   name: string;

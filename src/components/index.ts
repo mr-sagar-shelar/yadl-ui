@@ -6,7 +6,6 @@ export * from "./Animation";
 export * from "./SkillIcon";
 export * from "./Themeisle";
 export * from "./GCP";
-export * from "./AWS";
 export * from "./Azure";
 export * from "./YadlExport";
 export * from "./Search";

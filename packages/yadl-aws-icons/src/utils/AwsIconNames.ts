@@ -1,6 +1,6 @@
 import { IconNames } from "@utils";
 
-export const AwsIcons: IconNames = {
+export const AwsIconNames: IconNames = {
   aWSAppIntegrationAPIGateway: {
     name: "API Gateway",
     icon: "AWSAppIntegrationAPIGateway",

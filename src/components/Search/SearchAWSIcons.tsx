@@ -1,6 +1,6 @@
-import { AwsIcons } from "@utils";
 import { useMemo, useState } from "react";
-import * as ICONS from "../../index";
+import * as AWSIcons from "yadl-aws-icons";
+import { AwsIconNames } from "yadl-aws-icons";
 import { memo } from "react";
 import { DragDropProps, useDnD } from "../Preview/DnDContext";
 
@@ -15,7 +15,7 @@ const SearchAWSIcons = () => {
   };
 
   const IconsComponent = useMemo(() => {
-    const listItems = Object.entries(AwsIcons)
+    const listItems = Object.entries(AwsIconNames)
       .filter((icons) => {
         if (searchInput == "") {
           return true;
@@ -25,7 +25,7 @@ const SearchAWSIcons = () => {
       .map((icons) => {
         const [key, iconDetails] = icons;
         // @ts-ignore
-        let Icon = ICONS[iconDetails.icon];
+        let Icon = AWSIcons[iconDetails.icon];
 
         if (Icon) {
           // @ts-ignore
