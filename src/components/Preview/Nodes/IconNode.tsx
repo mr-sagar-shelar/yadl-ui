@@ -9,13 +9,13 @@ import {
 import * as ICONS from "../../index";
 import {
   AzureIcons,
-  // SkillIcons,
+  SkillIcons,
   GCPIcons,
   UndrawIcons,
   ThemeisleIcons,
 } from "@utils";
-import * as AWSIcons from "yadl-aws-icons";
-import { AwsIconNames } from "yadl-aws-icons";
+// import * as AWSIcons from "yadl-aws-icons";
+// import { AwsIconNames } from "yadl-aws-icons";
 // import * as SkillIcons from "yadl-skill-icons";
 // import { SkillIconNames } from "yadl-skill-icons";
 
@@ -40,13 +40,13 @@ function IconNode(props: IconNodeProps) {
   let Icon = null;
 
   switch (category) {
-    case "aws":
-      iconNamePresent = AwsIconNames[icon] != undefined;
-      if (iconNamePresent) {
-        // @ts-ignore
-        Icon = AWSIcons[AwsIconNames[icon].icon] ?? null;
-      }
-      break;
+    // case "aws":
+    //   iconNamePresent = AwsIconNames[icon] != undefined;
+    //   if (iconNamePresent) {
+    //     // @ts-ignore
+    //     Icon = AWSIcons[AwsIconNames[icon].icon] ?? null;
+    //   }
+    //   break;
     case "gcp":
       iconNamePresent = GCPIcons[icon] != undefined;
       if (iconNamePresent) {
@@ -54,13 +54,13 @@ function IconNode(props: IconNodeProps) {
         Icon = ICONS[GCPIcons[icon].icon] ?? null;
       }
       break;
-    // case "skill":
-    //   iconNamePresent = SkillIconNames[icon] != undefined;
-    //   if (iconNamePresent) {
-    //     // @ts-ignore
-    //     Icon = SkillIcons[SkillIconNames[icon].icon] ?? null;
-    //   }
-    //   break;
+    case "skill":
+      iconNamePresent = SkillIcons[icon] != undefined;
+      if (iconNamePresent) {
+        // @ts-ignore
+        Icon = ICONS[SkillIcons[icon].icon] ?? null;
+      }
+      break;
     case "azure":
       iconNamePresent = AzureIcons[icon] != undefined;
       if (iconNamePresent) {

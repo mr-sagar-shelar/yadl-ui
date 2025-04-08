@@ -1,14 +1,14 @@
 import { memo } from "react";
 import {
-  // SearchSkillIcons,
+  SearchSkillIcons,
   SearchGCPIcons,
   SearchAWSIcons,
-  // SearchAzureIcons,
-  // SearchThemeIsleIcons,
-  // SearchUndrawIcons,
-  // SearchBoxes,
-  // SearchTextComponents,
-  // SearchShapes,
+  SearchAzureIcons,
+  SearchThemeIsleIcons,
+  SearchUndrawIcons,
+  SearchBoxes,
+  SearchTextComponents,
+  SearchShapes,
 } from "./index";
 
 const SearchComponents = () => {
@@ -23,7 +23,7 @@ const SearchComponents = () => {
           defaultChecked
         />
         <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
-          {/* <SearchBoxes /> */}
+          <SearchBoxes />
         </div>
 
         <input
@@ -33,7 +33,7 @@ const SearchComponents = () => {
           aria-label="Typography"
         />
         <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
-          {/* <SearchTextComponents /> */}
+          <SearchTextComponents />
         </div>
 
         <input
@@ -43,7 +43,7 @@ const SearchComponents = () => {
           aria-label="Shapes"
         />
         <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
-          {/* <SearchShapes /> */}
+          <SearchShapes />
         </div>
 
         <input
@@ -53,7 +53,7 @@ const SearchComponents = () => {
           aria-label="Skill Icons"
         />
         <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
-          {/* <SearchSkillIcons /> */}
+          <SearchSkillIcons />
         </div>
         <input
           type="radio"
@@ -82,7 +82,7 @@ const SearchComponents = () => {
           aria-label="Azure"
         />
         <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
-          {/* <SearchAzureIcons /> */}
+          <SearchAzureIcons />
         </div>
         <input
           type="radio"
@@ -91,7 +91,7 @@ const SearchComponents = () => {
           aria-label="Themeisle"
         />
         <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
-          {/* <SearchThemeIsleIcons /> */}
+          <SearchThemeIsleIcons />
         </div>
         <input
           type="radio"
@@ -100,7 +100,7 @@ const SearchComponents = () => {
           aria-label="Undraw"
         />
         <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
-          {/* <SearchUndrawIcons /> */}
+          <SearchUndrawIcons />
         </div>
       </div>
     </>
