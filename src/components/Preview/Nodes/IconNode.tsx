@@ -9,7 +9,7 @@ import {
 import * as ICONS from "../../index";
 import {
   AzureIcons,
-  SkillIcons,
+  // SkillIcons,
   GCPIcons,
   UndrawIcons,
   ThemeisleIcons,
@@ -54,13 +54,13 @@ function IconNode(props: IconNodeProps) {
         Icon = ICONS[GCPIcons[icon].icon] ?? null;
       }
       break;
-    case "skill":
-      iconNamePresent = SkillIcons[icon] != undefined;
-      if (iconNamePresent) {
-        // @ts-ignore
-        Icon = ICONS[SkillIcons[icon].icon] ?? null;
-      }
-      break;
+    // case "skill":
+    //   iconNamePresent = SkillIconNames[icon] != undefined;
+    //   if (iconNamePresent) {
+    //     // @ts-ignore
+    //     Icon = SkillIcons[SkillIconNames[icon].icon] ?? null;
+    //   }
+    //   break;
     case "azure":
       iconNamePresent = AzureIcons[icon] != undefined;
       if (iconNamePresent) {
