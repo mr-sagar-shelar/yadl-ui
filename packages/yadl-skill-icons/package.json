@@ -39,7 +39,7 @@
   "keywords": [],
   "author": "Sagar Shelar",
   "license": "MIT",
-  "description": "YADL AWS ICONs",
+  "description": "YADL SKILL ICONs",
   "peerDependencies": {
     "daisyui": "^5.0.9",
     "react": "^19.0.0",

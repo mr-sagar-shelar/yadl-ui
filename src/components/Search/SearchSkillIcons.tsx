@@ -1,6 +1,6 @@
+import { SkillIcons } from "@utils";
 import { useMemo, useState } from "react";
-import * as SkillIcons from "yadl-skill-icons";
-import { SkillIconNames } from "yadl-skill-icons";
+import * as ICONS from "../../index";
 import { memo } from "react";
 import { DragDropProps, useDnD } from "../Preview/DnDContext";
 
@@ -15,7 +15,7 @@ const SearchAWS = () => {
   };
 
   const IconsComponent = useMemo(() => {
-    const listItems = Object.entries(SkillIconNames)
+    const listItems = Object.entries(SkillIcons)
       .filter((icons) => {
         if (searchInput == "") {
           return true;
@@ -25,7 +25,7 @@ const SearchAWS = () => {
       .map((icons) => {
         const [key, iconDetails] = icons;
         // @ts-ignore
-        let Icon = SkillIcons[iconDetails.icon];
+        let Icon = ICONS[iconDetails.icon];
 
         if (Icon) {
           // @ts-ignore
