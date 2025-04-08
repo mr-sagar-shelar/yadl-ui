@@ -14,12 +14,13 @@ export interface TextNodeProps {
     props?: any;
     text: string;
     classes: string;
+    fontFamily: string;
   };
   selected: boolean;
 }
 function TextNode(properties: TextNodeProps) {
   const {
-    data: { text, classes, props },
+    data: { text, classes, props, fontFamily },
     selected = false,
   } = properties;
   const [currentWidth, setCurrentWidth] = useState<number>(props.width || 50);
@@ -37,6 +38,7 @@ function TextNode(properties: TextNodeProps) {
       <Text
         text={text}
         classes={classes}
+        fontFamily={fontFamily}
         {...props}
         width={currentWidth}
         height={currentHeight}

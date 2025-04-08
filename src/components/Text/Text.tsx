@@ -1,14 +1,15 @@
 export type TextProps = {
   classes?: string;
   text?: string;
+  fontFamily: string;
 };
 
 const Text = (props: TextProps) => {
-  const { classes } = props;
+  const { classes, fontFamily, text } = props;
   return (
     <>
-      <div className={classes} {...props}>
-        {props.text}
+      <div style={{ fontFamily: fontFamily }} className={classes} {...props}>
+        {text}
       </div>
     </>
   );
