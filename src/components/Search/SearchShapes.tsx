@@ -86,6 +86,7 @@ const SearchShapes = () => {
         </div>
         <div className="grid grid-cols-3 overflow-auto w-full h-full">
           Search Shapes Components
+          {IconsComponent}
         </div>
       </div>
     </>

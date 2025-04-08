@@ -1,0 +1,35 @@
+{
+  "name": "yadl-aws-icons",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "devDependencies": {},
+  "scripts": {
+    "format": "prettier --write --parser typescript '**/*.{ts,tsx}'",
+    "lint": "eslint . --ext .ts,.tsx --ignore-path .gitignore --fix",
+    "build": "tsc && vite build",
+    "test": "vitest run",
+    "test-watch": "vitest",
+    "test:ui": "vitest --ui",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mr-sagar-shelar/yadl-ui.git"
+  },
+  "keywords": [],
+  "author": "Sagar Shelar",
+  "license": "MIT",
+  "description": "YADL AWS ICONs",
+  "peerDependencies": {
+    "@xyflow/react": "^12.5.1",
+    "daisyui": "^5.0.9",
+    "react": "^19.0.0"
+  }
+}
