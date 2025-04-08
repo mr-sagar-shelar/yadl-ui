@@ -1,1 +1,0 @@
-export { default as AWSMediaServicesElementalLink } from "./ElementalLink";

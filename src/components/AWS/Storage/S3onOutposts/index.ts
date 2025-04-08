@@ -1,1 +1,0 @@
-export { default as AWSStorageS3onOutposts } from "./S3onOutposts";

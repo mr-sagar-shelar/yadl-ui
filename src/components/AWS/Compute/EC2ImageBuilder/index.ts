@@ -1,1 +1,0 @@
-export { default as AWSComputeEC2ImageBuilder } from "./EC2ImageBuilder";

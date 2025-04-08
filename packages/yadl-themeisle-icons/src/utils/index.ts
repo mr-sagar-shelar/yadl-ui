@@ -1,4 +1,4 @@
-export * from "./ThemeIsleIcons";
+export * from "./ThemeIsleIconNames";
 
 export interface IconDetails {
   name: string;

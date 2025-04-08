@@ -1,1 +1,0 @@
-export { default as AWSCustomerEnablementTrainingCertification } from "./TrainingCertification";

@@ -1,4 +1,4 @@
-export * from "./UndrawIcons";
+export * from "./UndrawIconNames";
 
 export interface IconDetails {
   name: string;

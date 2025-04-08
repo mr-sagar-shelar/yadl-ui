@@ -1,1 +1,0 @@
-export { default as AWSMachineLearningDeepLens } from "./DeepLens";

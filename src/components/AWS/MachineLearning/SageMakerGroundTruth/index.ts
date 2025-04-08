@@ -1,1 +1,0 @@
-export { default as AWSMachineLearningSageMakerGroundTruth } from "./SageMakerGroundTruth";

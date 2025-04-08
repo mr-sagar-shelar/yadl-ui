@@ -1,1 +1,0 @@
-export { default as AWSAppIntegrationSimpleNotificationService } from "./SimpleNotificationService";

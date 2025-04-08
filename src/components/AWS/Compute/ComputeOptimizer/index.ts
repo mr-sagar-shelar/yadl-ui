@@ -1,1 +1,0 @@
-export { default as AWSComputeComputeOptimizer } from "./ComputeOptimizer";

@@ -1,4 +1,4 @@
-export * from "./GCPIcons";
+export * from "./GCPIconNames";
 
 export interface IconDetails {
   name: string;

@@ -1,1 +1,0 @@
-export { default as AWSAnalyticsKinesisFirehose } from "./KinesisFirehose";

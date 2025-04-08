@@ -1,1 +1,0 @@
-export { default as AWSMediaServicesElementalDelta } from "./ElementalDelta";

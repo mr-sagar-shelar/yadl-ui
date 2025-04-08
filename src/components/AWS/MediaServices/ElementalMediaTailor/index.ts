@@ -1,1 +1,0 @@
-export { default as AWSMediaServicesElementalMediaTailor } from "./ElementalMediaTailor";

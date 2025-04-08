@@ -1,1 +1,0 @@
-export { default as AWSMediaServicesElementalAppliancesSoftware } from "./ElementalAppliancesSoftware";

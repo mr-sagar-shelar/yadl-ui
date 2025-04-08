@@ -1,1 +1,0 @@
-export { default as AWSNetworkingContentDeliveryClientVPN } from "./ClientVPN";

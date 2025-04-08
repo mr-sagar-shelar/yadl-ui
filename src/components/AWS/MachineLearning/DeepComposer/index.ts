@@ -1,1 +1,0 @@
-export { default as AWSMachineLearningDeepComposer } from "./DeepComposer";

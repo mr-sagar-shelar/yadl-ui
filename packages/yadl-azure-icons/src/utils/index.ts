@@ -1,4 +1,4 @@
-export * from "./AzureIcons";
+export * from "./AzureIconNames";
 
 export interface IconDetails {
   name: string;

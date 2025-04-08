@@ -1,1 +1,0 @@
-export { default as AWSManagementGovernanceLicenseManager } from "./LicenseManager";

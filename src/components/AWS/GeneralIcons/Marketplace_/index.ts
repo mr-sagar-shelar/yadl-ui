@@ -1,1 +1,0 @@
-export { default as AWSGeneralIconsMarketplace_ } from "./Marketplace_";

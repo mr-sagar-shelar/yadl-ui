@@ -1,1 +1,0 @@
-export { default as AWSDatabaseDatabaseMigrationService } from "./DatabaseMigrationService";

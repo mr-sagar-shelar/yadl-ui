@@ -1,1 +1,0 @@
-export { default as AWSManagementGovernanceCloudWatch } from "./CloudWatch";

@@ -1,1 +1,0 @@
-export { default as AWSManagementGovernanceServiceManagementConnector } from "./ServiceManagementConnector";

@@ -1,4 +1,4 @@
-export * from "./SkillIcons";
+export * from "./SkillIconNames";
 
 export interface IconDetails {
   name: string;

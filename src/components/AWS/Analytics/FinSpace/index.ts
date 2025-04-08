@@ -1,1 +1,0 @@
-export { default as AWSAnalyticsFinSpace } from "./FinSpace";
