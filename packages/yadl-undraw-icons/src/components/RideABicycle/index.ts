@@ -1,0 +1,1 @@
+export { default as UndrawRideABicycle } from "./RideABicycle";

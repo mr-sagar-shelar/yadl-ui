@@ -1,0 +1,1 @@
+export { default as UndrawTestimonials } from "./Testimonials";

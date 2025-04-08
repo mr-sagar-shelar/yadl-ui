@@ -1,0 +1,1 @@
+export { default as UndrawTabs } from "./Tabs";

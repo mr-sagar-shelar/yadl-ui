@@ -1,0 +1,1 @@
+export { default as UndrawWelcome_catsWelcomeCats } from "./Welcome_catsWelcomeCats";

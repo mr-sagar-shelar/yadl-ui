@@ -1,0 +1,1 @@
+export { default as UndrawNew_decadeNewDecade } from "./New_decadeNewDecade";

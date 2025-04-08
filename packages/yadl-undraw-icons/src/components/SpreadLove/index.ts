@@ -1,0 +1,1 @@
+export { default as UndrawSpreadLove } from "./SpreadLove";

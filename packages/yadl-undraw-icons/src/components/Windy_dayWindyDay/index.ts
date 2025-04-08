@@ -1,0 +1,1 @@
+export { default as UndrawWindy_dayWindyDay } from "./Windy_dayWindyDay";

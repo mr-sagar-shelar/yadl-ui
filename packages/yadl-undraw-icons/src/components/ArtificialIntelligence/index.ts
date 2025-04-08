@@ -1,0 +1,1 @@
+export { default as UndrawArtificialIntelligence } from "./ArtificialIntelligence";

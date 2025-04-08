@@ -1,0 +1,1 @@
+export { default as UndrawMobilePayments } from "./MobilePayments";

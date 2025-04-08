@@ -1,0 +1,1 @@
+export { default as UndrawSlider } from "./Slider";

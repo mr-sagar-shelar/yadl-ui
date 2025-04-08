@@ -1,0 +1,1 @@
+export { default as UndrawWinter_activitiesWinterActivities } from "./Winter_activitiesWinterActivities";

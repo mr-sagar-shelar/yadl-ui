@@ -1,0 +1,1 @@
+export { default as UndrawPhotoAlbum } from "./PhotoAlbum";

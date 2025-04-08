@@ -1,0 +1,1 @@
+export { default as UndrawEatingTogether } from "./EatingTogether";

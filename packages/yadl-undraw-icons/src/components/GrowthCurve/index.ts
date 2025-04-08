@@ -1,0 +1,1 @@
+export { default as UndrawGrowthCurve } from "./GrowthCurve";

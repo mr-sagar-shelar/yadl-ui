@@ -1,0 +1,1 @@
+export { default as UndrawStartupLife } from "./StartupLife";

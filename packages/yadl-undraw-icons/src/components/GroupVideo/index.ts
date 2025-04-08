@@ -1,0 +1,1 @@
+export { default as UndrawGroupVideo } from "./GroupVideo";

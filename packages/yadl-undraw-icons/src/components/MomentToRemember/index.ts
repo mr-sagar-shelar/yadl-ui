@@ -1,0 +1,1 @@
+export { default as UndrawMomentToRemember } from "./MomentToRemember";

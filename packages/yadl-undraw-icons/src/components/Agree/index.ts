@@ -1,0 +1,1 @@
+export { default as UndrawAgree } from "./Agree";

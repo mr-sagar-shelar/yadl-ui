@@ -1,0 +1,1 @@
+export { default as UndrawSocialNotifications } from "./SocialNotifications";

@@ -1,0 +1,1 @@
+export { default as UndrawEmailCampaign } from "./EmailCampaign";

@@ -1,0 +1,1 @@
+export { default as UndrawSocial_distancingSocialDistancing } from "./Social_distancingSocialDistancing";

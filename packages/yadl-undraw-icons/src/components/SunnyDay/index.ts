@@ -1,0 +1,1 @@
+export { default as UndrawSunnyDay } from "./SunnyDay";

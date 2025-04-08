@@ -1,0 +1,1 @@
+export { default as UndrawProud_selfProudSelf } from "./Proud_selfProudSelf";

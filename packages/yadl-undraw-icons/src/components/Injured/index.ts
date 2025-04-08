@@ -1,0 +1,1 @@
+export { default as UndrawInjured } from "./Injured";

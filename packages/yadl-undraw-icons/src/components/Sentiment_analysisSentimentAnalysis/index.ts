@@ -1,0 +1,1 @@
+export { default as UndrawSentiment_analysisSentimentAnalysis } from "./Sentiment_analysisSentimentAnalysis";

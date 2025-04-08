@@ -1,0 +1,1 @@
+export { default as UndrawFeeling_proudFeelingProud } from "./Feeling_proudFeelingProud";

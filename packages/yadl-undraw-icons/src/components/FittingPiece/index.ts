@@ -1,0 +1,1 @@
+export { default as UndrawFittingPiece } from "./FittingPiece";

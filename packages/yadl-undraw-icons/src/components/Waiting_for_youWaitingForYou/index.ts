@@ -1,0 +1,1 @@
+export { default as UndrawWaiting_for_youWaitingForYou } from "./Waiting_for_youWaitingForYou";

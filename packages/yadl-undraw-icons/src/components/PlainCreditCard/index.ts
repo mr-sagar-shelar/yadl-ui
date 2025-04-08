@@ -1,0 +1,1 @@
+export { default as UndrawPlainCreditCard } from "./PlainCreditCard";

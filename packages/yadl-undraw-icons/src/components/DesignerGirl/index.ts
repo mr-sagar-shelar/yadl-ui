@@ -1,0 +1,1 @@
+export { default as UndrawDesignerGirl } from "./DesignerGirl";

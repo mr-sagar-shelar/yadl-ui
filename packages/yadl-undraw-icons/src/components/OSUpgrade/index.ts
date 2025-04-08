@@ -1,0 +1,1 @@
+export { default as UndrawOSUpgrade } from "./OSUpgrade";

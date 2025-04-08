@@ -1,0 +1,1 @@
+export { default as UndrawMessageSent } from "./MessageSent";

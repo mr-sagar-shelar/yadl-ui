@@ -1,0 +1,1 @@
+export { default as UndrawTrendyInterface } from "./TrendyInterface";

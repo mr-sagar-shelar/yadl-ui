@@ -1,0 +1,1 @@
+export { default as UndrawHome_cinemaHomeCinema } from "./Home_cinemaHomeCinema";

@@ -1,0 +1,1 @@
+export { default as UndrawPersonalization } from "./Personalization";

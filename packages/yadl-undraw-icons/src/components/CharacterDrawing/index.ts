@@ -1,0 +1,1 @@
+export { default as UndrawCharacterDrawing } from "./CharacterDrawing";

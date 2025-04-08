@@ -1,0 +1,1 @@
+export { default as UndrawGravitasGravitas } from "./GravitasGravitas";

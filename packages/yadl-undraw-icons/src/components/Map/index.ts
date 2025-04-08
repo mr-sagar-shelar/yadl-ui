@@ -1,0 +1,1 @@
+export { default as UndrawMap } from "./Map";

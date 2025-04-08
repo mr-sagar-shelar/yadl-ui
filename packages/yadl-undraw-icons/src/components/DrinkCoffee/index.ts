@@ -1,0 +1,1 @@
+export { default as UndrawDrinkCoffee } from "./DrinkCoffee";

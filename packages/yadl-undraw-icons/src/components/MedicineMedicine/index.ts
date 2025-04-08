@@ -1,0 +1,1 @@
+export { default as UndrawMedicineMedicine } from "./MedicineMedicine";

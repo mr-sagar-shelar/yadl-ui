@@ -1,0 +1,1 @@
+export { default as UndrawVirtual_assistantVirtualAssistant } from "./Virtual_assistantVirtualAssistant";

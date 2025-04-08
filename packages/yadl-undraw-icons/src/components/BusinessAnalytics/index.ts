@@ -1,0 +1,1 @@
+export { default as UndrawBusinessAnalytics } from "./BusinessAnalytics";

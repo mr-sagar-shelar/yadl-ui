@@ -1,0 +1,1 @@
+export { default as UndrawBear_marketBearMarket } from "./Bear_marketBearMarket";

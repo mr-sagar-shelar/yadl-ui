@@ -1,0 +1,1 @@
+export { default as UndrawSculptingSculpting } from "./SculptingSculpting";

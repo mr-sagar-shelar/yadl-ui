@@ -1,0 +1,1 @@
+export { default as UndrawAWholeYearAWholeYear } from "./AWholeYearAWholeYear";

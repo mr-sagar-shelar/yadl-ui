@@ -1,0 +1,1 @@
+export { default as UndrawWebsiteSetup } from "./WebsiteSetup";

@@ -1,0 +1,1 @@
+export { default as UndrawEnvironment1Environment } from "./Environment1Environment";

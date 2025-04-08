@@ -1,0 +1,1 @@
+export { default as UndrawJoyride } from "./Joyride";

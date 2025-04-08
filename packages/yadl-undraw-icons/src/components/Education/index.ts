@@ -1,0 +1,1 @@
+export { default as UndrawEducation } from "./Education";

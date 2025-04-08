@@ -1,0 +1,1 @@
+export { default as UndrawMailbox } from "./Mailbox";

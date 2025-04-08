@@ -1,0 +1,1 @@
+export { default as UndrawMobileApps } from "./MobileApps";

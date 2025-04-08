@@ -1,0 +1,1 @@
+export { default as UndrawHire } from "./Hire";

@@ -1,0 +1,1 @@
+export { default as UndrawBusinessChat } from "./BusinessChat";

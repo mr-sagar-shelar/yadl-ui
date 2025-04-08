@@ -1,0 +1,1 @@
+export { default as UndrawMobile_webMobileWeb } from "./Mobile_webMobileWeb";

@@ -1,0 +1,1 @@
+export { default as UndrawArtistArtist } from "./ArtistArtist";

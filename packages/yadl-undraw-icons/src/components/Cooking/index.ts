@@ -1,0 +1,1 @@
+export { default as UndrawCooking } from "./Cooking";

@@ -1,0 +1,1 @@
+export { default as UndrawIce_creamIceCream } from "./Ice_creamIceCream";

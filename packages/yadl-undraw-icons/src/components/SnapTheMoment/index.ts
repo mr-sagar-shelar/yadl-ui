@@ -1,0 +1,1 @@
+export { default as UndrawSnapTheMoment } from "./SnapTheMoment";

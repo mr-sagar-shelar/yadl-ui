@@ -1,0 +1,1 @@
+export { default as UndrawGraduation } from "./Graduation";

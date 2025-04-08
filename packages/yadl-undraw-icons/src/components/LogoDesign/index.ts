@@ -1,0 +1,1 @@
+export { default as UndrawLogoDesign } from "./LogoDesign";

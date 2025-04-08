@@ -1,0 +1,1 @@
+export { default as UndrawInbox } from "./Inbox";

@@ -1,0 +1,1 @@
+export { default as UndrawInvestmentData } from "./InvestmentData";

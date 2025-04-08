@@ -1,0 +1,1 @@
+export { default as UndrawOnline_transactionsOnlineTransactions } from "./Online_transactionsOnlineTransactions";

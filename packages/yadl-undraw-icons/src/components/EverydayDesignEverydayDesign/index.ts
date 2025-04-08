@@ -1,0 +1,1 @@
+export { default as UndrawEverydayDesignEverydayDesign } from "./EverydayDesignEverydayDesign";

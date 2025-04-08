@@ -1,0 +1,1 @@
+export { default as UndrawHeavy_boxHeavyBox } from "./Heavy_boxHeavyBox";

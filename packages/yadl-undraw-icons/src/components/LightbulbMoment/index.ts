@@ -1,0 +1,1 @@
+export { default as UndrawLightbulbMoment } from "./LightbulbMoment";

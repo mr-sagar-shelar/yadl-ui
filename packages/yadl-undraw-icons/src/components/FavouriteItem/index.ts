@@ -1,0 +1,1 @@
+export { default as UndrawFavouriteItem } from "./FavouriteItem";

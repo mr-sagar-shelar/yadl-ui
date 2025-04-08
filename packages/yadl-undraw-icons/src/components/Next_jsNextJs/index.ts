@@ -1,0 +1,1 @@
+export { default as UndrawNext_jsNextJs } from "./Next_jsNextJs";

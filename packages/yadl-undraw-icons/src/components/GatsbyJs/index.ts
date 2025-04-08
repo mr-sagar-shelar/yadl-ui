@@ -1,0 +1,1 @@
+export { default as UndrawGatsbyJs } from "./GatsbyJs";

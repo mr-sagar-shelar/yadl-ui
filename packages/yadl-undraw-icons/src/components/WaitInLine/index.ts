@@ -1,0 +1,1 @@
+export { default as UndrawWaitInLine } from "./WaitInLine";

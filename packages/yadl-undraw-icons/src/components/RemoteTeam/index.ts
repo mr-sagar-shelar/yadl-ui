@@ -1,0 +1,1 @@
+export { default as UndrawRemoteTeam } from "./RemoteTeam";

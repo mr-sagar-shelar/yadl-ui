@@ -1,0 +1,1 @@
+export { default as UndrawStand_outStandOut } from "./Stand_outStandOut";

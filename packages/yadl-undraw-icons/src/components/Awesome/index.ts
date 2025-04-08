@@ -1,0 +1,1 @@
+export { default as UndrawAwesome } from "./Awesome";

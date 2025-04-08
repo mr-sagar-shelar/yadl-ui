@@ -1,0 +1,1 @@
+export { default as UndrawWash_handsWashHands } from "./Wash_handsWashHands";

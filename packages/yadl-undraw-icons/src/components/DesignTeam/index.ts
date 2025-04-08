@@ -1,0 +1,1 @@
+export { default as UndrawDesignTeam } from "./DesignTeam";

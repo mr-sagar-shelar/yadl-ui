@@ -1,0 +1,1 @@
+export { default as UndrawInternetOnTheGo } from "./InternetOnTheGo";

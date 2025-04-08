@@ -1,0 +1,1 @@
+export { default as UndrawCard_postalCardPostal } from "./Card_postalCardPostal";

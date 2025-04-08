@@ -1,0 +1,1 @@
+export { default as UndrawFingerprint } from "./Fingerprint";

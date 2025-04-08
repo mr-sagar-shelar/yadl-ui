@@ -1,0 +1,1 @@
+export { default as UndrawXmas_snowmanXmasSnowman } from "./Xmas_snowmanXmasSnowman";

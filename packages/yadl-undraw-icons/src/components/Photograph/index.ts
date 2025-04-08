@@ -1,0 +1,1 @@
+export { default as UndrawPhotograph } from "./Photograph";

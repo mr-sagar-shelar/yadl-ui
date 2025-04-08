@@ -1,0 +1,1 @@
+export { default as UndrawPrivateFiles } from "./PrivateFiles";

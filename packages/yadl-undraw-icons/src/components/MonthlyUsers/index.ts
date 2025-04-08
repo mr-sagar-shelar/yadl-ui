@@ -1,0 +1,1 @@
+export { default as UndrawMonthlyUsers } from "./MonthlyUsers";

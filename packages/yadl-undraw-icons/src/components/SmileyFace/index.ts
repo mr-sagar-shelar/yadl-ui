@@ -1,0 +1,1 @@
+export { default as UndrawSmileyFace } from "./SmileyFace";

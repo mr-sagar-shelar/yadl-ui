@@ -1,0 +1,1 @@
+export { default as UndrawLiving } from "./Living";

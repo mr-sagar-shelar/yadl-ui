@@ -1,0 +1,1 @@
+export { default as UndrawMobile_devicesMobileDevices } from "./Mobile_devicesMobileDevices";

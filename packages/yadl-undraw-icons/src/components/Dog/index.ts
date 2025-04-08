@@ -1,0 +1,1 @@
+export { default as UndrawDog } from "./Dog";

@@ -1,0 +1,1 @@
+export { default as UndrawLikeDislike } from "./LikeDislike";

@@ -1,0 +1,1 @@
+export { default as UndrawEiffelTower } from "./EiffelTower";

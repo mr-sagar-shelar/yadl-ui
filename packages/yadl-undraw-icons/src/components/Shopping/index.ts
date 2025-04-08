@@ -1,0 +1,1 @@
+export { default as UndrawShopping } from "./Shopping";

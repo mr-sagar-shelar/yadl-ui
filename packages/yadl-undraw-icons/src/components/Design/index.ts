@@ -1,0 +1,1 @@
+export { default as UndrawDesign } from "./Design";

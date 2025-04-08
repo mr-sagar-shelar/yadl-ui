@@ -1,0 +1,1 @@
+export { default as UndrawTwo_factor_authenticationTwoFactorAuthentication } from "./Two_factor_authenticationTwoFactorAuthentication";

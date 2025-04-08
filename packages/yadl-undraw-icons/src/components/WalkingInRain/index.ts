@@ -1,0 +1,1 @@
+export { default as UndrawWalkingInRain } from "./WalkingInRain";

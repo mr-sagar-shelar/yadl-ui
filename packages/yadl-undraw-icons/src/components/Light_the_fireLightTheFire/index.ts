@@ -1,0 +1,1 @@
+export { default as UndrawLight_the_fireLightTheFire } from "./Light_the_fireLightTheFire";

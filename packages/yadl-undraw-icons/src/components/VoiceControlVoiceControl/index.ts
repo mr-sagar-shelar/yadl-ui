@@ -1,0 +1,1 @@
+export { default as UndrawVoiceControlVoiceControl } from "./VoiceControlVoiceControl";

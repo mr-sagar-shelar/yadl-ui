@@ -1,0 +1,1 @@
+export { default as UndrawUploadImage } from "./UploadImage";

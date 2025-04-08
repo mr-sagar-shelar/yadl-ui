@@ -1,0 +1,1 @@
+export { default as UndrawMobile_prototypingMobilePrototyping } from "./Mobile_prototypingMobilePrototyping";

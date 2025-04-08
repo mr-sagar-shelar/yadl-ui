@@ -1,0 +1,1 @@
+export { default as UndrawJustSaying } from "./JustSaying";

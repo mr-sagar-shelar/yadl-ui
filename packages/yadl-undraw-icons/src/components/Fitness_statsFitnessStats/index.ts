@@ -1,0 +1,1 @@
+export { default as UndrawFitness_statsFitnessStats } from "./Fitness_statsFitnessStats";

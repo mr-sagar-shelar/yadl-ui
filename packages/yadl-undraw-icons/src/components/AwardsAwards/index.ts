@@ -1,0 +1,1 @@
+export { default as UndrawAwardsAwards } from "./AwardsAwards";

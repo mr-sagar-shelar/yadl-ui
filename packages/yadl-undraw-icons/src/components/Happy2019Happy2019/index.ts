@@ -1,0 +1,1 @@
+export { default as UndrawHappy2019Happy2019 } from "./Happy2019Happy2019";

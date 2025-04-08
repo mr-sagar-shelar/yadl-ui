@@ -1,0 +1,1 @@
+export { default as UndrawNewYear2025 } from "./NewYear2025";

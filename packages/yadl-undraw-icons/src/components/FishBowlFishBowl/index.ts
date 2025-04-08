@@ -1,0 +1,1 @@
+export { default as UndrawFishBowlFishBowl } from "./FishBowlFishBowl";

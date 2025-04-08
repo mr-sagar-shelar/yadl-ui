@@ -1,0 +1,1 @@
+export { default as UndrawRegain_focusRegainFocus } from "./Regain_focusRegainFocus";

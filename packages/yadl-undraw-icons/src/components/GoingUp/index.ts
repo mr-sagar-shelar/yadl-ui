@@ -1,0 +1,1 @@
+export { default as UndrawGoingUp } from "./GoingUp";
