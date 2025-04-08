@@ -7,15 +7,11 @@ import {
   ResizeParamsWithDirection,
 } from "@xyflow/react";
 import * as ICONS from "../../index";
-import {
-  AzureIcons,
-  GCPIcons,
-  SkillIcons,
-  UndrawIcons,
-  ThemeisleIcons,
-} from "@utils";
+import { AzureIcons, GCPIcons, UndrawIcons, ThemeisleIcons } from "@utils";
 import * as AWSIcons from "yadl-aws-icons";
 import { AwsIconNames } from "yadl-aws-icons";
+import * as SkillIcons from "yadl-skill-icons";
+import { SkillIconNames } from "yadl-skill-icons";
 
 export interface IconNodeProps {
   data: {
@@ -53,10 +49,10 @@ function IconNode(props: IconNodeProps) {
       }
       break;
     case "skill":
-      iconNamePresent = SkillIcons[icon] != undefined;
+      iconNamePresent = SkillIconNames[icon] != undefined;
       if (iconNamePresent) {
         // @ts-ignore
-        Icon = ICONS[SkillIcons[icon].icon] ?? null;
+        Icon = SkillIcons[SkillIconNames[icon].icon] ?? null;
       }
       break;
     case "azure":
