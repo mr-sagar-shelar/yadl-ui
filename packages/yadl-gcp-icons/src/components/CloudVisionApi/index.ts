@@ -1,0 +1,1 @@
+export { default as GCPCloudVisionApi } from "./CloudVisionApi";

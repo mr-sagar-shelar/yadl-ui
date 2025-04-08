@@ -1,0 +1,1 @@
+export { default as GCPSecretManager } from "./SecretManager";

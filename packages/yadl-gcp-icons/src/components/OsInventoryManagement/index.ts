@@ -1,0 +1,1 @@
+export { default as GCPOsInventoryManagement } from "./OsInventoryManagement";

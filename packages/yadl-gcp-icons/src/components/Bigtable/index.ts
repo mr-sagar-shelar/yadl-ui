@@ -1,0 +1,1 @@
+export { default as GCPBigtable } from "./Bigtable";

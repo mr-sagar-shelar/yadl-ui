@@ -1,0 +1,1 @@
+export { default as GCPAssetInventory } from "./AssetInventory";

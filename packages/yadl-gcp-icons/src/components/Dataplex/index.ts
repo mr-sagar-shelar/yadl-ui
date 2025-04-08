@@ -1,0 +1,1 @@
+export { default as GCPDataplex } from "./Dataplex";

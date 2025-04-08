@@ -1,0 +1,1 @@
+export { default as GCPAnthos } from "./Anthos";

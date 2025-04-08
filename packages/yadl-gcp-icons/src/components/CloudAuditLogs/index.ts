@@ -1,0 +1,1 @@
+export { default as GCPCloudAuditLogs } from "./CloudAuditLogs";

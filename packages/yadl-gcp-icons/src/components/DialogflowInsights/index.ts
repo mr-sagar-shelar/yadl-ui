@@ -1,0 +1,1 @@
+export { default as GCPDialogflowInsights } from "./DialogflowInsights";

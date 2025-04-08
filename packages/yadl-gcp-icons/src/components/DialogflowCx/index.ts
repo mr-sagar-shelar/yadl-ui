@@ -1,0 +1,1 @@
+export { default as GCPDialogflowCx } from "./DialogflowCx";

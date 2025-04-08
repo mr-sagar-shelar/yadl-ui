@@ -1,0 +1,1 @@
+export { default as GCPRetailApi } from "./RetailApi";

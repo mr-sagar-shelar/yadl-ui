@@ -1,0 +1,1 @@
+export { default as GCPAdministration } from "./Administration";

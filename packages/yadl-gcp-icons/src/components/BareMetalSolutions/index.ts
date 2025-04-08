@@ -1,0 +1,1 @@
+export { default as GCPBareMetalSolutions } from "./BareMetalSolutions";

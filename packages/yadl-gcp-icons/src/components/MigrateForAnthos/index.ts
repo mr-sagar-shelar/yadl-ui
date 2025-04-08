@@ -1,0 +1,1 @@
+export { default as GCPMigrateForAnthos } from "./MigrateForAnthos";

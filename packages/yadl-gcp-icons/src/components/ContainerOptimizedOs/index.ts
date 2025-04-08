@@ -1,0 +1,1 @@
+export { default as GCPContainerOptimizedOs } from "./ContainerOptimizedOs";

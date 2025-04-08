@@ -1,0 +1,1 @@
+export { default as GCPCloudStorage } from "./CloudStorage";

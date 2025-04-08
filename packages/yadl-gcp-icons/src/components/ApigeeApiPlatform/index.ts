@@ -1,0 +1,1 @@
+export { default as GCPApigeeApiPlatform } from "./ApigeeApiPlatform";

@@ -1,0 +1,1 @@
+export { default as GCPDataStudio } from "./DataStudio";

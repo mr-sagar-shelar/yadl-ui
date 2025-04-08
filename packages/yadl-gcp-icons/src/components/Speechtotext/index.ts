@@ -1,0 +1,1 @@
+export { default as GCPSpeechtotext } from "./Speechtotext";

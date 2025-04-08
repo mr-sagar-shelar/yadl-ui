@@ -1,0 +1,1 @@
+export { default as GCPCloudFunctions } from "./CloudFunctions";
