@@ -1,6 +1,6 @@
 import { IconNames } from "@utils";
 
-export const ThemeIsleIconNames: IconNames = {
+export const ThemeisleIconNames: IconNames = {
   themeisle1: { name: "Themeisle 1", icon: "Themeisle1" },
   themeisle2: { name: "Themeisle 2", icon: "Themeisle2" },
   themeisle3: { name: "Themeisle 3", icon: "Themeisle3" },
