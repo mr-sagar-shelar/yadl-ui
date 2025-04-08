@@ -1,0 +1,1 @@
+export { default as AzureGeneralMobile } from "./Mobile";

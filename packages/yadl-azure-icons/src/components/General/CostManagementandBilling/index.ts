@@ -1,0 +1,1 @@
+export { default as AzureGeneralCostManagementandBilling } from "./CostManagementandBilling";

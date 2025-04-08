@@ -1,0 +1,1 @@
+export { default as AzureGeneralResourceGroups } from "./ResourceGroups";

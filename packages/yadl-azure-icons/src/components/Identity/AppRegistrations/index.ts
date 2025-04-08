@@ -1,0 +1,1 @@
+export { default as AzureIdentityAppRegistrations } from "./AppRegistrations";

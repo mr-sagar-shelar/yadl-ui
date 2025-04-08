@@ -1,0 +1,1 @@
+export { default as AzureIdentityManagedIdentities } from "./ManagedIdentities";

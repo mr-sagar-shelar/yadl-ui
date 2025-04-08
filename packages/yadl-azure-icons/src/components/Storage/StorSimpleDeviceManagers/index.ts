@@ -1,0 +1,1 @@
+export { default as AzureStorageStorSimpleDeviceManagers } from "./StorSimpleDeviceManagers";

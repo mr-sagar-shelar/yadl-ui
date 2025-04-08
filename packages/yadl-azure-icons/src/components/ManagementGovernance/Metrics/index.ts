@@ -1,0 +1,1 @@
+export { default as AzureManagementGovernanceMetrics } from "./Metrics";

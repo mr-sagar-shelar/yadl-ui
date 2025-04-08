@@ -1,0 +1,1 @@
+export { default as AzureOtherAzureManagedGrafana } from "./AzureManagedGrafana";

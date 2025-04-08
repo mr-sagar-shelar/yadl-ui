@@ -1,0 +1,1 @@
+export { default as AzureStorageDataLakeStorageGen1 } from "./DataLakeStorageGen1";

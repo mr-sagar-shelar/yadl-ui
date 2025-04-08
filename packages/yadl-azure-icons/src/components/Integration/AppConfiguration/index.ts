@@ -1,0 +1,1 @@
+export { default as AzureIntegrationAppConfiguration } from "./AppConfiguration";

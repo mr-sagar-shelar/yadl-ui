@@ -1,0 +1,1 @@
+export { default as AzureAiMachineLearningTranslatorText } from "./TranslatorText";

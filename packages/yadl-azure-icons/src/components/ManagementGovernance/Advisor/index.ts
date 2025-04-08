@@ -1,0 +1,1 @@
+export { default as AzureManagementGovernanceAdvisor } from "./Advisor";

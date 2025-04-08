@@ -1,0 +1,1 @@
+export { default as AzureGeneralImage } from "./Image";

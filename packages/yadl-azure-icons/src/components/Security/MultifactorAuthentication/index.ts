@@ -1,0 +1,1 @@
+export { default as AzureSecurityMultifactorAuthentication } from "./MultifactorAuthentication";

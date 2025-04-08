@@ -1,0 +1,1 @@
+export { default as AzureGeneralSearchGrid } from "./SearchGrid";

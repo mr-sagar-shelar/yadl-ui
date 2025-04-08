@@ -1,0 +1,1 @@
+export { default as AzureContainersContainerRegistries } from "./ContainerRegistries";

@@ -1,0 +1,1 @@
+export { default as AzureOtherReservedCapacity } from "./ReservedCapacity";

@@ -1,0 +1,1 @@
+export { default as AzureManagementGovernanceServiceCatalogMAD } from "./ServiceCatalogMAD";

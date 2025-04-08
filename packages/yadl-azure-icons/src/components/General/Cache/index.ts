@@ -1,0 +1,1 @@
+export { default as AzureGeneralCache } from "./Cache";

@@ -1,0 +1,1 @@
+export { default as AzureManagementGovernanceIntuneTrends } from "./IntuneTrends";

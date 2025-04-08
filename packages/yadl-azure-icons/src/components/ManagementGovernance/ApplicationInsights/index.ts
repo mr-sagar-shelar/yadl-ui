@@ -1,0 +1,1 @@
+export { default as AzureManagementGovernanceApplicationInsights } from "./ApplicationInsights";

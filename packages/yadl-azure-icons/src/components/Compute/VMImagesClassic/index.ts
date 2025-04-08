@@ -1,0 +1,1 @@
+export { default as AzureComputeVMImagesClassic } from "./VMImagesClassic";

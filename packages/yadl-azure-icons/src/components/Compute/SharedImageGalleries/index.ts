@@ -1,0 +1,1 @@
+export { default as AzureComputeSharedImageGalleries } from "./SharedImageGalleries";

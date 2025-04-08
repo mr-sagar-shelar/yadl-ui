@@ -1,0 +1,1 @@
+export { default as AzureOtherFiji } from "./Fiji";

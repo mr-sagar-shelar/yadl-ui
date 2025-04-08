@@ -1,0 +1,1 @@
+export { default as AzureGeneralBizTalk } from "./BizTalk";

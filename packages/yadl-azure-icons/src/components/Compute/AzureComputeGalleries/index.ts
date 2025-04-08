@@ -1,0 +1,1 @@
+export { default as AzureComputeAzureComputeGalleries } from "./AzureComputeGalleries";

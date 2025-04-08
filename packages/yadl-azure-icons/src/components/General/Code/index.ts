@@ -1,0 +1,1 @@
+export { default as AzureGeneralCode } from "./Code";

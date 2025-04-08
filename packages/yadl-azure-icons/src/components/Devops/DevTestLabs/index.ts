@@ -1,0 +1,1 @@
+export { default as AzureDevopsDevTestLabs } from "./DevTestLabs";

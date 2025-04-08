@@ -1,0 +1,1 @@
+export { default as AzureOtherAzureLoadTesting } from "./AzureLoadTesting";

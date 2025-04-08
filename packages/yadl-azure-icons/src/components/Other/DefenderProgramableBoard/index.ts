@@ -1,0 +1,1 @@
+export { default as AzureOtherDefenderProgramableBoard } from "./DefenderProgramableBoard";

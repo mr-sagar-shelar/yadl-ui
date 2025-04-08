@@ -1,0 +1,1 @@
+export { default as AzureAppServicesCDNProfiles } from "./CDNProfiles";

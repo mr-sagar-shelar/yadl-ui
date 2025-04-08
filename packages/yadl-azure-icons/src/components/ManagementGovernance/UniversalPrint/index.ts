@@ -1,0 +1,1 @@
+export { default as AzureManagementGovernanceUniversalPrint } from "./UniversalPrint";

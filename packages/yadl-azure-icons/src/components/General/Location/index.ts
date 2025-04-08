@@ -1,0 +1,1 @@
+export { default as AzureGeneralLocation } from "./Location";

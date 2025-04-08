@@ -1,0 +1,1 @@
+export { default as AzureMonitorMonitor } from "./Monitor";

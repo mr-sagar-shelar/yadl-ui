@@ -1,0 +1,1 @@
+export { default as AzureOtherArcKubernetes } from "./ArcKubernetes";

@@ -1,0 +1,1 @@
+export { default as AzureDevopsCloudTest } from "./CloudTest";

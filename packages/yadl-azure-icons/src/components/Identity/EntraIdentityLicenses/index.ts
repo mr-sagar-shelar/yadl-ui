@@ -1,0 +1,1 @@
+export { default as AzureIdentityEntraIdentityLicenses } from "./EntraIdentityLicenses";

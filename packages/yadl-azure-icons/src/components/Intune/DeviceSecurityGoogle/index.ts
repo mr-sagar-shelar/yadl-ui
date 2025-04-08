@@ -1,0 +1,1 @@
+export { default as AzureIntuneDeviceSecurityGoogle } from "./DeviceSecurityGoogle";

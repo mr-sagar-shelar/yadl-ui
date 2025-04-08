@@ -1,0 +1,1 @@
+export { default as AzureDatabasesAzureCosmosDB } from "./AzureCosmosDB";

@@ -1,0 +1,1 @@
+export { default as AzureIdentityAzureADB2C } from "./AzureADB2C";

@@ -1,0 +1,1 @@
+export { default as AzureAiMachineLearningAzureObjectUnderstanding } from "./AzureObjectUnderstanding";
