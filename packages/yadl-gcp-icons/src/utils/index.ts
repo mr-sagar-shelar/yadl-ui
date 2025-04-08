@@ -1,4 +1,4 @@
-export * from "./AwsIcons";
+export * from "./GCPIcons";
 
 export interface IconDetails {
   name: string;

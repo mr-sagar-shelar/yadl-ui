@@ -1,0 +1,1 @@
+export { default as SkillIconAngular } from "./Angular";

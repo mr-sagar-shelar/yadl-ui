@@ -1,0 +1,1 @@
+export { default as SkillIconJQuery } from "./JQuery";

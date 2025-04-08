@@ -1,0 +1,1 @@
+export { default as SkillIconKubernetes } from "./Kubernetes";

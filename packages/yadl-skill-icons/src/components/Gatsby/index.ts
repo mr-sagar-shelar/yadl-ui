@@ -1,0 +1,1 @@
+export { default as SkillIconGatsby } from "./Gatsby";

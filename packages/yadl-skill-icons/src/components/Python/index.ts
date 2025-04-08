@@ -1,0 +1,1 @@
+export { default as SkillIconPython } from "./Python";

@@ -1,0 +1,1 @@
+export { default as SkillIconEmacs } from "./Emacs";

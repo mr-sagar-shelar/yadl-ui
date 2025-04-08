@@ -1,0 +1,1 @@
+export { default as SkillIconPrometheus } from "./Prometheus";

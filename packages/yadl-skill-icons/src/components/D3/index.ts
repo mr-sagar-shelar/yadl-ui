@@ -1,0 +1,1 @@
+export { default as SkillIconD3 } from "./D3";

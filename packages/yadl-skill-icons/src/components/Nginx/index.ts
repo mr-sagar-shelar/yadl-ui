@@ -1,0 +1,1 @@
+export { default as SkillIconNginx } from "./Nginx";

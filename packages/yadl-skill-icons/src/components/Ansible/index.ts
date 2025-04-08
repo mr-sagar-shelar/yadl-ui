@@ -1,0 +1,1 @@
+export { default as SkillIconAnsible } from "./Ansible";

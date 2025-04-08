@@ -1,0 +1,1 @@
+export { default as SkillIconPostgreSQL } from "./PostgreSQL";

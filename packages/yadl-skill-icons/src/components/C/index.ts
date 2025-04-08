@@ -1,0 +1,1 @@
+export { default as SkillIconC } from "./C";

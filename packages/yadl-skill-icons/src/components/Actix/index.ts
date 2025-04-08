@@ -1,0 +1,1 @@
+export { default as SkillIconActix } from "./Actix";

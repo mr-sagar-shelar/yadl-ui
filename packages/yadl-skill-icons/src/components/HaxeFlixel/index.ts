@@ -1,0 +1,1 @@
+export { default as SkillIconHaxeFlixel } from "./HaxeFlixel";
