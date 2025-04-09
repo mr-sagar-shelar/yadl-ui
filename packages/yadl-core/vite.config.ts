@@ -16,7 +16,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: "./src/index.ts", // Specifies the entry point for building the library.
-      name: "yadl-core", // Sets the name of the generated library.
+      name: "yadl-core-package", // Sets the name of the generated library.
       fileName: (format) => `index.${format}.js`, // Generates the output file name based on the format.
       formats: ["cjs", "es"], // Specifies the output formats (CommonJS and ES modules).
     },
