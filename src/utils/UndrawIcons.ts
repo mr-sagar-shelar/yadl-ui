@@ -1,4 +1,4 @@
-import { IconNames } from "@utils";
+import { IconNames } from "yadl-core-package";
 
 export const UndrawIcons: IconNames = {
   undrawPhoneCall: { name: "Phone Call", icon: "UndrawPhoneCall" },

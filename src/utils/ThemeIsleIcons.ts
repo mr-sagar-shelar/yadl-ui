@@ -1,4 +1,4 @@
-import { IconNames } from "@utils";
+import { IconNames } from "yadl-core-package";
 
 export const ThemeisleIcons: IconNames = {
   themeisle1: { name: "Themeisle 1", icon: "Themeisle1" },

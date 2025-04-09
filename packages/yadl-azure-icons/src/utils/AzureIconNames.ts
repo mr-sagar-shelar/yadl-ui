@@ -1,4 +1,4 @@
-import { IconNames } from "@utils";
+import { IconNames } from "yadl-core-package";
 
 export const AzureIconNames: IconNames = {
   azureAiMachineLearningGenomics: {
