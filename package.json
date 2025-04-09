@@ -93,6 +93,7 @@
     "packages/yadl-themeisle-icons",
     "packages/yadl-core",
     "packages/yadl-editor",
-    "packages/yadl-preview"
+    "packages/yadl-preview",
+    "packages/yadl-ui-components"
   ]
 }
