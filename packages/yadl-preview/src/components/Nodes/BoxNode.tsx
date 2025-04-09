@@ -1,15 +1,33 @@
-import { memo } from "react";
+import { memo, useState } from "react";
 import {
   Handle,
   Position,
   NodeResizer,
+  ResizeDragEvent,
+  ResizeParamsWithDirection,
 } from "@xyflow/react";
 import { BoxNodeProps } from "yadl-core-package";
+import { BoxNames } from "yadl-ui-components";
+import * as Boxes from "yadl-ui-components";
 
 function BoxNode(properties: BoxNodeProps) {
   const {
+    data: { component, props },
     selected = false,
   } = properties;
+  const [currentWidth, setCurrentWidth] = useState<number>(props.width || 50);
+  const [currentHeight, setCurrentHeight] = useState<number>(
+    props.height || 50,
+  );
+
+  let iconNamePresent: boolean = false;
+  let Icon = null;
+
+  iconNamePresent = BoxNames[component] != undefined;
+  if (iconNamePresent) {
+    // @ts-ignore
+    Icon = Boxes[BoxNames[component].component] ?? null;
+  }
 
   return (
     <label htmlFor="properties-drawer">
@@ -18,10 +36,19 @@ function BoxNode(properties: BoxNodeProps) {
           console.log("Clicked");
         }}
       >
-        Box Node Props
+        {iconNamePresent && (
+          <Icon {...props} width={currentWidth} height={currentHeight} />
+        )}
         <NodeResizer
           color="#ff0071"
           isVisible={selected}
+          onResize={(
+            _event: ResizeDragEvent,
+            params: ResizeParamsWithDirection,
+          ) => {
+            setCurrentWidth(params.width);
+            setCurrentHeight(params.height);
+          }}
         />
         <Handle
           type="target"

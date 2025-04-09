@@ -53,6 +53,7 @@
     "yadl-gcp-icons": "^1.0.0",
     "yadl-skill-icons": "^1.0.0",
     "yadl-themeisle-icons": "^1.0.0",
+    "yadl-ui-components": "^1.0.0",
     "yadl-undraw-icons": "^1.0.0"
   }
 }
