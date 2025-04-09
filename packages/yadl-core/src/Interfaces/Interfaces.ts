@@ -11,6 +11,14 @@ export interface DragDropProps {
     data?: any;
 }
 
+export interface BoxNodeProps {
+    data: {
+        component: string;
+        props?: any;
+    };
+    selected: boolean;
+}
+
 export interface IconNodeProps {
     data: {
         icon: string;
