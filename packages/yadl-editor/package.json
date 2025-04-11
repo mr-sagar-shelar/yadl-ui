@@ -46,6 +46,11 @@
     "tailwindcss": "^4.0.15"
   },
   "dependencies": {
+    "@codingame/monaco-vscode-api": "^16.0.1",
+    "@codingame/monaco-vscode-editor-api": "^16.0.1",
+    "@codingame/monaco-vscode-extension-api": "^16.0.1",
+    "@typefox/monaco-editor-react": "^6.6.0",
+    "vscode": "npm:@codingame/monaco-vscode-extension-api@~16.0.1",
     "yadl-core-package": "^1.0.0"
   }
 }
