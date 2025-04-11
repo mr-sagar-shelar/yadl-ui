@@ -1,0 +1,11 @@
+node_modules
+dist
+
+#storybook build directory
+storybook-static
+*storybook.log
+
+.DS_Store
+**/.DS_Store
+skill-icons
+google-cloud-icons
