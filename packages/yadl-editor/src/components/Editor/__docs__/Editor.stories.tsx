@@ -7,8 +7,5 @@ export default meta;
 type Story = StoryObj<typeof Editor>;
 
 export const Primary: Story = {
-  args: {
-    width: "500px",
-    height: "500px",
-  },
+  args: {},
 };

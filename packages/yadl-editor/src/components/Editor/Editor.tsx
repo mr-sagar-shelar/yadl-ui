@@ -23,6 +23,7 @@ const Editor = () => (
       style={{ height: "100%", width: "100%" }}
       onLoad={(wrapper: MonacoEditorLanguageClientWrapper) => {
         // use the wrapper to get access to monaco-editor or the languageclient
+        console.log(wrapper);
       }}
     />
   </>
