@@ -1,6 +1,6 @@
 import * as React from "react";
-import { addMonacoStyles } from 'monaco-editor-wrapper/styles';
-import { createUserConfig } from '../monaco-editor-wrapper-utils.js';
+import { addMonacoStyles } from "monaco-editor-wrapper/styles";
+import { createUserConfig } from "../monaco-editor-wrapper-utils.js";
 import { UserConfig } from "monaco-editor-wrapper";
 import { MonacoEditorReactComp } from "@typefox/monaco-editor-react";
 import { buildWorkerDefinition } from "monaco-editor-workers";
@@ -15,7 +15,6 @@ export interface Position {
   xRange?: Range;
   yRange?: Range;
 }
-
 
 buildWorkerDefinition(
   "/libs/monaco-editor-workers/workers",
@@ -53,7 +52,7 @@ export default function Editor(props: EditorProps) {
   }, []);
 
   React.useEffect(() => {
-    setPosition(position || 0)
+    setPosition(position || 0);
   }, [position]);
 
   const onMonacoLoad = () => {
@@ -77,23 +76,25 @@ export default function Editor(props: EditorProps) {
     if (!monacoEditor || !monacoEditor.current) {
       return;
     }
-    //@ts-ignore
-    const monacoInstance = monacoEditor?.current?.getEditorWrapper()?.getEditor();
+    const monacoInstance = monacoEditor?.current
+      //@ts-ignore
+      ?.getEditorWrapper()
+      ?.getEditor();
     const selection = monacoInstance.getSelection();
     const id = { major: 1, minor: 1 };
     const op = {
-        identifier: id,
-        range: {
-            startLineNumber: selection?.selectionStartLineNumber || 1,
-            startColumn: selection?.selectionStartColumn || 1,
-            endLineNumber: selection?.endLineNumber || 1,
-            endColumn: selection?.endColumn || 1,
-        },
-        text: position.toString(),
-        forceMoveMarkers: true,
+      identifier: id,
+      range: {
+        startLineNumber: selection?.selectionStartLineNumber || 1,
+        startColumn: selection?.selectionStartColumn || 1,
+        endLineNumber: selection?.endLineNumber || 1,
+        endColumn: selection?.endColumn || 1,
+      },
+      text: position.toString(),
+      forceMoveMarkers: true,
     };
-    monacoInstance.executeEdits('my-source', [op]);
-  }
+    monacoInstance.executeEdits("my-source", [op]);
+  };
 
   const onAddClick = () => {
     setPosition(800);
@@ -118,9 +119,5 @@ export default function Editor(props: EditorProps) {
     );
   };
 
-  return (
-    <div>
-      {renderEditor()}
-    </div>
-  );
+  return <div>{renderEditor()}</div>;
 }
