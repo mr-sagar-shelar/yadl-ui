@@ -1132,7 +1132,7 @@ function printNames() {
   }
 
   fileContents = `${fileContents}\n
-Icon:
+AwsIcons:
     'aws-icon' (name=ID)? icon=(${currentIterationAttributeNames.join(" | ")}) ('{'
         (position=Position)?
     '}')?;
