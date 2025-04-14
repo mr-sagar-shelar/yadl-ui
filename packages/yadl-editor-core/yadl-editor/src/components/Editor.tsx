@@ -6,6 +6,7 @@ import { MonacoEditorReactComp } from "@typefox/monaco-editor-react";
 import { buildWorkerDefinition } from "monaco-editor-workers";
 import { DocumentChangeResponse } from "langium-ast-helper";
 import syntaxHighlighting from "./yadl.monarch.js";
+
 addMonacoStyles("monaco-styles-helper");
 
 export interface Position {
@@ -23,21 +24,18 @@ buildWorkerDefinition(
 );
 
 interface EditorProps {
-  onChange: (resp: DocumentChangeResponse) => void;
+  onChange: (code: DocumentChangeResponse) => void;
   position?: number;
+  code?: string;
 }
 
 export default function Editor(props: EditorProps) {
+  const { onChange, position, code } = props;
   const monacoEditor = React.useRef();
   const [userConfig, setUserConfig] = React.useState<UserConfig>();
-  const { onChange, position } = props;
+  const [currentCode, setCurrentCode] = React.useState<string>(code);
 
   React.useEffect(() => {
-    let code = "";
-    const editorCodeElement = document.getElementById("editor-code");
-    if (editorCodeElement) {
-      code = editorCodeElement.dataset.code || "";
-    }
     const userConfig = createUserConfig(
       {
         languageId: "yadl",
@@ -49,7 +47,8 @@ export default function Editor(props: EditorProps) {
     );
 
     setUserConfig(userConfig);
-  }, []);
+    setCurrentCode(currentCode);
+  }, [code]);
 
   React.useEffect(() => {
     setPosition(position || 0);
@@ -70,6 +69,7 @@ export default function Editor(props: EditorProps) {
     monacoEditor.current.getEditorWrapper()?.getEditor()?.focus();
     // register to receive DocumentChange notifications
     lc.onNotification("browser/DocumentChange", onChange);
+    console.info(`$$$$$$$$ Editor Loaded $$$$$$$$$$$$`);
   };
 
   const setPosition = (position: number) => {
@@ -96,13 +96,9 @@ export default function Editor(props: EditorProps) {
     monacoInstance.executeEdits("my-source", [op]);
   };
 
-  const onAddClick = () => {
-    setPosition(800);
-  };
-
   const renderEditor = () => {
     const style = {
-      height: "500px",
+      height: "100vh",
       width: "100%",
     };
     return (
