@@ -1,4 +1,4 @@
-import "./common"
+import "../common"
 
 SkillIconType0 returns string:
     'skillIconActivityPub' | 'skillIconAbleton' | 'skillIconAWS' | 'skillIconAfterEffects' | 'skillIconAndroidStudio' | 'skillIconAlpineJS' | 'skillIconAngular' | 'skillIconAnaconda' | 'skillIconAiScript' | 'skillIconAnsible' | 'skillIconAppwrite' | 'skillIconActix' | 'skillIconAstro' | 'skillIconApple' | 'skillIconArduino' | 'skillIconApollo' | 'skillIconAzul' | 'skillIconAudition' | 'skillIconAdonis' | 'skillIconAzure' | 'skillIconAutoCAD' | 'skillIconBlender' | 'skillIconArch' | 'skillIconBash' | 'skillIconBevy' | 'skillIconBootstrap' | 'skillIconBSD' | 'skillIconCLion' | 'skillIconBun' | 'skillIconC' | 'skillIconBitBucket' | 'skillIconCMake' | 'skillIconAtom' | 'skillIconCSS' | 'skillIconCPP' | 'skillIconCS' | 'skillIconCloudflare' | 'skillIconClojure' | 'skillIconCodePen' | 'skillIconCassandra' | 'skillIconCrystal' | 'skillIconDart';

@@ -1,4 +1,4 @@
-import "./common"
+import "../common"
 
 GcpIconType0 returns string:
     'gCPAccessContextManager' | 'gCPAiHub' | 'gCPAdvancedAgentModeling' | 'gCPAdministration' | 'gCPAiPlatformUnified' | 'gCPAiPlatform' | 'gCPAgentAssist' | 'gCPAnalyticsHub' | 'gCPAdvancedSolutionsLab' | 'gCPAnthos' | 'gCPAnthosConfigManagement' | 'gCPAppEngine' | 'gCPAnthosServiceMesh' | 'gCPApi' | 'gCPApiMonetization' | 'gCPApigeeApiPlatform' | 'gCPApiAnalytics' | 'gCPArtifactRegistry' | 'gCPApigeeSense' | 'gCPAutoml' | 'gCPAutomlTables' | 'gCPAssuredWorkloads' | 'gCPAssetInventory' | 'gCPAutomlTranslation' | 'gCPAutomlVideoIntelligence' | 'gCPAutomlVision' | 'gCPAutomlNaturalLanguage' | 'gCPBareMetalSolutions' | 'gCPBeyondcorp' | 'gCPBigtable' | 'gCPBatch' | 'gCPBigquery' | 'gCPBilling' | 'gCPCertificateManager' | 'gCPCatalog' | 'gCPCertificateAuthorityService' | 'gCPCloudApiGateway' | 'gCPCloudAssetInventory' | 'gCPCloudAuditLogs' | 'gCPCloudApis' | 'gCPCloudCdn' | 'gCPCloudBuild';

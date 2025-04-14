@@ -27,6 +27,12 @@ skill-icon skillIconUbuntu
 themeisle-icon themeisle104
 
 undraw-icon undrawYear2022 
+
+text "Hello World" {
+  position { x: 0 y:0 }
+  fontFamily "unwind"
+  classes "text-2xl"
+}
 `,
         useDiffEditor: false,
         languageExtensionConfig: { id: "langium" },

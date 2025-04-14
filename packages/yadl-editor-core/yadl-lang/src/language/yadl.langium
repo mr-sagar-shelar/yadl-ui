@@ -1,16 +1,18 @@
 grammar Yadl
 import "./common"
-import "./awsIcons"
-import "./gcpIcons"
-import "./azureIcons"
-import "./skillIcons"
-import "./themeisleIcons"
-import "./undrawIcons"
+import "./icons/awsIcons"
+import "./icons/gcpIcons"
+import "./icons/azureIcons"
+import "./icons/skillIcons"
+import "./icons/themeisleIcons"
+import "./icons/undrawIcons"
+import "./components/text"
 
 
 entry Model:
     (persons+=Person | greetings+=Greeting | awsIcons+=AwsIcons | gcpIcons+=GcpIcons | azureIcons+=AzureIcons
-    | skillIcons+=SkillIcons | themeisleIcons+=ThemeisleIcons | undrawleIcons+=UndrawIcons)*;
+    | skillIcons+=SkillIcons | themeisleIcons+=ThemeisleIcons | undrawleIcons+=UndrawIcons
+    | textComponents+=TextComponent)*;
 
 Person:
     'person' name=ID;

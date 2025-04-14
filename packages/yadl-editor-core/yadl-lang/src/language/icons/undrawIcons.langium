@@ -1,4 +1,4 @@
-import "./common"
+import "../common"
 
 UndrawIconType0 returns string:
     'undrawPhoneCall' | 'undrawDesigner' | 'undrawVoiceMessages' | 'undrawBooks' | 'undrawPhotographer' | 'undrawBuildingAWebsite' | 'undrawAlgorithmExecution' | 'undrawWorkFriends' | 'undrawMindMap' | 'undrawServerError' | 'undrawCompleteForm' | 'undrawAvatarTraveler' | 'undrawApprovedWireframe' | 'undrawProcessing' | 'undrawPrivateFiles' | 'undrawConfirmed' | 'undrawCreativeWoman' | 'undrawCreditCardPayments' | 'undrawBentoGrid' | 'undrawYoungManAvatar' | 'undrawLogIn' | 'undrawCalendar' | 'undrawGifts' | 'undrawCorrectAnswer' | 'undrawPresenting' | 'undrawVibeCoding' | 'undrawLogOut' | 'undrawOrganizingData' | 'undrawVersionControl' | 'undrawOrderFlowers' | 'undrawProfessionalWomanAvatar' | 'undrawFinanceGuyAvatar' | 'undrawPreparation' | 'undrawComputerFiles' | 'undrawRelaxMode' | 'undrawUnreadMessages' | 'undrawFootballWithDad' | 'undrawInTheOffice' | 'undrawWorkingTogether' | 'undrawSegmentAnalysis' | 'undrawSuccessFactors' | 'undrawPushNotifications';

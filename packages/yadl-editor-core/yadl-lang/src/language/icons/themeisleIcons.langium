@@ -1,4 +1,4 @@
-import "./common"
+import "../common"
 
 ThemeisleIconType0 returns string:
     'themeisle1' | 'themeisle2' | 'themeisle3' | 'themeisle4' | 'themeisle5' | 'themeisle6' | 'themeisle7' | 'themeisle8' | 'themeisle9' | 'themeisle10' | 'themeisle11' | 'themeisle12' | 'themeisle13' | 'themeisle14' | 'themeisle15' | 'themeisle16' | 'themeisle17' | 'themeisle18' | 'themeisle19' | 'themeisle20' | 'themeisle21' | 'themeisle22' | 'themeisle23' | 'themeisle24' | 'themeisle25' | 'themeisle26' | 'themeisle27' | 'themeisle28' | 'themeisle29' | 'themeisle30' | 'themeisle31' | 'themeisle32' | 'themeisle33' | 'themeisle34' | 'themeisle35' | 'themeisle36' | 'themeisle37' | 'themeisle38' | 'themeisle39' | 'themeisle40' | 'themeisle41' | 'themeisle42';
