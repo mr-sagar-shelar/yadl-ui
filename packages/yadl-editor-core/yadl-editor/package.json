@@ -1,6 +1,6 @@
 {
   "name": "yadl-editor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "YADL Code Editor",
   "author": "mr-sagar-shelar",
@@ -29,10 +29,7 @@
   },
   "files": [
     "dist",
-    "bundle",
-    "src",
-    "LICENSE",
-    "README.md"
+    "bundle"
   ],
   "scripts": {
     "clean": "shx rm -rf ./bundle ./dist",
