@@ -1,0 +1,29 @@
+{
+  "name": "yadl-editor-core",
+  "description": "",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "mr-sagar-shelar",
+  "scripts": {
+    "build:editor": "npm run build --workspace yadl-editor"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "autoprefixer": "^10.4.19",
+    "chalk": "^4.0.0",
+    "concurrently": "~8.2.1",
+    "cross-env": "~7.0.3",
+    "glob": "^10.4.1",
+    "shx": "~0.3.4",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "coi-serviceworker": "^0.1.7",
+    "langium-ast-helper": "^0.1.2",
+    "langium-website-core": "^1.0.0",
+    "monaco-editor-workers": "~0.44.0"
+  },
+  "workspaces": [
+    "yadl-editor"
+  ]
+}
