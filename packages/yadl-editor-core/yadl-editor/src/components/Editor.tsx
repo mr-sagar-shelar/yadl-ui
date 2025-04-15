@@ -4,8 +4,10 @@ import { createUserConfig } from "../monaco-editor-wrapper-utils.js";
 import { UserConfig } from "monaco-editor-wrapper";
 import { MonacoEditorReactComp } from "@typefox/monaco-editor-react";
 import { buildWorkerDefinition } from "monaco-editor-workers";
-import { DocumentChangeResponse } from "langium-ast-helper";
+import { deserializeAST, DocumentChangeResponse } from "langium-ast-helper";
 import syntaxHighlighting from "./yadl.monarch.js";
+import { YadlModelAstNode } from "./index.js";
+import { getYADLNodes } from "../YADLDeserializer.js";
 
 addMonacoStyles("monaco-styles-helper");
 
@@ -18,7 +20,7 @@ export interface Position {
 }
 
 buildWorkerDefinition(
-  "/libs/monaco-editor-workers/workers",
+  "/monaco-editor-workers/workers",
   new URL("", window.location.href).href,
   false,
 );
@@ -30,6 +32,8 @@ interface EditorProps {
 }
 
 export default function Editor(props: EditorProps) {
+  let running = false;
+  let timeout: number | null = null;
   const { onChange, position, code } = props;
   const monacoEditor = React.useRef();
   const [userConfig, setUserConfig] = React.useState<UserConfig>();
@@ -40,7 +44,7 @@ export default function Editor(props: EditorProps) {
       {
         languageId: "yadl",
         code: code,
-        worker: "/yadl-server-worker.js",
+        worker: "/worker/yadl-server-worker.js",
         monarchGrammar: syntaxHighlighting,
       },
       "vs-dark",
@@ -53,6 +57,30 @@ export default function Editor(props: EditorProps) {
   React.useEffect(() => {
     setPosition(position || 0);
   }, [position]);
+
+  const onCodeChange = (resp: DocumentChangeResponse) => {
+    if (running) {
+      return;
+    }
+
+    // clear previous timeouts
+    if (timeout) {
+      clearTimeout(timeout);
+    }
+
+    timeout = window.setTimeout(async () => {
+      running = true;
+      const ast = deserializeAST(resp.content) as YadlModelAstNode;
+      // console.log(`$$$$$$$$ deserializeAST`, ast);
+      const deserializedContent = getYADLNodes(ast);
+      console.log(
+        `$$$$$$$$ deserializedContent`,
+        JSON.stringify(deserializedContent, null, 2),
+      );
+      // onChange(deserializedContent)
+      running = false;
+    }, 1000);
+  };
 
   const onMonacoLoad = () => {
     // verify we can get a ref to the editor
@@ -68,7 +96,8 @@ export default function Editor(props: EditorProps) {
     //@ts-ignore
     monacoEditor.current.getEditorWrapper()?.getEditor()?.focus();
     // register to receive DocumentChange notifications
-    lc.onNotification("browser/DocumentChange", onChange);
+    // lc.onNotification("browser/DocumentChange", onChange);
+    lc.onNotification("browser/DocumentChange", onCodeChange);
     console.info(`$$$$$$$$ Editor Loaded $$$$$$$$$$$$`);
   };
 

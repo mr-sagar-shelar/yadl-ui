@@ -7,7 +7,7 @@ FontFamily:
 Classes:
     'classes' classes=STRING;
 
-TextComponent:
+TextComponents:
     'text' (text=STRING) ('{'
         (position=Position)?
         (fontFamily=FontFamily)?
