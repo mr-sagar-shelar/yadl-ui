@@ -1,5 +1,5 @@
 import { AstNode } from "langium-ast-helper";
-import { YadlModelAstNode, Icon, TextComponents } from "./components/Interfaces.js";
+import { YadlModelAstNode, Icon, TextComponents, YadlNode, YadlEditorResponse } from "./components/Interfaces.js";
 
 export function getYadlModelAst(ast: YadlModelAstNode): YadlModelAstNode {
   return {
@@ -15,74 +15,118 @@ export function getYadlModelAst(ast: YadlModelAstNode): YadlModelAstNode {
   };
 }
 
-export function getYADLNodes(ast: AstNode): YadlModelAstNode {
+export function getYADLNodes(ast: AstNode): YadlEditorResponse {
   const astNode = getYadlModelAst(ast as YadlModelAstNode);
-  const awsIcons = astNode?.awsIcons?.flatMap((i: Icon): Icon => {
+  let allNodes: YadlNode[] = [];
+  const awsIcons = astNode?.awsIcons?.flatMap((i: Icon): YadlNode => {
     return {
-      icon: i.icon,
-      name: i.name,
-      $type: "AwsIcon",
+      id: i.name,
+      data: {
+        icon: i.icon,
+        category: "aws"
+      },
+      type: "icon",
     };
   });
 
-  const gcpIcons = astNode?.gcpIcons?.flatMap((i: Icon): Icon => {
+  if (awsIcons) {
+    allNodes = allNodes.concat(awsIcons);
+  }
+
+  const gcpIcons = astNode?.gcpIcons?.flatMap((i: Icon): YadlNode => {
     return {
-      icon: i.icon,
-      name: i.name,
-      $type: "GcpIcon",
+      id: i.name,
+      data: {
+        icon: i.icon,
+        category: "gcp"
+      },
+      type: "icon",
     };
   });
 
-  const azureIcons = astNode?.azureIcons?.flatMap((i: Icon): Icon => {
+  if (gcpIcons) {
+    allNodes = allNodes.concat(gcpIcons);
+  }
+
+  const azureIcons = astNode?.azureIcons?.flatMap((i: Icon): YadlNode => {
     return {
-      icon: i.icon,
-      name: i.name,
-      $type: "GcpIcon",
+      id: i.name,
+      data: {
+        icon: i.icon,
+        category: "azure"
+      },
+      type: "icon",
     };
   });
 
-  const skillIcons = astNode?.skillIcons?.flatMap((i: Icon): Icon => {
+  if (azureIcons) {
+    allNodes = allNodes.concat(azureIcons);
+  }
+
+  const skillIcons = astNode?.skillIcons?.flatMap((i: Icon): YadlNode => {
     return {
-      icon: i.icon,
-      name: i.name,
-      $type: "GcpIcon",
+      id: i.name,
+      data: {
+        icon: i.icon,
+        category: "skill"
+      },
+      type: "icon",
     };
   });
 
-  const undrawIcons = astNode?.undrawIcons?.flatMap((i: Icon): Icon => {
+  if (skillIcons) {
+    allNodes = allNodes.concat(skillIcons);
+  }
+
+  const undrawIcons = astNode?.undrawIcons?.flatMap((i: Icon): YadlNode => {
     return {
-      icon: i.icon,
-      name: i.name,
-      $type: "GcpIcon",
+      id: i.name,
+      data: {
+        icon: i.icon,
+        category: "undraw"
+      },
+      type: "icon",
     };
   });
 
-  const themeisleIcons = astNode?.themeisleIcons?.flatMap((i: Icon): Icon => {
+  if (undrawIcons) {
+    allNodes = allNodes.concat(undrawIcons);
+  }
+
+  const themeisleIcons = astNode?.themeisleIcons?.flatMap((i: Icon): YadlNode => {
     return {
-      icon: i.icon,
-      name: i.name,
-      $type: "GcpIcon",
+      id: i.name,
+      data: {
+        icon: i.icon,
+        category: "themeisle"
+      },
+      type: "icon",
     };
   });
 
-  const textComponents = astNode?.textComponents?.flatMap((i: any): TextComponents => {
+  if (themeisleIcons) {
+    allNodes = allNodes.concat(themeisleIcons);
+  }
+
+  const textComponents = astNode?.textComponents?.flatMap((i: any): YadlNode => {
     return {
-      $type: "Text",
-      text: i.text,
-      classes: i.classes?.classes,
-      fontFamily: i.fontFamily?.fontFamily
+      id: i.text,
+      type: "text",
+      data: {
+        classes: i.classes?.classes,
+        text: i.text,
+        fontFamily: i.fontFamily?.fontFamily,
+      }
     };
   });
+
+  if (textComponents) {
+    allNodes = allNodes.concat(textComponents);
+  }
 
   return {
-    name: astNode.$type,
-    $type: astNode.$type,
-    awsIcons: awsIcons,
-    gcpIcons: gcpIcons,
-    azureIcons: azureIcons,
-    skillIcons: skillIcons,
-    undrawIcons: undrawIcons,
-    themeisleIcons: themeisleIcons,
-    textComponents: textComponents
+    nodes: allNodes,
+    edges: [],
+    fontsUsed: []
   };
 }

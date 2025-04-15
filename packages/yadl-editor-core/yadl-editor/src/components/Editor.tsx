@@ -8,6 +8,7 @@ import { deserializeAST, DocumentChangeResponse } from "langium-ast-helper";
 import syntaxHighlighting from "./yadl.monarch.js";
 import { YadlModelAstNode } from "./index.js";
 import { getYADLNodes } from "../YADLDeserializer.js";
+import { YadlEditorResponse } from "./Interfaces.js"
 
 addMonacoStyles("monaco-styles-helper");
 
@@ -26,7 +27,7 @@ buildWorkerDefinition(
 );
 
 interface EditorProps {
-  onChange: (code: DocumentChangeResponse) => void;
+  onChange: (code: YadlEditorResponse) => void;
   position?: number;
   code?: string;
 }
@@ -73,11 +74,11 @@ export default function Editor(props: EditorProps) {
       const ast = deserializeAST(resp.content) as YadlModelAstNode;
       // console.log(`$$$$$$$$ deserializeAST`, ast);
       const deserializedContent = getYADLNodes(ast);
-      console.log(
-        `$$$$$$$$ deserializedContent`,
-        JSON.stringify(deserializedContent, null, 2),
-      );
-      // onChange(deserializedContent)
+      // console.log(
+      //   `$$$$$$$$ deserializedContent`,
+      //   JSON.stringify(deserializedContent, null, 2),
+      // );
+      onChange(deserializedContent)
       running = false;
     }, 1000);
   };
