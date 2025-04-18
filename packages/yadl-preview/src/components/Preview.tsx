@@ -1,4 +1,4 @@
-import { useCallback, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import {
   ReactFlow,
   Controls,
@@ -77,6 +77,14 @@ const YadlPreview = (props: YadlPreviewProps) => {
     },
     [screenToFlowPosition, type],
   );
+
+  useEffect(() => {
+    setNodes(props.nodes);
+  }, [props.nodes]);
+
+  useEffect(() => {
+    setEdges(props.edges);
+  }, [props.edges]);
 
   return (
     <div style={{ height: "100%", width: "100%" }}>

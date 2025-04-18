@@ -9,6 +9,7 @@ export type * from "monaco-editor-wrapper";
 export * from "./monaco-editor-wrapper-utils.js";
 // export * from "./components/Editor.js"
 export { default as YadlEditor } from "./components/Editor.js";
+export * from "./components/Interfaces.js";
 
 export {
     monaco,
