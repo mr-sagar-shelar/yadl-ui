@@ -9,6 +9,13 @@ import {
   useNodesState,
   useEdgesState,
   useReactFlow,
+  OnNodesChange,
+  EdgeChange,
+  NodeChange,
+  NodeSelectionChange,
+  Connection,
+  applyNodeChanges,
+  applyEdgeChanges,
   type Node,
   type Edge,
   type FitViewOptions,
@@ -19,8 +26,12 @@ import { DnDProvider, useDnD, DragDropProps } from "yadl-core-package";
 import "./xy-themes.css";
 
 export type YadlPreviewProps = {
-  nodes: Node[];
-  edges: Edge[];
+  initialNodes: Node[];
+  initialEdges: Edge[];
+  onNodeChange?: (node: Node) => void;
+  onNodeSelect?: (node: Node) => void;
+  onNodeAdded?: (node: Node) => void;
+  onEdgeConnect?: (edge: Edge) => void;
 };
 
 const fitViewOptions: FitViewOptions = {
@@ -35,15 +46,39 @@ let id = 0;
 const getId = () => `dndnode_${id++}`;
 
 const YadlPreview = (props: YadlPreviewProps) => {
+  const {
+    initialNodes = [],
+    initialEdges = [],
+    onNodeSelect = () => {},
+    onNodeChange = () => {},
+    onEdgeConnect = () => {},
+    onNodeAdded = () => {},
+  } = props;
   const reactFlowWrapper = useRef(null);
-  const [nodes, setNodes, onNodesChange] = useNodesState(props.nodes);
-  const [edges, setEdges, onEdgesChange] = useEdgesState(props.edges);
+  const [nodes, setNodes] = useNodesState(initialNodes);
+  const [edges, setEdges] = useEdgesState(initialEdges);
   const { screenToFlowPosition } = useReactFlow();
   const [type] = useDnD();
 
   const onConnect = useCallback(
-    (params: any) => setEdges((eds) => addEdge(params, eds)),
-    [],
+    (changes: Connection) => {
+      setEdges((eds) => addEdge(changes, eds));
+      const edgeSource = changes.source;
+      const edgeTarget = changes.target;
+      const newEdge: Edge = {
+        id: `${edgeSource} => ${edgeTarget}`,
+        source: edgeSource,
+        target: edgeTarget,
+      };
+      onEdgeConnect(newEdge);
+    },
+    [setEdges],
+  );
+
+  const onEdgesChange = useCallback(
+    (changes: EdgeChange<Edge>[]) =>
+      setEdges((eds) => applyEdgeChanges(changes, eds)),
+    [setEdges],
   );
 
   const onDragOver = useCallback((event: any) => {
@@ -54,7 +89,6 @@ const YadlPreview = (props: YadlPreviewProps) => {
   const onDrop = useCallback(
     (event: any) => {
       event.preventDefault();
-
       if (!type) {
         return;
       }
@@ -74,17 +108,44 @@ const YadlPreview = (props: YadlPreviewProps) => {
       };
 
       setNodes((nds) => nds.concat(newNode));
+      onNodeAdded(newNode);
     },
     [screenToFlowPosition, type],
   );
 
-  useEffect(() => {
-    setNodes(props.nodes);
-  }, [props.nodes]);
+  const onNodesChange: OnNodesChange = useCallback(
+    (changes: NodeChange[]) => {
+      const updatedNode = changes[0] as Node;
+      setNodes((nds) => {
+        if (updatedNode.type == "select") {
+          const selectedChangedNode = (changes as NodeSelectionChange[]).filter(
+            (change) => change.selected,
+          );
+          if (selectedChangedNode.length > 0) {
+            const selectNode = nds.filter(
+              (node) => node.id === selectedChangedNode[0].id,
+            );
+            if (selectNode.length > 0) {
+              onNodeSelect(selectNode[0]);
+            }
+          }
+        }
+        if (updatedNode.type == "position" && !updatedNode.dragging) {
+          const currentNode = nds.filter((node) => node.id === updatedNode.id);
+          if (currentNode.length > 0) {
+            onNodeChange(currentNode[0]);
+          }
+        }
+        return applyNodeChanges(changes, nds);
+      });
+    },
+    [setNodes],
+  );
 
   useEffect(() => {
-    setEdges(props.edges);
-  }, [props.edges]);
+    setNodes(initialNodes);
+    setEdges(initialEdges);
+  }, [initialNodes, initialEdges]);
 
   return (
     <div style={{ height: "100%", width: "100%" }}>

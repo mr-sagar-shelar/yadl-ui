@@ -1,4 +1,11 @@
-import * as React from "react";
+import React, {
+  useEffect,
+  useState,
+  useRef,
+  forwardRef,
+  useImperativeHandle,
+  Ref
+} from "react";
 import { addMonacoStyles } from "monaco-editor-wrapper/styles";
 import { createUserConfig } from "../monaco-editor-wrapper-utils.js";
 import { UserConfig } from "monaco-editor-wrapper";
@@ -8,17 +15,10 @@ import { deserializeAST, DocumentChangeResponse } from "langium-ast-helper";
 import syntaxHighlighting from "./yadl.monarch.js";
 import { YadlModelAstNode } from "./index.js";
 import { getYADLNodes } from "../YADLDeserializer.js";
-import { YadlEditorResponse } from "./Interfaces.js"
+import { YadlEdge, YadlEditorResponse, YadlNode } from "./Interfaces.js"
+import { get } from "lodash";
 
 addMonacoStyles("monaco-styles-helper");
-
-export interface Position {
-  $type: string;
-  x: number;
-  y: number;
-  xRange?: Range;
-  yRange?: Range;
-}
 
 buildWorkerDefinition(
   "/monaco-editor-workers/workers",
@@ -26,21 +26,27 @@ buildWorkerDefinition(
   false,
 );
 
-interface EditorProps {
+export interface YadlEditorProps {
   onChange: (code: YadlEditorResponse) => void;
   position?: number;
   code?: string;
 }
 
-export default function Editor(props: EditorProps) {
+export type YadlEditorRef = {
+  onNodeChange: (node: YadlNode) => void;
+  onNodeSelect: (node: YadlNode) => void;
+  onEdgeConnect: (edge: YadlEdge) => void;
+}
+
+function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
   let running = false;
   let timeout: number | null = null;
-  const { onChange, position, code } = props;
-  const monacoEditor = React.useRef();
-  const [userConfig, setUserConfig] = React.useState<UserConfig>();
-  const [currentCode, setCurrentCode] = React.useState<string>(code);
+  const { onChange, position = 0, code } = props;
+  const monacoEditor = useRef<MonacoEditorReactComp | null>(null);
+  const [userConfig, setUserConfig] = useState<UserConfig>();
+  const [currentCode, setCurrentCode] = useState<string>(code);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const userConfig = createUserConfig(
       {
         languageId: "yadl",
@@ -55,9 +61,17 @@ export default function Editor(props: EditorProps) {
     setCurrentCode(currentCode);
   }, [code]);
 
-  React.useEffect(() => {
-    setPosition(position || 0);
+  useEffect(() => {
+    if (position > 0) {
+      setPosition(position);
+    }
   }, [position]);
+
+  useImperativeHandle(ref, () => ({
+    onNodeChange,
+    onNodeSelect,
+    onEdgeConnect
+  }));
 
   const onCodeChange = (resp: DocumentChangeResponse) => {
     if (running) {
@@ -80,26 +94,21 @@ export default function Editor(props: EditorProps) {
       // );
       onChange(deserializedContent)
       running = false;
-    }, 1000);
+    }, 500);
   };
 
   const onMonacoLoad = () => {
-    // verify we can get a ref to the editor
+    console.log(` $$$ onMonacoLoad`);
     if (!monacoEditor.current) {
       throw new Error("Unable to get a reference to the Monaco Editor");
     }
 
-    //@ts-ignore
     const lc = monacoEditor.current?.getEditorWrapper()?.getLanguageClient();
     if (!lc) {
       throw new Error("Could not get handle to Language Client on mount");
     }
-    //@ts-ignore
     monacoEditor.current.getEditorWrapper()?.getEditor()?.focus();
-    // register to receive DocumentChange notifications
-    // lc.onNotification("browser/DocumentChange", onChange);
     lc.onNotification("browser/DocumentChange", onCodeChange);
-    console.info(`$$$$$$$$ Editor Loaded $$$$$$$$$$$$`);
   };
 
   const setPosition = (position: number) => {
@@ -107,23 +116,107 @@ export default function Editor(props: EditorProps) {
       return;
     }
     const monacoInstance = monacoEditor?.current
-      //@ts-ignore
       ?.getEditorWrapper()
       ?.getEditor();
-    const selection = monacoInstance.getSelection();
+    monacoInstance.setPosition({ column: 0, lineNumber: position });
+    monacoInstance.revealLineInCenter(position);
+  };
+
+  const onNodeChange = (node: YadlNode) => {
+    if (!monacoEditor || !monacoEditor.current) {
+      return;
+    }
+    const monacoInstance = monacoEditor?.current
+      ?.getEditorWrapper()
+      ?.getEditor();
+    const xValue = Math.trunc(node.position.x);
+    const yValue = Math.trunc(node.position.y);
+
     const id = { major: 1, minor: 1 };
-    const op = {
-      identifier: id,
+    let yDifference = 0;
+    if (!isNaN(xValue)) {
+      const startXLineNumber = get(node, "data.xRange.start.line", 0) + 1;
+      const startXColumn = get(node, "data.xRange.start.character", 0) + 1;
+      const endXLineNumber = get(node, "data.xRange.end.line", 0) + 1;
+      const endXColumn = get(node, "data.xRange.end.character", 0) + 1;
+      const xOperation = {
+        identifier: id,
+        range: {
+          startLineNumber: startXLineNumber,
+          startColumn: startXColumn,
+          endLineNumber: endXLineNumber,
+          endColumn: endXColumn,
+        },
+        text: `${xValue}`,
+        forceMoveMarkers: true,
+      };
+
+      monacoInstance.executeEdits("my-source", [xOperation]);
+      const oldDiff = endXColumn - startXColumn;
+      yDifference = xValue.toString().length - oldDiff;
+    }
+
+    if (!isNaN(yValue)) {
+      const startYLineNumber = get(node, "data.yRange.start.line", 0) + 1;
+      const startYColumn = get(node, "data.yRange.start.character", 0) + 1;
+      const endYLineNumber = get(node, "data.yRange.end.line", 0) + 1;
+      const endYColumn = get(node, "data.yRange.end.character", 0) + 1;
+      const yOperation = {
+        identifier: id,
+        range: {
+          startLineNumber: startYLineNumber,
+          startColumn: startYColumn + yDifference,
+          endLineNumber: endYLineNumber,
+          endColumn: endYColumn + yDifference,
+        },
+        text: `${yValue}`,
+        forceMoveMarkers: true,
+      };
+      monacoInstance.executeEdits("my-source", [yOperation]);
+    }
+  };
+
+  const onNodeSelect = (node: YadlNode) => {
+    console.log(` $$$ onNodeSelect`);
+    console.log(node);
+    if (!monacoEditor || !monacoEditor.current) {
+      return;
+    }
+
+    const monacoInstance = monacoEditor?.current
+      ?.getEditorWrapper()
+      ?.getEditor();
+    const selectedLine = get(node, "data.startLine", 0);
+    monacoInstance.setPosition({ column: 0, lineNumber: selectedLine });
+    monacoInstance.revealLineInCenter(selectedLine);
+  };
+
+  const onEdgeConnect = (edge: YadlEdge) => {
+    if (!monacoEditor || !monacoEditor.current) {
+      return;
+    }
+
+    const monacoInstance = monacoEditor?.current
+      ?.getEditorWrapper()
+      ?.getEditor();
+    const monacoModel = monacoEditor?.current?.getEditorWrapper()?.getModel();
+    const selectedLine = monacoModel?.getLineCount() || 0;
+
+    const xOperation = {
+      identifier: { major: 1, minor: 1 },
       range: {
-        startLineNumber: selection?.selectionStartLineNumber || 1,
-        startColumn: selection?.selectionStartColumn || 1,
-        endLineNumber: selection?.endLineNumber || 1,
-        endColumn: selection?.endColumn || 1,
+        startLineNumber: selectedLine,
+        startColumn: 1,
+        endLineNumber: selectedLine,
+        endColumn: 1,
       },
-      text: position.toString(),
+      text: `edge ${edge.source} => ${edge.target}\n `,
       forceMoveMarkers: true,
     };
-    monacoInstance.executeEdits("my-source", [op]);
+
+    monacoInstance.executeEdits("my-source", [xOperation]);
+    monacoInstance.setPosition({ column: 0, lineNumber: selectedLine });
+    monacoInstance.revealLineInCenter(selectedLine);
   };
 
   const renderEditor = () => {
@@ -145,5 +238,7 @@ export default function Editor(props: EditorProps) {
     );
   };
 
-  return <div>{renderEditor()}</div>;
+  return <>{renderEditor()}</>;
 }
+
+export default forwardRef(Editor);
