@@ -1,29 +1,20 @@
 import { AstNode } from "langium-ast-helper";
-import { YadlModelAstNode, Icon, TextComponents, YadlNode, YadlEditorResponse, YadlNodePosition } from "./components/Interfaces.js";
+import { YadlModelAstNode, Icon, TextComponents, YadlNode, YadlEditorResponse, YadlNodePosition, Range } from "./components/Interfaces.js";
 
 export function getPosition(position: YadlNodePosition): YadlNodePosition {
   if (!position) {
     return {
-      // $type: "Position",
+      $type: "Position",
       x: 0,
       y: 0,
     };
   }
   const textRange = position.$textRegion;
-  let xRange: Range = undefined;
-  let yRange: Range = undefined;
-  // if (textRange.assignments?.x?.length > 0) {
-  //   xRange = textRange.assignments.x[0].range;
-  // }
-  // if (textRange.assignments?.y?.length > 0) {
-  //   yRange = textRange.assignments.y[0].range;
-  // }
   return {
-    // $type: "Position",
+    $type: "Position",
     x: position.x,
     y: position.y,
-    // xRange: xRange,
-    // yRange: yRange,
+    range: position.$textRegion?.range,
   };
 };
 
@@ -45,13 +36,15 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
   const astNode = getYadlModelAst(ast as YadlModelAstNode);
   let allNodes: YadlNode[] = [];
   const awsIcons = astNode?.awsIcons?.flatMap((i: Icon, index: number): YadlNode => {
+    const position = getPosition(i.position);
     return {
       id: i.name || `aws-${index + 1}`,
       data: {
         icon: i.icon,
-        category: "aws"
+        category: "aws",
+        range: position.range
       },
-      position: getPosition(i.position),
+      position: position,
       type: "icon",
     };
   });
@@ -61,13 +54,15 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
   }
 
   const gcpIcons = astNode?.gcpIcons?.flatMap((i: Icon, index: number): YadlNode => {
+    const position = getPosition(i.position);
     return {
       id: i.name || `gcp-${index + 1}`,
       data: {
         icon: i.icon,
-        category: "gcp"
+        category: "gcp",
+        range: position.range
       },
-      position: getPosition(i.position),
+      position: position,
       type: "icon",
     };
   });
@@ -77,13 +72,15 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
   }
 
   const azureIcons = astNode?.azureIcons?.flatMap((i: Icon, index: number): YadlNode => {
+    const position = getPosition(i.position);
     return {
       id: i.name || `azure-${index + 1}`,
       data: {
         icon: i.icon,
-        category: "azure"
+        category: "azure",
+        range: position.range
       },
-      position: getPosition(i.position),
+      position: position,
       type: "icon",
     };
   });
@@ -93,13 +90,15 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
   }
 
   const skillIcons = astNode?.skillIcons?.flatMap((i: Icon, index: number): YadlNode => {
+    const position = getPosition(i.position);
     return {
       id: i.name || `skill-${index + 1}`,
       data: {
         icon: i.icon,
-        category: "skill"
+        category: "skill",
+        range: position.range
       },
-      position: getPosition(i.position),
+      position: position,
       type: "icon",
     };
   });
@@ -109,13 +108,15 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
   }
 
   const undrawIcons = astNode?.undrawIcons?.flatMap((i: Icon, index: number): YadlNode => {
+    const position = getPosition(i.position);
     return {
       id: i.name || `undraw-${index + 1}`,
       data: {
         icon: i.icon,
-        category: "undraw"
+        category: "undraw",
+        range: position.range
       },
-      position: getPosition(i.position),
+      position: position,
       type: "icon",
     };
   });
@@ -125,13 +126,15 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
   }
 
   const themeisleIcons = astNode?.themeisleIcons?.flatMap((i: Icon): YadlNode => {
+    const position = getPosition(i.position);
     return {
       id: i.name,
       data: {
         icon: i.icon,
-        category: "themeisle"
+        category: "themeisle",
+        range: position.range
       },
-      position: getPosition(i.position),
+      position: position,
       type: "icon",
     };
   });
@@ -141,14 +144,16 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
   }
 
   const textComponents = astNode?.textComponents?.flatMap((i: any, index: number): YadlNode => {
+    const position = getPosition(i.position);
     return {
       id: i.name || `text-${index + 1}`,
       type: "text",
-      position: getPosition(i.position),
+      position: position,
       data: {
         classes: i.classes?.classes,
         text: i.text,
         fontFamily: i.fontFamily?.fontFamily,
+        range: position.range
       }
     };
   });

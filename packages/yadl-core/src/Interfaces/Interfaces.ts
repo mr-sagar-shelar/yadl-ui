@@ -129,3 +129,18 @@ export interface YadlModelElement {
     $type: string;
     name: string;
 }
+
+export interface YadlNode {
+    id?: string;
+    type?: string;
+    data?: any;
+    position?: YadlNodePosition;
+}
+
+export interface YadlNodePosition {
+    $type?: string;
+    $textRegion?: TextRegion;
+    x: number;
+    y: number;
+    range?: Range;
+}

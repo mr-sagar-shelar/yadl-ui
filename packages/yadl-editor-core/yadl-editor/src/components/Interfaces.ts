@@ -78,6 +78,7 @@ export interface Assignment {
 
 export interface TextRegion {
     assignments: Assignment;
+    range: Range;
     end: number;
     length: number;
     offset: number;
@@ -88,6 +89,5 @@ export interface YadlNodePosition {
     $textRegion?: TextRegion;
     x: number;
     y: number;
-    xRange?: Range;
-    yRange?: Range;
+    range?: Range;
 }
