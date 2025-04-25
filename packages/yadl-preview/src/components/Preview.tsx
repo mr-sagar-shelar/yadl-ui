@@ -32,6 +32,7 @@ export type YadlPreviewProps = {
   onNodePositionChanged?: (node: Node) => void;
   onNodeRemoved?: (node: Node) => void;
   onNodeSelect?: (node: Node) => void;
+  onNodeResized?: (node: Node) => void;
   onNodeAdded?: (node: Node) => void;
   onEdgeConnect?: (edge: Edge) => void;
 };
@@ -52,6 +53,7 @@ const YadlPreview = (props: YadlPreviewProps) => {
     initialNodes = [],
     initialEdges = [],
     onNodeSelect = () => { },
+    onNodeResized = () => { },
     onNodePositionChanged = () => { },
     onNodeRemoved = () => { },
     onEdgeConnect = () => { },
@@ -74,6 +76,12 @@ const YadlPreview = (props: YadlPreviewProps) => {
   const debouncedNodeRemoved = debounce((node: Node) => {
     onNodeRemoved(node)
   }, 500);
+
+  const debouncedNodeResized = debounce((node: Node) => {
+    onNodeResized(node)
+  }, 500);
+
+
 
   const onConnect = useCallback(
     (changes: Connection) => {
@@ -157,6 +165,17 @@ const YadlPreview = (props: YadlPreviewProps) => {
             debouncedNodeRemoved(currentNode[0]);
           }
         }
+        if (updatedNode.type == "dimensions" && updatedNode.resizing == false) {
+          const currentNode = nds.filter((node) => node.id === updatedNode.id);
+          if (currentNode.length > 0) {
+            debouncedNodeResized(currentNode[0]);
+          }
+          console.log(updatedNode.resizing)
+        }
+        if (updatedNode.type == "dimensions") {
+          console.log(updatedNode.resizing)
+        }
+
         return applyNodeChanges(changes, nds);
       });
     },

@@ -52,4 +52,5 @@ AzureIconType15 returns string:
 AzureIcons:
     'azure-icon' (name=ID)? icon=(AzureIconType0 | AzureIconType1 | AzureIconType2 | AzureIconType3 | AzureIconType4 | AzureIconType5 | AzureIconType6 | AzureIconType7 | AzureIconType8 | AzureIconType9 | AzureIconType10 | AzureIconType11 | AzureIconType12 | AzureIconType13 | AzureIconType14 | AzureIconType15) ('{'
         (position=Position)?
+        (dimension=Dimension)?
     '}')?;

@@ -19,4 +19,5 @@ GcpIconType4 returns string:
 GcpIcons:
     'gcp-icon' (name=ID)? icon=(GcpIconType0 | GcpIconType1 | GcpIconType2 | GcpIconType3 | GcpIconType4) ('{'
         (position=Position)?
+        (dimension=Dimension)?
     '}')?;

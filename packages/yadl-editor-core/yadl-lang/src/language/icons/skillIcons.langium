@@ -19,4 +19,5 @@ SkillIconType4 returns string:
 SkillIcons:
     'skill-icon' (name=ID)? icon=(SkillIconType0 | SkillIconType1 | SkillIconType2 | SkillIconType3 | SkillIconType4) ('{'
         (position=Position)?
+        (dimension=Dimension)?
     '}')?;

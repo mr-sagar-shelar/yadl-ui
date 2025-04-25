@@ -37,6 +37,7 @@ export type YadlEditorRef = {
   onNodeSelect: (node: YadlNode) => void;
   onNodeRemoved: (node: YadlNode) => void;
   onEdgeConnect: (edge: YadlEdge) => void;
+  onNodeResized: (edge: YadlEdge) => void;
 }
 
 function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
@@ -73,6 +74,7 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
     onNodeSelect,
     onNodeRemoved,
     onEdgeConnect,
+    onNodeResized
   }));
 
   const onCodeChange = (resp: DocumentChangeResponse) => {
@@ -154,6 +156,19 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
   };
 
   const onNodeSelect = (node: YadlNode) => {
+    if (!monacoEditor || !monacoEditor.current) {
+      return;
+    }
+
+    const monacoInstance = monacoEditor?.current
+      ?.getEditorWrapper()
+      ?.getEditor();
+    const selectedLine = get(node, "data.nodeRange.start.line", 0) + 1;
+    monacoInstance.setPosition({ column: 0, lineNumber: selectedLine });
+    monacoInstance.revealLineInCenter(selectedLine);
+  };
+
+  const onNodeResized = (node: YadlNode) => {
     if (!monacoEditor || !monacoEditor.current) {
       return;
     }

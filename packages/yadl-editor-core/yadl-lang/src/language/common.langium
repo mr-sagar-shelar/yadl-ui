@@ -4,6 +4,12 @@ Position:
         'y:' (isNegativeY?='-')? y=NUMBER 
     '}';
 
+Dimension:
+    'dimension' '{'
+        'width:' width=NUMBER
+        'height:' height=NUMBER 
+    '}';
+
 
 QualifiedName returns string:
     ID ('.' ID)*;

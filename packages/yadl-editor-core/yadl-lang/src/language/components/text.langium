@@ -10,6 +10,7 @@ Classes:
 TextComponents:
     'text' (text=STRING) ('{'
         (position=Position)?
+        (dimension=Dimension)?
         (fontFamily=FontFamily)?
         (classes=Classes)?
     '}')?;

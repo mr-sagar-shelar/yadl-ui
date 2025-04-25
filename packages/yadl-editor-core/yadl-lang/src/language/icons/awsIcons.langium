@@ -25,4 +25,5 @@ AwsIconType6 returns string:
 AwsIcons:
     'aws-icon' (name=ID)? icon=(AwsIconType0 | AwsIconType1 | AwsIconType2 | AwsIconType3 | AwsIconType4 | AwsIconType5 | AwsIconType6) ('{'
         (position=Position)?
+        (dimension=Dimension)?
     '}')?;

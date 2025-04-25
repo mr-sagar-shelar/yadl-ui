@@ -52,4 +52,5 @@ UndrawIconType15 returns string:
 UndrawIcons:
     'undraw-icon' (name=ID)? icon=(UndrawIconType0 | UndrawIconType1 | UndrawIconType2 | UndrawIconType3 | UndrawIconType4 | UndrawIconType5 | UndrawIconType6 | UndrawIconType7 | UndrawIconType8 | UndrawIconType9 | UndrawIconType10 | UndrawIconType11 | UndrawIconType12 | UndrawIconType13 | UndrawIconType14 | UndrawIconType15) ('{'
         (position=Position)?
+        (dimension=Dimension)?
     '}')?;

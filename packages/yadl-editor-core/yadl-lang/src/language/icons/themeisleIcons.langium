@@ -37,4 +37,5 @@ ThemeisleIconType10 returns string:
 ThemeisleIcons:
     'themeisle-icon'(name=ID)? icon=(ThemeisleIconType0 | ThemeisleIconType1 | ThemeisleIconType2 | ThemeisleIconType3 | ThemeisleIconType4 | ThemeisleIconType5 | ThemeisleIconType6 | ThemeisleIconType7 | ThemeisleIconType8 | ThemeisleIconType9 | ThemeisleIconType10)('{'
     (position=Position)?
+    (dimension=Dimension)?
     '}')?;
