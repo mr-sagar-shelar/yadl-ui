@@ -63,6 +63,10 @@ const YadlPreview = (props: YadlPreviewProps) => {
   const { screenToFlowPosition } = useReactFlow();
   const [type] = useDnD();
 
+  const debouncedNodeSelect = debounce((node: Node) => {
+    onNodeSelect(node)
+  }, 500);
+
   const debouncedNodePositionChanged = debounce((node: Node) => {
     onNodePositionChanged(node)
   }, 500);
@@ -137,7 +141,7 @@ const YadlPreview = (props: YadlPreviewProps) => {
               (node) => node.id === selectedChangedNode[0].id,
             );
             if (selectNode.length > 0) {
-              onNodeSelect(selectNode[0]);
+              debouncedNodeSelect(selectNode[0]);
             }
           }
         }

@@ -161,7 +161,7 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
     const monacoInstance = monacoEditor?.current
       ?.getEditorWrapper()
       ?.getEditor();
-    const selectedLine = get(node, "data.startLine", 0);
+    const selectedLine = get(node, "data.nodeRange.start.line", 0) + 1;
     monacoInstance.setPosition({ column: 0, lineNumber: selectedLine });
     monacoInstance.revealLineInCenter(selectedLine);
   };
