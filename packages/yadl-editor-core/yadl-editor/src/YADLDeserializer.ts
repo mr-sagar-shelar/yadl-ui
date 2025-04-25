@@ -1,5 +1,5 @@
 import { AstNode } from "langium-ast-helper";
-import { YadlModelAstNode, Icon, TextComponents, YadlNode, YadlEditorResponse, YadlNodePosition, Range } from "./components/Interfaces.js";
+import { YadlModelAstNode, Icon, TextComponents, YadlNode, YadlEditorResponse, YadlNodePosition, YadlNodeDimension } from "./components/Interfaces.js";
 
 export function getPosition(position: YadlNodePosition): YadlNodePosition {
   if (!position) {
@@ -14,6 +14,18 @@ export function getPosition(position: YadlNodePosition): YadlNodePosition {
     x: position.isNegativeX ? (-1 * position.x) : position.x,
     y: position.isNegativeY ? (-1 * position.y) : position.y,
     range: position.$textRegion?.range,
+  };
+};
+
+export function getDimension(dimension: YadlNodeDimension): YadlNodeDimension {
+  if (!dimension) {
+    return undefined;
+  }
+  return {
+    $type: "Dimension",
+    width: dimension.width,
+    height: dimension.height,
+    range: dimension.$textRegion?.range,
   };
 };
 
@@ -36,8 +48,8 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
   let allNodes: YadlNode[] = [];
   const awsIcons = astNode?.awsIcons?.flatMap((i: Icon, index: number): YadlNode => {
     const position = getPosition(i.position);
-
-    return {
+    const dimension = getDimension(i.dimension);
+    const iconData: YadlNode = {
       id: i.name || `aws-${index + 1}`,
       data: {
         icon: i.icon,
@@ -48,6 +60,14 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
       position: position,
       type: "icon",
     };
+
+    if (dimension) {
+      iconData.data.dimensionRange = dimension.range
+      iconData.data.width = dimension.width
+      iconData.data.height = dimension.height
+    }
+
+    return iconData;
   });
 
   if (awsIcons) {
@@ -56,7 +76,8 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
 
   const gcpIcons = astNode?.gcpIcons?.flatMap((i: Icon, index: number): YadlNode => {
     const position = getPosition(i.position);
-    return {
+    const dimension = getDimension(i.dimension);
+    const iconData: YadlNode = {
       id: i.name || `gcp-${index + 1}`,
       data: {
         icon: i.icon,
@@ -67,6 +88,13 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
       position: position,
       type: "icon",
     };
+    if (dimension) {
+      iconData.data.dimensionRange = dimension.range
+      iconData.data.width = dimension.width
+      iconData.data.height = dimension.height
+    }
+
+    return iconData;
   });
 
   if (gcpIcons) {
@@ -75,7 +103,8 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
 
   const azureIcons = astNode?.azureIcons?.flatMap((i: Icon, index: number): YadlNode => {
     const position = getPosition(i.position);
-    return {
+    const dimension = getDimension(i.dimension);
+    const iconData: YadlNode = {
       id: i.name || `azure-${index + 1}`,
       data: {
         icon: i.icon,
@@ -86,6 +115,14 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
       position: position,
       type: "icon",
     };
+
+    if (dimension) {
+      iconData.data.dimensionRange = dimension.range
+      iconData.data.width = dimension.width
+      iconData.data.height = dimension.height
+    }
+
+    return iconData;
   });
 
   if (azureIcons) {
@@ -94,7 +131,8 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
 
   const skillIcons = astNode?.skillIcons?.flatMap((i: Icon, index: number): YadlNode => {
     const position = getPosition(i.position);
-    return {
+    const dimension = getDimension(i.dimension);
+    const iconData: YadlNode = {
       id: i.name || `skill-${index + 1}`,
       data: {
         icon: i.icon,
@@ -105,6 +143,14 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
       position: position,
       type: "icon",
     };
+
+    if (dimension) {
+      iconData.data.dimensionRange = dimension.range
+      iconData.data.width = dimension.width
+      iconData.data.height = dimension.height
+    }
+
+    return iconData;
   });
 
   if (skillIcons) {
@@ -113,7 +159,8 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
 
   const undrawIcons = astNode?.undrawIcons?.flatMap((i: Icon, index: number): YadlNode => {
     const position = getPosition(i.position);
-    return {
+    const dimension = getDimension(i.dimension);
+    const iconData: YadlNode = {
       id: i.name || `undraw-${index + 1}`,
       data: {
         icon: i.icon,
@@ -124,6 +171,14 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
       position: position,
       type: "icon",
     };
+
+    if (dimension) {
+      iconData.data.dimensionRange = dimension.range
+      iconData.data.width = dimension.width
+      iconData.data.height = dimension.height
+    }
+
+    return iconData;
   });
 
   if (undrawIcons) {
@@ -132,7 +187,8 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
 
   const themeisleIcons = astNode?.themeisleIcons?.flatMap((i: Icon): YadlNode => {
     const position = getPosition(i.position);
-    return {
+    const dimension = getDimension(i.dimension);
+    const iconData: YadlNode = {
       id: i.name,
       data: {
         icon: i.icon,
@@ -143,6 +199,14 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
       position: position,
       type: "icon",
     };
+
+    if (dimension) {
+      iconData.data.dimensionRange = dimension.range
+      iconData.data.width = dimension.width
+      iconData.data.height = dimension.height
+    }
+
+    return iconData;
   });
 
   if (themeisleIcons) {
@@ -151,7 +215,8 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
 
   const textComponents = astNode?.textComponents?.flatMap((i: any, index: number): YadlNode => {
     const position = getPosition(i.position);
-    return {
+    const dimension = getDimension(i.dimension);
+    const textData: YadlNode = {
       id: i.name || `text-${index + 1}`,
       type: "text",
       position: position,
@@ -163,6 +228,16 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
         nodeRange: i.$textRegion.range
       }
     };
+
+    if (dimension) {
+      textData.data.dimensionRange = dimension.range
+      textData.data.props = {
+        width: dimension.width,
+        height: dimension.height
+      }
+    }
+
+    return textData;
   });
 
   if (textComponents) {

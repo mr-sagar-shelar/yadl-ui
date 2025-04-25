@@ -10,6 +10,7 @@ export interface Icon {
     name?: string;
     icon: string;
     position?: YadlNodePosition;
+    dimension?: YadlNodeDimension;
     $textRegion?: TextRegion;
 }
 
@@ -19,6 +20,7 @@ export interface YadlNode {
     type?: string;
     data?: any;
     position?: YadlNodePosition;
+    dimension?: YadlNodeDimension;
 }
 
 export interface YadlEdge {
@@ -92,5 +94,18 @@ export interface YadlNodePosition {
     isNegativeY?: boolean;
     x: number;
     y: number;
+    range?: Range;
+}
+
+export interface YadlNodeStyle {
+    width?: number;
+    height?: number;
+}
+
+export interface YadlNodeDimension {
+    $type?: string;
+    $textRegion?: TextRegion;
+    width: number;
+    height: number;
     range?: Range;
 }

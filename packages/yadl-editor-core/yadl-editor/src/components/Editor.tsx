@@ -176,9 +176,31 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
     const monacoInstance = monacoEditor?.current
       ?.getEditorWrapper()
       ?.getEditor();
-    const selectedLine = get(node, "data.nodeRange.start.line", 0) + 1;
-    monacoInstance.setPosition({ column: 0, lineNumber: selectedLine });
-    monacoInstance.revealLineInCenter(selectedLine);
+    const width = Math.trunc(get(node, "measured.width", 0));
+    const height = Math.trunc(get(node, "measured.height", 0));
+
+    const range = get(node, "data.dimensionRange");
+    if (range) {
+      const updatedText = `dimension { width: ${width} height: ${height} }`
+      const id = { major: 1, minor: 1 };
+      const startLineNumber = get(range, "start.line", 0) + 1;
+      const startColumn = get(range, "start.character", 0) + 1;
+      const endLineNumber = get(range, "end.line", 0) + 1;
+      const endColumn = get(range, "end.character", 0) + 1;
+
+      const operation = {
+        identifier: id,
+        range: {
+          startLineNumber: startLineNumber,
+          startColumn: startColumn,
+          endLineNumber: endLineNumber,
+          endColumn: endColumn,
+        },
+        text: updatedText,
+        forceMoveMarkers: true,
+      };
+      monacoInstance.executeEdits("my-source", [operation]);
+    }
   };
 
   const onNodeRemoved = (node: YadlNode) => {

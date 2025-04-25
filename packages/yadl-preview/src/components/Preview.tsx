@@ -67,19 +67,19 @@ const YadlPreview = (props: YadlPreviewProps) => {
 
   const debouncedNodeSelect = debounce((node: Node) => {
     onNodeSelect(node)
-  }, 500);
+  }, 250);
 
   const debouncedNodePositionChanged = debounce((node: Node) => {
     onNodePositionChanged(node)
-  }, 500);
+  }, 250);
 
   const debouncedNodeRemoved = debounce((node: Node) => {
     onNodeRemoved(node)
-  }, 500);
+  }, 250);
 
   const debouncedNodeResized = debounce((node: Node) => {
     onNodeResized(node)
-  }, 500);
+  }, 250);
 
 
 

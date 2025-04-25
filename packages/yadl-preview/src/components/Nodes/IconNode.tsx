@@ -1,4 +1,4 @@
-import { memo, useState } from "react";
+import { memo, useState, useEffect } from "react";
 import {
   Handle,
   Position,
@@ -14,7 +14,7 @@ import { AzureIconNames } from "yadl-azure-icons";
 import * as GCPIcons from "yadl-gcp-icons";
 import { GCPIconNames } from "yadl-gcp-icons";
 import * as SkillIcons from "yadl-skill-icons";
-import { SkillIconNames  } from "yadl-skill-icons";
+import { SkillIconNames } from "yadl-skill-icons";
 import * as ThemeisleIcons from "yadl-themeisle-icons";
 import { ThemeisleIconNames } from "yadl-themeisle-icons";
 import * as UndrawIcons from "yadl-undraw-icons";
@@ -75,6 +75,11 @@ function IconNode(props: IconNodeProps) {
       }
       break;
   }
+
+  useEffect(() => {
+    setCurrentWidth(width);
+    setCurrentHeight(height);
+  }, [width, height])
 
   return (
     <label htmlFor="properties-drawer">
