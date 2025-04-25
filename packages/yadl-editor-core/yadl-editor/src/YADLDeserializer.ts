@@ -9,7 +9,6 @@ export function getPosition(position: YadlNodePosition): YadlNodePosition {
       y: 0,
     };
   }
-  const textRange = position.$textRegion;
   return {
     $type: "Position",
     x: position.isNegativeX ? (-1 * position.x) : position.x,
@@ -37,12 +36,14 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
   let allNodes: YadlNode[] = [];
   const awsIcons = astNode?.awsIcons?.flatMap((i: Icon, index: number): YadlNode => {
     const position = getPosition(i.position);
+
     return {
       id: i.name || `aws-${index + 1}`,
       data: {
         icon: i.icon,
         category: "aws",
-        range: position.range
+        positionRange: position.range,
+        nodeRange: i.$textRegion.range
       },
       position: position,
       type: "icon",
@@ -60,7 +61,8 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
       data: {
         icon: i.icon,
         category: "gcp",
-        range: position.range
+        positionRange: position.range,
+        nodeRange: i.$textRegion.range
       },
       position: position,
       type: "icon",
@@ -78,7 +80,8 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
       data: {
         icon: i.icon,
         category: "azure",
-        range: position.range
+        positionRange: position.range,
+        nodeRange: i.$textRegion.range
       },
       position: position,
       type: "icon",
@@ -96,7 +99,8 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
       data: {
         icon: i.icon,
         category: "skill",
-        range: position.range
+        positionRange: position.range,
+        nodeRange: i.$textRegion.range
       },
       position: position,
       type: "icon",
@@ -114,7 +118,8 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
       data: {
         icon: i.icon,
         category: "undraw",
-        range: position.range
+        positionRange: position.range,
+        nodeRange: i.$textRegion.range
       },
       position: position,
       type: "icon",
@@ -132,7 +137,8 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
       data: {
         icon: i.icon,
         category: "themeisle",
-        range: position.range
+        positionRange: position.range,
+        nodeRange: i.$textRegion.range
       },
       position: position,
       type: "icon",
@@ -153,7 +159,8 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
         classes: i.classes?.classes,
         text: i.text,
         fontFamily: i.fontFamily?.fontFamily,
-        range: position.range
+        positionRange: position.range,
+        nodeRange: i.$textRegion.range
       }
     };
   });

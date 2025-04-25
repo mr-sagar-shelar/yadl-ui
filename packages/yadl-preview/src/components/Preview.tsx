@@ -29,7 +29,8 @@ import "./xy-themes.css";
 export type YadlPreviewProps = {
   initialNodes: Node[];
   initialEdges: Edge[];
-  onNodeChange?: (node: Node) => void;
+  onNodePositionChanged?: (node: Node) => void;
+  onNodeRemoved?: (node: Node) => void;
   onNodeSelect?: (node: Node) => void;
   onNodeAdded?: (node: Node) => void;
   onEdgeConnect?: (edge: Edge) => void;
@@ -51,7 +52,8 @@ const YadlPreview = (props: YadlPreviewProps) => {
     initialNodes = [],
     initialEdges = [],
     onNodeSelect = () => { },
-    onNodeChange = () => { },
+    onNodePositionChanged = () => { },
+    onNodeRemoved = () => { },
     onEdgeConnect = () => { },
     onNodeAdded = () => { },
   } = props;
@@ -61,8 +63,12 @@ const YadlPreview = (props: YadlPreviewProps) => {
   const { screenToFlowPosition } = useReactFlow();
   const [type] = useDnD();
 
-  const debouncedOnNodeChanged = debounce((node: Node) => {
-    onNodeChange(node)
+  const debouncedNodePositionChanged = debounce((node: Node) => {
+    onNodePositionChanged(node)
+  }, 500);
+
+  const debouncedNodeRemoved = debounce((node: Node) => {
+    onNodeRemoved(node)
   }, 500);
 
   const onConnect = useCallback(
@@ -138,7 +144,13 @@ const YadlPreview = (props: YadlPreviewProps) => {
         if (updatedNode.type == "position" && !updatedNode.dragging) {
           const currentNode = nds.filter((node) => node.id === updatedNode.id);
           if (currentNode.length > 0) {
-            debouncedOnNodeChanged(currentNode[0]);
+            debouncedNodePositionChanged(currentNode[0]);
+          }
+        }
+        if (updatedNode.type == "remove") {
+          const currentNode = nds.filter((node) => node.id === updatedNode.id);
+          if (currentNode.length > 0) {
+            debouncedNodeRemoved(currentNode[0]);
           }
         }
         return applyNodeChanges(changes, nds);

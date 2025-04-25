@@ -33,8 +33,9 @@ export interface YadlEditorProps {
 }
 
 export type YadlEditorRef = {
-  onNodeChange: (node: YadlNode) => void;
+  onNodePositionChanged: (node: YadlNode) => void;
   onNodeSelect: (node: YadlNode) => void;
+  onNodeRemoved: (node: YadlNode) => void;
   onEdgeConnect: (edge: YadlEdge) => void;
 }
 
@@ -68,9 +69,10 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
   }, [position]);
 
   useImperativeHandle(ref, () => ({
-    onNodeChange,
+    onNodePositionChanged,
     onNodeSelect,
-    onEdgeConnect
+    onNodeRemoved,
+    onEdgeConnect,
   }));
 
   const onCodeChange = (resp: DocumentChangeResponse) => {
@@ -116,7 +118,7 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
     monacoInstance.revealLineInCenter(position);
   };
 
-  const onNodeChange = (node: YadlNode) => {
+  const onNodePositionChanged = (node: YadlNode) => {
     if (!monacoEditor || !monacoEditor.current) {
       return;
     }
@@ -127,7 +129,7 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
     const xValue = Math.trunc(node.position.x);
     const yValue = Math.trunc(node.position.y);
 
-    const range = get(node, "data.range");
+    const range = get(node, "data.positionRange");
     if (range) {
       const updatedText = `position { x: ${xValue} y: ${yValue} }`
       const id = { major: 1, minor: 1 };
@@ -162,6 +164,37 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
     const selectedLine = get(node, "data.startLine", 0);
     monacoInstance.setPosition({ column: 0, lineNumber: selectedLine });
     monacoInstance.revealLineInCenter(selectedLine);
+  };
+
+  const onNodeRemoved = (node: YadlNode) => {
+    if (!monacoEditor || !monacoEditor.current) {
+      return;
+    }
+    const monacoInstance = monacoEditor?.current
+      ?.getEditorWrapper()
+      ?.getEditor();
+
+    const range = get(node, "data.nodeRange");
+    if (range) {
+      const id = { major: 1, minor: 1 };
+      const startLineNumber = get(range, "start.line", 0) + 1;
+      const startColumn = get(range, "start.character", 0) + 1;
+      const endLineNumber = get(range, "end.line", 0) + 1;
+      const endColumn = get(range, "end.character", 0) + 1;
+
+      const operation = {
+        identifier: id,
+        range: {
+          startLineNumber: startLineNumber,
+          startColumn: startColumn,
+          endLineNumber: endLineNumber,
+          endColumn: endColumn,
+        },
+        text: "",
+        forceMoveMarkers: true,
+      };
+      monacoInstance.executeEdits("my-source", [operation]);
+    }
   };
 
   const onEdgeConnect = (edge: YadlEdge) => {

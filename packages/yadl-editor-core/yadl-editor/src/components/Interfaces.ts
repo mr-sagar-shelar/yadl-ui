@@ -10,6 +10,7 @@ export interface Icon {
     name?: string;
     icon: string;
     position?: YadlNodePosition;
+    $textRegion?: TextRegion;
 }
 
 
