@@ -86,19 +86,13 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
     timeout = window.setTimeout(async () => {
       running = true;
       const ast = deserializeAST(resp.content) as YadlModelAstNode;
-      // console.log(`$$$$$$$$ deserializeAST`, ast);
       const deserializedContent = getYADLNodes(ast);
-      // console.log(
-      //   `$$$$$$$$ deserializedContent`,
-      //   JSON.stringify(deserializedContent, null, 2),
-      // );
       onChange(deserializedContent)
       running = false;
     }, 500);
   };
 
   const onMonacoLoad = () => {
-    console.log(` $$$ onMonacoLoad`);
     if (!monacoEditor.current) {
       throw new Error("Unable to get a reference to the Monaco Editor");
     }

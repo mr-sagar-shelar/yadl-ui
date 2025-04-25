@@ -87,6 +87,8 @@ export interface TextRegion {
 export interface YadlNodePosition {
     $type?: string;
     $textRegion?: TextRegion;
+    isNegativeX?: boolean;
+    isNegativeY?: boolean;
     x: number;
     y: number;
     range?: Range;

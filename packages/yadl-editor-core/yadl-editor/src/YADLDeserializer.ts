@@ -12,8 +12,8 @@ export function getPosition(position: YadlNodePosition): YadlNodePosition {
   const textRange = position.$textRegion;
   return {
     $type: "Position",
-    x: position.x,
-    y: position.y,
+    x: position.isNegativeX ? (-1 * position.x) : position.x,
+    y: position.isNegativeY ? (-1 * position.y) : position.y,
     range: position.$textRegion?.range,
   };
 };
