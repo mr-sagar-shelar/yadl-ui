@@ -22,6 +22,7 @@ import {
   type DefaultEdgeOptions,
 } from "@xyflow/react";
 import { YadlNodeTypes } from "./Nodes";
+import { debounce } from "lodash";
 import { DnDProvider, useDnD, DragDropProps } from "yadl-core-package";
 import "./xy-themes.css";
 
@@ -49,16 +50,20 @@ const YadlPreview = (props: YadlPreviewProps) => {
   const {
     initialNodes = [],
     initialEdges = [],
-    onNodeSelect = () => {},
-    onNodeChange = () => {},
-    onEdgeConnect = () => {},
-    onNodeAdded = () => {},
+    onNodeSelect = () => { },
+    onNodeChange = () => { },
+    onEdgeConnect = () => { },
+    onNodeAdded = () => { },
   } = props;
   const reactFlowWrapper = useRef(null);
   const [nodes, setNodes] = useNodesState(initialNodes);
   const [edges, setEdges] = useEdgesState(initialEdges);
   const { screenToFlowPosition } = useReactFlow();
   const [type] = useDnD();
+
+  const debouncedOnNodeChanged = debounce((node: Node) => {
+    onNodeChange(node)
+  }, 500);
 
   const onConnect = useCallback(
     (changes: Connection) => {
@@ -133,7 +138,7 @@ const YadlPreview = (props: YadlPreviewProps) => {
         if (updatedNode.type == "position" && !updatedNode.dragging) {
           const currentNode = nds.filter((node) => node.id === updatedNode.id);
           if (currentNode.length > 0) {
-            onNodeChange(currentNode[0]);
+            debouncedOnNodeChanged(currentNode[0]);
           }
         }
         return applyNodeChanges(changes, nds);
