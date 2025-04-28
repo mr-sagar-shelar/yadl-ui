@@ -11,7 +11,7 @@ export const Gradients: Story = {
   args: {
     classes: "bg-linear-to-r from-cyan-700 via-blue-500 to-indigo-600",
   },
-  render: (args) => (
+  render: () => (
     <div className="grid xs:grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 overflow-auto">
       <Text
         classes="border-2 p-2 mx-auto text-2xl font-bold break-words sm:text-3xl md:text-4xl truncate  bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent"

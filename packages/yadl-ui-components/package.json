@@ -1,6 +1,6 @@
 {
   "name": "yadl-ui-components",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "type": "module",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -36,16 +36,18 @@
     "type": "git",
     "url": "git+https://github.com/mr-sagar-shelar/yadl-ui.git"
   },
-  "keywords": [],
+  "keywords": ["YADL","Yet Another Diagramming Library", "YADL UI Components"],
   "author": "Sagar Shelar",
   "license": "MIT",
   "description": "YADL UI Components",
   "peerDependencies": {
     "daisyui": "^5.0.9",
     "react": "^19.0.0",
-    "tailwindcss": "^4.0.15"
+    "tailwindcss": "^4.0.15",
+    "react-fontpicker-ts": "^1.2.0"
   },
   "dependencies": {
+    "react-fontpicker-ts": "^1.2.0",
     "yadl-core-package": "^1.0.0"
   }
 }

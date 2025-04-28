@@ -3,14 +3,10 @@ import { SearchAwsIcons } from "yadl-aws-icons";
 import { SearchAzureIcons } from "yadl-azure-icons";
 import { SearchGcpIcons } from "yadl-gcp-icons";
 import { SearchSkillIcons } from "yadl-skill-icons";
-// import { SearchGcpIcons } from "yadl-themeisle-icons";
+import { SearchThemeisleIcons } from "yadl-themeisle-icons";
+import { SearchUndrawIcons } from "yadl-undraw-icons";
+
 // import {
-//   SearchSkillIcons,
-//   SearchGCPIcons,
-//   SearchAWSIcons,
-//   SearchAzureIcons,
-//   SearchThemeIsleIcons,
-//   SearchUndrawIcons,
 //   SearchBoxes,
 //   SearchTextComponents,
 //   SearchShapes,
@@ -60,7 +56,7 @@ const SearchComponents = () => {
           <SearchAzureIcons />
         </div>
 
-        {/* <input
+        <input
           type="radio"
           name="searchIconTabs"
           className="tab"
@@ -78,7 +74,7 @@ const SearchComponents = () => {
         />
         <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
           <SearchUndrawIcons />
-        </div> */}
+        </div>
       </div>
     </>
   );

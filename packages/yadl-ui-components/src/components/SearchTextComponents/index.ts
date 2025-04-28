@@ -1,0 +1,1 @@
+export { default as SearchTextComponents } from "./SearchTextComponents";
