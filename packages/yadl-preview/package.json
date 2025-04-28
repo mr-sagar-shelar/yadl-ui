@@ -49,13 +49,13 @@
   "dependencies": {
     "@xyflow/react": "^12.5.5",
     "lodash": "^4.17.21",
-    "yadl-aws-icons": "^1.0.0",
-    "yadl-azure-icons": "^1.0.0",
+    "yadl-aws-icons": "^1.0.2",
+    "yadl-azure-icons": "^1.0.2",
     "yadl-core-package": "^1.0.0",
-    "yadl-gcp-icons": "^1.0.0",
-    "yadl-skill-icons": "^1.0.0",
-    "yadl-themeisle-icons": "^1.0.0",
+    "yadl-gcp-icons": "^1.0.2",
+    "yadl-skill-icons": "^1.0.2",
+    "yadl-themeisle-icons": "^1.0.2",
     "yadl-ui-components": "^1.0.0",
-    "yadl-undraw-icons": "^1.0.0"
+    "yadl-undraw-icons": "^1.0.2"
   }
 }

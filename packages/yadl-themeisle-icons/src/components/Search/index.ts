@@ -1,1 +1,1 @@
-export { default as SearchGcpIcons } from "./SearchIcons";
+export { default as SearchThemeisleIcons } from "./SearchIcons";
