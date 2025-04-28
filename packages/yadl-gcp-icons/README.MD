@@ -2,15 +2,49 @@
 
 ## Install
 
-- `nvm use 22`
-- `npm i`
-- `npm run storybook`
+- `npm i yadl-gcp-icons`
 
-## Create components
+# How to use
 
-- `npm run build`
+Below is example on how to integrate YADL GCP Icons.
 
-## Create storybook build
+```ts
+import { useMemo } from "react";
+import * as GcpIcons from "yadl-gcp-icons";
+import { GcpIconNames } from "yadl-gcp-icons";
+import { memo } from "react";
 
-- `npm run build-storybook -- -o ./docs --test`
-- `http-server ./docs`
+const Icons = () => {
+  const IconsComponent = useMemo(() => {
+    const listItems = Object.entries(GcpIconNames)
+      .map((icons) => {
+        const [key, iconDetails] = icons;
+        let Icon = GcpIcons[iconDetails.icon];
+
+        if (Icon) {
+          return (
+            <div
+              key={key}
+              className="dndnode m-2"
+              title={iconDetails.name}
+              style={{ padding: 10 }}
+            >
+              {Icon && <Icon width={50} height={50} />}
+            </div>
+          );
+        }
+        return null;
+      });
+    return listItems;
+  }, []);
+  return (
+    <div style={{ height: "100%", width: "100%", overflow: "visible" }}>
+      <div style={{ display: "flex", flexWrap: "wrap" }}>
+        {IconsComponent}
+      </div>
+    </div>
+  );
+};
+
+const Memo = memo(Icons);
+export default Memo;

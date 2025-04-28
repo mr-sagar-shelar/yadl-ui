@@ -215,3 +215,4 @@ export * from "./WebRisk";
 export * from "./WebSecurityScanner";
 export * from "./Workflows";
 export * from "./WorkloadIdentityPool";
+export * from "./Search";
