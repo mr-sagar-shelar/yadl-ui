@@ -1421,3 +1421,4 @@ export * from "./FishingFishing";
 export * from "./Be_the_heroBeTheHero";
 export * from "./GdprGDPR";
 export * from "./MarilynMarilyn";
+export * from "./Search";

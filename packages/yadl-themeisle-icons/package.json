@@ -1,6 +1,6 @@
 {
   "name": "yadl-themeisle-icons",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "type": "module",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -36,7 +36,7 @@
     "type": "git",
     "url": "git+https://github.com/mr-sagar-shelar/yadl-ui.git"
   },
-  "keywords": [],
+  "keywords": ["YADL","Yet Another Diagramming Library", "YADL Themeisle Icons", "Themeisle ICONS", "Themeisle ICONS REACT"],
   "author": "Sagar Shelar",
   "license": "MIT",
   "description": "YADL THEMEISLE ICONs",
