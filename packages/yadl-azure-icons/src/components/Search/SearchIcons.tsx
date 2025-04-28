@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
-import * as AWSIcons from "yadl-aws-icons";
-import { AwsIconNames } from "yadl-aws-icons";
+import * as AzureIcons from "../index";
+import { AzureIconNames } from "../../utils";
 import { memo } from "react";
 import { DragDropProps, useDnD } from "yadl-core-package";
 
@@ -16,11 +16,11 @@ const SearchIcons = () => {
   };
 
   useEffect(() => {
-    setTotalIcons(`${Object.entries(AwsIconNames).length}`);
+    setTotalIcons(`${Object.entries(AzureIconNames).length}`);
   }, [])
 
   const IconsComponent = useMemo(() => {
-    const listItems = Object.entries(AwsIconNames)
+    const listItems = Object.entries(AzureIconNames)
       .filter((icons) => {
         if (searchInput == "") {
           return true;
@@ -30,7 +30,7 @@ const SearchIcons = () => {
       .map((icons) => {
         const [key, iconDetails] = icons;
         // @ts-ignore
-        let Icon = AWSIcons[iconDetails.icon];
+        let Icon = AzureIcons[iconDetails.icon];
 
         if (Icon) {
           return (

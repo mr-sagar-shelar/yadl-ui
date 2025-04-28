@@ -28,3 +28,4 @@ export * from "./Other";
 export * from "./Security";
 export * from "./Storage";
 export * from "./Web";
+export * from "./Search";

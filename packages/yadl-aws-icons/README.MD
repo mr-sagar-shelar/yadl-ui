@@ -27,6 +27,7 @@ const Icons = () => {
               key={key}
               className="dndnode m-2"
               title={iconDetails.name}
+              style={{ padding: 10 }}
             >
               {Icon && <Icon width={50} height={50} />}
             </div>
@@ -37,8 +38,10 @@ const Icons = () => {
     return listItems;
   }, []);
   return (
-    <div className="flex flex-wrap">
-      {IconsComponent}
+    <div style={{ height: "100%", width: "100%", overflow: "visible" }}>
+      <div style={{ display: "flex", flexWrap: "wrap" }}>
+        {IconsComponent}
+      </div>
     </div>
   );
 };

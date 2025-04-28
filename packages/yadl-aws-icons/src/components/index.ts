@@ -24,3 +24,4 @@ export * from "./Satellite";
 export * from "./SecurityIdentityCompliance";
 export * from "./Storage";
 export * from "./VRAR";
+export * from "./Search";
