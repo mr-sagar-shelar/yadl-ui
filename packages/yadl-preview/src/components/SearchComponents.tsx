@@ -5,22 +5,23 @@ import { SearchGcpIcons } from "yadl-gcp-icons";
 import { SearchSkillIcons } from "yadl-skill-icons";
 import { SearchThemeisleIcons } from "yadl-themeisle-icons";
 import { SearchUndrawIcons } from "yadl-undraw-icons";
+import { SearchTextComponents } from "yadl-ui-components";
 
 // import {
 //   SearchBoxes,
-//   SearchTextComponents,
 //   SearchShapes,
 // } from "./index";
 
 const SearchComponents = () => {
   return (
     <>
-      <div className="tabs tabs-box p-5 w-100 h-full">
+      <div className="tabs tabs-box p-5 h-full">
         <input
           type="radio"
           name="searchIconTabs"
           className="tab"
           aria-label="Skill Icons"
+          defaultChecked
         />
         <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
           <SearchSkillIcons />
@@ -74,6 +75,16 @@ const SearchComponents = () => {
         />
         <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
           <SearchUndrawIcons />
+        </div>
+
+        <input
+          type="radio"
+          name="searchIconTabs"
+          className="tab"
+          aria-label="Text"
+        />
+        <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
+          <SearchTextComponents />
         </div>
       </div>
     </>

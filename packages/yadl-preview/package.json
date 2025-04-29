@@ -37,7 +37,11 @@
     "type": "git",
     "url": "git+https://github.com/mr-sagar-shelar/yadl-ui.git"
   },
-  "keywords": ["YADL","Yet Another Diagramming Library", "YADL Preview Component"],
+  "keywords": [
+    "YADL",
+    "Yet Another Diagramming Library",
+    "YADL Preview Component"
+  ],
   "author": "Sagar Shelar",
   "license": "MIT",
   "description": "YADL Preview Components",
