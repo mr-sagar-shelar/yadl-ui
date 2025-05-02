@@ -1,1 +1,1 @@
-export * from "./DnDContext";
+export { DnDProvider, useDnD } from "./DnDContext";

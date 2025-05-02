@@ -25,6 +25,7 @@ import { YadlNodeTypes } from "./Nodes";
 import { debounce } from "lodash";
 import { DnDProvider, useDnD, DragDropProps } from "yadl-core-package";
 import "./xy-themes.css";
+import SearchComponents from "./Search/SearchComponents";
 
 export type YadlPreviewProps = {
   initialNodes: Node[];
@@ -170,10 +171,6 @@ const YadlPreview = (props: YadlPreviewProps) => {
           if (currentNode.length > 0) {
             debouncedNodeResized(currentNode[0]);
           }
-          console.log(updatedNode.resizing)
-        }
-        if (updatedNode.type == "dimensions") {
-          console.log(updatedNode.resizing)
         }
 
         return applyNodeChanges(changes, nds);
@@ -191,6 +188,7 @@ const YadlPreview = (props: YadlPreviewProps) => {
     <div style={{ height: "100%", width: "100%" }}>
       <div className="dndflow">
         <div className="reactflow-wrapper" ref={reactFlowWrapper}>
+          <SearchComponents />
           <ReactFlow
             nodes={nodes}
             edges={edges}

@@ -1,2 +1,2 @@
 export { default as Preview } from "./Preview";
-export { default as SearchComponents } from "./SearchComponents";
+export { default as SearchComponents } from "./Search/SearchComponents";
