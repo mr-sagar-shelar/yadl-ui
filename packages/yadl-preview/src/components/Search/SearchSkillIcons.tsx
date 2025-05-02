@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
-import * as AWSIcons from "yadl-aws-icons";
-import { AwsIconNames } from "yadl-aws-icons";
+import * as SkillIcons from "yadl-skill-icons";
+import { SkillIconNames } from "yadl-skill-icons";
 import { memo } from "react";
 import { DragDropProps, useDnD } from "yadl-core-package";
 
@@ -16,11 +16,11 @@ const SearchIcons = () => {
   };
 
   useEffect(() => {
-    setTotalIcons(`${Object.entries(AwsIconNames).length}`);
+    setTotalIcons(`${Object.entries(SkillIconNames).length}`);
   }, [])
 
   const IconsComponent = useMemo(() => {
-    const listItems = Object.entries(AwsIconNames)
+    const listItems = Object.entries(SkillIconNames)
       .filter((icons) => {
         if (searchInput == "") {
           return true;
@@ -30,7 +30,7 @@ const SearchIcons = () => {
       .map((icons) => {
         const [key, iconDetails] = icons;
         // @ts-ignore
-        let Icon = AWSIcons[iconDetails.icon];
+        let Icon = SkillIcons[iconDetails.icon];
 
         if (Icon) {
           return (
@@ -42,7 +42,7 @@ const SearchIcons = () => {
                   type: "icon",
                   data: {
                     icon: `${key}`,
-                    category: "aws",
+                    category: "skill",
                   },
                 })
               }
@@ -59,39 +59,37 @@ const SearchIcons = () => {
   }, [searchInput]);
   return (
     <>
-      <div>
-        <div className="px-10 py-5 ">
-          <label className="input w-full">
-            <svg
-              className="h-[1em] opacity-50"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
+      <div className="px-10 py-5 ">
+        <label className="input w-full">
+          <svg
+            className="h-[1em] opacity-50"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <g
+              strokeLinejoin="round"
+              strokeLinecap="round"
+              strokeWidth="2.5"
+              fill="none"
+              stroke="currentColor"
             >
-              <g
-                strokeLinejoin="round"
-                strokeLinecap="round"
-                strokeWidth="2.5"
-                fill="none"
-                stroke="currentColor"
-              >
-                <circle cx="11" cy="11" r="8"></circle>
-                <path d="m21 21-4.3-4.3"></path>
-              </g>
-            </svg>
-            {`${IconsComponent.length}/${totalIcons}`}
-            <input
-              type="search"
-              required
-              placeholder="Search Icon"
-              onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
-                setSearchInput(event.target.value);
-              }}
-            />
-          </label>
-        </div>
-        <div className="flex flex-wrap">
-          {IconsComponent}
-        </div>
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.3-4.3"></path>
+            </g>
+          </svg>
+          {`${IconsComponent.length}/${totalIcons}`}
+          <input
+            type="search"
+            required
+            placeholder="Search Icon"
+            onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
+              setSearchInput(event.target.value);
+            }}
+          />
+        </label>
+      </div>
+      <div className="flex flex-wrap">
+        {IconsComponent}
       </div>
     </>
   );

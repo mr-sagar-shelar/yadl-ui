@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
-import * as AWSIcons from "yadl-aws-icons";
-import { AwsIconNames } from "yadl-aws-icons";
+import * as UndrawIcons from "yadl-undraw-icons";
+import { UndrawIconNames } from "yadl-undraw-icons";
 import { memo } from "react";
 import { DragDropProps, useDnD } from "yadl-core-package";
 
@@ -16,11 +16,11 @@ const SearchIcons = () => {
   };
 
   useEffect(() => {
-    setTotalIcons(`${Object.entries(AwsIconNames).length}`);
+    setTotalIcons(`${Object.entries(UndrawIconNames).length}`);
   }, [])
 
   const IconsComponent = useMemo(() => {
-    const listItems = Object.entries(AwsIconNames)
+    const listItems = Object.entries(UndrawIconNames)
       .filter((icons) => {
         if (searchInput == "") {
           return true;
@@ -30,7 +30,7 @@ const SearchIcons = () => {
       .map((icons) => {
         const [key, iconDetails] = icons;
         // @ts-ignore
-        let Icon = AWSIcons[iconDetails.icon];
+        let Icon = UndrawIcons[iconDetails.icon];
 
         if (Icon) {
           return (
@@ -42,14 +42,14 @@ const SearchIcons = () => {
                   type: "icon",
                   data: {
                     icon: `${key}`,
-                    category: "aws",
+                    category: "undraw",
                   },
                 })
               }
               draggable
               title={iconDetails.name}
             >
-              {Icon && <Icon width={50} height={50} />}
+              {Icon && <Icon width={250} height={250} />}
             </div>
           );
         }
