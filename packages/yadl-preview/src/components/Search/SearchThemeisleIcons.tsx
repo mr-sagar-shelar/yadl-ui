@@ -3,6 +3,7 @@ import * as ThemeisleIcons from "yadl-themeisle-icons";
 import { ThemeisleIconNames } from "yadl-themeisle-icons";
 import { memo } from "react";
 import { DragDropProps, useDnD } from "yadl-core-package";
+import { CONSTANTS } from './Constants';
 
 const SearchIcons = () => {
   const [searchInput, setSearchInput] = useState<string>("");
@@ -43,13 +44,15 @@ const SearchIcons = () => {
                   data: {
                     icon: `${key}`,
                     category: "themeisle",
+                    width: CONSTANTS.themeisleWidth,
+                    height: CONSTANTS.themeisleHeight
                   },
                 })
               }
               draggable
               title={iconDetails.name}
             >
-              {Icon && <Icon width={250} height={250} />}
+              {Icon && <Icon width={CONSTANTS.themeisleWidth} height={CONSTANTS.themeisleHeight} />}
             </div>
           );
         }

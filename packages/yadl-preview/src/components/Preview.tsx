@@ -123,7 +123,10 @@ const YadlPreview = (props: YadlPreviewProps) => {
       });
       const dataType = (type as unknown as DragDropProps).type;
       const data = (type as unknown as DragDropProps).data;
-
+      if (data && data.width) {
+        position.x = position.x - (data.width / 2);
+        position.y = position.y - (data.height / 2);
+      }
       const newNode = {
         id: getId(),
         type: dataType,

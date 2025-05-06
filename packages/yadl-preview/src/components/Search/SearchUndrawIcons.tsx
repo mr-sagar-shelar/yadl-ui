@@ -3,6 +3,8 @@ import * as UndrawIcons from "yadl-undraw-icons";
 import { UndrawIconNames } from "yadl-undraw-icons";
 import { memo } from "react";
 import { DragDropProps, useDnD } from "yadl-core-package";
+import { CONSTANTS } from './Constants';
+
 
 const SearchIcons = () => {
   const [searchInput, setSearchInput] = useState<string>("");
@@ -43,13 +45,15 @@ const SearchIcons = () => {
                   data: {
                     icon: `${key}`,
                     category: "undraw",
+                    width: CONSTANTS.undrawWidth,
+                    height: CONSTANTS.undrawHeight
                   },
                 })
               }
               draggable
               title={iconDetails.name}
             >
-              {Icon && <Icon width={250} height={250} />}
+              {Icon && <Icon width={CONSTANTS.undrawWidth} height={CONSTANTS.undrawHeight} />}
             </div>
           );
         }

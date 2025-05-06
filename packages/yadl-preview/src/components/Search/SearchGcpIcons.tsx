@@ -3,6 +3,7 @@ import * as GcpIcons from "yadl-gcp-icons";
 import { GCPIconNames } from "yadl-gcp-icons";
 import { memo } from "react";
 import { DragDropProps, useDnD } from "yadl-core-package";
+import { CONSTANTS } from './Constants';
 
 const SearchIcons = () => {
   const [searchInput, setSearchInput] = useState<string>("");
@@ -43,13 +44,15 @@ const SearchIcons = () => {
                   data: {
                     icon: `${key}`,
                     category: "gcp",
+                    width: CONSTANTS.iconWidth,
+                    height: CONSTANTS.iconHeight
                   },
                 })
               }
               draggable
               title={iconDetails.name}
             >
-              {Icon && <Icon width={50} height={50} />}
+              {Icon && <Icon width={CONSTANTS.iconWidth} height={CONSTANTS.iconHeight} />}
             </div>
           );
         }
