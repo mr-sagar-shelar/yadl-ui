@@ -38,6 +38,7 @@ export type YadlEditorRef = {
   onNodeRemoved: (node: YadlNode) => void;
   onEdgeConnect: (edge: YadlEdge) => void;
   onNodeResized: (edge: YadlEdge) => void;
+  onNodeAdded: (edge: YadlEdge) => void;
 }
 
 function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
@@ -74,7 +75,8 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
     onNodeSelect,
     onNodeRemoved,
     onEdgeConnect,
-    onNodeResized
+    onNodeResized,
+    onNodeAdded
   }));
 
   const onCodeChange = (resp: DocumentChangeResponse) => {
@@ -201,6 +203,43 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
       };
       monacoInstance.executeEdits("my-source", [operation]);
     }
+  };
+
+  const onNodeAdded = (node: YadlNode) => {
+    if (!monacoEditor || !monacoEditor.current) {
+      return;
+    }
+
+    const monacoInstance = monacoEditor?.current
+      ?.getEditorWrapper()
+      ?.getEditor();
+    const width = Math.trunc(get(node, "data.width", 50));
+    const height = Math.trunc(get(node, "data.height", 50));
+    const category = get(node, "data.category", "");
+    const icon = get(node, "data.icon", "");
+
+    const xValue = Math.trunc(node.position.x);
+    const yValue = Math.trunc(node.position.y);
+    const updatedText = `${category}-icon ${icon} { position { x: ${xValue} y: ${yValue} } dimension { width: ${width} height: ${height} } }\n`;
+    const lineNumber = monacoInstance.getModel().getLineCount() + 1;
+    const id = { major: 1, minor: 1 };
+    const startLineNumber = lineNumber;
+    const startColumn = 0;
+    const endLineNumber = lineNumber;
+    const endColumn = updatedText.length + 1;
+
+    const operation = {
+      identifier: id,
+      range: {
+        startLineNumber: startLineNumber,
+        startColumn: startColumn,
+        endLineNumber: endLineNumber,
+        endColumn: endColumn,
+      },
+      text: updatedText,
+      forceMoveMarkers: true,
+    };
+    monacoInstance.executeEdits("my-source", [operation]);
   };
 
   const onNodeRemoved = (node: YadlNode) => {
