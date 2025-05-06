@@ -2,10 +2,10 @@ import "../common"
 
 
 FontFamily:
-    'fontFamily' fontFamily=STRING;
+    'fontFamily:' fontFamily=STRING;
 
 Classes:
-    'classes' classes=STRING;
+    'classes:' classes=STRING;
 
 TextComponents:
     'text' (text=STRING) ('{'

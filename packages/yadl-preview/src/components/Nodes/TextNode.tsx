@@ -11,12 +11,12 @@ import { Text } from "yadl-ui-components";
 
 function TextNode(properties: TextNodeProps) {
   const {
-    data: { text, classes, props, fontFamily },
+    data: { text, classes, props = {}, fontFamily },
     selected = false,
   } = properties;
-  const [currentWidth, setCurrentWidth] = useState<number>(props.width || 50);
+  const [currentWidth, setCurrentWidth] = useState<number>(props?.width || 50);
   const [currentHeight, setCurrentHeight] = useState<number>(
-    props.height || 50,
+    props?.height || 50,
   );
 
   return (

@@ -213,33 +213,57 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
     const monacoInstance = monacoEditor?.current
       ?.getEditorWrapper()
       ?.getEditor();
-    const width = Math.trunc(get(node, "data.width", 50));
-    const height = Math.trunc(get(node, "data.height", 50));
-    const category = get(node, "data.category", "");
-    const icon = get(node, "data.icon", "");
+
 
     const xValue = Math.trunc(node.position.x);
     const yValue = Math.trunc(node.position.y);
-    const updatedText = `${category}-icon ${icon} { position { x: ${xValue} y: ${yValue} } dimension { width: ${width} height: ${height} } }\n`;
+    let updatedText = ""
     const lineNumber = monacoInstance.getModel().getLineCount() + 1;
     const id = { major: 1, minor: 1 };
     const startLineNumber = lineNumber;
     const startColumn = 0;
     const endLineNumber = lineNumber;
-    const endColumn = updatedText.length + 1;
+    let endColumn = 0;
+    if (node.type === "icon") {
+      const width = Math.trunc(get(node, "data.width", 50));
+      const height = Math.trunc(get(node, "data.height", 50));
+      const category = get(node, "data.category", "");
+      const icon = get(node, "data.icon", "");
+      updatedText = `${category}-icon ${icon} { position { x: ${xValue} y: ${yValue} } dimension { width: ${width} height: ${height} } }\n`;
 
-    const operation = {
-      identifier: id,
-      range: {
-        startLineNumber: startLineNumber,
-        startColumn: startColumn,
-        endLineNumber: endLineNumber,
-        endColumn: endColumn,
-      },
-      text: updatedText,
-      forceMoveMarkers: true,
-    };
-    monacoInstance.executeEdits("my-source", [operation]);
+      const operation = {
+        identifier: id,
+        range: {
+          startLineNumber: startLineNumber,
+          startColumn: startColumn,
+          endLineNumber: endLineNumber,
+          endColumn: endColumn,
+        },
+        text: updatedText,
+        forceMoveMarkers: true,
+      };
+      monacoInstance.executeEdits("my-source", [operation]);
+    }
+    else if (node.type === "text") {
+      // const width = Math.trunc(get(node, "data.props.width", 50));
+      // const height = Math.trunc(get(node, "data.props.height", 50));
+      const classes = get(node, "data.classes", "");
+      const fontFamily = get(node, "data.fontFamily", "");
+      const text = get(node, "data.text", "");
+      updatedText = `text "${text}" { position { x: ${xValue} y: ${yValue} } ${fontFamily ? "fontFamily:\ \"" + fontFamily + "\"" : ""} ${classes ? "classes: \"" + classes + "\"" : ""} }\n`;
+      const operation = {
+        identifier: id,
+        range: {
+          startLineNumber: startLineNumber,
+          startColumn: startColumn,
+          endLineNumber: endLineNumber,
+          endColumn: endColumn,
+        },
+        text: updatedText,
+        forceMoveMarkers: true,
+      };
+      monacoInstance.executeEdits("my-source", [operation]);
+    }
   };
 
   const onNodeRemoved = (node: YadlNode) => {
