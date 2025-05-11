@@ -17,6 +17,7 @@ import { YadlModelAstNode } from "./index.js";
 import { getYADLNodes } from "../YADLDeserializer.js";
 import { YadlEdge, YadlEditorResponse, YadlNode } from "./Interfaces.js"
 import { get } from "lodash";
+const debounceInterval = 150;
 
 addMonacoStyles("monaco-styles-helper");
 
@@ -95,7 +96,7 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
       const deserializedContent = getYADLNodes(ast);
       onChange(deserializedContent)
       running = false;
-    }, 500);
+    }, debounceInterval);
   };
 
   const onMonacoLoad = () => {

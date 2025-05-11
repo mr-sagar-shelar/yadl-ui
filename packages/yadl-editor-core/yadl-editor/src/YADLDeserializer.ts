@@ -185,11 +185,11 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
     allNodes = allNodes.concat(undrawIcons);
   }
 
-  const themeisleIcons = astNode?.themeisleIcons?.flatMap((i: Icon): YadlNode => {
+  const themeisleIcons = astNode?.themeisleIcons?.flatMap((i: Icon, index: number): YadlNode => {
     const position = getPosition(i.position);
     const dimension = getDimension(i.dimension);
     const iconData: YadlNode = {
-      id: i.name,
+      id: i.name || `themeisle-${index + 1}`,
       data: {
         icon: i.icon,
         category: "themeisle",

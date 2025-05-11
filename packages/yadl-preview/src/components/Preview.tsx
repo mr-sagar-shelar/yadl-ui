@@ -26,6 +26,7 @@ import { debounce } from "lodash";
 import { DnDProvider, useDnD, DragDropProps } from "yadl-core-package";
 import "./xy-themes.css";
 import SearchComponents from "./Search/SearchComponents";
+const debounceInterval = 150;
 
 export type YadlPreviewProps = {
   initialNodes: Node[];
@@ -68,19 +69,19 @@ const YadlPreview = (props: YadlPreviewProps) => {
 
   const debouncedNodeSelect = debounce((node: Node) => {
     onNodeSelect(node)
-  }, 250);
+  }, debounceInterval);
 
   const debouncedNodePositionChanged = debounce((node: Node) => {
     onNodePositionChanged(node)
-  }, 250);
+  }, debounceInterval);
 
   const debouncedNodeRemoved = debounce((node: Node) => {
     onNodeRemoved(node)
-  }, 250);
+  }, debounceInterval);
 
   const debouncedNodeResized = debounce((node: Node) => {
     onNodeResized(node)
-  }, 250);
+  }, debounceInterval);
 
 
 

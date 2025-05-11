@@ -12,7 +12,7 @@ import "./components/edge"
 
 entry Model:
     (persons+=Person | greetings+=Greeting | awsIcons+=AwsIcons | gcpIcons+=GcpIcons | azureIcons+=AzureIcons
-    | skillIcons+=SkillIcons | themeisleIcons+=ThemeisleIcons | undrawleIcons+=UndrawIcons
+    | skillIcons+=SkillIcons | themeisleIcons+=ThemeisleIcons | undrawIcons+=UndrawIcons
     | textComponents+=TextComponents | edges+=Edge)*;
 
 Person:
