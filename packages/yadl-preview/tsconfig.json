@@ -23,7 +23,8 @@
     "baseUrl": "./",
     "paths": {
       "@utils": ["./src/utils/index.ts"],
-      "@components": ["./src/components/index.ts"]
+      "@components": ["./src/components/index.ts"],
+      "@/*": ["./src/*"]
     }
   },
   "include": ["./src"], // Specifies the directory to include when searching for TypeScript files.
