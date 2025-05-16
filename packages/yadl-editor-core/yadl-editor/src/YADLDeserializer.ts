@@ -43,7 +43,7 @@ export function getYadlModelAst(ast: YadlModelAstNode): YadlModelAstNode {
   };
 }
 
-export function getYADLNodes(ast: AstNode): YadlEditorResponse {
+export function getYADLData(ast: AstNode): YadlEditorResponse {
   const astNode = getYadlModelAst(ast as YadlModelAstNode);
   let allNodes: YadlNode[] = [];
   const awsIcons = astNode?.awsIcons?.flatMap((i: Icon, index: number): YadlNode => {
@@ -213,9 +213,14 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
     allNodes = allNodes.concat(themeisleIcons);
   }
 
+  const allFonts: string[] = []
+
   const textComponents = astNode?.textComponents?.flatMap((i: any, index: number): YadlNode => {
     const position = getPosition(i.position);
     const dimension = getDimension(i.dimension);
+    if (i.fontFamily) {
+      allFonts.push(i.fontFamily);
+    }
     const textData: YadlNode = {
       id: i.name || `text-${index + 1}`,
       type: "text",
@@ -247,6 +252,6 @@ export function getYADLNodes(ast: AstNode): YadlEditorResponse {
   return {
     nodes: allNodes,
     edges: [],
-    fontsUsed: []
+    fontsUsed: allFonts
   };
 }

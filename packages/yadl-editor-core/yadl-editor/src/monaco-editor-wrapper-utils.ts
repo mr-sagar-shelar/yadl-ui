@@ -115,6 +115,7 @@ export function createUserConfig(
             engines: {
               vscode: "*",
             },
+            minimap: { enabled: false },
             contributes: {
               languages: [
                 {
@@ -155,6 +156,7 @@ export function createUserConfig(
       editorOptions: {
         "semanticHighlighting.enabled": true,
         readOnly: config.readonly,
+        minimap: { enabled: false },
         theme: theme,
       },
     };

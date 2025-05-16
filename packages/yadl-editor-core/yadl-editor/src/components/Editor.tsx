@@ -14,7 +14,7 @@ import { buildWorkerDefinition } from "monaco-editor-workers";
 import { deserializeAST, DocumentChangeResponse } from "langium-ast-helper";
 import syntaxHighlighting from "./yadl.monarch.js";
 import { YadlModelAstNode } from "./index.js";
-import { getYADLNodes } from "../YADLDeserializer.js";
+import { getYADLData } from "../YADLDeserializer.js";
 import { YadlEdge, YadlEditorResponse, YadlNode } from "./Interfaces.js"
 import { get } from "lodash";
 const debounceInterval = 150;
@@ -57,6 +57,7 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
         code: code,
         worker: "/worker/yadl-server-worker.js",
         monarchGrammar: syntaxHighlighting,
+
       },
       "vs-dark",
     );
@@ -93,7 +94,7 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
     timeout = window.setTimeout(async () => {
       running = true;
       const ast = deserializeAST(resp.content) as YadlModelAstNode;
-      const deserializedContent = getYADLNodes(ast);
+      const deserializedContent = getYADLData(ast);
       onChange(deserializedContent)
       running = false;
     }, debounceInterval);

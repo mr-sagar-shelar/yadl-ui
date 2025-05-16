@@ -6,15 +6,10 @@ import SearchSkillIcons from "./SearchSkillIcons"
 import SearchThemeisleIcons from "./SearchThemeisleIcons"
 import SearchUndrawIcons from "./SearchUndrawIcons"
 import SearchTextComponents from "./SearchTextComponents"
-import { Button } from "@/components/ui/button"
-
 
 const SearchComponents = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-svh">
-        <Button>Click me</Button>
-      </div>
       <div className="tabs tabs-box p-5 h-full">
         <input
           type="radio"
