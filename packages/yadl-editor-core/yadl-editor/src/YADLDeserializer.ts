@@ -1,5 +1,6 @@
 import { AstNode } from "langium-ast-helper";
 import { YadlModelAstNode, Icon, TextComponents, YadlNode, YadlEditorResponse, YadlNodePosition, YadlNodeDimension } from "./components/Interfaces.js";
+import { get } from "lodash";
 
 export function getPosition(position: YadlNodePosition): YadlNodePosition {
   if (!position) {
@@ -249,8 +250,18 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
     allNodes = allNodes.concat(textComponents);
   }
 
+  const sortedNodes = allNodes.sort((nodeA, nodeB) => {
+    if (get(nodeA, "data.nodeRange.start.line", 0) < get(nodeB, "data.nodeRange.start.line", 0)) {
+      return -1;
+    }
+    if (get(nodeA, "data.nodeRange.start.line", 0) > get(nodeB, "data.nodeRange.start.line", 0)) {
+      return 1;
+    }
+    return 0;
+  });
+
   return {
-    nodes: allNodes,
+    nodes: sortedNodes,
     edges: [],
     fontsUsed: allFonts
   };
