@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import * as UndrawIcons from "yadl-undraw-icons";
 import { UndrawIconNames } from "yadl-undraw-icons";
 import { memo } from "react";
-import { DragDropProps, useDnD } from "yadl-core-package";
+import { DragDropProps, useDnD } from "../DnDContext";
 import { CONSTANTS } from './Constants';
 
 

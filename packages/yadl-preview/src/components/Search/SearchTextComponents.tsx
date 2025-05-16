@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { TextNames } from "yadl-ui-components";
 import { memo } from "react";
 import { Text } from "yadl-ui-components";
-import { DragDropProps, useDnD } from "yadl-core-package";
+import { DragDropProps, useDnD } from "../DnDContext";
 import FontPicker from "react-fontpicker-ts";
 import "react-fontpicker-ts/dist/index.css";
 

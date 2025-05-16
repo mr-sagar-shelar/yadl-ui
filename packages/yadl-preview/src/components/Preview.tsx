@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useRef } from "react";
 import {
   ReactFlow,
-  Controls,
   Background,
   BackgroundVariant,
   ReactFlowProvider,
@@ -23,9 +22,8 @@ import {
 } from "@xyflow/react";
 import { YadlNodeTypes } from "./Nodes";
 import { debounce } from "lodash";
-import { DnDProvider, useDnD, DragDropProps } from "yadl-core-package";
 import "./xy-themes.css";
-import SearchComponents from "./Search/SearchComponents";
+import { DragDropProps, useDnD } from "./DnDContext";
 const debounceInterval = 150;
 
 export type YadlPreviewProps = {
@@ -192,7 +190,6 @@ const YadlPreview = (props: YadlPreviewProps) => {
     <div style={{ height: "100%", width: "100%" }}>
       <div className="dndflow">
         <div className="reactflow-wrapper" ref={reactFlowWrapper}>
-          <SearchComponents />
           <ReactFlow
             nodes={nodes}
             edges={edges}
@@ -208,7 +205,6 @@ const YadlPreview = (props: YadlPreviewProps) => {
             nodeTypes={YadlNodeTypes}
           >
             <Background variant={BackgroundVariant.Dots} gap={12} size={1} />
-            <Controls />
           </ReactFlow>
         </div>
       </div>
@@ -218,8 +214,6 @@ const YadlPreview = (props: YadlPreviewProps) => {
 
 export default (props: YadlPreviewProps) => (
   <ReactFlowProvider>
-    <DnDProvider>
-      <YadlPreview {...props} />
-    </DnDProvider>
+    <YadlPreview {...props} />
   </ReactFlowProvider>
 );

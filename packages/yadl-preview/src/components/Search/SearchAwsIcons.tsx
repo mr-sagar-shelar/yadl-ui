@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import * as AWSIcons from "yadl-aws-icons";
 import { AwsIconNames } from "yadl-aws-icons";
 import { memo } from "react";
-import { DragDropProps, useDnD } from "yadl-core-package";
+import { DragDropProps, useDnD } from "../DnDContext";
 import { CONSTANTS } from './Constants';
 
 const SearchIcons = () => {

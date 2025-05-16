@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import * as SkillIcons from "yadl-skill-icons";
 import { SkillIconNames } from "yadl-skill-icons";
 import { memo } from "react";
-import { DragDropProps, useDnD } from "yadl-core-package";
+import { DragDropProps, useDnD } from "../DnDContext";
 import { CONSTANTS } from './Constants';
 
 const SearchIcons = () => {
