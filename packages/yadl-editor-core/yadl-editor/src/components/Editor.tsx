@@ -31,6 +31,7 @@ export interface YadlEditorProps {
   onChange: (code: YadlEditorResponse) => void;
   position?: number;
   code?: string;
+  theme?: string;
 }
 
 export type YadlEditorRef = {
@@ -40,15 +41,15 @@ export type YadlEditorRef = {
   onEdgeConnect: (edge: YadlEdge) => void;
   onNodeResized: (edge: YadlEdge) => void;
   onNodeAdded: (edge: YadlEdge) => void;
+  setCode: (code: string) => void;
 }
 
 function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
   let running = false;
   let timeout: number | null = null;
-  const { onChange, position = 0, code } = props;
+  const { onChange, position = 0, code, theme = "vs-dark" } = props;
   const monacoEditor = useRef<MonacoEditorReactComp | null>(null);
   const [userConfig, setUserConfig] = useState<UserConfig>();
-  const [currentCode, setCurrentCode] = useState<string>(code);
 
   useEffect(() => {
     const userConfig = createUserConfig(
@@ -59,12 +60,16 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
         monarchGrammar: syntaxHighlighting,
 
       },
-      "vs-dark",
+      theme,
     );
 
     setUserConfig(userConfig);
-    setCurrentCode(currentCode);
-  }, [code]);
+    console.log(` $$$ New Code`);
+    console.log(code);
+
+    console.log(` $$$ New Theme`);
+    console.log(theme);
+  }, [code, theme]);
 
   useEffect(() => {
     if (position > 0) {
@@ -78,7 +83,8 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
     onNodeRemoved,
     onEdgeConnect,
     onNodeResized,
-    onNodeAdded
+    onNodeAdded,
+    setCode
   }));
 
   const onCodeChange = (resp: DocumentChangeResponse) => {
@@ -325,6 +331,16 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
     monacoInstance.executeEdits("my-source", [xOperation]);
     monacoInstance.setPosition({ column: 0, lineNumber: selectedLine });
     monacoInstance.revealLineInCenter(selectedLine);
+  };
+
+  const setCode = (code: string) => {
+    if (!monacoEditor || !monacoEditor.current) {
+      return;
+    }
+    const monacoInstance = monacoEditor?.current
+      ?.getEditorWrapper()
+      ?.getEditor();
+    monacoInstance.setValue(code);
   };
 
   const renderEditor = () => {
