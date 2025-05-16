@@ -10,8 +10,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@utils": path.resolve(__dirname, "./src/utils/index.ts"),
-      "@components": path.resolve(__dirname, "./src/components/index.ts"),
-      "@": path.resolve(__dirname, "./src"),
+      "@components": path.resolve(__dirname, "./src/components/index.ts")
     },
   },
   build: {
