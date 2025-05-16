@@ -1,6 +1,6 @@
 {
   "name": "yadl-themeisle-icons",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "type": "module",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -36,7 +36,13 @@
     "type": "git",
     "url": "git+https://github.com/mr-sagar-shelar/yadl-ui.git"
   },
-  "keywords": ["YADL","Yet Another Diagramming Library", "YADL Themeisle Icons", "Themeisle ICONS", "Themeisle ICONS REACT"],
+  "keywords": [
+    "YADL",
+    "Yet Another Diagramming Library",
+    "YADL Themeisle Icons",
+    "Themeisle ICONS",
+    "Themeisle ICONS REACT"
+  ],
   "author": "Sagar Shelar",
   "license": "MIT",
   "description": "YADL THEMEISLE ICONs",
@@ -46,6 +52,6 @@
     "tailwindcss": "^4.0.15"
   },
   "dependencies": {
-    "yadl-core-package": "^1.0.0"
+    "yadl-core-package": "^1.0.5"
   }
 }

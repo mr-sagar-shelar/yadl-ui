@@ -10,7 +10,7 @@ import SearchTextComponents from "./SearchTextComponents"
 const SearchComponents = () => {
   return (
     <>
-      <div className="tabs tabs-box p-5 h-full">
+      <div className="tabs tabs-box p-5 h-full overflow-hidden pb-15">
         <input
           type="radio"
           name="searchIconTabs"

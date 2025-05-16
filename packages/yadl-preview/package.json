@@ -1,6 +1,6 @@
 {
   "name": "yadl-preview",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "type": "module",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -53,13 +53,13 @@
   "dependencies": {
     "@xyflow/react": "^12.5.5",
     "lodash": "^4.17.21",
-    "yadl-aws-icons": "^1.0.2",
-    "yadl-azure-icons": "^1.0.2",
-    "yadl-core-package": "^1.0.0",
-    "yadl-gcp-icons": "^1.0.2",
-    "yadl-skill-icons": "^1.0.2",
-    "yadl-themeisle-icons": "^1.0.2",
-    "yadl-ui-components": "^1.0.0",
-    "yadl-undraw-icons": "^1.0.2"
+    "yadl-aws-icons": "^1.0.6",
+    "yadl-azure-icons": "^1.0.6",
+    "yadl-core-package": "^1.0.5",
+    "yadl-gcp-icons": "^1.0.6",
+    "yadl-skill-icons": "^1.0.6",
+    "yadl-themeisle-icons": "^1.0.6",
+    "yadl-ui-components": "^1.0.6",
+    "yadl-undraw-icons": "^1.0.6"
   }
 }
