@@ -6,18 +6,19 @@ import { BoxNames } from "@utils";
 const SearchBoxes = () => {
   const IconsComponent = useMemo(() => {
     const listItems = Object.entries(BoxNames)
-      .map((icons) => {
-        const [key, iconDetails] = icons;
+      .map((icon) => {
+        const [key, boxDetails] = icon;
         // @ts-ignore
-        let Icon = Boxes[iconDetails.component];
+        let Icon = Boxes[boxDetails.component];
 
         if (Icon) {
           return (
             <div
               key={key}
-              title={iconDetails.name}
+              title={boxDetails.name}
+              className="p-5"
             >
-              {Icon && <Icon {...iconDetails.props} />}
+              {Icon && <Icon {...boxDetails.props} />}
             </div>
           );
         }
