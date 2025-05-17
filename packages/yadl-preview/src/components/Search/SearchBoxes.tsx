@@ -1,8 +1,10 @@
 import { useMemo, useState } from "react";
-import * as Boxes from "../Box/index";
+import * as Boxes from "yadl-ui-components";
 import { memo } from "react";
-import { BoxNames } from "@utils";
+import { BoxNames } from "yadl-ui-components";
 import { BorderStyles, BorderRadius, BorderSizes, Opacity, GradientDirection } from "./Constants";
+import { DragDropProps, useDnD } from "../DnDContext";
+
 
 const SearchBoxes = () => {
   const [currentBorderStyle, setCurrentBorderStyle] = useState<string>(BorderStyles[0].key);
@@ -12,6 +14,14 @@ const SearchBoxes = () => {
   const [currentGradientDirection, setCurrentGradientDirection] = useState<string>(GradientDirection[0].key);
   const [currentBackgroundType, setBackgroundType] = useState<string>("Solid");
   const [currentCustomStyle, setCustomStyles] = useState<string>("");
+  const [_, setType] = useDnD();
+  const onDragStart = (event: any, nodePayload: DragDropProps) => {
+    if (setType) {
+      setType(nodePayload);
+    }
+    event.dataTransfer.effectAllowed = "move";
+  };
+
   const IconsComponent = useMemo(() => {
     const listItems = Object.entries(BoxNames)
       .filter((icon) => {
@@ -27,6 +37,19 @@ const SearchBoxes = () => {
             <div
               key={key}
               title={boxDetails.name}
+              onDragStart={(event) =>
+                onDragStart(event, {
+                  type: "box",
+                  data: {
+                    component: boxDetails.component,
+                    props: {
+                      ...boxDetails.props,
+                      classes: `${boxDetails.props.classes} ${currentOpacity} ${currentBorderSize} ${currentBorderRadius} ${currentBorderStyle} ${currentCustomStyle} ${currentGradientDirection}`,
+                    }
+                  },
+                })
+              }
+              draggable
             >
               {Box && <Box {...boxDetails.props} classes={`${boxDetails.props.classes} ${currentOpacity} ${currentBorderSize} ${currentBorderRadius} ${currentBorderStyle} ${currentCustomStyle} ${currentGradientDirection}`} />}
             </div>

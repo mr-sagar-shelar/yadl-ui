@@ -6,6 +6,7 @@ import SearchSkillIcons from "./SearchSkillIcons"
 import SearchThemeisleIcons from "./SearchThemeisleIcons"
 import SearchUndrawIcons from "./SearchUndrawIcons"
 import SearchTextComponents from "./SearchTextComponents"
+import SearchBoxes from "./SearchBoxes"
 
 const SearchComponents = () => {
   return (
@@ -71,7 +72,6 @@ const SearchComponents = () => {
         <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
           <SearchUndrawIcons />
         </div>
-
         <input
           type="radio"
           name="searchIconTabs"
@@ -80,6 +80,16 @@ const SearchComponents = () => {
         />
         <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
           <SearchTextComponents />
+        </div>
+
+        <input
+          type="radio"
+          name="searchIconTabs"
+          className="tab"
+          aria-label="Boxes"
+        />
+        <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
+          <SearchBoxes />
         </div>
       </div>
     </>

@@ -7,7 +7,6 @@ import {
   ResizeParamsWithDirection,
 } from "@xyflow/react";
 import { BoxNodeProps } from "yadl-core-package";
-import { BoxNames } from "yadl-ui-components";
 import * as Boxes from "yadl-ui-components";
 
 function BoxNode(properties: BoxNodeProps) {
@@ -23,10 +22,11 @@ function BoxNode(properties: BoxNodeProps) {
   let iconNamePresent: boolean = false;
   let Icon = null;
 
-  iconNamePresent = BoxNames[component] != undefined;
+  // @ts-ignore
+  iconNamePresent = Boxes[component] != undefined;
   if (iconNamePresent) {
     // @ts-ignore
-    Icon = Boxes[BoxNames[component].component] ?? null;
+    Icon = Boxes[component] ?? null;
   }
 
   return (
