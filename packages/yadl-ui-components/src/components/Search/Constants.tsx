@@ -570,9 +570,6 @@ export const BorderRadius = [
 
 export const BorderSizes = [
     {
-        key: "border-none",
-        label: "None"
-    }, {
         key: "border-1",
         label: "1"
     },
@@ -611,7 +608,98 @@ export const BorderSizes = [
     {
         key: "border-10",
         label: "10"
+    },
+    {
+        key: "border-11",
+        label: "11"
+    },
+    {
+        key: "border-12",
+        label: "12"
+    },
+    {
+        key: "border-13",
+        label: "13"
+    },
+    {
+        key: "border-14",
+        label: "14"
+    },
+    {
+        key: "border-15",
+        label: "15"
+    },
+    {
+        key: "border-16",
+        label: "16"
+    },
+    {
+        key: "border-17",
+        label: "17"
+    },
+    {
+        key: "border-18",
+        label: "18"
+    },
+    {
+        key: "border-19",
+        label: "19"
+    },
+    {
+        key: "border-20",
+        label: "20"
+    },
+    {
+        key: "border-none",
+        label: "None"
     }
+];
+
+export const Opacity = [
+    {
+        "key": "opacity-100",
+        "label": "100"
+    },
+    {
+        "key": "opacity-90",
+        "label": "90"
+    },
+    {
+        "key": "opacity-80",
+        "label": "80"
+    },
+    {
+        "key": "opacity-70",
+        "label": "70"
+    },
+    {
+        "key": "opacity-60",
+        "label": "60"
+    },
+    {
+        "key": "opacity-50",
+        "label": "50"
+    },
+    {
+        "key": "opacity-40",
+        "label": "40"
+    },
+    {
+        "key": "opacity-30",
+        "label": "30"
+    },
+    {
+        "key": "opacity-20",
+        "label": "20"
+    },
+    {
+        "key": "opacity-10",
+        "label": "10"
+    },
+    {
+        "key": "opacity-0",
+        "label": "0"
+    },
 ];
 
 

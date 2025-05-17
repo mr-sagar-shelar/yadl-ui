@@ -2,12 +2,13 @@ import { useMemo, useState } from "react";
 import * as Boxes from "../Box/index";
 import { memo } from "react";
 import { BoxNames } from "@utils";
-import { BorderStyles, BorderRadius, BorderSizes } from "./Constants";
+import { BorderStyles, BorderRadius, BorderSizes, Opacity } from "./Constants";
 
 const SearchBoxes = () => {
   const [currentBorderStyle, setCurrentBorderStyle] = useState<string>(BorderStyles[0].key);
   const [currentBorderRadius, setCurrentBorderRadius] = useState<string>(BorderRadius[0].key);
   const [currentBorderSize, setCurrentBorderSize] = useState<string>(BorderSizes[0].key);
+  const [currentOpacity, setCurrentOpacity] = useState<string>(Opacity[0].key);
   const IconsComponent = useMemo(() => {
     const listItems = Object.entries(BoxNames)
       .map((icon) => {
@@ -21,14 +22,14 @@ const SearchBoxes = () => {
               key={key}
               title={boxDetails.name}
             >
-              {Box && <Box {...boxDetails.props} classes={`${boxDetails.props.classes} ${currentBorderSize} ${currentBorderRadius} ${currentBorderStyle}`} />}
+              {Box && <Box {...boxDetails.props} classes={`${boxDetails.props.classes} ${currentOpacity} ${currentBorderSize} ${currentBorderRadius} ${currentBorderStyle}`} />}
             </div>
           );
         }
         return null;
       });
     return listItems;
-  }, [currentBorderStyle, currentBorderRadius, currentBorderSize]);
+  }, [currentBorderStyle, currentBorderRadius, currentBorderSize, currentOpacity]);
 
   const renderBorderStyles = () => {
     return BorderStyles.map((borderStyle) => {
@@ -45,6 +46,12 @@ const SearchBoxes = () => {
   const renderBorderSize = () => {
     return BorderSizes.map((borderSize) => {
       return <option key={borderSize.label}>{borderSize.label}</option>
+    })
+  }
+
+  const renderOpacity = () => {
+    return Opacity.map((opacity) => {
+      return <option key={opacity.label}>{opacity.label}</option>
     })
   }
 
@@ -85,6 +92,18 @@ const SearchBoxes = () => {
               }
             }}>
               {renderBorderSize()}
+            </select>
+          </fieldset>
+
+          <fieldset className="fieldset">
+            <legend className="fieldset-legend">Opacity</legend>
+            <select className="select small" onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
+              const foundItem = Opacity.find(opacity => opacity.label == event.target.value);
+              if (foundItem) {
+                setCurrentOpacity(foundItem.key);
+              }
+            }}>
+              {renderOpacity()}
             </select>
           </fieldset>
         </div>
