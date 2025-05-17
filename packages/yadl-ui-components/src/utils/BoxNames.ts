@@ -1,6 +1,7 @@
 export interface BoxDetails {
   name: string;
   component: string;
+  type: string;
   props: any;
 }
 export interface BoxNames {
@@ -22,6 +23,7 @@ export const BoxNames: BoxNames = {
   boxPrimary: {
     name: "Primary",
     component: "Box1",
+    type: "Solid",
     props: {
       height: 200,
       width: 200,
@@ -31,6 +33,7 @@ export const BoxNames: BoxNames = {
   boxPrimaryContent: {
     name: "Primary Content",
     component: "Box1",
+    type: "Solid",
     props: {
       height: 200,
       width: 200,
@@ -40,6 +43,7 @@ export const BoxNames: BoxNames = {
   boxSecondary: {
     name: "Secondary",
     component: "Box1",
+    type: "Solid",
     props: {
       height: 200,
       width: 200,
@@ -49,6 +53,7 @@ export const BoxNames: BoxNames = {
   boxSecondaryContent: {
     name: "Secondary Content",
     component: "Box1",
+    type: "Solid",
     props: {
       height: 200,
       width: 200,
@@ -58,6 +63,7 @@ export const BoxNames: BoxNames = {
   boxAccent: {
     name: "Accent",
     component: "Box1",
+    type: "Solid",
     props: {
       height: 200,
       width: 200,
@@ -67,6 +73,7 @@ export const BoxNames: BoxNames = {
   boxAccentContent: {
     name: "Accent Content",
     component: "Box1",
+    type: "Solid",
     props: {
       height: 200,
       width: 200,
@@ -76,6 +83,7 @@ export const BoxNames: BoxNames = {
   boxNeutral: {
     name: "Neutral",
     component: "Box1",
+    type: "Solid",
     props: {
       height: 200,
       width: 200,
@@ -85,6 +93,7 @@ export const BoxNames: BoxNames = {
   boxNeutralContent: {
     name: "Neutral Content",
     component: "Box1",
+    type: "Solid",
     props: {
       height: 200,
       width: 200,
@@ -94,6 +103,7 @@ export const BoxNames: BoxNames = {
   boxInfo: {
     name: "Info",
     component: "Box1",
+    type: "Solid",
     props: {
       height: 200,
       width: 200,
@@ -103,6 +113,7 @@ export const BoxNames: BoxNames = {
   boxInfoContent: {
     name: "Info Content",
     component: "Box1",
+    type: "Solid",
     props: {
       height: 200,
       width: 200,
@@ -112,6 +123,7 @@ export const BoxNames: BoxNames = {
   boxSuccess: {
     name: "Success",
     component: "Box1",
+    type: "Solid",
     props: {
       height: 200,
       width: 200,
@@ -121,6 +133,7 @@ export const BoxNames: BoxNames = {
   boxSuccessContent: {
     name: "Success Content",
     component: "Box1",
+    type: "Solid",
     props: {
       height: 200,
       width: 200,
@@ -130,6 +143,7 @@ export const BoxNames: BoxNames = {
   boxWarning: {
     name: "Warning",
     component: "Box1",
+    type: "Solid",
     props: {
       height: 200,
       width: 200,
@@ -139,6 +153,7 @@ export const BoxNames: BoxNames = {
   boxWarningContent: {
     name: "Warning Content",
     component: "Box1",
+    type: "Solid",
     props: {
       height: 200,
       width: 200,
@@ -148,6 +163,7 @@ export const BoxNames: BoxNames = {
   boxError: {
     name: "Error",
     component: "Box1",
+    type: "Solid",
     props: {
       height: 200,
       width: 200,
@@ -157,6 +173,7 @@ export const BoxNames: BoxNames = {
   boxErrorContent: {
     name: "Error Content",
     component: "Box1",
+    type: "Solid",
     props: {
       height: 200,
       width: 200,
@@ -166,6 +183,7 @@ export const BoxNames: BoxNames = {
   boxGradient1: {
     name: "Gradient 1",
     component: "Box1",
+    type: "Gradient",
     props: {
       height: 200,
       width: 200,
@@ -175,6 +193,7 @@ export const BoxNames: BoxNames = {
   boxGradient2: {
     name: "Gradient 2",
     component: "Box1",
+    type: "Gradient",
     props: {
       height: 200,
       width: 200,
@@ -184,6 +203,7 @@ export const BoxNames: BoxNames = {
   boxGradient3: {
     name: "Gradient 3",
     component: "Box1",
+    type: "Gradient",
     props: {
       height: 200,
       width: 200,
@@ -193,6 +213,7 @@ export const BoxNames: BoxNames = {
   boxGradient4: {
     name: "Gradient 4",
     component: "Box1",
+    type: "Gradient",
     props: {
       height: 200,
       width: 200,
@@ -202,6 +223,7 @@ export const BoxNames: BoxNames = {
   boxGradient5: {
     name: "Gradient 5",
     component: "Box1",
+    type: "Gradient",
     props: {
       height: 200,
       width: 200,
@@ -211,6 +233,7 @@ export const BoxNames: BoxNames = {
   boxGradient6: {
     name: "Gradient 6",
     component: "Box1",
+    type: "Gradient",
     props: {
       height: 200,
       width: 200,
@@ -220,6 +243,7 @@ export const BoxNames: BoxNames = {
   boxGradient7: {
     name: "Gradient 7",
     component: "Box1",
+    type: "Gradient",
     props: {
       height: 200,
       width: 200,
@@ -229,6 +253,7 @@ export const BoxNames: BoxNames = {
   boxGradient8: {
     name: "Gradient 8",
     component: "Box1",
+    type: "Gradient",
     props: {
       height: 200,
       width: 200,
@@ -238,6 +263,7 @@ export const BoxNames: BoxNames = {
   boxGradient9: {
     name: "Gradient 9",
     component: "Box1",
+    type: "Gradient",
     props: {
       height: 200,
       width: 200,
@@ -247,6 +273,7 @@ export const BoxNames: BoxNames = {
   boxGradient10: {
     name: "Gradient 10",
     component: "Box1",
+    type: "Gradient",
     props: {
       height: 200,
       width: 200,
@@ -256,6 +283,7 @@ export const BoxNames: BoxNames = {
   boxGradient11: {
     name: "Gradient 11",
     component: "Box1",
+    type: "Gradient",
     props: {
       height: 200,
       width: 200,
@@ -265,6 +293,7 @@ export const BoxNames: BoxNames = {
   boxGradient12: {
     name: "Gradient 12",
     component: "Box1",
+    type: "Gradient",
     props: {
       height: 200,
       width: 200,

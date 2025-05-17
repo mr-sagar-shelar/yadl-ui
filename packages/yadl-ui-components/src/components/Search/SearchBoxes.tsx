@@ -10,9 +10,14 @@ const SearchBoxes = () => {
   const [currentBorderSize, setCurrentBorderSize] = useState<string>(BorderSizes[0].key);
   const [currentOpacity, setCurrentOpacity] = useState<string>(Opacity[0].key);
   const [currentGradientDirection, setCurrentGradientDirection] = useState<string>(GradientDirection[0].key);
+  const [currentBackgroundType, setBackgroundType] = useState<string>("Solid");
   const [currentCustomStyle, setCustomStyles] = useState<string>("");
   const IconsComponent = useMemo(() => {
     const listItems = Object.entries(BoxNames)
+      .filter((icon) => {
+        debugger
+        return icon[1].type == currentBackgroundType;
+      })
       .map((icon) => {
         const [key, boxDetails] = icon;
         // @ts-ignore
@@ -31,7 +36,7 @@ const SearchBoxes = () => {
         return null;
       });
     return listItems;
-  }, [currentBorderStyle, currentBorderRadius, currentBorderSize, currentOpacity, currentCustomStyle, currentGradientDirection]);
+  }, [currentBorderStyle, currentBorderRadius, currentBorderSize, currentOpacity, currentCustomStyle, currentBackgroundType, currentGradientDirection]);
 
   const renderBorderStyles = () => {
     return BorderStyles.map((borderStyle) => {
@@ -128,6 +133,15 @@ const SearchBoxes = () => {
           </fieldset>
 
           <fieldset className="fieldset">
+            <legend className="fieldset-legend">Background Type</legend>
+            <select className="select small" onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
+              setBackgroundType(event.target.value)
+            }}>
+              <option key={"solid"}>Solid</option>
+              <option key={"gradient"}>Gradient</option>
+            </select>
+          </fieldset>
+          {currentBackgroundType == "Gradient" && <fieldset className="fieldset">
             <legend className="fieldset-legend">Gradient Direction</legend>
             <select className="select small" onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
               const foundItem = GradientDirection.find(direction => direction.label == event.target.value);
@@ -138,6 +152,7 @@ const SearchBoxes = () => {
               {renderGradientDirections()}
             </select>
           </fieldset>
+          }
         </div>
         <div className="flex flex-wrap gap-5 overflow-auto h-full">
           {IconsComponent}
