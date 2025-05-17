@@ -52,7 +52,7 @@ export const BoxNames: BoxNames = {
     props: {
       height: 284,
       width: 256,
-      classes: "border-4 rounded-2xl opacity-75 bg-indigo-500 bg-clip-content"
+      classes: "border-4 opacity-75 bg-indigo-500 bg-clip-content"
     },
   },
 };
