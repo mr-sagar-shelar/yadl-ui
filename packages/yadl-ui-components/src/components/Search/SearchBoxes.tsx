@@ -9,6 +9,7 @@ const SearchBoxes = () => {
   const [currentBorderRadius, setCurrentBorderRadius] = useState<string>(BorderRadius[0].key);
   const [currentBorderSize, setCurrentBorderSize] = useState<string>(BorderSizes[0].key);
   const [currentOpacity, setCurrentOpacity] = useState<string>(Opacity[0].key);
+  const [currentCustomStyle, setCustomStyles] = useState<string>("");
   const IconsComponent = useMemo(() => {
     const listItems = Object.entries(BoxNames)
       .map((icon) => {
@@ -22,14 +23,14 @@ const SearchBoxes = () => {
               key={key}
               title={boxDetails.name}
             >
-              {Box && <Box {...boxDetails.props} classes={`${boxDetails.props.classes} ${currentOpacity} ${currentBorderSize} ${currentBorderRadius} ${currentBorderStyle}`} />}
+              {Box && <Box {...boxDetails.props} classes={`${boxDetails.props.classes} ${currentOpacity} ${currentBorderSize} ${currentBorderRadius} ${currentBorderStyle} ${currentCustomStyle}`} />}
             </div>
           );
         }
         return null;
       });
     return listItems;
-  }, [currentBorderStyle, currentBorderRadius, currentBorderSize, currentOpacity]);
+  }, [currentBorderStyle, currentBorderRadius, currentBorderSize, currentOpacity, currentCustomStyle]);
 
   const renderBorderStyles = () => {
     return BorderStyles.map((borderStyle) => {
@@ -57,8 +58,8 @@ const SearchBoxes = () => {
 
   return (
     <>
-      <div>
-        <div className="py-5 flex flex-wrap gap-5">
+      <div className="h-full">
+        <div className="flex flex-wrap gap-5 pb-5">
           <fieldset className="fieldset">
             <legend className="fieldset-legend">Border Style</legend>
             <select className="select small" onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -106,8 +107,20 @@ const SearchBoxes = () => {
               {renderOpacity()}
             </select>
           </fieldset>
+
+          <fieldset className="fieldset">
+            <legend className="fieldset-legend">Custom Styles</legend>
+            <input
+              type="search"
+              className="input"
+              value={currentCustomStyle}
+              onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
+                setCustomStyles(event.target.value);
+              }}
+            />
+          </fieldset>
         </div>
-        <div className="flex flex-wrap gap-5">
+        <div className="flex flex-wrap gap-5 overflow-auto h-full">
           {IconsComponent}
         </div>
       </div>
