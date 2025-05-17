@@ -1,27 +1,27 @@
 export const BorderStyles = [
     {
-        key: "border-solid",
-        label: "Solid"
+        "key": "border-solid",
+        "label": "SOLID"
     },
     {
-        key: "border-dashed",
-        label: "Dashed"
+        "key": "border-dashed",
+        "label": "DASHED"
     },
     {
-        key: "border-dotted",
-        label: "Dotted"
+        "key": "border-dotted",
+        "label": "DOTTED"
     },
     {
-        key: "border-double",
-        label: "Double"
+        "key": "border-double",
+        "label": "DOUBLE"
     },
     {
-        key: "border-hidden",
-        label: "Hidden"
+        "key": "border-hidden",
+        "label": "HIDDEN"
     },
     {
-        key: "border-none",
-        label: "None"
+        "key": "border-none",
+        "label": "NONE"
     }
 ];
 
@@ -568,11 +568,66 @@ export const BorderRadius = [
     }
 ];
 
+export const BorderSizes = [
+    {
+        key: "border-none",
+        label: "None"
+    }, {
+        key: "border-1",
+        label: "1"
+    },
+    {
+        key: "border-2",
+        label: "2"
+    },
+    {
+        key: "border-3",
+        label: "3"
+    },
+    {
+        key: "border-4",
+        label: "4"
+    },
+    {
+        key: "border-5",
+        label: "5"
+    },
+    {
+        key: "border-6",
+        label: "6"
+    },
+    {
+        key: "border-7",
+        label: "7"
+    },
+    {
+        key: "border-8",
+        label: "8"
+    },
+    {
+        key: "border-9",
+        label: "9"
+    },
+    {
+        key: "border-10",
+        label: "10"
+    }
+];
+
 
 /*
 
 var jsonObj = [];
 document.getElementsByClassName("align-baseline")[0].childNodes.forEach(element => {
+    console.log(element.childNodes[0].innerText.substring(8).toUpperCase());
+    jsonObj.push({
+        "key": element.childNodes[0].innerText,
+        "label": element.childNodes[0].innerText.substring(8).toUpperCase()
+    })
+});
+
+var jsonObj = [];
+document.getElementsByClassName("col-span-2 grid grid-cols-subgrid border-t border-gray-900/10 dark:border-white/10")[0].childNodes.forEach(element => {
     console.log(element.childNodes[0].innerText.substring(8).toUpperCase());
     jsonObj.push({
         "key": element.childNodes[0].innerText,

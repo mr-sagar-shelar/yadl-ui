@@ -2,11 +2,12 @@ import { useMemo, useState } from "react";
 import * as Boxes from "../Box/index";
 import { memo } from "react";
 import { BoxNames } from "@utils";
-import { BorderStyles, BorderRadius } from "./Constants";
+import { BorderStyles, BorderRadius, BorderSizes } from "./Constants";
 
 const SearchBoxes = () => {
   const [currentBorderStyle, setCurrentBorderStyle] = useState<string>(BorderStyles[0].key);
   const [currentBorderRadius, setCurrentBorderRadius] = useState<string>(BorderRadius[0].key);
+  const [currentBorderSize, setCurrentBorderSize] = useState<string>(BorderSizes[0].key);
   const IconsComponent = useMemo(() => {
     const listItems = Object.entries(BoxNames)
       .map((icon) => {
@@ -20,14 +21,14 @@ const SearchBoxes = () => {
               key={key}
               title={boxDetails.name}
             >
-              {Box && <Box {...boxDetails.props} classes={`${boxDetails.props.classes} ${currentBorderRadius} ${currentBorderStyle}`} />}
+              {Box && <Box {...boxDetails.props} classes={`${boxDetails.props.classes} ${currentBorderSize} ${currentBorderRadius} ${currentBorderStyle}`} />}
             </div>
           );
         }
         return null;
       });
     return listItems;
-  }, [currentBorderStyle, currentBorderRadius]);
+  }, [currentBorderStyle, currentBorderRadius, currentBorderSize]);
 
   const renderBorderStyles = () => {
     return BorderStyles.map((borderStyle) => {
@@ -41,16 +42,22 @@ const SearchBoxes = () => {
     })
   }
 
+  const renderBorderSize = () => {
+    return BorderSizes.map((borderSize) => {
+      return <option key={borderSize.label}>{borderSize.label}</option>
+    })
+  }
+
   return (
     <>
       <div>
-        <div className="py-5">
+        <div className="py-5 flex flex-wrap gap-5">
           <fieldset className="fieldset">
             <legend className="fieldset-legend">Border Style</legend>
             <select className="select small" onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
-              const foundFontSize = BorderStyles.find(borderStyle => borderStyle.label == event.target.value);
-              if (foundFontSize) {
-                setCurrentBorderStyle(foundFontSize.key);
+              const foundItem = BorderStyles.find(borderStyle => borderStyle.label == event.target.value);
+              if (foundItem) {
+                setCurrentBorderStyle(foundItem.key);
               }
             }}>
               {renderBorderStyles()}
@@ -60,12 +67,24 @@ const SearchBoxes = () => {
           <fieldset className="fieldset">
             <legend className="fieldset-legend">Border Radius</legend>
             <select className="select small" onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
-              const borderRadius = BorderRadius.find(radius => radius.label == event.target.value);
-              if (borderRadius) {
-                setCurrentBorderRadius(borderRadius.key);
+              const foundItem = BorderRadius.find(radius => radius.label == event.target.value);
+              if (foundItem) {
+                setCurrentBorderRadius(foundItem.key);
               }
             }}>
               {renderBorderRadius()}
+            </select>
+          </fieldset>
+
+          <fieldset className="fieldset">
+            <legend className="fieldset-legend">Border Size</legend>
+            <select className="select small" onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
+              const foundItem = BorderSizes.find(borderSize => borderSize.label == event.target.value);
+              if (foundItem) {
+                setCurrentBorderSize(foundItem.key);
+              }
+            }}>
+              {renderBorderSize()}
             </select>
           </fieldset>
         </div>
