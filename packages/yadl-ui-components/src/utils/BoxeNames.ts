@@ -34,7 +34,7 @@ export const BoxNames: BoxNames = {
     props: {
       height: 284,
       width: 256,
-      classes: "border-4 border-dashed bg-indigo-500 bg-clip-border p-3"
+      classes: "border-4 bg-indigo-500 bg-clip-border"
     },
   },
   box4: {
@@ -43,7 +43,7 @@ export const BoxNames: BoxNames = {
     props: {
       height: 284,
       width: 256,
-      classes: "border-4 border-dashed bg-indigo-500 bg-clip-padding p-3"
+      classes: "border-4 bg-indigo-500 bg-clip-padding"
     },
   },
   box5: {
@@ -52,7 +52,7 @@ export const BoxNames: BoxNames = {
     props: {
       height: 284,
       width: 256,
-      classes: "border-4 border-dashed rounded-2xl opacity-75 bg-indigo-500 bg-clip-content p-3"
+      classes: "border-4 rounded-2xl opacity-75 bg-indigo-500 bg-clip-content"
     },
   },
 };

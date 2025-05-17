@@ -1,35 +1,57 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import * as Boxes from "../Box/index";
 import { memo } from "react";
 import { BoxNames } from "@utils";
+import { BorderStyles } from "./Constants";
 
 const SearchBoxes = () => {
+  const [currentBorderStyle, setCurrentBorderStyle] = useState<string>(BorderStyles[0].key);
   const IconsComponent = useMemo(() => {
     const listItems = Object.entries(BoxNames)
       .map((icon) => {
         const [key, boxDetails] = icon;
         // @ts-ignore
-        let Icon = Boxes[boxDetails.component];
+        let Box = Boxes[boxDetails.component];
 
-        if (Icon) {
+        if (Box) {
           return (
             <div
               key={key}
               title={boxDetails.name}
-              className="p-5"
             >
-              {Icon && <Icon {...boxDetails.props} />}
+              {Box && <Box {...boxDetails.props} classes={`${boxDetails.props.classes} ${currentBorderStyle}`} />}
             </div>
           );
         }
         return null;
       });
     return listItems;
-  }, []);
+  }, [currentBorderStyle]);
+
+  const renderBorderStyles = () => {
+    return BorderStyles.map((borderStyle) => {
+      return <option key={borderStyle.label}>{borderStyle.label}</option>
+    })
+  }
+
   return (
     <>
       <div>
-        <div className="flex flex-wrap">
+        <div className="py-5">
+          <fieldset className="fieldset">
+            <legend className="fieldset-legend">Border Style</legend>
+            <select className="select small" onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
+              const foundFontSize = BorderStyles.find(borderStyle => borderStyle.label == event.target.value);
+              if (foundFontSize) {
+                setCurrentBorderStyle(foundFontSize.key);
+              }
+            }}>
+              {renderBorderStyles()}
+            </select>
+          </fieldset>
+
+        </div>
+        <div className="flex flex-wrap gap-5">
           {IconsComponent}
         </div>
       </div>
