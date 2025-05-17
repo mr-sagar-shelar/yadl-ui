@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Box1 from "../Box1";
+import Box1 from "../Box2";
 
 const meta: Meta<typeof Box1> = { title: "Box/Box1", component: Box1 };
 

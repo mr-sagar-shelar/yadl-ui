@@ -702,6 +702,45 @@ export const Opacity = [
     },
 ];
 
+export const GradientDirection = [
+    {
+        "key": "bg-linear-to-t",
+        "label": "TOP"
+    },
+    {
+        "key": "bg-linear-to-tr",
+        "label": "TOP RIGHT"
+    },
+    {
+        "key": "bg-linear-to-r",
+        "label": "RIGHT"
+    },
+    {
+        "key": "bg-linear-to-br",
+        "label": "BOTTOM RIGHT"
+    },
+    {
+        "key": "bg-linear-to-b",
+        "label": "BOTTOM"
+    },
+    {
+        "key": "bg-linear-to-bl",
+        "label": "BOTTOM LEFT"
+    },
+    {
+        "key": "bg-linear-to-l",
+        "label": "LEFT"
+    },
+    {
+        "key": "bg-linear-to-tl",
+        "label": "TOP LEFT"
+    },
+    {
+        "key": "bg-radial",
+        "label": "RADIAL"
+    }
+];
+
 
 /*
 

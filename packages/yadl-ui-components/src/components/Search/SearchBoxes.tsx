@@ -2,13 +2,14 @@ import { useMemo, useState } from "react";
 import * as Boxes from "../Box/index";
 import { memo } from "react";
 import { BoxNames } from "@utils";
-import { BorderStyles, BorderRadius, BorderSizes, Opacity } from "./Constants";
+import { BorderStyles, BorderRadius, BorderSizes, Opacity, GradientDirection } from "./Constants";
 
 const SearchBoxes = () => {
   const [currentBorderStyle, setCurrentBorderStyle] = useState<string>(BorderStyles[0].key);
   const [currentBorderRadius, setCurrentBorderRadius] = useState<string>(BorderRadius[0].key);
   const [currentBorderSize, setCurrentBorderSize] = useState<string>(BorderSizes[0].key);
   const [currentOpacity, setCurrentOpacity] = useState<string>(Opacity[0].key);
+  const [currentGradientDirection, setCurrentGradientDirection] = useState<string>(GradientDirection[0].key);
   const [currentCustomStyle, setCustomStyles] = useState<string>("");
   const IconsComponent = useMemo(() => {
     const listItems = Object.entries(BoxNames)
@@ -23,14 +24,14 @@ const SearchBoxes = () => {
               key={key}
               title={boxDetails.name}
             >
-              {Box && <Box {...boxDetails.props} classes={`${boxDetails.props.classes} ${currentOpacity} ${currentBorderSize} ${currentBorderRadius} ${currentBorderStyle} ${currentCustomStyle}`} />}
+              {Box && <Box {...boxDetails.props} classes={`${boxDetails.props.classes} ${currentOpacity} ${currentBorderSize} ${currentBorderRadius} ${currentBorderStyle} ${currentCustomStyle} ${currentGradientDirection}`} />}
             </div>
           );
         }
         return null;
       });
     return listItems;
-  }, [currentBorderStyle, currentBorderRadius, currentBorderSize, currentOpacity, currentCustomStyle]);
+  }, [currentBorderStyle, currentBorderRadius, currentBorderSize, currentOpacity, currentCustomStyle, currentGradientDirection]);
 
   const renderBorderStyles = () => {
     return BorderStyles.map((borderStyle) => {
@@ -53,6 +54,12 @@ const SearchBoxes = () => {
   const renderOpacity = () => {
     return Opacity.map((opacity) => {
       return <option key={opacity.label}>{opacity.label}</option>
+    })
+  }
+
+  const renderGradientDirections = () => {
+    return GradientDirection.map((direction) => {
+      return <option key={direction.label}>{direction.label}</option>
     })
   }
 
@@ -118,6 +125,18 @@ const SearchBoxes = () => {
                 setCustomStyles(event.target.value);
               }}
             />
+          </fieldset>
+
+          <fieldset className="fieldset">
+            <legend className="fieldset-legend">Gradient Direction</legend>
+            <select className="select small" onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
+              const foundItem = GradientDirection.find(direction => direction.label == event.target.value);
+              if (foundItem) {
+                setCurrentGradientDirection(foundItem.key);
+              }
+            }}>
+              {renderGradientDirections()}
+            </select>
           </fieldset>
         </div>
         <div className="flex flex-wrap gap-5 overflow-auto h-full">
