@@ -1,5 +1,5 @@
 import { AstNode } from "langium-ast-helper";
-import { YadlModelAstNode, Icon, TextComponents, YadlNode, YadlEditorResponse, YadlNodePosition, YadlNodeDimension } from "./components/Interfaces.js";
+import { YadlModelAstNode, Icon, TextComponents, BoxComponents, YadlNode, YadlEditorResponse, YadlNodePosition, YadlNodeDimension } from "./components/Interfaces.js";
 import { get } from "lodash";
 
 export function getPosition(position: YadlNodePosition): YadlNodePosition {
@@ -41,6 +41,7 @@ export function getYadlModelAst(ast: YadlModelAstNode): YadlModelAstNode {
     themeisleIcons: (ast.themeisleIcons as Icon[])?.filter((e) => e.$type === "ThemeisleIcons") as Icon[],
     undrawIcons: (ast.undrawIcons as Icon[])?.filter((e) => e.$type === "UndrawIcons") as Icon[],
     textComponents: (ast.textComponents as TextComponents[])?.filter((e) => e.$type === "TextComponents") as TextComponents[],
+    boxes: (ast.boxes as BoxComponents[])?.filter((e) => e.$type === "BoxComponents") as BoxComponents[],
   };
 }
 
@@ -248,6 +249,36 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
 
   if (textComponents) {
     allNodes = allNodes.concat(textComponents);
+  }
+
+  const boxComponents = astNode?.boxes?.flatMap((i: any, index: number): YadlNode => {
+    const position = getPosition(i.position);
+    const dimension = getDimension(i.dimension);
+    const boxData: YadlNode = {
+      id: i.name || `box-${index + 1}`,
+      type: "box",
+      position: position,
+      data: {
+        component: i.boxType,
+        positionRange: position.range,
+        nodeRange: i.$textRegion.range
+      }
+    };
+
+    if (dimension) {
+      boxData.data.dimensionRange = dimension.range
+      boxData.data.props = {
+        width: dimension.width,
+        height: dimension.height,
+        classes: i.classes?.classes,
+      }
+    }
+
+    return boxData;
+  });
+
+  if (boxComponents) {
+    allNodes = allNodes.concat(boxComponents);
   }
 
   const sortedNodes = allNodes.sort((nodeA, nodeB) => {

@@ -44,14 +44,14 @@ const SearchBoxes = () => {
                     component: boxDetails.component,
                     props: {
                       ...boxDetails.props,
-                      classes: `${boxDetails.props.classes} ${currentOpacity} ${currentBorderSize} ${currentBorderRadius} ${currentBorderStyle} ${currentCustomStyle} ${currentGradientDirection}`,
+                      classes: `${boxDetails.props.classes} ${currentOpacity} ${currentBorderSize} ${currentBorderRadius} ${currentBorderStyle} ${currentCustomStyle}${currentBackgroundType == "Gradient" ? " " + currentGradientDirection : ""}`,
                     }
                   },
                 })
               }
               draggable
             >
-              {Box && <Box {...boxDetails.props} classes={`${boxDetails.props.classes} ${currentOpacity} ${currentBorderSize} ${currentBorderRadius} ${currentBorderStyle} ${currentCustomStyle} ${currentGradientDirection}`} />}
+              {Box && <Box {...boxDetails.props} classes={`${boxDetails.props.classes} ${currentOpacity} ${currentBorderSize} ${currentBorderRadius} ${currentBorderStyle} ${currentCustomStyle}${currentBackgroundType == "Gradient" ? " " + currentGradientDirection : ""}`} />}
             </div>
           );
         }

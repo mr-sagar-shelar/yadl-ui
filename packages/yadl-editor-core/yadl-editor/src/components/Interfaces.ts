@@ -37,6 +37,15 @@ export interface TextComponents {
     fontFamily?: string;
     classes?: string;
     position?: YadlNodePosition;
+    dimension?: YadlNodeDimension;
+}
+
+export interface BoxComponents {
+    $type: string;
+    text?: string;
+    classes?: string;
+    position?: YadlNodePosition;
+    dimension?: YadlNodeDimension;
 }
 
 export interface YadlModelAstNode extends AstNode, YadlModelElement {
@@ -48,6 +57,7 @@ export interface YadlModelAstNode extends AstNode, YadlModelElement {
     themeisleIcons?: Icon[];
     undrawIcons?: Icon[];
     textComponents?: TextComponents[];
+    boxes?: BoxComponents[];
 }
 
 export interface YadlEditorResponse {

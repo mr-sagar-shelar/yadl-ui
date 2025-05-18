@@ -40,7 +40,7 @@ const SearchTextComponents = () => {
                 type: "text",
                 data: {
                   icon: `${key}`,
-                  classes: `text-wrap ${textDetails.classes} ${currentFontSize} ${currentGradientDirection} ${currentCustomStyle}`,
+                  classes: `text-wrap ${textDetails.classes} ${currentFontSize}${currentBackgroundType == "Gradient" ? " " + currentGradientDirection : ""} ${currentCustomStyle}`,
                   text: currentText,
                   fontFamily: currentFont,
                   props: textDetails.props,
@@ -52,7 +52,7 @@ const SearchTextComponents = () => {
           >
             <Text
               text={currentText}
-              classes={`${textDetails.classes} ${currentFontSize} ${currentGradientDirection} ${currentCustomStyle}`}
+              classes={`${textDetails.classes} ${currentFontSize}${currentBackgroundType == "Gradient" ? " " + currentGradientDirection : ""} ${currentCustomStyle}`}
             />
           </div>
         );

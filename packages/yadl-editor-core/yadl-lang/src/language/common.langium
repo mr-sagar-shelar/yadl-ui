@@ -10,7 +10,9 @@ Dimension:
         'height:' height=NUMBER 
     '}';
 
-
+Classes:
+    'classes:' classes=STRING;
+    
 QualifiedName returns string:
     ID ('.' ID)*;
 

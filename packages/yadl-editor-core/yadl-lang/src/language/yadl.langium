@@ -7,13 +7,14 @@ import "./icons/skillIcons"
 import "./icons/themeisleIcons"
 import "./icons/undrawIcons"
 import "./components/text"
+import "./components/box"
 import "./components/edge"
 
 
 entry Model:
     (persons+=Person | greetings+=Greeting | awsIcons+=AwsIcons | gcpIcons+=GcpIcons | azureIcons+=AzureIcons
     | skillIcons+=SkillIcons | themeisleIcons+=ThemeisleIcons | undrawIcons+=UndrawIcons
-    | textComponents+=TextComponents | edges+=Edge)*;
+    | textComponents+=TextComponents | edges+=Edge | boxes+=BoxComponents)*;
 
 Person:
     'person' name=ID;
