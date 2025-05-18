@@ -292,6 +292,25 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
       };
       monacoInstance.executeEdits("my-source", [operation]);
     }
+    else if (node.type === "box") {
+      const width = Math.trunc(get(node, "data.props.width", 100));
+      const height = Math.trunc(get(node, "data.props.height", 100));
+      const classes = get(node, "data.props.classes", "");
+      const component = get(node, "data.component", "");
+      updatedText = `box ${component} { position { x: ${xValue} y: ${yValue} } dimension { width: ${width} height: ${height} } ${classes ? "classes: \"" + classes + "\"" : ""} }\n`;
+      const operation = {
+        identifier: id,
+        range: {
+          startLineNumber: startLineNumber,
+          startColumn: startColumn,
+          endLineNumber: endLineNumber,
+          endColumn: endColumn,
+        },
+        text: updatedText,
+        forceMoveMarkers: true,
+      };
+      monacoInstance.executeEdits("my-source", [operation]);
+    }
   };
 
   const onNodeRemoved = (node: YadlNode) => {
