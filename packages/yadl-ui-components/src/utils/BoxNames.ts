@@ -25,8 +25,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Solid",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "bg-primary"
     },
   },
@@ -35,8 +35,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Solid",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "bg-primary-content"
     },
   },
@@ -45,8 +45,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Solid",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "bg-secondary"
     },
   },
@@ -55,8 +55,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Solid",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "bg-secondary-content"
     },
   },
@@ -65,8 +65,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Solid",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "bg-accent"
     },
   },
@@ -75,8 +75,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Solid",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "bg-accent-content"
     },
   },
@@ -85,8 +85,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Solid",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "bg-neutral"
     },
   },
@@ -95,8 +95,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Solid",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "bg-neutral-content"
     },
   },
@@ -105,8 +105,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Solid",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "bg-info"
     },
   },
@@ -115,8 +115,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Solid",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "bg-info-content"
     },
   },
@@ -125,8 +125,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Solid",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "bg-success"
     },
   },
@@ -135,8 +135,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Solid",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "bg-success-content"
     },
   },
@@ -145,8 +145,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Solid",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "bg-warning"
     },
   },
@@ -155,8 +155,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Solid",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "bg-warning-content"
     },
   },
@@ -165,8 +165,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Solid",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "bg-error"
     },
   },
@@ -175,8 +175,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Solid",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "bg-error-content"
     },
   },
@@ -185,8 +185,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Gradient",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "from-red-500 via-orange-500 to-yellow-500"
     },
   },
@@ -195,8 +195,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Gradient",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "from-cyan-700 via-blue-500 to-indigo-600"
     },
   },
@@ -205,8 +205,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Gradient",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "from-indigo-500 via-purple-500 to-pink-500"
     },
   },
@@ -215,8 +215,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Gradient",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "from-pink-500 via-red-500 to-orange-500"
     },
   },
@@ -225,8 +225,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Gradient",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "from-cyan-400 via-blue-400 to-indigo-400"
     },
   },
@@ -235,8 +235,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Gradient",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "from-yellow-500 via-orange-500 to-red-500"
     },
   },
@@ -245,8 +245,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Gradient",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "from-green-500 via-emerald-500 to-teal-500"
     },
   },
@@ -255,8 +255,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Gradient",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "from-amber-500 via-orange-500 to-red-500"
     },
   },
@@ -265,8 +265,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Gradient",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "from-blue-500 via-cyan-500 to-teal-500"
     },
   },
@@ -275,8 +275,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Gradient",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "from-purple-500 via-indigo-500 to-blue-500"
     },
   },
@@ -285,8 +285,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Gradient",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "bg-[linear-gradient(60deg,_rgb(247,_149,_51),_rgb(243,_112,_85),_rgb(239,_78,_123),_rgb(161,_102,_171),_rgb(80,_115,_184),_rgb(16,_152,_173),_rgb(7,_179,_155),_rgb(111,_186,_130))]  "
     },
   },
@@ -295,8 +295,8 @@ export const BoxNames: BoxNames = {
     component: "Box1",
     type: "Gradient",
     props: {
-      height: 200,
-      width: 200,
+      height: 100,
+      width: 100,
       classes: "from-rose-500 via-pink-500 to-red-500"
     },
   }
