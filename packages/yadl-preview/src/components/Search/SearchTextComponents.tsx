@@ -40,7 +40,7 @@ const SearchTextComponents = () => {
                 type: "text",
                 data: {
                   icon: `${key}`,
-                  classes: `${textDetails.classes} ${currentFontSize} ${currentGradientDirection} ${currentCustomStyle}`,
+                  classes: `text-wrap ${textDetails.classes} ${currentFontSize} ${currentGradientDirection} ${currentCustomStyle}`,
                   text: currentText,
                   fontFamily: currentFont,
                   props: textDetails.props,
@@ -116,7 +116,7 @@ const SearchTextComponents = () => {
             />
           </fieldset>
           <fieldset className="fieldset">
-            <legend className="fieldset-legend">Background Type</legend>
+            <legend className="fieldset-legend">Color Type</legend>
             <select className="select small" onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
               setBackgroundType(event.target.value)
             }}>

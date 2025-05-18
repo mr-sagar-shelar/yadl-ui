@@ -155,7 +155,7 @@ const SearchBoxes = () => {
           </fieldset>
 
           <fieldset className="fieldset">
-            <legend className="fieldset-legend">Background Type</legend>
+            <legend className="fieldset-legend">Color Type</legend>
             <select className="select small" onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
               setBackgroundType(event.target.value)
             }}>

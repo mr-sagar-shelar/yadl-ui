@@ -190,9 +190,11 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
     const height = Math.trunc(get(node, "measured.height", 0));
 
     const range = get(node, "data.dimensionRange");
+    const positionRange = get(node, "data.positionRange");
+    let updatedText = `dimension { width: ${width} height: ${height} }`;
+    const id = { major: 1, minor: 1 };
+
     if (range) {
-      const updatedText = `dimension { width: ${width} height: ${height} }`
-      const id = { major: 1, minor: 1 };
       const startLineNumber = get(range, "start.line", 0) + 1;
       const startColumn = get(range, "start.character", 0) + 1;
       const endLineNumber = get(range, "end.line", 0) + 1;
@@ -205,6 +207,24 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
           startColumn: startColumn,
           endLineNumber: endLineNumber,
           endColumn: endColumn,
+        },
+        text: updatedText,
+        forceMoveMarkers: true,
+      };
+      monacoInstance.executeEdits("my-source", [operation]);
+    } else if (positionRange) {
+      updatedText = ` ${updatedText} `
+      const startLineNumber = get(positionRange, "start.line", 0) + 1;
+      const startColumn = get(positionRange, "end.character", 0) + 1;
+      const endLineNumber = get(positionRange, "end.line", 0) + 1;
+
+      const operation = {
+        identifier: id,
+        range: {
+          startLineNumber: startLineNumber,
+          startColumn: startColumn,
+          endLineNumber: endLineNumber,
+          endColumn: startColumn,
         },
         text: updatedText,
         forceMoveMarkers: true,
