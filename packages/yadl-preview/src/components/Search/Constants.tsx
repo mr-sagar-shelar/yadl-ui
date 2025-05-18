@@ -7,6 +7,61 @@ export const CONSTANTS = {
     themeisleHeight: 250
 }
 
+export const FontSizes = [
+    {
+        key: "text-xs",
+        label: "Extra small"
+    },
+    {
+        key: "text-sm",
+        label: "Small"
+    },
+    {
+        key: "text-base",
+        label: "Base"
+    },
+    {
+        key: "text-lg",
+        label: "Large"
+    },
+    {
+        key: "text-xl",
+        label: "Extra large"
+    },
+    {
+        key: "text-2xl",
+        label: "2XL"
+    },
+    {
+        key: "text-3xl",
+        label: "3XL"
+    },
+    {
+        key: "text-4xl",
+        label: "4XL"
+    },
+    {
+        key: "text-5xl",
+        label: "5XL"
+    },
+    {
+        key: "text-6xl",
+        label: "6XL"
+    },
+    {
+        key: "text-7xl",
+        label: "7XL"
+    },
+    {
+        key: "text-8xl",
+        label: "8XL"
+    },
+    {
+        key: "text-9xl",
+        label: "9XL"
+    }
+]
+
 export const BorderStyles = [
     {
         "key": "border-solid",

@@ -1,7 +1,7 @@
 export interface BoxDetails {
   name: string;
   component: string;
-  type: string;
+  type?: string;
   props: any;
 }
 export interface BoxNames {
@@ -27,7 +27,7 @@ export const BoxNames: BoxNames = {
     props: {
       height: 200,
       width: 200,
-      classes: "bg-blue-500"
+      classes: "bg-primary"
     },
   },
   boxPrimaryContent: {
