@@ -1,18 +1,20 @@
+import { memo } from "react";
 export type TextProps = {
   classes?: string;
   text?: string;
   fontFamily?: string;
+  width?: number;
+  height?: number;
 };
 
 const Text = (props: TextProps) => {
-  const { classes, fontFamily, text } = props;
+  const { classes, fontFamily, text, width, height } = props;
   return (
-    <>
-      <div style={{ fontFamily: fontFamily }} className={classes} {...props}>
-        {text}
-      </div>
-    </>
+    <div style={{ fontFamily: fontFamily, width, height }} className={classes}>
+      {text}
+    </div>
   );
 };
 
-export default Text;
+const Memo = memo(Text);
+export default Memo;

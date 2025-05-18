@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 export type BoxProps = {
   title: string;
   width?: number;
@@ -27,4 +29,5 @@ const Box = (props: BoxProps) => {
   );
 };
 
-export default Box;
+const Memo = memo(Box);
+export default Memo;
