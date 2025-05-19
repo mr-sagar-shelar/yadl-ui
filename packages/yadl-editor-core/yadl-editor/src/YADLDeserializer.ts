@@ -1,5 +1,5 @@
 import { AstNode } from "langium-ast-helper";
-import { YadlModelAstNode, Icon, Avatars, TextComponents, BoxComponents, YadlNode, YadlEditorResponse, YadlNodePosition, YadlNodeDimension } from "./components/Interfaces.js";
+import { YadlModelAstNode, Icon, Avatars, YadlEdge, TextComponents, BoxComponents, YadlNode, YadlEditorResponse, YadlNodePosition, YadlNodeDimension } from "./components/Interfaces.js";
 import { get } from "lodash";
 
 export function getPosition(position: YadlNodePosition): YadlNodePosition {
@@ -43,6 +43,7 @@ export function getYadlModelAst(ast: YadlModelAstNode): YadlModelAstNode {
     textComponents: (ast.textComponents as TextComponents[])?.filter((e) => e.$type === "TextComponents") as TextComponents[],
     boxes: (ast.boxes as BoxComponents[])?.filter((e) => e.$type === "BoxComponents") as BoxComponents[],
     avatars: (ast.avatars as Avatars[])?.filter((e) => e.$type === "Avatars") as Avatars[],
+    edges: (ast.edges as YadlEdge[])?.filter((e) => e.$type === "Edges") as YadlEdge[],
   };
 }
 
@@ -73,7 +74,7 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
     return iconData;
   });
 
-  if (awsIcons) {
+  if (awsIcons && awsIcons.length > 0) {
     allNodes = allNodes.concat(awsIcons);
   }
 
@@ -100,7 +101,7 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
     return iconData;
   });
 
-  if (gcpIcons) {
+  if (gcpIcons && gcpIcons.length > 0) {
     allNodes = allNodes.concat(gcpIcons);
   }
 
@@ -128,7 +129,7 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
     return iconData;
   });
 
-  if (azureIcons) {
+  if (azureIcons && azureIcons.length > 0) {
     allNodes = allNodes.concat(azureIcons);
   }
 
@@ -156,7 +157,7 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
     return iconData;
   });
 
-  if (skillIcons) {
+  if (skillIcons && skillIcons.length > 0) {
     allNodes = allNodes.concat(skillIcons);
   }
 
@@ -184,7 +185,7 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
     return iconData;
   });
 
-  if (undrawIcons) {
+  if (undrawIcons && undrawIcons.length > 0) {
     allNodes = allNodes.concat(undrawIcons);
   }
 
@@ -212,7 +213,7 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
     return iconData;
   });
 
-  if (themeisleIcons) {
+  if (themeisleIcons && themeisleIcons.length > 0) {
     allNodes = allNodes.concat(themeisleIcons);
   }
 
@@ -248,7 +249,7 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
     return textData;
   });
 
-  if (textComponents) {
+  if (textComponents && textComponents.length > 0) {
     allNodes = allNodes.concat(textComponents);
   }
 
@@ -278,7 +279,7 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
     return boxData;
   });
 
-  if (boxComponents) {
+  if (boxComponents && boxComponents.length > 0) {
     allNodes = allNodes.concat(boxComponents);
   }
 
@@ -315,8 +316,61 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
     return textData;
   });
 
-  if (avatars) {
+  if (avatars && avatars.length > 0) {
     allNodes = allNodes.concat(avatars);
+  }
+
+  let allEdges: YadlEdge[] = [];
+  const edges = astNode?.edges?.flatMap((i: any, index: number): YadlEdge => {
+    if (i.fontFamily) {
+      allFonts.push(i.fontFamily);
+    }
+    const edgeData: YadlEdge = {
+      id: i.name || `edge-${index + 1}`,
+      type: i.type?.type || 'default',
+      label: i.label?.label,
+      source: i.source,
+      target: i.target,
+      // sourceHandle: 'bottom',
+      // targetHandle: 'top',
+      classes: i.classes?.classes,
+    };
+
+    if (i.classes?.classes) {
+      edgeData.classes = i.classes?.classes;
+    }
+
+    if (i.sourceHandle?.sourceHandle) {
+      edgeData.sourceHandle = i.sourceHandle?.sourceHandle;
+    }
+
+    if (i.targetHandle?.targetHandle) {
+      edgeData.targetHandle = i.targetHandle?.targetHandle;
+    }
+
+    if (i.style?.style) {
+      try {
+        const doubleQuoteStyle = i.style?.style.replace(/'/g, '"');
+        const parsedStyle = JSON.parse(doubleQuoteStyle);
+        edgeData.style = parsedStyle;
+      } catch (e) {
+      }
+    }
+
+    if (i.labelStyle?.labelStyle) {
+      try {
+        const doubleQuoteStyle = i.labelStyle?.labelStyle.replace(/'/g, '"');
+        const parsedStyle = JSON.parse(doubleQuoteStyle);
+        edgeData.labelStyle = parsedStyle;
+      } catch (e) {
+      }
+    }
+
+    return edgeData;
+  });
+
+  if (edges && edges.length > 0) {
+    allEdges = allEdges.concat(edges);
   }
 
   const sortedNodes = allNodes.sort((nodeA, nodeB) => {
@@ -331,7 +385,7 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
 
   return {
     nodes: sortedNodes,
-    edges: [],
+    edges: allEdges,
     fontsUsed: allFonts
   };
 }

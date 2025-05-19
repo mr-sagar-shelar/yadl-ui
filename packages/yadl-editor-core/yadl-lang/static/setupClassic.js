@@ -16,17 +16,19 @@ export const setupConfigClassic = () => {
         $type: "classic",
         languageId: "yadl",
         code: `// YADL is running in the web!
-aws-icon aWSVRARSumerian
+aws-icon AWSSumerian aWSVRARSumerian
 
-azure-icon azureComputeComputeFleet
+azure-icon AzureCompute azureComputeComputeFleet
 
-gcp-icon gCPAiPlatform
+gcp-icon GcpAPI gCPAiPlatform
 
-skill-icon skillIconUbuntu
+skill-icon SkillUbuntu skillIconUbuntu
 
-themeisle-icon themeisle104
+themeisle-icon ThenmeIsle1 themeisle104
 
-undraw-icon undrawYear2022 
+undraw-icon Undraw1 undrawYear2022 
+
+edge AWSSumerian => AzureCompute label:"Hello World" { type: smoothstep style:"{ stroke: 'red' }" labelStyle:"{ fill: 'red', fontWeight: 700 }" }
 
 avatar "Sagar Shelar" profilePic:""  { position { x: -22 y: 21 } dimension { width: 50 height: 50 } }
 `,

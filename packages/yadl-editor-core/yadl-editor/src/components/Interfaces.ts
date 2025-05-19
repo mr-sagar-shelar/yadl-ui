@@ -24,11 +24,17 @@ export interface YadlNode {
 }
 
 export interface YadlEdge {
+    $type?: string;
     id: string;
     type?: string;
     source?: string;
     target?: string;
     label?: string;
+    sourceHandle?: string;
+    targetHandle?: string;
+    classes?: string;
+    style?: string;
+    labelStyle?: string;
 }
 
 export interface TextComponents {
@@ -69,7 +75,8 @@ export interface YadlModelAstNode extends AstNode, YadlModelElement {
     undrawIcons?: Icon[];
     textComponents?: TextComponents[];
     boxes?: BoxComponents[];
-    avatars?: Avatars[]
+    avatars?: Avatars[];
+    edges?: YadlEdge[];
 }
 
 export interface YadlEditorResponse {

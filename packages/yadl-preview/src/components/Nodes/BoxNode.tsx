@@ -53,12 +53,50 @@ function BoxNode(properties: BoxNodeProps) {
         <Handle
           type="target"
           position={Position.Top}
-          className={`invisible w-16 !bg-teal-500 ${selected && "visible"}`}
+          id={"top"}
+          className={`invisible w-16 ${selected && "visible"}`}
+        />
+        <Handle
+          type="target"
+          position={Position.Right}
+          id={"right"}
+          className={`invisible w-16 ${selected && "visible"}`}
+        />
+        <Handle
+          type="target"
+          position={Position.Bottom}
+          id={"bottom"}
+          className={`invisible w-16 ${selected && "visible"}`}
+        />
+        <Handle
+          type="target"
+          position={Position.Left}
+          id={"left"}
+          className={`invisible w-16 ${selected && "visible"}`}
+        />
+        <Handle
+          type="source"
+          position={Position.Top}
+          id={"top"}
+          className={`invisible w-16 ${selected && "visible"}`}
+        />
+        <Handle
+          type="source"
+          position={Position.Right}
+          id={"right"}
+          className={`invisible w-16 ${selected && "visible"}`}
         />
         <Handle
           type="source"
           position={Position.Bottom}
-          className={`invisible w-16 !bg-teal-500 ${selected && "visible"}`}
+          id={"bottom"}
+          className={`invisible w-16 ${selected && "visible"}`}
+        />
+        <Handle
+          type="source"
+          position={Position.Left}
+          id={"left"}
+          className={`invisible w-16 ${selected && "visible"}`}
         />
       </div>
     </label>

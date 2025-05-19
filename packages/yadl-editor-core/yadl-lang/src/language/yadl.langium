@@ -15,7 +15,7 @@ import "./components/avatar"
 entry Model:
     (persons+=Person | greetings+=Greeting | awsIcons+=AwsIcons | gcpIcons+=GcpIcons | azureIcons+=AzureIcons
     | skillIcons+=SkillIcons | themeisleIcons+=ThemeisleIcons | undrawIcons+=UndrawIcons
-    | textComponents+=TextComponents | edges+=Edge | boxes+=BoxComponents | avatars+=Avatars)*;
+    | textComponents+=TextComponents | edges+=Edges | boxes+=BoxComponents | avatars+=Avatars)*;
 
 Person:
     'person' name=ID;
