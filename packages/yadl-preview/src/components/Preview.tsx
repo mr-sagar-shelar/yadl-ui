@@ -26,6 +26,11 @@ import "./xy-themes.css";
 import { DragDropProps, useDnD } from "./DnDContext";
 const debounceInterval = 150;
 
+const toPascalCase = (text: string) => {
+  const t = text.match(/[a-z0-9]+/gi);
+  return t ? t.map((i) => i.charAt(0).toUpperCase() + i.substr(1)).join("") : text;
+}
+
 export type YadlPreviewProps = {
   initialNodes: Node[];
   initialEdges: Edge[];
@@ -81,6 +86,9 @@ const YadlPreview = (props: YadlPreviewProps) => {
     onNodeResized(node)
   }, debounceInterval);
 
+  const debouncedEdgeConnect = debounce((edge: Edge) => {
+    onEdgeConnect(edge)
+  }, debounceInterval);
 
 
   const onConnect = useCallback(
@@ -92,10 +100,49 @@ const YadlPreview = (props: YadlPreviewProps) => {
         id: `${edgeSource} => ${edgeTarget}`,
         source: edgeSource,
         target: edgeTarget,
+        sourceHandle: changes.sourceHandle,
+        targetHandle: changes.targetHandle,
       };
-      onEdgeConnect(newEdge);
+
+      setNodes((nds) => {
+        const sourceNode = nds.filter((node) => node.id == edgeSource);
+        const targetNode = nds.filter((node) => node.id == edgeTarget);
+        const editOperations = [];
+
+        if (sourceNode.length == 1 && targetNode.length == 1) {
+          if (sourceNode[0].data.nameStartLine != undefined) {
+            const sourceEdit = {
+              "line": sourceNode[0].data.nameStartLine,
+              "column": sourceNode[0].data.nameStartColumn,
+              "id": toPascalCase(sourceNode[0].id)
+            }
+            editOperations.push(sourceEdit);
+            newEdge.source = sourceEdit.id;
+          }
+
+          if (targetNode[0].data.nameStartLine != undefined) {
+            const targetEdit = {
+              "line": targetNode[0].data.nameStartLine,
+              "column": targetNode[0].data.nameStartColumn,
+              "id": toPascalCase(targetNode[0].id)
+            }
+            editOperations.push(targetEdit);
+            newEdge.target = targetEdit.id;
+          }
+
+          console.log(editOperations);
+          if (editOperations.length > 0) {
+            newEdge.data = {
+              "edits": editOperations
+            };
+            newEdge.id = `${newEdge.source} => ${newEdge.target}`
+          }
+          debouncedEdgeConnect(newEdge);
+        }
+        return nds;
+      });
     },
-    [setEdges],
+    [setEdges, setNodes],
   );
 
   const onEdgesChange = useCallback(

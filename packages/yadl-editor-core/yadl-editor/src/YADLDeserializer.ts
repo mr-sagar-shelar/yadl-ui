@@ -71,6 +71,13 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
       iconData.data.height = dimension.height
     }
 
+    if (!i.name) {
+      const nameStartLine = i.$textRegion.range.start.line + 1;
+      const nameStartColumn = i.$textRegion.range.start.character + 9;
+      iconData.data.nameStartLine = nameStartLine;
+      iconData.data.nameStartColumn = nameStartColumn;
+    }
+
     return iconData;
   });
 
@@ -96,6 +103,12 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
       iconData.data.dimensionRange = dimension.range
       iconData.data.width = dimension.width
       iconData.data.height = dimension.height
+    }
+    if (!i.name) {
+      const nameStartLine = i.$textRegion.range.start.line + 1;
+      const nameStartColumn = i.$textRegion.range.start.character + 9;
+      iconData.data.nameStartLine = nameStartLine;
+      iconData.data.nameStartColumn = nameStartColumn;
     }
 
     return iconData;
@@ -125,6 +138,12 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
       iconData.data.width = dimension.width
       iconData.data.height = dimension.height
     }
+    if (!i.name) {
+      const nameStartLine = i.$textRegion.range.start.line + 1;
+      const nameStartColumn = i.$textRegion.range.start.character + 11;
+      iconData.data.nameStartLine = nameStartLine;
+      iconData.data.nameStartColumn = nameStartColumn;
+    }
 
     return iconData;
   });
@@ -142,7 +161,7 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
         icon: i.icon,
         category: "skill",
         positionRange: position.range,
-        nodeRange: i.$textRegion.range
+        nodeRange: i.$textRegion.range,
       },
       position: position,
       type: "icon",
@@ -152,6 +171,13 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
       iconData.data.dimensionRange = dimension.range
       iconData.data.width = dimension.width
       iconData.data.height = dimension.height
+    }
+
+    if (!i.name) {
+      const nameStartLine = i.$textRegion.range.start.line + 1;
+      const nameStartColumn = i.$textRegion.range.start.character + 12;
+      iconData.data.nameStartLine = nameStartLine;
+      iconData.data.nameStartColumn = nameStartColumn;
     }
 
     return iconData;
@@ -182,6 +208,13 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
       iconData.data.height = dimension.height
     }
 
+    if (!i.name) {
+      const nameStartLine = i.$textRegion.range.start.line + 1;
+      const nameStartColumn = i.$textRegion.range.start.character + 12;
+      iconData.data.nameStartLine = nameStartLine;
+      iconData.data.nameStartColumn = nameStartColumn;
+    }
+
     return iconData;
   });
 
@@ -208,6 +241,13 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
       iconData.data.dimensionRange = dimension.range
       iconData.data.width = dimension.width
       iconData.data.height = dimension.height
+    }
+
+    if (!i.name) {
+      const nameStartLine = i.$textRegion.range.start.line + 1;
+      const nameStartColumn = i.$textRegion.range.start.character + 15;
+      iconData.data.nameStartLine = nameStartLine;
+      iconData.data.nameStartColumn = nameStartColumn;
     }
 
     return iconData;
@@ -246,6 +286,13 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
       }
     }
 
+    if (!i.name) {
+      const nameStartLine = i.$textRegion.range.start.line + 1;
+      const nameStartColumn = i.$textRegion.range.start.character + 5;
+      textData.data.nameStartLine = nameStartLine;
+      textData.data.nameStartColumn = nameStartColumn;
+    }
+
     return textData;
   });
 
@@ -274,6 +321,13 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
         height: dimension.height,
         classes: i.classes?.classes,
       }
+    }
+
+    if (!i.name) {
+      const nameStartLine = i.$textRegion.range.start.line + 1;
+      const nameStartColumn = i.$textRegion.range.start.character + 4;
+      boxData.data.nameStartLine = nameStartLine;
+      boxData.data.nameStartColumn = nameStartColumn;
     }
 
     return boxData;

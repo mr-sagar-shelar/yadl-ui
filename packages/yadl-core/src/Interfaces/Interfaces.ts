@@ -131,6 +131,7 @@ export interface YadlModelElement {
 }
 
 export interface YadlNode {
+    name?: string;
     id?: string;
     type?: string;
     data?: any;

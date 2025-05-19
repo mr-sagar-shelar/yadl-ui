@@ -15,7 +15,7 @@ import { deserializeAST, DocumentChangeResponse } from "langium-ast-helper";
 import syntaxHighlighting from "./yadl.monarch.js";
 import { YadlModelAstNode } from "./index.js";
 import { getYADLData } from "../YADLDeserializer.js";
-import { YadlEdge, YadlEditorResponse, YadlNode } from "./Interfaces.js"
+import { EditOperation, YadlEdge, YadlEditorResponse, YadlNode } from "./Interfaces.js"
 import { get } from "lodash";
 const debounceInterval = 150;
 
@@ -355,6 +355,8 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
     const monacoModel = monacoEditor?.current?.getEditorWrapper()?.getModel();
     const selectedLine = monacoModel?.getLineCount() || 0;
 
+    const operations = [];
+
     const xOperation = {
       identifier: { major: 1, minor: 1 },
       range: {
@@ -363,11 +365,31 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
         endLineNumber: selectedLine,
         endColumn: 1,
       },
-      text: `edge ${edge.source} => ${edge.target}\n `,
+      text: `edge ${edge.source} => ${edge.target} { sourceHandle: ${edge.sourceHandle} targetHandle: ${edge.targetHandle}  }\n `,
       forceMoveMarkers: true,
     };
 
-    monacoInstance.executeEdits("my-source", [xOperation]);
+    operations.push(xOperation);
+
+    if (edge?.data?.edits && edge?.data?.edits.length > 0) {
+      console.log(edge?.data?.edits);
+      const editOperations = edge?.data?.edits as EditOperation[];
+      editOperations.forEach((operation) => {
+        const xOperation = {
+          identifier: { major: 1, minor: 1 },
+          range: {
+            startLineNumber: operation.line,
+            startColumn: operation.column,
+            endLineNumber: operation.line,
+            endColumn: operation.column,
+          },
+          text: `${operation.id} `,
+        };
+        operations.push(xOperation);
+      });
+    }
+
+    monacoInstance.executeEdits("my-source", operations);
     monacoInstance.setPosition({ column: 0, lineNumber: selectedLine });
     monacoInstance.revealLineInCenter(selectedLine);
   };

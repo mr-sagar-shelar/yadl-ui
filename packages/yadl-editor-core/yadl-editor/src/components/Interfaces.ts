@@ -33,8 +33,15 @@ export interface YadlEdge {
     sourceHandle?: string;
     targetHandle?: string;
     classes?: string;
+    data?: any;
     style?: string;
     labelStyle?: string;
+}
+
+export interface EditOperation {
+    column: number;
+    id: string;
+    line: number
 }
 
 export interface TextComponents {
