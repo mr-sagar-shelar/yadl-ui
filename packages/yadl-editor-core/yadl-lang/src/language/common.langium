@@ -12,6 +12,9 @@ Dimension:
 
 Classes:
     'classes:' classes=STRING;
+
+FontFamily:
+    'fontFamily:' fontFamily=STRING;
     
 QualifiedName returns string:
     ID ('.' ID)*;

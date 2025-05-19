@@ -1,5 +1,5 @@
 import { AstNode } from "langium-ast-helper";
-import { YadlModelAstNode, Icon, TextComponents, BoxComponents, YadlNode, YadlEditorResponse, YadlNodePosition, YadlNodeDimension } from "./components/Interfaces.js";
+import { YadlModelAstNode, Icon, Avatars, TextComponents, BoxComponents, YadlNode, YadlEditorResponse, YadlNodePosition, YadlNodeDimension } from "./components/Interfaces.js";
 import { get } from "lodash";
 
 export function getPosition(position: YadlNodePosition): YadlNodePosition {
@@ -42,6 +42,7 @@ export function getYadlModelAst(ast: YadlModelAstNode): YadlModelAstNode {
     undrawIcons: (ast.undrawIcons as Icon[])?.filter((e) => e.$type === "UndrawIcons") as Icon[],
     textComponents: (ast.textComponents as TextComponents[])?.filter((e) => e.$type === "TextComponents") as TextComponents[],
     boxes: (ast.boxes as BoxComponents[])?.filter((e) => e.$type === "BoxComponents") as BoxComponents[],
+    avatars: (ast.avatars as Avatars[])?.filter((e) => e.$type === "Avatars") as Avatars[],
   };
 }
 
@@ -279,6 +280,43 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
 
   if (boxComponents) {
     allNodes = allNodes.concat(boxComponents);
+  }
+
+  const avatars = astNode?.avatars?.flatMap((i: any, index: number): YadlNode => {
+    const position = getPosition(i.position);
+    const dimension = getDimension(i.dimension);
+    if (i.fontFamily) {
+      allFonts.push(i.fontFamily);
+    }
+    const textData: YadlNode = {
+      id: i.name || `avatar-${index + 1}`,
+      type: "avatar",
+      position: position,
+      data: {
+        classes: i.classes?.classes,
+        name: i.text,
+        handle: i.text,
+        fontFamily: i.fontFamily?.fontFamily,
+        profilePic: i.profilePic?.profilePic,
+        profileHandle: i.profileHandle?.profileHandle,
+        positionRange: position.range,
+        nodeRange: i.$textRegion.range
+      }
+    };
+
+    if (dimension) {
+      textData.data.dimensionRange = dimension.range
+      textData.data.props = {
+        width: dimension.width,
+        height: dimension.height
+      }
+    }
+
+    return textData;
+  });
+
+  if (avatars) {
+    allNodes = allNodes.concat(avatars);
   }
 
   const sortedNodes = allNodes.sort((nodeA, nodeB) => {

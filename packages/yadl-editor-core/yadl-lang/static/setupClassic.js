@@ -28,11 +28,7 @@ themeisle-icon themeisle104
 
 undraw-icon undrawYear2022 
 
-text "Hello World" {
-  position { x: 0 y:0 }
-  fontFamily "unwind"
-  classes "text-2xl"
-}
+avatar "Sagar Shelar" profilePic:""  { position { x: -22 y: 21 } dimension { width: 50 height: 50 } }
 `,
         useDiffEditor: false,
         languageExtensionConfig: { id: "langium" },

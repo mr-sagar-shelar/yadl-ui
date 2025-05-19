@@ -48,6 +48,17 @@ export interface BoxComponents {
     dimension?: YadlNodeDimension;
 }
 
+export interface Avatars {
+    $type: string;
+    name?: string;
+    profilePic?: string;
+    handle?: string;
+    classes?: string;
+    fontFamily?: string;
+    position?: YadlNodePosition;
+    dimension?: YadlNodeDimension;
+}
+
 export interface YadlModelAstNode extends AstNode, YadlModelElement {
     $type: "YadlModel";
     awsIcons?: Icon[];
@@ -58,6 +69,7 @@ export interface YadlModelAstNode extends AstNode, YadlModelElement {
     undrawIcons?: Icon[];
     textComponents?: TextComponents[];
     boxes?: BoxComponents[];
+    avatars?: Avatars[]
 }
 
 export interface YadlEditorResponse {
