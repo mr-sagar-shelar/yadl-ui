@@ -263,7 +263,7 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
     const position = getPosition(i.position);
     const dimension = getDimension(i.dimension);
     if (i.fontFamily) {
-      allFonts.push(i.fontFamily);
+      allFonts.push(i.fontFamily.fontFamily);
     }
     const textData: YadlNode = {
       id: i.name || `text-${index + 1}`,
@@ -437,9 +437,11 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
     return 0;
   });
 
+  const uniqueFonts = [...new Set(allFonts)].sort();
+
   return {
     nodes: sortedNodes,
     edges: allEdges,
-    fontsUsed: allFonts
+    fontsUsed: uniqueFonts
   };
 }
