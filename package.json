@@ -94,6 +94,7 @@
     "packages/yadl-core",
     "packages/yadl-editor",
     "packages/yadl-preview",
-    "packages/yadl-ui-components"
+    "packages/yadl-ui-components",
+    "packages/yadl-avatar"
   ]
 }
