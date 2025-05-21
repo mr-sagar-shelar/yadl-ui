@@ -53,6 +53,7 @@
   "dependencies": {
     "@xyflow/react": "^12.5.5",
     "lodash": "^4.17.21",
+    "yadl-avatar": "file:../yadl-avatar",
     "yadl-aws-icons": "^1.0.6",
     "yadl-azure-icons": "^1.0.6",
     "yadl-core-package": "^1.0.5",
