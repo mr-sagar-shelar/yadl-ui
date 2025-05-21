@@ -1,4 +1,4 @@
-import { memo } from "react";
+import { memo, useState } from "react";
 import {
   Handle,
   Position,
@@ -14,6 +14,10 @@ function AvatarNode(props: AvatarNodeProps) {
     data,
     selected = false,
   } = props;
+  const [currentWidth, setCurrentWidth] = useState<number>(data?.width || 100);
+  const [currentHeight, setCurrentHeight] = useState<number>(
+    data?.height || 100,
+  );
   return (
     <div
       onClick={() => {
@@ -23,17 +27,18 @@ function AvatarNode(props: AvatarNodeProps) {
     >
       <Avatar
         {...data}
+        width={currentWidth}
+        height={currentHeight}
       />
       <NodeResizer
         color="#ff0071"
-        isVisible={true}
+        isVisible={selected}
         onResize={(
           _event: ResizeDragEvent,
           params: ResizeParamsWithDirection,
         ) => {
-          // setCurrentWidth(params.width);
-          // setCurrentHeight(params.height);
-          console.log(params);
+          setCurrentWidth(params.width);
+          setCurrentHeight(params.height);
         }}
       />
       <Handle
