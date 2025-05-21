@@ -385,15 +385,16 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
       data: {
         // style: i.style?.style,
         classes: i.classes?.classes,
-        topType: i.topType?.topType,
-        accessoriesType: i.accessoriesType?.accessoriesType,
-        hairColor: i.hairColor?.hairColor,
-        facialHairType: i.facialHairType?.facialHairType,
-        clotheType: i.clotheType?.clotheType,
-        eyeType: i.eyeType?.eyeType,
-        eyebrowType: i.eyebrowType?.eyebrowType,
-        mouthType: i.mouthType?.mouthType,
-        skinColor: i.skinColor?.skinColor,
+        topType: i.topType?.topType || 'LongHairStraight',
+        accessoriesType: i.accessoriesType?.accessoriesType || 'Blank',
+        hairColor: i.hairColor?.hairColor || 'BrownDark',
+        facialHairType: i.facialHairType?.facialHairType || 'Blank',
+        graphicType: i.graphicType?.graphicType || 'Skull',
+        clotheType: i.clotheType?.clotheType || 'Black',
+        eyeType: i.eyeType?.eyeType || 'Default',
+        eyebrowType: i.eyebrowType?.eyebrowType || 'Default',
+        mouthType: i.mouthType?.mouthType || 'Default',
+        skinColor: i.skinColor?.skinColor || 'Tanned',
         name: i.text,
         positionRange: position.range,
         nodeRange: i.$textRegion.range
@@ -405,8 +406,8 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
       avatarData.data.width = dimension.width;
       avatarData.data.height = dimension.height;
     } else {
-      avatarData.data.width = 100;
-      avatarData.data.height = 100;
+      avatarData.data.width = 200;
+      avatarData.data.height = 200;
     }
 
     return avatarData;

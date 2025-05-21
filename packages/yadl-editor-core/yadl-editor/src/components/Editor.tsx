@@ -273,8 +273,6 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
       monacoInstance.executeEdits("my-source", [operation]);
     }
     else if (node.type === "text") {
-      // const width = Math.trunc(get(node, "data.props.width", 50));
-      // const height = Math.trunc(get(node, "data.props.height", 50));
       const classes = get(node, "data.classes", "");
       const fontFamily = get(node, "data.fontFamily", "");
       const text = get(node, "data.text", "");
@@ -298,6 +296,30 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
       const classes = get(node, "data.props.classes", "");
       const component = get(node, "data.component", "");
       updatedText = `box ${component} { position { x: ${xValue} y: ${yValue} } dimension { width: ${width} height: ${height} } ${classes ? "classes: \"" + classes + "\"" : ""} }\n`;
+      const operation = {
+        identifier: id,
+        range: {
+          startLineNumber: startLineNumber,
+          startColumn: startColumn,
+          endLineNumber: endLineNumber,
+          endColumn: endColumn,
+        },
+        text: updatedText,
+        forceMoveMarkers: true,
+      };
+      monacoInstance.executeEdits("my-source", [operation]);
+    } else if (node.type === "avatar") {
+      const topType = get(node, "data.topType", "");
+      const accessoriesType = get(node, "data.accessoriesType", "");
+      const hairColor = get(node, "data.hairColor", "");
+      const facialHairType = get(node, "data.facialHairType", "");
+      const graphicType = get(node, "data.graphicType", "");
+      const clotheType = get(node, "data.clotheType", "");
+      const eyeType = get(node, "data.eyeType", "");
+      const eyebrowType = get(node, "data.eyebrowType", "");
+      const mouthType = get(node, "data.mouthType", "");
+      const skinColor = get(node, "data.skinColor", "");
+      updatedText = `avatar style: Circle topType: ${topType} accessoriesType: ${accessoriesType} hairColor: ${hairColor} facialHairType: ${facialHairType} clotheType: ${clotheType} eyeType: ${eyeType} eyebrowType: ${eyebrowType} mouthType: ${mouthType} skinColor: ${skinColor} { position { x: ${xValue} y: ${yValue} } }\n`;
       const operation = {
         identifier: id,
         range: {

@@ -30,6 +30,9 @@ AvatarMouthTypes returns string:
 AvatarSkinColorTypes returns string:
     'Tanned' | 'Yellow' | 'Pale' | 'Light' | 'Brown' | 'DarkBrown' | 'Black';
 
+GraphicTypeTypes returns string:
+    'Bat' | 'Cumbia' | 'Deer' | 'Diamond' | 'Hola' | 'Pizza' | 'Resist' | 'Selena' | 'Bear' | 'SkullOutline' | 'Skull';
+    
 AvatarStyle:
     'style:' style=AvatarStyleTypes;
 
@@ -60,8 +63,11 @@ AvatarMouthType:
 AvatarSkinColor:
     'skinColor:' skinColor=AvatarSkinColorTypes;
 
+GraphicType:
+    'graphicType:' graphicType=GraphicTypeTypes;
+
 Avatars:
-    'avatar' (name=STRING) (style=AvatarStyle)? (topType=AvatarTopType)? (accessoriesType=AvatarAccessoriesType)? (hairColor=AvatarHairColor)? (facialHairType=AvatarFacialHairType)? (clotheType=AvatarClotheType)? (eyeType=AvatarEyeType)? (eyebrowType=AvatarEyebrowType)? (mouthType=AvatarMouthType)? (skinColor=AvatarSkinColor)? ('{'
+    'avatar' (name=STRING)? (style=AvatarStyle)? (topType=AvatarTopType)? (accessoriesType=AvatarAccessoriesType)? (hairColor=AvatarHairColor)? (facialHairType=AvatarFacialHairType)? (clotheType=AvatarClotheType)? (eyeType=AvatarEyeType)? (eyebrowType=AvatarEyebrowType)? (mouthType=AvatarMouthType)? (skinColor=AvatarSkinColor)? ('{'
         (position=Position)?
         (dimension=Dimension)?
         (fontFamily=FontFamily)?
