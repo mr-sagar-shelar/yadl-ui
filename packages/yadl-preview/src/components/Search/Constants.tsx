@@ -805,7 +805,6 @@ export const GradientDirection = [
     }
 ];
 
-
 export const AvatarTopStyle = [
     {
         key: 'NoHair',
@@ -946,5 +945,338 @@ export const AvatarTopStyle = [
     {
         key: 'ShortHairTheCaesarSidePart',
         label: "ShortHairTheCaesarSidePart"
+    },
+];
+
+export const AccessoriesType = [
+    {
+        key: 'Blank',
+        label: "Blank"
+    },
+    {
+        'key': 'Kurt',
+        'label': 'Kurt',
+    },
+    {
+        'key': 'Prescription01',
+        'label': 'Prescription01',
+    },
+    {
+        'key': 'Prescription02',
+        'label': 'Prescription02',
+    },
+    {
+        'key': 'Round',
+        'label': 'Round',
+    },
+    {
+        'key': 'Sunglasses',
+        'label': 'Sunglasses',
+    },
+    {
+        'key': 'Wayfarer',
+        'label': 'Wayfarers'
+    }
+];
+
+export const HairColor = [
+    {
+        'key': 'Auburn',
+        'label': 'Auburn'
+    },
+    {
+        'key': 'Black',
+        'label': 'Black'
+    },
+    {
+        'key': 'Blonde',
+        'label': 'Blonde'
+    },
+    {
+        'key': 'BlondeGolden',
+        'label': 'BlondeGolden'
+    },
+    {
+        'key': 'BlondeGolden',
+        'label': 'BlondeGolden'
+    },
+    {
+        'key': 'Brown',
+        'label': 'Brown'
+    },
+    {
+        'key': 'BrownDark',
+        'label': 'BrownDark'
+    },
+    {
+        'key': 'PastelPink',
+        'label': 'PastelPink'
+    },
+    {
+        'key': 'Blue',
+        'label': 'Blue'
+    },
+    {
+        'key': 'Platinum',
+        'label': 'Platinum'
+    },
+    {
+        'key': 'Red',
+        'label': 'Red'
+    },
+    {
+        'key': 'SilverGray',
+        'label': 'SilverGray'
+    },
+];
+
+export const FacialHairType = [
+    {
+        'key': 'Blank',
+        'label': 'Blank'
+    },
+    {
+        'key': 'BeardMedium',
+        'label': 'BeardMedium'
+    },
+    {
+        'key': 'BeardLight',
+        'label': 'BeardLight'
+    },
+    {
+        'key': 'BeardMajestic',
+        'label': 'BeardMajestic'
+    },
+    {
+        'key': 'MoustacheFancy',
+        'label': 'MoustacheFancy'
+    },
+    {
+        'key': 'MoustacheMagnum',
+        'label': 'MoustacheMagnum'
+    },
+];
+
+export const ClotheType = [
+    {
+        'key': 'BlazerShirt',
+        'label': 'BlazerShirt'
+    },
+    {
+        'key': 'BlazerSweater',
+        'label': 'BlazerSweater'
+    },
+    {
+        'key': 'CollarSweater',
+        'label': 'CollarSweater'
+    },
+    {
+        'key': 'GraphicShirt',
+        'label': 'GraphicShirt'
+    },
+    {
+        'key': 'Hoodie',
+        'label': 'Hoodie'
+    },
+    {
+        'key': 'Overall',
+        'label': 'Overall'
+    },
+    {
+        'key': 'ShirtCrewNeck',
+        'label': 'ShirtCrewNeck'
+    },
+    {
+        'key': 'ShirtScoopNeck',
+        'label': 'ShirtScoopNeck'
+    },
+    {
+        'key': 'ShirtVNeck',
+        'label': 'ShirtVNck'
+    }
+    ,
+];
+
+export const EyeType = [
+    {
+        'key': 'Close',
+        'label': 'Close'
+    },
+    {
+        'key': 'Cry',
+        'label': 'Cry'
+    },
+    {
+        'key': 'Default',
+        'label': 'Default'
+    },
+    {
+        'key': 'Dizzy',
+        'label': 'Dizzy'
+    },
+    {
+        'key': 'EyeRoll',
+        'label': 'EyeRoll'
+    },
+    {
+        'key': 'Happy',
+        'label': 'Happy'
+    },
+    {
+        'key': 'Hearts',
+        'label': 'Hearts'
+    },
+    {
+        'key': 'Side',
+        'label': 'Side'
+    },
+    {
+        'key': 'Squint',
+        'label': 'Squint'
+    },
+    {
+        'key': 'Surprised',
+        'label': 'Surprised'
+    },
+    {
+        'key': 'Wink',
+        'label': 'Wink'
+    },
+    {
+        'key': 'WinkWacky',
+        'label': 'WinkWacky'
+    }
+];
+
+export const EyebrowType = [
+    {
+        'key': 'Angry',
+        'label': 'Angry'
+    },
+    {
+        'key': 'AngryNatural',
+        'label': 'AngryNatural'
+    },
+    {
+        'key': 'Default',
+        'label': 'Default'
+    },
+    {
+        'key': 'DefaultNatural',
+        'label': 'DefaultNatural'
+    },
+    {
+        'key': 'FlatNatural',
+        'label': 'FlatNatural'
+    },
+    {
+        'key': 'RaisedExcited',
+        'label': 'RaisedExcited'
+    },
+    {
+        'key': 'RaisedExcitedNatural',
+        'label': 'RaisedExcitedNatural'
+    },
+    {
+        'key': 'SadConcerned',
+        'label': 'SadConcerned'
+    },
+    {
+        'key': 'SadConcernedNatural',
+        'label': 'SadConcernedNatural'
+    },
+    {
+        'key': 'UnibrowNatural',
+        'label': 'UnibrowNatural'
+    },
+    {
+        'key': 'UpDown',
+        'label': 'UpDown'
+    },
+    {
+        'key': 'UpDownNatural',
+        'label': 'UpDownNatural'
+    },
+];
+
+export const MouthType = [
+    {
+        'key': 'Concerned',
+        'label': 'Concerned'
+    },
+    {
+        'key': 'Default',
+        'label': 'Default'
+    },
+    {
+        'key': 'Disbelief',
+        'label': 'Disbelief'
+    },
+    {
+        'key': 'Eating',
+        'label': 'Eating'
+    },
+    {
+        'key': 'Grimace',
+        'label': 'Grimace'
+    },
+    {
+        'key': 'Sad',
+        'label': 'Sad'
+    },
+    {
+        'key': 'ScreamOpen',
+        'label': 'ScreamOpen'
+    },
+    {
+        'key': 'Serious',
+        'label': 'Serious'
+    },
+    {
+        'key': 'Smile',
+        'label': 'Smile'
+    },
+    {
+        'key': 'Tongue',
+        'label': 'Tongue'
+    },
+    {
+        'key': 'Twinkle',
+        'label': 'Twinkle'
+    },
+    {
+        'key': 'Vomit',
+        'label': 'Vomit'
+    },
+];
+
+export const SkinColor = [
+    {
+        'key': 'Tanned',
+        'label': 'Tanned'
+    },
+    {
+        'key': 'Yellow',
+        'label': 'Yellow'
+    },
+    {
+        'key': 'Pale',
+        'label': 'Pale'
+    },
+    {
+        'key': 'Light',
+        'label': 'Light'
+    },
+    {
+        'key': 'Brown',
+        'label': 'Brown'
+    },
+    {
+        'key': 'DarkBrown',
+        'label': 'DarkBrown'
+    },
+    {
+        'key': 'Black',
+        'label': 'Black'
     },
 ];

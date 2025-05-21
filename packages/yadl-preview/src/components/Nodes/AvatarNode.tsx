@@ -14,9 +14,9 @@ function AvatarNode(props: AvatarNodeProps) {
     data,
     selected = false,
   } = props;
-  const [currentWidth, setCurrentWidth] = useState<number>(data?.width || 100);
+  const [currentWidth, setCurrentWidth] = useState<number>(data?.width || 200);
   const [currentHeight, setCurrentHeight] = useState<number>(
-    data?.height || 100,
+    data?.height || 200,
   );
   return (
     <div
