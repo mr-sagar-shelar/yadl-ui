@@ -64,6 +64,24 @@ export interface BoxComponents {
 export interface Avatars {
     $type: string;
     name?: string;
+    style?: string;
+    topType?: string;
+    accessoriesType?: string;
+    hairColor?: string;
+    facialHairType?: string;
+    clotheType?: string;
+    eyeType?: string;
+    eyebrowType?: string;
+    mouthType?: string;
+    skinColor?: string;
+    classes?: string;
+    position?: YadlNodePosition;
+    dimension?: YadlNodeDimension;
+}
+
+export interface Authors {
+    $type: string;
+    name?: string;
     profilePic?: string;
     handle?: string;
     classes?: string;
@@ -83,6 +101,7 @@ export interface YadlModelAstNode extends AstNode, YadlModelElement {
     textComponents?: TextComponents[];
     boxes?: BoxComponents[];
     avatars?: Avatars[];
+    authors?: Authors[];
     edges?: YadlEdge[];
 }
 

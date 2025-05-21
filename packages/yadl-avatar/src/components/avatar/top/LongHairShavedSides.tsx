@@ -13,7 +13,7 @@ export default class LongHairShavedSides extends React.Component {
   private path3 = uniqueId('react-path-')
   private path4 = uniqueId('react-path-')
 
-  render () {
+  render() {
     const { mask1, mask2, mask3, path1, path2, path3, path4 } = this
     return (
       <g id='Top' strokeWidth='1' fillRule='evenodd'>
@@ -77,7 +77,10 @@ export default class LongHairShavedSides extends React.Component {
               fillRule='evenodd'
             />
             <FacialHair />
-            {this.props.children}
+            {
+              // @ts-ignore
+              this.props.children
+            }
           </g>
         </g>
       </g>

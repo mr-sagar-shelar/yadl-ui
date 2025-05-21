@@ -19,7 +19,7 @@ export interface SelectorProps {
 
 const SelectorComponent: React.FC<SelectorProps> = ({
   option,
-  defaultOption,
+  // defaultOption,
   children
 }) => {
   // const [values] = useAvatarContext();
@@ -28,8 +28,7 @@ const SelectorComponent: React.FC<SelectorProps> = ({
   React.useEffect(() => {
     let result: React.ReactNode | null = null
     React.Children.forEach(children, child => {
-      console.log(`$$$$ values ${(child as any).type.optionValue}, option=${option.key}`);
-
+      // @ts-ignore
       if (getComponentOptionValue((child as any).type) === values[option.key]) {
         result = child
       }

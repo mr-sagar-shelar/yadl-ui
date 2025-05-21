@@ -16,7 +16,7 @@ export default class LongHairFrida extends React.Component {
   private path1 = uniqueId('react-path-')
   private path2 = uniqueId('react-path-')
 
-  render () {
+  render() {
     const {
       filter1,
       filter2,
@@ -353,7 +353,10 @@ export default class LongHairFrida extends React.Component {
               />
             </g>
             <FacialHair />
-            {this.props.children}
+            {
+              // @ts-ignore
+              this.props.children
+            }
           </g>
         </g>
       </g>

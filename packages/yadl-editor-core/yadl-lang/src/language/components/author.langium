@@ -6,7 +6,7 @@ ProfilePic:
 ProfileHandle:
     'profileHandle:' profileHandle=STRING;
 
-Avatars:
+Authors:
     'author' (name=STRING) (profilePic=ProfilePic)? (profileHandle=ProfileHandle)? ('{'
         (position=Position)?
         (dimension=Dimension)?

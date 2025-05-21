@@ -12,7 +12,7 @@ export default class ShortHairSides extends React.Component {
   private path2 = uniqueId('react-path-')
   private path3 = uniqueId('react-path-')
 
-  render () {
+  render() {
     const { mask1, mask2, path1, path2, path3 } = this
     return (
       <g id='Top' strokeWidth='1' fillRule='evenodd'>
@@ -45,7 +45,10 @@ export default class ShortHairSides extends React.Component {
               <use id='Sides' fill='#9E7A7A' xlinkHref={'#' + path3} />
               <HairColor maskID={mask1} />
             </g>
-            {this.props.children}
+            {
+              // @ts-ignore
+              this.props.children
+            }
           </g>
         </g>
       </g>

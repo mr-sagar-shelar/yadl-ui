@@ -12,7 +12,7 @@ export default class ShortHairShaggyMullet extends React.Component {
   private path2 = uniqueId('react-path-')
   private path3 = uniqueId('react-path-')
 
-  render () {
+  render() {
     const { mask1, mask2, path1, path2, path3 } = this
     return (
       <g id='Top' strokeWidth='1' fillRule='evenodd'>
@@ -33,7 +33,10 @@ export default class ShortHairShaggyMullet extends React.Component {
         <g id='Mask' />
         <g id='Top/Short-Hair/Shaggy-Mullet' mask={`url(#${mask1})`}>
           <g transform='translate(-1.000000, 0.000000)'>
-            {this.props.children}
+            {
+              // @ts-ignore
+              this.props.children
+            }
             <mask id={mask2} fill='white'>
               <use xlinkHref={'#' + path2} />
             </mask>

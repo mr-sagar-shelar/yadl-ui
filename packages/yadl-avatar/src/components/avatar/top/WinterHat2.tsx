@@ -12,7 +12,7 @@ export default class WinterHat2 extends React.Component {
   private path2 = uniqueId('react-path-')
   private path3 = uniqueId('react-path-')
 
-  render () {
+  render() {
     const { mask1, mask2, path1, path2, path3 } = this
     return (
       <g id='Top'>
@@ -108,7 +108,10 @@ export default class WinterHat2 extends React.Component {
             </g>
           </g>
           <FacialHair />
-          {this.props.children}
+          {
+            // @ts-ignore
+            this.props.children
+          }
         </g>
       </g>
     )

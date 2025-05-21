@@ -10,12 +10,13 @@ import "./components/text"
 import "./components/box"
 import "./components/edge"
 import "./components/avatar"
+import "./components/author"
 
 
 entry Model:
     (persons+=Person | greetings+=Greeting | awsIcons+=AwsIcons | gcpIcons+=GcpIcons | azureIcons+=AzureIcons
     | skillIcons+=SkillIcons | themeisleIcons+=ThemeisleIcons | undrawIcons+=UndrawIcons
-    | textComponents+=TextComponents | edges+=Edges | boxes+=BoxComponents | avatars+=Avatars)*;
+    | textComponents+=TextComponents | edges+=Edges | boxes+=BoxComponents | avatars+=Avatars | authors+=Authors)*;
 
 Person:
     'person' name=ID;

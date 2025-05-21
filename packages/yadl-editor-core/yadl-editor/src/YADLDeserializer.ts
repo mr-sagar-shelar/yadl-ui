@@ -1,5 +1,5 @@
 import { AstNode } from "langium-ast-helper";
-import { YadlModelAstNode, Icon, Avatars, YadlEdge, TextComponents, BoxComponents, YadlNode, YadlEditorResponse, YadlNodePosition, YadlNodeDimension } from "./components/Interfaces.js";
+import { YadlModelAstNode, Icon, Avatars, YadlEdge, TextComponents, BoxComponents, YadlNode, YadlEditorResponse, YadlNodePosition, YadlNodeDimension, Authors } from "./components/Interfaces.js";
 import { get } from "lodash";
 
 export function getPosition(position: YadlNodePosition): YadlNodePosition {
@@ -44,6 +44,7 @@ export function getYadlModelAst(ast: YadlModelAstNode): YadlModelAstNode {
     boxes: (ast.boxes as BoxComponents[])?.filter((e) => e.$type === "BoxComponents") as BoxComponents[],
     avatars: (ast.avatars as Avatars[])?.filter((e) => e.$type === "Avatars") as Avatars[],
     edges: (ast.edges as YadlEdge[])?.filter((e) => e.$type === "Edges") as YadlEdge[],
+    authors: (ast.authors as Authors[])?.filter((e) => e.$type === "Authors") as Authors[],
   };
 }
 
@@ -337,15 +338,15 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
     allNodes = allNodes.concat(boxComponents);
   }
 
-  const avatars = astNode?.avatars?.flatMap((i: any, index: number): YadlNode => {
+  const authors = astNode?.authors?.flatMap((i: any, index: number): YadlNode => {
     const position = getPosition(i.position);
     const dimension = getDimension(i.dimension);
     if (i.fontFamily) {
       allFonts.push(i.fontFamily);
     }
     const textData: YadlNode = {
-      id: i.name || `avatar-${index + 1}`,
-      type: "avatar",
+      id: i.name || `author-${index + 1}`,
+      type: "author",
       position: position,
       data: {
         classes: i.classes?.classes,
@@ -368,6 +369,51 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
     }
 
     return textData;
+  });
+
+  if (authors && authors.length > 0) {
+    allNodes = allNodes.concat(authors);
+  }
+
+  const avatars = astNode?.avatars?.flatMap((i: any, index: number): YadlNode => {
+    const position = getPosition(i.position);
+    const dimension = getDimension(i.dimension);
+    const avatarData: YadlNode = {
+      id: i.name || `avatar-${index + 1}`,
+      type: "avatar",
+      position: position,
+      data: {
+        // style: i.style?.style,
+        classes: i.classes?.classes,
+        topType: i.topType?.topType,
+        accessoriesType: i.accessoriesType?.accessoriesType,
+        hairColor: i.hairColor?.hairColor,
+        facialHairType: i.facialHairType?.facialHairType,
+        clotheType: i.clotheType?.clotheType,
+        eyeType: i.eyeType?.eyeType,
+        eyebrowType: i.eyebrowType?.eyebrowType,
+        mouthType: i.mouthType?.mouthType,
+        skinColor: i.skinColor?.skinColor,
+        name: i.text,
+        positionRange: position.range,
+        nodeRange: i.$textRegion.range
+      }
+    };
+
+    if (dimension) {
+      avatarData.data.dimensionRange = dimension.range
+      avatarData.data.props = {
+        width: dimension.width,
+        height: dimension.height
+      }
+    } else {
+      avatarData.data.props = {
+        width: 200,
+        height: 200
+      }
+    }
+
+    return avatarData;
   });
 
   if (avatars && avatars.length > 0) {

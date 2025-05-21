@@ -30,7 +30,9 @@ undraw-icon Undraw1 undrawYear2022
 
 edge AWSSumerian => AzureCompute label:"Hello World" { type: smoothstep style:"{ stroke: 'red' }" labelStyle:"{ fill: 'red', fontWeight: 700 }" }
 
-avatar "Sagar Shelar" profilePic:""  { position { x: -22 y: 21 } dimension { width: 50 height: 50 } }
+author "Sagar Shelar" profilePic:""  { position { x: -22 y: 21 } dimension { width: 50 height: 50 } }
+
+avatar "AVATAR" style: Circle topType: LongHairCurly accessoriesType: Sunglasses hairColor: Blonde facialHairType: BeardMedium clotheType: GraphicShirt eyeType: Hearts eyebrowType: Angry mouthType: Grimace skinColor: DarkBrown
 `,
         useDiffEditor: false,
         languageExtensionConfig: { id: "langium" },

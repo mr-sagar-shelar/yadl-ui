@@ -2,12 +2,11 @@
 import * as React from 'react'
 import { memo } from "react";
 import Avatar, { AvatarStyle } from './avatar'
-import AvatarContext, { AvatarProvider, useAvatarContext } from '../AvatarContext';
+import AvatarContext from '../AvatarContext';
 // import { OptionContext, allOptions } from './options'
 
 export { default as Avatar, AvatarStyle } from './avatar'
 export { Option, OptionContext, allOptions } from './options'
-import { allOptions } from './options'
 
 export interface AvatarProps {
   avatarStyle: string

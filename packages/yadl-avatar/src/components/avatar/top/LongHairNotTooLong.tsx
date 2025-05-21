@@ -11,7 +11,7 @@ export default class LongHairNotTooLong extends React.Component {
   private path1 = uniqueId('react-path-')
   private path2 = uniqueId('react-path-')
 
-  render () {
+  render() {
     const { mask1, mask2, path1, path2 } = this
     return (
       <g id='Top' strokeWidth='1' fillRule='evenodd'>
@@ -49,7 +49,10 @@ export default class LongHairNotTooLong extends React.Component {
               />
             </g>
             <FacialHair />
-            {this.props.children}
+            {
+              // @ts-ignore
+              this.props.children
+            }
           </g>
         </g>
       </g>

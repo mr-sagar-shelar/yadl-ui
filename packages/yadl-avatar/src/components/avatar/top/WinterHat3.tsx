@@ -79,7 +79,10 @@ export default class WinterHat3 extends React.Component {
             <use fill='#F4F4F4' fillRule='evenodd' xlinkHref={'#' + path2} />
           </g>
           <FacialHair />
-          {this.props.children}
+          {
+            // @ts-ignore
+            this.props.children
+          }
         </g>
       </g>
     )

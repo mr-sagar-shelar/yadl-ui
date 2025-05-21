@@ -17,7 +17,7 @@ export default class WinterHat4 extends React.Component {
   private path4 = uniqueId('react-path-')
   private path5 = uniqueId('react-path-')
 
-  render () {
+  render() {
     const {
       filter1,
       mask1,
@@ -119,7 +119,10 @@ export default class WinterHat4 extends React.Component {
             <use fill='#F4F4F4' fillRule='evenodd' xlinkHref={'#' + path4} />
           </g>
           <FacialHair />
-          {this.props.children}
+          {
+            // @ts-ignore
+            this.props.children
+          }
         </g>
       </g>
     )

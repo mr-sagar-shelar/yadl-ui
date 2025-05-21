@@ -7,9 +7,13 @@ import {
   ResizeParamsWithDirection,
 } from "@xyflow/react";
 import { Avatar } from "yadl-avatar";
+import { AvatarNodeProps } from "yadl-core-package";
 
-function AvatarNode() {
-  const selected = false;
+function AvatarNode(props: AvatarNodeProps) {
+  const {
+    data,
+    selected = false,
+  } = props;
   return (
     <div
       onClick={() => {
@@ -18,16 +22,7 @@ function AvatarNode() {
       className="overflow-hidden"
     >
       <Avatar
-        avatarStyle='Circle'
-        topType='LongHairStraight'
-        accessoriesType='Blank'
-        hairColor='BrownDark'
-        facialHairType='Blank'
-        clotheType='BlazerShirt'
-        eyeType='Default'
-        eyebrowType='Default'
-        mouthType='Default'
-        skinColor='Light'
+        {...data}
       />
       <NodeResizer
         color="#ff0071"

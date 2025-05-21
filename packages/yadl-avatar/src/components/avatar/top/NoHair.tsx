@@ -10,7 +10,7 @@ export default class NoHair extends React.Component {
   private mask1 = uniqueId('react-mask-')
   private path1 = uniqueId('react-path-')
 
-  render () {
+  render() {
     const { filter1, mask1, path1 } = this
     return (
       <g id='Top' strokeWidth='1' fillRule='evenodd'>
@@ -48,7 +48,10 @@ export default class NoHair extends React.Component {
         <g id='Top/No-Hair' mask={`url(#${mask1})`}>
           <g transform='translate(-1.000000, 0.000000)'>
             <FacialHair />
-            {this.props.children}
+            {
+              // @ts-ignore
+              this.props.children
+            }
           </g>
         </g>
       </g>
