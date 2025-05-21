@@ -804,3 +804,147 @@ export const GradientDirection = [
         "label": "RADIAL"
     }
 ];
+
+
+export const AvatarTopStyle = [
+    {
+        key: 'NoHair',
+        label: "NoHair"
+    },
+    {
+        key: 'Eyepatch',
+        label: "Eyepatch"
+    },
+    {
+        key: 'Hat',
+        label: "Hat"
+    },
+    {
+        key: 'Hijab',
+        label: "Hijab"
+    },
+    {
+        key: 'Turban',
+        label: "Turban"
+    },
+    {
+        key: 'WinterHat1',
+        label: "WinterHat1"
+    },
+    {
+        key: 'WinterHat2',
+        label: "WinterHat2"
+    },
+    {
+        key: 'WinterHat3',
+        label: "WinterHat3"
+    },
+    {
+        key: 'WinterHat4',
+        label: "WinterHat4"
+    },
+    {
+        key: 'LongHairBigHair',
+        label: "LongHairBigHair"
+    },
+    {
+        key: 'LongHairBob',
+        label: "LongHairBob"
+    },
+    {
+        key: 'LongHairBun',
+        label: "LongHairBun"
+    },
+    {
+        key: 'LongHairCurly',
+        label: "LongHairCurly"
+    },
+    {
+        key: 'LongHairCurvy',
+        label: "LongHairCurvy"
+    },
+    {
+        key: 'LongHairDreads',
+        label: "LongHairDreads"
+    },
+    {
+        key: 'LongHairFrida',
+        label: "LongHairFrida"
+    },
+    {
+        key: 'LongHairFro',
+        label: "LongHairFro"
+    },
+    {
+        key: 'LongHairFroBand',
+        label: "LongHairFroBand"
+    },
+    {
+        key: 'LongHairNotTooLong',
+        label: "LongHairNotTooLong"
+    },
+    {
+        key: 'LongHairShavedSides',
+        label: "LongHairShavedSides"
+    },
+    {
+        key: 'LongHairMiaWallace',
+        label: "LongHairMiaWallace"
+    },
+    {
+        key: 'LongHairStraight',
+        label: "LongHairStraight"
+    },
+    {
+        key: 'LongHairStraight2',
+        label: "LongHairStraight2"
+    },
+    {
+        key: 'LongHairStraightStrand',
+        label: "LongHairStraightStrand"
+    },
+    {
+        key: 'ShortHairDreads01',
+        label: "ShortHairDreads01"
+    },
+    {
+        key: 'ShortHairDreads02',
+        label: "ShortHairDreads02"
+    },
+    {
+        key: 'ShortHairFrizzle',
+        label: "ShortHairFrizzle"
+    },
+    {
+        key: 'ShortHairShaggyMullet',
+        label: "ShortHairShaggyMullet"
+    },
+    {
+        key: 'ShortHairShortCurly',
+        label: "ShortHairShortCurly"
+    },
+    {
+        key: 'ShortHairShortFlat',
+        label: "ShortHairShortFlat"
+    },
+    {
+        key: 'ShortHairShortRound',
+        label: "ShortHairShortRound"
+    },
+    {
+        key: 'ShortHairShortWaved',
+        label: "ShortHairShortWaved"
+    },
+    {
+        key: 'ShortHairSides',
+        label: "ShortHairSides"
+    },
+    {
+        key: 'ShortHairTheCaesar',
+        label: "ShortHairTheCaesar"
+    },
+    {
+        key: 'ShortHairTheCaesarSidePart',
+        label: "ShortHairTheCaesarSidePart"
+    },
+];

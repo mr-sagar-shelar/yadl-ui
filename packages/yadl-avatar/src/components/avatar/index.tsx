@@ -16,6 +16,8 @@ export interface Props {
   avatarStyle: AvatarStyle
   className?: string;
   style?: React.CSSProperties
+  width?: number
+  height?: number
 }
 
 export default class Avatar extends React.Component<Props> {
@@ -28,14 +30,16 @@ export default class Avatar extends React.Component<Props> {
 
   render() {
     const { path1, path2, path3, mask1, mask2, mask3 } = this
-    const { avatarStyle } = this.props
+    const { avatarStyle, height, width } = this.props
     const circle = avatarStyle === AvatarStyle.Circle
     return (
       <svg
         style={this.props.style}
         className={this.props.className}
-        width="264px"
-        height="280px"
+        // width="264px"
+        // height="280px"
+        width={width}
+        height={height}
         viewBox="0 0 264 280"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"

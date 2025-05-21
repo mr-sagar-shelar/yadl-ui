@@ -166,5 +166,7 @@ export interface AvatarNodeProps {
         pieceType?: string
         pieceSize?: string
         viewBox?: string
+        width?: number;
+        height?: number;
     };
 }

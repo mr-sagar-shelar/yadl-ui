@@ -402,15 +402,11 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
 
     if (dimension) {
       avatarData.data.dimensionRange = dimension.range
-      avatarData.data.props = {
-        width: dimension.width,
-        height: dimension.height
-      }
+      avatarData.data.width = dimension.width;
+      avatarData.data.height = dimension.height;
     } else {
-      avatarData.data.props = {
-        width: 200,
-        height: 200
-      }
+      avatarData.data.width = 100;
+      avatarData.data.height = 100;
     }
 
     return avatarData;

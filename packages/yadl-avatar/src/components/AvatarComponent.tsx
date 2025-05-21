@@ -27,6 +27,8 @@ export interface AvatarProps {
   pieceType?: string
   pieceSize?: string
   viewBox?: string
+  width: number
+  height: number
 }
 
 // export default class AvatarComponent extends React.Component<AvatarProps> {
@@ -100,7 +102,7 @@ const AvatarComponent = (props: AvatarProps) => {
 
   return (
     <AvatarContext.Provider value={props} >
-      <Avatar avatarStyle={avatarStyle as AvatarStyle} style={style} className={className} />
+      <Avatar width={props.width} height={props.height} avatarStyle={avatarStyle as AvatarStyle} style={style} className={className} />
     </AvatarContext.Provider>
     // <AvatarProvider >
     //   <Avatar avatarStyle={avatarStyle as AvatarStyle} style={style} className={className} />

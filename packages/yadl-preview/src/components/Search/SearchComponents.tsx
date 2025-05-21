@@ -7,6 +7,7 @@ import SearchThemeisleIcons from "./SearchThemeisleIcons"
 import SearchUndrawIcons from "./SearchUndrawIcons"
 import SearchTextComponents from "./SearchTextComponents"
 import SearchBoxes from "./SearchBoxes"
+import SearchAvatars from "./SearchAvatars"
 
 const SearchComponents = () => {
   return (
@@ -90,6 +91,16 @@ const SearchComponents = () => {
         />
         <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
           <SearchBoxes />
+        </div>
+
+        <input
+          type="radio"
+          name="searchIconTabs"
+          className="tab"
+          aria-label="Avatars"
+        />
+        <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
+          <SearchAvatars />
         </div>
       </div>
     </>
