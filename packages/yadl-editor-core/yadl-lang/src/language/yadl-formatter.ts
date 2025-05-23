@@ -1,6 +1,7 @@
 import type { AstNode } from 'langium';
 import { AbstractFormatter, Formatting } from 'langium/lsp';
 import * as ast from './generated/ast.js';
+import { Div, HeightProperty, IdProperty, StyleProperty, WidthProperty } from './generated/ast.js';
 const threshold = 2;
 
 export class YadlFormatter extends AbstractFormatter {
@@ -8,12 +9,15 @@ export class YadlFormatter extends AbstractFormatter {
 
         if (ast.isDiv(node)) {
             this.formatHtmlElement(node);
-        } else if (ast.isStyleProperty(node)) {
-            this.formatStyleElement(node);
+        } else if (ast.isWidthProperty(node) || ast.isHeightProperty(node) || ast.isIdProperty(node) || ast.isStyleProperty(node)) {
+            this.formatSimpleProperty(node);
         }
+        // else if (ast.isStyleProperty(node)) {
+        //     this.formatStyleElement(node);
+        // }
     }
 
-    private formatHtmlElement(element: ast.Div): void {
+    private formatHtmlElement(element: Div): void {
         const formatter = this.getNodeFormatter(element);
         const bracesOpen = formatter.keyword('<');
         const bracesClose = formatter.keyword('>');
@@ -25,6 +29,7 @@ export class YadlFormatter extends AbstractFormatter {
         if (properties.length > threshold) {
             nodes.prepend(Formatting.newLine());
             bracesClose.prepend(Formatting.newLine());
+            nodes.prepend(Formatting.indent());
         }
         else if (properties.length > 0) {
             nodes.prepend(Formatting.oneSpace());
@@ -32,31 +37,75 @@ export class YadlFormatter extends AbstractFormatter {
         }
     }
 
-    private formatStyleElement(element: ast.StyleProperty): void {
-        const formatter = this.getNodeFormatter(element);
-        const bracesOpen = formatter.keyword('{');
-        const bracesClose = formatter.keyword('}');
+    private formatSimpleProperty(
+        property: WidthProperty | HeightProperty | IdProperty | StyleProperty
+    ): void {
+        // Find the '=' token's CST node
+        const formatter = this.getNodeFormatter(property);
+        const eqToken = formatter.keyword('=');
+        eqToken.append(Formatting.oneSpace());
 
-
-        const properties = element.styleAttributes || [];
-        const nodes = formatter.nodes(...element.styleAttributes);
-
-        if (properties.length > threshold) {
-            bracesOpen.prepend(Formatting.newLine());
-            bracesClose.prepend(Formatting.newLine());
-
-            nodes.prepend(Formatting.newLine());
-            bracesClose.prepend(Formatting.newLine());
-            formatter.interior(bracesOpen, bracesClose).prepend(Formatting.indent());
-        }
-        else if (properties.length > 0) {
-            bracesOpen.prepend(Formatting.noSpace());
-            bracesClose.prepend(Formatting.oneSpace());
-
-            nodes.prepend(Formatting.oneSpace());
-            bracesClose.prepend(Formatting.oneSpace());
-        }
+        // Find the value's CST node (e.g., INT for WidthProperty, STRING for IdProperty)
+        // The value feature will be 'width', 'height', or 'id' depending on the property type
+        // let valueNode: AstNode | undefined;
+        // if (property.$type === WidthProperty) {
+        //     valueNode = property.width;
+        // } else if (property.$type === HeightProperty) {
+        //     valueNode = property.height;
+        // } else if (property.$type === IdProperty) {
+        //     valueNode = property.id;
+        // }
+        // if (eqToken && valueNode?.$cstNode) {
+        //     // Ensure exactly one space between '=' and the value
+        //     acceptor.between(eqToken.range, valueNode.$cstNode.range, Formatting.space());
+        // }
     }
+
+    // private formatStyleElement(element: ast.StyleProperty): void {
+    //     const formatter = this.getNodeFormatter(element);
+    //     const styleAttributes = element.styleAttributes || [];
+
+    //     // const openBrace = element.$cstNode?.children.find(child => child.text === '{');
+    //     // const closeBrace = styleProperty.$cstNode?.children.find(child => child.text === '}');
+
+    //     // const openBrace = formatter.keyword('{');
+    //     const closeBrace = formatter.keyword('}');
+
+    //     // if (openBrace) {
+    //     //     openBrace.append(Formatting.newLine())
+    //     //     // this.indent(styleProperty, acceptor);
+    //     // }
+
+    //     const nodes = formatter.nodes(...element.styleAttributes);
+    //     if (styleAttributes.length > threshold) {
+    //         nodes.prepend(Formatting.newLine());
+    //         nodes.prepend(Formatting.indent());
+    //         closeBrace.prepend(Formatting.newLine());
+    //     }
+    //     else if (styleAttributes.length > 0) {
+    //         nodes.prepend(Formatting.oneSpace());
+    //         nodes.prepend(Formatting.noIndent());
+    //         closeBrace.prepend(Formatting.oneSpace());
+    //     }
+
+    //     // if (styleAttributes.length > threshold) {
+    //     //     formatter.interior(openBrace, closeBrace).prepend(Formatting.indent());
+    //     //     openBrace.prepend(Formatting.newLine())
+    //     //     openBrace.prepend(Formatting.indent())
+    //     //     openBrace.append(Formatting.newLine())
+    //     //     closeBrace.prepend(Formatting.newLine())
+    //     //     closeBrace.prepend(Formatting.indent())
+    //     //     closeBrace.append(Formatting.newLine())
+
+    //     // } else if (styleAttributes.length > 0 && openBrace) {
+    //     //     formatter.interior(openBrace, closeBrace).prepend(Formatting.noIndent());
+    //     //     openBrace.prepend(Formatting.noIndent())
+    //     //     openBrace.append(Formatting.oneSpace())
+    //     //     closeBrace.prepend(Formatting.oneSpace())
+    //     // } else if (closeBrace && openBrace) {
+    //     //     // this.addSpaceBetween(openBrace.range, closeBrace.range, acceptor);
+    //     // }
+    // }
 
     // protected format(node: FormatterAstNode, acceptor: FormattingAcceptor, context: FormatterContext): void {
     //     super.format(node, acceptor, context);
