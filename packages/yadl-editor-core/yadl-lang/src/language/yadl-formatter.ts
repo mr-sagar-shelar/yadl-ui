@@ -1,7 +1,7 @@
 import type { AstNode } from 'langium';
 import { AbstractFormatter, Formatting } from 'langium/lsp';
 import * as ast from './generated/ast.js';
-import { Div, HeightProperty, IdProperty, StyleProperty, WidthProperty } from './generated/ast.js';
+import { Div, FontSizeAttribute, BackgroundColorAttribute, TextColorAttribute, HeightProperty, IdProperty, StyleProperty, WidthProperty } from './generated/ast.js';
 const threshold = 2;
 
 export class YadlFormatter extends AbstractFormatter {
@@ -10,7 +10,9 @@ export class YadlFormatter extends AbstractFormatter {
         if (ast.isDiv(node)) {
             this.formatHtmlElement(node);
         } else if (ast.isWidthProperty(node) || ast.isHeightProperty(node) || ast.isIdProperty(node) || ast.isStyleProperty(node)) {
-            this.formatSimpleProperty(node);
+            this.formatSimplePropertys(node);
+        } else if (ast.isBackgroundColorAttribute(node) || ast.isFontSizeAttribute(node) || ast.isTextColorAttribute(node)) {
+            this.formatStyleAttributes(node);
         }
         // else if (ast.isStyleProperty(node)) {
         //     this.formatStyleElement(node);
@@ -37,30 +39,21 @@ export class YadlFormatter extends AbstractFormatter {
         }
     }
 
-    private formatSimpleProperty(
+    private formatSimplePropertys(
         property: WidthProperty | HeightProperty | IdProperty | StyleProperty
     ): void {
-        // Find the '=' token's CST node
         const formatter = this.getNodeFormatter(property);
         const eqToken = formatter.keyword('=');
         eqToken.append(Formatting.oneSpace());
-
-        // Find the value's CST node (e.g., INT for WidthProperty, STRING for IdProperty)
-        // The value feature will be 'width', 'height', or 'id' depending on the property type
-        // let valueNode: AstNode | undefined;
-        // if (property.$type === WidthProperty) {
-        //     valueNode = property.width;
-        // } else if (property.$type === HeightProperty) {
-        //     valueNode = property.height;
-        // } else if (property.$type === IdProperty) {
-        //     valueNode = property.id;
-        // }
-        // if (eqToken && valueNode?.$cstNode) {
-        //     // Ensure exactly one space between '=' and the value
-        //     acceptor.between(eqToken.range, valueNode.$cstNode.range, Formatting.space());
-        // }
     }
 
+    private formatStyleAttributes(
+        property: FontSizeAttribute | BackgroundColorAttribute | TextColorAttribute
+    ): void {
+        const formatter = this.getNodeFormatter(property);
+        const colon = formatter.keyword(':');
+        colon.append(Formatting.oneSpace());
+    }
     // private formatStyleElement(element: ast.StyleProperty): void {
     //     const formatter = this.getNodeFormatter(element);
     //     const styleAttributes = element.styleAttributes || [];
