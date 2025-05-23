@@ -1,5 +1,5 @@
 import type { ValidationAcceptor, ValidationChecks } from 'langium';
-import { type YadlAstType, type Avatar, type Div, WidthProperty, HeightProperty, IdProperty } from './generated/ast.js';
+import { type YadlAstType, type Avatar, type Div, StyleProperty, WidthProperty, HeightProperty, IdProperty, BackgroundColorAttribute, FontSizeAttribute, TextColorAttribute } from './generated/ast.js';
 import type { YadlServices } from './yadl-module.js';
 
 /**
@@ -10,7 +10,8 @@ export function registerValidationChecks(services: YadlServices) {
     const validator = services.validation.YadlValidator;
     const checks: ValidationChecks<YadlAstType> = {
         Avatar: validator.checkMultipleProps,
-        Div: validator.checkUniqueProperties
+        Div: validator.checkUniqueProperties,
+        StyleProperty: validator.checkUniqueStyleAttributes
     };
     registry.register(checks, validator);
 }
@@ -31,7 +32,7 @@ export class YadlValidator {
 
     checkMultipleProps(avatar: Avatar, accept: ValidationAcceptor): void {
         // const reported = new Set();
-        // debugger
+        // 
         console.log(avatar);
         // avatar.props.forEach(d => {
         //     if (reported.has(d.topType)) {
@@ -49,7 +50,7 @@ export class YadlValidator {
 
     checkUniqueProperties(div: Div, accept: ValidationAcceptor): void {
         // const reported = new Set();
-        debugger
+
         const seenProperties = new Set<string>(); // Use a Set to track seen property types
 
         for (const prop of div.properties) {
@@ -68,11 +69,36 @@ export class YadlValidator {
             }
 
             if (seenProperties.has(propertyType)) {
-                accept('error', `Duplicate property '${propertyType}' found. Properties must be unique.`, { node: prop, property: propertyType });
+                accept('error', `Duplicate property '${propertyType}' found. Properties must be unique.`, { node: prop });
             } else {
                 seenProperties.add(propertyType);
             }
         }
     }
+
+    checkUniqueStyleAttributes(styleProperty: StyleProperty, accept: ValidationAcceptor): void {
+        const seenStyleAttributes = new Set<string>();
+
+        for (const attr of styleProperty.styleAttributes) {
+            let attributeType: string;
+
+            if (attr.$type === BackgroundColorAttribute) {
+                attributeType = 'background-color';
+            } else if (attr.$type === FontSizeAttribute) {
+                attributeType = 'font-size';
+            } else if (attr.$type === TextColorAttribute) {
+                attributeType = 'text-color';
+            } else {
+                continue;
+            }
+
+            if (seenStyleAttributes.has(attributeType)) {
+                accept('error', `Duplicate style attribute '${attributeType}' found. Style attributes must be unique within a 'style' block.`, { node: attr });
+            } else {
+                seenStyleAttributes.add(attributeType);
+            }
+        }
+    }
+
 
 }

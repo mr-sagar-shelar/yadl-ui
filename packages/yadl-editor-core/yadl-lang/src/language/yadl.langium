@@ -11,6 +11,7 @@ import "./components/box"
 import "./components/edge"
 import "./components/avatar"
 import "./components/author"
+import "./components/div"
 
 
 entry Model:
@@ -20,23 +21,3 @@ entry Model:
     | divs+=Div
     )*;
 
-
-
-Property:
-    (WidthProperty | HeightProperty | IdProperty)
-;
-
-WidthProperty:
-    'width' '=' width=NUMBER
-;
-
-HeightProperty:
-    'height' '=' height=NUMBER
-;
-
-IdProperty:
-    'id' '=' id=STRING
-;
-
-Div:
-    '<Div' (properties+=Property)* '>';

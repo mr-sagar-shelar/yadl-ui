@@ -32,7 +32,7 @@ AvatarSkinColorTypes returns string:
 
 GraphicTypeTypes returns string:
     'Bat' | 'Cumbia' | 'Deer' | 'Diamond' | 'Hola' | 'Pizza' | 'Resist' | 'Selena' | 'Bear' | 'SkullOutline' | 'Skull';
-    
+
 AvatarStyle:
     'style:' style=AvatarStyleTypes;
 
@@ -66,10 +66,25 @@ AvatarSkinColor:
 GraphicType:
     'graphicType:' graphicType=GraphicTypeTypes;
 
-Avatars:
-    'avatar' (name=STRING)? (style=AvatarStyle)? (topType=AvatarTopType)? (accessoriesType=AvatarAccessoriesType)? (hairColor=AvatarHairColor)? (facialHairType=AvatarFacialHairType)? (clotheType=AvatarClotheType)? (eyeType=AvatarEyeType)? (eyebrowType=AvatarEyebrowType)? (mouthType=AvatarMouthType)? (skinColor=AvatarSkinColor)? ('{'
+AvatarProps:
+    'style:' style=AvatarStyleTypes |
+    'topType:' topType=AvatarTopTypes |
+    'accessoriesType:' accessoriesType=AvatarAccessoriesTypes |
+    'hairColor:' hairColor=AvatarHairColorTypes |
+    'facialHairType:' facialHairType=AvatarFacialHairTypes |
+    'clotheType:' clotheType=AvatarClotheTypes |
+    'eyeType:' eyeType=AvatarEyeTypes |
+    'eyebrowType:' eyebrowType=AvatarEyebrowTypes |
+    'mouthType:' mouthType=AvatarMouthTypes |
+    'skinColor:' skinColor=AvatarSkinColorTypes | 
+    'graphicType:' graphicType=GraphicTypeTypes | 
+    'mouthType:' mouthType=AvatarMouthTypes;
+
+
+Avatar:
+    '<Avatar' (name=STRING)? (props+=AvatarProps)* ('{'
         (position=Position)?
         (dimension=Dimension)?
         (fontFamily=FontFamily)?
         (classes=Classes)?
-    '}')?;
+    '}')? '>';

@@ -32,7 +32,9 @@ edge AWSSumerian => AzureCompute label:"Hello World" { type: smoothstep style:"{
 
 author "Sagar Shelar" profilePic:""  { position { x: -22 y: 21 } dimension { width: 50 height: 50 } }
 
-avatar "AVATAR" style: Circle topType: LongHairCurly accessoriesType: Sunglasses hairColor: Blonde facialHairType: BeardMedium clotheType: GraphicShirt eyeType: Hearts eyebrowType: Angry mouthType: Grimace skinColor: DarkBrown
+<Avatar accessoriesType: Blank accessoriesType: Blank  eyeType: Close >
+
+<Div height= 20 style={ background-color: "red", font-size: "", text-color: "blue" } >
 `,
         useDiffEditor: false,
         languageExtensionConfig: { id: "langium" },
