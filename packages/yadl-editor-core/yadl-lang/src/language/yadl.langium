@@ -14,13 +14,29 @@ import "./components/author"
 
 
 entry Model:
-    (persons+=Person | greetings+=Greeting | awsIcons+=AwsIcons | gcpIcons+=GcpIcons | azureIcons+=AzureIcons
+    (awsIcons+=AwsIcons | gcpIcons+=GcpIcons | azureIcons+=AzureIcons
     | skillIcons+=SkillIcons | themeisleIcons+=ThemeisleIcons | undrawIcons+=UndrawIcons
-    | textComponents+=TextComponents | edges+=Edges | boxes+=BoxComponents | avatars+=Avatars | authors+=Authors)*;
+    | textComponents+=TextComponents | edges+=Edges | boxes+=BoxComponents | avatars+=Avatar | authors+=Authors
+    | divs+=Div
+    )*;
 
-Person:
-    'person' name=ID;
 
-Greeting:
-    'Hello' person=[Person:ID] '!';
 
+Property:
+    (WidthProperty | HeightProperty | IdProperty)
+;
+
+WidthProperty:
+    'width' '=' width=NUMBER
+;
+
+HeightProperty:
+    'height' '=' height=NUMBER
+;
+
+IdProperty:
+    'id' '=' id=STRING
+;
+
+Div:
+    '<Div' (properties+=Property)* '>';
