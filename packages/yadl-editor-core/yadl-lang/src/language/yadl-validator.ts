@@ -33,7 +33,7 @@ export class YadlValidator {
     checkMultipleProps(avatar: Avatar, accept: ValidationAcceptor): void {
         // const reported = new Set();
         // 
-        console.log(avatar);
+        // console.log(avatar);
         // avatar.props.forEach(d => {
         //     if (reported.has(d.topType)) {
         //         accept('error', `Property '${d.topType}'. is already defined`, { node: d });
