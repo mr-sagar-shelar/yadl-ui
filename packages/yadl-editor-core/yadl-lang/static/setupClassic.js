@@ -34,7 +34,8 @@ author "Sagar Shelar" profilePic:""  { position { x: -22 y: 21 } dimension { wid
 
 <Avatar accessoriesType: Blank accessoriesType: Blank  eyeType: Close >
 
-<Div height= 20 style={ background-color: "red", font-size: "", text-color: "blue" } >
+<Div     height= 20         style={background-color:       "red",     font-size:"",                text-color: "blue" } 
+width=20>
 `,
         useDiffEditor: false,
         languageExtensionConfig: { id: "langium" },
