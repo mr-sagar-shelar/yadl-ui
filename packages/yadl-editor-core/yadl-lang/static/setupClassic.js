@@ -43,23 +43,40 @@ id          :              "Undraw1"
 dimension:     {     height      :        10        width       :       10        }      position: 
       {       x      :      10       y   :          10         }       icon    :         undrawADayOff    />
 
-aws-icon AWSSumerian aWSVRARSumerian
+<Author id    :      "Author1"     fontFamily      :      "Sarif"              profileHandle      :       "@Sagar" 
+                                    profilePic   :    "https://www.google.com" classes   :   ""  
+dimension:     {     height      :        10        width       :       10        }      position: 
+      {       x      :      10       y   :          10         } 
+         />
 
-azure-icon AzureCompute azureComputeComputeFleet
+<Avatar accessoriesType   :   Blank   classes   :  ""   clotheType   :   BlazerShirt   eyeType   :   Close   eyebrowType   :   Angry   facialHairType   :   BeardLight   fontFamily   :   "sdf" 
+graphicType   :   Bat hairColor   :   Auburn mouthType   :   Concerned skinColor   :   Black  style   :   Circle topType   :   Hat 
 
-gcp-icon GcpAPI gCPAiPlatform
+dimension:     {     height      :        10        width       :       10        }      position: 
+      {       x      :      10       y   :          10         } 
+/>
 
-skill-icon SkillUbuntu skillIconUbuntu
+<Box   id   :    "Box1"    classes    :    ""   type   :   Box1 
+dimension:     {     height      :        10        width       :       10        }      position: 
+      {       x      :      10       y   :          10         } 
+/>
 
-themeisle-icon ThenmeIsle1 themeisle104
+<Text  id : "Text1"    classes    :   ""    fontFamily    :     ""     text   :    "Hello world"
+dimension:     {     height      :        10        width       :       10        }      position: 
+      {       x      :      10       y   :          10         } 
+/>
 
-undraw-icon Undraw1 undrawYear2022 
+<Edge   classes   :  ""  label 
+:    "Label 1"    labelStyle    :    ""    source     :     "Top"  sourceHandle   :    bottom    target    :    ""  targetHandle    :     bottom  
+type    :     smoothstep
 
-edge AWSSumerian => AzureCompute label:"Hello World" { type: smoothstep style:"{ stroke: 'red' }" labelStyle:"{ fill: 'red', fontWeight: 700 }" }
+/>
 
-author "Sagar Shelar" profilePic:""  { position { x: -22 y: 21 } dimension { width: 50 height: 50 } }
+// <Edge AWSSumerian => AzureCompute label:"Hello World" type: smoothstep style:"{ stroke: 'red' }" labelStyle:"{ fill: 'red', fontWeight: 700 }" } />
 
-<Avatar accessoriesType: Blank accessoriesType: Blank  eyeType: Close >
+// <Author "Sagar Shelar" profilePic:""  { position : { x : -22 y : 21 } dimension : { width : 50 height : 50 } } />
+
+// <Avatar accessoriesType: Blank accessoriesType: Blank  eyeType: Close >
 
 <Div     height :         20         style =     {background-color:       "red",     font-size: 20,                text-color: "blue" } 
 width :   20>

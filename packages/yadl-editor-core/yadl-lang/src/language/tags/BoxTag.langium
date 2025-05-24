@@ -1,7 +1,10 @@
 import "../common"
 
-BoxTypeAttribute returns string:
+BoxTypeAttributes returns string:
     'Box1' | 'Box2';
+
+BoxTypeAttribute:
+    'type' ':' type=(BoxTypeAttributes);
 
 BoxTagAttributes:
     IdAttribute | BoxTypeAttribute | DimensionAttribute | PositionAttribute | ClassesAttribute;

@@ -1,10 +1,22 @@
 import type { ValidationAcceptor, ValidationChecks } from 'langium';
 import {
-    type YadlAstType, type Div, PositionAttribute, DimensionAttribute, StyleProperty, WidthAttribute, HeightAttribute, IdAttribute, BackgroundColorAttribute, FontSizeAttribute, TextColorAttribute, YAttribute, XAttribute,
+    type YadlAstType, type Div, PositionAttribute, DimensionAttribute, StyleProperty, WidthAttribute, HeightAttribute, IdAttribute,
+    BackgroundColorAttribute, FontSizeAttribute, TextColorAttribute, YAttribute, XAttribute, SkillIconTypeAttribute, UndrawIconTypeAttribute,
     AwsTag, AzureTag, GcpTag, SkillTag, ThemeisleTag, UndrawTag, AwsIconTypeAttribute, AzureIconTypeAttribute, GcpIconTypeAttribute,
-    SkillIconTypeAttribute,
-    ThemeisleIconTypeAttribute,
-    UndrawIconTypeAttribute
+    ThemeisleIconTypeAttribute, AuthorTag, AvatarTag, GraphicType, BoxTag, EdgeTag, TextTag,
+    AuthorProfilePicAttribute, AuthorProfileHandleAttribute, ClassesAttribute, FontFamilyAttribute,
+    AvatarStyleAttribute, AvatarTopType, AvatarAccessoriesType, AvatarHairColor, AvatarFacialHairType,
+    AvatarClotheType, AvatarEyeType, AvatarEyebrowType, AvatarMouthType, AvatarSkinColor,
+    BoxTypeAttribute,
+    EdgeLabelAttribute,
+    EdgeSourceAttribute,
+    EdgeSourceHandleAttribute,
+    EdgeStyleAttribute,
+    EdgeTargetAttribute,
+    EdgeTargetHandleAttribute,
+    EdgeTypeAttribute,
+    LabelStyleAttribute,
+    TextAttribute,
 } from './generated/ast.js';
 import type { YadlServices } from './yadl-module.js';
 
@@ -22,6 +34,11 @@ export function registerValidationChecks(services: YadlServices) {
         SkillTag: validator.checkUniqueSkillTagAttributes,
         ThemeisleTag: validator.checkUniqueThemeisleTagAttributes,
         UndrawTag: validator.checkUniqueUndrawTagAttributes,
+        AuthorTag: validator.checkUniqueAuthorTagAttributes,
+        AvatarTag: validator.checkUniqueAvatarTagAttributes,
+        BoxTag: validator.checkUniqueBoxTagAttributes,
+        EdgeTag: validator.checkUniqueEdgeTagAttributes,
+        TextTag: validator.checkUniqueTextTagAttributes,
 
     };
     registry.register(checks, validator);
@@ -197,6 +214,172 @@ export class YadlValidator {
             let propertyType: string;
             if (prop.$type === UndrawIconTypeAttribute) {
                 propertyType = 'icon';
+            } else if (prop.$type === DimensionAttribute) {
+                propertyType = 'dimension';
+            } else if (prop.$type === IdAttribute) {
+                propertyType = 'id';
+            } else if (prop.$type === PositionAttribute) {
+                propertyType = 'position';
+            } else {
+                continue;
+            }
+
+            if (seenProperties.has(propertyType)) {
+                accept('error', `Duplicate property '${propertyType}' found. Properties must be unique.`, { node: prop });
+            } else {
+                seenProperties.add(propertyType);
+            }
+        }
+    }
+
+    checkUniqueAuthorTagAttributes(attribute: AuthorTag, accept: ValidationAcceptor): void {
+        const seenProperties = new Set<string>();
+        for (const prop of attribute.attributes) {
+            let propertyType: string;
+            if (prop.$type === AuthorProfilePicAttribute) {
+                propertyType = 'profilePic';
+            } else if (prop.$type === AuthorProfileHandleAttribute) {
+                propertyType = 'profileHandle';
+            } else if (prop.$type === ClassesAttribute) {
+                propertyType = 'classes';
+            } else if (prop.$type === FontFamilyAttribute) {
+                propertyType = 'fontFamily';
+            } else if (prop.$type === DimensionAttribute) {
+                propertyType = 'dimension';
+            } else if (prop.$type === IdAttribute) {
+                propertyType = 'id';
+            } else if (prop.$type === PositionAttribute) {
+                propertyType = 'position';
+            } else {
+                continue;
+            }
+
+            if (seenProperties.has(propertyType)) {
+                accept('error', `Duplicate property '${propertyType}' found. Properties must be unique.`, { node: prop });
+            } else {
+                seenProperties.add(propertyType);
+            }
+        }
+    }
+
+    checkUniqueAvatarTagAttributes(attribute: AvatarTag, accept: ValidationAcceptor): void {
+        const seenProperties = new Set<string>();
+        for (const prop of attribute.attributes) {
+            let propertyType: string;
+            if (prop.$type === AvatarStyleAttribute) {
+                propertyType = 'style';
+            } else if (prop.$type === AvatarTopType) {
+                propertyType = 'topType';
+            } else if (prop.$type === AvatarAccessoriesType) {
+                propertyType = 'accessoriesType';
+            } else if (prop.$type === AvatarHairColor) {
+                propertyType = 'hairColor';
+            } else if (prop.$type === AvatarFacialHairType) {
+                propertyType = 'facialHairType';
+            } else if (prop.$type === AvatarClotheType) {
+                propertyType = 'clotheType';
+            } else if (prop.$type === AvatarEyeType) {
+                propertyType = 'eyeType';
+            } else if (prop.$type === AvatarEyebrowType) {
+                propertyType = 'eyebrowType';
+            } else if (prop.$type === AvatarMouthType) {
+                propertyType = 'mouthType';
+            } else if (prop.$type === AvatarSkinColor) {
+                propertyType = 'skinColor';
+            } else if (prop.$type === GraphicType) {
+                propertyType = 'graphicType';
+            } else if (prop.$type === ClassesAttribute) {
+                propertyType = 'classes';
+            } else if (prop.$type === FontFamilyAttribute) {
+                propertyType = 'fontFamily';
+            } else if (prop.$type === DimensionAttribute) {
+                propertyType = 'dimension';
+            } else if (prop.$type === IdAttribute) {
+                propertyType = 'id';
+            } else if (prop.$type === PositionAttribute) {
+                propertyType = 'position';
+            } else {
+                continue;
+            }
+
+            if (seenProperties.has(propertyType)) {
+                accept('error', `Duplicate property '${propertyType}' found. Properties must be unique.`, { node: prop });
+            } else {
+                seenProperties.add(propertyType);
+            }
+        }
+    }
+
+    checkUniqueBoxTagAttributes(attribute: BoxTag, accept: ValidationAcceptor): void {
+        const seenProperties = new Set<string>();
+        for (const prop of attribute.attributes) {
+            let propertyType: string;
+            if (prop.$type === BoxTypeAttribute) {
+                propertyType = 'type';
+            } else if (prop.$type === ClassesAttribute) {
+                propertyType = 'classes';
+            } else if (prop.$type === DimensionAttribute) {
+                propertyType = 'dimension';
+            } else if (prop.$type === IdAttribute) {
+                propertyType = 'id';
+            } else if (prop.$type === PositionAttribute) {
+                propertyType = 'position';
+            } else {
+                continue;
+            }
+
+            if (seenProperties.has(propertyType)) {
+                accept('error', `Duplicate property '${propertyType}' found. Properties must be unique.`, { node: prop });
+            } else {
+                seenProperties.add(propertyType);
+            }
+        }
+    }
+
+    checkUniqueEdgeTagAttributes(attribute: EdgeTag, accept: ValidationAcceptor): void {
+        const seenProperties = new Set<string>();
+        for (const prop of attribute.attributes) {
+            let propertyType: string;
+            if (prop.$type === EdgeSourceHandleAttribute) {
+                propertyType = 'sourceHandle';
+            } else if (prop.$type === EdgeTargetHandleAttribute) {
+                propertyType = 'targetHandle';
+            } else if (prop.$type === EdgeSourceAttribute) {
+                propertyType = 'source';
+            } else if (prop.$type === EdgeTargetAttribute) {
+                propertyType = 'target';
+            } else if (prop.$type === EdgeLabelAttribute) {
+                propertyType = 'label';
+            } else if (prop.$type === EdgeStyleAttribute) {
+                propertyType = 'style';
+            } else if (prop.$type === LabelStyleAttribute) {
+                propertyType = 'labelStyle';
+            } else if (prop.$type === EdgeTypeAttribute) {
+                propertyType = 'type';
+            } else if (prop.$type === ClassesAttribute) {
+                propertyType = 'classes';
+            } else {
+                continue;
+            }
+
+            if (seenProperties.has(propertyType)) {
+                accept('error', `Duplicate property '${propertyType}' found. Properties must be unique.`, { node: prop });
+            } else {
+                seenProperties.add(propertyType);
+            }
+        }
+    }
+
+    checkUniqueTextTagAttributes(attribute: TextTag, accept: ValidationAcceptor): void {
+        const seenProperties = new Set<string>();
+        for (const prop of attribute.attributes) {
+            let propertyType: string;
+            if (prop.$type === TextAttribute) {
+                propertyType = 'text';
+            } else if (prop.$type === FontFamilyAttribute) {
+                propertyType = 'fontFamily';
+            } else if (prop.$type === ClassesAttribute) {
+                propertyType = 'classes';
             } else if (prop.$type === DimensionAttribute) {
                 propertyType = 'dimension';
             } else if (prop.$type === IdAttribute) {

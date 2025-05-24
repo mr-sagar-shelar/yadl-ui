@@ -4,7 +4,7 @@ TextAttribute:
     'text' ':' text=STRING;
 
 TextTagAttributes:
-    IdAttribute | TextAttribute | DimensionAttribute | PositionAttribute;
+    IdAttribute | TextAttribute | DimensionAttribute | PositionAttribute | FontFamilyAttribute | ClassesAttribute;
 
 TextTag:
     '<Text' (attributes+=TextTagAttributes)* '/>';

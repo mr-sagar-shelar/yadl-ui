@@ -34,10 +34,9 @@ LabelStyleAttribute:
 EdgeTypeAttribute:
     'type' ':' type=EdgeTypes;
 
-
 EdgeTagAttributes:
     ClassesAttribute | EdgeSourceHandleAttribute | EdgeTargetHandleAttribute | EdgeLabelAttribute |
-    EdgeSourceAttribute | EdgeTargetAttribute | EdgeTypeAttribute | LabelStyleAttribute;
+    EdgeSourceAttribute | EdgeTargetAttribute | EdgeTypeAttribute | EdgeStyleAttribute | LabelStyleAttribute;
 
 EdgeTag:
     '<Edge' (attributes+=EdgeTagAttributes)* '/>';
