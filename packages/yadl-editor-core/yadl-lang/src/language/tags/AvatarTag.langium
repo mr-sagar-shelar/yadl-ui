@@ -36,40 +36,40 @@ GraphicTypeTypes returns string:
 AvatarStyleAttribute:
     'style' ':' style=AvatarStyleTypes;
 
-AvatarTopType:
+AvatarTopTypeAttribute:
     'topType' ':' topType=AvatarTopTypes;
 
-AvatarAccessoriesType:
+AvatarAccessoriesTypeAttribute:
     'accessoriesType' ':' accessoriesType=AvatarAccessoriesTypes;
 
-AvatarHairColor:
+AvatarHairColorAttribute:
     'hairColor' ':' hairColor=AvatarHairColorTypes;
 
-AvatarFacialHairType:
+AvatarFacialHairTypeAttribute:
     'facialHairType' ':' facialHairType=AvatarFacialHairTypes;
 
-AvatarClotheType:
+AvatarClotheTypeAttribute:
     'clotheType' ':' clotheType=AvatarClotheTypes;
 
-AvatarEyeType:
+AvatarEyeTypeAttribute:
     'eyeType' ':' eyeType=AvatarEyeTypes;
 
-AvatarEyebrowType:
+AvatarEyebrowTypeAttribute:
     'eyebrowType' ':' eyebrowType=AvatarEyebrowTypes;
 
-AvatarMouthType:
+AvatarMouthTypeAttribute:
     'mouthType' ':' mouthType=AvatarMouthTypes;
 
-AvatarSkinColor:
+AvatarSkinColorAttribute:
     'skinColor' ':' skinColor=AvatarSkinColorTypes;
 
-GraphicType:
+AvatarGraphicTypeAttribute:
     'graphicType' ':' graphicType=GraphicTypeTypes;
 
 AvatarTagAttributes:
     IdAttribute | DimensionAttribute | PositionAttribute | ClassesAttribute | FontFamilyAttribute |
-    AvatarStyleAttribute | AvatarTopType | AvatarAccessoriesType | AvatarHairColor | AvatarFacialHairType | 
-    AvatarClotheType | AvatarEyeType | AvatarEyebrowType | AvatarMouthType | AvatarSkinColor | GraphicType;
+    AvatarStyleAttribute | AvatarTopTypeAttribute | AvatarAccessoriesTypeAttribute | AvatarHairColorAttribute | AvatarFacialHairTypeAttribute | 
+    AvatarClotheTypeAttribute | AvatarEyeTypeAttribute | AvatarEyebrowTypeAttribute | AvatarMouthTypeAttribute | AvatarSkinColorAttribute | AvatarGraphicTypeAttribute;
 
 AvatarTag:
     '<Avatar' (attributes+=AvatarTagAttributes)* '/>';

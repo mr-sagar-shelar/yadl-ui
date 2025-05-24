@@ -1,7 +1,7 @@
 import { type AstNode } from 'langium';
 import { AbstractFormatter, Formatting } from 'langium/lsp';
 import * as ast from './generated/ast.js';
-import { Div, FontSizeAttribute, BackgroundColorAttribute, TextColorAttribute, HeightAttribute, IdAttribute, StyleProperty, WidthAttribute, AwsTag, XAttribute, YAttribute, PositionAttribute, AwsIconTypeAttribute, DimensionAttribute, AzureTag, GcpTag, SkillTag, ThemeisleTag, UndrawTag, AzureIconTypeAttribute, GcpIconTypeAttribute, SkillIconTypeAttribute, ThemeisleIconTypeAttribute, UndrawIconTypeAttribute } from './generated/ast.js';
+import { Div, FontSizeAttribute, BackgroundColorAttribute, TextColorAttribute, HeightAttribute, IdAttribute, StyleProperty, WidthAttribute, AwsTag, XAttribute, YAttribute, PositionAttribute, AwsIconTypeAttribute, DimensionAttribute, AzureTag, GcpTag, SkillTag, ThemeisleTag, UndrawTag, AzureIconTypeAttribute, GcpIconTypeAttribute, SkillIconTypeAttribute, ThemeisleIconTypeAttribute, UndrawIconTypeAttribute, AuthorTag, AvatarTag, BoxTag, EdgeTag, TextTag, FontFamilyAttribute, AuthorProfileHandleAttribute, AuthorProfilePicAttribute, AvatarStyleAttribute, AvatarFacialHairTypeAttribute, AvatarGraphicTypeAttribute, AvatarClotheTypeAttribute, AvatarTopTypeAttribute, AvatarAccessoriesTypeAttribute, AvatarHairColorAttribute, AvatarEyeTypeAttribute, AvatarEyebrowTypeAttribute, AvatarMouthTypeAttribute, AvatarSkinColorAttribute, ClassesAttribute, BoxTypeAttribute, TextAttribute, EdgeLabelAttribute, EdgeLabelStyleAttribute, EdgeSourceAttribute, EdgeSourceHandleAttribute, EdgeTagAttributes, EdgeTargetHandleAttribute, EdgeTypeAttribute } from './generated/ast.js';
 const threshold = 2;
 
 export class YadlFormatter extends AbstractFormatter {
@@ -62,12 +62,14 @@ export class YadlFormatter extends AbstractFormatter {
     protected format(node: AstNode): void {
         if (ast.isDiv(node)) {
             this.formatHtmlElement(node);
-        } else if (ast.isAwsTag(node) || ast.isAzureTag(node) || ast.isGcpTag(node) || ast.isSkillTag(node) || ast.isThemeisleTag(node) || ast.isUndrawTag(node)) {
+        } else if (ast.isAwsTag(node) || ast.isAzureTag(node) || ast.isGcpTag(node) || ast.isSkillTag(node) ||
+            ast.isThemeisleTag(node) || ast.isUndrawTag(node) || ast.isAuthorTag(node) || ast.isAvatarTag(node) || ast.isBoxTag(node) || ast.isEdgeTag(node) || ast.isTextTag(node)) {
             this.formatIconTagAttributes(node);
         } else if (
             ast.isWidthAttribute(node) ||
             ast.isHeightAttribute(node) ||
             ast.isIdAttribute(node) ||
+            ast.isClassesAttribute(node) ||
             ast.isXAttribute(node) ||
             ast.isYAttribute(node) ||
             ast.isAwsIconTypeAttribute(node) ||
@@ -76,6 +78,33 @@ export class YadlFormatter extends AbstractFormatter {
             ast.isSkillIconTypeAttribute(node) ||
             ast.isThemeisleIconTypeAttribute(node) ||
             ast.isUndrawIconTypeAttribute(node) ||
+            ast.isFontFamilyAttribute(node) ||
+            ast.isAuthorProfileHandleAttribute(node) ||
+            ast.isAuthorProfilePicAttribute(node) ||
+            ast.isBoxTypeAttribute(node) ||
+            ast.isTextAttribute(node) ||
+            ast.isEdgeLabelAttribute(node) ||
+            ast.isEdgeLabelStyleAttribute(node) ||
+
+            ast.isEdgeSourceAttribute(node) ||
+            ast.isEdgeSourceHandleAttribute(node) ||
+            ast.isEdgeTargetAttribute(node) ||
+            ast.isEdgeTargetHandleAttribute(node) ||
+            ast.isEdgeTypeAttribute(node) ||
+
+
+            ast.isAvatarStyleAttribute(node) ||
+            ast.isAvatarTopTypeAttribute(node) ||
+            ast.isAvatarAccessoriesTypeAttribute(node) ||
+            ast.isAvatarHairColorAttribute(node) ||
+            ast.isAvatarFacialHairTypeAttribute(node) ||
+            ast.isAvatarClotheTypeAttribute(node) ||
+            ast.isAvatarEyeTypeAttribute(node) ||
+            ast.isAvatarEyebrowTypeAttribute(node) ||
+            ast.isAvatarMouthTypeAttribute(node) ||
+            ast.isAvatarSkinColorAttribute(node) ||
+            ast.isAvatarGraphicTypeAttribute(node) ||
+
             ast.isStyleProperty(node)) {
             this.formatSimplePropertys(node);
         }
@@ -125,7 +154,9 @@ export class YadlFormatter extends AbstractFormatter {
         nodes.prepend(Formatting.oneSpace());
     }
 
-    private formatIconTagAttributes(element: AwsTag | AzureTag | GcpTag | SkillTag | ThemeisleTag | UndrawTag): void {
+    private formatIconTagAttributes(element: AwsTag | AzureTag | GcpTag | SkillTag | ThemeisleTag | UndrawTag |
+        AuthorTag | AvatarTag | BoxTag | EdgeTag | TextTag
+    ): void {
         const formatter = this.getNodeFormatter(element);
         const bracesOpen = formatter.keyword('<');
         const bracesClose = formatter.keyword('/>');
@@ -146,8 +177,13 @@ export class YadlFormatter extends AbstractFormatter {
     }
 
     private formatSimplePropertys(
-        property: WidthAttribute | HeightAttribute | IdAttribute | StyleProperty | XAttribute | YAttribute |
-            AwsIconTypeAttribute | AzureIconTypeAttribute | GcpIconTypeAttribute | SkillIconTypeAttribute | ThemeisleIconTypeAttribute | UndrawIconTypeAttribute
+        property: WidthAttribute | HeightAttribute | IdAttribute | StyleProperty | XAttribute | YAttribute | ClassesAttribute |
+            AwsIconTypeAttribute | AzureIconTypeAttribute | GcpIconTypeAttribute | SkillIconTypeAttribute |
+            ThemeisleIconTypeAttribute | UndrawIconTypeAttribute | FontFamilyAttribute | AuthorProfileHandleAttribute |
+            AuthorProfilePicAttribute | AvatarStyleAttribute | AvatarTopTypeAttribute | AvatarAccessoriesTypeAttribute | AvatarHairColorAttribute |
+            AvatarFacialHairTypeAttribute | AvatarClotheTypeAttribute | AvatarEyeTypeAttribute | AvatarEyebrowTypeAttribute | AvatarMouthTypeAttribute | AvatarSkinColorAttribute |
+            AvatarGraphicTypeAttribute | BoxTypeAttribute | TextAttribute | EdgeLabelAttribute | EdgeLabelStyleAttribute |
+            EdgeSourceAttribute | EdgeSourceHandleAttribute | EdgeTagAttributes | EdgeTargetHandleAttribute | EdgeTypeAttribute
     ): void {
         debugger
         const formatter = this.getNodeFormatter(property);

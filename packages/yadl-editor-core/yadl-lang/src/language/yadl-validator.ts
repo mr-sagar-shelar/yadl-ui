@@ -3,10 +3,10 @@ import {
     type YadlAstType, type Div, PositionAttribute, DimensionAttribute, StyleProperty, WidthAttribute, HeightAttribute, IdAttribute,
     BackgroundColorAttribute, FontSizeAttribute, TextColorAttribute, YAttribute, XAttribute, SkillIconTypeAttribute, UndrawIconTypeAttribute,
     AwsTag, AzureTag, GcpTag, SkillTag, ThemeisleTag, UndrawTag, AwsIconTypeAttribute, AzureIconTypeAttribute, GcpIconTypeAttribute,
-    ThemeisleIconTypeAttribute, AuthorTag, AvatarTag, GraphicType, BoxTag, EdgeTag, TextTag,
+    ThemeisleIconTypeAttribute, AuthorTag, AvatarTag, AvatarGraphicTypeAttribute, BoxTag, EdgeTag, TextTag,
     AuthorProfilePicAttribute, AuthorProfileHandleAttribute, ClassesAttribute, FontFamilyAttribute,
-    AvatarStyleAttribute, AvatarTopType, AvatarAccessoriesType, AvatarHairColor, AvatarFacialHairType,
-    AvatarClotheType, AvatarEyeType, AvatarEyebrowType, AvatarMouthType, AvatarSkinColor,
+    AvatarStyleAttribute, AvatarTopTypeAttribute, AvatarAccessoriesTypeAttribute, AvatarHairColorAttribute, AvatarFacialHairTypeAttribute,
+    AvatarClotheTypeAttribute, AvatarEyeTypeAttribute, AvatarEyebrowTypeAttribute, AvatarMouthTypeAttribute, AvatarSkinColorAttribute,
     BoxTypeAttribute,
     EdgeLabelAttribute,
     EdgeSourceAttribute,
@@ -15,7 +15,7 @@ import {
     EdgeTargetAttribute,
     EdgeTargetHandleAttribute,
     EdgeTypeAttribute,
-    LabelStyleAttribute,
+    EdgeLabelStyleAttribute,
     TextAttribute,
 } from './generated/ast.js';
 import type { YadlServices } from './yadl-module.js';
@@ -268,25 +268,25 @@ export class YadlValidator {
             let propertyType: string;
             if (prop.$type === AvatarStyleAttribute) {
                 propertyType = 'style';
-            } else if (prop.$type === AvatarTopType) {
+            } else if (prop.$type === AvatarTopTypeAttribute) {
                 propertyType = 'topType';
-            } else if (prop.$type === AvatarAccessoriesType) {
+            } else if (prop.$type === AvatarAccessoriesTypeAttribute) {
                 propertyType = 'accessoriesType';
-            } else if (prop.$type === AvatarHairColor) {
+            } else if (prop.$type === AvatarHairColorAttribute) {
                 propertyType = 'hairColor';
-            } else if (prop.$type === AvatarFacialHairType) {
+            } else if (prop.$type === AvatarFacialHairTypeAttribute) {
                 propertyType = 'facialHairType';
-            } else if (prop.$type === AvatarClotheType) {
+            } else if (prop.$type === AvatarClotheTypeAttribute) {
                 propertyType = 'clotheType';
-            } else if (prop.$type === AvatarEyeType) {
+            } else if (prop.$type === AvatarEyeTypeAttribute) {
                 propertyType = 'eyeType';
-            } else if (prop.$type === AvatarEyebrowType) {
+            } else if (prop.$type === AvatarEyebrowTypeAttribute) {
                 propertyType = 'eyebrowType';
-            } else if (prop.$type === AvatarMouthType) {
+            } else if (prop.$type === AvatarMouthTypeAttribute) {
                 propertyType = 'mouthType';
-            } else if (prop.$type === AvatarSkinColor) {
+            } else if (prop.$type === AvatarSkinColorAttribute) {
                 propertyType = 'skinColor';
-            } else if (prop.$type === GraphicType) {
+            } else if (prop.$type === AvatarGraphicTypeAttribute) {
                 propertyType = 'graphicType';
             } else if (prop.$type === ClassesAttribute) {
                 propertyType = 'classes';
@@ -352,7 +352,7 @@ export class YadlValidator {
                 propertyType = 'label';
             } else if (prop.$type === EdgeStyleAttribute) {
                 propertyType = 'style';
-            } else if (prop.$type === LabelStyleAttribute) {
+            } else if (prop.$type === EdgeLabelStyleAttribute) {
                 propertyType = 'labelStyle';
             } else if (prop.$type === EdgeTypeAttribute) {
                 propertyType = 'type';

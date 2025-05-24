@@ -28,7 +28,7 @@ EdgeLabelAttribute:
 EdgeStyleAttribute:
     'style' ':' style=STRING;
 
-LabelStyleAttribute:
+EdgeLabelStyleAttribute:
     'labelStyle' ':' labelStyle=STRING;
 
 EdgeTypeAttribute:
@@ -36,7 +36,7 @@ EdgeTypeAttribute:
 
 EdgeTagAttributes:
     ClassesAttribute | EdgeSourceHandleAttribute | EdgeTargetHandleAttribute | EdgeLabelAttribute |
-    EdgeSourceAttribute | EdgeTargetAttribute | EdgeTypeAttribute | EdgeStyleAttribute | LabelStyleAttribute;
+    EdgeSourceAttribute | EdgeTargetAttribute | EdgeTypeAttribute | EdgeStyleAttribute | EdgeLabelStyleAttribute;
 
 EdgeTag:
     '<Edge' (attributes+=EdgeTagAttributes)* '/>';
