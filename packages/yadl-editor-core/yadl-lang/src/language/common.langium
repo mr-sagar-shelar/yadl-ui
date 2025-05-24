@@ -13,6 +13,9 @@ Dimension:
 Classes:
     'classes:' classes=STRING;
 
+ClassesAttribute:
+    'classes' ':' classes=STRING;
+
 QualifiedName returns string:
     ID ('.' ID)*;
 
@@ -55,6 +58,9 @@ FontSizeAttribute:
     'font-size' ':' fontSize=NUMBER;
 
 FontFamily:
+    'fontFamily' ':' fontFamily=STRING;
+
+FontFamilyAttribute:
     'fontFamily' ':' fontFamily=STRING;
 
 TextColorAttribute:
