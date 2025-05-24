@@ -13,11 +13,59 @@ Dimension:
 Classes:
     'classes:' classes=STRING;
 
-FontFamily:
-    'fontFamily:' fontFamily=STRING;
-    
 QualifiedName returns string:
     ID ('.' ID)*;
+
+WidthAttribute:
+    'width' ':' width=NUMBER;
+
+HeightAttribute:
+    'height' ':'  height=NUMBER;
+
+XAttribute:
+    'x' ':' (isNegativeX?='-')? x=NUMBER;
+
+YAttribute:
+    'y' ':' (isNegativeY?='-')? y=NUMBER;
+
+IdAttribute:
+    'id' ':' id=STRING;
+
+BackgroundColorAttribute:
+    'background-color' ':' backgroundColor=STRING
+;
+
+PositionAttributes:
+    XAttribute | YAttribute;
+
+PositionAttribute:
+    'position' ':' '{'
+        (attributes+=PositionAttributes)+ 
+    '}';
+
+DimensionAttributes:
+    WidthAttribute | HeightAttribute;
+
+DimensionAttribute:
+    'dimension' ':' '{'
+        (attributes+=DimensionAttributes)+ 
+    '}';
+
+FontSizeAttribute:
+    'font-size' ':' fontSize=NUMBER;
+
+FontFamily:
+    'fontFamily' ':' fontFamily=STRING;
+
+TextColorAttribute:
+    'text-color' ':' textColor=STRING;
+
+StyleAttribute:
+    (BackgroundColorAttribute | FontSizeAttribute | TextColorAttribute)
+;
+
+StyleProperty:
+    'style' '=' '{' (styleAttributes+=StyleAttribute (',' styleAttributes+=StyleAttribute)*)? '}';
 
 terminal NUMBER returns number: /[0-9]+(\.[0-9]*)?/;
 hidden terminal WS: /\s+/;

@@ -16,7 +16,11 @@ export const setupConfigClassic = () => {
         $type: "classic",
         languageId: "yadl",
         code: `// YADL is running in the web!
-aws-icon AWSSumerian aWSVRARSumerian
+<AWS  
+id          :              "AWS1"
+dimension:     {     height      :        10        width       :       10        }      position: 
+      {       x      :      10       y   :          10         }       icon    :         aWSAnalyticsAthena    />
+             aws-icon AWSSumerian aWSVRARSumerian
 
 azure-icon AzureCompute azureComputeComputeFleet
 

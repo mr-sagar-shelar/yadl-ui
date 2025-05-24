@@ -12,12 +12,15 @@ import "./components/edge"
 import "./components/avatar"
 import "./components/author"
 import "./components/div"
+import "./tags/AwsTag"
 
 
 entry Model:
     (awsIcons+=AwsIcons | gcpIcons+=GcpIcons | azureIcons+=AzureIcons
     | skillIcons+=SkillIcons | themeisleIcons+=ThemeisleIcons | undrawIcons+=UndrawIcons
     | textComponents+=TextComponents | edges+=Edges | boxes+=BoxComponents | avatars+=Avatar | authors+=Authors
-    | divs+=Div
+    | divs+=Div |
+
+    awsTags+=AwsTag 
     )*;
 
