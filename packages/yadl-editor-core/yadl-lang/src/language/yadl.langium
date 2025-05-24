@@ -12,7 +12,14 @@ import "./components/edge"
 import "./components/avatar"
 import "./components/author"
 import "./components/div"
+
+
 import "./tags/AwsTag"
+import "./tags/AzureTag"
+import "./tags/GcpTag"
+import "./tags/SkillTag"
+import "./tags/ThemeisleTag"
+import "./tags/UndrawTag"
 
 
 entry Model:
@@ -21,6 +28,6 @@ entry Model:
     | textComponents+=TextComponents | edges+=Edges | boxes+=BoxComponents | avatars+=Avatar | authors+=Authors
     | divs+=Div |
 
-    awsTags+=AwsTag 
+    awsTags+=AwsTag | azureTags+=AzureTag | gcpTags+=GcpTag | skillTags+=SkillTag | themeisleTags+=ThemeisleTag | undrawTags+=UndrawTag
     )*;
 

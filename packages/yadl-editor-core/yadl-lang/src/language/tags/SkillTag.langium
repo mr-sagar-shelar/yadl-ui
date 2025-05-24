@@ -1,0 +1,25 @@
+import "../common"
+
+SkillTypeAttribute0 returns string:
+    'skillIconActivityPub' | 'skillIconAbleton' | 'skillIconAWS' | 'skillIconAfterEffects' | 'skillIconAndroidStudio' | 'skillIconAlpineJS' | 'skillIconAngular' | 'skillIconAnaconda' | 'skillIconAiScript' | 'skillIconAnsible' | 'skillIconAppwrite' | 'skillIconActix' | 'skillIconAstro' | 'skillIconApple' | 'skillIconArduino' | 'skillIconApollo' | 'skillIconAzul' | 'skillIconAudition' | 'skillIconAdonis' | 'skillIconAzure' | 'skillIconAutoCAD' | 'skillIconBlender' | 'skillIconArch' | 'skillIconBash' | 'skillIconBevy' | 'skillIconBootstrap' | 'skillIconBSD' | 'skillIconCLion' | 'skillIconBun' | 'skillIconC' | 'skillIconBitBucket' | 'skillIconCMake' | 'skillIconAtom' | 'skillIconCSS' | 'skillIconCPP' | 'skillIconCS' | 'skillIconCloudflare' | 'skillIconClojure' | 'skillIconCodePen' | 'skillIconCassandra' | 'skillIconCrystal' | 'skillIconDart';
+
+SkillTypeAttribute1 returns string:
+    'skillIconCypress' | 'skillIconDENO' | 'skillIconCoffeeScript' | 'skillIconD3' | 'skillIconDevTo' | 'skillIconDiscord' | 'skillIconDiscordJS' | 'skillIconDjango' | 'skillIconBabel' | 'skillIconDiscordBots' | 'skillIconDotNet' | 'skillIconDynamoDB' | 'skillIconDocker' | 'skillIconElixir' | 'skillIconDebian' | 'skillIconElasticsearch' | 'skillIconEmacs' | 'skillIconElysia' | 'skillIconFastAPI' | 'skillIconElectron' | 'skillIconEclipse' | 'skillIconEmber' | 'skillIconFlutter' | 'skillIconFediverse' | 'skillIconFortran' | 'skillIconExpressJS' | 'skillIconEmotion' | 'skillIconGTK' | 'skillIconFirebase' | 'skillIconFigma' | 'skillIconGCP' | 'skillIconGherkin' | 'skillIconGit' | 'skillIconGameMakerStudio' | 'skillIconGithub' | 'skillIconGithubActions' | 'skillIconFlask' | 'skillIconGoLang' | 'skillIconGmail' | 'skillIconForth' | 'skillIconGraphQL' | 'skillIconGitLab';
+
+SkillTypeAttribute2 returns string:
+    'skillIconGatsby' | 'skillIconGulp' | 'skillIconHaxe' | 'skillIconHaskell' | 'skillIconHTML' | 'skillIconGrafana' | 'skillIconHeroku' | 'skillIconHaxeFlixel' | 'skillIconHibernate' | 'skillIconGradle' | 'skillIconHtmx' | 'skillIconGodot' | 'skillIconIPFS' | 'skillIconIdea' | 'skillIconInstagram' | 'skillIconJava' | 'skillIconIllustrator' | 'skillIconJenkins' | 'skillIconJest' | 'skillIconJQuery' | 'skillIconJavaScript' | 'skillIconKubernetes' | 'skillIconKotlin' | 'skillIconLaravel' | 'skillIconLinkedIn' | 'skillIconKali' | 'skillIconKafka' | 'skillIconLit' | 'skillIconMarkdown' | 'skillIconJulia' | 'skillIconLaTeX' | 'skillIconLua' | 'skillIconMastodon' | 'skillIconLess' | 'skillIconMatlab' | 'skillIconMisskey' | 'skillIconMaterialUI' | 'skillIconMongoDB' | 'skillIconKtor' | 'skillIconMint' | 'skillIconLinux' | 'skillIconMySQL';
+
+SkillTypeAttribute3 returns string:
+    'skillIconMaven' | 'skillIconNeoVim' | 'skillIconNim' | 'skillIconNextJS' | 'skillIconNix' | 'skillIconNginx' | 'skillIconNestJS' | 'skillIconNpm' | 'skillIconNetlify' | 'skillIconNuxtJS' | 'skillIconNodeJS' | 'skillIconNotion' | 'skillIconOpenCV' | 'skillIconOctave' | 'skillIconPHP' | 'skillIconOpenStack' | 'skillIconPhotoshop' | 'skillIconOpenShift' | 'skillIconPhpStorm' | 'skillIconPkl' | 'skillIconObsidian' | 'skillIconPinia' | 'skillIconPnpm' | 'skillIconPostgreSQL' | 'skillIconPerl' | 'skillIconPlan9' | 'skillIconPowershell' | 'skillIconOCaml' | 'skillIconPrisma' | 'skillIconPremiere' | 'skillIconPyCharm' | 'skillIconProcessing' | 'skillIconPlanetScale' | 'skillIconR' | 'skillIconPrometheus' | 'skillIconPostman' | 'skillIconPyTorch' | 'skillIconRails' | 'skillIconPug' | 'skillIconPython' | 'skillIconROS' | 'skillIconQT';
+
+SkillTypeAttribute4 returns string:
+    'skillIconRedis' | 'skillIconRabbitMQ' | 'skillIconReactiveX' | 'skillIconRaspberryPi' | 'skillIconReact' | 'skillIconReplit' | 'skillIconRemix' | 'skillIconRedHat' | 'skillIconRust' | 'skillIconRocket' | 'skillIconRider' | 'skillIconRollupJS' | 'skillIconSVG' | 'skillIconRegex' | 'skillIconSQLite' | 'skillIconRuby' | 'skillIconSentry' | 'skillIconSketchup' | 'skillIconSciKitLearn' | 'skillIconSass' | 'skillIconSolidJS' | 'skillIconSelenium' | 'skillIconRobloxStudio' | 'skillIconSequelize' | 'skillIconStackOverflow' | 'skillIconScala' | 'skillIconSolidity' | 'skillIconRedux' | 'skillIconSupabase' | 'skillIconSpring' | 'skillIconSwift' | 'skillIconTauri' | 'skillIconTerraform' | 'skillIconSublime' | 'skillIconSvelte' | 'skillIconTailwindCSS' | 'skillIconThreeJS' | 'skillIconSymfony' | 'skillIconTypeScript' | 'skillIconTwitter' | 'skillIconUbuntu' | 'skillIconStyledComponents';
+
+SkillIconTypeAttribute:
+    'icon' ':' icon=(SkillTypeAttribute1 | SkillTypeAttribute2 | SkillTypeAttribute3 | SkillTypeAttribute4);
+
+SkillTagAttributes:
+    IdAttribute | SkillIconTypeAttribute | DimensionAttribute | PositionAttribute;
+
+SkillTag:
+    '<Skill' (attributes+=SkillTagAttributes)* '/>';

@@ -28,4 +28,4 @@ AwsTagAttributes:
     IdAttribute | AwsIconTypeAttribute | DimensionAttribute | PositionAttribute;
 
 AwsTag:
-    '<AWS' (attributes+=AwsTagAttributes)* '/>';
+    '<Aws' (attributes+=AwsTagAttributes)* '/>';
