@@ -16,11 +16,34 @@ export const setupConfigClassic = () => {
         $type: "classic",
         languageId: "yadl",
         code: `// YADL is running in the web!
-<AWS  
+<Aws  
 id          :              "AWS1"
 dimension:     {     height      :        10        width       :       10        }      position: 
       {       x      :      10       y   :          10         }       icon    :         aWSAnalyticsAthena    />
-             aws-icon AWSSumerian aWSVRARSumerian
+
+<Azure  
+id          :              "Azure1"
+dimension:     {     height      :        10        width       :       10        }      position: 
+      {       x      :      10       y   :          10         }       icon    :         azureAnalyticsAnalysisServices    />
+
+<Gcp  
+id          :              "Gcp1"
+dimension:     {     height      :        10        width       :       10        }      position: 
+      {       x      :      10       y   :          10         }       icon    :         gCPAccessContextManager    />
+<Skill  
+id          :              "Skill1"
+dimension:     {     height      :        10        width       :       10        }      position: 
+      {       x      :      10       y   :          10         }       icon    :         skillIconBabel    />
+<Themeisle  
+id          :              "Themeisle1"
+dimension:     {     height      :        10        width       :       10        }      position: 
+      {       x      :      10       y   :          10         }       icon    :         themeisle101    />
+<Undraw  
+id          :              "Undraw1"
+dimension:     {     height      :        10        width       :       10        }      position: 
+      {       x      :      10       y   :          10         }       icon    :         undrawADayOff    />
+
+aws-icon AWSSumerian aWSVRARSumerian
 
 azure-icon AzureCompute azureComputeComputeFleet
 
@@ -38,10 +61,10 @@ author "Sagar Shelar" profilePic:""  { position { x: -22 y: 21 } dimension { wid
 
 <Avatar accessoriesType: Blank accessoriesType: Blank  eyeType: Close >
 
-<Div     height=         20         style=     {background-color:       "red",     font-size:"",                text-color: "blue" } 
-width=    20>
+<Div     height :         20         style =     {background-color:       "red",     font-size: 20,                text-color: "blue" } 
+width :   20>
 
-<Div style=    {   background-color:       "red",     font-size:"",                text-color: "blue"} >
+<Div style=    {   background-color:       "red",     font-size: 30,                text-color: "blue"} >
 
 `,
         useDiffEditor: false,

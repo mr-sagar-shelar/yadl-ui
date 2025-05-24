@@ -1,7 +1,7 @@
 import { type AstNode } from 'langium';
 import { AbstractFormatter, Formatting } from 'langium/lsp';
 import * as ast from './generated/ast.js';
-import { Div, FontSizeAttribute, BackgroundColorAttribute, TextColorAttribute, HeightAttribute, IdAttribute, StyleProperty, WidthAttribute, AwsTag, XAttribute, YAttribute, PositionAttribute, AwsIconTypeAttribute, DimensionAttribute } from './generated/ast.js';
+import { Div, FontSizeAttribute, BackgroundColorAttribute, TextColorAttribute, HeightAttribute, IdAttribute, StyleProperty, WidthAttribute, AwsTag, XAttribute, YAttribute, PositionAttribute, AwsIconTypeAttribute, DimensionAttribute, AzureTag, GcpTag, SkillTag, ThemeisleTag, UndrawTag, AzureIconTypeAttribute, GcpIconTypeAttribute, SkillIconTypeAttribute, ThemeisleIconTypeAttribute, UndrawIconTypeAttribute } from './generated/ast.js';
 const threshold = 2;
 
 export class YadlFormatter extends AbstractFormatter {
@@ -62,8 +62,8 @@ export class YadlFormatter extends AbstractFormatter {
     protected format(node: AstNode): void {
         if (ast.isDiv(node)) {
             this.formatHtmlElement(node);
-        } else if (ast.isAwsTag(node)) {
-            this.formatAwsTagAttributes(node);
+        } else if (ast.isAwsTag(node) || ast.isAzureTag(node) || ast.isGcpTag(node) || ast.isSkillTag(node) || ast.isThemeisleTag(node) || ast.isUndrawTag(node)) {
+            this.formatIconTagAttributes(node);
         } else if (
             ast.isWidthAttribute(node) ||
             ast.isHeightAttribute(node) ||
@@ -71,6 +71,11 @@ export class YadlFormatter extends AbstractFormatter {
             ast.isXAttribute(node) ||
             ast.isYAttribute(node) ||
             ast.isAwsIconTypeAttribute(node) ||
+            ast.isAzureIconTypeAttribute(node) ||
+            ast.isGcpIconTypeAttribute(node) ||
+            ast.isSkillIconTypeAttribute(node) ||
+            ast.isThemeisleIconTypeAttribute(node) ||
+            ast.isUndrawIconTypeAttribute(node) ||
             ast.isStyleProperty(node)) {
             this.formatSimplePropertys(node);
         }
@@ -120,7 +125,7 @@ export class YadlFormatter extends AbstractFormatter {
         nodes.prepend(Formatting.oneSpace());
     }
 
-    private formatAwsTagAttributes(element: AwsTag): void {
+    private formatIconTagAttributes(element: AwsTag | AzureTag | GcpTag | SkillTag | ThemeisleTag | UndrawTag): void {
         const formatter = this.getNodeFormatter(element);
         const bracesOpen = formatter.keyword('<');
         const bracesClose = formatter.keyword('/>');
@@ -142,7 +147,7 @@ export class YadlFormatter extends AbstractFormatter {
 
     private formatSimplePropertys(
         property: WidthAttribute | HeightAttribute | IdAttribute | StyleProperty | XAttribute | YAttribute |
-            AwsIconTypeAttribute
+            AwsIconTypeAttribute | AzureIconTypeAttribute | GcpIconTypeAttribute | SkillIconTypeAttribute | ThemeisleIconTypeAttribute | UndrawIconTypeAttribute
     ): void {
         debugger
         const formatter = this.getNodeFormatter(property);
