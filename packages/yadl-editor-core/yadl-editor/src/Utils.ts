@@ -151,6 +151,12 @@ export function getAvatarTag(icons: TagAttribute[], category: string): YadlNode[
             switch (attribute.$type) {
                 case "IdAttribute":
                     currentData.id = attribute.id;
+                    if (!attribute.id) {
+                        const nameStartLine = i.$textRegion.range.start.line + 1;
+                        const nameStartColumn = i.$textRegion.range.start.character + 9;
+                        currentData.data.nameStartLine = nameStartLine;
+                        currentData.data.nameStartColumn = nameStartColumn;
+                    }
                     break;
                 case "DimensionAttribute":
                     const dimension = getDimensionAttribute(attribute);
@@ -212,20 +218,6 @@ export function getAvatarTag(icons: TagAttribute[], category: string): YadlNode[
             }
         });
 
-
-        if (currentData.dimension) {
-            currentData.data.dimensionRange = currentData.dimension.range
-            currentData.data.width = currentData.dimension.width
-            currentData.data.height = currentData.dimension.height
-        }
-
-        if (!currentData.id) {
-            const nameStartLine = i.$textRegion.range.start.line + 1;
-            const nameStartColumn = i.$textRegion.range.start.character + 9;
-            currentData.data.nameStartLine = nameStartLine;
-            currentData.data.nameStartColumn = nameStartColumn;
-        }
-
         return currentData;
     });
 
@@ -233,10 +225,10 @@ export function getAvatarTag(icons: TagAttribute[], category: string): YadlNode[
 }
 
 
-export function getBoxTag(icons: TagAttribute[], category: string): YadlNode[] {
+export function getBoxTag(icons: TagAttribute[]): YadlNode[] {
     const allTags = icons.flatMap((i: TagAttribute, index: number): YadlNode => {
         const currentData: YadlNode = {
-            id: `${category}${index + 1}`,
+            id: `Box${index + 1}`,
             data: {
                 nodeRange: i.$textRegion.range,
                 props: {}
@@ -278,6 +270,64 @@ export function getBoxTag(icons: TagAttribute[], category: string): YadlNode[] {
                     break;
                 case "ClassesAttribute":
                     currentData.data.props.classes = attribute.classes;
+                    break;
+            }
+        });
+
+        return currentData;
+    });
+
+    return allTags;
+}
+
+export function getTextTag(icons: TagAttribute[]): YadlNode[] {
+    const allTags = icons.flatMap((i: TagAttribute, index: number): YadlNode => {
+        const currentData: YadlNode = {
+            id: `text${index + 1}`,
+            data: {
+                nodeRange: i.$textRegion.range,
+                props: {}
+            },
+            type: "text",
+        };
+
+        i.attributes.forEach((attribute) => {
+            switch (attribute.$type) {
+                case "IdAttribute":
+                    currentData.id = attribute.id;
+                    if (!attribute.id) {
+                        const nameStartLine = i.$textRegion.range.start.line + 1;
+                        const nameStartColumn = i.$textRegion.range.start.character + 9;
+                        currentData.data.nameStartLine = nameStartLine;
+                        currentData.data.nameStartColumn = nameStartColumn;
+                    }
+                    break;
+                case "DimensionAttribute":
+                    const dimension = getDimensionAttribute(attribute);
+                    if (dimension) {
+                        currentData.data.dimensionRange = dimension.range
+                        currentData.data.props.width = dimension.width;
+                        currentData.data.props.height = dimension.height;
+                    } else {
+                        currentData.data.props.width = 200;
+                        currentData.data.props.height = 200;
+                    }
+                    break;
+                case "PositionAttribute":
+                    const position = getPositionAttribute(attribute);
+                    if (position) {
+                        currentData.position = position;
+                        currentData.data.positionRange = position?.range
+                    }
+                    break;
+                case "TextAttribute":
+                    currentData.data.text = attribute.text;
+                    break;
+                case "FontFamilyAttribute":
+                    currentData.data.fontFamily = attribute.fontFamily;
+                    break;
+                case "ClassesAttribute":
+                    currentData.data.classes = attribute.classes;
                     break;
             }
         });

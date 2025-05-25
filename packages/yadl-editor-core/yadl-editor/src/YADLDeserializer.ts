@@ -1,7 +1,7 @@
 import { AstNode } from "langium-ast-helper";
 import { YadlModelAstNode, Icon, Avatars, YadlEdge, TextComponents, BoxComponents, YadlNode, YadlEditorResponse, YadlNodePosition, YadlNodeDimension, Authors, IconTag, TagAttribute } from "./components/Interfaces.js";
 import { get } from "lodash";
-import { getPosition, getDimension, getIconTag, getAvatarTag, getBoxTag } from "./Utils.js";
+import { getPosition, getDimension, getIconTag, getAvatarTag, getBoxTag, getTextTag } from "./Utils.js";
 
 export function getYadlModelAst(ast: YadlModelAstNode): YadlModelAstNode {
   return {
@@ -494,15 +494,20 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
   //   allNodes = allNodes.concat(authorTags);
   // }
 
-  const boxTags = getBoxTag(astNode?.boxTags || [], "box");
+  const boxTags = getBoxTag(astNode?.boxTags || []);
   if (boxTags && boxTags.length > 0) {
     allNodes = allNodes.concat(boxTags);
   }
 
-  // const textTags = getIconTag(astNode?.textTags || [], "text", "AwsIconTypeAttribute");
-  // if (textTags && textTags.length > 0) {
-  //   allNodes = allNodes.concat(textTags);
-  // }
+  const textTags = getTextTag(astNode?.textTags || []);
+  if (textTags && textTags.length > 0) {
+    allNodes = allNodes.concat(textTags);
+    textTags.forEach((textTag) => {
+      if (textTag.data.fontFamily) {
+        allFonts.push(textTag.data.fontFamily);
+      }
+    })
+  }
 
   // const edgeTags = getIconTag(astNode?.edgeTags || [], "edge", "AwsIconTypeAttribute");
   // if (edgeTags && edgeTags.length > 0) {
