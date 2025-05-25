@@ -115,6 +115,16 @@ export interface YadlModelAstNode extends AstNode, YadlModelElement {
     edges?: YadlEdge[];
 
     awsTags?: IconTag[];
+    gcpTags?: IconTag[];
+    azureTags?: IconTag[];
+    skillTags?: IconTag[];
+    themeisleTags?: IconTag[];
+    undrawTags?: IconTag[];
+    authorTags?: IconTag[];
+    avatarTags?: IconTag[];
+    boxTags?: IconTag[];
+    textTags?: IconTag[];
+    edgeTags?: IconTag[];
 }
 
 export interface YadlEditorResponse {
@@ -164,20 +174,11 @@ export interface YadlNodePosition {
     range?: Range;
 }
 
-export interface PositionAttribute {
-    $type?: string;
-    $textRegion?: TextRegion;
-    isNegativeX?: boolean;
-    isNegativeY?: boolean;
-    attributes?: any[];
-    range?: Range;
-}
 
-export interface DimensionAttribute {
+export interface TagAttribute {
     $type?: string;
     $textRegion?: TextRegion;
     attributes?: any[];
-    range?: Range;
 }
 
 export interface YadlNodePositionAttribute {
