@@ -224,7 +224,6 @@ export function getAvatarTag(icons: TagAttribute[], category: string): YadlNode[
     return allTags;
 }
 
-
 export function getBoxTag(icons: TagAttribute[]): YadlNode[] {
     const allTags = icons.flatMap((i: TagAttribute, index: number): YadlNode => {
         const currentData: YadlNode = {
@@ -328,6 +327,60 @@ export function getTextTag(icons: TagAttribute[]): YadlNode[] {
                     break;
                 case "ClassesAttribute":
                     currentData.data.classes = attribute.classes;
+                    break;
+            }
+        });
+
+        return currentData;
+    });
+
+    return allTags;
+}
+
+export function getEdgeTag(icons: TagAttribute[]): YadlEdge[] {
+    const allTags = icons.flatMap((i: TagAttribute, index: number): YadlEdge => {
+        const currentData: YadlEdge = {
+            id: `edge${index + 1}`,
+        };
+
+        i.attributes.forEach((attribute) => {
+            switch (attribute.$type) {
+                case "ClassesAttribute":
+                    currentData.classes = attribute.classes || "";
+                    break;
+                case "EdgeLabelAttribute":
+                    currentData.label = attribute.label || "";
+                    break;
+                case "EdgeLabelStyleAttribute":
+                    try {
+                        const doubleQuoteStyle = attribute.labelStyle.replace(/'/g, '"');
+                        const parsedStyle = JSON.parse(doubleQuoteStyle);
+                        currentData.labelStyle = parsedStyle;
+                    } catch (e) {
+                    }
+                    break;
+                case "EdgeStyleAttribute":
+                    try {
+                        const doubleQuoteStyle = attribute.style.replace(/'/g, '"');
+                        const parsedStyle = JSON.parse(doubleQuoteStyle);
+                        currentData.style = parsedStyle;
+                    } catch (e) {
+                    }
+                    break;
+                case "EdgeSourceAttribute":
+                    currentData.source = attribute.source || "";
+                    break;
+                case "EdgeSourceHandleAttribute":
+                    currentData.sourceHandle = attribute.sourceHandle || "";
+                    break;
+                case "EdgeTargetAttribute":
+                    currentData.target = attribute.target || "";
+                    break;
+                case "EdgeTargetHandleAttribute":
+                    currentData.targetHandle = attribute.targetHandle || "";
+                    break;
+                case "EdgeTypeAttribute":
+                    currentData.type = attribute.type || "";
                     break;
             }
         });
