@@ -14,6 +14,16 @@ export interface Icon {
     $textRegion?: TextRegion;
 }
 
+export interface IconTag {
+    $type: string;
+    name?: string;
+    id?: string;
+    icon: string;
+    position?: YadlNodePosition;
+    dimension?: YadlNodeDimension;
+    $textRegion?: TextRegion;
+    attributes?: any[]
+}
 
 export interface YadlNode {
     id?: string;
@@ -103,6 +113,8 @@ export interface YadlModelAstNode extends AstNode, YadlModelElement {
     avatars?: Avatars[];
     authors?: Authors[];
     edges?: YadlEdge[];
+
+    awsTags?: IconTag[];
 }
 
 export interface YadlEditorResponse {
@@ -143,6 +155,32 @@ export interface TextRegion {
 }
 
 export interface YadlNodePosition {
+    $type?: string;
+    $textRegion?: TextRegion;
+    isNegativeX?: boolean;
+    isNegativeY?: boolean;
+    x: number;
+    y: number;
+    range?: Range;
+}
+
+export interface PositionAttribute {
+    $type?: string;
+    $textRegion?: TextRegion;
+    isNegativeX?: boolean;
+    isNegativeY?: boolean;
+    attributes?: any[];
+    range?: Range;
+}
+
+export interface DimensionAttribute {
+    $type?: string;
+    $textRegion?: TextRegion;
+    attributes?: any[];
+    range?: Range;
+}
+
+export interface YadlNodePositionAttribute {
     $type?: string;
     $textRegion?: TextRegion;
     isNegativeX?: boolean;

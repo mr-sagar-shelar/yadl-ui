@@ -185,7 +185,6 @@ export class YadlFormatter extends AbstractFormatter {
             AvatarGraphicTypeAttribute | BoxTypeAttribute | TextAttribute | EdgeLabelAttribute | EdgeLabelStyleAttribute |
             EdgeSourceAttribute | EdgeSourceHandleAttribute | EdgeTagAttributes | EdgeTargetHandleAttribute | EdgeTypeAttribute
     ): void {
-        debugger
         const formatter = this.getNodeFormatter(property);
         const eqToken = formatter.keyword(':');
         eqToken.append(Formatting.oneSpace());

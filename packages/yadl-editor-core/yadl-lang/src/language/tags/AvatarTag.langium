@@ -10,7 +10,7 @@ AvatarAccessoriesTypes returns string:
     'Blank' | 'Kurt' | 'Prescription01' | 'Prescription02' | 'Round' | 'Sunglasses' | 'Wayfarers';
 
 AvatarHairColorTypes returns string:
-    'Auburn' | 'Black' | 'Blonde' | 'BlondeGolden' | 'BlondeGolden' | 'Brown' | 'BrownDark' | 'PastelPink' | 'Blue' | 'Platinum' | 'Red' | 'SilverGray';
+    'Auburn' | 'Black' | 'Blonde' | 'BlondeGolden' | 'Brown' | 'BrownDark' | 'PastelPink' | 'Blue' | 'Platinum' | 'Red' | 'SilverGray';
 
 AvatarFacialHairTypes returns string:
     'Blank' | 'BeardMedium' | 'BeardLight' | 'BeardMajestic' | 'MoustacheFancy' | 'MoustacheMagnum';

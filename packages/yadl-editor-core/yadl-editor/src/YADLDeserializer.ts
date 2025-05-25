@@ -1,5 +1,5 @@
 import { AstNode } from "langium-ast-helper";
-import { YadlModelAstNode, Icon, Avatars, YadlEdge, TextComponents, BoxComponents, YadlNode, YadlEditorResponse, YadlNodePosition, YadlNodeDimension, Authors } from "./components/Interfaces.js";
+import { YadlModelAstNode, Icon, Avatars, YadlEdge, TextComponents, BoxComponents, YadlNode, YadlEditorResponse, YadlNodePosition, YadlNodeDimension, Authors, IconTag, PositionAttribute, DimensionAttribute } from "./components/Interfaces.js";
 import { get } from "lodash";
 
 export function getPosition(position: YadlNodePosition): YadlNodePosition {
@@ -30,6 +30,58 @@ export function getDimension(dimension: YadlNodeDimension): YadlNodeDimension {
   };
 };
 
+export function getDimensionAttribute(dimension: DimensionAttribute): YadlNodeDimension {
+  if (!dimension) {
+    return undefined;
+  }
+
+  const dimensionAttribute: YadlNodeDimension = {
+    $type: "Dimension",
+    width: 100,
+    height: 100,
+    range: dimension.$textRegion.range
+  };
+
+  dimension.attributes.forEach((attribute) => {
+    switch (attribute.$type) {
+      case "HeightAttribute":
+        dimensionAttribute.height = attribute.height;
+        break;
+      case "WidthAttribute":
+        dimensionAttribute.width = attribute.width;
+        break;
+    }
+  });
+
+  return dimensionAttribute;
+};
+
+export function getPositionAttribute(position: PositionAttribute): YadlNodePosition {
+  if (!position) {
+    return undefined;
+  }
+
+  const positionAttribute: YadlNodePosition = {
+    $type: "Position",
+    x: 0,
+    y: 0,
+    range: position.$textRegion.range
+  };
+
+  position.attributes.forEach((attribute) => {
+    switch (attribute.$type) {
+      case "XAttribute":
+        positionAttribute.x = attribute.x;
+        break;
+      case "YAttribute":
+        positionAttribute.y = attribute.y;
+        break;
+    }
+  });
+
+  return positionAttribute;
+};
+
 export function getYadlModelAst(ast: YadlModelAstNode): YadlModelAstNode {
   return {
     name: ast.name,
@@ -45,6 +97,7 @@ export function getYadlModelAst(ast: YadlModelAstNode): YadlModelAstNode {
     avatars: (ast.avatars as Avatars[])?.filter((e) => e.$type === "Avatars") as Avatars[],
     edges: (ast.edges as YadlEdge[])?.filter((e) => e.$type === "Edges") as YadlEdge[],
     authors: (ast.authors as Authors[])?.filter((e) => e.$type === "Authors") as Authors[],
+    awsTags: (ast.awsTags as IconTag[])?.filter((e) => e.$type === "AwsTag") as IconTag[],
   };
 }
 
@@ -469,6 +522,63 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
   if (edges && edges.length > 0) {
     allEdges = allEdges.concat(edges);
   }
+
+
+  const awsTags = astNode?.awsTags?.flatMap((i: IconTag, index: number): YadlNode => {
+    const icon: IconTag = {
+      $type: "aws",
+      icon: ""
+    };
+
+    i.attributes.forEach((attribute) => {
+      switch (attribute.$type) {
+        case "IdAttribute":
+          icon.id = attribute.id;
+          break;
+        case "DimensionAttribute":
+          icon.dimension = getDimensionAttribute(attribute);
+          break;
+        case "PositionAttribute":
+          icon.position = getPositionAttribute(attribute);
+          break;
+        case "AwsIconTypeAttribute":
+          icon.icon = attribute.icon;
+          break;
+      }
+    });
+
+    const iconData: YadlNode = {
+      id: icon.id || `AWS${index + 1}`,
+      data: {
+        icon: icon.icon,
+        category: "aws",
+        positionRange: icon.position?.range,
+        nodeRange: i.$textRegion.range
+      },
+      position: icon.position,
+      type: "icon",
+    };
+
+    if (icon.dimension) {
+      iconData.data.dimensionRange = icon.dimension.range
+      iconData.data.width = icon.dimension.width
+      iconData.data.height = icon.dimension.height
+    }
+
+    if (!i.id) {
+      const nameStartLine = i.$textRegion.range.start.line + 1;
+      const nameStartColumn = i.$textRegion.range.start.character + 9;
+      iconData.data.nameStartLine = nameStartLine;
+      iconData.data.nameStartColumn = nameStartColumn;
+    }
+
+    return iconData;
+  });
+
+  if (awsTags && awsTags.length > 0) {
+    allNodes = allNodes.concat(awsTags);
+  }
+
 
   const sortedNodes = allNodes.sort((nodeA, nodeB) => {
     if (get(nodeA, "data.nodeRange.start.line", 0) < get(nodeB, "data.nodeRange.start.line", 0)) {
