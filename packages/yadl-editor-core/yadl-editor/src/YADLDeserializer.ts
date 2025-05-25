@@ -1,143 +1,7 @@
 import { AstNode } from "langium-ast-helper";
 import { YadlModelAstNode, Icon, Avatars, YadlEdge, TextComponents, BoxComponents, YadlNode, YadlEditorResponse, YadlNodePosition, YadlNodeDimension, Authors, IconTag, TagAttribute } from "./components/Interfaces.js";
 import { get } from "lodash";
-
-export function getPosition(position: YadlNodePosition): YadlNodePosition {
-  if (!position) {
-    return {
-      $type: "Position",
-      x: 0,
-      y: 0,
-    };
-  }
-  return {
-    $type: "Position",
-    x: position.isNegativeX ? (-1 * position.x) : position.x,
-    y: position.isNegativeY ? (-1 * position.y) : position.y,
-    range: position.$textRegion?.range,
-  };
-};
-
-export function getDimension(dimension: YadlNodeDimension): YadlNodeDimension {
-  if (!dimension) {
-    return undefined;
-  }
-  return {
-    $type: "Dimension",
-    width: dimension.width,
-    height: dimension.height,
-    range: dimension.$textRegion?.range,
-  };
-};
-
-export function getDimensionAttribute(dimension: TagAttribute): YadlNodeDimension {
-  if (!dimension) {
-    return undefined;
-  }
-
-  const dimensionAttribute: YadlNodeDimension = {
-    $type: "Dimension",
-    width: 100,
-    height: 100,
-    range: dimension.$textRegion.range
-  };
-
-  dimension.attributes.forEach((attribute) => {
-    switch (attribute.$type) {
-      case "HeightAttribute":
-        dimensionAttribute.height = attribute.height;
-        break;
-      case "WidthAttribute":
-        dimensionAttribute.width = attribute.width;
-        break;
-    }
-  });
-
-  return dimensionAttribute;
-};
-
-export function getPositionAttribute(position: TagAttribute): YadlNodePosition {
-  if (!position) {
-    return undefined;
-  }
-
-  const positionAttribute: YadlNodePosition = {
-    $type: "Position",
-    x: 0,
-    y: 0,
-    range: position.$textRegion.range
-  };
-
-  position.attributes.forEach((attribute: any) => {
-    switch (attribute.$type) {
-      case "XAttribute":
-        positionAttribute.x = attribute.x;
-        break;
-      case "YAttribute":
-        positionAttribute.y = attribute.y;
-        break;
-    }
-  });
-
-  return positionAttribute;
-};
-
-export function getIconTag(icons: IconTag[], category: string, iconCase: string): YadlNode[] {
-  const allTags = icons.flatMap((i: IconTag, index: number): YadlNode => {
-    const icon: IconTag = {
-      $type: category,
-      icon: ""
-    };
-
-    i.attributes.forEach((attribute) => {
-      switch (attribute.$type) {
-        case "IdAttribute":
-          icon.id = attribute.id;
-          break;
-        case "DimensionAttribute":
-          icon.dimension = getDimensionAttribute(attribute);
-          break;
-        case "PositionAttribute":
-          icon.position = getPositionAttribute(attribute);
-          break;
-        case iconCase:
-          // case "AwsIconTypeAttribute":
-          icon.icon = attribute.icon;
-          break;
-      }
-    });
-
-    const iconData: YadlNode = {
-      id: icon.id || `${category}${index + 1}`,
-      data: {
-        icon: icon.icon,
-        category: category,
-        positionRange: icon.position?.range,
-        nodeRange: i.$textRegion.range
-      },
-      position: icon.position,
-      type: "icon",
-    };
-
-    if (icon.dimension) {
-      iconData.data.dimensionRange = icon.dimension.range
-      iconData.data.width = icon.dimension.width
-      iconData.data.height = icon.dimension.height
-    }
-
-    if (!i.id) {
-      const nameStartLine = i.$textRegion.range.start.line + 1;
-      const nameStartColumn = i.$textRegion.range.start.character + 9;
-      iconData.data.nameStartLine = nameStartLine;
-      iconData.data.nameStartColumn = nameStartColumn;
-    }
-
-    return iconData;
-  });
-
-  return allTags;
-}
-
+import { getPosition, getDimension, getIconTag, getAvatarTag } from "./Utils.js";
 
 export function getYadlModelAst(ast: YadlModelAstNode): YadlModelAstNode {
   return {
@@ -618,6 +482,11 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
   const undrawTags = getIconTag(astNode?.undrawTags || [], "undraw", "UndrawIconTypeAttribute");
   if (undrawTags && undrawTags.length > 0) {
     allNodes = allNodes.concat(undrawTags);
+  }
+
+  const avatarTags = getAvatarTag(astNode?.avatarTags || [], "avatar");
+  if (avatarTags && avatarTags.length > 0) {
+    allNodes = allNodes.concat(avatarTags);
   }
 
   // const authorTags = getIconTag(astNode?.authorTags || [], "author", "AwsIconTypeAttribute");

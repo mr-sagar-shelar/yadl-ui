@@ -25,6 +25,16 @@ export interface IconTag {
     attributes?: any[]
 }
 
+export interface AvatarTag {
+    $type: string;
+    name?: string;
+    id?: string;
+    position?: YadlNodePosition;
+    dimension?: YadlNodeDimension;
+    $textRegion?: TextRegion;
+    attributes?: any[]
+}
+
 export interface YadlNode {
     id?: string;
     type?: string;
