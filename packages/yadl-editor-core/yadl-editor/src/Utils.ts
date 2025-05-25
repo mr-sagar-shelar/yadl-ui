@@ -139,20 +139,11 @@ export function getIconTag(icons: IconTag[], category: string, iconCase: string)
 
 export function getAvatarTag(icons: TagAttribute[], category: string): YadlNode[] {
     const allTags = icons.flatMap((i: TagAttribute, index: number): YadlNode => {
-        // const icon: IconTag = {
-        //     $type: category,
-        //     icon: ""
-        // };
-
         const currentData: YadlNode = {
             id: `${category}${index + 1}`,
             data: {
-                // icon: icon.icon,
-                // category: category,
-                // positionRange: icon.position?.range,
-                // nodeRange: i.$textRegion.range
+                nodeRange: i.$textRegion.range
             },
-            // position: icon.position,
             type: "avatar",
         };
 
@@ -176,6 +167,7 @@ export function getAvatarTag(icons: TagAttribute[], category: string): YadlNode[
                     const position = getPositionAttribute(attribute);
                     if (position) {
                         currentData.position = position;
+                        currentData.data.positionRange = position?.range
                     }
                     break;
                 case "AvatarAccessoriesTypeAttribute":
@@ -233,6 +225,62 @@ export function getAvatarTag(icons: TagAttribute[], category: string): YadlNode[
             currentData.data.nameStartLine = nameStartLine;
             currentData.data.nameStartColumn = nameStartColumn;
         }
+
+        return currentData;
+    });
+
+    return allTags;
+}
+
+
+export function getBoxTag(icons: TagAttribute[], category: string): YadlNode[] {
+    const allTags = icons.flatMap((i: TagAttribute, index: number): YadlNode => {
+        const currentData: YadlNode = {
+            id: `${category}${index + 1}`,
+            data: {
+                nodeRange: i.$textRegion.range,
+                props: {}
+            },
+            type: "box",
+        };
+
+        i.attributes.forEach((attribute) => {
+            switch (attribute.$type) {
+                case "IdAttribute":
+                    currentData.id = attribute.id;
+                    if (!attribute.id) {
+                        const nameStartLine = i.$textRegion.range.start.line + 1;
+                        const nameStartColumn = i.$textRegion.range.start.character + 9;
+                        currentData.data.nameStartLine = nameStartLine;
+                        currentData.data.nameStartColumn = nameStartColumn;
+                    }
+                    break;
+                case "DimensionAttribute":
+                    const dimension = getDimensionAttribute(attribute);
+                    if (dimension) {
+                        currentData.data.dimensionRange = dimension.range
+                        currentData.data.props.width = dimension.width;
+                        currentData.data.props.height = dimension.height;
+                    } else {
+                        currentData.data.props.width = 200;
+                        currentData.data.props.height = 200;
+                    }
+                    break;
+                case "PositionAttribute":
+                    const position = getPositionAttribute(attribute);
+                    if (position) {
+                        currentData.position = position;
+                        currentData.data.positionRange = position?.range
+                    }
+                    break;
+                case "BoxTypeAttribute":
+                    currentData.data.component = attribute.type;
+                    break;
+                case "ClassesAttribute":
+                    currentData.data.props.classes = attribute.classes;
+                    break;
+            }
+        });
 
         return currentData;
     });
