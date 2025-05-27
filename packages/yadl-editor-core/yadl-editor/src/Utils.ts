@@ -71,10 +71,10 @@ export function getPositionAttribute(position: TagAttribute): YadlNodePosition {
     position.attributes.forEach((attribute: any) => {
         switch (attribute.$type) {
             case "XAttribute":
-                positionAttribute.x = attribute.x;
+                positionAttribute.x = attribute.isNegativeX ? (-1 * attribute.x) : attribute.x;
                 break;
             case "YAttribute":
-                positionAttribute.y = attribute.y;
+                positionAttribute.y = attribute.isNegativeY ? (-1 * attribute.y) : attribute.y;
                 break;
         }
     });

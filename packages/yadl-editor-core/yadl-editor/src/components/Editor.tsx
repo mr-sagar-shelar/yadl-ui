@@ -22,13 +22,14 @@ const debounceInterval = 150;
 addMonacoStyles("monaco-styles-helper");
 
 buildWorkerDefinition(
-  "yadl-client-ts/monaco-editor-workers/workers",
+  "/yadl-website/monaco-editor-workers/workers",
   new URL("", window.location.href).href,
   false,
 );
 
 export interface YadlEditorProps {
   onChange: (code: YadlEditorResponse) => void;
+  onLoad?: () => void;
   position?: number;
   code?: string;
   theme?: string;
@@ -47,7 +48,7 @@ export type YadlEditorRef = {
 function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
   let running = false;
   let timeout: number | null = null;
-  const { onChange, position = 0, code, theme = "vs-dark" } = props;
+  const { onChange, position = 0, code, theme = "vs-dark", onLoad } = props;
   const monacoEditor = useRef<MonacoEditorReactComp | null>(null);
   const [userConfig, setUserConfig] = useState<UserConfig>();
 
@@ -56,7 +57,7 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
       {
         languageId: "yadl",
         code: code,
-        worker: "yadl-client-ts/worker/yadl-server-worker.js",
+        worker: "/yadl-website/worker/yadl-server-worker.js",
         monarchGrammar: syntaxHighlighting,
 
       },
@@ -64,11 +65,6 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
     );
 
     setUserConfig(userConfig);
-    console.log(` $$$ New Code`);
-    console.log(code);
-
-    console.log(` $$$ New Theme`);
-    console.log(theme);
   }, [code, theme]);
 
   useEffect(() => {
@@ -117,6 +113,7 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
     }
     monacoEditor.current.getEditorWrapper()?.getEditor()?.focus();
     lc.onNotification("browser/DocumentChange", onCodeChange);
+    onLoad();
   };
 
   const setPosition = (position: number) => {

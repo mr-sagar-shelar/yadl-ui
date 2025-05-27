@@ -16,7 +16,7 @@ SkillTypeAttribute4 returns string:
     'skillIconRedis' | 'skillIconRabbitMQ' | 'skillIconReactiveX' | 'skillIconRaspberryPi' | 'skillIconReact' | 'skillIconReplit' | 'skillIconRemix' | 'skillIconRedHat' | 'skillIconRust' | 'skillIconRocket' | 'skillIconRider' | 'skillIconRollupJS' | 'skillIconSVG' | 'skillIconRegex' | 'skillIconSQLite' | 'skillIconRuby' | 'skillIconSentry' | 'skillIconSketchup' | 'skillIconSciKitLearn' | 'skillIconSass' | 'skillIconSolidJS' | 'skillIconSelenium' | 'skillIconRobloxStudio' | 'skillIconSequelize' | 'skillIconStackOverflow' | 'skillIconScala' | 'skillIconSolidity' | 'skillIconRedux' | 'skillIconSupabase' | 'skillIconSpring' | 'skillIconSwift' | 'skillIconTauri' | 'skillIconTerraform' | 'skillIconSublime' | 'skillIconSvelte' | 'skillIconTailwindCSS' | 'skillIconThreeJS' | 'skillIconSymfony' | 'skillIconTypeScript' | 'skillIconTwitter' | 'skillIconUbuntu' | 'skillIconStyledComponents';
 
 SkillIconTypeAttribute:
-    'icon' ':' icon=(SkillTypeAttribute1 | SkillTypeAttribute2 | SkillTypeAttribute3 | SkillTypeAttribute4);
+    'icon' ':' icon=(SkillTypeAttribute0 | SkillTypeAttribute1 | SkillTypeAttribute2 | SkillTypeAttribute3 | SkillTypeAttribute4);
 
 SkillTagAttributes:
     IdAttribute | SkillIconTypeAttribute | DimensionAttribute | PositionAttribute;
