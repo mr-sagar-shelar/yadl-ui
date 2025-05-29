@@ -25,6 +25,7 @@ import "./tags/AvatarTag"
 import "./tags/BoxTag"
 import "./tags/TextTag"
 import "./tags/EdgeTag"
+import "./tags/SvgTag"
 
 
 entry Model:
@@ -34,6 +35,6 @@ entry Model:
     | divs+=Div |
 
     awsTags+=AwsTag | azureTags+=AzureTag | gcpTags+=GcpTag | skillTags+=SkillTag | themeisleTags+=ThemeisleTag | undrawTags+=UndrawTag |
-    authorTags+=AuthorTag | avatarTags+=AvatarTag | boxTags+=BoxTag | textTags+=TextTag | edgeTags+=EdgeTag 
+    authorTags+=AuthorTag | avatarTags+=AvatarTag | boxTags+=BoxTag | textTags+=TextTag | edgeTags+=EdgeTag | svgTags+=SvgTag
     )*;
 

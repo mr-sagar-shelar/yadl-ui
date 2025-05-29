@@ -137,10 +137,10 @@ export function getIconTag(icons: IconTag[], category: string, iconCase: string)
     return allTags;
 }
 
-export function getAvatarTag(icons: TagAttribute[], category: string): YadlNode[] {
+export function getAvatarTag(icons: TagAttribute[]): YadlNode[] {
     const allTags = icons.flatMap((i: TagAttribute, index: number): YadlNode => {
         const currentData: YadlNode = {
-            id: `${category}${index + 1}`,
+            id: `avatar${index + 1}`,
             data: {
                 nodeRange: i.$textRegion.range
             },
@@ -327,6 +327,51 @@ export function getTextTag(icons: TagAttribute[]): YadlNode[] {
                     break;
                 case "ClassesAttribute":
                     currentData.data.classes = attribute.classes;
+                    break;
+            }
+        });
+
+        return currentData;
+    });
+
+    return allTags;
+}
+
+export function getSvgTag(icons: TagAttribute[]): YadlNode[] {
+    const allTags = icons.flatMap((i: TagAttribute, index: number): YadlNode => {
+        const currentData: YadlNode = {
+            id: `svg${index + 1}`,
+            data: {
+                nodeRange: i.$textRegion.range,
+                props: {}
+            },
+            position: {
+                x: 0,
+                y: 0
+            },
+            type: "svg",
+        };
+
+        i.attributes.forEach((attribute) => {
+            switch (attribute.$type) {
+                case "IdAttribute":
+                    currentData.id = attribute.id;
+                    if (!attribute.id) {
+                        const nameStartLine = i.$textRegion.range.start.line + 1;
+                        const nameStartColumn = i.$textRegion.range.start.character + 9;
+                        currentData.data.nameStartLine = nameStartLine;
+                        currentData.data.nameStartColumn = nameStartColumn;
+                    }
+                    break;
+                case "PositionAttribute":
+                    const position = getPositionAttribute(attribute);
+                    if (position) {
+                        currentData.position = position;
+                        currentData.data.positionRange = position?.range
+                    }
+                    break;
+                case "CodeAttribute":
+                    currentData.data.code = attribute.code?.replaceAll("`", "");
                     break;
             }
         });

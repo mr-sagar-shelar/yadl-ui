@@ -1,7 +1,7 @@
 import { AstNode } from "langium-ast-helper";
 import { YadlModelAstNode, Icon, Avatars, YadlEdge, TextComponents, BoxComponents, YadlNode, YadlEditorResponse, YadlNodePosition, YadlNodeDimension, Authors, IconTag, TagAttribute } from "./components/Interfaces.js";
 import { get } from "lodash";
-import { getPosition, getDimension, getIconTag, getAvatarTag, getBoxTag, getTextTag, getEdgeTag } from "./Utils.js";
+import { getPosition, getDimension, getIconTag, getAvatarTag, getBoxTag, getTextTag, getEdgeTag, getSvgTag } from "./Utils.js";
 
 export function getYadlModelAst(ast: YadlModelAstNode): YadlModelAstNode {
   return {
@@ -28,6 +28,7 @@ export function getYadlModelAst(ast: YadlModelAstNode): YadlModelAstNode {
     avatarTags: (ast.avatarTags as IconTag[])?.filter((e) => e.$type === "AvatarTag") as IconTag[],
     boxTags: (ast.boxTags as IconTag[])?.filter((e) => e.$type === "BoxTag") as IconTag[],
     textTags: (ast.textTags as IconTag[])?.filter((e) => e.$type === "TextTag") as IconTag[],
+    svgTags: (ast.svgTags as IconTag[])?.filter((e) => e.$type === "SvgTag") as IconTag[],
     edgeTags: (ast.edgeTags as IconTag[])?.filter((e) => e.$type === "EdgeTag") as IconTag[],
   };
 }
@@ -484,9 +485,14 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
     allNodes = allNodes.concat(undrawTags);
   }
 
-  const avatarTags = getAvatarTag(astNode?.avatarTags || [], "avatar");
+  const avatarTags = getAvatarTag(astNode?.avatarTags || []);
   if (avatarTags && avatarTags.length > 0) {
     allNodes = allNodes.concat(avatarTags);
+  }
+
+  const svgTags = getSvgTag(astNode?.svgTags || []);
+  if (svgTags && svgTags.length > 0) {
+    allNodes = allNodes.concat(svgTags);
   }
 
   // const authorTags = getIconTag(astNode?.authorTags || [], "author", "AwsIconTypeAttribute");

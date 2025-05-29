@@ -134,6 +134,7 @@ export interface YadlModelAstNode extends AstNode, YadlModelElement {
     avatarTags?: IconTag[];
     boxTags?: IconTag[];
     textTags?: IconTag[];
+    svgTags?: IconTag[];
     edgeTags?: IconTag[];
 }
 

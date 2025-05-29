@@ -7,7 +7,7 @@ import {
     AuthorProfilePicAttribute, AuthorProfileHandleAttribute, ClassesAttribute, FontFamilyAttribute,
     AvatarStyleAttribute, AvatarTopTypeAttribute, AvatarAccessoriesTypeAttribute, AvatarHairColorAttribute, AvatarFacialHairTypeAttribute,
     AvatarClotheTypeAttribute, AvatarEyeTypeAttribute, AvatarEyebrowTypeAttribute, AvatarMouthTypeAttribute, AvatarSkinColorAttribute,
-    BoxTypeAttribute,
+    BoxTypeAttribute, SvgTag,
     EdgeLabelAttribute,
     EdgeSourceAttribute,
     EdgeSourceHandleAttribute,
@@ -17,6 +17,7 @@ import {
     EdgeTypeAttribute,
     EdgeLabelStyleAttribute,
     TextAttribute,
+    CodeAttribute,
 } from './generated/ast.js';
 import type { YadlServices } from './yadl-module.js';
 
@@ -39,6 +40,7 @@ export function registerValidationChecks(services: YadlServices) {
         BoxTag: validator.checkUniqueBoxTagAttributes,
         EdgeTag: validator.checkUniqueEdgeTagAttributes,
         TextTag: validator.checkUniqueTextTagAttributes,
+        SvgTag: validator.checkUniqueSvgTagAttributes,
 
     };
     registry.register(checks, validator);
@@ -382,6 +384,28 @@ export class YadlValidator {
                 propertyType = 'classes';
             } else if (prop.$type === DimensionAttribute) {
                 propertyType = 'dimension';
+            } else if (prop.$type === IdAttribute) {
+                propertyType = 'id';
+            } else if (prop.$type === PositionAttribute) {
+                propertyType = 'position';
+            } else {
+                continue;
+            }
+
+            if (seenProperties.has(propertyType)) {
+                accept('error', `Duplicate property '${propertyType}' found. Properties must be unique.`, { node: prop });
+            } else {
+                seenProperties.add(propertyType);
+            }
+        }
+    }
+
+    checkUniqueSvgTagAttributes(attribute: SvgTag, accept: ValidationAcceptor): void {
+        const seenProperties = new Set<string>();
+        for (const prop of attribute.attributes) {
+            let propertyType: string;
+            if (prop.$type === CodeAttribute) {
+                propertyType = 'code';
             } else if (prop.$type === IdAttribute) {
                 propertyType = 'id';
             } else if (prop.$type === PositionAttribute) {

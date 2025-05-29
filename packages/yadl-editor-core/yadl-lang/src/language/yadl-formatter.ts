@@ -1,7 +1,7 @@
 import { type AstNode } from 'langium';
 import { AbstractFormatter, Formatting } from 'langium/lsp';
 import * as ast from './generated/ast.js';
-import { Div, FontSizeAttribute, BackgroundColorAttribute, TextColorAttribute, HeightAttribute, IdAttribute, StyleProperty, WidthAttribute, AwsTag, XAttribute, YAttribute, PositionAttribute, AwsIconTypeAttribute, DimensionAttribute, AzureTag, GcpTag, SkillTag, ThemeisleTag, UndrawTag, AzureIconTypeAttribute, GcpIconTypeAttribute, SkillIconTypeAttribute, ThemeisleIconTypeAttribute, UndrawIconTypeAttribute, AuthorTag, AvatarTag, BoxTag, EdgeTag, TextTag, FontFamilyAttribute, AuthorProfileHandleAttribute, AuthorProfilePicAttribute, AvatarStyleAttribute, AvatarFacialHairTypeAttribute, AvatarGraphicTypeAttribute, AvatarClotheTypeAttribute, AvatarTopTypeAttribute, AvatarAccessoriesTypeAttribute, AvatarHairColorAttribute, AvatarEyeTypeAttribute, AvatarEyebrowTypeAttribute, AvatarMouthTypeAttribute, AvatarSkinColorAttribute, ClassesAttribute, BoxTypeAttribute, TextAttribute, EdgeLabelAttribute, EdgeLabelStyleAttribute, EdgeSourceAttribute, EdgeSourceHandleAttribute, EdgeTagAttributes, EdgeTargetHandleAttribute, EdgeTypeAttribute } from './generated/ast.js';
+import { Div, FontSizeAttribute, BackgroundColorAttribute, TextColorAttribute, HeightAttribute, IdAttribute, StyleProperty, WidthAttribute, AwsTag, XAttribute, YAttribute, PositionAttribute, AwsIconTypeAttribute, DimensionAttribute, AzureTag, GcpTag, SkillTag, ThemeisleTag, UndrawTag, AzureIconTypeAttribute, GcpIconTypeAttribute, SkillIconTypeAttribute, ThemeisleIconTypeAttribute, UndrawIconTypeAttribute, AuthorTag, AvatarTag, BoxTag, EdgeTag, TextTag, FontFamilyAttribute, AuthorProfileHandleAttribute, AuthorProfilePicAttribute, AvatarStyleAttribute, AvatarFacialHairTypeAttribute, AvatarGraphicTypeAttribute, AvatarClotheTypeAttribute, AvatarTopTypeAttribute, AvatarAccessoriesTypeAttribute, AvatarHairColorAttribute, AvatarEyeTypeAttribute, AvatarEyebrowTypeAttribute, AvatarMouthTypeAttribute, AvatarSkinColorAttribute, ClassesAttribute, BoxTypeAttribute, TextAttribute, EdgeLabelAttribute, EdgeLabelStyleAttribute, EdgeSourceAttribute, EdgeSourceHandleAttribute, EdgeTagAttributes, EdgeTargetHandleAttribute, EdgeTypeAttribute, CodeAttribute, SvgTag } from './generated/ast.js';
 const threshold = 2;
 
 export class YadlFormatter extends AbstractFormatter {
@@ -63,7 +63,8 @@ export class YadlFormatter extends AbstractFormatter {
         if (ast.isDiv(node)) {
             this.formatHtmlElement(node);
         } else if (ast.isAwsTag(node) || ast.isAzureTag(node) || ast.isGcpTag(node) || ast.isSkillTag(node) ||
-            ast.isThemeisleTag(node) || ast.isUndrawTag(node) || ast.isAuthorTag(node) || ast.isAvatarTag(node) || ast.isBoxTag(node) || ast.isEdgeTag(node) || ast.isTextTag(node)) {
+            ast.isThemeisleTag(node) || ast.isUndrawTag(node) || ast.isAuthorTag(node) || ast.isAvatarTag(node) ||
+            ast.isBoxTag(node) || ast.isEdgeTag(node) || ast.isTextTag(node) || ast.isSvgTag(node)) {
             this.formatIconTagAttributes(node);
         } else if (
             ast.isWidthAttribute(node) ||
@@ -91,6 +92,7 @@ export class YadlFormatter extends AbstractFormatter {
             ast.isEdgeTargetAttribute(node) ||
             ast.isEdgeTargetHandleAttribute(node) ||
             ast.isEdgeTypeAttribute(node) ||
+            ast.isCodeAttribute(node) ||
 
 
             ast.isAvatarStyleAttribute(node) ||
@@ -155,7 +157,7 @@ export class YadlFormatter extends AbstractFormatter {
     }
 
     private formatIconTagAttributes(element: AwsTag | AzureTag | GcpTag | SkillTag | ThemeisleTag | UndrawTag |
-        AuthorTag | AvatarTag | BoxTag | EdgeTag | TextTag
+        AuthorTag | AvatarTag | BoxTag | EdgeTag | TextTag | SvgTag
     ): void {
         const formatter = this.getNodeFormatter(element);
         const bracesOpen = formatter.keyword('<');
@@ -183,7 +185,7 @@ export class YadlFormatter extends AbstractFormatter {
             AuthorProfilePicAttribute | AvatarStyleAttribute | AvatarTopTypeAttribute | AvatarAccessoriesTypeAttribute | AvatarHairColorAttribute |
             AvatarFacialHairTypeAttribute | AvatarClotheTypeAttribute | AvatarEyeTypeAttribute | AvatarEyebrowTypeAttribute | AvatarMouthTypeAttribute | AvatarSkinColorAttribute |
             AvatarGraphicTypeAttribute | BoxTypeAttribute | TextAttribute | EdgeLabelAttribute | EdgeLabelStyleAttribute |
-            EdgeSourceAttribute | EdgeSourceHandleAttribute | EdgeTagAttributes | EdgeTargetHandleAttribute | EdgeTypeAttribute
+            EdgeSourceAttribute | EdgeSourceHandleAttribute | EdgeTagAttributes | EdgeTargetHandleAttribute | EdgeTypeAttribute | CodeAttribute
     ): void {
         const formatter = this.getNodeFormatter(property);
         const eqToken = formatter.keyword(':');
