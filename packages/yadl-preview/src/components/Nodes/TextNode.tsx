@@ -14,9 +14,9 @@ function TextNode(properties: TextNodeProps) {
     data: { text, classes, props = {}, fontFamily },
     selected = false,
   } = properties;
-  const [currentWidth, setCurrentWidth] = useState<number>(props?.width || 50);
+  const [currentWidth, setCurrentWidth] = useState<number>(props?.width || 200);
   const [currentHeight, setCurrentHeight] = useState<number>(
-    props?.height || 50,
+    props?.height || 100,
   );
 
   return (
