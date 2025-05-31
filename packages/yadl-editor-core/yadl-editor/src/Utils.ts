@@ -1,34 +1,4 @@
-import { AstNode } from "langium-ast-helper";
-import { YadlModelAstNode, Icon, Avatars, YadlEdge, TextComponents, BoxComponents, YadlNode, YadlEditorResponse, YadlNodePosition, YadlNodeDimension, Authors, IconTag, TagAttribute } from "./components/Interfaces.js";
-import { get } from "lodash";
-
-export function getPosition(position: YadlNodePosition): YadlNodePosition {
-    if (!position) {
-        return {
-            $type: "Position",
-            x: 0,
-            y: 0,
-        };
-    }
-    return {
-        $type: "Position",
-        x: position.isNegativeX ? (-1 * position.x) : position.x,
-        y: position.isNegativeY ? (-1 * position.y) : position.y,
-        range: position.$textRegion?.range,
-    };
-};
-
-export function getDimension(dimension: YadlNodeDimension): YadlNodeDimension {
-    if (!dimension) {
-        return undefined;
-    }
-    return {
-        $type: "Dimension",
-        width: dimension.width,
-        height: dimension.height,
-        range: dimension.$textRegion?.range,
-    };
-};
+import { YadlEdge, YadlNode, YadlNodePosition, YadlNodeDimension, IconTag, TagAttribute } from "./components/Interfaces.js";
 
 export function getDimensionAttribute(dimension: TagAttribute): YadlNodeDimension {
     if (!dimension) {

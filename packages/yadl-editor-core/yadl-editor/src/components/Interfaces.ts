@@ -5,14 +5,6 @@ export interface YadlModelElement {
     name: string;
 }
 
-export interface Icon {
-    $type: string;
-    name?: string;
-    icon: string;
-    position?: YadlNodePosition;
-    dimension?: YadlNodeDimension;
-    $textRegion?: TextRegion;
-}
 
 export interface IconTag {
     $type: string;
@@ -64,66 +56,8 @@ export interface EditOperation {
     line: number
 }
 
-export interface TextComponents {
-    $type: string;
-    text?: string;
-    fontFamily?: string;
-    classes?: string;
-    position?: YadlNodePosition;
-    dimension?: YadlNodeDimension;
-}
-
-export interface BoxComponents {
-    $type: string;
-    text?: string;
-    classes?: string;
-    position?: YadlNodePosition;
-    dimension?: YadlNodeDimension;
-}
-
-export interface Avatars {
-    $type: string;
-    name?: string;
-    style?: string;
-    topType?: string;
-    accessoriesType?: string;
-    hairColor?: string;
-    facialHairType?: string;
-    clotheType?: string;
-    eyeType?: string;
-    eyebrowType?: string;
-    mouthType?: string;
-    skinColor?: string;
-    classes?: string;
-    position?: YadlNodePosition;
-    dimension?: YadlNodeDimension;
-}
-
-export interface Authors {
-    $type: string;
-    name?: string;
-    profilePic?: string;
-    handle?: string;
-    classes?: string;
-    fontFamily?: string;
-    position?: YadlNodePosition;
-    dimension?: YadlNodeDimension;
-}
-
 export interface YadlModelAstNode extends AstNode, YadlModelElement {
     $type: "YadlModel";
-    awsIcons?: Icon[];
-    gcpIcons?: Icon[];
-    azureIcons?: Icon[];
-    skillIcons?: Icon[];
-    themeisleIcons?: Icon[];
-    undrawIcons?: Icon[];
-    textComponents?: TextComponents[];
-    boxes?: BoxComponents[];
-    avatars?: Avatars[];
-    authors?: Authors[];
-    edges?: YadlEdge[];
-
     awsTags?: IconTag[];
     gcpTags?: IconTag[];
     azureTags?: IconTag[];
