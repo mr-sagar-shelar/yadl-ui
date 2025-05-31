@@ -3,8 +3,6 @@ import SearchAwsIcons from "./SearchAwsIcons"
 import SearchAzureIcons from "./SearchAzureIcons"
 import SearchGcpIcons from "./SearchGcpIcons"
 import SearchSkillIcons from "./SearchSkillIcons"
-import SearchThemeisleIcons from "./SearchThemeisleIcons"
-import SearchUndrawIcons from "./SearchUndrawIcons"
 import SearchTextComponents from "./SearchTextComponents"
 import SearchBoxes from "./SearchBoxes"
 import SearchAvatars from "./SearchAvatars"
@@ -54,25 +52,6 @@ const SearchComponents = () => {
           <SearchAzureIcons />
         </div>
 
-        <input
-          type="radio"
-          name="searchIconTabs"
-          className="tab"
-          aria-label="Themeisle"
-        />
-        <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
-          <SearchThemeisleIcons />
-        </div>
-
-        <input
-          type="radio"
-          name="searchIconTabs"
-          className="tab"
-          aria-label="Undraw"
-        />
-        <div className="tab-content bg-base-100 border-base-300 p-6 overflow-auto">
-          <SearchUndrawIcons />
-        </div>
         <input
           type="radio"
           name="searchIconTabs"

@@ -33,58 +33,43 @@ AvatarSkinColorTypes returns string:
 GraphicTypeTypes returns string:
     'Bat' | 'Cumbia' | 'Deer' | 'Diamond' | 'Hola' | 'Pizza' | 'Resist' | 'Selena' | 'Bear' | 'SkullOutline' | 'Skull';
 
-AvatarStyle:
-    'style:' style=AvatarStyleTypes;
+AvatarStyleAttribute:
+    'style' ':' style=AvatarStyleTypes;
 
-AvatarTopType:
-    'topType:' topType=AvatarTopTypes;
+AvatarTopTypeAttribute:
+    'topType' ':' topType=AvatarTopTypes;
 
-AvatarAccessoriesType:
-    'accessoriesType:' accessoriesType=AvatarAccessoriesTypes;
+AvatarAccessoriesTypeAttribute:
+    'accessoriesType' ':' accessoriesType=AvatarAccessoriesTypes;
 
-AvatarHairColor:
-    'hairColor:' hairColor=AvatarHairColorTypes;
+AvatarHairColorAttribute:
+    'hairColor' ':' hairColor=AvatarHairColorTypes;
 
-AvatarFacialHairType:
-    'facialHairType:' facialHairType=AvatarFacialHairTypes;
+AvatarFacialHairTypeAttribute:
+    'facialHairType' ':' facialHairType=AvatarFacialHairTypes;
 
-AvatarClotheType:
-    'clotheType:' clotheType=AvatarClotheTypes;
+AvatarClotheTypeAttribute:
+    'clotheType' ':' clotheType=AvatarClotheTypes;
 
-AvatarEyeType:
-    'eyeType:' eyeType=AvatarEyeTypes;
+AvatarEyeTypeAttribute:
+    'eyeType' ':' eyeType=AvatarEyeTypes;
 
-AvatarEyebrowType:
-    'eyebrowType:' eyebrowType=AvatarEyebrowTypes;
+AvatarEyebrowTypeAttribute:
+    'eyebrowType' ':' eyebrowType=AvatarEyebrowTypes;
 
-AvatarMouthType:
-    'mouthType:' mouthType=AvatarMouthTypes;
+AvatarMouthTypeAttribute:
+    'mouthType' ':' mouthType=AvatarMouthTypes;
 
-AvatarSkinColor:
-    'skinColor:' skinColor=AvatarSkinColorTypes;
+AvatarSkinColorAttribute:
+    'skinColor' ':' skinColor=AvatarSkinColorTypes;
 
-GraphicType:
-    'graphicType:' graphicType=GraphicTypeTypes;
+AvatarGraphicTypeAttribute:
+    'graphicType' ':' graphicType=GraphicTypeTypes;
 
-AvatarProps:
-    'style:' style=AvatarStyleTypes |
-    'topType:' topType=AvatarTopTypes |
-    'accessoriesType:' accessoriesType=AvatarAccessoriesTypes |
-    'hairColor:' hairColor=AvatarHairColorTypes |
-    'facialHairType:' facialHairType=AvatarFacialHairTypes |
-    'clotheType:' clotheType=AvatarClotheTypes |
-    'eyeType:' eyeType=AvatarEyeTypes |
-    'eyebrowType:' eyebrowType=AvatarEyebrowTypes |
-    'mouthType:' mouthType=AvatarMouthTypes |
-    'skinColor:' skinColor=AvatarSkinColorTypes | 
-    'graphicType:' graphicType=GraphicTypeTypes | 
-    'mouthType:' mouthType=AvatarMouthTypes;
+AvatarTagAttributes:
+    IdAttribute | DimensionAttribute | PositionAttribute | ClassesAttribute | FontFamilyAttribute |
+    AvatarStyleAttribute | AvatarTopTypeAttribute | AvatarAccessoriesTypeAttribute | AvatarHairColorAttribute | AvatarFacialHairTypeAttribute | 
+    AvatarClotheTypeAttribute | AvatarEyeTypeAttribute | AvatarEyebrowTypeAttribute | AvatarMouthTypeAttribute | AvatarSkinColorAttribute | AvatarGraphicTypeAttribute;
 
-
-Avatar:
-    '<Avatar' (name=STRING)? (props+=AvatarProps)* ('{'
-        (position=Position)?
-        (dimension=Dimension)?
-        (fontFamily=FontFamily)?
-        (classes=Classes)?
-    '}')? '>';
+AvatarTag:
+    '<Avatar' (attributes+=AvatarTagAttributes)* '/>';

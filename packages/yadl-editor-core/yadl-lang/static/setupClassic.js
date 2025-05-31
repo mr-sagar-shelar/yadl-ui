@@ -16,23 +16,87 @@ export const setupConfigClassic = () => {
         $type: "classic",
         languageId: "yadl",
         code: `// YADL is running in the web!
-aws-icon AWSSumerian aWSVRARSumerian
 
-azure-icon AzureCompute azureComputeComputeFleet
+<Svg code: \`<svg
+  viewBox="0 0 300 100"
+  xmlns="http://www.w3.org/2000/svg"
+  stroke="red"
+  fill="grey">
+  <circle cx="50" cy="50" r="40" />
+  <circle cx="150" cy="50" r="4" />
 
-gcp-icon GcpAPI gCPAiPlatform
+  <svg viewBox="0 0 10 10" x="200" width="100">
+    <circle cx="5" cy="5" r="4" />
+  </svg>
+</svg>\` />
 
-skill-icon SkillUbuntu skillIconUbuntu
+<Aws  
+id          :              "AWS1"
+dimension:     {     height      :        10        width       :       10        }      position: 
+      {       x      :      10       y   :          10         }       icon    :         aWSAnalyticsAthena    />
 
-themeisle-icon ThenmeIsle1 themeisle104
+<Azure  
+id          :              "Azure1"
+dimension:     {     height      :        10        width       :       10        }      position: 
+      {       x      :      10       y   :          10         }       icon    :         azureAnalyticsAnalysisServices    />
 
-undraw-icon Undraw1 undrawYear2022 
+<Gcp  
+id          :              "Gcp1"
+dimension:     {     height      :        10        width       :       10        }      position: 
+      {       x      :      10       y   :          10         }       icon    :         gCPAccessContextManager    />
+<Skill  
+id          :              "Skill1"
+dimension:     {     height      :        10        width       :       10        }      position: 
+      {       x      :      10       y   :          10         }       icon    :         skillIconBabel    />
+<Themeisle  
+id          :              "Themeisle1"
+dimension:     {     height      :        10        width       :       10        }      position: 
+      {       x      :      10       y   :          10         }       icon    :         themeisle101    />
+<Undraw  
+id          :              "Undraw1"
+dimension:     {     height      :        10        width       :       10        }      position: 
+      {       x      :      10       y   :          10         }       icon    :         undrawADayOff    />
 
-edge AWSSumerian => AzureCompute label:"Hello World" { type: smoothstep style:"{ stroke: 'red' }" labelStyle:"{ fill: 'red', fontWeight: 700 }" }
+<Author id    :      "Author1"     fontFamily      :      "Sarif"              profileHandle      :       "@Sagar" 
+                                    profilePic   :    "https://www.google.com" classes   :   ""  
+dimension:     {     height      :        10        width       :       10        }      position: 
+      {       x      :      10       y   :          10         } 
+         />
 
-author "Sagar Shelar" profilePic:""  { position { x: -22 y: 21 } dimension { width: 50 height: 50 } }
+<Avatar accessoriesType   :   Blank   classes   :  ""   clotheType   :   BlazerShirt   eyeType   :   Close   eyebrowType   :   Angry   facialHairType   :   BeardLight   fontFamily   :   "sdf" 
+graphicType   :   Bat hairColor   :   Auburn mouthType   :   Concerned skinColor   :   Black  style   :   Circle topType   :   Hat 
 
-avatar "AVATAR" style: Circle topType: LongHairCurly accessoriesType: Sunglasses hairColor: Blonde facialHairType: BeardMedium clotheType: GraphicShirt eyeType: Hearts eyebrowType: Angry mouthType: Grimace skinColor: DarkBrown
+dimension:     {     height      :        10        width       :       10        }      position: 
+      {       x      :      10       y   :          10         } 
+/>
+
+<Box   id   :    "Box1"    classes    :    ""   type   :   Box1 
+dimension:     {     height      :        10        width       :       10        }      position: 
+      {       x      :      10       y   :          10         } 
+/>
+
+<Text  id : "Text1"    classes    :   ""    fontFamily    :     ""     text   :    "Hello world"
+dimension:     {     height      :        10        width       :       10        }      position: 
+      {       x      :      10       y   :          10         } 
+/>
+
+<Edge   classes   :  ""  label 
+:    "Label 1"    labelStyle    :    ""    source     :     "Top"  sourceHandle   :    bottom    target    :    ""  targetHandle    :     bottom  
+type    :     smoothstep
+
+/>
+
+// <Edge AWSSumerian => AzureCompute label:"Hello World" type: smoothstep style:"{ stroke: 'red' }" labelStyle:"{ fill: 'red', fontWeight: 700 }" } />
+
+// <Author "Sagar Shelar" profilePic:""  { position : { x : -22 y : 21 } dimension : { width : 50 height : 50 } } />
+
+// <Avatar accessoriesType: Blank accessoriesType: Blank  eyeType: Close >
+
+<Div     height :         20         style =     {background-color:       "red",     font-size: 20,                text-color: "blue" } 
+width :   20>
+
+<Div style=    {   background-color:       "red",     font-size: 30,                text-color: "blue"} >
+
 `,
         useDiffEditor: false,
         languageExtensionConfig: { id: "langium" },

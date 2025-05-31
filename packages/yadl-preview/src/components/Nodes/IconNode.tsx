@@ -15,10 +15,6 @@ import * as GCPIcons from "yadl-gcp-icons";
 import { GCPIconNames } from "yadl-gcp-icons";
 import * as SkillIcons from "yadl-skill-icons";
 import { SkillIconNames } from "yadl-skill-icons";
-import * as ThemeisleIcons from "yadl-themeisle-icons";
-import { ThemeisleIconNames } from "yadl-themeisle-icons";
-import * as UndrawIcons from "yadl-undraw-icons";
-import { UndrawIconNames } from "yadl-undraw-icons";
 
 function IconNode(props: IconNodeProps) {
   const {
@@ -58,20 +54,6 @@ function IconNode(props: IconNodeProps) {
       if (iconNamePresent) {
         // @ts-ignore
         Icon = AzureIcons[AzureIconNames[icon].icon] ?? null;
-      }
-      break;
-    case "undraw":
-      iconNamePresent = UndrawIconNames[icon] != undefined;
-      if (iconNamePresent) {
-        // @ts-ignore
-        Icon = UndrawIcons[UndrawIconNames[icon].icon] ?? null;
-      }
-      break;
-    case "themeisle":
-      iconNamePresent = ThemeisleIconNames[icon] != undefined;
-      if (iconNamePresent) {
-        // @ts-ignore
-        Icon = ThemeisleIcons[ThemeisleIconNames[icon].icon] ?? null;
       }
       break;
   }

@@ -6,34 +6,38 @@ import {
   ResizeDragEvent,
   ResizeParamsWithDirection,
 } from "@xyflow/react";
-import { TextNodeProps } from "yadl-core-package";
-import { Text } from "yadl-ui-components";
 
-function TextNode(properties: TextNodeProps) {
+export interface SvgNodeProps {
+  data: {
+    name: string;
+    props?: any;
+    code: string;
+    classes: string;
+  };
+  selected: boolean;
+}
+
+function TextNode(properties: SvgNodeProps) {
   const {
-    data: { text, classes, props = {}, fontFamily },
+    data: { code = "", classes, props = {} },
     selected = false,
   } = properties;
-  const [currentWidth, setCurrentWidth] = useState<number>(props?.width || 200);
-  const [currentHeight, setCurrentHeight] = useState<number>(
-    props?.height || 100,
+  const [_currentWidth, setCurrentWidth] = useState<number>(props?.width || 50);
+  const [_currentHeight, setCurrentHeight] = useState<number>(
+    props?.height || 50,
   );
+
+  if (code == "")
+    return null;
 
   return (
     <div
       onClick={() => {
         console.log("Clicked");
       }}
-      className="overflow-hidden"
+      className={`overflow-hidden ${classes}`}
     >
-      <Text
-        text={text}
-        classes={classes}
-        fontFamily={fontFamily}
-        {...props}
-        width={currentWidth}
-        height={currentHeight}
-      />
+      <div dangerouslySetInnerHTML={{ __html: code }} />
       <NodeResizer
         color="#ff0071"
         isVisible={selected}
