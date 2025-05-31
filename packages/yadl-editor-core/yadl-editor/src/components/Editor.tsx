@@ -22,7 +22,7 @@ const debounceInterval = 150;
 addMonacoStyles("monaco-styles-helper");
 
 buildWorkerDefinition(
-  "/yadl-website/monaco-editor-workers/workers",
+  "yadl-client-ts/monaco-editor-workers/workers",
   new URL("", window.location.href).href,
   false,
 );
@@ -57,7 +57,7 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
       {
         languageId: "yadl",
         code: code,
-        worker: "/yadl-website/worker/yadl-server-worker.js",
+        worker: "yadl-client-ts/worker/yadl-server-worker.js",
         monarchGrammar: syntaxHighlighting,
 
       },

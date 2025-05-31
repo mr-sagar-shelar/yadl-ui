@@ -1,6 +1,6 @@
 import type { ValidationAcceptor, ValidationChecks } from 'langium';
 import {
-    type YadlAstType, type Div, PositionAttribute, DimensionAttribute, StyleProperty, WidthAttribute, HeightAttribute, IdAttribute,
+    type YadlAstType, PositionAttribute, DimensionAttribute, StyleProperty, WidthAttribute, HeightAttribute, IdAttribute,
     BackgroundColorAttribute, FontSizeAttribute, TextColorAttribute, YAttribute, XAttribute, SkillIconTypeAttribute, UndrawIconTypeAttribute,
     AwsTag, AzureTag, GcpTag, SkillTag, ThemeisleTag, UndrawTag, AwsIconTypeAttribute, AzureIconTypeAttribute, GcpIconTypeAttribute,
     ThemeisleIconTypeAttribute, AuthorTag, AvatarTag, AvatarGraphicTypeAttribute, BoxTag, EdgeTag, TextTag,
@@ -25,7 +25,6 @@ export function registerValidationChecks(services: YadlServices) {
     const registry = services.validation.ValidationRegistry;
     const validator = services.validation.YadlValidator;
     const checks: ValidationChecks<YadlAstType> = {
-        Div: validator.checkUniqueProperties,
         StyleProperty: validator.checkUniqueStyleAttributes,
         DimensionAttribute: validator.checkUniqueDimensionAttributes,
         PositionAttribute: validator.checkUniquePositionAttributes,
@@ -47,29 +46,6 @@ export function registerValidationChecks(services: YadlServices) {
 }
 
 export class YadlValidator {
-    checkUniqueProperties(div: Div, accept: ValidationAcceptor): void {
-        const seenProperties = new Set<string>(); // Use a Set to track seen property types
-
-        for (const prop of div.properties) {
-            let propertyType: string;
-            if (prop.$type === WidthAttribute) {
-                propertyType = 'width';
-            } else if (prop.$type === HeightAttribute) {
-                propertyType = 'height';
-            } else if (prop.$type === IdAttribute) {
-                propertyType = 'id';
-            } else {
-                continue;
-            }
-
-            if (seenProperties.has(propertyType)) {
-                accept('error', `Duplicate property '${propertyType}' found. Properties must be unique.`, { node: prop });
-            } else {
-                seenProperties.add(propertyType);
-            }
-        }
-    }
-
     checkUniqueDimensionAttributes(attribute: DimensionAttribute, accept: ValidationAcceptor): void {
         const seenProperties = new Set<string>();
         for (const prop of attribute.attributes) {

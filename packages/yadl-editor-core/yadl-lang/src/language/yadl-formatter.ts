@@ -1,7 +1,17 @@
 import { type AstNode } from 'langium';
 import { AbstractFormatter, Formatting } from 'langium/lsp';
 import * as ast from './generated/ast.js';
-import { Div, FontSizeAttribute, BackgroundColorAttribute, TextColorAttribute, HeightAttribute, IdAttribute, StyleProperty, WidthAttribute, AwsTag, XAttribute, YAttribute, PositionAttribute, AwsIconTypeAttribute, DimensionAttribute, AzureTag, GcpTag, SkillTag, ThemeisleTag, UndrawTag, AzureIconTypeAttribute, GcpIconTypeAttribute, SkillIconTypeAttribute, ThemeisleIconTypeAttribute, UndrawIconTypeAttribute, AuthorTag, AvatarTag, BoxTag, EdgeTag, TextTag, FontFamilyAttribute, AuthorProfileHandleAttribute, AuthorProfilePicAttribute, AvatarStyleAttribute, AvatarFacialHairTypeAttribute, AvatarGraphicTypeAttribute, AvatarClotheTypeAttribute, AvatarTopTypeAttribute, AvatarAccessoriesTypeAttribute, AvatarHairColorAttribute, AvatarEyeTypeAttribute, AvatarEyebrowTypeAttribute, AvatarMouthTypeAttribute, AvatarSkinColorAttribute, ClassesAttribute, BoxTypeAttribute, TextAttribute, EdgeLabelAttribute, EdgeLabelStyleAttribute, EdgeSourceAttribute, EdgeSourceHandleAttribute, EdgeTagAttributes, EdgeTargetHandleAttribute, EdgeTypeAttribute, CodeAttribute, SvgTag } from './generated/ast.js';
+import {
+    FontSizeAttribute, BackgroundColorAttribute, TextColorAttribute, HeightAttribute, IdAttribute, StyleProperty, WidthAttribute,
+    AwsTag, XAttribute, YAttribute, PositionAttribute, AwsIconTypeAttribute, DimensionAttribute, AzureTag, GcpTag, SkillTag,
+    ThemeisleTag, UndrawTag, AzureIconTypeAttribute, GcpIconTypeAttribute, SkillIconTypeAttribute, ThemeisleIconTypeAttribute,
+    UndrawIconTypeAttribute, AuthorTag, AvatarTag, BoxTag, EdgeTag, TextTag, FontFamilyAttribute, AuthorProfileHandleAttribute,
+    AuthorProfilePicAttribute, AvatarStyleAttribute, AvatarFacialHairTypeAttribute, AvatarGraphicTypeAttribute, AvatarClotheTypeAttribute,
+    AvatarTopTypeAttribute, AvatarAccessoriesTypeAttribute, AvatarHairColorAttribute, AvatarEyeTypeAttribute, AvatarEyebrowTypeAttribute,
+    AvatarMouthTypeAttribute, AvatarSkinColorAttribute, ClassesAttribute, BoxTypeAttribute, TextAttribute, EdgeLabelAttribute,
+    EdgeLabelStyleAttribute, EdgeSourceAttribute, EdgeSourceHandleAttribute, EdgeTagAttributes, EdgeTargetHandleAttribute,
+    EdgeTypeAttribute, CodeAttribute, SvgTag
+} from './generated/ast.js';
 const threshold = 2;
 
 export class YadlFormatter extends AbstractFormatter {
@@ -60,9 +70,7 @@ export class YadlFormatter extends AbstractFormatter {
     // }
 
     protected format(node: AstNode): void {
-        if (ast.isDiv(node)) {
-            this.formatHtmlElement(node);
-        } else if (ast.isAwsTag(node) || ast.isAzureTag(node) || ast.isGcpTag(node) || ast.isSkillTag(node) ||
+        if (ast.isAwsTag(node) || ast.isAzureTag(node) || ast.isGcpTag(node) || ast.isSkillTag(node) ||
             ast.isThemeisleTag(node) || ast.isUndrawTag(node) || ast.isAuthorTag(node) || ast.isAvatarTag(node) ||
             ast.isBoxTag(node) || ast.isEdgeTag(node) || ast.isTextTag(node) || ast.isSvgTag(node)) {
             this.formatIconTagAttributes(node);
@@ -119,26 +127,6 @@ export class YadlFormatter extends AbstractFormatter {
         // else if (ast.isStyleProperty(node)) {
         //     this.formatStyleElement(node);
         // }
-    }
-
-    private formatHtmlElement(element: Div): void {
-        const formatter = this.getNodeFormatter(element);
-        const bracesOpen = formatter.keyword('<');
-        const bracesClose = formatter.keyword('>');
-        bracesOpen.prepend(Formatting.noSpace());
-
-        const properties = element.properties || [];
-        const nodes = formatter.nodes(...element.properties);
-
-        if (properties.length > threshold) {
-            nodes.prepend(Formatting.newLine());
-            bracesClose.prepend(Formatting.newLine());
-            nodes.prepend(Formatting.indent());
-        }
-        else if (properties.length > 0) {
-            nodes.prepend(Formatting.oneSpace());
-            bracesClose.prepend(Formatting.oneSpace());
-        }
     }
 
     private formatLevelOneAttribute(element: DimensionAttribute | PositionAttribute): void {
