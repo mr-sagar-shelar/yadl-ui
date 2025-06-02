@@ -62,8 +62,6 @@ export interface YadlModelAstNode extends AstNode, YadlModelElement {
     gcpTags?: IconTag[];
     azureTags?: IconTag[];
     skillTags?: IconTag[];
-    themeisleTags?: IconTag[];
-    undrawTags?: IconTag[];
     authorTags?: IconTag[];
     avatarTags?: IconTag[];
     boxTags?: IconTag[];

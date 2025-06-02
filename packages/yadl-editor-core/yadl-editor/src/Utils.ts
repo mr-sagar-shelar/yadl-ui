@@ -405,3 +405,7 @@ export function getEdgeTag(icons: TagAttribute[]): YadlEdge[] {
 
     return allTags;
 }
+
+export function toPascalCase(text: string): string {
+    return text.replace(/\w+/g, function (w: any) { return w[0].toUpperCase() + w.slice(1).toLowerCase(); });
+}

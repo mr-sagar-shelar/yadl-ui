@@ -17,6 +17,7 @@ import { YadlModelAstNode } from "./index.js";
 import { getYADLData } from "../YADLDeserializer.js";
 import { EditOperation, YadlEdge, YadlEditorResponse, YadlNode } from "./Interfaces.js"
 import { get } from "lodash";
+import { toPascalCase } from "../Utils.js";
 const debounceInterval = 150;
 
 addMonacoStyles("monaco-styles-helper");
@@ -140,7 +141,7 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
 
     const range = get(node, "data.positionRange");
     if (range) {
-      const updatedText = `position { x: ${xValue} y: ${yValue} }`
+      const updatedText = `position: { x: ${xValue} y: ${yValue} }`
       const id = { major: 1, minor: 1 };
       const startLineNumber = get(range, "start.line", 0) + 1;
       const startColumn = get(range, "start.character", 0) + 1;
@@ -188,7 +189,7 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
 
     const range = get(node, "data.dimensionRange");
     const positionRange = get(node, "data.positionRange");
-    let updatedText = `dimension { width: ${width} height: ${height} }`;
+    let updatedText = `dimension: { width: ${width} height: ${height} }`;
     const id = { major: 1, minor: 1 };
 
     if (range) {
@@ -253,8 +254,9 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
       const width = Math.trunc(get(node, "data.width", 50));
       const height = Math.trunc(get(node, "data.height", 50));
       const category = get(node, "data.category", "");
+      const tagName = toPascalCase(category);
       const icon = get(node, "data.icon", "");
-      updatedText = `${category}-icon ${icon} { position { x: ${xValue} y: ${yValue} } dimension { width: ${width} height: ${height} } }\n`;
+      updatedText = `<${tagName} icon: ${icon} position: { x: ${xValue} y: ${yValue} } dimension: { width: ${width} height: ${height} } />\n`;
 
       const operation = {
         identifier: id,
@@ -273,7 +275,7 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
       const classes = get(node, "data.classes", "");
       const fontFamily = get(node, "data.fontFamily", "");
       const text = get(node, "data.text", "");
-      updatedText = `text "${text}" { position { x: ${xValue} y: ${yValue} } ${fontFamily ? "fontFamily:\ \"" + fontFamily + "\"" : ""} ${classes ? "classes: \"" + classes + "\"" : ""} }\n`;
+      updatedText = `<Text text: "${text}" position: { x: ${xValue} y: ${yValue} } ${fontFamily ? "fontFamily:\ \"" + fontFamily + "\"" : ""} ${classes ? "classes: \"" + classes + "\"" : ""} />\n`;
       const operation = {
         identifier: id,
         range: {
@@ -292,7 +294,7 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
       const height = Math.trunc(get(node, "data.props.height", 100));
       const classes = get(node, "data.props.classes", "");
       const component = get(node, "data.component", "");
-      updatedText = `box ${component} { position { x: ${xValue} y: ${yValue} } dimension { width: ${width} height: ${height} } ${classes ? "classes: \"" + classes + "\"" : ""} }\n`;
+      updatedText = `<Box type: ${component} position: { x: ${xValue} y: ${yValue} } dimension: { width: ${width} height: ${height} } ${classes ? "classes: \"" + classes + "\"" : ""} />\n`;
       const operation = {
         identifier: id,
         range: {
@@ -306,6 +308,8 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
       };
       monacoInstance.executeEdits("my-source", [operation]);
     } else if (node.type === "avatar") {
+      const width = Math.trunc(get(node, "data.width", 100));
+      const height = Math.trunc(get(node, "data.height", 100));
       const topType = get(node, "data.topType", "");
       const accessoriesType = get(node, "data.accessoriesType", "");
       const hairColor = get(node, "data.hairColor", "");
@@ -316,7 +320,7 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
       const eyebrowType = get(node, "data.eyebrowType", "");
       const mouthType = get(node, "data.mouthType", "");
       const skinColor = get(node, "data.skinColor", "");
-      updatedText = `avatar style: Circle topType: ${topType} accessoriesType: ${accessoriesType} hairColor: ${hairColor} facialHairType: ${facialHairType} clotheType: ${clotheType} eyeType: ${eyeType} eyebrowType: ${eyebrowType} mouthType: ${mouthType} skinColor: ${skinColor} { position { x: ${xValue} y: ${yValue} } }\n`;
+      updatedText = `<Avatar style: Circle topType: ${topType} graphicType: ${graphicType} accessoriesType: ${accessoriesType} hairColor: ${hairColor} facialHairType: ${facialHairType} clotheType: ${clotheType} eyeType: ${eyeType} eyebrowType: ${eyebrowType} mouthType: ${mouthType} skinColor: ${skinColor} position: { x: ${xValue} y: ${yValue} } dimension: { width: ${width} height: ${height} } />\n`;
       const operation = {
         identifier: id,
         range: {

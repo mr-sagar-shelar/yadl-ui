@@ -11,8 +11,6 @@ export function getYadlModelAst(ast: YadlModelAstNode): YadlModelAstNode {
     gcpTags: (ast.gcpTags as IconTag[])?.filter((e) => e.$type === "GcpTag") as IconTag[],
     azureTags: (ast.azureTags as IconTag[])?.filter((e) => e.$type === "AzureTag") as IconTag[],
     skillTags: (ast.skillTags as IconTag[])?.filter((e) => e.$type === "SkillTag") as IconTag[],
-    themeisleTags: (ast.themeisleTags as IconTag[])?.filter((e) => e.$type === "ThemeisleTag") as IconTag[],
-    undrawTags: (ast.undrawTags as IconTag[])?.filter((e) => e.$type === "UndrawTag") as IconTag[],
     authorTags: (ast.authorTags as IconTag[])?.filter((e) => e.$type === "AuthorTag") as IconTag[],
     avatarTags: (ast.avatarTags as IconTag[])?.filter((e) => e.$type === "AvatarTag") as IconTag[],
     boxTags: (ast.boxTags as IconTag[])?.filter((e) => e.$type === "BoxTag") as IconTag[],
@@ -46,16 +44,6 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
   const skillTags = getIconTag(astNode?.skillTags || [], "skill", "SkillIconTypeAttribute");
   if (skillTags && skillTags.length > 0) {
     allNodes = allNodes.concat(skillTags);
-  }
-
-  const themeisleTags = getIconTag(astNode?.themeisleTags || [], "themeisle", "ThemeisleIconTypeAttribute");
-  if (themeisleTags && themeisleTags.length > 0) {
-    allNodes = allNodes.concat(themeisleTags);
-  }
-
-  const undrawTags = getIconTag(astNode?.undrawTags || [], "undraw", "UndrawIconTypeAttribute");
-  if (undrawTags && undrawTags.length > 0) {
-    allNodes = allNodes.concat(undrawTags);
   }
 
   const avatarTags = getAvatarTag(astNode?.avatarTags || []);

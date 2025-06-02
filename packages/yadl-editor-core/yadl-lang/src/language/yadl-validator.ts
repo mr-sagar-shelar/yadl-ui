@@ -1,9 +1,9 @@
 import type { ValidationAcceptor, ValidationChecks } from 'langium';
 import {
     type YadlAstType, PositionAttribute, DimensionAttribute, StyleProperty, WidthAttribute, HeightAttribute, IdAttribute,
-    BackgroundColorAttribute, FontSizeAttribute, TextColorAttribute, YAttribute, XAttribute, SkillIconTypeAttribute, UndrawIconTypeAttribute,
-    AwsTag, AzureTag, GcpTag, SkillTag, ThemeisleTag, UndrawTag, AwsIconTypeAttribute, AzureIconTypeAttribute, GcpIconTypeAttribute,
-    ThemeisleIconTypeAttribute, AuthorTag, AvatarTag, AvatarGraphicTypeAttribute, BoxTag, EdgeTag, TextTag,
+    BackgroundColorAttribute, FontSizeAttribute, TextColorAttribute, YAttribute, XAttribute, SkillIconTypeAttribute,
+    AwsTag, AzureTag, GcpTag, SkillTag, AwsIconTypeAttribute, AzureIconTypeAttribute, GcpIconTypeAttribute,
+    AuthorTag, AvatarTag, AvatarGraphicTypeAttribute, BoxTag, EdgeTag, TextTag,
     AuthorProfilePicAttribute, AuthorProfileHandleAttribute, ClassesAttribute, FontFamilyAttribute,
     AvatarStyleAttribute, AvatarTopTypeAttribute, AvatarAccessoriesTypeAttribute, AvatarHairColorAttribute, AvatarFacialHairTypeAttribute,
     AvatarClotheTypeAttribute, AvatarEyeTypeAttribute, AvatarEyebrowTypeAttribute, AvatarMouthTypeAttribute, AvatarSkinColorAttribute,
@@ -32,8 +32,6 @@ export function registerValidationChecks(services: YadlServices) {
         AzureTag: validator.checkUniqueAzureTagAttributes,
         GcpTag: validator.checkUniqueGcpTagAttributes,
         SkillTag: validator.checkUniqueSkillTagAttributes,
-        ThemeisleTag: validator.checkUniqueThemeisleTagAttributes,
-        UndrawTag: validator.checkUniqueUndrawTagAttributes,
         AuthorTag: validator.checkUniqueAuthorTagAttributes,
         AvatarTag: validator.checkUniqueAvatarTagAttributes,
         BoxTag: validator.checkUniqueBoxTagAttributes,
@@ -143,54 +141,6 @@ export class YadlValidator {
         for (const prop of attribute.attributes) {
             let propertyType: string;
             if (prop.$type === SkillIconTypeAttribute) {
-                propertyType = 'icon';
-            } else if (prop.$type === DimensionAttribute) {
-                propertyType = 'dimension';
-            } else if (prop.$type === IdAttribute) {
-                propertyType = 'id';
-            } else if (prop.$type === PositionAttribute) {
-                propertyType = 'position';
-            } else {
-                continue;
-            }
-
-            if (seenProperties.has(propertyType)) {
-                accept('error', `Duplicate property '${propertyType}' found. Properties must be unique.`, { node: prop });
-            } else {
-                seenProperties.add(propertyType);
-            }
-        }
-    }
-
-    checkUniqueThemeisleTagAttributes(attribute: ThemeisleTag, accept: ValidationAcceptor): void {
-        const seenProperties = new Set<string>();
-        for (const prop of attribute.attributes) {
-            let propertyType: string;
-            if (prop.$type === ThemeisleIconTypeAttribute) {
-                propertyType = 'icon';
-            } else if (prop.$type === DimensionAttribute) {
-                propertyType = 'dimension';
-            } else if (prop.$type === IdAttribute) {
-                propertyType = 'id';
-            } else if (prop.$type === PositionAttribute) {
-                propertyType = 'position';
-            } else {
-                continue;
-            }
-
-            if (seenProperties.has(propertyType)) {
-                accept('error', `Duplicate property '${propertyType}' found. Properties must be unique.`, { node: prop });
-            } else {
-                seenProperties.add(propertyType);
-            }
-        }
-    }
-
-    checkUniqueUndrawTagAttributes(attribute: UndrawTag, accept: ValidationAcceptor): void {
-        const seenProperties = new Set<string>();
-        for (const prop of attribute.attributes) {
-            let propertyType: string;
-            if (prop.$type === UndrawIconTypeAttribute) {
                 propertyType = 'icon';
             } else if (prop.$type === DimensionAttribute) {
                 propertyType = 'dimension';

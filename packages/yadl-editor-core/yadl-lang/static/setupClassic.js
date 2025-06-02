@@ -48,14 +48,6 @@ dimension:     {     height      :        10        width       :       10      
 id          :              "Skill1"
 dimension:     {     height      :        10        width       :       10        }      position: 
       {       x      :      10       y   :          10         }       icon    :         skillIconBabel    />
-<Themeisle  
-id          :              "Themeisle1"
-dimension:     {     height      :        10        width       :       10        }      position: 
-      {       x      :      10       y   :          10         }       icon    :         themeisle101    />
-<Undraw  
-id          :              "Undraw1"
-dimension:     {     height      :        10        width       :       10        }      position: 
-      {       x      :      10       y   :          10         }       icon    :         undrawADayOff    />
 
 <Author id    :      "Author1"     fontFamily      :      "Sarif"              profileHandle      :       "@Sagar" 
                                     profilePic   :    "https://www.google.com" classes   :   ""  
