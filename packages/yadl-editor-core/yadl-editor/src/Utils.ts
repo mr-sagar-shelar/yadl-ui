@@ -368,6 +368,9 @@ export function getAuthorTag(icons: TagAttribute[]): YadlNode[] {
                 case "AuthorNameClassesAttribute":
                     currentData.data.nameClasses = attribute.nameClasses;
                     break;
+                case "AuthorNameFontFamilyAttribute":
+                    currentData.data.nameFontFamily = attribute.nameFontFamily;
+                    break;
                 case "AuthorCaptionFontFamilyAttribute":
                     currentData.data.captionFontFamily = attribute.captionFontFamily;
                     break;

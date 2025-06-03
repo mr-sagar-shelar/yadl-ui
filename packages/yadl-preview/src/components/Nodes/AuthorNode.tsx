@@ -1,4 +1,4 @@
-import { memo, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import {
   Handle,
   Position,
@@ -16,10 +16,15 @@ export interface AuthorNodeProps {
 function AuthorNode(properties: AuthorNodeProps) {
   const { data, selected = false,
   } = properties;
-  const [currentWidth, setCurrentWidth] = useState<number>(data.width || 200);
+  const [currentWidth, setCurrentWidth] = useState<number>(data?.props?.width || 200);
   const [currentHeight, setCurrentHeight] = useState<number>(
-    data.height || 100,
+    data?.props?.height || 100,
   );
+
+  useEffect(() => {
+    setCurrentWidth(data?.props?.width);
+    setCurrentHeight(data?.props?.height);
+  }, [data?.props?.width, data?.props?.height])
 
   return (
     <label>

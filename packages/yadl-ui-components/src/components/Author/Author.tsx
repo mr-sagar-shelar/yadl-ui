@@ -15,20 +15,25 @@ export type AuthorProps = {
 };
 
 const Author = (props: AuthorProps) => {
-  const { width = 80, height = 80, src, name = "Sagar Shelar", caption = "Frontend Developer",
+  const { width = 100, height = 50, src, name = "Sagar Shelar", caption = "Frontend Developer",
     imageClasses = "inline-block relative object-cover object-center !rounded-full",
     captionClasses = "text-base-content/70 text-sm", nameClasses = "text-base-content font-semibold",
-    classes = "flex items-center gap-4" } = props;
+    classes = "flex items-center gap-4", nameFontFamily = "", captionFontFamily = "" } = props;
   return (
-    <div className="flex gap-2">
-      <div className={`${classes}`}>
+    <div className={`flex gap-2 overflow-hidden`} style={{ width, height }}>
+      <div
+        className={`${classes}`}
+        style={{ maxWidth: "100%", maxHeight: "100%" }}
+      >
         <img src={`${src}`}
-          className={`${imageClasses} h-[${height}px] w-[${width}px]`} />
+          style={{ maxWidth: "100%", maxHeight: "100%" }}
+          className={`${imageClasses}`}
+        />
         <div>
-          <h6 className={nameClasses}>
+          <h6 className={nameClasses} style={{ fontFamily: nameFontFamily }}>
             {name}
           </h6>
-          <p className={`${captionClasses}`}>
+          <p className={`${captionClasses}`} style={{ fontFamily: captionFontFamily }}>
             {caption}
           </p>
         </div>

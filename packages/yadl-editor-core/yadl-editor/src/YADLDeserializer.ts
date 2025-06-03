@@ -81,6 +81,14 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
   const authorTags = getAuthorTag(astNode?.authorTags || []);
   if (authorTags && authorTags.length > 0) {
     allNodes = allNodes.concat(authorTags);
+    authorTags.forEach((textTag) => {
+      if (textTag.data.nameFontFamily) {
+        allFonts.push(textTag.data.nameFontFamily);
+      }
+      if (textTag.data.captionFontFamily) {
+        allFonts.push(textTag.data.captionFontFamily);
+      }
+    })
   }
 
   const boxTags = getBoxTag(astNode?.boxTags || []);
