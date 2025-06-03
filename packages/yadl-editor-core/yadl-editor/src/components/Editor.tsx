@@ -14,7 +14,7 @@ import { buildWorkerDefinition } from "monaco-editor-workers";
 import { deserializeAST, DocumentChangeResponse } from "langium-ast-helper";
 import syntaxHighlighting from "./yadl.monarch.js";
 import { YadlModelAstNode } from "./index.js";
-import { getYADLData } from "../YADLDeserializer.js";
+import { getErrorData, getYADLData } from "../YADLDeserializer.js";
 import { EditOperation, YadlEdge, YadlEditorResponse, YadlNode } from "./Interfaces.js"
 import { get } from "lodash";
 import { toPascalCase } from "../Utils.js";
@@ -96,9 +96,12 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
 
     timeout = window.setTimeout(async () => {
       running = true;
-      const ast = deserializeAST(resp.content) as YadlModelAstNode;
-      const deserializedContent = getYADLData(ast);
-      onChange(deserializedContent)
+      if (resp.diagnostics?.length > 0) {
+        onChange(getErrorData(resp.diagnostics))
+      } else {
+        const ast = deserializeAST(resp.content) as YadlModelAstNode;
+        onChange(getYADLData(ast))
+      }
       running = false;
     }, debounceInterval);
   };
@@ -258,6 +261,43 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
       const icon = get(node, "data.icon", "");
       updatedText = `<${tagName} icon: ${icon} position: { x: ${xValue} y: ${yValue} } dimension: { width: ${width} height: ${height} } />\n`;
 
+      const operation = {
+        identifier: id,
+        range: {
+          startLineNumber: startLineNumber,
+          startColumn: startColumn,
+          endLineNumber: endLineNumber,
+          endColumn: endColumn,
+        },
+        text: updatedText,
+        forceMoveMarkers: true,
+      };
+      monacoInstance.executeEdits("my-source", [operation]);
+    }
+    else if (node.type === "author") {
+      const width = Math.trunc(get(node, "data.width", 300));
+      const height = Math.trunc(get(node, "data.height", 200));
+      const src = get(node, "data.src", "");
+      const name = get(node, "data.name", "");
+      const caption = get(node, "data.caption", "");
+      const imageClasses = get(node, "data.imageClasses", "");
+      const captionClasses = get(node, "data.captionClasses", "");
+      const nameClasses = get(node, "data.nameClasses", "");
+      const nameFontFamily = get(node, "data.nameFontFamily", "");
+      const captionFontFamily = get(node, "data.nameClasses", "");
+      const classes = get(node, "data.classes", "");
+      updatedText = `<Author src: "${src}" 
+            position: { x: ${xValue} y: ${yValue} } 
+            dimension: { width: ${width} height: ${height} }
+            ${name ? "name:\ \"" + name + "\"" : ""} 
+            ${caption ? "caption:\ \"" + caption + "\"" : ""} 
+            ${imageClasses ? "imageClasses:\ \"" + imageClasses + "\"" : ""} 
+            ${captionClasses ? "captionClasses:\ \"" + captionClasses + "\"" : ""} 
+            ${nameClasses ? "nameClasses:\ \"" + nameClasses + "\"" : ""} 
+            ${nameFontFamily ? "nameFontFamily:\ \"" + nameFontFamily + "\"" : ""} 
+            ${captionFontFamily ? "captionFontFamily:\ \"" + captionFontFamily + "\"" : ""} 
+            ${classes ? "classes: \"" + classes + "\"" : ""} 
+            />\n`;
       const operation = {
         identifier: id,
         range: {

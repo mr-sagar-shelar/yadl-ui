@@ -1,13 +1,33 @@
 import "../common"
 
-AuthorProfilePicAttribute:
-    'profilePic' ':' profilePic=STRING;
+AuthorSrcAttribute:
+    'src' ':' src=STRING;
 
-AuthorProfileHandleAttribute:
-    'profileHandle' ':' profileHandle=STRING;
+AuthorNameAttribute:
+    'name' ':' name=STRING;
+
+AuthorCaptionAttribute:
+    'caption' ':' caption=STRING;
+
+AuthorImageClassesAttribute:
+    'imageClasses' ':' imageClasses=STRING;
+
+AuthorCaptionClassesAttribute:
+    'captionClasses' ':' captionClasses=STRING;
+
+AuthorNameClassesAttribute:
+    'nameClasses' ':' nameClasses=STRING;
+
+AuthorNameFontFamilyAttribute:
+    'nameFontFamily' ':' nameFontFamily=STRING;
+
+AuthorCaptionFontFamilyAttribute:
+    'captionFontFamily' ':' captionFontFamily=STRING;
 
 AuthorTagAttributes:
-    IdAttribute | AuthorProfilePicAttribute | AuthorProfileHandleAttribute | DimensionAttribute | PositionAttribute | ClassesAttribute | FontFamilyAttribute;
+    IdAttribute | DimensionAttribute | PositionAttribute | ClassesAttribute | AuthorSrcAttribute | AuthorNameAttribute |
+    AuthorCaptionAttribute | AuthorImageClassesAttribute | AuthorCaptionClassesAttribute | AuthorNameClassesAttribute |
+    AuthorNameFontFamilyAttribute | AuthorCaptionFontFamilyAttribute;
 
 AuthorTag:
     '<Author' (attributes+=AuthorTagAttributes)* '/>';

@@ -64,7 +64,7 @@ function IconNode(props: IconNodeProps) {
   }, [width, height])
 
   return (
-    <label htmlFor="properties-drawer">
+    <label>
       <div
         onClick={() => {
           console.log("Clicked");

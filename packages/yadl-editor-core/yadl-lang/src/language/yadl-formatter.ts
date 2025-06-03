@@ -4,13 +4,13 @@ import * as ast from './generated/ast.js';
 import {
     FontSizeAttribute, BackgroundColorAttribute, TextColorAttribute, HeightAttribute, IdAttribute, StyleProperty, WidthAttribute,
     AwsTag, XAttribute, YAttribute, PositionAttribute, AwsIconTypeAttribute, DimensionAttribute, AzureTag, GcpTag, SkillTag,
-    AzureIconTypeAttribute, GcpIconTypeAttribute, SkillIconTypeAttribute,
-    AuthorTag, AvatarTag, BoxTag, EdgeTag, TextTag, FontFamilyAttribute, AuthorProfileHandleAttribute,
-    AuthorProfilePicAttribute, AvatarStyleAttribute, AvatarFacialHairTypeAttribute, AvatarGraphicTypeAttribute, AvatarClotheTypeAttribute,
+    AzureIconTypeAttribute, GcpIconTypeAttribute, SkillIconTypeAttribute, AuthorNameAttribute, AuthorCaptionAttribute,
+    AuthorTag, AvatarTag, BoxTag, EdgeTag, TextTag, FontFamilyAttribute, AuthorImageClassesAttribute, AuthorCaptionClassesAttribute,
+    AvatarStyleAttribute, AvatarFacialHairTypeAttribute, AvatarGraphicTypeAttribute, AvatarClotheTypeAttribute, AuthorCaptionFontFamilyAttribute,
     AvatarTopTypeAttribute, AvatarAccessoriesTypeAttribute, AvatarHairColorAttribute, AvatarEyeTypeAttribute, AvatarEyebrowTypeAttribute,
     AvatarMouthTypeAttribute, AvatarSkinColorAttribute, ClassesAttribute, BoxTypeAttribute, TextAttribute, EdgeLabelAttribute,
     EdgeLabelStyleAttribute, EdgeSourceAttribute, EdgeSourceHandleAttribute, EdgeTagAttributes, EdgeTargetHandleAttribute,
-    EdgeTypeAttribute, CodeAttribute, SvgTag
+    EdgeTypeAttribute, CodeAttribute, SvgTag, AuthorSrcAttribute, AuthorNameClassesAttribute, AuthorNameFontFamilyAttribute,
 } from './generated/ast.js';
 const threshold = 2;
 
@@ -86,12 +86,19 @@ export class YadlFormatter extends AbstractFormatter {
             ast.isGcpIconTypeAttribute(node) ||
             ast.isSkillIconTypeAttribute(node) ||
             ast.isFontFamilyAttribute(node) ||
-            ast.isAuthorProfileHandleAttribute(node) ||
-            ast.isAuthorProfilePicAttribute(node) ||
             ast.isBoxTypeAttribute(node) ||
             ast.isTextAttribute(node) ||
             ast.isEdgeLabelAttribute(node) ||
             ast.isEdgeLabelStyleAttribute(node) ||
+
+            ast.isAuthorSrcAttribute(node) ||
+            ast.isAuthorNameAttribute(node) ||
+            ast.isAuthorCaptionAttribute(node) ||
+            ast.isAuthorImageClassesAttribute(node) ||
+            ast.isAuthorCaptionClassesAttribute(node) ||
+            ast.isAuthorNameClassesAttribute(node) ||
+            ast.isAuthorNameFontFamilyAttribute(node) ||
+            ast.isAuthorCaptionFontFamilyAttribute(node) ||
 
             ast.isEdgeSourceAttribute(node) ||
             ast.isEdgeSourceHandleAttribute(node) ||
@@ -167,11 +174,12 @@ export class YadlFormatter extends AbstractFormatter {
     private formatSimplePropertys(
         property: WidthAttribute | HeightAttribute | IdAttribute | StyleProperty | XAttribute | YAttribute | ClassesAttribute |
             AwsIconTypeAttribute | AzureIconTypeAttribute | GcpIconTypeAttribute | SkillIconTypeAttribute |
-            FontFamilyAttribute | AuthorProfileHandleAttribute |
-            AuthorProfilePicAttribute | AvatarStyleAttribute | AvatarTopTypeAttribute | AvatarAccessoriesTypeAttribute | AvatarHairColorAttribute |
+            FontFamilyAttribute | AvatarStyleAttribute | AvatarTopTypeAttribute | AvatarAccessoriesTypeAttribute | AvatarHairColorAttribute |
             AvatarFacialHairTypeAttribute | AvatarClotheTypeAttribute | AvatarEyeTypeAttribute | AvatarEyebrowTypeAttribute | AvatarMouthTypeAttribute | AvatarSkinColorAttribute |
             AvatarGraphicTypeAttribute | BoxTypeAttribute | TextAttribute | EdgeLabelAttribute | EdgeLabelStyleAttribute |
-            EdgeSourceAttribute | EdgeSourceHandleAttribute | EdgeTagAttributes | EdgeTargetHandleAttribute | EdgeTypeAttribute | CodeAttribute
+            EdgeSourceAttribute | EdgeSourceHandleAttribute | EdgeTagAttributes | EdgeTargetHandleAttribute | EdgeTypeAttribute | CodeAttribute |
+            AuthorSrcAttribute | AuthorNameAttribute | AuthorCaptionAttribute | AuthorImageClassesAttribute | AuthorCaptionClassesAttribute | AuthorNameClassesAttribute |
+            AuthorNameFontFamilyAttribute | AuthorCaptionFontFamilyAttribute
     ): void {
         const formatter = this.getNodeFormatter(property);
         const eqToken = formatter.keyword(':');

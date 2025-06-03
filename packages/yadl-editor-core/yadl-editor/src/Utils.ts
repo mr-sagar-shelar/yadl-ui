@@ -307,6 +307,79 @@ export function getTextTag(icons: TagAttribute[]): YadlNode[] {
     return allTags;
 }
 
+export function getAuthorTag(icons: TagAttribute[]): YadlNode[] {
+    const allTags = icons.flatMap((i: TagAttribute, index: number): YadlNode => {
+        const currentData: YadlNode = {
+            id: `author${index + 1}`,
+            data: {
+                nodeRange: i.$textRegion.range,
+                props: {}
+            },
+            type: "author",
+        };
+
+        i.attributes.forEach((attribute) => {
+            switch (attribute.$type) {
+                case "IdAttribute":
+                    currentData.id = attribute.id;
+                    if (!attribute.id) {
+                        const nameStartLine = i.$textRegion.range.start.line + 1;
+                        const nameStartColumn = i.$textRegion.range.start.character + 9;
+                        currentData.data.nameStartLine = nameStartLine;
+                        currentData.data.nameStartColumn = nameStartColumn;
+                    }
+                    break;
+                case "DimensionAttribute":
+                    const dimension = getDimensionAttribute(attribute);
+                    if (dimension) {
+                        currentData.data.dimensionRange = dimension.range
+                        currentData.data.props.width = dimension.width;
+                        currentData.data.props.height = dimension.height;
+                    } else {
+                        currentData.data.props.width = 200;
+                        currentData.data.props.height = 200;
+                    }
+                    break;
+                case "PositionAttribute":
+                    const position = getPositionAttribute(attribute);
+                    if (position) {
+                        currentData.position = position;
+                        currentData.data.positionRange = position?.range
+                    }
+                    break;
+                case "AuthorSrcAttribute":
+                    currentData.data.src = attribute.src;
+                    break;
+                case "AuthorNameAttribute":
+                    currentData.data.name = attribute.name;
+                    break;
+                case "ClassesAttribute":
+                    currentData.data.classes = attribute.classes;
+                    break;
+                case "AuthorCaptionAttribute":
+                    currentData.data.caption = attribute.caption;
+                    break;
+                case "AuthorImageClassesAttribute":
+                    currentData.data.imageClasses = attribute.imageClasses;
+                    break;
+                case "AuthorCaptionClassesAttribute":
+                    currentData.data.captionClasses = attribute.captionClasses;
+                    break;
+                case "AuthorNameClassesAttribute":
+                    currentData.data.nameClasses = attribute.nameClasses;
+                    break;
+                case "AuthorCaptionFontFamilyAttribute":
+                    currentData.data.captionFontFamily = attribute.captionFontFamily;
+                    break;
+            }
+        });
+
+        return currentData;
+    });
+
+    return allTags;
+}
+
 export function getSvgTag(icons: TagAttribute[]): YadlNode[] {
     const allTags = icons.flatMap((i: TagAttribute, index: number): YadlNode => {
         const currentData: YadlNode = {
