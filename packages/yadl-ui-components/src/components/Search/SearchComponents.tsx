@@ -5,7 +5,7 @@ import SearchBoxes from "./SearchBoxes"
 const SearchComponents = () => {
   return (
     <>
-      <div className="w-full px-5 h-full overflow-hidden pb-15">
+      <div className="w-full px-5 h-full overflow-hidden pb-15 flex">
         <SearchBoxes />
       </div>
     </>

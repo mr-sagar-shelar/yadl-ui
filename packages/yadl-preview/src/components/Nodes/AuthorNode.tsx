@@ -1,4 +1,4 @@
-import { memo, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import {
   Handle,
   Position,
@@ -6,28 +6,25 @@ import {
   ResizeDragEvent,
   ResizeParamsWithDirection,
 } from "@xyflow/react";
-import { BoxNodeProps } from "yadl-core-package";
-import * as Boxes from "yadl-ui-components";
+import { Author } from "yadl-ui-components";
 
-function BoxNode(properties: BoxNodeProps) {
-  const {
-    data: { component, props },
-    selected = false,
+export interface AuthorNodeProps {
+  data: any;
+  selected: boolean;
+}
+
+function AuthorNode(properties: AuthorNodeProps) {
+  const { data, selected = false,
   } = properties;
-  const [currentWidth, setCurrentWidth] = useState<number>(props.width || 50);
+  const [currentWidth, setCurrentWidth] = useState<number>(data?.props?.width || 200);
   const [currentHeight, setCurrentHeight] = useState<number>(
-    props.height || 50,
+    data?.props?.height || 100,
   );
 
-  let iconNamePresent: boolean = false;
-  let Icon = null;
-
-  // @ts-ignore
-  iconNamePresent = Boxes[component] != undefined;
-  if (iconNamePresent) {
-    // @ts-ignore
-    Icon = Boxes[component] ?? null;
-  }
+  useEffect(() => {
+    setCurrentWidth(data?.props?.width);
+    setCurrentHeight(data?.props?.height);
+  }, [data?.props?.width, data?.props?.height])
 
   return (
     <label>
@@ -36,9 +33,7 @@ function BoxNode(properties: BoxNodeProps) {
           console.log("Clicked");
         }}
       >
-        {iconNamePresent && (
-          <Icon {...props} width={currentWidth} height={currentHeight} />
-        )}
+        <Author {...data} width={currentWidth} height={currentHeight} />
         <NodeResizer
           color="#ff0071"
           isVisible={selected}
@@ -103,6 +98,6 @@ function BoxNode(properties: BoxNodeProps) {
   );
 }
 
-const Memo = memo(BoxNode);
+const Memo = memo(AuthorNode);
 
 export default Memo;

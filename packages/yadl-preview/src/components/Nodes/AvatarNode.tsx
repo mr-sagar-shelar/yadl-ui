@@ -1,4 +1,4 @@
-import { memo, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import {
   Handle,
   Position,
@@ -18,6 +18,12 @@ function AvatarNode(props: AvatarNodeProps) {
   const [currentHeight, setCurrentHeight] = useState<number>(
     data?.height || 200,
   );
+
+  useEffect(() => {
+    setCurrentWidth(data?.width || 200);
+    setCurrentHeight(data?.height || 200);
+  }, [data?.width, data?.height])
+
   return (
     <div
       onClick={() => {

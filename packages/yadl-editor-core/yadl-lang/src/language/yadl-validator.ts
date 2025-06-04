@@ -1,14 +1,14 @@
 import type { ValidationAcceptor, ValidationChecks } from 'langium';
 import {
     type YadlAstType, PositionAttribute, DimensionAttribute, StyleProperty, WidthAttribute, HeightAttribute, IdAttribute,
-    BackgroundColorAttribute, FontSizeAttribute, TextColorAttribute, YAttribute, XAttribute, SkillIconTypeAttribute, UndrawIconTypeAttribute,
-    AwsTag, AzureTag, GcpTag, SkillTag, ThemeisleTag, UndrawTag, AwsIconTypeAttribute, AzureIconTypeAttribute, GcpIconTypeAttribute,
-    ThemeisleIconTypeAttribute, AuthorTag, AvatarTag, AvatarGraphicTypeAttribute, BoxTag, EdgeTag, TextTag,
-    AuthorProfilePicAttribute, AuthorProfileHandleAttribute, ClassesAttribute, FontFamilyAttribute,
+    BackgroundColorAttribute, FontSizeAttribute, TextColorAttribute, YAttribute, XAttribute, SkillIconTypeAttribute,
+    AwsTag, AzureTag, GcpTag, SkillTag, AwsIconTypeAttribute, AzureIconTypeAttribute, GcpIconTypeAttribute,
+    AuthorTag, AvatarTag, AvatarGraphicTypeAttribute, BoxTag, EdgeTag, TextTag, AuthorCaptionClassesAttribute,
+    ClassesAttribute, FontFamilyAttribute, AuthorNameAttribute, AuthorCaptionAttribute, AuthorImageClassesAttribute,
     AvatarStyleAttribute, AvatarTopTypeAttribute, AvatarAccessoriesTypeAttribute, AvatarHairColorAttribute, AvatarFacialHairTypeAttribute,
     AvatarClotheTypeAttribute, AvatarEyeTypeAttribute, AvatarEyebrowTypeAttribute, AvatarMouthTypeAttribute, AvatarSkinColorAttribute,
-    BoxTypeAttribute, SvgTag,
-    EdgeLabelAttribute,
+    BoxTypeAttribute, SvgTag, AuthorSrcAttribute, AuthorNameClassesAttribute, AuthorNameFontFamilyAttribute,
+    EdgeLabelAttribute, AuthorCaptionFontFamilyAttribute,
     EdgeSourceAttribute,
     EdgeSourceHandleAttribute,
     EdgeStyleAttribute,
@@ -32,8 +32,6 @@ export function registerValidationChecks(services: YadlServices) {
         AzureTag: validator.checkUniqueAzureTagAttributes,
         GcpTag: validator.checkUniqueGcpTagAttributes,
         SkillTag: validator.checkUniqueSkillTagAttributes,
-        ThemeisleTag: validator.checkUniqueThemeisleTagAttributes,
-        UndrawTag: validator.checkUniqueUndrawTagAttributes,
         AuthorTag: validator.checkUniqueAuthorTagAttributes,
         AvatarTag: validator.checkUniqueAvatarTagAttributes,
         BoxTag: validator.checkUniqueBoxTagAttributes,
@@ -162,72 +160,34 @@ export class YadlValidator {
         }
     }
 
-    checkUniqueThemeisleTagAttributes(attribute: ThemeisleTag, accept: ValidationAcceptor): void {
-        const seenProperties = new Set<string>();
-        for (const prop of attribute.attributes) {
-            let propertyType: string;
-            if (prop.$type === ThemeisleIconTypeAttribute) {
-                propertyType = 'icon';
-            } else if (prop.$type === DimensionAttribute) {
-                propertyType = 'dimension';
-            } else if (prop.$type === IdAttribute) {
-                propertyType = 'id';
-            } else if (prop.$type === PositionAttribute) {
-                propertyType = 'position';
-            } else {
-                continue;
-            }
-
-            if (seenProperties.has(propertyType)) {
-                accept('error', `Duplicate property '${propertyType}' found. Properties must be unique.`, { node: prop });
-            } else {
-                seenProperties.add(propertyType);
-            }
-        }
-    }
-
-    checkUniqueUndrawTagAttributes(attribute: UndrawTag, accept: ValidationAcceptor): void {
-        const seenProperties = new Set<string>();
-        for (const prop of attribute.attributes) {
-            let propertyType: string;
-            if (prop.$type === UndrawIconTypeAttribute) {
-                propertyType = 'icon';
-            } else if (prop.$type === DimensionAttribute) {
-                propertyType = 'dimension';
-            } else if (prop.$type === IdAttribute) {
-                propertyType = 'id';
-            } else if (prop.$type === PositionAttribute) {
-                propertyType = 'position';
-            } else {
-                continue;
-            }
-
-            if (seenProperties.has(propertyType)) {
-                accept('error', `Duplicate property '${propertyType}' found. Properties must be unique.`, { node: prop });
-            } else {
-                seenProperties.add(propertyType);
-            }
-        }
-    }
-
     checkUniqueAuthorTagAttributes(attribute: AuthorTag, accept: ValidationAcceptor): void {
         const seenProperties = new Set<string>();
         for (const prop of attribute.attributes) {
             let propertyType: string;
-            if (prop.$type === AuthorProfilePicAttribute) {
-                propertyType = 'profilePic';
-            } else if (prop.$type === AuthorProfileHandleAttribute) {
-                propertyType = 'profileHandle';
+            if (prop.$type === AuthorSrcAttribute) {
+                propertyType = 'src';
+            } else if (prop.$type === AuthorNameAttribute) {
+                propertyType = 'name';
             } else if (prop.$type === ClassesAttribute) {
                 propertyType = 'classes';
-            } else if (prop.$type === FontFamilyAttribute) {
-                propertyType = 'fontFamily';
+            } else if (prop.$type === AuthorCaptionAttribute) {
+                propertyType = 'caption';
             } else if (prop.$type === DimensionAttribute) {
                 propertyType = 'dimension';
             } else if (prop.$type === IdAttribute) {
                 propertyType = 'id';
             } else if (prop.$type === PositionAttribute) {
                 propertyType = 'position';
+            } else if (prop.$type === AuthorImageClassesAttribute) {
+                propertyType = 'imageClasses';
+            } else if (prop.$type === AuthorCaptionClassesAttribute) {
+                propertyType = 'captionClasses';
+            } else if (prop.$type === AuthorNameClassesAttribute) {
+                propertyType = 'nameClasses';
+            } else if (prop.$type === AuthorNameFontFamilyAttribute) {
+                propertyType = 'nameFontFamily';
+            } else if (prop.$type === AuthorCaptionFontFamilyAttribute) {
+                propertyType = 'captionFontFamily';
             } else {
                 continue;
             }

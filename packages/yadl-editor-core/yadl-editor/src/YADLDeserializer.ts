@@ -1,7 +1,7 @@
-import { AstNode } from "langium-ast-helper";
+import { AstNode, Diagnostic } from "langium-ast-helper";
 import { YadlModelAstNode, YadlEdge, YadlNode, YadlEditorResponse, IconTag } from "./components/Interfaces.js";
 import { get } from "lodash";
-import { getIconTag, getAvatarTag, getBoxTag, getTextTag, getEdgeTag, getSvgTag } from "./Utils.js";
+import { getIconTag, getAvatarTag, getBoxTag, getTextTag, getEdgeTag, getSvgTag, getAuthorTag } from "./Utils.js";
 
 export function getYadlModelAst(ast: YadlModelAstNode): YadlModelAstNode {
   return {
@@ -11,8 +11,6 @@ export function getYadlModelAst(ast: YadlModelAstNode): YadlModelAstNode {
     gcpTags: (ast.gcpTags as IconTag[])?.filter((e) => e.$type === "GcpTag") as IconTag[],
     azureTags: (ast.azureTags as IconTag[])?.filter((e) => e.$type === "AzureTag") as IconTag[],
     skillTags: (ast.skillTags as IconTag[])?.filter((e) => e.$type === "SkillTag") as IconTag[],
-    themeisleTags: (ast.themeisleTags as IconTag[])?.filter((e) => e.$type === "ThemeisleTag") as IconTag[],
-    undrawTags: (ast.undrawTags as IconTag[])?.filter((e) => e.$type === "UndrawTag") as IconTag[],
     authorTags: (ast.authorTags as IconTag[])?.filter((e) => e.$type === "AuthorTag") as IconTag[],
     avatarTags: (ast.avatarTags as IconTag[])?.filter((e) => e.$type === "AvatarTag") as IconTag[],
     boxTags: (ast.boxTags as IconTag[])?.filter((e) => e.$type === "BoxTag") as IconTag[],
@@ -20,6 +18,28 @@ export function getYadlModelAst(ast: YadlModelAstNode): YadlModelAstNode {
     svgTags: (ast.svgTags as IconTag[])?.filter((e) => e.$type === "SvgTag") as IconTag[],
     edgeTags: (ast.edgeTags as IconTag[])?.filter((e) => e.$type === "EdgeTag") as IconTag[],
   };
+}
+
+export function getErrorData(diagnostics: Diagnostic[]): YadlEditorResponse {
+  const errorMessages = diagnostics.map((diagnostic) => {
+    return `${diagnostic.message} At line ${diagnostic.range.start.line + 1} column ${diagnostic.range.start.character + 1}`
+  });
+  const errorNode = {
+    id: `error`,
+    data: {
+      message: errorMessages,
+    },
+    position: {
+      x: 0,
+      y: 0
+    },
+    type: "error",
+  };
+  return {
+    nodes: [errorNode],
+    edges: [],
+    fontsUsed: []
+  }
 }
 
 export function getYADLData(ast: AstNode): YadlEditorResponse {
@@ -48,16 +68,6 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
     allNodes = allNodes.concat(skillTags);
   }
 
-  const themeisleTags = getIconTag(astNode?.themeisleTags || [], "themeisle", "ThemeisleIconTypeAttribute");
-  if (themeisleTags && themeisleTags.length > 0) {
-    allNodes = allNodes.concat(themeisleTags);
-  }
-
-  const undrawTags = getIconTag(astNode?.undrawTags || [], "undraw", "UndrawIconTypeAttribute");
-  if (undrawTags && undrawTags.length > 0) {
-    allNodes = allNodes.concat(undrawTags);
-  }
-
   const avatarTags = getAvatarTag(astNode?.avatarTags || []);
   if (avatarTags && avatarTags.length > 0) {
     allNodes = allNodes.concat(avatarTags);
@@ -68,10 +78,18 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
     allNodes = allNodes.concat(svgTags);
   }
 
-  // const authorTags = getIconTag(astNode?.authorTags || [], "author", "AwsIconTypeAttribute");
-  // if (authorTags && authorTags.length > 0) {
-  //   allNodes = allNodes.concat(authorTags);
-  // }
+  const authorTags = getAuthorTag(astNode?.authorTags || []);
+  if (authorTags && authorTags.length > 0) {
+    allNodes = allNodes.concat(authorTags);
+    authorTags.forEach((textTag) => {
+      if (textTag.data.nameFontFamily) {
+        allFonts.push(textTag.data.nameFontFamily);
+      }
+      if (textTag.data.captionFontFamily) {
+        allFonts.push(textTag.data.captionFontFamily);
+      }
+    })
+  }
 
   const boxTags = getBoxTag(astNode?.boxTags || []);
   if (boxTags && boxTags.length > 0) {
