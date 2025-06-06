@@ -13,6 +13,7 @@ const Box = (props: BoxProps) => {
       <div
         className={classes}
         style={{ width, height }}
+        draggable
       >
       </div>
     </>

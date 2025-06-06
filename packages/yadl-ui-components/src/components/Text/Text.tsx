@@ -10,7 +10,7 @@ export type TextProps = {
 const Text = (props: TextProps) => {
   const { classes, fontFamily, text, width, height } = props;
   return (
-    <div style={{ fontFamily: fontFamily, width, height }} className={classes}>
+    <div draggable style={{ fontFamily: fontFamily, width, height }} className={classes}>
       {text}
     </div>
   );

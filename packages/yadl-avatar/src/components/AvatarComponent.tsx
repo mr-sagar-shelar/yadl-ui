@@ -101,9 +101,11 @@ const AvatarComponent = (props: AvatarProps) => {
   // }, [props]);
 
   return (
-    <AvatarContext.Provider value={props} >
-      <Avatar width={props.width} height={props.height} avatarStyle={avatarStyle as AvatarStyle} style={style} className={className} />
-    </AvatarContext.Provider>
+    <div draggable>
+      <AvatarContext.Provider value={props} >
+        <Avatar width={props.width} height={props.height} avatarStyle={avatarStyle as AvatarStyle} style={style} className={className} />
+      </AvatarContext.Provider>
+    </div>
     // <AvatarProvider >
     //   <Avatar avatarStyle={avatarStyle as AvatarStyle} style={style} className={className} />
     // </AvatarProvider>

@@ -312,10 +312,12 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
       monacoInstance.executeEdits("my-source", [operation]);
     }
     else if (node.type === "text") {
+      const width = Math.trunc(get(node, "data.props.width", 100));
+      const height = Math.trunc(get(node, "data.props.height", 50));
       const classes = get(node, "data.classes", "");
       const fontFamily = get(node, "data.fontFamily", "");
       const text = get(node, "data.text", "");
-      updatedText = `<Text text: "${text}" position: { x: ${xValue} y: ${yValue} } ${fontFamily ? "fontFamily:\ \"" + fontFamily + "\"" : ""} ${classes ? "classes: \"" + classes + "\"" : ""} />\n`;
+      updatedText = `<Text text: "${text}" position: { x: ${xValue} y: ${yValue} } dimension: { width: ${width} height: ${height} } ${fontFamily ? "fontFamily:\ \"" + fontFamily + "\"" : ""} ${classes ? "classes: \"" + classes + "\"" : ""} />\n`;
       const operation = {
         identifier: id,
         range: {
