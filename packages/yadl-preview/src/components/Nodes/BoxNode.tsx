@@ -1,4 +1,4 @@
-import { memo, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import {
   Handle,
   Position,
@@ -18,6 +18,11 @@ function BoxNode(properties: BoxNodeProps) {
   const [currentHeight, setCurrentHeight] = useState<number>(
     props.height || 50,
   );
+
+  useEffect(() => {
+    setCurrentWidth(props?.width);
+    setCurrentHeight(props?.height);
+  }, [props?.width, props?.height])
 
   let iconNamePresent: boolean = false;
   let Icon = null;
