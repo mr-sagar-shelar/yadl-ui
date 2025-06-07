@@ -39,6 +39,8 @@ export interface YadlEdge {
     $type?: string;
     id: string;
     type?: string;
+    animated?: boolean;
+    selectable?: boolean;
     source?: string;
     target?: string;
     label?: string;

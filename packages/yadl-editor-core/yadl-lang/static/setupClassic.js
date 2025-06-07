@@ -49,11 +49,6 @@ id          :              "Skill1"
 dimension:     {     height      :        10        width       :       10        }      position: 
       {       x      :      10       y   :          10         }       icon    :         skillIconBabel    />
 
-<Author id    :      "Author1"     fontFamily      :      "Sarif"              profileHandle      :       "@Sagar" 
-                                    profilePic   :    "https://www.google.com" classes   :   ""  
-dimension:     {     height      :        10        width       :       10        }      position: 
-      {       x      :      10       y   :          10         } 
-         />
 
 <Avatar accessoriesType   :   Blank   classes   :  ""   clotheType   :   BlazerShirt   eyeType   :   Close   eyebrowType   :   Angry   facialHairType   :   BeardLight   fontFamily   :   "sdf" 
 graphicType   :   Bat hairColor   :   Auburn mouthType   :   Concerned skinColor   :   Black  style   :   Circle topType   :   Hat 
@@ -83,11 +78,6 @@ type    :     smoothstep
 // <Author "Sagar Shelar" profilePic:""  { position : { x : -22 y : 21 } dimension : { width : 50 height : 50 } } />
 
 // <Avatar accessoriesType: Blank accessoriesType: Blank  eyeType: Close >
-
-<Div     height :         20         style =     {background-color:       "red",     font-size: 20,                text-color: "blue" } 
-width :   20>
-
-<Div style=    {   background-color:       "red",     font-size: 30,                text-color: "blue"} >
 
 `,
         useDiffEditor: false,

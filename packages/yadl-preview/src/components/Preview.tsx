@@ -47,7 +47,7 @@ const fitViewOptions: FitViewOptions = {
 };
 
 const defaultEdgeOptions: DefaultEdgeOptions = {
-  animated: true,
+  // animated: true,
 };
 
 let id = 0;

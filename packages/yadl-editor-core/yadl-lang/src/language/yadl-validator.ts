@@ -9,7 +9,7 @@ import {
     AvatarClotheTypeAttribute, AvatarEyeTypeAttribute, AvatarEyebrowTypeAttribute, AvatarMouthTypeAttribute, AvatarSkinColorAttribute,
     BoxTypeAttribute, SvgTag, AuthorSrcAttribute, AuthorNameClassesAttribute, AuthorNameFontFamilyAttribute,
     EdgeLabelAttribute, AuthorCaptionFontFamilyAttribute,
-    EdgeSourceAttribute,
+    EdgeSourceAttribute, EdgeAnimateAttribute, EdgeSelectableAttribute,
     EdgeSourceHandleAttribute,
     EdgeStyleAttribute,
     EdgeTargetAttribute,
@@ -296,6 +296,10 @@ export class YadlValidator {
                 propertyType = 'type';
             } else if (prop.$type === ClassesAttribute) {
                 propertyType = 'classes';
+            } else if (prop.$type === EdgeAnimateAttribute) {
+                propertyType = 'animated';
+            } else if (prop.$type === EdgeSelectableAttribute) {
+                propertyType = 'selectable';
             } else {
                 continue;
             }

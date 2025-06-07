@@ -34,9 +34,16 @@ EdgeLabelStyleAttribute:
 EdgeTypeAttribute:
     'type' ':' type=EdgeTypes;
 
+EdgeAnimateAttribute:
+    animated?='animated';
+
+EdgeSelectableAttribute:
+    selectable?='selectable';
+
 EdgeTagAttributes:
     ClassesAttribute | EdgeSourceHandleAttribute | EdgeTargetHandleAttribute | EdgeLabelAttribute |
-    EdgeSourceAttribute | EdgeTargetAttribute | EdgeTypeAttribute | EdgeStyleAttribute | EdgeLabelStyleAttribute;
+    EdgeSourceAttribute | EdgeTargetAttribute | EdgeTypeAttribute | EdgeStyleAttribute | EdgeLabelStyleAttribute |
+    EdgeAnimateAttribute | EdgeSelectableAttribute;
 
 EdgeTag:
     '<Edge' (attributes+=EdgeTagAttributes)* '/>';

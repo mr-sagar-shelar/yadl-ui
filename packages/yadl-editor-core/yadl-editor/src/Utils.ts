@@ -473,6 +473,12 @@ export function getEdgeTag(icons: TagAttribute[]): YadlEdge[] {
                 case "EdgeTypeAttribute":
                     currentData.type = attribute.type || "";
                     break;
+                case "EdgeAnimateAttribute":
+                    currentData.animated = attribute.animated;
+                    break;
+                case "EdgeSelectableAttribute":
+                    currentData.selectable = attribute.selectable;
+                    break;
             }
         });
 
