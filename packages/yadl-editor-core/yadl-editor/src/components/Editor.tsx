@@ -30,6 +30,7 @@ buildWorkerDefinition(
 
 export interface YadlEditorProps {
   onChange: (code: YadlEditorResponse) => void;
+  onCodeChange: (code: string) => void;
   onLoad?: () => void;
   position?: number;
   code?: string;
@@ -49,7 +50,7 @@ export type YadlEditorRef = {
 function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
   let running = false;
   let timeout: number | null = null;
-  const { onChange, position = 0, code, theme = "vs-dark", onLoad } = props;
+  const { onChange, onCodeChange, position = 0, code, theme = "vs-dark", onLoad } = props;
   const monacoEditor = useRef<MonacoEditorReactComp | null>(null);
   const [userConfig, setUserConfig] = useState<UserConfig>();
 
@@ -84,7 +85,7 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
     setCode
   }));
 
-  const onCodeChange = (resp: DocumentChangeResponse) => {
+  const onDocumentChange = (resp: DocumentChangeResponse) => {
     if (running) {
       return;
     }
@@ -116,7 +117,7 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
       throw new Error("Could not get handle to Language Client on mount");
     }
     monacoEditor.current.getEditorWrapper()?.getEditor()?.focus();
-    lc.onNotification("browser/DocumentChange", onCodeChange);
+    lc.onNotification("browser/DocumentChange", onDocumentChange);
     onLoad();
   };
 
@@ -482,6 +483,9 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
             onLoad={onMonacoLoad}
             userConfig={userConfig}
             style={style}
+            onTextChanged={(text) => {
+              onCodeChange(text);
+            }}
           />
         )}
       </>
