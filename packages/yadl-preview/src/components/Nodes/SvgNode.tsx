@@ -1,4 +1,4 @@
-import { memo, useState } from "react";
+import { memo, useEffect, useState } from "react";
 import {
   Handle,
   Position,
@@ -13,19 +13,26 @@ export interface SvgNodeProps {
     props?: any;
     code: string;
     classes: string;
+    width: number;
+    height: number;
   };
   selected: boolean;
 }
 
 function TextNode(properties: SvgNodeProps) {
   const {
-    data: { code = "", classes, props = {} },
+    data: { code = "", classes, width, height },
     selected = false,
   } = properties;
-  const [_currentWidth, setCurrentWidth] = useState<number>(props?.width || 50);
-  const [_currentHeight, setCurrentHeight] = useState<number>(
-    props?.height || 50,
+  const [currentWidth, setCurrentWidth] = useState<number>(width || 50);
+  const [currentHeight, setCurrentHeight] = useState<number>(
+    height || 50,
   );
+
+  useEffect(() => {
+    setCurrentWidth(width);
+    setCurrentHeight(height);
+  }, [width, height])
 
   if (code == "")
     return null;
@@ -36,6 +43,7 @@ function TextNode(properties: SvgNodeProps) {
         console.log("Clicked");
       }}
       className={`overflow-hidden ${classes}`}
+      style={{ width: currentWidth, height: currentHeight }}
     >
       <div dangerouslySetInnerHTML={{ __html: code }} />
       <NodeResizer

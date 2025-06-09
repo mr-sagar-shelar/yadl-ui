@@ -409,6 +409,9 @@ export function getSvgTag(icons: TagAttribute[]): YadlNode[] {
                         currentData.data.nameStartColumn = nameStartColumn;
                     }
                     break;
+                case "DimensionAttribute":
+                    currentData.dimension = getDimensionAttribute(attribute);
+                    break;
                 case "PositionAttribute":
                     const position = getPositionAttribute(attribute);
                     if (position) {
@@ -421,6 +424,12 @@ export function getSvgTag(icons: TagAttribute[]): YadlNode[] {
                     break;
             }
         });
+
+        if (currentData.dimension) {
+            currentData.data.dimensionRange = currentData.dimension.range
+            currentData.data.width = currentData.dimension.width
+            currentData.data.height = currentData.dimension.height
+        }
 
         return currentData;
     });

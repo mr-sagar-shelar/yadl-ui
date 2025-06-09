@@ -4,7 +4,7 @@ CodeAttribute:
     'code' ':' code=BACKTICK_STRING;
 
 SvgTagAttributes:
-    IdAttribute | PositionAttribute | CodeAttribute;
+    IdAttribute | PositionAttribute | CodeAttribute | DimensionAttribute;
 
 SvgTag:
     '<Svg' (attributes+=SvgTagAttributes)* '/>';
