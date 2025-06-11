@@ -1,7 +1,7 @@
 import "../common"
 
 BoxTypeAttributes returns string:
-    'Box1' | 'Box2';
+    'Box1' | 'Box2' | 'Box3';
 
 BoxTypeAttribute:
     'type' ':' type=(BoxTypeAttributes);
