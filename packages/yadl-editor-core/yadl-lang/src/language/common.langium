@@ -51,16 +51,40 @@ FontFamilyAttribute:
 TextColorAttribute:
     'text-color' ':' textColor=STRING;
 
-StringPropRowAttribute:
-    key=STRING ':' value=STRING;
+// StringPropRowAttribute:
+//     key=STRING ':' value=STRING;
 
-NumberPropRowAttribute:
-    key=STRING ':' value=NUMBER;
+// NumberPropRowAttribute:
+//     key=STRING ':' value=NUMBER;
 
+
+// PropsAttribute:
+//     'props' '{' (props+=StringPropRowAttribute(',' props+=StringPropRowAttribute)*)? '}';
+// 'props' '{' (props+=StringPropRowAttribute)+ '}';
 
 PropsAttribute:
-    'props' '{' (props+=StringPropRowAttribute(',' props+=StringPropRowAttribute)*)? '}';
-// 'props' '{' (props+=StringPropRowAttribute)+ '}';
+    'props' ':' props=PropsObject;
+
+PropsObject:
+    '{' (properties+=Property (',' properties+=Property)*)? '}';
+
+Property:
+    key=STRING ':' value=Value;
+
+StringPropRowAttribute:
+    value=STRING;
+
+NumberPropRowAttribute:
+    value=NUMBER;
+
+BooleanPropRowAttribute:
+    value=BOOLEAN;
+
+Value:
+    StringPropRowAttribute |  NumberPropRowAttribute | BooleanPropRowAttribute | ArrayValue;
+
+ArrayValue:
+    '[' (elements+=Value (',' elements+=Value)*)? ']';
 
 StyleAttribute:
     (BackgroundColorAttribute | FontSizeAttribute | TextColorAttribute)

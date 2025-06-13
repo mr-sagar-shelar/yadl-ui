@@ -242,9 +242,35 @@ export function getBoxTag(icons: TagAttribute[]): YadlNode[] {
                     break;
                 case "PropsAttribute":
                     const finalProps = {};
-                    attribute?.props?.forEach((propRow: any) => {
+                    attribute?.props?.properties?.forEach((propRow: any) => {
                         // @ts-ignore
-                        finalProps[propRow["key"]] = propRow["value"];
+                        // finalProps[propRow["key"]] = propRow["value"];
+                        const key = propRow["key"];
+                        const valueType = propRow.value.$type;
+                        // const valueType = 
+
+                        switch (valueType) {
+                            case "StringPropRowAttribute":
+                            case "NumberPropRowAttribute":
+                                // @ts-ignore
+                                finalProps[key] = propRow.value.value;
+                                break;
+                            case "BooleanPropRowAttribute":
+                                // @ts-ignore
+                                finalProps[key] = propRow.value.value == "true";
+                                break;
+                            case "ArrayValue":
+                                const elements = propRow.value.elements;
+                                const arrayElements: string[] = [];
+                                elements.forEach((element: any) => {
+                                    arrayElements.push(element.value);
+                                });
+                                // @ts-ignore
+                                finalProps[key] = arrayElements;
+                                break;
+
+                        }
+
                     });
                     currentData.data.props = finalProps;
                     break;

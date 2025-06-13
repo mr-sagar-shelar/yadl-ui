@@ -58,10 +58,10 @@ dimension:     {     height      :        10        width       :       10      
 />
 
 <Box 
-props { "width": "2434", "height" : "sdfsfs" }
    id   :    "Box1"    classes    :    ""   type   :   Box1 
 dimension:     {     height      :        10        width       :       10        }      position: 
       {       x      :      10       y   :          10         } 
+             props: { "title": "This is Div", "titleNumber" : 10232, "captions": [ "caption 1", "caption 2", "caption 4" ], "isVisible": true }
 />
 
 <Text  id : "Text1"    classes    :   ""    fontFamily    :     ""     text   :    "Hello world"
