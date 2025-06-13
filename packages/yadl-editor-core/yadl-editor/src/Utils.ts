@@ -240,6 +240,14 @@ export function getBoxTag(icons: TagAttribute[]): YadlNode[] {
                 case "ClassesAttribute":
                     currentData.data.props.classes = attribute.classes;
                     break;
+                case "PropsAttribute":
+                    const finalProps = {};
+                    attribute?.props?.forEach((propRow: any) => {
+                        // @ts-ignore
+                        finalProps[propRow["key"]] = propRow["value"];
+                    });
+                    currentData.data.props = finalProps;
+                    break;
             }
         });
 

@@ -1,18 +1,3 @@
-Position:
-    'position' '{'
-        'x:' (isNegativeX?='-')? x=NUMBER
-        'y:' (isNegativeY?='-')? y=NUMBER 
-    '}';
-
-Dimension:
-    'dimension' '{'
-        'width:' width=NUMBER
-        'height:' height=NUMBER 
-    '}';
-
-Classes:
-    'classes:' classes=STRING;
-
 ClassesAttribute:
     'classes' ':' classes=STRING;
 
@@ -65,6 +50,12 @@ FontFamilyAttribute:
 
 TextColorAttribute:
     'text-color' ':' textColor=STRING;
+
+PropertyRowAttribute:
+    key=STRING ':' value=STRING;
+
+PropsAttribute:
+    'props' '{' (props+=PropertyRowAttribute)+ '}';
 
 StyleAttribute:
     (BackgroundColorAttribute | FontSizeAttribute | TextColorAttribute)
