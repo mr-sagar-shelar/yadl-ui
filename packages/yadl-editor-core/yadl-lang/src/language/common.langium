@@ -51,11 +51,16 @@ FontFamilyAttribute:
 TextColorAttribute:
     'text-color' ':' textColor=STRING;
 
-PropertyRowAttribute:
+StringPropRowAttribute:
     key=STRING ':' value=STRING;
 
+NumberPropRowAttribute:
+    key=STRING ':' value=NUMBER;
+
+
 PropsAttribute:
-    'props' '{' (props+=PropertyRowAttribute)+ '}';
+    'props' '{' (props+=StringPropRowAttribute(',' props+=StringPropRowAttribute)*)? '}';
+// 'props' '{' (props+=StringPropRowAttribute)+ '}';
 
 StyleAttribute:
     (BackgroundColorAttribute | FontSizeAttribute | TextColorAttribute)
@@ -68,8 +73,10 @@ terminal NUMBER returns number: /[0-9]+(\.[0-9]*)?/;
 hidden terminal WS: /\s+/;
 terminal ID: /[_a-zA-Z][\w_]*/;
 terminal INT returns number: /[0-9]+/;
+terminal TEXT: /[^<>]+/;
 terminal STRING: /"(\\.|[^"\\])*"|'(\\.|[^'\\])*'/;
 terminal BACKTICK_STRING: /`[^`]*`/;
+terminal BOOLEAN: 'true' | 'false';
 
 hidden terminal ML_COMMENT: /\/\*[\s\S]*?\*\//;
 hidden terminal SL_COMMENT: /\/\/[^\n\r]*/;

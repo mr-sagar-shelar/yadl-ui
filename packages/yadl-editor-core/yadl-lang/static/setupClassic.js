@@ -58,7 +58,7 @@ dimension:     {     height      :        10        width       :       10      
 />
 
 <Box 
-props { "width": "2434" "height" : "sdfsfs" }
+props { "width": "2434", "height" : "sdfsfs" }
    id   :    "Box1"    classes    :    ""   type   :   Box1 
 dimension:     {     height      :        10        width       :       10        }      position: 
       {       x      :      10       y   :          10         } 
