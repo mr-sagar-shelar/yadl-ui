@@ -4,7 +4,7 @@ import { memo } from "react";
 import { Text } from "yadl-ui-components";
 import { DragDropProps, useDnD } from "../DnDContext";
 import FontPicker from "react-fontpicker-ts";
-import "react-fontpicker-ts/dist/index.css";
+// import "react-fontpicker-ts/dist/index.css";
 import { GradientDirection, FontSizes } from "./Constants";
 
 const SearchTextComponents = () => {
