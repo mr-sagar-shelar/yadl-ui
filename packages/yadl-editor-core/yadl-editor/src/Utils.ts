@@ -251,6 +251,7 @@ export function getBoxTag(icons: TagAttribute[]): YadlNode[] {
 
                         switch (valueType) {
                             case "StringPropRowAttribute":
+                            case "BacktickStringPropRowAttribute":
                             case "NumberPropRowAttribute":
                                 // @ts-ignore
                                 finalProps[key] = propRow.value.value;
@@ -272,7 +273,10 @@ export function getBoxTag(icons: TagAttribute[]): YadlNode[] {
                         }
 
                     });
-                    currentData.data.props = finalProps;
+                    currentData.data.props = {
+                        ...currentData.data.props,
+                        ...finalProps
+                    };
                     break;
             }
         });

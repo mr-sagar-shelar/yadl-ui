@@ -74,6 +74,9 @@ Property:
 StringPropRowAttribute:
     value=STRING;
 
+BacktickStringPropRowAttribute:
+    value=BACKTICK_STRING;
+
 NumberPropRowAttribute:
     value=NUMBER;
 
@@ -81,7 +84,7 @@ BooleanPropRowAttribute:
     value=BOOLEAN;
 
 Value:
-    StringPropRowAttribute |  NumberPropRowAttribute | BooleanPropRowAttribute | ArrayValue;
+    StringPropRowAttribute | BacktickStringPropRowAttribute |  NumberPropRowAttribute | BooleanPropRowAttribute | ArrayValue;
 
 ArrayValue:
     '[' (elements+=Value (',' elements+=Value)*)? ']';
