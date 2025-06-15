@@ -33,7 +33,7 @@ const Box3 = (props: BoxProps) => {
         </div>
         <ul className="list-disc px-5 pt-3">
           {captions.map((caption) => {
-            return <li className={`text-${color} text-sm`}>{caption}</li>
+            return <li className={`text-${color} text-sm text-left`}>{caption}</li>
           })}
         </ul>
       </div>
