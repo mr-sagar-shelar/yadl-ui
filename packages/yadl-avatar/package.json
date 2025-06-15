@@ -1,6 +1,6 @@
 {
   "name": "yadl-avatar",
-  "version": "1.0.0",
+  "version": "1.0.10",
   "type": "module",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -38,7 +38,6 @@
   "keywords": [
     "YADL",
     "Yet Another Diagramming Library",
-    "YADL AWS Icons",
     "AVATAR",
     "YADL AVATAR"
   ],
@@ -47,8 +46,5 @@
   "description": "YADL AVATAR COMPONENT",
   "peerDependencies": {
     "react": "^19.0.0"
-  },
-  "dependencies": {
-    "yadl-core-package": "^1.0.5"
   }
 }

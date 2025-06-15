@@ -3,7 +3,6 @@
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
 import { peerDependencies } from "./package.json";
-import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 
 export default defineConfig({
@@ -16,7 +15,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: "./src/index.ts", // Specifies the entry point for building the library.
-      name: "yadl-aws-icons", // Sets the name of the generated library.
+      name: "yadl-avatar", // Sets the name of the generated library.
       fileName: (format) => `index.${format}.js`, // Generates the output file name based on the format.
       formats: ["cjs", "es"], // Specifies the output formats (CommonJS and ES modules).
     },
@@ -31,5 +30,5 @@ export default defineConfig({
     environment: "jsdom",
     setupFiles: "./setupTests.ts",
   },
-  plugins: [dts(), tailwindcss()], // Uses the 'vite-plugin-dts' plugin for generating TypeScript declaration files (d.ts).
+  plugins: [dts()], // Uses the 'vite-plugin-dts' plugin for generating TypeScript declaration files (d.ts).
 });
