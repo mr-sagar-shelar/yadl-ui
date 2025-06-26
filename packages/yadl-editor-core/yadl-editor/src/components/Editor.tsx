@@ -431,7 +431,7 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
         endLineNumber: selectedLine,
         endColumn: 1,
       },
-      text: `<Edge source: "${edge.source}" target: "${edge.target}" sourceHandle: ${edge.sourceHandle} targetHandle: ${edge.targetHandle} type : default />\n `,
+      text: `<Edge source: "${edge.source}" target: "${edge.target}" sourceHandle: ${edge.sourceHandle} targetHandle: ${edge.targetHandle} type : default />\n`,
       forceMoveMarkers: true,
     };
 
