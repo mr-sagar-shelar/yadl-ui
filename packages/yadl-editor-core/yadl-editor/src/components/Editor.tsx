@@ -449,7 +449,7 @@ function Editor(props: YadlEditorProps, ref: Ref<YadlEditorRef>) {
             endLineNumber: operation.line,
             endColumn: operation.column,
           },
-          text: `${operation.id} `,
+          text: `id :'${operation.id}' `,
         };
         operations.push(xOperation);
       });

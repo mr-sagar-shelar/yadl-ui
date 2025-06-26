@@ -94,9 +94,9 @@ export function getIconTag(icons: IconTag[], category: string, iconCase: string)
             iconData.data.height = icon.dimension.height
         }
 
-        if (!i.id) {
+        if( i.attributes.find( att => att.$type == "IdAttribute") == undefined){
             const nameStartLine = i.$textRegion.range.start.line + 1;
-            const nameStartColumn = i.$textRegion.range.start.character + 9;
+            const nameStartColumn = category.length + 3;
             iconData.data.nameStartLine = nameStartLine;
             iconData.data.nameStartColumn = nameStartColumn;
         }
