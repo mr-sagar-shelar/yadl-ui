@@ -5,7 +5,7 @@ import {
     FontSizeAttribute, BackgroundColorAttribute, TextColorAttribute, HeightAttribute, IdAttribute, StyleProperty, WidthAttribute,
     AwsTag, XAttribute, YAttribute, PositionAttribute, AwsIconTypeAttribute, DimensionAttribute, AzureTag, GcpTag, SkillTag,
     AzureIconTypeAttribute, GcpIconTypeAttribute, SkillIconTypeAttribute, AuthorNameAttribute, AuthorCaptionAttribute,
-    AuthorTag, AvatarTag, BoxTag, EdgeTag, TextTag, FontFamilyAttribute, AuthorImageClassesAttribute, AuthorCaptionClassesAttribute,
+    AuthorTag, GroupTag, AvatarTag, BoxTag, EdgeTag, TextTag, FontFamilyAttribute, AuthorImageClassesAttribute, AuthorCaptionClassesAttribute,
     AvatarStyleAttribute, AvatarFacialHairTypeAttribute, AvatarGraphicTypeAttribute, AvatarClotheTypeAttribute, AuthorCaptionFontFamilyAttribute,
     AvatarTopTypeAttribute, AvatarAccessoriesTypeAttribute, AvatarHairColorAttribute, AvatarEyeTypeAttribute, AvatarEyebrowTypeAttribute,
     AvatarMouthTypeAttribute, AvatarSkinColorAttribute, ClassesAttribute, BoxTypeAttribute, TextAttribute, EdgeLabelAttribute,
@@ -150,7 +150,7 @@ export class YadlFormatter extends AbstractFormatter {
     }
 
     private formatIconTagAttributes(element: AwsTag | AzureTag | GcpTag | SkillTag |
-        AuthorTag | AvatarTag | BoxTag | EdgeTag | TextTag | SvgTag
+        AuthorTag | AvatarTag | BoxTag | EdgeTag | TextTag | SvgTag |GroupTag
     ): void {
         const formatter = this.getNodeFormatter(element);
         const bracesOpen = formatter.keyword('<');

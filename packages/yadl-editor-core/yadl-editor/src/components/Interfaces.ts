@@ -70,6 +70,7 @@ export interface YadlModelAstNode extends AstNode, YadlModelElement {
     textTags?: IconTag[];
     svgTags?: IconTag[];
     edgeTags?: IconTag[];
+    groupTags?:IconTag[];
 }
 
 export interface YadlEditorResponse {

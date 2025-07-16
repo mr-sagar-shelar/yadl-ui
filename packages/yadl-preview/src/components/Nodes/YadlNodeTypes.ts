@@ -5,6 +5,7 @@ import AvatarNode from "./AvatarNode";
 import ErrorNode from "./ErrorNode";
 import SvgNode from "./SvgNode";
 import AuthorNode from "./AuthorNode";
+import GroupNode from "./GroupNode";
 
 export const YadlNodeTypes = {
   icon: IconNode,
@@ -13,5 +14,6 @@ export const YadlNodeTypes = {
   avatar: AvatarNode,
   error: ErrorNode,
   svg: SvgNode,
-  author: AuthorNode
+  author: AuthorNode,
+  group :GroupNode
 };

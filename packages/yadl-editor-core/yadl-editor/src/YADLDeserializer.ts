@@ -1,7 +1,7 @@
 import { AstNode, Diagnostic } from "langium-ast-helper";
 import { YadlModelAstNode, YadlEdge, YadlNode, YadlEditorResponse, IconTag } from "./components/Interfaces.js";
 import { get } from "lodash";
-import { getIconTag, getAvatarTag, getBoxTag, getTextTag, getEdgeTag, getSvgTag, getAuthorTag } from "./Utils.js";
+import { getIconTag, getAvatarTag, getBoxTag, getTextTag, getEdgeTag, getSvgTag, getAuthorTag, getGroupTag } from "./Utils.js";
 
 export function getYadlModelAst(ast: YadlModelAstNode): YadlModelAstNode {
   return {
@@ -17,6 +17,7 @@ export function getYadlModelAst(ast: YadlModelAstNode): YadlModelAstNode {
     textTags: (ast.textTags as IconTag[])?.filter((e) => e.$type === "TextTag") as IconTag[],
     svgTags: (ast.svgTags as IconTag[])?.filter((e) => e.$type === "SvgTag") as IconTag[],
     edgeTags: (ast.edgeTags as IconTag[])?.filter((e) => e.$type === "EdgeTag") as IconTag[],
+    groupTags:(ast.groupTags as IconTag[])?.filter((e)=> e.$type === "GroupTag") as IconTag[],
   };
 }
 
@@ -109,6 +110,11 @@ export function getYADLData(ast: AstNode): YadlEditorResponse {
   const edgeTags = getEdgeTag(astNode?.edgeTags || []);
   if (edgeTags && edgeTags.length > 0) {
     allEdges = allEdges.concat(edgeTags);
+  }
+
+  const groupTags = getGroupTag(astNode?.groupTags || []);
+  if (groupTags && groupTags.length > 0) {
+    allNodes = allNodes.concat(groupTags);
   }
 
 

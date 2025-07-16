@@ -22,11 +22,12 @@ import "./tags/BoxTag"
 import "./tags/TextTag"
 import "./tags/EdgeTag"
 import "./tags/SvgTag"
+import "./tags/GroupTag"
 
 
 entry Model:
     (
     awsTags+=AwsTag | azureTags+=AzureTag | gcpTags+=GcpTag | skillTags+=SkillTag | authorTags+=AuthorTag |
-    avatarTags+=AvatarTag | boxTags+=BoxTag | textTags+=TextTag | edgeTags+=EdgeTag | svgTags+=SvgTag
+    avatarTags+=AvatarTag | boxTags+=BoxTag | textTags+=TextTag | edgeTags+=EdgeTag | svgTags+=SvgTag | groupTags+=GroupTag
     )*;
 

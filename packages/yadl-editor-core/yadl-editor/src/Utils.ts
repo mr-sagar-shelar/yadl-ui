@@ -535,6 +535,59 @@ export function getEdgeTag(icons: TagAttribute[]): YadlEdge[] {
     return allTags;
 }
 
+export function getGroupTag(icons: TagAttribute[]): YadlNode[] {
+    const allTags = icons.flatMap((i: TagAttribute, index: number): YadlNode => {
+        const currentData: YadlNode = {
+            id: `group${index + 1}`,
+            data: {
+                nodeRange: i.$textRegion.range,
+                props: {}
+            },
+            type: "group",
+        };
+
+        i.attributes.forEach((attribute) => {
+            switch (attribute.$type) {
+                case "IdAttribute":
+                    currentData.id = attribute.id;
+                    if (!attribute.id) {
+                        const nameStartLine = i.$textRegion.range.start.line + 1;
+                        const nameStartColumn = i.$textRegion.range.start.character + 9;
+                        currentData.data.nameStartLine = nameStartLine;
+                        currentData.data.nameStartColumn = nameStartColumn;
+                    }
+                    break;
+                case "DimensionAttribute":
+                    const dimension = getDimensionAttribute(attribute);
+                    if (dimension) {
+                        currentData.data.dimensionRange = dimension.range
+                        currentData.data.props.width = dimension.width;
+                        currentData.data.props.height = dimension.height;
+                    } else {
+                        currentData.data.props.width = 200;
+                        currentData.data.props.height = 200;
+                    }
+                    break;
+                case "PositionAttribute":
+                    const position = getPositionAttribute(attribute);
+                    if (position) {
+                        currentData.position = position;
+                        currentData.data.positionRange = position?.range
+                    }
+                    break;
+                case "GroupNameAttribute":
+                    currentData.data.name = attribute.name;
+                    break;
+                
+            }
+        });
+
+        return currentData;
+    });
+
+    return allTags;
+}
+
 export function toPascalCase(text: string): string {
     return text.replace(/\w+/g, function (w: any) { return w[0].toUpperCase() + w.slice(1).toLowerCase(); });
 }
